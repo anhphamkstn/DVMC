@@ -1,0 +1,98 @@
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPData\bin\IPData.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPData\bin\IPData.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPData\bin\IPData.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPData\obj\Debug\IPData.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPData\obj\Debug\IPData.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\010. TCM\TCM\IPData\bin\IPData.dll.config
+D:\06. TOPICA\010. TCM\TCM\IPData\bin\IPData.dll
+D:\06. TOPICA\010. TCM\TCM\IPData\bin\IPData.pdb
+D:\06. TOPICA\010. TCM\TCM\IPData\bin\IPData.xml
+D:\06. TOPICA\010. TCM\TCM\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\TCM\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\010. TCM\TCM\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\010. TCM\TCM\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\bin\IPData.dll.config
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\bin\IPData.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\bin\IPData.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\bin\IPData.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\bin\IPData.dll.config
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\bin\IPData.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\bin\IPData.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\bin\IPData.dll.config
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\bin\IPData.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\bin\IPData.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\bin\IPData.dll.config
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\bin\IPData.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\bin\IPData.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\bin\IPData.dll.config
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\bin\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\bin\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\bin\IPData.dll.config
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\bin\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\bin\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\bin\IPData.dll.config
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\bin\IPData.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\bin\IPData.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\obj\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\obj\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\obj\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\bin\IPData.dll.config
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\bin\IPData.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\bin\IPData.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\bin\IPData.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\obj\Debug\IPData.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\obj\Debug\IPData.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPData\obj\Debug\IPData.pdb
+H:\DVMC\03.Sourcecode\IPData\bin\IPData.dll.config
+H:\DVMC\03.Sourcecode\IPData\bin\IPData.dll
+H:\DVMC\03.Sourcecode\IPData\bin\IPData.pdb
+H:\DVMC\03.Sourcecode\IPData\bin\IPData.xml
+H:\DVMC\03.Sourcecode\IPData\obj\Debug\IPData.dll
+H:\DVMC\03.Sourcecode\IPData\obj\Debug\IPData.xml
+H:\DVMC\03.Sourcecode\IPData\obj\Debug\IPData.pdb
+E:\BKI_DVMC\03.Sourcecode\IPData\bin\IPData.dll.config
+E:\BKI_DVMC\03.Sourcecode\IPData\bin\IPData.dll
+E:\BKI_DVMC\03.Sourcecode\IPData\bin\IPData.pdb
+E:\BKI_DVMC\03.Sourcecode\IPData\bin\IPData.xml
+E:\BKI_DVMC\03.Sourcecode\IPData\obj\Debug\IPData.dll
+E:\BKI_DVMC\03.Sourcecode\IPData\obj\Debug\IPData.xml
+E:\BKI_DVMC\03.Sourcecode\IPData\obj\Debug\IPData.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\bin\IPData.dll.config
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\bin\IPData.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\bin\IPData.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\bin\IPData.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\obj\Debug\IPData.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\obj\Debug\IPData.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPData\obj\Debug\IPData.pdb

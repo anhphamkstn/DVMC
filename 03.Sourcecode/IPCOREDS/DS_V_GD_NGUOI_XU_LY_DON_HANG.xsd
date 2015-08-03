@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_V_GD_NGUOI_XU_LY_DON_HANG" targetNamespace="http://tempuri.org/DS_V_GD_NGUOI_XU_LY_DON_HANG.xsd" xmlns:mstns="http://tempuri.org/DS_V_GD_NGUOI_XU_LY_DON_HANG.xsd" xmlns="http://tempuri.org/DS_V_GD_NGUOI_XU_LY_DON_HANG.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DVMCConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DVMCConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IPCOREDS.Properties.Settings.GlobalReference.Default.DVMCConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_GD_NGUOI_XU_LY_DON_HANGTableAdapter" GeneratorDataComponentClassName="V_GD_NGUOI_XU_LY_DON_HANGTableAdapter" Name="V_GD_NGUOI_XU_LY_DON_HANG" UserDataComponentName="V_GD_NGUOI_XU_LY_DON_HANGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DVMCConnectionString1 (Settings)" DbObjectName="DVMC.dbo.V_GD_NGUOI_XU_LY_DON_HANG" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, ID_DON_HANG, ID_NGUOI_XU_LY, MA_DON_HANG, USER_XU_LY FROM dbo.V_GD_NGUOI_XU_LY_DON_HANG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="ID_DON_HANG" DataSetColumn="ID_DON_HANG" />
+              <Mapping SourceColumn="ID_NGUOI_XU_LY" DataSetColumn="ID_NGUOI_XU_LY" />
+              <Mapping SourceColumn="MA_DON_HANG" DataSetColumn="MA_DON_HANG" />
+              <Mapping SourceColumn="USER_XU_LY" DataSetColumn="USER_XU_LY" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_V_GD_NGUOI_XU_LY_DON_HANG" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_V_GD_NGUOI_XU_LY_DON_HANG" msprop:Generator_UserDSName="DS_V_GD_NGUOI_XU_LY_DON_HANG">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_GD_NGUOI_XU_LY_DON_HANG" msprop:Generator_TableClassName="V_GD_NGUOI_XU_LY_DON_HANGDataTable" msprop:Generator_TableVarName="tableV_GD_NGUOI_XU_LY_DON_HANG" msprop:Generator_TablePropName="V_GD_NGUOI_XU_LY_DON_HANG" msprop:Generator_RowDeletingName="V_GD_NGUOI_XU_LY_DON_HANGRowDeleting" msprop:Generator_UserTableName="V_GD_NGUOI_XU_LY_DON_HANG" msprop:Generator_RowChangingName="V_GD_NGUOI_XU_LY_DON_HANGRowChanging" msprop:Generator_RowEvHandlerName="V_GD_NGUOI_XU_LY_DON_HANGRowChangeEventHandler" msprop:Generator_RowDeletedName="V_GD_NGUOI_XU_LY_DON_HANGRowDeleted" msprop:Generator_RowEvArgName="V_GD_NGUOI_XU_LY_DON_HANGRowChangeEvent" msprop:Generator_RowChangedName="V_GD_NGUOI_XU_LY_DON_HANGRowChanged" msprop:Generator_RowClassName="V_GD_NGUOI_XU_LY_DON_HANGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:decimal" />
+              <xs:element name="ID_DON_HANG" msprop:Generator_ColumnVarNameInTable="columnID_DON_HANG" msprop:Generator_ColumnPropNameInRow="ID_DON_HANG" msprop:Generator_ColumnPropNameInTable="ID_DON_HANGColumn" msprop:Generator_UserColumnName="ID_DON_HANG" type="xs:decimal" />
+              <xs:element name="ID_NGUOI_XU_LY" msprop:Generator_ColumnVarNameInTable="columnID_NGUOI_XU_LY" msprop:Generator_ColumnPropNameInRow="ID_NGUOI_XU_LY" msprop:Generator_ColumnPropNameInTable="ID_NGUOI_XU_LYColumn" msprop:Generator_UserColumnName="ID_NGUOI_XU_LY" type="xs:decimal" />
+              <xs:element name="MA_DON_HANG" msprop:Generator_ColumnVarNameInTable="columnMA_DON_HANG" msprop:Generator_ColumnPropNameInRow="MA_DON_HANG" msprop:Generator_ColumnPropNameInTable="MA_DON_HANGColumn" msprop:Generator_UserColumnName="MA_DON_HANG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USER_XU_LY" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUSER_XU_LY" msprop:Generator_ColumnPropNameInRow="USER_XU_LY" msprop:Generator_ColumnPropNameInTable="USER_XU_LYColumn" msprop:Generator_UserColumnName="USER_XU_LY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_GD_NGUOI_XU_LY_DON_HANG" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

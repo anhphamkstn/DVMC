@@ -1,0 +1,217 @@
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\IPExcelReport.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\IPExcelReport.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\IPExcelReport.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\Interop.Excel.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\Interop.Office.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\IPCommon.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\C1.Common.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\IPCommon.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\bin\IPCommon.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\010. TCM\TCM\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Excel.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Office.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Excel.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Office.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\C1.Common.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.pdb
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.xml
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Excel.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Office.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\C1.Common.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.pdb
+H:\DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.xml
+H:\DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+H:\DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.dll
+H:\DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml
+H:\DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.pdb
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\IPExcelReport.xml
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Excel.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\Interop.Office.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\C1.Common.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.pdb
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\bin\IPCommon.xml
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.dll
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml
+E:\BKI_DVMC\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPExcelReport\obj\Debug\IPExcelReport.xml

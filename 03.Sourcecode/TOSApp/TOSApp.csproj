@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE651919-5790-4B89-BC0E-E5E4ACD637FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TOSApp</RootNamespace>
+    <AssemblyName>DVMC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>H:\DVMC\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://42.112.28.4:85/DVMC/</InstallUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>DVMC</ProductName>
+    <PublisherName>DVMC</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>24</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TOSApp.ApplicationControl</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>phone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E769A7CEEED13745500318151D568D3C45071C6A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TOSApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Common">
+      <HintPath>..\DLL\C1.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid">
+      <HintPath>..\DLL\C1.Win.C1FlexGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.Classic">
+      <HintPath>..\DLL\C1.Win.C1FlexGrid.Classic.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input">
+      <HintPath>..\DLL\C1.Win.C1Input.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1">
+      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraGrid.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\DLL\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core">
+      <HintPath>..\DLL\Interop.Microsoft.Office.Core.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>..\DLL\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Word">
+      <HintPath>..\DLL\Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="IPCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\IPCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="mcombobox">
+      <HintPath>..\DLL\mcombobox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SiSButton">
+      <HintPath>..\DLL\SiSButton.dll</HintPath>
+    </Reference>
+    <Reference Include="SiSMenu">
+      <HintPath>..\DLL\SiSMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationControl.cs" />
+    <Compile Include="App_Code\CallCenterUtils.cs" />
+    <Compile Include="App_Code\CEncryptKeyString.cs" />
+    <Compile Include="App_Code\CJsonClass.cs" />
+    <Compile Include="App_Code\CLichSuCuocGoi.cs" />
+    <Compile Include="App_Code\CSocketServer.cs" />
+    <Compile Include="App_Code\CSystemLog_100.cs" />
+    <Compile Include="App_Code\HelpUtils.cs" />
+    <Compile Include="BaoCao\f661_bao_cao_log_he_thong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f100_dat_hang_moi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f100_dat_hang_moi.Designer.cs">
+      <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.Designer.cs">
+      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f103_danh_gia_don_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f103_danh_gia_don_hang.Designer.cs">
+      <DependentUpon>f103_danh_gia_don_hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f200_ds_dat_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f200_ds_dat_hang_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f200_ds_dat_hang_new.Designer.cs">
+      <DependentUpon>f200_ds_dat_hang_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f225_tim_kiem_cau_hoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f230_dm_sinh_vien_searching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f220_dm_cau_hoi_searching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f210_goi_lai_sinh_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f210_goi_lai_sinh_vien.Designer.cs">
+      <DependentUpon>f210_goi_lai_sinh_vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f200_sinh_vien_goi_den.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f200_sinh_vien_goi_den.Designer.cs">
+      <DependentUpon>f200_sinh_vien_goi_den.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f300_dm_yeu_cau_hoc_vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f310_dm_station.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f400_gd_xu_ly_noi_bo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f400_gd_xu_ly_noi_bo.Designer.cs">
+      <DependentUpon>f400_gd_xu_ly_noi_bo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f420_search_chon_qlht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f430_quan_ly_blacklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f110_dm_cau_hoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f111_dm_cau_hoi_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f111_dm_cau_hoi_de.Designer.cs">
+      <DependentUpon>f111_dm_cau_hoi_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f430_dm_quan_ly_hoc_tap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f500_ds_nguoi_dai_dien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f501_dm_nguoi_dai_dien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f501_dm_nguoi_dai_dien.Designer.cs">
+      <DependentUpon>f501_dm_nguoi_dai_dien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f002_main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f003_main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f996_license_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f998_ht_nguoi_su_dung_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f999_ht_nguoi_su_dung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f000_confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f000_confirm.Designer.cs">
+      <DependentUpon>f000_confirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f107_ht_tham_so_he_thong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f108_tham_so_he_thong_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f108_tham_so_he_thong_de.Designer.cs">
+      <DependentUpon>f108_tham_so_he_thong_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\f997_ht_nhom_quyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f997_ht_nhom_quyen_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\f997_ht_nhom_quyen_de.Designer.cs">
+      <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.cs">
+      <DependentUpon>DS_V_DM_DIEM_HOC_VIEN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SCMServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSCallCenter\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WinFormControls.cs" />
+    <EmbeddedResource Include="BaoCao\f661_bao_cao_log_he_thong.resx">
+      <DependentUpon>f661_bao_cao_log_he_thong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f100_dat_hang_moi.resx">
+      <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.resx">
+      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f103_danh_gia_don_hang.resx">
+      <DependentUpon>f103_danh_gia_don_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f200_ds_dat_hang.resx">
+      <DependentUpon>f200_ds_dat_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f200_ds_dat_hang_new.resx">
+      <DependentUpon>f200_ds_dat_hang_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f225_tim_kiem_cau_hoi.resx">
+      <DependentUpon>f225_tim_kiem_cau_hoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f230_dm_sinh_vien_searching.resx">
+      <DependentUpon>f230_dm_sinh_vien_searching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f220_dm_cau_hoi_searching.resx">
+      <DependentUpon>f220_dm_cau_hoi_searching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f210_goi_lai_sinh_vien.resx">
+      <DependentUpon>f210_goi_lai_sinh_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f200_sinh_vien_goi_den.resx">
+      <DependentUpon>f200_sinh_vien_goi_den.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f300_dm_yeu_cau_hoc_vien.resx">
+      <DependentUpon>f300_dm_yeu_cau_hoc_vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f310_dm_station.resx">
+      <DependentUpon>f310_dm_station.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f400_gd_xu_ly_noi_bo.resx">
+      <DependentUpon>f400_gd_xu_ly_noi_bo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f420_search_chon_qlht.resx">
+      <DependentUpon>f420_search_chon_qlht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f430_quan_ly_blacklist.resx">
+      <DependentUpon>f430_quan_ly_blacklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f110_dm_cau_hoi.resx">
+      <DependentUpon>f110_dm_cau_hoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f111_dm_cau_hoi_de.resx">
+      <DependentUpon>f111_dm_cau_hoi_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f430_dm_quan_ly_hoc_tap.resx">
+      <DependentUpon>f430_dm_quan_ly_hoc_tap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f500_ds_nguoi_dai_dien.resx">
+      <DependentUpon>f500_ds_nguoi_dai_dien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f501_dm_nguoi_dai_dien.resx">
+      <DependentUpon>f501_dm_nguoi_dai_dien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f002_main_form.resx">
+      <DependentUpon>f002_main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f003_main_form.resx">
+      <DependentUpon>f003_main_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f996_license_form.resx">
+      <DependentUpon>f996_license_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f998_ht_nguoi_su_dung_de.resx">
+      <DependentUpon>f998_ht_nguoi_su_dung_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f999_ht_nguoi_su_dung.resx">
+      <DependentUpon>f999_ht_nguoi_su_dung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f000_confirm.resx">
+      <DependentUpon>f000_confirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f107_ht_tham_so_he_thong.resx">
+      <DependentUpon>f107_ht_tham_so_he_thong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f108_tham_so_he_thong_de.resx">
+      <DependentUpon>f108_tham_so_he_thong_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f997_ht_nhom_quyen.resx">
+      <DependentUpon>f997_ht_nhom_quyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\f997_ht_nhom_quyen_de.resx">
+      <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\Help\help.chm" />
+    <None Include="bin\Debug\Reports\Output\Readme.txt" />
+    <None Include="bin\Debug\Reports\Templates\Bao_Cao_L5B_8.xlsx" />
+    <None Include="bin\Debug\Reports\Templates\F300_BaoCaoNghiemThuContact.xls" />
+    <None Include="bin\Debug\Reports\Templates\F310_BaoCaoThuHoiContact.xls" />
+    <None Include="bin\Debug\Reports\Templates\F350_BaoCaoTrungContact.xls" />
+    <None Include="bin\Debug\Reports\Templates\TIC100_Template_Import_20131008.xls" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TOSApp_TemporaryKey.pfx" />
+    <None Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.xsc">
+      <DependentUpon>DS_V_DM_DIEM_HOC_VIEN.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.xsd" />
+    <None Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.xss">
+      <DependentUpon>DS_V_DM_DIEM_HOC_VIEN.xsd</DependentUpon>
+    </None>
+    <None Include="Web References\SCMServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SCMServices\SyncData.wsdl" />
+    <None Include="Web References\WSCallCenter\CallCenter.wsdl" />
+    <None Include="Web References\WSCallCenter\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="bin\Debug\NumOfMessage.XML" />
+    <Content Include="bin\Debug\Reports\Output\Readme.txt" />
+    <Content Include="bin\Debug\Reports\Templates\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\UserMsg.xml" />
+    <Content Include="NumOfMessage.XML" />
+    <Content Include="phone.ico" />
+    <Content Include="Reports\Output\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\advancedsettings.png" />
+    <Content Include="Resources\call center img.jpg" />
+    <Content Include="Resources\call-center-icon-22342189.jpg" />
+    <Content Include="Resources\call-center.jpg" />
+    <None Include="Resources\call_end.jpg" />
+    <None Include="Resources\call_end.png" />
+    <None Include="Resources\call_end1.png" />
+    <None Include="Resources\call.png" />
+    <None Include="Resources\grey_pause.png" />
+    <None Include="Resources\Grey_play.png" />
+    <Content Include="Resources\DVMC.JPG" />
+    <Content Include="Resources\DVMC_Infor.JPG" />
+    <Content Include="Resources\icon-call-center-2.png" />
+    <Content Include="Resources\images Call center.jpg" />
+    <None Include="Resources\IPPhone.jpg" />
+    <Content Include="Resources\mycomputer.png" />
+    <None Include="Resources\paused.gif" />
+    <None Include="Resources\oke hand.jpg" />
+    <None Include="Resources\Oke 1.png" />
+    <None Include="Resources\okphoto.jpg" />
+    <Content Include="Resources\phone.ico" />
+    <Content Include="Resources\phone.png" />
+    <Content Include="Resources\player_pause.png" />
+    <Content Include="Resources\player_play.png" />
+    <Content Include="Resources\report.jpg" />
+    <Content Include="Reports\Templates\Bao_Cao_L5B_8.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Templates\F300_BaoCaoNghiemThuContact.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Templates\F310_BaoCaoThuHoiContact.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Templates\F350_BaoCaoTrungContact.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Templates\TIC100_Template_Import_20131008.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\status.jpg" />
+    <None Include="Resources\telephone.png" />
+    <Content Include="Resources\users.ico" />
+    <Content Include="Resources\user_group.png" />
+    <Content Include="UserMsg.xml" />
+    <None Include="Web References\SCMServices\SyncData.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPBusinessService\IPBusinessService.vbproj">
+      <Project>{73CA732C-2CFB-4A14-B0B9-F43763B1C2F3}</Project>
+      <Name>IPBusinessService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCOREDS\IPCOREDS.csproj">
+      <Project>{39DC1A18-A725-4DF1-93CE-467C130CEEF9}</Project>
+      <Name>IPCOREDS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCOREUS\IPCOREUS.csproj">
+      <Project>{A6E36F4B-6825-44A8-9396-C5BBD8630CB0}</Project>
+      <Name>IPCOREUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPData\IPData.vbproj">
+      <Project>{9ACEDD70-FDA2-44D8-A004-3A7EAF86A954}</Project>
+      <Name>IPData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPExcelReport\IPExcelReport.vbproj">
+      <Project>{957C06D0-FF42-4C7A-B5E8-7E15C1522B59}</Project>
+      <Name>IPExcelReport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPException\IPException.vbproj">
+      <Project>{B73156C2-7034-4DEA-A308-5E1782FF8DB4}</Project>
+      <Name>IPException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPSystemAdmin\IPSystemAdmin.vbproj">
+      <Project>{455CD3A5-79BA-480A-B9BD-D4A7DDA397A8}</Project>
+      <Name>IPSystemAdmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPUserService\IPUserService.vbproj">
+      <Project>{B490EA92-2990-4CBB-B58B-12901AFCCCB5}</Project>
+      <Name>IPUserService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://203.162.121.70:8080/TPCDialOut2/services/CallCenter%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSCallCenter\</RelPath>
+      <UpdateFromURL>http://203.162.121.70:8080/TPCDialOut2/services/CallCenter%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>TOSApp_WSCallCenter_CallCenterService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://210.245.89.37:88/SyncData.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SCMServices\</RelPath>
+      <UpdateFromURL>http://210.245.89.37:88/SyncData.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>TICApp_SCMServices_SyncData</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="bin\Debug\NumOfMessage.XML">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="bin\Debug\Reports\Output\Readme.txt">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="bin\Debug\Reports\Templates\Readme.txt">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="bin\Debug\UserMsg.xml">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="NumOfMessage.XML">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="UserMsg.xml">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

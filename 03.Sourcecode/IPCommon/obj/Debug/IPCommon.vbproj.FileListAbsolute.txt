@@ -1,0 +1,407 @@
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\IPCommon.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\IPCommon.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\IPCommon.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\C1.Common.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IPCommon.vbprojResolveAssemblyReference.cache
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IPCommon.vbproj.GenerateResource.Cache
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IPCommon.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IPCommon.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\010. TCM\TCM\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.read.1632.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.read.1633.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.read.1631.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.read.1630.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.write.1632.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.write.1633.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource.write.1631.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IPCommon.vbproj.GenerateResource.Cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCommon\obj\Debug\IPCommon.vbprojResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\IPCommon.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\IPCommon.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\IPCommon.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\C1.Common.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Shared.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.pdb
+H:\DVMC\03.Sourcecode\IPCommon\bin\IPCommon.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\IPCommon.pdb
+H:\DVMC\03.Sourcecode\IPCommon\bin\IPCommon.xml
+H:\DVMC\03.Sourcecode\IPCommon\bin\C1.Common.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Shared.dll
+H:\DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.vbproj.GenerateResource.Cache
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.dll
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.pdb
+H:\DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.vbprojResolveAssemblyReference.cache
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\IPCommon.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\IPCommon.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\IPCommon.xml
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\C1.Common.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.Classic.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\C1.Win.C1FlexGrid.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.ReportSource.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Shared.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\bin\CrystalDecisions.Windows.Forms.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.vbproj.GenerateResource.Cache
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.dll
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml
+E:\BKI_DVMC\03.Sourcecode\IPCommon\obj\Debug\IPCommon.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton2.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlButton3.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.ctlClock.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgButtonYes_No_Cancel.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBtn_Yes_No.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.DataGrid_Custom.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.f370_REPORT_VIEW.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmEditText.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmIcons.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchDate.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchNumeric.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.frmSearchString.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_Yes_No.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxFormYes_No_Cancel.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IP.Core.IPCommon.MessageForms.MsgBoxForm_OK.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IPCommon.vbproj.GenerateResource.Cache
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCommon\obj\Debug\IPCommon.xml

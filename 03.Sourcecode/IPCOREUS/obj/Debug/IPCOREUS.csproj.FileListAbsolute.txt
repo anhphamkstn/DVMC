@@ -1,0 +1,195 @@
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\TCMDS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\SiSButton.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\TCMDS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\SiSButton.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREUS\obj\Debug\IPCOREUS.csprojResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\SiSButton.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Common.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREUS\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.Classic.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Shared.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\SiSButton.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Common.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.Classic.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Shared.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\SiSButton.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Common.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.ReportSource.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.xml
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.xml
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.xml
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.xml
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.xml
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.pdb
+H:\DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.xml
+H:\DVMC\03.Sourcecode\IPCOREUS\obj\Debug\IPCOREUS.csprojResolveAssemblyReference.cache
+H:\DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.dll
+H:\DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\BondUS.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Win.C1FlexGrid.Classic.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Shared.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\SiSButton.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\C1.Common.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCommon.xml
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPCOREDS.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPSystemAdmin.xml
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPUserService.xml
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPData.xml
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPException.xml
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\bin\Debug\IPBusinessService.xml
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\obj\Debug\IPCOREUS.csprojResolveAssemblyReference.cache
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREUS\obj\Debug\BondUS.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCOREUS\obj\Debug\IPCOREUS.csprojResolveAssemblyReference.cache

@@ -1,0 +1,39 @@
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREDS\bin\Debug\TCMDS.dll.config
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREDS\bin\Debug\TCMDS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREDS\bin\Debug\TCMDS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREDS\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREDS\obj\Debug\TCMDS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPCOREDS\obj\Debug\TCMDS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll.config
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll.config
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPCOREDS\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll.config
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREDS\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.pdb
+H:\DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll.config
+H:\DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll
+H:\DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.pdb
+H:\DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.dll
+H:\DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll.config
+E:\BKI_DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.dll
+E:\BKI_DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.pdb
+E:\BKI_DVMC\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.csprojResolveAssemblyReference.cache
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll.config
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCOREDS\bin\Debug\IPCOREDS.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPCOREDS\obj\Debug\IPCOREDS.pdb

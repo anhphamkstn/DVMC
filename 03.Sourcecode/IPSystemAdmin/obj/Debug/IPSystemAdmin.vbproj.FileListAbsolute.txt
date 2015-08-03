@@ -1,0 +1,457 @@
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\C1.Common.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPBusinessService.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPCommon.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPData.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPException.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPUserService.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\SiSButton.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\SiSMenu.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\CrystalDecisions.Shared.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\CrystalDecisions.Windows.Forms.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\CrystalDecisions.ReportSource.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPBusinessService.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPCommon.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPCommon.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPData.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPData.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPException.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPException.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPUserService.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\bin\IPUserService.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbprojResolveAssemblyReference.cache
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbproj.GenerateResource.Cache
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\010. TCM\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.Resources.resources
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbprojResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbproj.GenerateResource.Cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Common.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSButton.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSMenu.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Shared.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Windows.Forms.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.ReportSource.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.Resources.resources
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Common.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSButton.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSMenu.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Shared.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Windows.Forms.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.ReportSource.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.Resources.resources
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\GenerateResource-ResGen.write.4.tlog
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Common.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSButton.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSMenu.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Shared.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Windows.Forms.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.ReportSource.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.pdb
+H:\DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbprojResolveAssemblyReference.cache
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.Resources.resources
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbproj.GenerateResource.Cache
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+H:\DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPSystemAdmin.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Common.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.Classic.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\C1.Win.C1FlexGrid.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSButton.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\SiSMenu.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Shared.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.Windows.Forms.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.CrystalReports.Engine.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\CrystalDecisions.ReportSource.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPBusinessService.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPCommon.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPData.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPException.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.pdb
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\bin\IPUserService.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbprojResolveAssemblyReference.cache
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.Resources.resources
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbproj.GenerateResource.Cache
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml
+E:\BKI_DVMC\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f100_TuDien.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f101_Dang_Nhap.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f102_TuDien_DE.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.f996_license.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IP.Core.IPSystemAdmin.Resources.resources
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.vbproj.GenerateResource.Cache
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.dll.licenses
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPSystemAdmin\obj\Debug\IPSystemAdmin.xml

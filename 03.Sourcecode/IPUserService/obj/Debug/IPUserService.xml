@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IPUserService
+</name>
+</assembly>
+<members>
+<member name="M:IP.Core.IPUserService.US_CM_DM_TU_DIEN.fill_tu_dien_by_procedure(System.String,System.String,IP.Core.IPData.DS_CM_DM_TU_DIEN)">
+	<summary>
+ Hàm này thực hiện việc load từ điển by loại từ điển theo procedure
+ </summary>
+	<param name="i_strProcedure">Tên của procedure</param>
+	<param name="i_strField">Mã trường</param>
+	<param name="i_ds_tu_dien"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

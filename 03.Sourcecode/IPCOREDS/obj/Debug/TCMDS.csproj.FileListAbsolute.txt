@@ -1,0 +1,6 @@
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\TCMDS\bin\Debug\TCMDS.dll.config
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\TCMDS\bin\Debug\TCMDS.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\TCMDS\bin\Debug\TCMDS.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\TCMDS\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\TCMDS\obj\Debug\TCMDS.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\TCMDS\obj\Debug\TCMDS.pdb

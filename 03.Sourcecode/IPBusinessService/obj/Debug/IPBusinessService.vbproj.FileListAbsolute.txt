@@ -1,0 +1,130 @@
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\bin\IPBusinessService.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\bin\IPBusinessService.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\bin\IPBusinessService.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\bin\IPException.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\bin\IPException.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\bin\IPException.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\obj\Debug\IPBusinessService.vbprojResolveAssemblyReference.cache
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\010. TCM\TCM\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.vbprojResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\bin\IPException.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\bin\IPException.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\bin\IPException.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\bin\IPException.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+H:\DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+H:\DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+H:\DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+H:\DVMC\03.Sourcecode\IPBusinessService\bin\IPException.dll
+H:\DVMC\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+H:\DVMC\03.Sourcecode\IPBusinessService\bin\IPException.xml
+H:\DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.vbprojResolveAssemblyReference.cache
+H:\DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+H:\DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+H:\DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\bin\IPException.dll
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\bin\IPException.xml
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.vbprojResolveAssemblyReference.cache
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+E:\BKI_DVMC\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\bin\IPBusinessService.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\bin\IPBusinessService.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\bin\IPBusinessService.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\bin\IPException.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\bin\IPException.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\bin\IPException.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.vbprojResolveAssemblyReference.cache
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPBusinessService\obj\Debug\IPBusinessService.pdb

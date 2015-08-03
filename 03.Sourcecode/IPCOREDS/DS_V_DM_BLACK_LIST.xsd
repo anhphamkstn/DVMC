@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_V_DM_BLACK_LIST" targetNamespace="http://tempuri.org/DS_V_DM_BLACK_LIST.xsd" xmlns:mstns="http://tempuri.org/DS_V_DM_BLACK_LIST.xsd" xmlns="http://tempuri.org/DS_V_DM_BLACK_LIST.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TOS_TicketSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TOS_TicketSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IPCOREDS.Properties.Settings.GlobalReference.Default.TOS_TicketSystemConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TOS_TicketSystemConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TOS_TicketSystemConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IPCOREDS.Properties.Settings.GlobalReference.Default.TOS_TicketSystemConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_DM_BLACK_LISTTableAdapter" GeneratorDataComponentClassName="V_DM_BLACK_LISTTableAdapter" Name="V_DM_BLACK_LIST" UserDataComponentName="V_DM_BLACK_LISTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TOS_TicketSystemConnectionString1 (Settings)" DbObjectName="TOS_TicketSystem.dbo.V_DM_BLACK_LIST" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, SO_DIEN_THOAI, ID_NGUOI_ADD, ID_NGUOI_REMOVE, NGAY_ADD, NGAY_REMOVE, ADD_YN, HO_TEN_CHU_DIEN_THOAI, GHI_CHU_LY_DO, ACCOUNT_NGUOI_ADD, TEN_NGUOI_ADD, ACCOUNT_NGUOI_REMOVE, TEN_NGUOI_REMOVE FROM dbo.V_DM_BLACK_LIST</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="SO_DIEN_THOAI" DataSetColumn="SO_DIEN_THOAI" />
+              <Mapping SourceColumn="ID_NGUOI_ADD" DataSetColumn="ID_NGUOI_ADD" />
+              <Mapping SourceColumn="ID_NGUOI_REMOVE" DataSetColumn="ID_NGUOI_REMOVE" />
+              <Mapping SourceColumn="NGAY_ADD" DataSetColumn="NGAY_ADD" />
+              <Mapping SourceColumn="NGAY_REMOVE" DataSetColumn="NGAY_REMOVE" />
+              <Mapping SourceColumn="ADD_YN" DataSetColumn="ADD_YN" />
+              <Mapping SourceColumn="HO_TEN_CHU_DIEN_THOAI" DataSetColumn="HO_TEN_CHU_DIEN_THOAI" />
+              <Mapping SourceColumn="GHI_CHU_LY_DO" DataSetColumn="GHI_CHU_LY_DO" />
+              <Mapping SourceColumn="ACCOUNT_NGUOI_ADD" DataSetColumn="ACCOUNT_NGUOI_ADD" />
+              <Mapping SourceColumn="TEN_NGUOI_ADD" DataSetColumn="TEN_NGUOI_ADD" />
+              <Mapping SourceColumn="ACCOUNT_NGUOI_REMOVE" DataSetColumn="ACCOUNT_NGUOI_REMOVE" />
+              <Mapping SourceColumn="TEN_NGUOI_REMOVE" DataSetColumn="TEN_NGUOI_REMOVE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_V_DM_BLACK_LIST" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_V_DM_BLACK_LIST" msprop:Generator_UserDSName="DS_V_DM_BLACK_LIST">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_DM_BLACK_LIST" msprop:Generator_TableClassName="V_DM_BLACK_LISTDataTable" msprop:Generator_TableVarName="tableV_DM_BLACK_LIST" msprop:Generator_TablePropName="V_DM_BLACK_LIST" msprop:Generator_RowDeletingName="V_DM_BLACK_LISTRowDeleting" msprop:Generator_UserTableName="V_DM_BLACK_LIST" msprop:Generator_RowChangingName="V_DM_BLACK_LISTRowChanging" msprop:Generator_RowEvHandlerName="V_DM_BLACK_LISTRowChangeEventHandler" msprop:Generator_RowDeletedName="V_DM_BLACK_LISTRowDeleted" msprop:Generator_RowEvArgName="V_DM_BLACK_LISTRowChangeEvent" msprop:Generator_RowChangedName="V_DM_BLACK_LISTRowChanged" msprop:Generator_RowClassName="V_DM_BLACK_LISTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:decimal" />
+              <xs:element name="SO_DIEN_THOAI" msprop:Generator_ColumnVarNameInTable="columnSO_DIEN_THOAI" msprop:Generator_ColumnPropNameInRow="SO_DIEN_THOAI" msprop:Generator_ColumnPropNameInTable="SO_DIEN_THOAIColumn" msprop:Generator_UserColumnName="SO_DIEN_THOAI">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_NGUOI_ADD" msprop:Generator_ColumnVarNameInTable="columnID_NGUOI_ADD" msprop:Generator_ColumnPropNameInRow="ID_NGUOI_ADD" msprop:Generator_ColumnPropNameInTable="ID_NGUOI_ADDColumn" msprop:Generator_UserColumnName="ID_NGUOI_ADD" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ID_NGUOI_REMOVE" msprop:Generator_ColumnVarNameInTable="columnID_NGUOI_REMOVE" msprop:Generator_ColumnPropNameInRow="ID_NGUOI_REMOVE" msprop:Generator_ColumnPropNameInTable="ID_NGUOI_REMOVEColumn" msprop:Generator_UserColumnName="ID_NGUOI_REMOVE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NGAY_ADD" msprop:Generator_ColumnVarNameInTable="columnNGAY_ADD" msprop:Generator_ColumnPropNameInRow="NGAY_ADD" msprop:Generator_ColumnPropNameInTable="NGAY_ADDColumn" msprop:Generator_UserColumnName="NGAY_ADD" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NGAY_REMOVE" msprop:Generator_ColumnVarNameInTable="columnNGAY_REMOVE" msprop:Generator_ColumnPropNameInRow="NGAY_REMOVE" msprop:Generator_ColumnPropNameInTable="NGAY_REMOVEColumn" msprop:Generator_UserColumnName="NGAY_REMOVE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ADD_YN" msprop:Generator_ColumnVarNameInTable="columnADD_YN" msprop:Generator_ColumnPropNameInRow="ADD_YN" msprop:Generator_ColumnPropNameInTable="ADD_YNColumn" msprop:Generator_UserColumnName="ADD_YN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HO_TEN_CHU_DIEN_THOAI" msprop:Generator_ColumnVarNameInTable="columnHO_TEN_CHU_DIEN_THOAI" msprop:Generator_ColumnPropNameInRow="HO_TEN_CHU_DIEN_THOAI" msprop:Generator_ColumnPropNameInTable="HO_TEN_CHU_DIEN_THOAIColumn" msprop:Generator_UserColumnName="HO_TEN_CHU_DIEN_THOAI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GHI_CHU_LY_DO" msprop:Generator_ColumnVarNameInTable="columnGHI_CHU_LY_DO" msprop:Generator_ColumnPropNameInRow="GHI_CHU_LY_DO" msprop:Generator_ColumnPropNameInTable="GHI_CHU_LY_DOColumn" msprop:Generator_UserColumnName="GHI_CHU_LY_DO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT_NGUOI_ADD" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_NGUOI_ADD" msprop:Generator_ColumnPropNameInRow="ACCOUNT_NGUOI_ADD" msprop:Generator_ColumnPropNameInTable="ACCOUNT_NGUOI_ADDColumn" msprop:Generator_UserColumnName="ACCOUNT_NGUOI_ADD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEN_NGUOI_ADD" msprop:Generator_ColumnVarNameInTable="columnTEN_NGUOI_ADD" msprop:Generator_ColumnPropNameInRow="TEN_NGUOI_ADD" msprop:Generator_ColumnPropNameInTable="TEN_NGUOI_ADDColumn" msprop:Generator_UserColumnName="TEN_NGUOI_ADD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT_NGUOI_REMOVE" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_NGUOI_REMOVE" msprop:Generator_ColumnPropNameInRow="ACCOUNT_NGUOI_REMOVE" msprop:Generator_ColumnPropNameInTable="ACCOUNT_NGUOI_REMOVEColumn" msprop:Generator_UserColumnName="ACCOUNT_NGUOI_REMOVE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TEN_NGUOI_REMOVE" msprop:Generator_ColumnVarNameInTable="columnTEN_NGUOI_REMOVE" msprop:Generator_ColumnPropNameInRow="TEN_NGUOI_REMOVE" msprop:Generator_ColumnPropNameInTable="TEN_NGUOI_REMOVEColumn" msprop:Generator_UserColumnName="TEN_NGUOI_REMOVE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_DM_BLACK_LIST" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

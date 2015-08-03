@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TOSApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TICApp_SCMServices_SyncData" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://210.245.89.37:88/SyncData.asmx</Value>
+    </Setting>
+    <Setting Name="TOSApp_WSCallCenter_CallCenterService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.10.252:8080/TPCDialOut2/services/CallCenter</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,86 @@
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPException\bin\IPException.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPException\bin\IPException.pdb
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPException\bin\IPException.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPException\obj\Debug\IPException.dll
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPException\obj\Debug\IPException.xml
+D:\01. BKIndex\01. Project\01. du an\01.2012.08.Trai phieu\VietTinBankSC\SourceCode\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\010. TCM\TCM\IPException\bin\IPException.dll
+D:\06. TOPICA\010. TCM\TCM\IPException\bin\IPException.pdb
+D:\06. TOPICA\010. TCM\TCM\IPException\bin\IPException.xml
+D:\06. TOPICA\010. TCM\TCM\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\TCM\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\010. TCM\TCM\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\010. TCM\TCM\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\bin\IPException.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\bin\IPException.pdb
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\bin\IPException.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\010. TCM\Checkout\TCM\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\bin\IPException.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\bin\IPException.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\03. TCM\Checkout\TCM\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\bin\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\bin\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\03.Sourcecode\TIC\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\bin\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\bin\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\11.Phan contact\SourceSVN\TIC\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\bin\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\bin\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\03.Sourcecode\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPException\bin\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPException\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPException\bin\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\19. Call center TOS\TOS_Ticket\03.Sourcecode\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\bin\IPException.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\bin\IPException.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\bin\IPException.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\obj\Debug\IPException.dll
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\obj\Debug\IPException.xml
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\obj\Debug\IPException.pdb
+D:\06. TOPICA\02. Projects\34. DVMC\03.Sourcecode\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\bin\IPException.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\bin\IPException.pdb
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\bin\IPException.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\obj\Debug\ResolveAssemblyReference.cache
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\obj\Debug\IPException.dll
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\obj\Debug\IPException.xml
+D:\06.TOPICA\02.Project\34.DVMC\03.Sourcecode\IPException\obj\Debug\IPException.pdb
+H:\DVMC\03.Sourcecode\IPException\bin\IPException.dll
+H:\DVMC\03.Sourcecode\IPException\bin\IPException.pdb
+H:\DVMC\03.Sourcecode\IPException\bin\IPException.xml
+H:\DVMC\03.Sourcecode\IPException\obj\Debug\IPException.dll
+H:\DVMC\03.Sourcecode\IPException\obj\Debug\IPException.xml
+H:\DVMC\03.Sourcecode\IPException\obj\Debug\IPException.pdb
+E:\BKI_DVMC\03.Sourcecode\IPException\bin\IPException.dll
+E:\BKI_DVMC\03.Sourcecode\IPException\bin\IPException.pdb
+E:\BKI_DVMC\03.Sourcecode\IPException\bin\IPException.xml
+E:\BKI_DVMC\03.Sourcecode\IPException\obj\Debug\IPException.dll
+E:\BKI_DVMC\03.Sourcecode\IPException\obj\Debug\IPException.xml
+E:\BKI_DVMC\03.Sourcecode\IPException\obj\Debug\IPException.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPException\bin\IPException.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPException\bin\IPException.pdb
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPException\bin\IPException.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPException\obj\Debug\IPException.dll
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPException\obj\Debug\IPException.xml
+C:\Users\DucVan\Documents\BKI_DVMC\trunk\03.Sourcecode\IPException\obj\Debug\IPException.pdb
