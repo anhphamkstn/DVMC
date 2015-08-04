@@ -4,7 +4,7 @@
 '* Goal: Create User Service Class for HT_NGUOI_SU_DUNG
 '************************************************
 
-Option Explicit On
+option Explicit On
 Option Strict On
 
 

@@ -751,6 +751,7 @@ namespace TOSApp
             v_dr[CM_DM_TU_DIEN.TEN] = "-- Tất cả --";
             v_ds_tu_dien.EnforceConstraints = false;
             v_ds_tu_dien.CM_DM_TU_DIEN.Rows.InsertAt(v_dr, 0);
+
             m_cbo_tho_han_xu_ly.DataSource = v_ds_tu_dien.CM_DM_TU_DIEN;
             m_cbo_tho_han_xu_ly.DisplayMember = CM_DM_TU_DIEN.TEN;
             m_cbo_tho_han_xu_ly.ValueMember = CM_DM_TU_DIEN.ID;
@@ -1110,8 +1111,6 @@ namespace TOSApp
 				CSystemLog_100.ExceptionHandle(v_e);
 			}
 		}
-
-        
 	}
 }
 

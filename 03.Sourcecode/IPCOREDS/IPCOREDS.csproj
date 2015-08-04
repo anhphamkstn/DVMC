@@ -180,11 +180,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DS_GD_DAT_HANG.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DS_GD_DAT_HANG.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DS_GD_XU_LY_NOI_BO.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -445,17 +440,6 @@
     </None>
     <None Include="DS_GD_CUOC_GOI_YEU_CAU.xss">
       <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
-    </None>
-    <None Include="DS_GD_DAT_HANG.xsc">
-      <DependentUpon>DS_GD_DAT_HANG.xsd</DependentUpon>
-    </None>
-    <None Include="DS_GD_DAT_HANG.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DS_GD_DAT_HANG.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DS_GD_DAT_HANG.xss">
-      <DependentUpon>DS_GD_DAT_HANG.xsd</DependentUpon>
     </None>
     <None Include="DS_GD_XU_LY_NOI_BO.xsc">
       <DependentUpon>DS_GD_XU_LY_NOI_BO.xsd</DependentUpon>

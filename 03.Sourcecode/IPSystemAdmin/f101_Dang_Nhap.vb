@@ -137,17 +137,17 @@ Public Class f101_Dang_Nhap
         'm_txtMatKhau
         '
         Me.m_txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.m_txtMatKhau.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.m_txtMatKhau.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.m_txtMatKhau.Location = New System.Drawing.Point(114, 76)
         Me.m_txtMatKhau.MaxLength = 12
         Me.m_txtMatKhau.Name = "m_txtMatKhau"
         Me.m_txtMatKhau.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.m_txtMatKhau.Size = New System.Drawing.Size(147, 20)
+        Me.m_txtMatKhau.Size = New System.Drawing.Size(117, 20)
         Me.m_txtMatKhau.TabIndex = 1
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.DarkRed
         Me.Label2.Location = New System.Drawing.Point(26, 76)
         Me.Label2.Name = "Label2"
@@ -158,7 +158,7 @@ Public Class f101_Dang_Nhap
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkRed
         Me.Label1.Location = New System.Drawing.Point(6, 41)
         Me.Label1.Name = "Label1"
@@ -170,7 +170,7 @@ Public Class f101_Dang_Nhap
         'm_txtTenTruyNhap
         '
         Me.m_txtTenTruyNhap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.m_txtTenTruyNhap.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.m_txtTenTruyNhap.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.m_txtTenTruyNhap.Location = New System.Drawing.Point(114, 41)
         Me.m_txtTenTruyNhap.MaxLength = 12
         Me.m_txtTenTruyNhap.Name = "m_txtTenTruyNhap"
@@ -224,7 +224,7 @@ Public Class f101_Dang_Nhap
         '
         'm_lbl_version_build
         '
-        Me.m_lbl_version_build.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.m_lbl_version_build.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.m_lbl_version_build.ForeColor = System.Drawing.Color.DarkRed
         Me.m_lbl_version_build.Location = New System.Drawing.Point(235, 9)
         Me.m_lbl_version_build.Name = "m_lbl_version_build"
@@ -243,7 +243,7 @@ Public Class f101_Dang_Nhap
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel2)
-        Me.Font = New System.Drawing.Font("Arial", 8.0!)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "f101_Dang_Nhap"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

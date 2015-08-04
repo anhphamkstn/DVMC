@@ -220,9 +220,6 @@
       <LastGenOutput>DS_LICENSESOFTWARE.Designer.vb</LastGenOutput>
     </Content>
     <None Include="app.config" />
-    <None Include="DS_CM_DM_LOAI_TD.xsc">
-      <DependentUpon>DS_CM_DM_LOAI_TD.xsd</DependentUpon>
-    </None>
     <None Include="DS_CM_DM_LOAI_TD.xsx">
       <DependentUpon>DS_CM_DM_LOAI_TD.xsd</DependentUpon>
     </None>
@@ -246,9 +243,6 @@
     <None Include="DS_DM_STATION.xss">
       <DependentUpon>DS_DM_STATION.xsd</DependentUpon>
     </None>
-    <None Include="DS_HT_NGAY_TRONG_TUAN.xsc">
-      <DependentUpon>DS_HT_NGAY_TRONG_TUAN.xsd</DependentUpon>
-    </None>
     <None Include="DS_HT_NGUOI_SU_DUNG.xsc">
       <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
     </None>
@@ -269,14 +263,8 @@
     <None Include="DS_HT_PHAN_QUYEN_DETAIL.xss">
       <DependentUpon>DS_HT_PHAN_QUYEN_DETAIL.xsd</DependentUpon>
     </None>
-    <None Include="DS_HT_THAM_SO_HE_THONG.xsc">
-      <DependentUpon>DS_HT_THAM_SO_HE_THONG.xsd</DependentUpon>
-    </None>
     <None Include="DS_HT_THAM_SO_HE_THONG.xsx">
       <DependentUpon>DS_HT_THAM_SO_HE_THONG.xsd</DependentUpon>
-    </None>
-    <None Include="DS_LICENSESOFTWARE.xsc">
-      <DependentUpon>DS_LICENSESOFTWARE.xsd</DependentUpon>
     </None>
     <None Include="DS_LICENSESOFTWARE.xsx">
       <DependentUpon>DS_LICENSESOFTWARE.xsd</DependentUpon>

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TOSApp</RootNamespace>
     <AssemblyName>DVMC</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <PublishUrl>H:\DVMC\Publish\</PublishUrl>
@@ -34,7 +34,6 @@
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -85,12 +84,6 @@
     </Reference>
     <Reference Include="C1.Win.C1Input">
       <HintPath>..\DLL\C1.Win.C1Input.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v14.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraGrid.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="Interop.Excel">
       <HintPath>..\DLL\Interop.Excel.dll</HintPath>
@@ -171,12 +164,6 @@
     <Compile Include="ChucNang\f200_ds_dat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChucNang\f200_ds_dat_hang_new.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f200_ds_dat_hang_new.Designer.cs">
-      <DependentUpon>f200_ds_dat_hang_new.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChucNang\f225_tim_kiem_cau_hoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,12 +224,6 @@
     <Compile Include="DanhMuc\f501_dm_nguoi_dai_dien.Designer.cs">
       <DependentUpon>f501_dm_nguoi_dai_dien.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="f002_main_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,7 +277,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="WinFormControls.cs" />
     <EmbeddedResource Include="BaoCao\f661_bao_cao_log_he_thong.resx">
       <DependentUpon>f661_bao_cao_log_he_thong.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f200_ds_dat_hang.resx">
       <DependentUpon>f200_ds_dat_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f200_ds_dat_hang_new.resx">
-      <DependentUpon>f200_ds_dat_hang_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f225_tim_kiem_cau_hoi.resx">
       <DependentUpon>f225_tim_kiem_cau_hoi.cs</DependentUpon>
@@ -359,9 +336,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f501_dm_nguoi_dai_dien.resx">
       <DependentUpon>f501_dm_nguoi_dai_dien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="f002_main_form.resx">
       <DependentUpon>f002_main_form.cs</DependentUpon>

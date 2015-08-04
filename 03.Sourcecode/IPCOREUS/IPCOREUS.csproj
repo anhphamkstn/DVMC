@@ -138,7 +138,6 @@
     <Compile Include="US_DOC_TABLE_COMMENT.cs" />
     <Compile Include="US_GD_CAU_HOI_HOC_VIEN.cs" />
     <Compile Include="US_GD_CUOC_GOI_YEU_CAU.cs" />
-    <Compile Include="US_GD_DAT_HANG.cs" />
     <Compile Include="US_GD_XU_LY_NOI_BO.cs" />
     <Compile Include="US_HT_BACKUP_HISTORY.cs" />
     <Compile Include="US_HT_BUSINESS_PROCESS_LOCK.cs" />

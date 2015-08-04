@@ -819,10 +819,5 @@ namespace TOSApp.ChucNang
             }
         }
         #endregion
-
-        internal void Insert_form()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

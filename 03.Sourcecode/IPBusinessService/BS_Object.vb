@@ -84,7 +84,6 @@ Public Class BS_Object
             Dim v_cn As SqlClient.SqlConnection = CProvider.getConnection
             ' Tạo ra adapter
             v_da.SelectCommand = i_SelectCmd
-
             v_da.SelectCommand.Connection = v_cn
         Else
             v_da.SelectCommand = i_SelectCmd

@@ -10,7 +10,6 @@ using IP.Core.IPUserService;
 using System.Threading;
 using TOSApp.App_Code;
 using IPCOREDS.CDBNames;
-using TOSApp.ChucNang;
 
 namespace TOSApp
 {
@@ -31,52 +30,48 @@ namespace TOSApp
             try
             {
 
-                //IP.Core.IPSystemAdmin.f101_Dang_Nhap v_frm_login_form = new f101_Dang_Nhap();
-                //US_HT_NGUOI_SU_DUNG v_us_user = new US_HT_NGUOI_SU_DUNG();
-                //CLoginInformation_302 v_obj_login_info = new CLoginInformation_302(v_us_user);
-                //DialogResult v_login_result = DialogResult.Cancel;
-                //bool v_UserWant2ExitFromSystem = false;
-                //IPConstants.HowUserWantTo_Exit_MainForm v_exitmode = IPConstants.HowUserWantTo_Exit_MainForm.ExitFromSystem;
-                //// Login lan 1
-                //v_frm_login_form.displayLogin(ref v_obj_login_info, ref v_login_result);
-                //if (v_login_result == DialogResult.Cancel)
-                //{
-                //    v_frm_login_form.Dispose();
-                //    v_frm_login_form.Close();
-                //    return;
-                //}
-                //v_frm_login_form.Dispose();
-                //while (!v_UserWant2ExitFromSystem)
-                //{
-                //    CAppContext_201.InitializeContext(v_obj_login_info);
-                //    CAppContext_201.LoadDecentralizationByUserLogin();
-                //    f002_main_form v_frm_main = new f002_main_form();
-                //    //f002_main_form v_frm_main = new f002_main_form();
-                //    v_frm_main.display(ref v_exitmode);
-                //    v_frm_main.Dispose();
-                //    // sau main form hiện thì login hoặc thóat
-                //    switch (v_exitmode)
-                //    {
-                //        case IPConstants.HowUserWantTo_Exit_MainForm.ExitFromSystem:
-                //            HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.DANG_XUAT, "Đăng xuất", "", "");
-                //            v_UserWant2ExitFromSystem = true;
-                //            break;
-                //        case IPConstants.HowUserWantTo_Exit_MainForm.Login_As_DifferentUser:
-                //            // vào bằng user khác ( hoặc nhóm khác)
-                //            v_frm_login_form = new f101_Dang_Nhap();
-                //            v_frm_login_form.displayLogin(ref v_obj_login_info, ref v_login_result);
-                //            v_frm_login_form.Dispose();
-                //            break;
-                //        default:
-                //            // should never happens
-                //            Debug.Assert(false);
-                //            break;
-                //    }
-                //}
-                TOSApp.DanhMuc.Form1 v_f1 = new DanhMuc.Form1();
-                //form1 v_f200 = new f200_ds_dat_hang_new();
-                v_f1.ShowDialog();
-
+                IP.Core.IPSystemAdmin.f101_Dang_Nhap v_frm_login_form = new f101_Dang_Nhap();
+                US_HT_NGUOI_SU_DUNG v_us_user = new US_HT_NGUOI_SU_DUNG();
+                CLoginInformation_302 v_obj_login_info = new CLoginInformation_302(v_us_user);
+                DialogResult v_login_result = DialogResult.Cancel;
+                bool v_UserWant2ExitFromSystem = false;
+                IPConstants.HowUserWantTo_Exit_MainForm v_exitmode = IPConstants.HowUserWantTo_Exit_MainForm.ExitFromSystem;
+                // Login lan 1
+                v_frm_login_form.displayLogin(ref v_obj_login_info, ref v_login_result);
+                if (v_login_result == DialogResult.Cancel)
+                {
+                    v_frm_login_form.Dispose();
+                    v_frm_login_form.Close();
+                    return;
+                }
+                v_frm_login_form.Dispose();
+                while (!v_UserWant2ExitFromSystem)
+                {
+                    CAppContext_201.InitializeContext(v_obj_login_info);
+                    CAppContext_201.LoadDecentralizationByUserLogin();		
+                    f002_main_form v_frm_main = new f002_main_form();
+                    //f002_main_form v_frm_main = new f002_main_form();
+                    v_frm_main.display(ref v_exitmode);
+                    v_frm_main.Dispose();
+                    // sau main form hiện thì login hoặc thóat
+                    switch (v_exitmode)
+                    {
+                        case IPConstants.HowUserWantTo_Exit_MainForm.ExitFromSystem:
+                            HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.DANG_XUAT, "Đăng xuất", "", "");
+                            v_UserWant2ExitFromSystem = true;
+                            break;
+                        case IPConstants.HowUserWantTo_Exit_MainForm.Login_As_DifferentUser:
+                            // vào bằng user khác ( hoặc nhóm khác)
+                            v_frm_login_form = new f101_Dang_Nhap();
+                            v_frm_login_form.displayLogin(ref v_obj_login_info, ref v_login_result);
+                            v_frm_login_form.Dispose();
+                            break;
+                        default:
+                            // should never happens
+                            Debug.Assert(false);
+                            break;
+                    }
+                }
             }
             catch (Exception v_e)
             {
