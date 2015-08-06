@@ -86,6 +86,27 @@
     <Reference Include="C1.Win.C1Input">
       <HintPath>..\DLL\C1.Win.C1Input.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.Data.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.Utils.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraEditors.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraLayout.v14.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.Excel">
       <HintPath>..\DLL\Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -141,9 +162,6 @@
     <Compile Include="App_Code\CSocketServer.cs" />
     <Compile Include="App_Code\CSystemLog_100.cs" />
     <Compile Include="App_Code\HelpUtils.cs" />
-    <Compile Include="BaoCao\f661_bao_cao_log_he_thong.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ChucNang\f100_dat_hang_moi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +282,24 @@
     <Compile Include="HeThong\f997_ht_nhom_quyen_de.Designer.cs">
       <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </Compile>
+    <Compile Include="main_01_bo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_01_bo.Designer.cs">
+      <DependentUpon>main_01_bo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_02_FO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_02_FO.designer.cs">
+      <DependentUpon>main_02_FO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_03_PM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_03_PM.designer.cs">
+      <DependentUpon>main_03_PM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.cs">
       <DependentUpon>DS_V_DM_DIEM_HOC_VIEN.xsd</DependentUpon>
@@ -278,9 +314,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BaoCao\f661_bao_cao_log_he_thong.resx">
-      <DependentUpon>f661_bao_cao_log_he_thong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f100_dat_hang_moi.resx">
       <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,6 +402,15 @@
       <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="main_01_bo.resx">
+      <DependentUpon>main_01_bo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_02_FO.resx">
+      <DependentUpon>main_02_FO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_03_PM.resx">
+      <DependentUpon>main_03_PM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -421,6 +463,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BaoCao\" />
     <Folder Include="bin\Release\" />
     <Folder Include="Logs\" />
   </ItemGroup>
@@ -653,6 +696,9 @@
       <IncludeHash>True</IncludeHash>
       <FileType>File</FileType>
     </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
