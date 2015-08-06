@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <PublishUrlHistory>H:\DVMC\Publish\|H:\DVMC\|D:\06. TOPICA\02. Projects\34. DVMC\Publish\|C:\inetpub\wwwroot\DVMC\|C:\inetpub\wwwroot\TOS\</PublishUrlHistory>
+    <InstallUrlHistory>http://42.112.28.4:85/DVMC/|http://210.245.89.37:85/DVMC/|http://210.245.89.37:85/TOSTicket/|http://210.245.89.37:85/TIC/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>
