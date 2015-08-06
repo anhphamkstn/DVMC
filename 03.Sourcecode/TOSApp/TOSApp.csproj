@@ -222,6 +222,12 @@
     <Compile Include="ChucNang\f430_quan_ly_blacklist.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChucNang\f500_cong_viec_FO_chi_tiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f500_cong_viec_FO_chi_tiet.Designer.cs">
+      <DependentUpon>f500_cong_viec_FO_chi_tiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc\f110_dm_cau_hoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,17 +288,17 @@
     <Compile Include="HeThong\f997_ht_nhom_quyen_de.Designer.cs">
       <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </Compile>
-    <Compile Include="main_01_bo.cs">
+    <Compile Include="main_01_FO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_01_bo.Designer.cs">
-      <DependentUpon>main_01_bo.cs</DependentUpon>
+    <Compile Include="main_01_FO.Designer.cs">
+      <DependentUpon>main_01_FO.cs</DependentUpon>
     </Compile>
-    <Compile Include="main_02_FO.cs">
+    <Compile Include="main_02_BO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_02_FO.designer.cs">
-      <DependentUpon>main_02_FO.cs</DependentUpon>
+    <Compile Include="main_02_BO.designer.cs">
+      <DependentUpon>main_02_BO.cs</DependentUpon>
     </Compile>
     <Compile Include="main_03_PM.cs">
       <SubType>Form</SubType>
@@ -356,6 +362,9 @@
     <EmbeddedResource Include="ChucNang\f430_quan_ly_blacklist.resx">
       <DependentUpon>f430_quan_ly_blacklist.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f500_cong_viec_FO_chi_tiet.resx">
+      <DependentUpon>f500_cong_viec_FO_chi_tiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f110_dm_cau_hoi.resx">
       <DependentUpon>f110_dm_cau_hoi.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,11 +411,11 @@
       <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenses.licx" />
-    <EmbeddedResource Include="main_01_bo.resx">
-      <DependentUpon>main_01_bo.cs</DependentUpon>
+    <EmbeddedResource Include="main_01_FO.resx">
+      <DependentUpon>main_01_FO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="main_02_FO.resx">
-      <DependentUpon>main_02_FO.cs</DependentUpon>
+    <EmbeddedResource Include="main_02_BO.resx">
+      <DependentUpon>main_02_BO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main_03_PM.resx">
       <DependentUpon>main_03_PM.cs</DependentUpon>

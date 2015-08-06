@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TOSApp
 {
-    public partial class main_01_bo : Form
+    public partial class main_02_BO : Form
     {
-        public main_01_bo()
+        public main_02_BO()
         {
             InitializeComponent();
         }

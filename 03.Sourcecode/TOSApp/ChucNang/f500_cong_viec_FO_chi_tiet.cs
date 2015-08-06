@@ -5,16 +5,17 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TOSApp
+namespace TOSApp.ChucNang
 {
-    public partial class main_02_FO : Form
+    public partial class f500_cong_viec_FO_chi_tiet : Form
     {
-        public main_02_FO()
+        public f500_cong_viec_FO_chi_tiet()
         {
             InitializeComponent();
         }
+
+       
     }
 }
