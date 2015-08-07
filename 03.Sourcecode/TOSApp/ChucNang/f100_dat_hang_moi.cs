@@ -99,7 +99,7 @@ namespace TOSApp.ChucNang
             load_data_2_cbo_loai_dich_vu();
             m_dat_thoi_gian_dat_hang.Value = DateTime.Now;
             m_cbo_nguoi_xu_ly_don_hang.SelectedIndex = 0;
-            m_txt_nguoi_dat_hang.AutoCompleteCustomSource = load_thong_tin_nguoi_dat_hang();
+            m_txt_user_nhan_vien_dat_hang.AutoCompleteCustomSource = load_thong_tin_nguoi_dat_hang();
             switch (m_e_fome_mode)
             {
                 case e_form_mode.INSERT_FROM_MAIN_FORM:
@@ -341,9 +341,9 @@ namespace TOSApp.ChucNang
             m_us_v_gd_dat_hang.strMA_DON_HANG = m_txt_ma_don_hang.Text;
 
             // Thông tin ngừời đặt hàng
-            m_us_v_gd_dat_hang.strUSER_NV_DAT_HANG = m_txt_nguoi_dat_hang.Text.Trim();
+            m_us_v_gd_dat_hang.strUSER_NV_DAT_HANG = m_txt_user_nhan_vien_dat_hang.Text.Trim();
             m_us_v_gd_dat_hang.strDIEN_THOAI = m_txt_dien_thoai.Text.Trim();
-            m_us_v_gd_dat_hang.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten.Text.Trim();
+            m_us_v_gd_dat_hang.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten_nguoi_dat_hang.Text.Trim();
             m_us_v_gd_dat_hang.dcID_DON_VI = CIPConvert.ToDecimal(m_cbo_dv_don_vi.SelectedValue);
             m_us_v_gd_dat_hang.datTHOI_GIAN_DAT_HANG = m_dat_thoi_gian_dat_hang.Value;
 
@@ -375,9 +375,9 @@ namespace TOSApp.ChucNang
             m_txt_ma_don_hang.Text = m_us_v_gd_dat_hang.strMA_DON_HANG;
 
             // Thông tin ngừời đặt hàng
-            m_txt_nguoi_dat_hang.Text = m_us_v_gd_dat_hang.strUSER_NV_DAT_HANG;
+            m_txt_user_nhan_vien_dat_hang.Text = m_us_v_gd_dat_hang.strUSER_NV_DAT_HANG;
             m_txt_dien_thoai.Text = m_us_v_gd_dat_hang.strDIEN_THOAI;
-            m_txt_ho_ten.Text = m_us_v_gd_dat_hang.strHO_TEN_USER_DAT_HANG;
+            m_txt_ho_ten_nguoi_dat_hang.Text = m_us_v_gd_dat_hang.strHO_TEN_USER_DAT_HANG;
             m_cbo_dv_don_vi.SelectedValue = m_us_v_gd_dat_hang.dcID_DON_VI;
             m_dat_thoi_gian_dat_hang.Value= m_us_v_gd_dat_hang.datTHOI_GIAN_DAT_HANG;
 
@@ -465,7 +465,7 @@ namespace TOSApp.ChucNang
         }
         private bool is_validate_data()
         {
-            if (!CValidateTextBox.IsValid(m_txt_nguoi_dat_hang, DataType.StringType, allowNull.NO, true)) return false;
+            if (!CValidateTextBox.IsValid(m_txt_user_nhan_vien_dat_hang, DataType.StringType, allowNull.NO, true)) return false;
             if (!CValidateTextBox.IsValid(m_txt_yeu_cau_cu_the, DataType.StringType, allowNull.NO, true)) return false;
             if (m_cbo_dv_don_vi.SelectedIndex == 0)
             {
@@ -511,9 +511,9 @@ namespace TOSApp.ChucNang
         private void reset_form()
         {
             m_txt_ma_don_hang.Text = get_ma_don_hang_moi();
-            m_txt_nguoi_dat_hang.Text = "";
-            m_txt_nguoi_dat_hang.Focus();
-            m_txt_ho_ten.Text = "";
+            m_txt_user_nhan_vien_dat_hang.Text = "";
+            m_txt_user_nhan_vien_dat_hang.Focus();
+            m_txt_ho_ten_nguoi_dat_hang.Text = "";
             m_cbo_dv_don_vi.SelectedIndex = 0;
             m_txt_dien_thoai.Text = "";
             m_dat_thoi_gian_dat_hang.Value = DateTime.Now;
@@ -526,7 +526,7 @@ namespace TOSApp.ChucNang
         }
         private void load_thong_tin_nguoi_dat_hang_by_user()
         {
-            string v_str_user_nv_dat_hang = m_txt_nguoi_dat_hang.Text.Trim();
+            string v_str_user_nv_dat_hang = m_txt_user_nhan_vien_dat_hang.Text.Trim();
             US_DM_NGUOI_DAT_HANG v_us_dm_ng_dat_hang = new US_DM_NGUOI_DAT_HANG();
             DS_DM_NGUOI_DAT_HANG v_ds_dm_ng_dat_hang = new DS_DM_NGUOI_DAT_HANG();
             v_us_dm_ng_dat_hang.FillDataset(v_ds_dm_ng_dat_hang, " WHERE " + DM_NGUOI_DAT_HANG.USER_TOPICA + " = '" + v_str_user_nv_dat_hang + "'");
@@ -535,7 +535,7 @@ namespace TOSApp.ChucNang
             {
                 if (v_ds_dm_ng_dat_hang.DM_NGUOI_DAT_HANG.Rows[0][DM_NGUOI_DAT_HANG.SO_DIEN_THOAI]!= null)
                     m_txt_dien_thoai.Text = v_ds_dm_ng_dat_hang.DM_NGUOI_DAT_HANG.Rows[0][DM_NGUOI_DAT_HANG.SO_DIEN_THOAI].ToString();
-                m_txt_ho_ten.Text = v_ds_dm_ng_dat_hang.DM_NGUOI_DAT_HANG.Rows[0][DM_NGUOI_DAT_HANG.HO_TEN].ToString();
+                m_txt_ho_ten_nguoi_dat_hang.Text = v_ds_dm_ng_dat_hang.DM_NGUOI_DAT_HANG.Rows[0][DM_NGUOI_DAT_HANG.HO_TEN].ToString();
                 m_cbo_dv_don_vi.SelectedValue = v_ds_dm_ng_dat_hang.DM_NGUOI_DAT_HANG.Rows[0][DM_NGUOI_DAT_HANG.ID_DON_VI];
             }
         }
@@ -718,7 +718,7 @@ namespace TOSApp.ChucNang
             this.Load += new EventHandler(f100_dat_hang_moi_Load);
             this.m_cmd_luu.Click += new EventHandler(m_cmd_luu_Click);
             this.KeyDown += new KeyEventHandler(f100_dat_hang_moi_KeyDown);
-            m_txt_nguoi_dat_hang.Leave += new EventHandler(m_txt_nguoi_dat_hang_Leave);
+            m_txt_user_nhan_vien_dat_hang.Leave += new EventHandler(m_txt_nguoi_dat_hang_Leave);
             m_cbo_loai_dich_vu.SelectedIndexChanged += new EventHandler(m_cbo_loai_dich_vu_SelectedIndexChanged);
             m_chk_nhieu_nguoi_xu_ly_yn.CheckedChanged += new EventHandler(m_chk_nhieu_nguoi_xu_ly_yn_CheckedChanged);
         }
