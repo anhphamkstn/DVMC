@@ -10,6 +10,7 @@ using IP.Core.IPUserService;
 using System.Threading;
 using TOSApp.App_Code;
 using IPCOREDS.CDBNames;
+using TOSApp.ChucNang;
 
 namespace TOSApp
 {
@@ -79,17 +80,12 @@ namespace TOSApp
             //    CSystemLog_301.ExceptionHandle(v_e);
             //}
             #endregion
-            try
-            {
-                main_01_FO f_FO = new main_01_FO();
+            f100_don_dat_hang_new f_FO = new f100_don_dat_hang_new();
+               // f102_chon_danh_sach_nguoi_xu_ly_new f_FO = new f102_chon_danh_sach_nguoi_xu_ly_new();
+               // main_01_FO f_FO = new main_01_FO();
                 f_FO.ShowDialog();
 
-            }
-            catch (Exception v_e )
-            {
-
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
+           
         }		
 	}
 }

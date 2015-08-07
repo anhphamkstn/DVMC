@@ -172,11 +172,23 @@
     <Compile Include="ChucNang\f100_dat_hang_moi.Designer.cs">
       <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f100_don_dat_hang_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f100_don_dat_hang_new.Designer.cs">
+      <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.Designer.cs">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.Designer.cs">
+      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.cs</DependentUpon>
     </Compile>
     <Compile Include="ChucNang\f103_danh_gia_don_hang.cs">
       <SubType>Form</SubType>
@@ -328,8 +340,14 @@
     <EmbeddedResource Include="ChucNang\f100_dat_hang_moi.resx">
       <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f100_don_dat_hang_new.resx">
+      <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.resx">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.resx">
+      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f103_danh_gia_don_hang.resx">
       <DependentUpon>f103_danh_gia_don_hang.cs</DependentUpon>

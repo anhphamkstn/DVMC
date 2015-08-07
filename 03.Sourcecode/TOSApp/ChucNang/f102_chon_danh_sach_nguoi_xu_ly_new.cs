@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace TOSApp.ChucNang
 {
-    public partial class f500_cong_viec_FO_chi_tiet : Form
+    public partial class f102_chon_danh_sach_nguoi_xu_ly_new : Form
     {
-        public f500_cong_viec_FO_chi_tiet()
+        public f102_chon_danh_sach_nguoi_xu_ly_new()
         {
             InitializeComponent();
             load_data_2_grid();
@@ -19,20 +19,20 @@ namespace TOSApp.ChucNang
 
         private void load_data_2_grid()
         {
+          
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithTableName(v_ds, "V_GD_DANH_SACH_DAT_HANG_FO");
-            v_grc_FO_danh_sach_don_hang.DataSource = v_ds.Tables[0];
 
+            v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
+            m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
+
+        
         }
 
-        private void m_cmd_them_moi_don_hang_Click(object sender, EventArgs e)
+        private void m_cmd_exit_Click(object sender, EventArgs e)
         {
-            f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-            v_f100.ShowDialog();
+            this.Close();
         }
-
-       
     }
 }
