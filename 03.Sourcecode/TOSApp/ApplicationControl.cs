@@ -80,9 +80,9 @@ namespace TOSApp
             //    CSystemLog_301.ExceptionHandle(v_e);
             //}
             #endregion
-            f100_don_dat_hang_new f_FO = new f100_don_dat_hang_new();
-               // f102_chon_danh_sach_nguoi_xu_ly_new f_FO = new f102_chon_danh_sach_nguoi_xu_ly_new();
-               // main_01_FO f_FO = new main_01_FO();
+            try
+            {
+                f001_main_fo f_FO = new f001_main_fo();
                 f_FO.ShowDialog();
 
            

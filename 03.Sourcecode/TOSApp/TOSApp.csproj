@@ -86,15 +86,21 @@
     <Reference Include="C1.Win.C1Input">
       <HintPath>..\DLL\C1.Win.C1Input.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.Utils.v14.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.UI, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.1.Wizard, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraEditors.v14.1.dll</HintPath>
@@ -107,6 +113,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraLayout.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraPrinting.v14.1.dll</HintPath>
@@ -166,6 +173,18 @@
     <Compile Include="App_Code\CSocketServer.cs" />
     <Compile Include="App_Code\CSystemLog_100.cs" />
     <Compile Include="App_Code\HelpUtils.cs" />
+    <Compile Include="BaoCao\f500_BAO_CAO_DANH_GIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f500_BAO_CAO_DANH_GIA.Designer.cs">
+      <DependentUpon>f500_BAO_CAO_DANH_GIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\f510_BAO_CAO_TIEP_NHAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\f510_BAO_CAO_TIEP_NHAN.Designer.cs">
+      <DependentUpon>f510_BAO_CAO_TIEP_NHAN.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f100_dat_hang_moi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,11 +323,11 @@
     <Compile Include="HeThong\f997_ht_nhom_quyen_de.Designer.cs">
       <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </Compile>
-    <Compile Include="main_01_FO.cs">
+    <Compile Include="f001_main_fo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main_01_FO.Designer.cs">
-      <DependentUpon>main_01_FO.cs</DependentUpon>
+    <Compile Include="f001_main_fo.Designer.cs">
+      <DependentUpon>f001_main_fo.cs</DependentUpon>
     </Compile>
     <Compile Include="main_02_BO.cs">
       <SubType>Form</SubType>
@@ -337,6 +356,12 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="WinFormControls.cs" />
+    <EmbeddedResource Include="BaoCao\f500_BAO_CAO_DANH_GIA.resx">
+      <DependentUpon>f500_BAO_CAO_DANH_GIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\f510_BAO_CAO_TIEP_NHAN.resx">
+      <DependentUpon>f510_BAO_CAO_TIEP_NHAN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f100_dat_hang_moi.resx">
       <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
     </EmbeddedResource>
@@ -434,8 +459,8 @@
       <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenses.licx" />
-    <EmbeddedResource Include="main_01_FO.resx">
-      <DependentUpon>main_01_FO.cs</DependentUpon>
+    <EmbeddedResource Include="f001_main_fo.resx">
+      <DependentUpon>f001_main_fo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main_02_BO.resx">
       <DependentUpon>main_02_BO.cs</DependentUpon>
@@ -495,7 +520,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BaoCao\" />
     <Folder Include="bin\Release\" />
     <Folder Include="Logs\" />
   </ItemGroup>
