@@ -14,21 +14,21 @@ using TOSApp.ChucNang;
 
 namespace TOSApp
 {
-	#region Nhiệm vụ của Class
-	//*********************************************************************************
-	//*  Là khởi động và điều khiển dăng nhập mới vào  Hệ thống
-	//*  - hiện thị form login
-	//*  - nếu OK thì tạo context và hiện thị form main, User không muốn vào thì thoát ra
-	//*  - nếu trở lại từ main theo kiểu login mới thì lại hiện thị form login
-	//*  - nếu trở lại từ main theo kiểu "exit from system" thì thoát
-	//*********************************************************************************
-#endregion
-	public class ApplicationControl
-	{
+    #region Nhiệm vụ của Class
+    //*********************************************************************************
+    //*  Là khởi động và điều khiển dăng nhập mới vào  Hệ thống
+    //*  - hiện thị form login
+    //*  - nếu OK thì tạo context và hiện thị form main, User không muốn vào thì thoát ra
+    //*  - nếu trở lại từ main theo kiểu login mới thì lại hiện thị form login
+    //*  - nếu trở lại từ main theo kiểu "exit from system" thì thoát
+    //*********************************************************************************
+    #endregion
+    public class ApplicationControl
+    {
         [STAThread]
-		static void Main()
+        static void Main()
         {
-           #region bài cũ
+            #region bài cũ
             //try
             //{
 
@@ -84,8 +84,13 @@ namespace TOSApp
             {
                 f001_main_fo f_FO = new f001_main_fo();
                 f_FO.ShowDialog();
-
-           
-        }		
-	}
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+    }
 }
+    
+
