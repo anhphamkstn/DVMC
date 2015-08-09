@@ -118,6 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_cmd_tu_choi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rkJggg==
+</value>
+  </data>
   <data name="m_cmd_thoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -226,7 +266,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAO
-        HwAAAk1TRnQBSQFMAgEBFgEAAWwBAgFsAQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        HwAAAk1TRnQBSQFMAgEBFgEAAXQBAgF0AQIBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAWADAAEBAQABCAYAARgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA

@@ -94,9 +94,9 @@
             this.m_cmd_oke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_oke.ImageIndex = 13;
             this.m_cmd_oke.ImageList = this.ImageList;
-            this.m_cmd_oke.Location = new System.Drawing.Point(626, 4);
+            this.m_cmd_oke.Location = new System.Drawing.Point(634, 4);
             this.m_cmd_oke.Name = "m_cmd_oke";
-            this.m_cmd_oke.Size = new System.Drawing.Size(69, 28);
+            this.m_cmd_oke.Size = new System.Drawing.Size(61, 28);
             this.m_cmd_oke.TabIndex = 2;
             this.m_cmd_oke.Text = "OKE";
             this.m_cmd_oke.Click += new System.EventHandler(this.m_cmd_oke_Click);

@@ -100,6 +100,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us = m_us;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.Update();
         }

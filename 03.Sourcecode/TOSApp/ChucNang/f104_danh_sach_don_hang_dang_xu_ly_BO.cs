@@ -38,7 +38,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
         {
 
             DataRow v_dr = m_grv_danh_sach_don_hang_tiep_nhan_BO.GetDataRow(m_grv_danh_sach_don_hang_tiep_nhan_BO.FocusedRowHandle);
-            m_us = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_GD_DAT_HANG"].ToString()));
+            m_us = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
         }
         private void m_cmd_thoat_Click(object sender, EventArgs e)
         {
@@ -135,10 +135,11 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 177;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_GD_DAT_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_dc_nguoi_nhan_thao_tac;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = 69765;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = 69763;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "đã chuyển cho PM";
+            v_us.Insert();
         }
         //được thực hiện khi đơn hàng được hoàn thành
         private void m_cmd_bao_cao_da_xu_ly_Click(object sender, EventArgs e)
@@ -148,6 +149,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
                 fill_data_2_m_us();
                 ghi_log_da_xu_ly(m_us);
                 update_log_da_xu_ly(m_us);
+                MessageBox.Show("Hoàn thành!");
             }
             catch (Exception v_e)
             {
@@ -160,10 +162,11 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
 
         private void update_log_da_xu_ly(US_GD_LOG_DAT_HANG m_us)
         {
-              US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            // v_us.dcID = m_us.dcID;
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.Update();
+            //  US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            // v_us = m_us;
+            //v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            m_us.strTHAO_TAC_HET_HAN_YN= "Y";
+            m_us.Update();
         }
         #endregion
 

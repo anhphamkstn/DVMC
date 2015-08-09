@@ -199,6 +199,7 @@
             // 
             // m_cmd_tu_choi
             // 
+            this.m_cmd_tu_choi.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_tu_choi.Image")));
             this.m_cmd_tu_choi.Location = new System.Drawing.Point(686, 6);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
             this.m_cmd_tu_choi.Size = new System.Drawing.Size(117, 33);
@@ -219,9 +220,9 @@
             // m_cmd_xac_nhan_don_hang
             // 
             this.m_cmd_xac_nhan_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xac_nhan_don_hang.Image")));
-            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(539, 5);
+            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(538, 5);
             this.m_cmd_xac_nhan_don_hang.Name = "m_cmd_xac_nhan_don_hang";
-            this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(132, 32);
+            this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(132, 34);
             this.m_cmd_xac_nhan_don_hang.TabIndex = 35;
             this.m_cmd_xac_nhan_don_hang.Text = "Xác nhận đặt hàng";
             this.m_cmd_xac_nhan_don_hang.Click += new System.EventHandler(this.m_cmd_xac_nhan_don_hang_Click);

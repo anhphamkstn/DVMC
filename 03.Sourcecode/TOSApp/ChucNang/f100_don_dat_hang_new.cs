@@ -172,7 +172,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 173;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "tiep nhan";
