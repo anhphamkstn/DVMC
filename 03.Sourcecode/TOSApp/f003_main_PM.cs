@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TOSApp.ChucNang;
+using IP.Core.IPCommon;
 
 namespace TOSApp
 {
@@ -34,6 +36,27 @@ namespace TOSApp
         {
             TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA v_f = new TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA();
             v_f.ShowDialog();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+          
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                f113_danh_sach_can_phe_duyet_PM v_f = new f113_danh_sach_can_phe_duyet_PM();
+                v_f.MdiParent = this;
+                this.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+         
         }
     }
 }

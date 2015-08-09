@@ -41,6 +41,7 @@ namespace TOSApp
                 else if (m_txtTenTruyNhap.Text == "pm")
                 {
                     f003_main_PM v_f003 = new f003_main_PM();
+                    this.Visible = false;
                     v_f003.ShowDialog();
                     this.Close();
                 }
