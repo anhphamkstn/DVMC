@@ -63,6 +63,11 @@
             // 
             // pivotGridControl1
             // 
+            this.pivotGridControl1.Appearance.TotalCell.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.pivotGridControl1.Appearance.TotalCell.FontStyleDelta = System.Drawing.FontStyle.Bold;
+            this.pivotGridControl1.Appearance.TotalCell.ForeColor = System.Drawing.Color.Blue;
+            this.pivotGridControl1.Appearance.TotalCell.Options.UseFont = true;
+            this.pivotGridControl1.Appearance.TotalCell.Options.UseForeColor = true;
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
             this.pivotGridField1,
