@@ -22,7 +22,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
 
         US_GD_LOG_DAT_HANG m_us;
 
-        decimal m_dc_nguoi_nhan_thao_tac = 69766;
+        decimal m_dc_nguoi_nhan_thao_tac = 69761;
 
         private void load_data_2_grid()
         {
@@ -100,7 +100,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
         private void update_log_tiep_nhan_don_hang(US_GD_LOG_DAT_HANG m_us)
         {
 
-            m_us.strTHAO_TAC_HET_HAN_YN = "N";
+            m_us.strTHAO_TAC_HET_HAN_YN = "Y";
             m_us.dcID_NGUOI_NHAN_THAO_TAC = m_dc_nguoi_nhan_thao_tac;//fix cung nguoi nhan tao tac
             m_us.Update();
 
@@ -135,9 +135,9 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 177;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_GD_DAT_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_dc_nguoi_nhan_thao_tac;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = 69763;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = 69762;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "đã chuyển cho PM";
             v_us.Insert();
         }

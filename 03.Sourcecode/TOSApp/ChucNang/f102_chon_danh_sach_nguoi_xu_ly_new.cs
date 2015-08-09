@@ -61,5 +61,7 @@ namespace TOSApp.ChucNang
             DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
         }
+
+       
     }
 }
