@@ -12,9 +12,9 @@ using IPCOREUS;
 
 using IP.Core.IPCommon;namespace TOSApp.ChucNang
 {
-    public partial class f104_danh_sach_don_hang_tiep_nhan_BO : Form
+    public partial class f104_danh_sach_don_hang_dang_xu_ly_BO : Form
     {
-        public f104_danh_sach_don_hang_tiep_nhan_BO()
+        public f104_danh_sach_don_hang_dang_xu_ly_BO()
         {
             InitializeComponent();
             load_data_2_grid();
@@ -30,7 +30,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_GD_CAN_XU_LY");
-            m_cmd_xac_nhan_don_hang.DataSource = v_ds.Tables[0];
+            m_grc_xac_nhan_don_hang.DataSource = v_ds.Tables[0];
 
 
         }
@@ -64,7 +64,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
           
 
         }
-
+        #region tiep nhan don hang
         private void m_cmd_xac_nhan_Click(object sender, EventArgs e)
         {
             try
@@ -105,23 +105,67 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
             m_us.Update();
 
         }
+        #endregion
+        #region cap nhật đơn hàng
         //cập nhật đơn hàng sẽ cập nhật ghi chú cho đơn hàng
         private void m_cmd_cap_nhat_don_hang_Click(object sender, EventArgs e)
         {
-            f105_thay_doi_don_hang_BO v_f105 = new f105_thay_doi_don_hang_BO();
-            v_f105.displayForRefuse_order(m_us);
+            try
+            {
+                fill_data_2_m_us();
+                f105_thay_doi_don_hang_BO v_f105 = new f105_thay_doi_don_hang_BO();
+                v_f105.displayForRefuse_order(m_us);
+            }
+            catch (Exception v_e)
+            {
+                
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+          
             
 
         }
-        //ghi lai log cho hành động cập nhật đơn hàng về tiến độ , tình hình , bla bla vào ghi chú
 
-       
+        #endregion
+        #region đã xử lý
+        //ghi log đã xử lý đơn hàng xong và chuyển trạng thái đơn hàng thành hết hạn
+        private void ghi_log_da_xu_ly(US_GD_LOG_DAT_HANG m_us)
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 177;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_GD_DAT_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_dc_nguoi_nhan_thao_tac;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = 69765;
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "đã chuyển cho PM";
+        }
+        //được thực hiện khi đơn hàng được hoàn thành
+        private void m_cmd_bao_cao_da_xu_ly_Click(object sender, EventArgs e)
+        {
+            fill_data_2_m_us();
+            ghi_log_da_xu_ly(m_us);
+            update_log_da_xu_ly(m_us);
 
-       
-       
+        }
 
-     
-       
-        
+        private void update_log_da_xu_ly(US_GD_LOG_DAT_HANG m_us)
+        {
+              US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            // v_us.dcID = m_us.dcID;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.Update();
+        }
+        #endregion
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -12,9 +12,9 @@ using IP.Core.IPCommon;
 
 namespace TOSApp
 {
-    public partial class f001_main_fo : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class f001_main_FO : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public f001_main_fo()
+        public f001_main_FO()
         {
             InitializeComponent();
         }

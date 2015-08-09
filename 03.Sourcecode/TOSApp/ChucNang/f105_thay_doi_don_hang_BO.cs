@@ -40,11 +40,23 @@ namespace TOSApp.ChucNang
 
         private void m_cmd_gui_Click(object sender, EventArgs e)
         {
-            ghi_log_tu_choi_don_hang();
-            ghi_log_cap_nhat_don_hang(m_US);
-            this.Close();
-        }
+            try
+            {
+               
+                ghi_log_cap_nhat_don_hang(m_US);               
+                this.Close();
+            }
+            catch (Exception v_e)
+            {
 
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+           
+        }
+        /// <ghi log cập nhật đơn hàng>
+        /// ghi lại ghi chú của đơn hàng khi có sự thay đổi về tiến độ hoặc bất cứ điều gì từ người xử lý
+        /// </summary>
+        /// <param name="m_US"></param>
         private void ghi_log_cap_nhat_don_hang(US_GD_LOG_DAT_HANG m_US)
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
@@ -52,7 +64,10 @@ namespace TOSApp.ChucNang
             v_us.strGHI_CHU = m_txt_ghi_chu.Text;
             v_us.Update();
         }
-
+        /// <ghi log từ chối đơn hàng>
+        /// đơn hàng khi bị từ chối sẽ thay đổi trạng thái hết hạn từ N->Y
+        /// và sau đó ghi lại hành động vừa thay đổi trạng thái, hành động đó gọi là log từ chối đơn hàng
+        /// </summary>
         private void ghi_log_tu_choi_don_hang()
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
