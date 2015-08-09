@@ -32,7 +32,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_GD_CAN_XU_LY");
             m_grc_ds_don_hang_can_tiep_nhan.DataSource = v_ds.Tables[0];
-            m_grv_ds_don_hang_can_tiep_nhan.ActiveFilterString = "[ID_NGUOI_NHAN_THAO_TAC]= 69763";
+            m_grv_ds_don_hang_can_tiep_nhan.ActiveFilterString = "[ID_NGUOI_NHAN_THAO_TAC]= 69761";
            
             
         }

@@ -40,7 +40,6 @@
             this.NGUOI_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_cmd_bao_cao_da_xu_ly = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_cap_nhat_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tu_choi_don_hang = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -144,7 +143,6 @@
             // panelControl2
             // 
             this.panelControl2.Controls.Add(this.m_cmd_bao_cao_da_xu_ly);
-            this.panelControl2.Controls.Add(this.m_cmd_thoat);
             this.panelControl2.Controls.Add(this.m_cmd_cap_nhat_don_hang);
             this.panelControl2.Controls.Add(this.m_cmd_tu_choi_don_hang);
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -161,15 +159,6 @@
             this.m_cmd_bao_cao_da_xu_ly.TabIndex = 1;
             this.m_cmd_bao_cao_da_xu_ly.Text = "Báo cáo đã xử lý";
             this.m_cmd_bao_cao_da_xu_ly.Click += new System.EventHandler(this.m_cmd_bao_cao_da_xu_ly_Click);
-            // 
-            // m_cmd_thoat
-            // 
-            this.m_cmd_thoat.Location = new System.Drawing.Point(692, 13);
-            this.m_cmd_thoat.Name = "m_cmd_thoat";
-            this.m_cmd_thoat.Size = new System.Drawing.Size(75, 31);
-            this.m_cmd_thoat.TabIndex = 0;
-            this.m_cmd_thoat.Text = "Thoát(ESC)";
-            this.m_cmd_thoat.Click += new System.EventHandler(this.m_cmd_thoat_Click);
             // 
             // m_cmd_cap_nhat_don_hang
             // 
@@ -214,7 +203,6 @@
         private DevExpress.XtraGrid.GridControl m_grc_xac_nhan_don_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_danh_sach_don_hang_tiep_nhan_BO;
         private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
         private DevExpress.XtraEditors.SimpleButton m_cmd_cap_nhat_don_hang;
         private DevExpress.XtraEditors.SimpleButton m_cmd_tu_choi_don_hang;
         private DevExpress.XtraGrid.Columns.GridColumn ID_GD_DAT_HANG;
