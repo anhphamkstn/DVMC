@@ -25,7 +25,8 @@ namespace TOSApp.ChucNang
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
 
-            v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
+          //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
+            v_us.FillDatasetWithQuery(v_ds," select * from V_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH WHERE ID_NHOM = 2");
             m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
 
         
@@ -48,7 +49,7 @@ namespace TOSApp.ChucNang
             {
                 for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
                 {
-                    v_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
+                    v_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID_NGUOI_SU_DUNG"].ToString()));
                 }
             }
            

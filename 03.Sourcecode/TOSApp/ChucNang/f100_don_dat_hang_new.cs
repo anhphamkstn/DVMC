@@ -37,8 +37,13 @@ namespace TOSApp.ChucNang
             load_data_2_selected_loai_dich_vu();
             load_data_2_dich_vu_ver2();
             load_data_2_selected_trang_thai_don_hang();
-            load_data_2_selected_nguoi_nhan_dat_hang();
             random_data_2_ma_don_hang();
+            load_data_2_selected_nguoi_tiep_nhan();
+        }
+
+        private void load_data_2_selected_nguoi_tiep_nhan()
+        {
+            WinFormControls.load_data_to_combobox("V_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID_NGUOI_SU_DUNG", "TEN", " WHERE ID_NHOM=1", WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
         }
 
         private void load_data_2_user_nhan_vien_dat_hang()
@@ -69,12 +74,8 @@ namespace TOSApp.ChucNang
         {
             WinFormControls.load_data_to_combobox_with_query(m_cbo_trang_thai_don_hang, "ID", "TEN", WinFormControls.eTAT_CA.NO, "select TEN from CM_DM_TU_DIEN where ID_LOAI_TU_DIEN =17");
         }
-
-        private void load_data_2_selected_nguoi_nhan_dat_hang()
-        {
-            WinFormControls.load_data_to_combobox("V_HT_NGUOI_TIEP_NHAN_DON_HANG", "ID_NGUOI_SU_DUNG", "TEN", " WHERE ID_NHOM= 1", WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
-           // WinFormControls.load_data_to_combobox_with_query(m_cbo_nguoi_nhan_dat_hang,"ID","TEN",WinFormControls.eTAT_CA.NO,"select Ten from HT_NGUOI_SU_DUNG");
-        }
+         
+       
 
         private void random_data_2_ma_don_hang()
         {
@@ -162,7 +163,7 @@ namespace TOSApp.ChucNang
         {
             
             ghi_don_hang();
-            m_id_tiep_nhan=ghi_log_tiep_nhan();
+            ghi_log_tiep_nhan();
         }
 
         private decimal ghi_log_tiep_nhan()
@@ -176,6 +177,7 @@ namespace TOSApp.ChucNang
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "tiep nhan";
             v_us.Insert();
+            m_id_tiep_nhan = v_us.dcID;
             MessageBox.Show("da tiep nhan");
             return v_us.dcID;
 
@@ -217,16 +219,7 @@ namespace TOSApp.ChucNang
         //ghi lai log tai bang gd_log_dat_hang sau khi thuc hien thao tac insert
        
         
-      
-
-       
-        
-      
-
-      
-
-       
-
+     
         private void form_2_us()
         {
             m_us.strMA_DON_HANG = m_txt_ma_don_hang.Text;
@@ -239,7 +232,7 @@ namespace TOSApp.ChucNang
             m_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
             m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal( return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
             m_us.strPHAN_HOI_TU_DVMC = m_txt_phan_hoi_tu_dvmc.Text;
-            m_us.datTHOI_GIAN_HOAN_THANH = get_thoi_gian_hoan_thanh(m_dat_thoi_gian_dat_hang.Value);//xem lai
+            m_us.SetTHOI_GIAN_HOAN_THANHNull(); 
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
                 //System.DateTime.Now.ToString("yyyy/MM/dd/hh/mm/ss");
             m_us.dcID_PHUONG_THUC_DAT_HANG = 182;//---phuong thuc dat hang la goi dien
@@ -371,7 +364,7 @@ namespace TOSApp.ChucNang
 
         private void load_nguoi_nhan_dat_hang(decimal p)
         {
-            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID", "TEN", " where HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.id=gd.dat_hang." + p, WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
+            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID", "TEN", " where HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.id=gd_dat_hang." + p, WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
         }
 
         private void load_don_vi(decimal p)
@@ -438,6 +431,16 @@ namespace TOSApp.ChucNang
             v_us.Insert();
             MessageBox.Show("da tu choi");
           
+        }
+
+        private void m_grb_phan_hoi_tu_dvm_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
      

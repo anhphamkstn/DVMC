@@ -33,17 +33,18 @@
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.GroupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.m_grc_ht_nguoi_su_dung = new DevExpress.XtraGrid.GridControl();
-            this.m_grv_ht_nguoi_su_dung = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.HO_VA_TEN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.EMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.m_cbo_danh_sach_PM = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.m_txt_ID_don_hang = new System.Windows.Forms.TextBox();
+            this.m_txt_dich_vu_yeu_cau = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.m_txt_noi_dung_dat_hang = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).BeginInit();
             this.GroupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -51,14 +52,14 @@
             this.panel1.Controls.Add(this.m_cmd_Cancel);
             this.panel1.Controls.Add(this.m_cmd_OK);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 345);
+            this.panel1.Location = new System.Drawing.Point(0, 260);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(826, 63);
+            this.panel1.Size = new System.Drawing.Size(666, 56);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_Cancel
             // 
-            this.m_cmd_Cancel.Location = new System.Drawing.Point(724, 19);
+            this.m_cmd_Cancel.Location = new System.Drawing.Point(533, 21);
             this.m_cmd_Cancel.Name = "m_cmd_Cancel";
             this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 23);
             this.m_cmd_Cancel.TabIndex = 0;
@@ -67,7 +68,7 @@
             // 
             // m_cmd_OK
             // 
-            this.m_cmd_OK.Location = new System.Drawing.Point(597, 19);
+            this.m_cmd_OK.Location = new System.Drawing.Point(406, 21);
             this.m_cmd_OK.Name = "m_cmd_OK";
             this.m_cmd_OK.Size = new System.Drawing.Size(75, 23);
             this.m_cmd_OK.TabIndex = 0;
@@ -80,71 +81,96 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(826, 345);
+            this.panel2.Size = new System.Drawing.Size(666, 260);
             this.panel2.TabIndex = 1;
             // 
             // GroupControl1
             // 
-            this.GroupControl1.Controls.Add(this.m_grc_ht_nguoi_su_dung);
+            this.GroupControl1.Controls.Add(this.m_txt_noi_dung_dat_hang);
+            this.GroupControl1.Controls.Add(this.m_txt_dich_vu_yeu_cau);
+            this.GroupControl1.Controls.Add(this.m_txt_ID_don_hang);
+            this.GroupControl1.Controls.Add(this.m_cbo_danh_sach_PM);
+            this.GroupControl1.Controls.Add(this.label4);
+            this.GroupControl1.Controls.Add(this.label3);
+            this.GroupControl1.Controls.Add(this.label2);
+            this.GroupControl1.Controls.Add(this.label1);
             this.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GroupControl1.Location = new System.Drawing.Point(0, 0);
             this.GroupControl1.Name = "GroupControl1";
-            this.GroupControl1.Size = new System.Drawing.Size(826, 345);
+            this.GroupControl1.Size = new System.Drawing.Size(666, 260);
             this.GroupControl1.TabIndex = 6;
             this.GroupControl1.Text = "Danh sách người xử lý";
             // 
-            // m_grc_ht_nguoi_su_dung
+            // label1
             // 
-            this.m_grc_ht_nguoi_su_dung.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_ht_nguoi_su_dung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(2, 21);
-            this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
-            this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
-            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(822, 322);
-            this.m_grc_ht_nguoi_su_dung.TabIndex = 0;
-            this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_grv_ht_nguoi_su_dung});
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(104, 221);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách PM";
             // 
-            // m_grv_ht_nguoi_su_dung
+            // m_cbo_danh_sach_PM
             // 
-            this.m_grv_ht_nguoi_su_dung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.HO_VA_TEN,
-            this.EMAIL,
-            this.ID});
-            this.m_grv_ht_nguoi_su_dung.GridControl = this.m_grc_ht_nguoi_su_dung;
-            this.m_grv_ht_nguoi_su_dung.Name = "m_grv_ht_nguoi_su_dung";
-            this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
-            this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.m_cbo_danh_sach_PM.FormattingEnabled = true;
+            this.m_cbo_danh_sach_PM.Location = new System.Drawing.Point(259, 213);
+            this.m_cbo_danh_sach_PM.Name = "m_cbo_danh_sach_PM";
+            this.m_cbo_danh_sach_PM.Size = new System.Drawing.Size(350, 21);
+            this.m_cbo_danh_sach_PM.TabIndex = 1;
             // 
-            // HO_VA_TEN
+            // label2
             // 
-            this.HO_VA_TEN.Caption = "HỌ VÀ TÊN";
-            this.HO_VA_TEN.FieldName = "TEN";
-            this.HO_VA_TEN.Name = "HO_VA_TEN";
-            this.HO_VA_TEN.Visible = true;
-            this.HO_VA_TEN.VisibleIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(104, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Dịch vụ yêu cầu";
             // 
-            // EMAIL
+            // label3
             // 
-            this.EMAIL.Caption = "EMAIL";
-            this.EMAIL.FieldName = "EMAIL";
-            this.EMAIL.Name = "EMAIL";
-            this.EMAIL.Visible = true;
-            this.EMAIL.VisibleIndex = 3;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(104, 51);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Mã đơn hàng";
             // 
-            // ID
+            // m_txt_ID_don_hang
             // 
-            this.ID.Caption = "ID";
-            this.ID.FieldName = "ID";
-            this.ID.Name = "ID";
-            this.ID.Visible = true;
-            this.ID.VisibleIndex = 1;
+            this.m_txt_ID_don_hang.Location = new System.Drawing.Point(259, 51);
+            this.m_txt_ID_don_hang.Name = "m_txt_ID_don_hang";
+            this.m_txt_ID_don_hang.Size = new System.Drawing.Size(350, 20);
+            this.m_txt_ID_don_hang.TabIndex = 2;
+            // 
+            // m_txt_dich_vu_yeu_cau
+            // 
+            this.m_txt_dich_vu_yeu_cau.Location = new System.Drawing.Point(259, 104);
+            this.m_txt_dich_vu_yeu_cau.Name = "m_txt_dich_vu_yeu_cau";
+            this.m_txt_dich_vu_yeu_cau.Size = new System.Drawing.Size(350, 20);
+            this.m_txt_dich_vu_yeu_cau.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(104, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Nội dung đặt hàng";
+            // 
+            // m_txt_noi_dung_dat_hang
+            // 
+            this.m_txt_noi_dung_dat_hang.Location = new System.Drawing.Point(259, 157);
+            this.m_txt_noi_dung_dat_hang.Name = "m_txt_noi_dung_dat_hang";
+            this.m_txt_noi_dung_dat_hang.Size = new System.Drawing.Size(350, 20);
+            this.m_txt_noi_dung_dat_hang.TabIndex = 2;
             // 
             // f111_dieu_phoi_cho_BO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 408);
+            this.ClientSize = new System.Drawing.Size(666, 316);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f111_dieu_phoi_cho_BO";
@@ -153,8 +179,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).EndInit();
             this.GroupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).EndInit();
+            this.GroupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -166,10 +191,13 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_Cancel;
         private DevExpress.XtraEditors.SimpleButton m_cmd_OK;
         private DevExpress.XtraEditors.GroupControl GroupControl1;
-        private DevExpress.XtraGrid.GridControl m_grc_ht_nguoi_su_dung;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ht_nguoi_su_dung;
-        private DevExpress.XtraGrid.Columns.GridColumn HO_VA_TEN;
-        private DevExpress.XtraGrid.Columns.GridColumn EMAIL;
-        private DevExpress.XtraGrid.Columns.GridColumn ID;
+        private System.Windows.Forms.TextBox m_txt_noi_dung_dat_hang;
+        private System.Windows.Forms.TextBox m_txt_dich_vu_yeu_cau;
+        private System.Windows.Forms.TextBox m_txt_ID_don_hang;
+        private System.Windows.Forms.ComboBox m_cbo_danh_sach_PM;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

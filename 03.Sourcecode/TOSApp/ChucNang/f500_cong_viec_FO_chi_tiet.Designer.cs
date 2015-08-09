@@ -127,6 +127,7 @@
             this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(146, 31);
             this.m_cmd_chinh_sua_don_hang.TabIndex = 18;
             this.m_cmd_chinh_sua_don_hang.Text = "Chỉnh sửa đơn hàng";
+            this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
             // 
             // v_cmd_tu_choi_don_hang
             // 

@@ -38,7 +38,6 @@
             this.m_grc_ht_nguoi_su_dung = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ht_nguoi_su_dung = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.HO_VA_TEN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.EMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID_NGUOI_SU_DUNG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pnl_out_place_dm.SuspendLayout();
@@ -144,7 +143,6 @@
             // 
             this.m_grv_ht_nguoi_su_dung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.HO_VA_TEN,
-            this.EMAIL,
             this.ID,
             this.ID_NGUOI_SU_DUNG});
             this.m_grv_ht_nguoi_su_dung.GridControl = this.m_grc_ht_nguoi_su_dung;
@@ -159,14 +157,6 @@
             this.HO_VA_TEN.Name = "HO_VA_TEN";
             this.HO_VA_TEN.Visible = true;
             this.HO_VA_TEN.VisibleIndex = 3;
-            // 
-            // EMAIL
-            // 
-            this.EMAIL.Caption = "EMAIL";
-            this.EMAIL.FieldName = "EMAIL";
-            this.EMAIL.Name = "EMAIL";
-            this.EMAIL.Visible = true;
-            this.EMAIL.VisibleIndex = 4;
             // 
             // ID
             // 
@@ -212,7 +202,6 @@
         private DevExpress.XtraGrid.GridControl m_grc_ht_nguoi_su_dung;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ht_nguoi_su_dung;
         private DevExpress.XtraGrid.Columns.GridColumn HO_VA_TEN;
-        private DevExpress.XtraGrid.Columns.GridColumn EMAIL;
         private DevExpress.XtraGrid.Columns.GridColumn ID;
         private DevExpress.XtraGrid.Columns.GridColumn ID_NGUOI_SU_DUNG;
     }

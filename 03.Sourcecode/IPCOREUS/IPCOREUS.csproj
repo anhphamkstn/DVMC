@@ -158,6 +158,7 @@
     <Compile Include="US_V_DM_STATION.cs" />
     <Compile Include="US_V_GD_CAU_HOI_YEU_CAU.cs" />
     <Compile Include="US_V_GD_DAT_HANG.cs" />
+    <Compile Include="US_V_GD_DIEU_PHOI_LAI.cs" />
     <Compile Include="US_V_GD_LICH_GOI_NOI_BO.cs" />
     <Compile Include="US_V_GD_NGUOI_XU_LY_DON_HANG.cs" />
     <Compile Include="US_V_GD_XU_LY_NOI_BO.cs" />

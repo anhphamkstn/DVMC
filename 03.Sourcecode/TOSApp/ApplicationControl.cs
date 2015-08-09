@@ -82,10 +82,10 @@ namespace TOSApp
             #endregion
             try
             {
-             // f001_main_FO f_FO = new f001_main_FO();
+             f001_main_FO f_FO = new f001_main_FO();
                // f500_cong_viec_FO_chi_tiet f_FO = new f500_cong_viec_FO_chi_tiet();
                // f104_danh_sach_don_hang_dang_xu_ly_BO f_FO = new f104_danh_sach_don_hang_dang_xu_ly_BO();
-               f002_main_BO f_FO = new f002_main_BO();
+              // f002_main_BO f_FO = new f002_main_BO();
                 f_FO.ShowDialog();
             }
             catch (Exception v_e)
