@@ -126,6 +126,7 @@ namespace TOSApp.ChucNang
                 {
                     luu_don_hang();
                     dieu_phoi_don_hang();
+                    this.Close();
   
                 }
             }
@@ -414,6 +415,7 @@ namespace TOSApp.ChucNang
             {
                  ghi_don_hang();
                  ghi_log_tu_choi_don_hang();
+                 this.Close();
 
             }
             catch (Exception v_e)

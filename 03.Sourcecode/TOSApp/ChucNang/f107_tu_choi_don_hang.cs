@@ -56,10 +56,10 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 228;//CHỜ FO điều phối lại
             v_us.dcID_GD_DAT_HANG = m_US.dcID_GD_DAT_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_US.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = CIPConvert.ToDecimal(null);
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69763;
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = m_txt_ly_do_tu_choi.Text;
             v_us.Insert();
         }

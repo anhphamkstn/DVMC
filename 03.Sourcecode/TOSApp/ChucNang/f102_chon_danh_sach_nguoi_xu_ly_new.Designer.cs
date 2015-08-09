@@ -40,6 +40,7 @@
             this.HO_VA_TEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ID_NGUOI_SU_DUNG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).BeginInit();
             this.GroupControl1.SuspendLayout();
@@ -82,7 +83,7 @@
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 271);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(625, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(787, 36);
             this.m_pnl_out_place_dm.TabIndex = 4;
             // 
             // m_cmd_oke
@@ -94,7 +95,7 @@
             this.m_cmd_oke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_oke.ImageIndex = 13;
             this.m_cmd_oke.ImageList = this.ImageList;
-            this.m_cmd_oke.Location = new System.Drawing.Point(464, 4);
+            this.m_cmd_oke.Location = new System.Drawing.Point(626, 4);
             this.m_cmd_oke.Name = "m_cmd_oke";
             this.m_cmd_oke.Size = new System.Drawing.Size(69, 28);
             this.m_cmd_oke.TabIndex = 2;
@@ -110,7 +111,7 @@
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(533, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(695, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 4;
@@ -123,7 +124,7 @@
             this.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GroupControl1.Location = new System.Drawing.Point(0, 0);
             this.GroupControl1.Name = "GroupControl1";
-            this.GroupControl1.Size = new System.Drawing.Size(625, 307);
+            this.GroupControl1.Size = new System.Drawing.Size(787, 307);
             this.GroupControl1.TabIndex = 5;
             this.GroupControl1.Text = "Danh sách người xử lý";
             // 
@@ -134,7 +135,7 @@
             this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(2, 21);
             this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
             this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
-            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(621, 284);
+            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(783, 284);
             this.m_grc_ht_nguoi_su_dung.TabIndex = 0;
             this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ht_nguoi_su_dung});
@@ -144,7 +145,8 @@
             this.m_grv_ht_nguoi_su_dung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.HO_VA_TEN,
             this.EMAIL,
-            this.ID});
+            this.ID,
+            this.ID_NGUOI_SU_DUNG});
             this.m_grv_ht_nguoi_su_dung.GridControl = this.m_grc_ht_nguoi_su_dung;
             this.m_grv_ht_nguoi_su_dung.Name = "m_grv_ht_nguoi_su_dung";
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
@@ -156,7 +158,7 @@
             this.HO_VA_TEN.FieldName = "TEN";
             this.HO_VA_TEN.Name = "HO_VA_TEN";
             this.HO_VA_TEN.Visible = true;
-            this.HO_VA_TEN.VisibleIndex = 2;
+            this.HO_VA_TEN.VisibleIndex = 3;
             // 
             // EMAIL
             // 
@@ -164,7 +166,7 @@
             this.EMAIL.FieldName = "EMAIL";
             this.EMAIL.Name = "EMAIL";
             this.EMAIL.Visible = true;
-            this.EMAIL.VisibleIndex = 3;
+            this.EMAIL.VisibleIndex = 4;
             // 
             // ID
             // 
@@ -174,11 +176,19 @@
             this.ID.Visible = true;
             this.ID.VisibleIndex = 1;
             // 
+            // ID_NGUOI_SU_DUNG
+            // 
+            this.ID_NGUOI_SU_DUNG.Caption = "ID BM";
+            this.ID_NGUOI_SU_DUNG.FieldName = "ID_NGUOI_SU_DUNG";
+            this.ID_NGUOI_SU_DUNG.Name = "ID_NGUOI_SU_DUNG";
+            this.ID_NGUOI_SU_DUNG.Visible = true;
+            this.ID_NGUOI_SU_DUNG.VisibleIndex = 2;
+            // 
             // f102_chon_danh_sach_nguoi_xu_ly_new
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 307);
+            this.ClientSize = new System.Drawing.Size(787, 307);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.GroupControl1);
             this.Name = "f102_chon_danh_sach_nguoi_xu_ly_new";
@@ -204,5 +214,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn HO_VA_TEN;
         private DevExpress.XtraGrid.Columns.GridColumn EMAIL;
         private DevExpress.XtraGrid.Columns.GridColumn ID;
+        private DevExpress.XtraGrid.Columns.GridColumn ID_NGUOI_SU_DUNG;
     }
 }

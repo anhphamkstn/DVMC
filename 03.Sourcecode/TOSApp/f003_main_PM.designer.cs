@@ -131,13 +131,13 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
-            // main_03_PM
+            // f003_main_PM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 282);
+            this.ClientSize = new System.Drawing.Size(798, 432);
             this.Controls.Add(this.ribbonControl1);
-            this.Name = "main_03_PM";
+            this.Name = "f003_main_PM";
             this.Text = "main_03_PM";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);

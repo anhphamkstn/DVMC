@@ -32,6 +32,8 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_GD_CAN_XU_LY");
             m_grc_ds_don_hang_can_tiep_nhan.DataSource = v_ds.Tables[0];
+            m_grv_ds_don_hang_can_tiep_nhan.ActiveFilterString = "[ID_NGUOI_NHAN_THAO_TAC]= 69763";
+           
             
         }
 
@@ -58,11 +60,12 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 231;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_GD_DAT_HANG;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = 69761;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = CIPConvert.ToDecimal(null);
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69763;
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+           
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "tiếp nhận đơn hàng";
+            v_us.strGHI_CHU = "nhận xử lý";
             v_us.Insert();
         }
 
@@ -80,6 +83,7 @@ namespace TOSApp.ChucNang
             try
             {
                 fill_data_to_m_us();
+               
                 update_log_trang_thai_don_hang();
                 f107_tu_choi_don_hang v_f107 = new f107_tu_choi_don_hang();
                 v_f107.displayForRefuse(m_us);
@@ -96,7 +100,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us = m_us;
-            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.Update();
         }
     }

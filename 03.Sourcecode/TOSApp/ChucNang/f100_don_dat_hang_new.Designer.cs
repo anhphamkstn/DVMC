@@ -381,7 +381,7 @@
             // 
             // m_cmd_tu_choi
             // 
-            this.m_cmd_tu_choi.Location = new System.Drawing.Point(812, 6);
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(769, 10);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
             this.m_cmd_tu_choi.Size = new System.Drawing.Size(117, 33);
             this.m_cmd_tu_choi.TabIndex = 36;

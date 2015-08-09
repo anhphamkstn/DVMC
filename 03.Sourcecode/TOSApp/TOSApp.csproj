@@ -239,6 +239,30 @@
     <Compile Include="ChucNang\f107_tu_choi_don_hang.Designer.cs">
       <DependentUpon>f107_tu_choi_don_hang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f108_danh_sach_don_hang_hoa_thanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f108_danh_sach_don_hang_hoa_thanh.Designer.cs">
+      <DependentUpon>f108_danh_sach_don_hang_hoa_thanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f109_danh_sach_can_dieu_phoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f109_danh_sach_can_dieu_phoi.Designer.cs">
+      <DependentUpon>f109_danh_sach_can_dieu_phoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f110_danh_sach_dieu_phoi_lai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f110_danh_sach_dieu_phoi_lai.Designer.cs">
+      <DependentUpon>f110_danh_sach_dieu_phoi_lai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f111_dieu_phoi_cho_BO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f111_dieu_phoi_cho_BO.Designer.cs">
+      <DependentUpon>f111_dieu_phoi_cho_BO.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f200_ds_dat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -412,6 +436,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f107_tu_choi_don_hang.resx">
       <DependentUpon>f107_tu_choi_don_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f108_danh_sach_don_hang_hoa_thanh.resx">
+      <DependentUpon>f108_danh_sach_don_hang_hoa_thanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f109_danh_sach_can_dieu_phoi.resx">
+      <DependentUpon>f109_danh_sach_can_dieu_phoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f110_danh_sach_dieu_phoi_lai.resx">
+      <DependentUpon>f110_danh_sach_dieu_phoi_lai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f111_dieu_phoi_cho_BO.resx">
+      <DependentUpon>f111_dieu_phoi_cho_BO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f200_ds_dat_hang.resx">
       <DependentUpon>f200_ds_dat_hang.cs</DependentUpon>

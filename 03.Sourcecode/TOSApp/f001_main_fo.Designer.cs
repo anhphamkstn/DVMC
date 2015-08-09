@@ -196,11 +196,12 @@
             // 
             // barButtonItem9
             // 
-            this.barButtonItem9.Caption = "Điều hướng";
+            this.barButtonItem9.Caption = "Điều phối lại";
             this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
             this.barButtonItem9.Id = 11;
             this.barButtonItem9.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.LargeGlyph")));
             this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
             // 
             // barButtonItem10
             // 
@@ -445,7 +446,6 @@
             this.Ribbon = this.ribbonControl1;
             this.Text = "main_01_FO";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-//            this.Load += new System.EventHandler(this.f001_main_FO_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

@@ -64,6 +64,13 @@ namespace TOSApp
 
         }
 
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f110_danh_sach_dieu_phoi_lai v_f110 = new f110_danh_sach_dieu_phoi_lai();
+            v_f110.MdiParent = this;
+            this.Show();
+        }
+
       
     }
 }
