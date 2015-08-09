@@ -30,12 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f500_cong_viec_FO_chi_tiet));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_cmd_chi_tiet_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_them_moi_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.v_cmd_dieu_phoi_pm = new DevExpress.XtraEditors.SimpleButton();
             this.v_cmd_dieu_phoi_BO = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.v_cmd_tu_choi_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.m_grc_FO_danh_sach_don_hang = new DevExpress.XtraGrid.GridControl();
@@ -65,33 +63,21 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.m_cmd_chi_tiet_don_hang);
             this.panel2.Controls.Add(this.m_cmd_them_moi_don_hang);
             this.panel2.Controls.Add(this.v_cmd_dieu_phoi_pm);
             this.panel2.Controls.Add(this.v_cmd_dieu_phoi_BO);
             this.panel2.Controls.Add(this.m_cmd_chinh_sua_don_hang);
-            this.panel2.Controls.Add(this.v_cmd_tu_choi_don_hang);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 346);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1277, 67);
             this.panel2.TabIndex = 0;
             // 
-            // m_cmd_chi_tiet_don_hang
-            // 
-            this.m_cmd_chi_tiet_don_hang.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.m_cmd_chi_tiet_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chi_tiet_don_hang.Image")));
-            this.m_cmd_chi_tiet_don_hang.Location = new System.Drawing.Point(12, 18);
-            this.m_cmd_chi_tiet_don_hang.Name = "m_cmd_chi_tiet_don_hang";
-            this.m_cmd_chi_tiet_don_hang.Size = new System.Drawing.Size(121, 31);
-            this.m_cmd_chi_tiet_don_hang.TabIndex = 19;
-            this.m_cmd_chi_tiet_don_hang.Text = "Chi tiết";
-            // 
             // m_cmd_them_moi_don_hang
             // 
             this.m_cmd_them_moi_don_hang.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.m_cmd_them_moi_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_them_moi_don_hang.Image")));
-            this.m_cmd_them_moi_don_hang.Location = new System.Drawing.Point(139, 18);
+            this.m_cmd_them_moi_don_hang.Location = new System.Drawing.Point(12, 18);
             this.m_cmd_them_moi_don_hang.Name = "m_cmd_them_moi_don_hang";
             this.m_cmd_them_moi_don_hang.Size = new System.Drawing.Size(152, 31);
             this.m_cmd_them_moi_don_hang.TabIndex = 20;
@@ -102,42 +88,34 @@
             // 
             this.v_cmd_dieu_phoi_pm.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.v_cmd_dieu_phoi_pm.Image = ((System.Drawing.Image)(resources.GetObject("v_cmd_dieu_phoi_pm.Image")));
-            this.v_cmd_dieu_phoi_pm.Location = new System.Drawing.Point(731, 18);
+            this.v_cmd_dieu_phoi_pm.Location = new System.Drawing.Point(491, 18);
             this.v_cmd_dieu_phoi_pm.Name = "v_cmd_dieu_phoi_pm";
             this.v_cmd_dieu_phoi_pm.Size = new System.Drawing.Size(133, 31);
             this.v_cmd_dieu_phoi_pm.TabIndex = 21;
             this.v_cmd_dieu_phoi_pm.Text = "Điều phối cho PM";
+            this.v_cmd_dieu_phoi_pm.Click += new System.EventHandler(this.v_cmd_dieu_phoi_pm_Click);
             // 
             // v_cmd_dieu_phoi_BO
             // 
             this.v_cmd_dieu_phoi_BO.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.v_cmd_dieu_phoi_BO.Image = ((System.Drawing.Image)(resources.GetObject("v_cmd_dieu_phoi_BO.Image")));
-            this.v_cmd_dieu_phoi_BO.Location = new System.Drawing.Point(590, 18);
+            this.v_cmd_dieu_phoi_BO.Location = new System.Drawing.Point(337, 18);
             this.v_cmd_dieu_phoi_BO.Name = "v_cmd_dieu_phoi_BO";
             this.v_cmd_dieu_phoi_BO.Size = new System.Drawing.Size(133, 31);
             this.v_cmd_dieu_phoi_BO.TabIndex = 21;
             this.v_cmd_dieu_phoi_BO.Text = "Điều phối";
+            this.v_cmd_dieu_phoi_BO.Click += new System.EventHandler(this.v_cmd_dieu_phoi_BO_Click);
             // 
             // m_cmd_chinh_sua_don_hang
             // 
             this.m_cmd_chinh_sua_don_hang.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.m_cmd_chinh_sua_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chinh_sua_don_hang.Image")));
-            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(297, 18);
+            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(170, 18);
             this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
             this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(146, 31);
             this.m_cmd_chinh_sua_don_hang.TabIndex = 18;
             this.m_cmd_chinh_sua_don_hang.Text = "Chỉnh sửa đơn hàng";
             this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
-            // 
-            // v_cmd_tu_choi_don_hang
-            // 
-            this.v_cmd_tu_choi_don_hang.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.v_cmd_tu_choi_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("v_cmd_tu_choi_don_hang.Image")));
-            this.v_cmd_tu_choi_don_hang.Location = new System.Drawing.Point(449, 18);
-            this.v_cmd_tu_choi_don_hang.Name = "v_cmd_tu_choi_don_hang";
-            this.v_cmd_tu_choi_don_hang.Size = new System.Drawing.Size(135, 31);
-            this.v_cmd_tu_choi_don_hang.TabIndex = 17;
-            this.v_cmd_tu_choi_don_hang.Text = "Từ chối đơn hàng";
             // 
             // panel1
             // 
@@ -358,11 +336,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_chi_tiet_don_hang;
         private DevExpress.XtraEditors.SimpleButton m_cmd_them_moi_don_hang;
         private DevExpress.XtraEditors.SimpleButton v_cmd_dieu_phoi_BO;
         private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
-        private DevExpress.XtraEditors.SimpleButton v_cmd_tu_choi_don_hang;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraGrid.GridControl m_grc_FO_danh_sach_don_hang;

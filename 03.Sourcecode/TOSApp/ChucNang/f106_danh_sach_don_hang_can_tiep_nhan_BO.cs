@@ -60,7 +60,7 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 231;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_GD_DAT_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69763;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
            
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;

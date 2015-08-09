@@ -271,6 +271,12 @@
     <Compile Include="ChucNang\f111_dieu_phoi_cho_BO.Designer.cs">
       <DependentUpon>f111_dieu_phoi_cho_BO.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f112_FO_chuyen_don_hang_cho_PM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f112_FO_chuyen_don_hang_cho_PM.Designer.cs">
+      <DependentUpon>f112_FO_chuyen_don_hang_cho_PM.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f200_ds_dat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +472,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f111_dieu_phoi_cho_BO.resx">
       <DependentUpon>f111_dieu_phoi_cho_BO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f112_FO_chuyen_don_hang_cho_PM.resx">
+      <DependentUpon>f112_FO_chuyen_don_hang_cho_PM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f200_ds_dat_hang.resx">
       <DependentUpon>f200_ds_dat_hang.cs</DependentUpon>
