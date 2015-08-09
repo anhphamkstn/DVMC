@@ -626,7 +626,7 @@
             this.m_cmd_danh_sach_nguoi_xu_ly.Size = new System.Drawing.Size(161, 30);
             this.m_cmd_danh_sach_nguoi_xu_ly.TabIndex = 34;
             this.m_cmd_danh_sach_nguoi_xu_ly.Text = "Danh sách người xử lý...";
-            this.m_cmd_danh_sach_nguoi_xu_ly.Click += new System.EventHandler(this.m_chon_nguoi_xu_ly);
+            this.m_cmd_danh_sach_nguoi_xu_ly.Click += new System.EventHandler(this.m_cmd_danh_sach_nguoi_xu_ly_Click);
             // 
             // label7
             // 
