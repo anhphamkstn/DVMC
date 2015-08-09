@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using IP.Core.IPCommon;
 
 namespace TOSApp.ChucNang
 {
@@ -32,6 +33,31 @@ namespace TOSApp.ChucNang
 
         private void m_cmd_exit_Click(object sender, EventArgs e)
         {
+            DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Close();
+        }
+
+
+
+
+
+        internal void Display(ref List<decimal> v_lst_id_nguoi_xu_ly)
+        {
+            this.ShowDialog();
+            if (DialogResult== System.Windows.Forms.DialogResult.OK)
+            {
+                for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
+                {
+                    v_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
+                }
+            }
+           
+
+        }
+
+        private void m_cmd_oke_Click(object sender, EventArgs e)
+        {
+            DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
         }
     }

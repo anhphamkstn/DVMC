@@ -37,12 +37,10 @@
             this.m_txt_lich_su_trao_doi = new System.Windows.Forms.TextBox();
             this.m_txt_phan_hoi_tu_dvmc = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.m_txt_nguoi_xu_ly = new System.Windows.Forms.TextBox();
-            this.m_chk_nhieu_nguoi_xu_ly_yn = new System.Windows.Forms.CheckBox();
+            this.m_cmd_danh_sach_nguoi_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.label7 = new System.Windows.Forms.Label();
             this.m_cbo_nguoi_nhan_dat_hang = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.m_cbo_nguoi_xu_ly_don_hang = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.m_grb_loai_dich_vu = new System.Windows.Forms.GroupBox();
             this.m_lbl_dich_vu = new System.Windows.Forms.Label();
@@ -56,6 +54,7 @@
             this.m_rdb_loai_time_15phut = new System.Windows.Forms.RadioButton();
             this.m_grb_thoi_gian_hoan_thanh = new System.Windows.Forms.GroupBox();
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+            this.m_cmd_tu_choi = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_xac_nhan_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_chk_gui_mail_yn = new System.Windows.Forms.CheckBox();
@@ -66,7 +65,7 @@
             this.m_txt_yeu_cau_cu_the = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_pnl_nguoi_dat_hang_infor = new System.Windows.Forms.Panel();
-            this.m_txt_user_nhan_vien_dat_hang = new System.Windows.Forms.TextBox();
+            this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
             this.m_txt_ho_ten_nguoi_dat_hang = new System.Windows.Forms.TextBox();
             this.m_dat_thoi_gian_dat_hang = new System.Windows.Forms.DateTimePicker();
             this.m_txt_dien_thoai = new System.Windows.Forms.TextBox();
@@ -106,7 +105,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(605, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 41);
+            this.label1.Size = new System.Drawing.Size(415, 41);
             this.label1.TabIndex = 118;
             this.label1.Text = "Mã đơn hàng (sinh tự động)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,7 +120,7 @@
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
             this.m_txt_ma_don_hang.ReadOnly = true;
             this.m_txt_ma_don_hang.ShortcutsEnabled = false;
-            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(488, 35);
+            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(415, 35);
             this.m_txt_ma_don_hang.TabIndex = 119;
             this.m_txt_ma_don_hang.TabStop = false;
             // 
@@ -176,42 +175,28 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.m_txt_nguoi_xu_ly);
-            this.groupBox5.Controls.Add(this.m_chk_nhieu_nguoi_xu_ly_yn);
+            this.groupBox5.Controls.Add(this.m_cmd_danh_sach_nguoi_xu_ly);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Controls.Add(this.m_cbo_nguoi_nhan_dat_hang);
             this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.m_cbo_nguoi_xu_ly_don_hang);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Font = new System.Drawing.Font("Arial", 9F);
             this.groupBox5.Location = new System.Drawing.Point(487, 0);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(606, 117);
+            this.groupBox5.Size = new System.Drawing.Size(533, 117);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin người xử lý đặt hàng";
             // 
-            // m_txt_nguoi_xu_ly
+            // m_cmd_danh_sach_nguoi_xu_ly
             // 
-            this.m_txt_nguoi_xu_ly.BackColor = System.Drawing.SystemColors.Info;
-            this.m_txt_nguoi_xu_ly.Location = new System.Drawing.Point(235, 56);
-            this.m_txt_nguoi_xu_ly.Name = "m_txt_nguoi_xu_ly";
-            this.m_txt_nguoi_xu_ly.ReadOnly = true;
-            this.m_txt_nguoi_xu_ly.Size = new System.Drawing.Size(180, 21);
-            this.m_txt_nguoi_xu_ly.TabIndex = 2;
-            this.m_txt_nguoi_xu_ly.TabStop = false;
-            this.m_txt_nguoi_xu_ly.Visible = false;
-            // 
-            // m_chk_nhieu_nguoi_xu_ly_yn
-            // 
-            this.m_chk_nhieu_nguoi_xu_ly_yn.AutoSize = true;
-            this.m_chk_nhieu_nguoi_xu_ly_yn.Location = new System.Drawing.Point(236, 91);
-            this.m_chk_nhieu_nguoi_xu_ly_yn.Name = "m_chk_nhieu_nguoi_xu_ly_yn";
-            this.m_chk_nhieu_nguoi_xu_ly_yn.Size = new System.Drawing.Size(122, 19);
-            this.m_chk_nhieu_nguoi_xu_ly_yn.TabIndex = 2;
-            this.m_chk_nhieu_nguoi_xu_ly_yn.Text = "Nhiều người xử lý";
-            this.m_chk_nhieu_nguoi_xu_ly_yn.UseVisualStyleBackColor = true;
-            this.m_chk_nhieu_nguoi_xu_ly_yn.CheckedChanged += new System.EventHandler(this.m_chon_nguoi_xu_ly);
+            this.m_cmd_danh_sach_nguoi_xu_ly.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_danh_sach_nguoi_xu_ly.Image")));
+            this.m_cmd_danh_sach_nguoi_xu_ly.Location = new System.Drawing.Point(238, 57);
+            this.m_cmd_danh_sach_nguoi_xu_ly.Name = "m_cmd_danh_sach_nguoi_xu_ly";
+            this.m_cmd_danh_sach_nguoi_xu_ly.Size = new System.Drawing.Size(161, 30);
+            this.m_cmd_danh_sach_nguoi_xu_ly.TabIndex = 34;
+            this.m_cmd_danh_sach_nguoi_xu_ly.Text = "Danh sách người xử lý...";
+            this.m_cmd_danh_sach_nguoi_xu_ly.Click += new System.EventHandler(this.m_cmd_danh_sach_nguoi_xu_ly_Click);
             // 
             // label7
             // 
@@ -243,16 +228,6 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Người xử lý đơn hàng";
             // 
-            // m_cbo_nguoi_xu_ly_don_hang
-            // 
-            this.m_cbo_nguoi_xu_ly_don_hang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.m_cbo_nguoi_xu_ly_don_hang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.m_cbo_nguoi_xu_ly_don_hang.FormattingEnabled = true;
-            this.m_cbo_nguoi_xu_ly_don_hang.Location = new System.Drawing.Point(234, 55);
-            this.m_cbo_nguoi_xu_ly_don_hang.Name = "m_cbo_nguoi_xu_ly_don_hang";
-            this.m_cbo_nguoi_xu_ly_don_hang.Size = new System.Drawing.Size(180, 23);
-            this.m_cbo_nguoi_xu_ly_don_hang.TabIndex = 1;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.groupBox5);
@@ -260,7 +235,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 368);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1093, 117);
+            this.panel5.Size = new System.Drawing.Size(1020, 117);
             this.panel5.TabIndex = 11;
             // 
             // m_grb_loai_dich_vu
@@ -273,7 +248,7 @@
             this.m_grb_loai_dich_vu.Font = new System.Drawing.Font("Arial", 8.25F);
             this.m_grb_loai_dich_vu.Location = new System.Drawing.Point(0, 275);
             this.m_grb_loai_dich_vu.Name = "m_grb_loai_dich_vu";
-            this.m_grb_loai_dich_vu.Size = new System.Drawing.Size(1093, 93);
+            this.m_grb_loai_dich_vu.Size = new System.Drawing.Size(1020, 93);
             this.m_grb_loai_dich_vu.TabIndex = 8;
             this.m_grb_loai_dich_vu.TabStop = false;
             this.m_grb_loai_dich_vu.Text = "Loại dịch vụ yêu cầu";
@@ -384,13 +359,14 @@
             this.m_grb_thoi_gian_hoan_thanh.Font = new System.Drawing.Font("Arial", 9F);
             this.m_grb_thoi_gian_hoan_thanh.Location = new System.Drawing.Point(0, 225);
             this.m_grb_thoi_gian_hoan_thanh.Name = "m_grb_thoi_gian_hoan_thanh";
-            this.m_grb_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(1093, 50);
+            this.m_grb_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(1020, 50);
             this.m_grb_thoi_gian_hoan_thanh.TabIndex = 10;
             this.m_grb_thoi_gian_hoan_thanh.TabStop = false;
             this.m_grb_thoi_gian_hoan_thanh.Text = "Thời gian cần hoàn thành";
             // 
             // m_pnl_out_place_dm
             // 
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_tu_choi);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_thoat);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_xac_nhan_don_hang);
             this.m_pnl_out_place_dm.Controls.Add(this.m_chk_gui_mail_yn);
@@ -400,8 +376,17 @@
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 485);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(1093, 45);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(1020, 45);
             this.m_pnl_out_place_dm.TabIndex = 12;
+            // 
+            // m_cmd_tu_choi
+            // 
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(812, 6);
+            this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
+            this.m_cmd_tu_choi.Size = new System.Drawing.Size(117, 33);
+            this.m_cmd_tu_choi.TabIndex = 36;
+            this.m_cmd_tu_choi.Text = "&Từ chối ";
+            this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);
             // 
             // m_cmd_thoat
             // 
@@ -416,18 +401,19 @@
             // m_cmd_xac_nhan_don_hang
             // 
             this.m_cmd_xac_nhan_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xac_nhan_don_hang.Image")));
-            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(786, 5);
+            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(554, 10);
             this.m_cmd_xac_nhan_don_hang.Name = "m_cmd_xac_nhan_don_hang";
-            this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(152, 32);
+            this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(132, 32);
             this.m_cmd_xac_nhan_don_hang.TabIndex = 35;
             this.m_cmd_xac_nhan_don_hang.Text = "Xác nhận đặt hàng";
+            this.m_cmd_xac_nhan_don_hang.Click += new System.EventHandler(this.m_cmd_xac_nhan_don_hang_Click);
             // 
             // m_chk_gui_mail_yn
             // 
             this.m_chk_gui_mail_yn.AutoSize = true;
             this.m_chk_gui_mail_yn.Checked = true;
             this.m_chk_gui_mail_yn.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(528, 13);
+            this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(385, 13);
             this.m_chk_gui_mail_yn.Name = "m_chk_gui_mail_yn";
             this.m_chk_gui_mail_yn.Size = new System.Drawing.Size(159, 17);
             this.m_chk_gui_mail_yn.TabIndex = 34;
@@ -488,7 +474,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Arial", 9F);
             this.groupBox2.Location = new System.Drawing.Point(0, 143);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1093, 82);
+            this.groupBox2.Size = new System.Drawing.Size(1020, 82);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Yêu cầu cụ  thể (nếu có)";
@@ -502,7 +488,7 @@
             this.m_txt_yeu_cau_cu_the.Location = new System.Drawing.Point(3, 17);
             this.m_txt_yeu_cau_cu_the.Multiline = true;
             this.m_txt_yeu_cau_cu_the.Name = "m_txt_yeu_cau_cu_the";
-            this.m_txt_yeu_cau_cu_the.Size = new System.Drawing.Size(1087, 62);
+            this.m_txt_yeu_cau_cu_the.Size = new System.Drawing.Size(1014, 62);
             this.m_txt_yeu_cau_cu_the.TabIndex = 0;
             // 
             // panel2
@@ -512,12 +498,12 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 76);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1093, 67);
+            this.panel2.Size = new System.Drawing.Size(1020, 67);
             this.panel2.TabIndex = 6;
             // 
             // m_pnl_nguoi_dat_hang_infor
             // 
-            this.m_pnl_nguoi_dat_hang_infor.Controls.Add(this.m_txt_user_nhan_vien_dat_hang);
+            this.m_pnl_nguoi_dat_hang_infor.Controls.Add(this.m_cbo_user_nhan_vien_dat_hang);
             this.m_pnl_nguoi_dat_hang_infor.Controls.Add(this.m_txt_ho_ten_nguoi_dat_hang);
             this.m_pnl_nguoi_dat_hang_infor.Controls.Add(this.m_dat_thoi_gian_dat_hang);
             this.m_pnl_nguoi_dat_hang_infor.Controls.Add(this.m_txt_dien_thoai);
@@ -525,18 +511,16 @@
             this.m_pnl_nguoi_dat_hang_infor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_pnl_nguoi_dat_hang_infor.Location = new System.Drawing.Point(0, 36);
             this.m_pnl_nguoi_dat_hang_infor.Name = "m_pnl_nguoi_dat_hang_infor";
-            this.m_pnl_nguoi_dat_hang_infor.Size = new System.Drawing.Size(1093, 31);
+            this.m_pnl_nguoi_dat_hang_infor.Size = new System.Drawing.Size(1020, 31);
             this.m_pnl_nguoi_dat_hang_infor.TabIndex = 0;
             // 
-            // m_txt_user_nhan_vien_dat_hang
+            // m_cbo_user_nhan_vien_dat_hang
             // 
-            this.m_txt_user_nhan_vien_dat_hang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.m_txt_user_nhan_vien_dat_hang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.m_txt_user_nhan_vien_dat_hang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.m_txt_user_nhan_vien_dat_hang.Location = new System.Drawing.Point(2, 3);
-            this.m_txt_user_nhan_vien_dat_hang.Name = "m_txt_user_nhan_vien_dat_hang";
-            this.m_txt_user_nhan_vien_dat_hang.Size = new System.Drawing.Size(179, 20);
-            this.m_txt_user_nhan_vien_dat_hang.TabIndex = 0;
+            this.m_cbo_user_nhan_vien_dat_hang.FormattingEnabled = true;
+            this.m_cbo_user_nhan_vien_dat_hang.Location = new System.Drawing.Point(0, 2);
+            this.m_cbo_user_nhan_vien_dat_hang.Name = "m_cbo_user_nhan_vien_dat_hang";
+            this.m_cbo_user_nhan_vien_dat_hang.Size = new System.Drawing.Size(179, 21);
+            this.m_cbo_user_nhan_vien_dat_hang.TabIndex = 5;
             // 
             // m_txt_ho_ten_nguoi_dat_hang
             // 
@@ -599,7 +583,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1093, 36);
+            this.panel3.Size = new System.Drawing.Size(1020, 36);
             this.panel3.TabIndex = 0;
             // 
             // label5
@@ -611,7 +595,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(723, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(370, 36);
+            this.label5.Size = new System.Drawing.Size(297, 36);
             this.label5.TabIndex = 123;
             this.label5.Text = "Thời gian đặt hàng";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -682,7 +666,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1093, 76);
+            this.panel1.Size = new System.Drawing.Size(1020, 76);
             this.panel1.TabIndex = 7;
             // 
             // pictureBox2
@@ -725,7 +709,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 530);
+            this.ClientSize = new System.Drawing.Size(1020, 530);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.m_grb_loai_dich_vu);
             this.Controls.Add(this.m_grb_thoi_gian_hoan_thanh);
@@ -773,12 +757,9 @@
         private System.Windows.Forms.TextBox m_txt_lich_su_trao_doi;
         private System.Windows.Forms.TextBox m_txt_phan_hoi_tu_dvmc;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox m_txt_nguoi_xu_ly;
-        private System.Windows.Forms.CheckBox m_chk_nhieu_nguoi_xu_ly_yn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox m_cbo_nguoi_nhan_dat_hang;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox m_cbo_nguoi_xu_ly_don_hang;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.GroupBox m_grb_loai_dich_vu;
@@ -801,7 +782,6 @@
         private System.Windows.Forms.TextBox m_txt_yeu_cau_cu_the;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel m_pnl_nguoi_dat_hang_infor;
-        private System.Windows.Forms.TextBox m_txt_user_nhan_vien_dat_hang;
         private System.Windows.Forms.TextBox m_txt_ho_ten_nguoi_dat_hang;
         private System.Windows.Forms.DateTimePicker m_dat_thoi_gian_dat_hang;
         private System.Windows.Forms.TextBox m_txt_dien_thoai;
@@ -816,6 +796,9 @@
         private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
         private DevExpress.XtraEditors.SimpleButton m_cmd_xac_nhan_don_hang;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_danh_sach_nguoi_xu_ly;
+        private System.Windows.Forms.ComboBox m_cbo_user_nhan_vien_dat_hang;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_tu_choi;
 
     }
 }

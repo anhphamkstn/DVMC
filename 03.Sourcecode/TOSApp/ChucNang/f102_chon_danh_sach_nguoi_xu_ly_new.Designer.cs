@@ -36,7 +36,7 @@
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.GroupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.m_grc_ht_nguoi_su_dung = new DevExpress.XtraGrid.GridControl();
-            this.m_ht_nguoi_su_dung = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_grv_ht_nguoi_su_dung = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.HO_VA_TEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.EMAIL = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -44,7 +44,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).BeginInit();
             this.GroupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_ht_nguoi_su_dung)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).BeginInit();
             this.SuspendLayout();
             // 
             // ImageList
@@ -99,6 +99,7 @@
             this.m_cmd_oke.Size = new System.Drawing.Size(69, 28);
             this.m_cmd_oke.TabIndex = 2;
             this.m_cmd_oke.Text = "OKE";
+            this.m_cmd_oke.Click += new System.EventHandler(this.m_cmd_oke_Click);
             // 
             // m_cmd_exit
             // 
@@ -131,23 +132,23 @@
             this.m_grc_ht_nguoi_su_dung.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_ht_nguoi_su_dung.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(2, 21);
-            this.m_grc_ht_nguoi_su_dung.MainView = this.m_ht_nguoi_su_dung;
+            this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
             this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
             this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(621, 284);
             this.m_grc_ht_nguoi_su_dung.TabIndex = 0;
             this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_ht_nguoi_su_dung});
+            this.m_grv_ht_nguoi_su_dung});
             // 
-            // m_ht_nguoi_su_dung
+            // m_grv_ht_nguoi_su_dung
             // 
-            this.m_ht_nguoi_su_dung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_grv_ht_nguoi_su_dung.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.HO_VA_TEN,
             this.EMAIL,
             this.ID});
-            this.m_ht_nguoi_su_dung.GridControl = this.m_grc_ht_nguoi_su_dung;
-            this.m_ht_nguoi_su_dung.Name = "m_ht_nguoi_su_dung";
-            this.m_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
-            this.m_ht_nguoi_su_dung.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.m_grv_ht_nguoi_su_dung.GridControl = this.m_grc_ht_nguoi_su_dung;
+            this.m_grv_ht_nguoi_su_dung.Name = "m_grv_ht_nguoi_su_dung";
+            this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
+            this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             // 
             // HO_VA_TEN
             // 
@@ -186,7 +187,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).EndInit();
             this.GroupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_ht_nguoi_su_dung)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,7 +200,7 @@
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
         private DevExpress.XtraEditors.GroupControl GroupControl1;
         private DevExpress.XtraGrid.GridControl m_grc_ht_nguoi_su_dung;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_ht_nguoi_su_dung;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ht_nguoi_su_dung;
         private DevExpress.XtraGrid.Columns.GridColumn HO_VA_TEN;
         private DevExpress.XtraGrid.Columns.GridColumn EMAIL;
         private DevExpress.XtraGrid.Columns.GridColumn ID;

@@ -811,5 +811,22 @@ namespace IPCOREDS.CDBNames
         public const string MA_DON_HANG = "MA_DON_HANG";
         public const string USER_XU_LY = "USER_XU_LY";
     }
+    public class dm_ma_don_hang
+    {
+        public const string ID = "ID";
+        public const string MA_DON_HANG = "MA_DON_HANG";
+    }
+    public class GD_LOG_DAT_HANG
+    {
+        public const string ID = "ID";
+        public const string ID_LOAI_THAO_TAC = "ID_LOAI_THAO_TAC";
+        public const string ID_GD_DAT_HANG = "ID_GD_DAT_HANG";
+        public const string ID_NGUOI_TAO_THAO_TAC = "ID_NGUOI_TAO_THAO_TAC";
+        public const string ID_NGUOI_NHAN_THAO_TAC = "ID_NGUOI_NHAN_THAO_TAC";
+        public const string NGAY_LAP_THAO_TAC = "NGAY_LAP_THAO_TAC";
+        public const string THAO_TAC_HET_HAN_YN = "THAO_TAC_HET_HAN_YN";
+        public const string GHI_CHU = "GHI_CHU";
+    }
+
 
 }
