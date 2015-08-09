@@ -227,6 +227,18 @@
     <Compile Include="ChucNang\f105_thay_doi_don_hang_BO.Designer.cs">
       <DependentUpon>f105_thay_doi_don_hang_BO.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f106_danh_sach_don_hang_can_tiep_nhan_BO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f106_danh_sach_don_hang_can_tiep_nhan_BO.Designer.cs">
+      <DependentUpon>f106_danh_sach_don_hang_can_tiep_nhan_BO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f107_tu_choi_don_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f107_tu_choi_don_hang.Designer.cs">
+      <DependentUpon>f107_tu_choi_don_hang.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f200_ds_dat_hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -394,6 +406,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f105_thay_doi_don_hang_BO.resx">
       <DependentUpon>f105_thay_doi_don_hang_BO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f106_danh_sach_don_hang_can_tiep_nhan_BO.resx">
+      <DependentUpon>f106_danh_sach_don_hang_can_tiep_nhan_BO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f107_tu_choi_don_hang.resx">
+      <DependentUpon>f107_tu_choi_don_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f200_ds_dat_hang.resx">
       <DependentUpon>f200_ds_dat_hang.cs</DependentUpon>

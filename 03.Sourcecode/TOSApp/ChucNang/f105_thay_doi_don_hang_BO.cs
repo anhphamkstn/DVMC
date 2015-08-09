@@ -43,8 +43,12 @@ namespace TOSApp.ChucNang
             try
             {
                
-                ghi_log_cap_nhat_don_hang(m_US);               
+                update_log_cap_nhat_don_hang(m_US);
+              //  ghi_log_cap_nhat_don_hang(m_US);
+  
+          
                 this.Close();
+                MessageBox.Show("Thành công");
             }
             catch (Exception v_e)
             {
@@ -53,11 +57,25 @@ namespace TOSApp.ChucNang
             }
            
         }
+
+        private void ghi_log_cap_nhat_don_hang(US_GD_LOG_DAT_HANG m_US)
+        {
+
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 231;
+            v_us.dcID_GD_DAT_HANG = m_US.dcID_GD_DAT_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_US.dcID_NGUOI_TAO_THAO_TAC;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_US.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = m_US.dcID_NGUOI_NHAN_THAO_TAC.ToString() + "đang được thực hiện";
+            v_us.Insert();
+        }
         /// <ghi log cập nhật đơn hàng>
         /// ghi lại ghi chú của đơn hàng khi có sự thay đổi về tiến độ hoặc bất cứ điều gì từ người xử lý
         /// </summary>
         /// <param name="m_US"></param>
-        private void ghi_log_cap_nhat_don_hang(US_GD_LOG_DAT_HANG m_US)
+        private void update_log_cap_nhat_don_hang(US_GD_LOG_DAT_HANG m_US)
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID = m_US.dcID;

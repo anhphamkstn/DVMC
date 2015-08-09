@@ -29,7 +29,7 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithTableName(v_ds, "V_GD_CAN_XU_LY");
+            v_us.FillDatasetWithTableName(v_ds, "V_GD_DA_NHAN_XU_LY");
             m_grc_xac_nhan_don_hang.DataSource = v_ds.Tables[0];
 
 
@@ -143,9 +143,18 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
         //được thực hiện khi đơn hàng được hoàn thành
         private void m_cmd_bao_cao_da_xu_ly_Click(object sender, EventArgs e)
         {
-            fill_data_2_m_us();
-            ghi_log_da_xu_ly(m_us);
-            update_log_da_xu_ly(m_us);
+            try
+            {
+                fill_data_2_m_us();
+                ghi_log_da_xu_ly(m_us);
+                update_log_da_xu_ly(m_us);
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+          
 
         }
 

@@ -59,9 +59,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(52, 115);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Lý do từ chối";
+            this.label2.Text = "Ghi chú";
             // 
             // m_txt_ghi_chu
             // 

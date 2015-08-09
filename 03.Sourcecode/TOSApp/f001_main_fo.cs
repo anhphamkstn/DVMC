@@ -24,7 +24,7 @@ namespace TOSApp
             try
             {
                 f500_cong_viec_FO_chi_tiet v_f500 = new f500_cong_viec_FO_chi_tiet();
-                v_f500.MdiParent = this;
+              v_f500.MdiParent = this;
                 v_f500.Show();
             }
             catch (Exception v_e)
@@ -40,7 +40,7 @@ namespace TOSApp
             try
             {
                 TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA v_f = new BaoCao.f500_BAO_CAO_DANH_GIA();
-                v_f.MdiParent = this;
+             //   v_f.MdiParent = this;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -63,5 +63,7 @@ namespace TOSApp
             }
 
         }
+
+      
     }
 }
