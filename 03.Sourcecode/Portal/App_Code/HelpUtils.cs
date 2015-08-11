@@ -63,21 +63,21 @@ public class HelpUtils
                                         , decimal ip_dc_id_user)
     {
         /* Thông tin chung*/
-        US_V_HT_LOG_TRUY_CAP m_us_v_ht_log_truy_cap = new US_V_HT_LOG_TRUY_CAP();
+       // US_V_HT_LOG_TRUY_CAP m_us_v_ht_log_truy_cap = new US_V_HT_LOG_TRUY_CAP();
 
-        m_us_v_ht_log_truy_cap.dcID_DANG_NHAP = ip_dc_id_user;
-        m_us_v_ht_log_truy_cap.datTHOI_GIAN = DateTime.Now;
-        m_us_v_ht_log_truy_cap.strDOI_TUONG_THAO_TAC = ip_obj_doi_tuong_thao_tac;
+        //m_us_v_ht_log_truy_cap.dcID_DANG_NHAP = ip_dc_id_user;
+        //m_us_v_ht_log_truy_cap.datTHOI_GIAN = DateTime.Now;
+        //m_us_v_ht_log_truy_cap.strDOI_TUONG_THAO_TAC = ip_obj_doi_tuong_thao_tac;
 
         /* Thông tin riêng*/
-        m_us_v_ht_log_truy_cap.dcID_LOAI_HANH_DONG = ip_dc_loai_hanh_dong;
-        m_us_v_ht_log_truy_cap.strMO_TA = ip_str_mo_ta;
-        m_us_v_ht_log_truy_cap.strGHI_CHU = ip_str_ghi_chu;
+        //m_us_v_ht_log_truy_cap.dcID_LOAI_HANH_DONG = ip_dc_loai_hanh_dong;
+        //m_us_v_ht_log_truy_cap.strMO_TA = ip_str_mo_ta;
+        //m_us_v_ht_log_truy_cap.strGHI_CHU = ip_str_ghi_chu;
 
         // ghi log hệ thống
         try
         {
-            m_us_v_ht_log_truy_cap.Insert();
+         //   m_us_v_ht_log_truy_cap.Insert();
         }
         catch
         {
