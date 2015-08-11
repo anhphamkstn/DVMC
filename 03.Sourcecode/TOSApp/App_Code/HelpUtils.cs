@@ -145,21 +145,21 @@ namespace TOSApp.App_Code
                                             , string ip_str_ghi_chu)
         {
             /* Thông tin chung*/
-            US_V_HT_LOG_TRUY_CAP m_us_v_ht_log_truy_cap = new US_V_HT_LOG_TRUY_CAP();
+           // US_V_HT_LOG_TRUY_CAP m_us_v_ht_log_truy_cap = new US_V_HT_LOG_TRUY_CAP();
             
-            m_us_v_ht_log_truy_cap.dcID_DANG_NHAP = f002_main_form.m_dc_id_user;
-            m_us_v_ht_log_truy_cap.datTHOI_GIAN = DateTime.Now;
-            m_us_v_ht_log_truy_cap.strDOI_TUONG_THAO_TAC = ip_obj_doi_tuong_thao_tac;
+           // m_us_v_ht_log_truy_cap.dcID_DANG_NHAP = f002_main_form.m_dc_id_user;
+           // m_us_v_ht_log_truy_cap.datTHOI_GIAN = DateTime.Now;
+           // m_us_v_ht_log_truy_cap.strDOI_TUONG_THAO_TAC = ip_obj_doi_tuong_thao_tac;
 
             /* Thông tin riêng*/
-            m_us_v_ht_log_truy_cap.dcID_LOAI_HANH_DONG = ip_dc_loai_hanh_dong;
-            m_us_v_ht_log_truy_cap.strMO_TA = ip_str_mo_ta;
-            m_us_v_ht_log_truy_cap.strGHI_CHU = ip_str_ghi_chu;
+          //  m_us_v_ht_log_truy_cap.dcID_LOAI_HANH_DONG = ip_dc_loai_hanh_dong;
+           // m_us_v_ht_log_truy_cap.strMO_TA = ip_str_mo_ta;
+          //  m_us_v_ht_log_truy_cap.strGHI_CHU = ip_str_ghi_chu;
 
             // ghi log hệ thống
             try
             {
-                m_us_v_ht_log_truy_cap.Insert();
+             //   m_us_v_ht_log_truy_cap.Insert();
             }
             catch
             {
@@ -241,7 +241,7 @@ namespace TOSApp.App_Code
         public static CallInfor get_call_infor(string ip_call_id)
         {
             string v_str_result = "";
-            v_str_result = get_content_from_weburl(f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_CALL_INFOR(ip_call_id));
+          //  v_str_result = get_content_from_weburl(f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_CALL_INFOR(ip_call_id));
             CLichSuCuocGoi v_obj_infor = JsonConvert.DeserializeObject<CLichSuCuocGoi>(v_str_result);
 
             return v_obj_infor.data;
@@ -249,7 +249,7 @@ namespace TOSApp.App_Code
         public static CallInfor get_call_infor_overtime(string ip_call_id)
         {
             string v_str_result = "";
-            v_str_result = get_content_from_weburl(f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_CALL_INFOR_OVERTIME(ip_call_id));
+          //  v_str_result = get_content_from_weburl(f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_CALL_INFOR_OVERTIME(ip_call_id));
             CLichSuCuocGoi v_obj_infor = JsonConvert.DeserializeObject<CLichSuCuocGoi>(v_str_result);
 
             return v_obj_infor.data;
@@ -404,8 +404,8 @@ namespace TOSApp.App_Code
         public static string get_file_record(string ip_str_link_record_call_center)
         {
             string v_str_file = "";
-            string v_str_server = f002_main_form.m_str_web_record_url;
-            v_str_file = ip_str_link_record_call_center.Replace("/var/spool/asterisk/monitor/", v_str_server);
+          //  string v_str_server = f002_main_form.m_str_web_record_url;
+          //  v_str_file = ip_str_link_record_call_center.Replace("/var/spool/asterisk/monitor/", v_str_server);
             return v_str_file;
         }
 
@@ -509,14 +509,14 @@ namespace TOSApp.App_Code
                 //
                 if (v_obj_sinhvien.Dien_thoai == null) v_obj_sinhvien.Dien_thoai = ip_call_info.mobile_phone;
 
-                f200_sinh_vien_goi_den v_f200 = new f200_sinh_vien_goi_den();
-                v_f200.display(v_obj_sinhvien, ip_call_info.call_id);
+              //  f200_sinh_vien_goi_den v_f200 = new f200_sinh_vien_goi_den();
+              //  v_f200.display(v_obj_sinhvien, ip_call_info.call_id);
                 string v_str_thong_tin_goi_vao = "";
                 if (v_obj_sinhvien.Ho_ten != "")
                     v_str_thong_tin_goi_vao += "Họ tên: " + v_obj_sinhvien.Ho_ten + "; ";
                 if (v_obj_sinhvien.Dien_thoai != "")
                     v_str_thong_tin_goi_vao += "ĐT: " + v_obj_sinhvien.Dien_thoai;
-                HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.HOC_VIEN_GOI_DEN, v_str_thong_tin_goi_vao, "Gọi vào", f002_main_form.m_str_stationId);
+               // HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.HOC_VIEN_GOI_DEN, v_str_thong_tin_goi_vao, "Gọi vào", f002_main_form.m_str_stationId);
             }
             catch (Exception v_e)
             {
@@ -533,35 +533,35 @@ namespace TOSApp.App_Code
         /// <param name="Content">Content of the mail</param>
         public static void send_mail(string to, string toCC, string Subject, string Content)
         {
-            string v_str_send_mail = f002_main_form.m_str_email_dvmc;
-            string v_str_password_send_mail = CEncryptKeyString.DecryptString(f002_main_form.m_str_password_dvmc);
-            string v_str_mail_from = f002_main_form.m_str_ho_ten_dtv + "<" + v_str_send_mail + ">";
+          //  string v_str_send_mail = f002_main_form.m_str_email_dvmc;
+          //  string v_str_password_send_mail = CEncryptKeyString.DecryptString(f002_main_form.m_str_password_dvmc);
+           // string v_str_mail_from = f002_main_form.m_str_ho_ten_dtv + "<" + v_str_send_mail + ">";
 
-            using (MailMessage v_mail_send = new MailMessage(v_str_mail_from, to))
-            {
-                v_mail_send.Subject = Subject;
-                v_mail_send.Body = Content;
-                v_mail_send.IsBodyHtml = true;
-                v_mail_send.BodyEncoding = Encoding.UTF8;
+           // using (MailMessage v_mail_send = new MailMessage(v_str_mail_from, to))
+            //{
+            //    v_mail_send.Subject = Subject;
+            //    v_mail_send.Body = Content;
+            //    v_mail_send.IsBodyHtml = true;
+            //    v_mail_send.BodyEncoding = Encoding.UTF8;
 
-                if (toCC != "")
-                {
-                    string[] v_str_cc = toCC.Split(',');
-                    for (int v_i = 0; v_i < v_str_cc.Length; v_i++)
-                    {
-                        v_mail_send.CC.Add(v_str_cc[v_i]);
-                    }
-                }
+            //    if (toCC != "")
+            //    {
+            //        string[] v_str_cc = toCC.Split(',');
+            //        for (int v_i = 0; v_i < v_str_cc.Length; v_i++)
+            //        {
+            //            v_mail_send.CC.Add(v_str_cc[v_i]);
+            //        }
+            //    }
 
-                SmtpClient smtp = new SmtpClient();
-                smtp.Host = "smtp.gmail.com";
-                smtp.EnableSsl = true;
-                NetworkCredential NetworkCred = new NetworkCredential(v_str_send_mail, v_str_password_send_mail);
-                smtp.UseDefaultCredentials = false;
-                smtp.Credentials = NetworkCred;
-                smtp.Port = 587;
-                smtp.Send(v_mail_send);
-            }
+            //    SmtpClient smtp = new SmtpClient();
+            //    smtp.Host = "smtp.gmail.com";
+            //    smtp.EnableSsl = true;
+            //    NetworkCredential NetworkCred = new NetworkCredential(v_str_send_mail, v_str_password_send_mail);
+            //    smtp.UseDefaultCredentials = false;
+            //    smtp.Credentials = NetworkCred;
+            //    smtp.Port = 587;
+            //    smtp.Send(v_mail_send);
+            //}
         }
        
         /// <summary>

@@ -22,20 +22,23 @@ namespace TOSApp
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             TOSApp.BaoCao.f510_BAO_CAO_TIEP_NHAN v_f = new TOSApp.BaoCao.f510_BAO_CAO_TIEP_NHAN();
-            v_f.ShowDialog();
+            v_f.MdiParent = this;
+            v_f.Show();
 
         }
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             TOSApp.BaoCao.f520_BAO_CAO_XU_LI v_f = new TOSApp.BaoCao.f520_BAO_CAO_XU_LI();
-            v_f.ShowDialog();
+            v_f.MdiParent = this;
+            v_f.Show();
         }
 
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA v_f = new TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA();
-            v_f.ShowDialog();
+            v_f.MdiParent = this;
+            v_f.Show();
         }
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

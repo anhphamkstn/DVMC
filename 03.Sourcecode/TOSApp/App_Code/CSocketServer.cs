@@ -116,14 +116,14 @@ namespace TOSApp.App_Code
                 //
                 if (v_obj_sinhvien.Dien_thoai == null) v_obj_sinhvien.Dien_thoai = ip_call_info.mobile_phone;
 
-                f200_sinh_vien_goi_den v_f200 = new f200_sinh_vien_goi_den();
-                v_f200.display(v_obj_sinhvien, ip_call_info.call_id);
+                //f200_sinh_vien_goi_den v_f200 = new f200_sinh_vien_goi_den();
+               // v_f200.display(v_obj_sinhvien, ip_call_info.call_id);
                 string v_str_thong_tin_goi_vao = "";
                 if (v_obj_sinhvien.Ho_ten != "")
                     v_str_thong_tin_goi_vao += "Họ tên: " + v_obj_sinhvien.Ho_ten + "; ";
                 if (v_obj_sinhvien.Dien_thoai != "")
                     v_str_thong_tin_goi_vao += "ĐT: " + v_obj_sinhvien.Dien_thoai;
-                HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.HOC_VIEN_GOI_DEN, v_str_thong_tin_goi_vao, "Gọi vào", f002_main_form.m_str_stationId);
+              //  HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.HOC_VIEN_GOI_DEN, v_str_thong_tin_goi_vao, "Gọi vào", f002_main_form.m_str_stationId);
             }
             catch (Exception v_e)
             {

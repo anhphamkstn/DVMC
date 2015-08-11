@@ -129,40 +129,15 @@
     </Compile>
     <Compile Include="US_DM_CAU_HOI.cs" />
     <Compile Include="US_DM_DON_VI.cs" />
-    <Compile Include="US_DM_LOAI_YEU_CAU.cs" />
     <Compile Include="US_DM_MAU_EMAIL.cs" />
     <Compile Include="US_DM_MA_DON_HANG.cs" />
-    <Compile Include="US_DM_NGUOI_DAT_HANG.cs" />
     <Compile Include="US_DM_NGUOI_DUNG_STATION.cs" />
-    <Compile Include="US_DM_QLHT_SCM.cs" />
     <Compile Include="US_DOC_COLUMN_COMMENT.cs" />
     <Compile Include="US_DOC_TABLE_COMMENT.cs" />
-    <Compile Include="US_GD_CAU_HOI_HOC_VIEN.cs" />
     <Compile Include="US_GD_CUOC_GOI_YEU_CAU.cs" />
     <Compile Include="US_GD_DAT_HANG.cs" />
     <Compile Include="US_GD_LOG_DAT_HANG.cs" />
-    <Compile Include="US_GD_XU_LY_NOI_BO.cs" />
-    <Compile Include="US_HT_BACKUP_HISTORY.cs" />
-    <Compile Include="US_HT_BUSINESS_PROCESS_LOCK.cs" />
-    <Compile Include="US_HT_NHOM_NGUOI_SU_DUNG.cs" />
-    <Compile Include="US_HT_PHAN_QUYEN_CHO_NHOM.cs" />
-    <Compile Include="US_HT_PHAN_QUYEN_HE_THONG.cs" />
-    <Compile Include="US_HT_QUYEN_USER.cs" />
-    <Compile Include="US_RPT_NHAC_VIEC.cs" />
     <Compile Include="US_UT_SEQUENCES.cs" />
-    <Compile Include="US_V_DM_BLACK_LIST .cs" />
-    <Compile Include="US_V_DM_CAU_HOI.cs" />
-    <Compile Include="US_V_DM_CAU_HOI_KO_TRA_LOI.cs" />
-    <Compile Include="US_V_DM_CAU_TRA_LOI.cs" />
-    <Compile Include="US_V_DM_NGUOI_DAI_DIEN.cs" />
-    <Compile Include="US_V_DM_STATION.cs" />
-    <Compile Include="US_V_GD_CAU_HOI_YEU_CAU.cs" />
-    <Compile Include="US_V_GD_DAT_HANG.cs" />
-    <Compile Include="US_V_GD_DIEU_PHOI_LAI.cs" />
-    <Compile Include="US_V_GD_LICH_GOI_NOI_BO.cs" />
-    <Compile Include="US_V_GD_NGUOI_XU_LY_DON_HANG.cs" />
-    <Compile Include="US_V_GD_XU_LY_NOI_BO.cs" />
-    <Compile Include="US_V_HT_LOG_TRUY_CAP.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

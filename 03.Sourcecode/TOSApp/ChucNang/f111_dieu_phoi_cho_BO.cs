@@ -20,7 +20,7 @@ namespace TOSApp.ChucNang
         }
 
 
-        US_V_GD_DIEU_PHOI_LAI m_US = new US_V_GD_DIEU_PHOI_LAI();
+        //US_V_GD_DIEU_PHOI_LAI m_US = new US_V_GD_DIEU_PHOI_LAI();
 
         private void m_cmd_Cancel_Click(object sender, EventArgs e)
         {
@@ -46,7 +46,7 @@ namespace TOSApp.ChucNang
         private void update_log_dieu_phoi()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_US.dcID;
+            //v_us.dcID = m_US.dcID;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "đã gửi cho PM";
             v_us.Update();
@@ -54,20 +54,20 @@ namespace TOSApp.ChucNang
 
 
 
-        internal void displayListPM(IPCOREUS.US_V_GD_DIEU_PHOI_LAI m_us)
-        {
-            m_US = m_us;
-            f111_dieu_phoi_cho_BO v_f111 = new f111_dieu_phoi_cho_BO();
-            us_2_form(m_us);
-            v_f111.ShowDialog();
-        }
+        //internal void displayListPM(IPCOREUS.US_V_GD_DIEU_PHOI_LAI m_us)
+        //{
+        //    //m_US = m_us;
+        //    f111_dieu_phoi_cho_BO v_f111 = new f111_dieu_phoi_cho_BO();
+        //    us_2_form(m_us);
+        //    v_f111.ShowDialog();
+        //}
 
-        private void us_2_form(IPCOREUS.US_V_GD_DIEU_PHOI_LAI m_us)
-        {
+        //private void us_2_form(IPCOREUS.US_V_GD_DIEU_PHOI_LAI m_us)
+        //{
 
-            m_txt_ID_don_hang.Text = m_us.dcID_GD_DAT_HANG.ToString();
-            m_txt_dich_vu_yeu_cau.Text = m_us.strTEN_YEU_CAU;
-            m_txt_noi_dung_dat_hang.Text = m_us.strNOI_DUNG_DAT_HANG;
-        }
+        //    m_txt_ID_don_hang.Text = m_us.dcID_GD_DAT_HANG.ToString();
+        //    m_txt_dich_vu_yeu_cau.Text = m_us.strTEN_YEU_CAU;
+        //    m_txt_noi_dung_dat_hang.Text = m_us.strNOI_DUNG_DAT_HANG;
+        //}
     }
 }

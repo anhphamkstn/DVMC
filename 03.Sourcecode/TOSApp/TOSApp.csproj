@@ -193,35 +193,17 @@
     <Compile Include="BaoCao\f520_BAO_CAO_XU_LI.Designer.cs">
       <DependentUpon>f520_BAO_CAO_XU_LI.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\f100_dat_hang_moi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f100_dat_hang_moi.Designer.cs">
-      <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChucNang\f100_don_dat_hang_new.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChucNang\f100_don_dat_hang_new.Designer.cs">
       <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.Designer.cs">
-      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.Designer.cs">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChucNang\f103_danh_gia_don_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f103_danh_gia_don_hang.Designer.cs">
-      <DependentUpon>f103_danh_gia_don_hang.cs</DependentUpon>
     </Compile>
     <Compile Include="ChucNang\f104_danh_sach_don_hang_dang_xu_ly_BO.cs">
       <SubType>Form</SubType>
@@ -283,119 +265,11 @@
     <Compile Include="ChucNang\f113_danh_sach_can_phe_duyet_PM.Designer.cs">
       <DependentUpon>f113_danh_sach_can_phe_duyet_PM.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\f200_ds_dat_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f225_tim_kiem_cau_hoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f230_dm_sinh_vien_searching.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f220_dm_cau_hoi_searching.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f210_goi_lai_sinh_vien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f210_goi_lai_sinh_vien.Designer.cs">
-      <DependentUpon>f210_goi_lai_sinh_vien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChucNang\f200_sinh_vien_goi_den.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f200_sinh_vien_goi_den.Designer.cs">
-      <DependentUpon>f200_sinh_vien_goi_den.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChucNang\f300_dm_yeu_cau_hoc_vien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f310_dm_station.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f400_gd_xu_ly_noi_bo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f400_gd_xu_ly_noi_bo.Designer.cs">
-      <DependentUpon>f400_gd_xu_ly_noi_bo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChucNang\f420_search_chon_qlht.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f430_quan_ly_blacklist.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ChucNang\f500_cong_viec_FO_chi_tiet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChucNang\f500_cong_viec_FO_chi_tiet.Designer.cs">
       <DependentUpon>f500_cong_viec_FO_chi_tiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DanhMuc\f110_dm_cau_hoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\f111_dm_cau_hoi_de.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\f111_dm_cau_hoi_de.Designer.cs">
-      <DependentUpon>f111_dm_cau_hoi_de.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DanhMuc\f430_dm_quan_ly_hoc_tap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\f500_ds_nguoi_dai_dien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\f501_dm_nguoi_dai_dien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\f501_dm_nguoi_dai_dien.Designer.cs">
-      <DependentUpon>f501_dm_nguoi_dai_dien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="f000_login_fake.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f000_login_fake.Designer.cs">
-      <DependentUpon>f000_login_fake.cs</DependentUpon>
-    </Compile>
-    <Compile Include="f002_main_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f003_main_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f996_license_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f998_ht_nguoi_su_dung_de.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f999_ht_nguoi_su_dung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThong\f000_confirm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThong\f000_confirm.Designer.cs">
-      <DependentUpon>f000_confirm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HeThong\f107_ht_tham_so_he_thong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThong\f108_tham_so_he_thong_de.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThong\f108_tham_so_he_thong_de.Designer.cs">
-      <DependentUpon>f108_tham_so_he_thong_de.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HeThong\f997_ht_nhom_quyen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThong\f997_ht_nhom_quyen_de.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HeThong\f997_ht_nhom_quyen_de.Designer.cs">
-      <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </Compile>
     <Compile Include="f001_main_FO.cs">
       <SubType>Form</SubType>
@@ -439,21 +313,12 @@
     <EmbeddedResource Include="BaoCao\f520_BAO_CAO_XU_LI.resx">
       <DependentUpon>f520_BAO_CAO_XU_LI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f100_dat_hang_moi.resx">
-      <DependentUpon>f100_dat_hang_moi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f100_don_dat_hang_new.resx">
       <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly.resx">
-      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.resx">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f103_danh_gia_don_hang.resx">
-      <DependentUpon>f103_danh_gia_don_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f104_danh_sach_don_hang_dang_xu_ly_BO.resx">
       <DependentUpon>f104_danh_sach_don_hang_dang_xu_ly_BO.cs</DependentUpon>
@@ -485,89 +350,8 @@
     <EmbeddedResource Include="ChucNang\f113_danh_sach_can_phe_duyet_PM.resx">
       <DependentUpon>f113_danh_sach_can_phe_duyet_PM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f200_ds_dat_hang.resx">
-      <DependentUpon>f200_ds_dat_hang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f225_tim_kiem_cau_hoi.resx">
-      <DependentUpon>f225_tim_kiem_cau_hoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f230_dm_sinh_vien_searching.resx">
-      <DependentUpon>f230_dm_sinh_vien_searching.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f220_dm_cau_hoi_searching.resx">
-      <DependentUpon>f220_dm_cau_hoi_searching.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f210_goi_lai_sinh_vien.resx">
-      <DependentUpon>f210_goi_lai_sinh_vien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f200_sinh_vien_goi_den.resx">
-      <DependentUpon>f200_sinh_vien_goi_den.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f300_dm_yeu_cau_hoc_vien.resx">
-      <DependentUpon>f300_dm_yeu_cau_hoc_vien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f310_dm_station.resx">
-      <DependentUpon>f310_dm_station.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f400_gd_xu_ly_noi_bo.resx">
-      <DependentUpon>f400_gd_xu_ly_noi_bo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f420_search_chon_qlht.resx">
-      <DependentUpon>f420_search_chon_qlht.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f430_quan_ly_blacklist.resx">
-      <DependentUpon>f430_quan_ly_blacklist.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f500_cong_viec_FO_chi_tiet.resx">
       <DependentUpon>f500_cong_viec_FO_chi_tiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\f110_dm_cau_hoi.resx">
-      <DependentUpon>f110_dm_cau_hoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\f111_dm_cau_hoi_de.resx">
-      <DependentUpon>f111_dm_cau_hoi_de.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\f430_dm_quan_ly_hoc_tap.resx">
-      <DependentUpon>f430_dm_quan_ly_hoc_tap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\f500_ds_nguoi_dai_dien.resx">
-      <DependentUpon>f500_ds_nguoi_dai_dien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\f501_dm_nguoi_dai_dien.resx">
-      <DependentUpon>f501_dm_nguoi_dai_dien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f000_login_fake.resx">
-      <DependentUpon>f000_login_fake.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f002_main_form.resx">
-      <DependentUpon>f002_main_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f003_main_form.resx">
-      <DependentUpon>f003_main_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f996_license_form.resx">
-      <DependentUpon>f996_license_form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f998_ht_nguoi_su_dung_de.resx">
-      <DependentUpon>f998_ht_nguoi_su_dung_de.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f999_ht_nguoi_su_dung.resx">
-      <DependentUpon>f999_ht_nguoi_su_dung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\f000_confirm.resx">
-      <DependentUpon>f000_confirm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\f107_ht_tham_so_he_thong.resx">
-      <DependentUpon>f107_ht_tham_so_he_thong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\f108_tham_so_he_thong_de.resx">
-      <DependentUpon>f108_tham_so_he_thong_de.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\f997_ht_nhom_quyen.resx">
-      <DependentUpon>f997_ht_nhom_quyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HeThong\f997_ht_nhom_quyen_de.resx">
-      <DependentUpon>f997_ht_nhom_quyen_de.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenses.licx" />
     <EmbeddedResource Include="f001_main_FO.resx">
@@ -632,6 +416,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="DanhMuc\" />
+    <Folder Include="HeThong\" />
     <Folder Include="Logs\" />
   </ItemGroup>
   <ItemGroup>
@@ -644,9 +430,6 @@
     <Content Include="bin\Debug\UserMsg.xml" />
     <Content Include="NumOfMessage.XML" />
     <Content Include="phone.ico" />
-    <Content Include="Reports\Output\Readme.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\advancedsettings.png" />
     <Content Include="Resources\call center img.jpg" />
     <Content Include="Resources\call-center-icon-22342189.jpg" />
@@ -672,21 +455,6 @@
     <Content Include="Resources\player_pause.png" />
     <Content Include="Resources\player_play.png" />
     <Content Include="Resources\report.jpg" />
-    <Content Include="Reports\Templates\Bao_Cao_L5B_8.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Templates\F300_BaoCaoNghiemThuContact.xls">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Templates\F310_BaoCaoThuHoiContact.xls">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Templates\F350_BaoCaoTrungContact.xls">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Templates\TIC100_Template_Import_20131008.xls">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Resources\status.jpg" />
     <None Include="Resources\telephone.png" />
     <Content Include="Resources\users.ico" />
@@ -710,10 +478,6 @@
     <ProjectReference Include="..\IPData\IPData.vbproj">
       <Project>{9ACEDD70-FDA2-44D8-A004-3A7EAF86A954}</Project>
       <Name>IPData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IPExcelReport\IPExcelReport.vbproj">
-      <Project>{957C06D0-FF42-4C7A-B5E8-7E15C1522B59}</Project>
-      <Name>IPExcelReport</Name>
     </ProjectReference>
     <ProjectReference Include="..\IPException\IPException.vbproj">
       <Project>{B73156C2-7034-4DEA-A308-5E1782FF8DB4}</Project>

@@ -25,9 +25,9 @@ namespace TOSApp.App_Code
             string v_str_link_services = "";
 
             if (ip_code_add_or_remove == 10)
-                v_str_link_services =  f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.ADD_VAO_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
-            else if (ip_code_add_or_remove == 20)
-                v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.REMOVE_KHOI_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
+              //  v_str_link_services =  f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.ADD_VAO_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
+           // else if (ip_code_add_or_remove == 20)
+               // v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.REMOVE_KHOI_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -45,7 +45,7 @@ namespace TOSApp.App_Code
         {
             string v_str_result = "";
             string v_str_link_services = "";
-            v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.PAUSE_AGENT(ip_extension, ip_agent);
+           // v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.PAUSE_AGENT(ip_extension, ip_agent);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -64,7 +64,7 @@ namespace TOSApp.App_Code
         {
             string v_str_result = "";
             string v_str_link_services = "";
-            v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.UNPAUSE_AGENT(ip_extension, ip_agent);
+          //  v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.UNPAUSE_AGENT(ip_extension, ip_agent);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -82,7 +82,7 @@ namespace TOSApp.App_Code
         {
             string v_str_result = "";
             string v_str_link_services = "";
-            v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.REGISTER_IP(ip_extension, ip_ipaddress);
+           // v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.REGISTER_IP(ip_extension, ip_ipaddress);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -98,7 +98,7 @@ namespace TOSApp.App_Code
         {
             string v_str_result = "";
             string v_str_link_services = "";
-            v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.UNREGISTER_IP(ip_extension);
+           // v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.UNREGISTER_IP(ip_extension);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -116,7 +116,7 @@ namespace TOSApp.App_Code
         {
             string v_str_result = "";
             string v_str_link_services = "";
-            v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.ADD_REMOVE_BLACKLIST(ip_dien_thoai, ip_code);
+           // v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.ADD_REMOVE_BLACKLIST(ip_dien_thoai, ip_code);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -133,7 +133,7 @@ namespace TOSApp.App_Code
         {
             string v_str_result = "";
             string v_str_link_services = "";
-            v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(ip_extension);
+          //  v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(ip_extension);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
