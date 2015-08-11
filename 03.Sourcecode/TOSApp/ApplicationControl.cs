@@ -36,8 +36,7 @@ namespace TOSApp
              //f002_main_BO f_FO = new f002_main_BO();
               //f000_login_fake f_FO = new f000_login_fake();
               //  f113_danh_sach_can_phe_duyet_PM f_FO = new f113_danh_sach_can_phe_duyet_PM();
-                f000_gd_dat_hang_gd_log_dat_hang v_f = new f000_gd_dat_hang_gd_log_dat_hang();
-                v_f.ShowDialog();
+              
             }
             catch (Exception v_e)
             {
