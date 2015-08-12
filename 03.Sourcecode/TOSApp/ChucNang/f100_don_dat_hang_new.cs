@@ -65,8 +65,8 @@ namespace TOSApp.ChucNang
         //load du liệu lên selected  dịch vụ
         private void load_data_2_selected_dich_vu()
         {
-
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " Where ID_CHA=" +m_cbo_loai_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN", WinFormControls.eTAT_CA.NO, "select DISTINCT TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA="+m_cbo_loai_dich_vu.SelectedValue.ToString());
+            //WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " Where ID_CHA=" +m_cbo_loai_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
             
         }
         //load len trang thai cua selected don hang
@@ -83,7 +83,7 @@ namespace TOSApp.ChucNang
         }
         #endregion
 
-        //hàm này dùng để fomat controll trước khi tạo một đơn hàng mới
+        //hàm này dùng để fomat controll trước khi tạo một đơn hàng mới,
         
         private void fomat_controlls_form()
         {
