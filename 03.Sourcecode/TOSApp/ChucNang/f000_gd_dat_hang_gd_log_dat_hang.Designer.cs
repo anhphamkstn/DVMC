@@ -28,27 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.m_panel_button = new System.Windows.Forms.Panel();
-            this.m_panel_TM = new System.Windows.Forms.Panel();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.m_panel_PM = new System.Windows.Forms.Panel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
-            this.m_panel_admin = new System.Windows.Forms.Panel();
-            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
-            this.m_panel_BO = new System.Windows.Forms.Panel();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
-            this.m_panel_FO = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f000_gd_dat_hang_gd_log_dat_hang));
             this.m_grc_gd_dat_hang_gd_log_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_gd_dat_hang_gd_log_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -73,216 +54,38 @@
             this.NGAY_LAP_THAO_TAC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHI_CHU_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.CHI_NHANH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_panel_button.SuspendLayout();
-            this.m_panel_TM.SuspendLayout();
-            this.m_panel_PM.SuspendLayout();
-            this.m_panel_admin.SuspendLayout();
-            this.m_panel_BO.SuspendLayout();
-            this.m_panel_FO.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // m_panel_button
-            // 
-            this.m_panel_button.Controls.Add(this.m_panel_TM);
-            this.m_panel_button.Controls.Add(this.m_panel_PM);
-            this.m_panel_button.Controls.Add(this.m_panel_admin);
-            this.m_panel_button.Controls.Add(this.m_panel_BO);
-            this.m_panel_button.Controls.Add(this.m_panel_FO);
-            this.m_panel_button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_panel_button.Location = new System.Drawing.Point(0, 316);
-            this.m_panel_button.Name = "m_panel_button";
-            this.m_panel_button.Size = new System.Drawing.Size(1174, 194);
-            this.m_panel_button.TabIndex = 0;
-            // 
-            // m_panel_TM
-            // 
-            this.m_panel_TM.Controls.Add(this.simpleButton7);
-            this.m_panel_TM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_panel_TM.Location = new System.Drawing.Point(0, 0);
-            this.m_panel_TM.Name = "m_panel_TM";
-            this.m_panel_TM.Size = new System.Drawing.Size(223, 194);
-            this.m_panel_TM.TabIndex = 7;
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.Location = new System.Drawing.Point(30, 25);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(118, 32);
-            this.simpleButton7.TabIndex = 0;
-            this.simpleButton7.Text = "TM đánh giá đơn hàng";
-            // 
-            // m_panel_PM
-            // 
-            this.m_panel_PM.Controls.Add(this.simpleButton2);
-            this.m_panel_PM.Controls.Add(this.simpleButton6);
-            this.m_panel_PM.Controls.Add(this.simpleButton12);
-            this.m_panel_PM.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_panel_PM.Location = new System.Drawing.Point(223, 0);
-            this.m_panel_PM.Name = "m_panel_PM";
-            this.m_panel_PM.Size = new System.Drawing.Size(230, 194);
-            this.m_panel_PM.TabIndex = 6;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(41, 25);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(121, 32);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "PM nhận xử lý";
-            // 
-            // simpleButton6
-            // 
-            this.simpleButton6.Location = new System.Drawing.Point(41, 136);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(121, 33);
-            this.simpleButton6.TabIndex = 0;
-            this.simpleButton6.Text = "PM Gửi cho admin ";
-            // 
-            // simpleButton12
-            // 
-            this.simpleButton12.Location = new System.Drawing.Point(41, 77);
-            this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(121, 35);
-            this.simpleButton12.TabIndex = 0;
-            this.simpleButton12.Text = "PM Điều phối ";
-            // 
-            // m_panel_admin
-            // 
-            this.m_panel_admin.Controls.Add(this.simpleButton16);
-            this.m_panel_admin.Controls.Add(this.simpleButton10);
-            this.m_panel_admin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_panel_admin.Location = new System.Drawing.Point(453, 0);
-            this.m_panel_admin.Name = "m_panel_admin";
-            this.m_panel_admin.Size = new System.Drawing.Size(231, 194);
-            this.m_panel_admin.TabIndex = 5;
-            // 
-            // simpleButton16
-            // 
-            this.simpleButton16.Location = new System.Drawing.Point(60, 25);
-            this.simpleButton16.Name = "simpleButton16";
-            this.simpleButton16.Size = new System.Drawing.Size(118, 32);
-            this.simpleButton16.TabIndex = 0;
-            this.simpleButton16.Text = "admin nhận xử lý";
-            // 
-            // simpleButton10
-            // 
-            this.simpleButton10.Location = new System.Drawing.Point(60, 77);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(118, 35);
-            this.simpleButton10.TabIndex = 0;
-            this.simpleButton10.Text = "admin Hủy đơn hàng";
-            // 
-            // m_panel_BO
-            // 
-            this.m_panel_BO.Controls.Add(this.simpleButton13);
-            this.m_panel_BO.Controls.Add(this.simpleButton15);
-            this.m_panel_BO.Controls.Add(this.simpleButton11);
-            this.m_panel_BO.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_panel_BO.Location = new System.Drawing.Point(684, 0);
-            this.m_panel_BO.Name = "m_panel_BO";
-            this.m_panel_BO.Size = new System.Drawing.Size(237, 194);
-            this.m_panel_BO.TabIndex = 4;
-            // 
-            // simpleButton13
-            // 
-            this.simpleButton13.Location = new System.Drawing.Point(52, 77);
-            this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(133, 35);
-            this.simpleButton13.TabIndex = 0;
-            this.simpleButton13.Text = "BO từ chối tiếp nhận";
-            // 
-            // simpleButton15
-            // 
-            this.simpleButton15.Location = new System.Drawing.Point(52, 136);
-            this.simpleButton15.Name = "simpleButton15";
-            this.simpleButton15.Size = new System.Drawing.Size(133, 33);
-            this.simpleButton15.TabIndex = 0;
-            this.simpleButton15.Text = "BO báo cáo hoàn thành";
-            // 
-            // simpleButton11
-            // 
-            this.simpleButton11.Location = new System.Drawing.Point(52, 25);
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(133, 32);
-            this.simpleButton11.TabIndex = 0;
-            this.simpleButton11.Text = "BO tiếp nhận";
-            // 
-            // m_panel_FO
-            // 
-            this.m_panel_FO.Controls.Add(this.simpleButton1);
-            this.m_panel_FO.Controls.Add(this.simpleButton3);
-            this.m_panel_FO.Controls.Add(this.simpleButton4);
-            this.m_panel_FO.Controls.Add(this.simpleButton9);
-            this.m_panel_FO.Controls.Add(this.simpleButton5);
-            this.m_panel_FO.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_panel_FO.Location = new System.Drawing.Point(921, 0);
-            this.m_panel_FO.Name = "m_panel_FO";
-            this.m_panel_FO.Size = new System.Drawing.Size(253, 194);
-            this.m_panel_FO.TabIndex = 3;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(66, 6);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(121, 34);
-            this.simpleButton1.TabIndex = 0;
-            this.simpleButton1.Text = "Tạo mới đơn hàng";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Location = new System.Drawing.Point(66, 121);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(121, 33);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Text = "FO nhận xử lý";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(66, 45);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(121, 33);
-            this.simpleButton4.TabIndex = 0;
-            this.simpleButton4.Text = "FO Điều phối đơn hàng";
-            // 
-            // simpleButton9
-            // 
-            this.simpleButton9.Location = new System.Drawing.Point(66, 82);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(121, 34);
-            this.simpleButton9.TabIndex = 0;
-            this.simpleButton9.Text = "FO Điều phối lại";
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Location = new System.Drawing.Point(66, 159);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(121, 31);
-            this.simpleButton5.TabIndex = 0;
-            this.simpleButton5.Text = "FO Gửi PM";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.m_grc_gd_dat_hang_gd_log_dat_hang);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1174, 316);
-            this.panel2.TabIndex = 1;
             // 
             // m_grc_gd_dat_hang_gd_log_dat_hang
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode1.RelationName = "Level1";
+            this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
-            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1174, 316);
+            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1174, 549);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.TabIndex = 0;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_grv_gd_dat_hang_gd_log_dat_hang});
+            this.m_grv_gd_dat_hang_gd_log_dat_hang,
+            this.gridView1});
             // 
             // m_grv_gd_dat_hang_gd_log_dat_hang
             // 
@@ -466,48 +269,108 @@
             this.CHI_NHANH.Name = "CHI_NHANH";
             this.CHI_NHANH.Width = 66;
             // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
+            this.gridView1.Name = "gridView1";
+            // 
+            // ribbonControl1
+            // 
+            this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbonControl1.ExpandCollapseItem,
+            this.barButtonItem1});
+            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.MaxItemId = 5;
+            this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1,
+            this.ribbonPage2,
+            this.ribbonPage3,
+            this.ribbonPage4,
+            this.ribbonPage5});
+            this.ribbonControl1.Size = new System.Drawing.Size(1174, 161);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Tạo mới đơn hàng";
+            this.barButtonItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.Glyph")));
+            this.barButtonItem1.Id = 1;
+            this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.Image")));
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Nghiệp vụ FO";
+            this.ribbonPage1.Visible = false;
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "FO";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.Image")));
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "Nghiệp vụ BO";
+            // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.Image")));
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Nghiệp vụ PM";
+            // 
+            // ribbonPage4
+            // 
+            this.ribbonPage4.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.Image")));
+            this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Text = "Nghiệp vụ TD";
+            // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.Image")));
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "Nghiệp vụ TM";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.ribbonControl1);
+            this.panel2.Controls.Add(this.m_grc_gd_dat_hang_gd_log_dat_hang);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1174, 549);
+            this.panel2.TabIndex = 1;
+            // 
             // f000_gd_dat_hang_gd_log_dat_hang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 510);
+            this.ClientSize = new System.Drawing.Size(1174, 549);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.m_panel_button);
             this.Name = "f000_gd_dat_hang_gd_log_dat_hang";
-            this.Text = "f000_gd_dat_hang_gd_log_dat_hang";
-            this.m_panel_button.ResumeLayout(false);
-            this.m_panel_TM.ResumeLayout(false);
-            this.m_panel_PM.ResumeLayout(false);
-            this.m_panel_admin.ResumeLayout(false);
-            this.m_panel_BO.ResumeLayout(false);
-            this.m_panel_FO.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.Text = "\'";
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel m_panel_button;
-        private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraGrid.GridControl m_grc_gd_dat_hang_gd_log_dat_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_gd_dat_hang_gd_log_dat_hang;
-        private DevExpress.XtraEditors.SimpleButton simpleButton16;
-        private DevExpress.XtraEditors.SimpleButton simpleButton15;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
         private DevExpress.XtraGrid.Columns.GridColumn TEN_KHACH_HANG;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_VI;
@@ -530,10 +393,15 @@
         private DevExpress.XtraGrid.Columns.GridColumn NGAY_LAP_THAO_TAC;
         private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU_LOG;
         private DevExpress.XtraGrid.Columns.GridColumn CHI_NHANH;
-        private System.Windows.Forms.Panel m_panel_TM;
-        private System.Windows.Forms.Panel m_panel_PM;
-        private System.Windows.Forms.Panel m_panel_admin;
-        private System.Windows.Forms.Panel m_panel_BO;
-        private System.Windows.Forms.Panel m_panel_FO;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
+        private System.Windows.Forms.Panel panel2;
     }
 }
