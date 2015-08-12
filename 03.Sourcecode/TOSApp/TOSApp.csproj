@@ -271,6 +271,12 @@
     <Compile Include="ChucNang\f113_danh_sach_can_phe_duyet_PM.Designer.cs">
       <DependentUpon>f113_danh_sach_can_phe_duyet_PM.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f114_ds_BO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f114_ds_BO.Designer.cs">
+      <DependentUpon>f114_ds_BO.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f500_cong_viec_FO_chi_tiet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -359,6 +365,9 @@
     <EmbeddedResource Include="ChucNang\f113_danh_sach_can_phe_duyet_PM.resx">
       <DependentUpon>f113_danh_sach_can_phe_duyet_PM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f114_ds_BO.resx">
+      <DependentUpon>f114_ds_BO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f500_cong_viec_FO_chi_tiet.resx">
       <DependentUpon>f500_cong_viec_FO_chi_tiet.cs</DependentUpon>
     </EmbeddedResource>
@@ -437,6 +446,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="bin\Debug\UserMsg.xml" />
+    <Content Include="C1.Win.C1FlexGrid.dll" />
     <Content Include="NumOfMessage.XML" />
     <Content Include="phone.ico" />
     <None Include="Resources\advancedsettings.png" />

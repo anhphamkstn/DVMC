@@ -29,23 +29,44 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_cmd_FO_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_FO_tu_choi = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_bao_cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_them_moi_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_grc_gd_dat_hang_gd_log_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_gd_dat_hang_gd_log_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.m_cmd_them_moi_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_FO_nhan_xu_ly = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_dieu_phoi_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DON_VI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DIEN_THOAI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.HO_TEN_USER_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_GIAN_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_GIAN_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TEN_NHOM_DICH_VU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NOI_DUNG_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PHAN_HOI_TU_DVMC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.DANH_GIA_TU_USER_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_GIAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_GIAN_TAO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PHUONG_THUC_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.CHI_NHANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.ID_LOG_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.LOAI_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THAO_TAC_HET_HAN_YN_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NGUOI_TAO_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NGAY_LAP_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NGUOI_NHAN_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NGUOI_TAO_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
@@ -54,18 +75,16 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_cmd_dieu_phoi_don_hang);
-            this.panel1.Controls.Add(this.simpleButton13);
+            this.panel1.Controls.Add(this.m_cmd_FO_tiep_nhan);
             this.panel1.Controls.Add(this.simpleButton9);
-            this.panel1.Controls.Add(this.simpleButton12);
+            this.panel1.Controls.Add(this.m_cmd_FO_tu_choi);
             this.panel1.Controls.Add(this.m_cmd_dieu_phoi_cho_PM);
             this.panel1.Controls.Add(this.simpleButton8);
-            this.panel1.Controls.Add(this.simpleButton11);
+            this.panel1.Controls.Add(this.m_cmd_bao_cao_hoan_thanh);
             this.panel1.Controls.Add(this.m_cmd_dieu_phoi_lai);
             this.panel1.Controls.Add(this.simpleButton10);
             this.panel1.Controls.Add(this.simpleButton7);
             this.panel1.Controls.Add(this.simpleButton6);
-            this.panel1.Controls.Add(this.m_cmd_FO_nhan_xu_ly);
             this.panel1.Controls.Add(this.m_cmd_chinh_sua_don_hang);
             this.panel1.Controls.Add(this.m_cmd_them_moi_don_hang);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -73,6 +92,108 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1114, 156);
             this.panel1.TabIndex = 0;
+            // 
+            // m_cmd_FO_tiep_nhan
+            // 
+            this.m_cmd_FO_tiep_nhan.Location = new System.Drawing.Point(562, 25);
+            this.m_cmd_FO_tiep_nhan.Name = "m_cmd_FO_tiep_nhan";
+            this.m_cmd_FO_tiep_nhan.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_FO_tiep_nhan.TabIndex = 1;
+            this.m_cmd_FO_tiep_nhan.Text = "FO tiếp nhận đơn hàng";
+            this.m_cmd_FO_tiep_nhan.Click += new System.EventHandler(this.m_cmd_FO_tiep_nhan_Click);
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.Location = new System.Drawing.Point(564, 92);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton9.TabIndex = 1;
+            this.simpleButton9.Text = "simpleButton1";
+            // 
+            // m_cmd_FO_tu_choi
+            // 
+            this.m_cmd_FO_tu_choi.Location = new System.Drawing.Point(744, 25);
+            this.m_cmd_FO_tu_choi.Name = "m_cmd_FO_tu_choi";
+            this.m_cmd_FO_tu_choi.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_FO_tu_choi.TabIndex = 1;
+            this.m_cmd_FO_tu_choi.Text = "FO từ chối đơn hàng";
+            this.m_cmd_FO_tu_choi.Click += new System.EventHandler(this.m_cmd_FO_tu_choi_Click);
+            // 
+            // m_cmd_dieu_phoi_cho_PM
+            // 
+            this.m_cmd_dieu_phoi_cho_PM.Location = new System.Drawing.Point(274, 25);
+            this.m_cmd_dieu_phoi_cho_PM.Name = "m_cmd_dieu_phoi_cho_PM";
+            this.m_cmd_dieu_phoi_cho_PM.Size = new System.Drawing.Size(124, 23);
+            this.m_cmd_dieu_phoi_cho_PM.TabIndex = 1;
+            this.m_cmd_dieu_phoi_cho_PM.Text = "Điều phối cho PM";
+            this.m_cmd_dieu_phoi_cho_PM.Click += new System.EventHandler(this.m_cmd_dieu_phoi_cho_PM_Click);
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.Location = new System.Drawing.Point(681, 92);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton8.TabIndex = 1;
+            this.simpleButton8.Text = "simpleButton1";
+            // 
+            // m_cmd_bao_cao_hoan_thanh
+            // 
+            this.m_cmd_bao_cao_hoan_thanh.Location = new System.Drawing.Point(931, 25);
+            this.m_cmd_bao_cao_hoan_thanh.Name = "m_cmd_bao_cao_hoan_thanh";
+            this.m_cmd_bao_cao_hoan_thanh.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_bao_cao_hoan_thanh.TabIndex = 1;
+            this.m_cmd_bao_cao_hoan_thanh.Text = "FO báo cáo hoàn thành";
+            // 
+            // m_cmd_dieu_phoi_lai
+            // 
+            this.m_cmd_dieu_phoi_lai.Location = new System.Drawing.Point(159, 25);
+            this.m_cmd_dieu_phoi_lai.Name = "m_cmd_dieu_phoi_lai";
+            this.m_cmd_dieu_phoi_lai.Size = new System.Drawing.Size(100, 23);
+            this.m_cmd_dieu_phoi_lai.TabIndex = 1;
+            this.m_cmd_dieu_phoi_lai.Text = "Điều phối lại";
+            this.m_cmd_dieu_phoi_lai.Click += new System.EventHandler(this.m_cmd_dieu_phoi_lai_Click);
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Location = new System.Drawing.Point(446, 92);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton10.TabIndex = 1;
+            this.simpleButton10.Text = "simpleButton1";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Location = new System.Drawing.Point(822, 92);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton7.TabIndex = 1;
+            this.simpleButton7.Text = "simpleButton1";
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.Location = new System.Drawing.Point(960, 92);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton6.TabIndex = 1;
+            this.simpleButton6.Text = "simpleButton1";
+            // 
+            // m_cmd_chinh_sua_don_hang
+            // 
+            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(415, 25);
+            this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
+            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(106, 23);
+            this.m_cmd_chinh_sua_don_hang.TabIndex = 1;
+            this.m_cmd_chinh_sua_don_hang.Text = "Chỉnh sửa đơn hàng";
+            this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
+            // 
+            // m_cmd_them_moi_don_hang
+            // 
+            this.m_cmd_them_moi_don_hang.Location = new System.Drawing.Point(38, 25);
+            this.m_cmd_them_moi_don_hang.Name = "m_cmd_them_moi_don_hang";
+            this.m_cmd_them_moi_don_hang.Size = new System.Drawing.Size(110, 23);
+            this.m_cmd_them_moi_don_hang.TabIndex = 0;
+            this.m_cmd_them_moi_don_hang.Text = "Thêm mới đơn hàng";
+            this.m_cmd_them_moi_don_hang.Click += new System.EventHandler(this.m_cmd_them_moi_don_hang_Click);
             // 
             // panel2
             // 
@@ -97,122 +218,236 @@
             // 
             // m_grv_gd_dat_hang_gd_log_dat_hang
             // 
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.MA_DON_HANG,
+            this.DON_VI,
+            this.DIEN_THOAI,
+            this.HO_TEN_USER_DAT_HANG,
+            this.THOI_GIAN_DAT_HANG,
+            this.THOI_GIAN_CAN_HOAN_THANH,
+            this.TEN_NHOM_DICH_VU,
+            this.NOI_DUNG_DAT_HANG,
+            this.PHAN_HOI_TU_DVMC,
+            this.DANH_GIA_TU_USER_DAT_HANG,
+            this.THOI_GIAN_HOAN_THANH,
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG,
+            this.THOI_GIAN_TAO,
+            this.PHUONG_THUC_DAT_HANG,
+            this.CHI_NHANH,
+            this.ID_LOG_DAT_HANG,
+            this.LOAI_THAO_TAC_LOG,
+            this.THAO_TAC_HET_HAN_YN_LOG,
+            this.NGUOI_TAO_DON_HANG,
+            this.NGAY_LAP_THAO_TAC_LOG,
+            this.GHI_CHU,
+            this.NGUOI_NHAN_THAO_TAC_LOG,
+            this.NGUOI_TAO_THAO_TAC_LOG});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Name = "m_grv_gd_dat_hang_gd_log_dat_hang";
             // 
-            // m_cmd_them_moi_don_hang
+            // MA_DON_HANG
             // 
-            this.m_cmd_them_moi_don_hang.Location = new System.Drawing.Point(38, 25);
-            this.m_cmd_them_moi_don_hang.Name = "m_cmd_them_moi_don_hang";
-            this.m_cmd_them_moi_don_hang.Size = new System.Drawing.Size(110, 23);
-            this.m_cmd_them_moi_don_hang.TabIndex = 0;
-            this.m_cmd_them_moi_don_hang.Text = "Thêm mới đơn hàng";
-            this.m_cmd_them_moi_don_hang.Click += new System.EventHandler(this.m_cmd_them_moi_don_hang_Click);
+            this.MA_DON_HANG.Caption = "MÃ ĐƠN HÀNG";
+            this.MA_DON_HANG.FieldName = "MA_DON_HANG";
+            this.MA_DON_HANG.Name = "MA_DON_HANG";
+            this.MA_DON_HANG.Visible = true;
+            this.MA_DON_HANG.VisibleIndex = 0;
+            this.MA_DON_HANG.Width = 67;
             // 
-            // m_cmd_chinh_sua_don_hang
+            // DON_VI
             // 
-            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(744, 25);
-            this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
-            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(106, 23);
-            this.m_cmd_chinh_sua_don_hang.TabIndex = 1;
-            this.m_cmd_chinh_sua_don_hang.Text = "Chỉnh sửa đơn hàng";
-            this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
+            this.DON_VI.Caption = "ĐƠN VỊ";
+            this.DON_VI.FieldName = "MA_DON_VI";
+            this.DON_VI.Name = "DON_VI";
+            this.DON_VI.Visible = true;
+            this.DON_VI.VisibleIndex = 2;
+            this.DON_VI.Width = 51;
             // 
-            // m_cmd_FO_nhan_xu_ly
+            // DIEN_THOAI
             // 
-            this.m_cmd_FO_nhan_xu_ly.Location = new System.Drawing.Point(624, 25);
-            this.m_cmd_FO_nhan_xu_ly.Name = "m_cmd_FO_nhan_xu_ly";
-            this.m_cmd_FO_nhan_xu_ly.Size = new System.Drawing.Size(100, 23);
-            this.m_cmd_FO_nhan_xu_ly.TabIndex = 1;
-            this.m_cmd_FO_nhan_xu_ly.Text = "FO nhận xử lý";
+            this.DIEN_THOAI.Caption = "ĐIỆN THOẠI";
+            this.DIEN_THOAI.FieldName = "DIEN_THOAI";
+            this.DIEN_THOAI.Name = "DIEN_THOAI";
+            this.DIEN_THOAI.Visible = true;
+            this.DIEN_THOAI.VisibleIndex = 3;
+            this.DIEN_THOAI.Width = 51;
             // 
-            // m_cmd_dieu_phoi_lai
+            // HO_TEN_USER_DAT_HANG
             // 
-            this.m_cmd_dieu_phoi_lai.Location = new System.Drawing.Point(353, 25);
-            this.m_cmd_dieu_phoi_lai.Name = "m_cmd_dieu_phoi_lai";
-            this.m_cmd_dieu_phoi_lai.Size = new System.Drawing.Size(100, 23);
-            this.m_cmd_dieu_phoi_lai.TabIndex = 1;
-            this.m_cmd_dieu_phoi_lai.Text = "Điều phối lại";
+            this.HO_TEN_USER_DAT_HANG.Caption = "HỌ TÊN USER ĐẶT HÀNG";
+            this.HO_TEN_USER_DAT_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.HO_TEN_USER_DAT_HANG.Name = "HO_TEN_USER_DAT_HANG";
+            this.HO_TEN_USER_DAT_HANG.Visible = true;
+            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 1;
+            this.HO_TEN_USER_DAT_HANG.Width = 51;
             // 
-            // m_cmd_dieu_phoi_cho_PM
+            // THOI_GIAN_DAT_HANG
             // 
-            this.m_cmd_dieu_phoi_cho_PM.Location = new System.Drawing.Point(475, 25);
-            this.m_cmd_dieu_phoi_cho_PM.Name = "m_cmd_dieu_phoi_cho_PM";
-            this.m_cmd_dieu_phoi_cho_PM.Size = new System.Drawing.Size(124, 23);
-            this.m_cmd_dieu_phoi_cho_PM.TabIndex = 1;
-            this.m_cmd_dieu_phoi_cho_PM.Text = "Điều phối cho PM";
+            this.THOI_GIAN_DAT_HANG.Caption = "THỜI GIAN ĐẶT HÀNG";
+            this.THOI_GIAN_DAT_HANG.FieldName = "THOI_GIAN_DAT_HANG";
+            this.THOI_GIAN_DAT_HANG.Name = "THOI_GIAN_DAT_HANG";
+            this.THOI_GIAN_DAT_HANG.Visible = true;
+            this.THOI_GIAN_DAT_HANG.VisibleIndex = 4;
+            this.THOI_GIAN_DAT_HANG.Width = 51;
             // 
-            // m_cmd_dieu_phoi_don_hang
+            // THOI_GIAN_CAN_HOAN_THANH
             // 
-            this.m_cmd_dieu_phoi_don_hang.Location = new System.Drawing.Point(190, 25);
-            this.m_cmd_dieu_phoi_don_hang.Name = "m_cmd_dieu_phoi_don_hang";
-            this.m_cmd_dieu_phoi_don_hang.Size = new System.Drawing.Size(124, 23);
-            this.m_cmd_dieu_phoi_don_hang.TabIndex = 1;
-            this.m_cmd_dieu_phoi_don_hang.Text = "Điều phối đơn hàng";
+            this.THOI_GIAN_CAN_HOAN_THANH.Caption = "THỜI GIAN CẦN HOÀN THÀNH";
+            this.THOI_GIAN_CAN_HOAN_THANH.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
+            this.THOI_GIAN_CAN_HOAN_THANH.Name = "THOI_GIAN_CAN_HOAN_THANH";
+            this.THOI_GIAN_CAN_HOAN_THANH.Visible = true;
+            this.THOI_GIAN_CAN_HOAN_THANH.VisibleIndex = 7;
+            this.THOI_GIAN_CAN_HOAN_THANH.Width = 51;
             // 
-            // simpleButton6
+            // TEN_NHOM_DICH_VU
             // 
-            this.simpleButton6.Location = new System.Drawing.Point(957, 81);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton6.TabIndex = 1;
-            this.simpleButton6.Text = "simpleButton1";
+            this.TEN_NHOM_DICH_VU.Caption = "DỊCH VỤ SỬ DỤNG";
+            this.TEN_NHOM_DICH_VU.FieldName = "TEN_NHOM_DICH_VU";
+            this.TEN_NHOM_DICH_VU.Name = "TEN_NHOM_DICH_VU";
+            this.TEN_NHOM_DICH_VU.Visible = true;
+            this.TEN_NHOM_DICH_VU.VisibleIndex = 5;
+            this.TEN_NHOM_DICH_VU.Width = 51;
             // 
-            // simpleButton7
+            // NOI_DUNG_DAT_HANG
             // 
-            this.simpleButton7.Location = new System.Drawing.Point(817, 81);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton7.TabIndex = 1;
-            this.simpleButton7.Text = "simpleButton1";
+            this.NOI_DUNG_DAT_HANG.Caption = "NỘI DUNG ĐẶT HÀNG";
+            this.NOI_DUNG_DAT_HANG.FieldName = "NOI_DUNG_DAT_HANG";
+            this.NOI_DUNG_DAT_HANG.Name = "NOI_DUNG_DAT_HANG";
+            this.NOI_DUNG_DAT_HANG.Visible = true;
+            this.NOI_DUNG_DAT_HANG.VisibleIndex = 6;
+            this.NOI_DUNG_DAT_HANG.Width = 51;
             // 
-            // simpleButton8
+            // PHAN_HOI_TU_DVMC
             // 
-            this.simpleButton8.Location = new System.Drawing.Point(670, 81);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton8.TabIndex = 1;
-            this.simpleButton8.Text = "simpleButton1";
+            this.PHAN_HOI_TU_DVMC.Caption = "PHẢN HỒI TƯ DVMC";
+            this.PHAN_HOI_TU_DVMC.FieldName = "PHAN_HOI_TU_DVMC";
+            this.PHAN_HOI_TU_DVMC.Name = "PHAN_HOI_TU_DVMC";
+            this.PHAN_HOI_TU_DVMC.Visible = true;
+            this.PHAN_HOI_TU_DVMC.VisibleIndex = 8;
+            this.PHAN_HOI_TU_DVMC.Width = 51;
             // 
-            // simpleButton9
+            // DANH_GIA_TU_USER_DAT_HANG
             // 
-            this.simpleButton9.Location = new System.Drawing.Point(564, 81);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton9.TabIndex = 1;
-            this.simpleButton9.Text = "simpleButton1";
+            this.DANH_GIA_TU_USER_DAT_HANG.Caption = "ĐÁNH GIÁ TỪ USER ĐẶT HÀNG";
+            this.DANH_GIA_TU_USER_DAT_HANG.FieldName = "TEN_DANH_GIA_TU_USER_DAT_HANG";
+            this.DANH_GIA_TU_USER_DAT_HANG.Name = "DANH_GIA_TU_USER_DAT_HANG";
+            this.DANH_GIA_TU_USER_DAT_HANG.Visible = true;
+            this.DANH_GIA_TU_USER_DAT_HANG.VisibleIndex = 9;
+            this.DANH_GIA_TU_USER_DAT_HANG.Width = 51;
             // 
-            // simpleButton10
+            // THOI_GIAN_HOAN_THANH
             // 
-            this.simpleButton10.Location = new System.Drawing.Point(446, 92);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton10.TabIndex = 1;
-            this.simpleButton10.Text = "simpleButton1";
+            this.THOI_GIAN_HOAN_THANH.Caption = "THỜI GIAN HOÀN THÀNH";
+            this.THOI_GIAN_HOAN_THANH.FieldName = "THOI_GIAN_HOAN_THANH";
+            this.THOI_GIAN_HOAN_THANH.Name = "THOI_GIAN_HOAN_THANH";
+            this.THOI_GIAN_HOAN_THANH.Visible = true;
+            this.THOI_GIAN_HOAN_THANH.VisibleIndex = 10;
+            this.THOI_GIAN_HOAN_THANH.Width = 51;
             // 
-            // simpleButton11
+            // Y_KIEN_KHAC_TU_USER_DAT_HANG
             // 
-            this.simpleButton11.Location = new System.Drawing.Point(306, 92);
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton11.TabIndex = 1;
-            this.simpleButton11.Text = "simpleButton1";
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG.Caption = "Ý KIẾN KHÁC";
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG.FieldName = "Y_KIEN_KHAC_TU_USER_DAT_HANG";
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG.Name = "Y_KIEN_KHAC_TU_USER_DAT_HANG";
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG.VisibleIndex = 11;
+            this.Y_KIEN_KHAC_TU_USER_DAT_HANG.Width = 51;
             // 
-            // simpleButton12
+            // THOI_GIAN_TAO
             // 
-            this.simpleButton12.Location = new System.Drawing.Point(159, 92);
-            this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton12.TabIndex = 1;
-            this.simpleButton12.Text = "simpleButton1";
+            this.THOI_GIAN_TAO.Caption = "THỜI GIAN TẠO";
+            this.THOI_GIAN_TAO.FieldName = "THOI_GIAN_TAO";
+            this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
+            this.THOI_GIAN_TAO.Visible = true;
+            this.THOI_GIAN_TAO.VisibleIndex = 12;
+            this.THOI_GIAN_TAO.Width = 51;
             // 
-            // simpleButton13
+            // PHUONG_THUC_DAT_HANG
             // 
-            this.simpleButton13.Location = new System.Drawing.Point(53, 92);
-            this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton13.TabIndex = 1;
-            this.simpleButton13.Text = "simpleButton1";
+            this.PHUONG_THUC_DAT_HANG.Caption = "PHƯƠNG THỨC ĐẶT HÀNG";
+            this.PHUONG_THUC_DAT_HANG.FieldName = "TEN_PHUONG_THUC_DAT_HANG";
+            this.PHUONG_THUC_DAT_HANG.Name = "PHUONG_THUC_DAT_HANG";
+            this.PHUONG_THUC_DAT_HANG.Visible = true;
+            this.PHUONG_THUC_DAT_HANG.VisibleIndex = 15;
+            this.PHUONG_THUC_DAT_HANG.Width = 51;
+            // 
+            // CHI_NHANH
+            // 
+            this.CHI_NHANH.Caption = "CHI NHÁNH";
+            this.CHI_NHANH.FieldName = "TEN_CHI_NHANH";
+            this.CHI_NHANH.Name = "CHI_NHANH";
+            this.CHI_NHANH.Visible = true;
+            this.CHI_NHANH.VisibleIndex = 14;
+            this.CHI_NHANH.Width = 51;
+            // 
+            // ID_LOG_DAT_HANG
+            // 
+            this.ID_LOG_DAT_HANG.Caption = "ID LOG ĐẶT HÀNG";
+            this.ID_LOG_DAT_HANG.FieldName = "ID_LOG_DAT_HANG";
+            this.ID_LOG_DAT_HANG.Name = "ID_LOG_DAT_HANG";
+            this.ID_LOG_DAT_HANG.Visible = true;
+            this.ID_LOG_DAT_HANG.VisibleIndex = 16;
+            this.ID_LOG_DAT_HANG.Width = 51;
+            // 
+            // LOAI_THAO_TAC_LOG
+            // 
+            this.LOAI_THAO_TAC_LOG.Caption = "LOẠI THAO TÁC";
+            this.LOAI_THAO_TAC_LOG.FieldName = "TEN_LOAI_THAO_TAC";
+            this.LOAI_THAO_TAC_LOG.Name = "LOAI_THAO_TAC_LOG";
+            this.LOAI_THAO_TAC_LOG.Visible = true;
+            this.LOAI_THAO_TAC_LOG.VisibleIndex = 17;
+            this.LOAI_THAO_TAC_LOG.Width = 51;
+            // 
+            // THAO_TAC_HET_HAN_YN_LOG
+            // 
+            this.THAO_TAC_HET_HAN_YN_LOG.Caption = "THAO_TAC_HET_HAN_YN";
+            this.THAO_TAC_HET_HAN_YN_LOG.FieldName = "TEN_TRUY_CAP";
+            this.THAO_TAC_HET_HAN_YN_LOG.Name = "THAO_TAC_HET_HAN_YN_LOG";
+            this.THAO_TAC_HET_HAN_YN_LOG.Visible = true;
+            this.THAO_TAC_HET_HAN_YN_LOG.VisibleIndex = 18;
+            this.THAO_TAC_HET_HAN_YN_LOG.Width = 51;
+            // 
+            // NGUOI_TAO_DON_HANG
+            // 
+            this.NGUOI_TAO_DON_HANG.Caption = "NGƯỜI TẠO ĐƠN HÀNG";
+            this.NGUOI_TAO_DON_HANG.FieldName = "NGUOI_TAO_THAO_TAC";
+            this.NGUOI_TAO_DON_HANG.Name = "NGUOI_TAO_DON_HANG";
+            this.NGUOI_TAO_DON_HANG.Visible = true;
+            this.NGUOI_TAO_DON_HANG.VisibleIndex = 13;
+            this.NGUOI_TAO_DON_HANG.Width = 51;
+            // 
+            // NGAY_LAP_THAO_TAC_LOG
+            // 
+            this.NGAY_LAP_THAO_TAC_LOG.Caption = "NGÀY LẬP THAO TÁC";
+            this.NGAY_LAP_THAO_TAC_LOG.FieldName = "NGAY_LAP_THAO_TAC";
+            this.NGAY_LAP_THAO_TAC_LOG.Name = "NGAY_LAP_THAO_TAC_LOG";
+            this.NGAY_LAP_THAO_TAC_LOG.Visible = true;
+            this.NGAY_LAP_THAO_TAC_LOG.VisibleIndex = 19;
+            this.NGAY_LAP_THAO_TAC_LOG.Width = 60;
+            // 
+            // GHI_CHU
+            // 
+            this.GHI_CHU.Caption = "GHI CHÚ";
+            this.GHI_CHU.FieldName = "GHI_CHU";
+            this.GHI_CHU.Name = "GHI_CHU";
+            this.GHI_CHU.Visible = true;
+            this.GHI_CHU.VisibleIndex = 22;
+            // 
+            // NGUOI_NHAN_THAO_TAC_LOG
+            // 
+            this.NGUOI_NHAN_THAO_TAC_LOG.Caption = "NGƯỜI NHẬN THAO TÁC LOG";
+            this.NGUOI_NHAN_THAO_TAC_LOG.FieldName = "TEN_NGUOI_NHAN_THAO_TAC";
+            this.NGUOI_NHAN_THAO_TAC_LOG.Name = "NGUOI_NHAN_THAO_TAC_LOG";
+            this.NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+            this.NGUOI_NHAN_THAO_TAC_LOG.VisibleIndex = 20;
+            // 
+            // NGUOI_TAO_THAO_TAC_LOG
+            // 
+            this.NGUOI_TAO_THAO_TAC_LOG.Caption = "NGƯỜI TẠO TAO TÁC LOG";
+            this.NGUOI_TAO_THAO_TAC_LOG.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
+            this.NGUOI_TAO_THAO_TAC_LOG.Name = "NGUOI_TAO_THAO_TAC_LOG";
+            this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
+            this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 21;
             // 
             // f0000_gd_dat_hang_gd_log_dat_hang
             // 
@@ -238,18 +473,39 @@
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraGrid.GridControl m_grc_gd_dat_hang_gd_log_dat_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_gd_dat_hang_gd_log_dat_hang;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_dieu_phoi_don_hang;
-        private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_FO_tiep_nhan;
         private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_FO_tu_choi;
         private DevExpress.XtraEditors.SimpleButton m_cmd_dieu_phoi_cho_PM;
         private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_bao_cao_hoan_thanh;
         private DevExpress.XtraEditors.SimpleButton m_cmd_dieu_phoi_lai;
         private DevExpress.XtraEditors.SimpleButton simpleButton10;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_FO_nhan_xu_ly;
         private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
+        private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn DON_VI;
+        private DevExpress.XtraGrid.Columns.GridColumn DIEN_THOAI;
+        private DevExpress.XtraGrid.Columns.GridColumn HO_TEN_USER_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_CAN_HOAN_THANH;
+        private DevExpress.XtraGrid.Columns.GridColumn TEN_NHOM_DICH_VU;
+        private DevExpress.XtraGrid.Columns.GridColumn NOI_DUNG_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn PHAN_HOI_TU_DVMC;
+        private DevExpress.XtraGrid.Columns.GridColumn DANH_GIA_TU_USER_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_HOAN_THANH;
+        private DevExpress.XtraGrid.Columns.GridColumn Y_KIEN_KHAC_TU_USER_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_TAO;
+        private DevExpress.XtraGrid.Columns.GridColumn PHUONG_THUC_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn CHI_NHANH;
+        private DevExpress.XtraGrid.Columns.GridColumn ID_LOG_DAT_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn LOAI_THAO_TAC_LOG;
+        private DevExpress.XtraGrid.Columns.GridColumn THAO_TAC_HET_HAN_YN_LOG;
+        private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_DON_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn NGAY_LAP_THAO_TAC_LOG;
+        private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
+        private DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC_LOG;
+        private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
     }
 }

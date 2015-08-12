@@ -27,12 +27,15 @@ namespace TOSApp.ChucNang
         internal void displayForUpdate(US_GD_DAT_HANG v_us)
         {
             load_data_to_form(v_us);
+            this.ShowDialog();
+
             
         }
 
         private void load_data_to_form(US_GD_DAT_HANG v_us)
         {
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
+          //  WinFormControls.load_data_to_combobox();
             m_txt_gui_kem.Focus();
 
         }

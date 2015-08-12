@@ -34,6 +34,8 @@
             this.m_txt_gui_kem = new System.Windows.Forms.TextBox();
             this.m_cmd_Ok = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_cancel = new DevExpress.XtraEditors.SimpleButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.m_cbo_ds_PM = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -87,11 +89,30 @@
             this.m_cmd_cancel.Text = "Cancel";
             this.m_cmd_cancel.Click += new System.EventHandler(this.m_cmd_cancel_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(28, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "PM";
+            // 
+            // m_cbo_ds_PM
+            // 
+            this.m_cbo_ds_PM.FormattingEnabled = true;
+            this.m_cbo_ds_PM.Location = new System.Drawing.Point(118, 82);
+            this.m_cbo_ds_PM.Name = "m_cbo_ds_PM";
+            this.m_cbo_ds_PM.Size = new System.Drawing.Size(160, 21);
+            this.m_cbo_ds_PM.TabIndex = 4;
+            // 
             // f112_FO_chuyen_don_hang_cho_PM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 262);
+            this.Controls.Add(this.m_cbo_ds_PM);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.m_cmd_cancel);
             this.Controls.Add(this.m_cmd_Ok);
             this.Controls.Add(this.m_txt_gui_kem);
@@ -113,5 +134,7 @@
         private System.Windows.Forms.TextBox m_txt_gui_kem;
         private DevExpress.XtraEditors.SimpleButton m_cmd_Ok;
         private DevExpress.XtraEditors.SimpleButton m_cmd_cancel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox m_cbo_ds_PM;
     }
 }

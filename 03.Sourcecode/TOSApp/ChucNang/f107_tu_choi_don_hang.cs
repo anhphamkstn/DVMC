@@ -54,7 +54,7 @@ namespace TOSApp.ChucNang
         private void ghi_log_tu_choi()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 228;//CHỜ FO điều phối lại
+            v_us.dcID_LOAI_THAO_TAC = 311;//CHỜ FO điều phối lại
             v_us.dcID_GD_DAT_HANG = m_US.dcID_GD_DAT_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = 69763;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
@@ -67,6 +67,34 @@ namespace TOSApp.ChucNang
         private void m_cmd_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        internal void displayForRefuse(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        {
+
+            us_to_form(m_us);
+            this.ShowDialog();
+        }
+
+        private void us_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        {
+
+            insert_data_2_us(m_us);
+            m_txt_ma_don_hang.Text = m_us.strMA_DON_HANG;
+            m_txt_nguoi_nhan_tao_tac.Text = m_us.dcID_NGUOI_TAO_THAO_TAC.ToString();
+            m_txt_ly_do_tu_choi.Focus();
+        }
+
+        private void insert_data_2_us(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        {
+            m_US.dcID = m_us.dcID_LOG_DAT_HANG;
+            m_US.dcID_GD_DAT_HANG = m_us.dcID;
+            m_US.dcID_LOAI_THAO_TAC = 311;
+            m_US.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            m_US.dcID_NGUOI_TAO_THAO_TAC = 69761;
+            m_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            m_US.strTHAO_TAC_HET_HAN_YN = "Y";
+            m_US.strGHI_CHU = m_txt_ly_do_tu_choi.Text;
         }
     }
 }

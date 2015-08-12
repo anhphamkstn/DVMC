@@ -120,5 +120,16 @@ namespace IPCOREDS.Properties {
                 return ((string)(this["DVMCConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=27.118.16.97;Initial Catalog=BKI_DVMC;Persist Security Info=True;User" +
+            " ID=sa;Password=123@bcdE.!@#_ATT")]
+        public string BKI_DVMCConnectionString {
+            get {
+                return ((string)(this["BKI_DVMCConnectionString"]));
+            }
+        }
     }
 }

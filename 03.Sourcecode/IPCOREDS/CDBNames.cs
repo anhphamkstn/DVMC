@@ -828,5 +828,43 @@ namespace IPCOREDS.CDBNames
         public const string GHI_CHU = "GHI_CHU";
     }
 
+    public class V_GD_DAT_HANG_GD_LOG_DAT_HANG
+    {
+        public const string ID = "ID";
+        public const string MA_DON_HANG = "MA_DON_HANG";
+        public const string ID_USER_NV_DAT_HANG = "ID_USER_NV_DAT_HANG";
+        public const string HO_TEN_USER_DAT_HANG = "HO_TEN_USER_DAT_HANG";
+        public const string ID_DON_VI = "ID_DON_VI";
+        public const string MA_DON_VI = "MA_DON_VI";
+        public const string DIEN_THOAI = "DIEN_THOAI";
+        public const string THOI_GIAN_DAT_HANG = "THOI_GIAN_DAT_HANG";
+        public const string ID_NHOM_DV_YEU_CAU = "ID_NHOM_DV_YEU_CAU";
+        public const string TEN_NHOM_DICH_VU_YEU_CAU = "TEN_NHOM_DICH_VU_YEU_CAU";
+        public const string NOI_DUNG_DAT_HANG = "NOI_DUNG_DAT_HANG";
+        public const string ID_LOAI_THOI_GIAN_CAN_HOAN_THANH = "ID_LOAI_THOI_GIAN_CAN_HOAN_THANH";
+        public const string LOAI_THOI_GIAN_CAN_HOAN_THANH = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
+        public const string PHAN_HOI_TU_DVMC = "PHAN_HOI_TU_DVMC";
+        public const string ID_DANH_GIA_TU_USER_DAT_HANG = "ID_DANH_GIA_TU_USER_DAT_HANG";
+        public const string TEN_DANH_GIA_TU_USER_DAT_HANG = "TEN_DANH_GIA_TU_USER_DAT_HANG";
+        public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
+        public const string Y_KIEN_KHAC_TU_USER_DAT_HANG = "Y_KIEN_KHAC_TU_USER_DAT_HANG";
+        public const string THOI_GIAN_TAO = "THOI_GIAN_TAO";
+        public const string ID_PHUONG_THUC_DAT_HANG = "ID_PHUONG_THUC_DAT_HANG";
+        public const string TEN_PHUONG_THUC_DAT_HANG = "TEN_PHUONG_THUC_DAT_HANG";
+        public const string ID_NGUOI_TAO = "ID_NGUOI_TAO";
+        public const string NGUOI_TAO_THAO_TAC = "NGUOI_TAO_THAO_TAC";
+        public const string ID_CHI_NHANH = "ID_CHI_NHANH";
+        public const string TEN_CHI_NHANH = "TEN_CHI_NHANH";
+        public const string ID_LOG_DAT_HANG = "ID_LOG_DAT_HANG";
+        public const string ID_LOAI_THAO_TAC = "ID_LOAI_THAO_TAC";
+        public const string TEN_LOAI_THAO_TAC_LOG = "TEN_LOAI_THAO_TAC_LOG";
+        public const string THAO_TAC_HET_HAN_YN = "THAO_TAC_HET_HAN_YN";
+        public const string NGAY_LAP_THAO_TAC = "NGAY_LAP_THAO_TAC";
+        public const string GHI_CHU = "GHI_CHU";
+        public const string ID_NGUOI_NHAN_THAO_TAC = "ID_NGUOI_NHAN_THAO_TAC";
+        public const string TEN_NGUOI_NHAN_THAO_TAC = "TEN_NGUOI_NHAN_THAO_TAC";
+        public const string ID_NGUOI_TAO_THAO_TAC = "ID_NGUOI_TAO_THAO_TAC";
+        public const string TEN_NGUOI_TAO_THAO_TAC_LOG = "TEN_NGUOI_TAO_THAO_TAC_LOG";
+    }
 
 }

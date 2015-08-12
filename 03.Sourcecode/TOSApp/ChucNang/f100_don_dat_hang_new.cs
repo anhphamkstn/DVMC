@@ -79,7 +79,7 @@ namespace TOSApp.ChucNang
 
         private void random_data_2_ma_don_hang()
         {
-            m_txt_ma_don_hang.Text = "DVMC2015"+new Random().Next(1000, 9999).ToString();
+            m_txt_ma_don_hang.Text = "DVMC2015"+new Random().Next(100000, 999999).ToString();
         }
         #endregion
 
@@ -169,7 +169,7 @@ namespace TOSApp.ChucNang
         private decimal ghi_log_tiep_nhan()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 173;
+            v_us.dcID_LOAI_THAO_TAC = 293;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
@@ -207,7 +207,7 @@ namespace TOSApp.ChucNang
         {
 
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 174;//fix cung cho tao tac dieu huong--> bi ngu
+            v_us.dcID_LOAI_THAO_TAC = 295;//fix cung cho tao tac dieu huong--> bi ngu
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_NHAN_THAO_TAC = nguoi_nhan_tao_tac_i;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
@@ -235,7 +235,7 @@ namespace TOSApp.ChucNang
             m_us.SetTHOI_GIAN_HOAN_THANHNull(); 
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
                 //System.DateTime.Now.ToString("yyyy/MM/dd/hh/mm/ss");
-            m_us.dcID_PHUONG_THUC_DAT_HANG = 182;//---phuong thuc dat hang la goi dien
+            m_us.dcID_PHUONG_THUC_DAT_HANG =183;//---phuong thuc dat hang la goi dien
             m_us.dcID_NGUOI_TAO = CIPConvert.ToDecimal(m_cbo_nguoi_nhan_dat_hang.SelectedValue);///xem lai
             m_us.dcID_CHI_NHANH= 1; //--fix lai sau mac dinh la 1 -HA NOI
         }
@@ -276,6 +276,7 @@ namespace TOSApp.ChucNang
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
             this.ShowDialog();
+        
         }
 
         private void insert_new_data_2_dm_ma_don_hang(string p)
@@ -283,6 +284,7 @@ namespace TOSApp.ChucNang
             US_DM_MA_DON_HANG v_us = new US_DM_MA_DON_HANG();
             v_us.strMA_DON_HANG = p;
             v_us.Insert();
+            MessageBox.Show("thành công!");
         }
 
 
@@ -364,7 +366,7 @@ namespace TOSApp.ChucNang
 
         private void load_nguoi_nhan_dat_hang(decimal p)
         {
-            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID", "TEN", " where HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.id=gd_dat_hang." + p, WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
+            WinFormControls.load_data_to_combobox("V_GD_DAT_HANG_GD_LOG_DAT_HANG", "ID", "HO_TEN_USER_DAT_HANG", " where V_GD_DAT_HANG_GD_LOG_DAT_HANG.ID" + p, WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
         }
 
         private void load_don_vi(decimal p)
@@ -375,8 +377,8 @@ namespace TOSApp.ChucNang
         //    v_us.FillDatasetWithTableName(v_ds,"V_DM_DON_VI");
 
            // WinFormControls.load_data_to_combobox_with_query(m_cbo_dv_don_vi, "ID", "MA_DON_VI", WinFormControls.eTAT_CA.NO, "");
-            WinFormControls.load_data_to_combobox("dm_don_vi", "ID", "ma_don_vi", " where dm_don_vi.id=gd.dat_hang." + p, WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
-         //   return " ";
+            WinFormControls.load_data_to_combobox("dm_don_vi", "ID", "ma_don_vi", " where dm_don_vi.id=gd_dat_hang." + p, WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
+       
         }
 
         private int check_value_with_radiobutton_thoi_gian(string v_time)
@@ -450,6 +452,13 @@ namespace TOSApp.ChucNang
 
 
 
-       
+
+
+
+
+        internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
