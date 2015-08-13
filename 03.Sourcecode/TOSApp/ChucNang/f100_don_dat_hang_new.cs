@@ -14,8 +14,8 @@ namespace TOSApp.ChucNang
     public partial class f100_don_dat_hang_new : Form
     {
         decimal m_dc_id_loai_dich_vu=-1;
-        decimal m_dc_loai_dich_vu = -1;
-        decimal m_dc_ten_dich_vu = -1;
+        //decimal m_dc_loai_dich_vu = -1;
+        //decimal m_dc_ten_dich_vu = -1;
 
         public f100_don_dat_hang_new()
         {
@@ -36,7 +36,6 @@ namespace TOSApp.ChucNang
             load_data_2_user_nhan_vien_dat_hang();
             load_data_2_selected_don_vi();
             load_data_2_selected_loai_dich_vu();
-            load_data_2_dich_vu_ver2();
             load_data_2_selected_trang_thai_don_hang();
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
@@ -66,7 +65,7 @@ namespace TOSApp.ChucNang
         //load du liệu lên selected  dịch vụ
         private void load_data_2_selected_dich_vu()
         {
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN", WinFormControls.eTAT_CA.NO, "select DISTINCT TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA="+m_cbo_loai_dich_vu.SelectedValue.ToString());
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN", WinFormControls.eTAT_CA.NO, "select DISTINCT ID, TEN_YEU_CAU as TEN  from DM_LOAI_YEU_CAU where ID_CHA="+m_cbo_loai_dich_vu.SelectedValue.ToString());
             //WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " Where ID_CHA=" +m_cbo_loai_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
             
         }
@@ -201,7 +200,7 @@ namespace TOSApp.ChucNang
             }
             cap_nhat_lai_trang_thai_tiep_nhan();
             xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
-            MessageBox.Show("da dieu phoi");
+            MessageBox.Show("FO da dieu phoi");
         }
 
         private void cap_nhat_lai_trang_thai_tiep_nhan()
@@ -230,10 +229,10 @@ namespace TOSApp.ChucNang
             v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "tiep nhan";
+            v_us.strGHI_CHU = "FO đã tiep nhan";
             v_us.Insert();
             m_id_tiep_nhan = v_us.dcID;
-            MessageBox.Show("da tiep nhan");
+            MessageBox.Show("đã tiếp nhận đơn hàng");
             return v_us.dcID;
 
         }
@@ -268,7 +267,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "da nhan";
+            v_us.strGHI_CHU = "đã điều phối cho BO ";
             v_us.Insert();
         }
         //ghi lai log tai bang gd_log_dat_hang sau khi thuc hien thao tac insert
