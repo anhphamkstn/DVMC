@@ -16,6 +16,7 @@ namespace TOSApp.ChucNang
         decimal m_dc_id_loai_dich_vu=-1;
         decimal m_dc_loai_dich_vu = -1;
         decimal m_dc_ten_dich_vu = -1;
+
         public f100_don_dat_hang_new()
         {
             InitializeComponent();
@@ -458,7 +459,52 @@ namespace TOSApp.ChucNang
 
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
-            throw new NotImplementedException();
+            try
+            {
+                us_2_form(v_us);
+                format_controlls();
+                m_e_form_mode= DataEntryFormMode.UpdateDataState;
+
+            }
+            catch (Exception v_e)
+            {
+                
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
+
+        private void us_2_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        {
+            m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
+
+            m_txt_ho_ten_nguoi_dat_hang.Text = v_us.strHO_TEN_USER_DAT_HANG;
+            m_cbo_user_nhan_vien_dat_hang.SelectedValue = v_us.strHO_TEN_USER_DAT_HANG;
+            m_cbo_dv_don_vi.SelectedValue = v_us.strMA_DON_VI;
+            m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
+            m_cmd_tu_choi.Enabled = false;
+            m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.strNGUOI_TAO_THAO_TAC;
+            m_dat_thoi_gian_dat_hang.Text = v_us.datTHOI_GIAN_DAT_HANG.ToString();
+            m_cbo_loai_dich_vu.SelectedValue = v_us.strTEN_NHOM_DICH_VU_YEU_CAU;
+            m_cbo_dich_vu.SelectedValue = v_us.strTEN_NHOM_DICH_VU_YEU_CAU;
+            m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
+            m_txt_phan_hoi_tu_dvmc.Text = v_us.strPHAN_HOI_TU_DVMC;
+            m_txt_lich_su_trao_doi.Text = "";
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_trang_thai_don_hang, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN= 17 AND ID=" + v_us.dcID_LOAI_THAO_TAC);
+
+        }
+
+        private void format_controlls()
+        {
+            m_txt_dien_thoai.Enabled = false;
+            m_txt_ho_ten_nguoi_dat_hang.Enabled = false;
+            m_cbo_user_nhan_vien_dat_hang.Enabled = false;
+            m_cbo_dv_don_vi.Enabled = false;
+            m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
+            m_cmd_tu_choi.Enabled = false;
+            m_cbo_nguoi_nhan_dat_hang.Enabled = false;
+            m_dat_thoi_gian_dat_hang.Enabled = false;
+        }
+
+        
     }
 }

@@ -618,6 +618,7 @@
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin người xử lý đặt hàng";
+//            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // m_cmd_danh_sach_nguoi_xu_ly
             // 

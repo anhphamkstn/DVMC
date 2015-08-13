@@ -30,6 +30,14 @@ namespace TOSApp.ChucNang
             m_grc_gd_dat_hang_gd_log_dat_hang.DataSource = v_ds.Tables[0];
         }
         US_GD_LOG_DAT_HANG m_us_log = new US_GD_LOG_DAT_HANG();
+
+        /// <Chú ý cho tất cả các hàm ghi log>
+        /// trong tất cả các hàm ghi lại log thì cần xem xét lại người ghi log và id của loại thao tác
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        ///
+
         #region thêm mới đơn hàng
         private void m_cmd_them_moi_don_hang_Click(object sender, EventArgs e)
         {
@@ -126,35 +134,8 @@ namespace TOSApp.ChucNang
    
 
      
-//hàm này được fixx cung người tạo thao tác là dành cho FO 
-        // FO tự nhận và xử lý đơn hàng đối với các trường hợp nhất định
-        private void ghi_log_da_nhan_xu_ly()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 231;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "BO nhận xử lý";
-            v_us.Insert();
-        }
-
-        private void update_log_tiep_nhan()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = 296;//BO tiếp nhận xử lý
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "FO đã tiếp nhận";
-            v_us.Update();
-        }
+       
 
         private void fill_data_to_m_us()
         {
@@ -164,6 +145,7 @@ namespace TOSApp.ChucNang
         }
         #endregion
 
+        #region FO tiếp nhận xử lý
         private void m_cmd_FO_tiep_nhan_Click(object sender, EventArgs e)
         {
             try
@@ -180,7 +162,38 @@ namespace TOSApp.ChucNang
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+        private void update_log_tiep_nhan()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = 296;//BO tiếp nhận xử lý
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "FO đã tiếp nhận";
+            v_us.Update();
+        }
+        //hàm này được fixx cung người tạo thao tác là dành cho FO 
+        // FO tự nhận và xử lý đơn hàng đối với các trường hợp nhất định
+        private void ghi_log_da_nhan_xu_ly()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 231;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "BO nhận xử lý";
+            v_us.Insert();
+        }
+
+        #endregion
+
+        #region FO từ chối đơn hàng
         private void m_cmd_FO_tu_choi_Click(object sender, EventArgs e)
         {
 
@@ -218,5 +231,312 @@ namespace TOSApp.ChucNang
 
           
         }
+        #endregion 
+
+        #region TM đánh giá cho các đơn hàng được báo cáo
+        private void m_cmd_TM_danh_gia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                f115_TM_danh_gia v_f115 = new f115_TM_danh_gia();
+                fill_data_to_m_us();
+                v_f115.displayForTM(m_us);
+                load_data_2_grid();
+                MessageBox.Show("Hoàn thành");
+            }
+            catch (Exception v_e )
+            {
+                
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+#endregion 
+
+        #region báo cáo hoàn thành BO
+        private void m_cmd_bao_cao_hoan_thanh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                update_hoan_thanh_don_hang_BO();
+                ghi_log_da_hoan_thanh_don_hang_BO();
+                MessageBox.Show("Hoàn thành!");
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+
+        private void ghi_log_da_hoan_thanh_don_hang_BO()
+        {
+
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "BO đã xử lý xong! chờ TM nghiệm thu";
+            v_us.Insert();
+        }
+
+        private void update_hoan_thanh_don_hang_BO()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "FO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
+            v_us.Update();
+        }
+        #endregion
+
+        #region PM tiếp nhận đơn hàng & xử lý
+        private void m_cmd_PM_tiep_nhan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                update_log_PM_tiep_nhan();
+                ghi_log_PM_da_nhan_xu_ly();
+                load_data_2_grid();
+                MessageBox.Show("Hoàn thành!");
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void ghi_log_PM_da_nhan_xu_ly()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 304;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "PM nhận xử lý";
+            v_us.Insert();
+        }
+        
+
+        private void update_log_PM_tiep_nhan()
+        {
+
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "PM đã tiếp nhận xử lý";
+            v_us.Update();
+        }
+        #endregion
+
+        #region TD tiếp nhận đơn hàng và xử lý
+        private void m_cmd_admin_tiep_nhan_xu_ly_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                update_log_admin_tiep_nhan();
+                ghi_log_admin_da_nhan_xu_ly();
+                load_data_2_grid();
+                MessageBox.Show("Đã tiếp nhận đơn hàng!");
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void ghi_log_admin_da_nhan_xu_ly()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 306;//TD xử lý
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "TD nhận xử lý";
+            v_us.Insert();
+        }
+
+        private void update_log_admin_tiep_nhan()
+        {
+             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "admin đã tiếp nhận xử lý";
+            v_us.Update();
+        }
+        #endregion
+
+        #region TD hủy đơn hàng
+        private void m_cmd_admin_huy_hon_hang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                update_log_admin_huy_don_hang();
+                ghi_log_admin_da_huy_don_hang();
+                load_data_2_grid();
+                MessageBox.Show("Đã hùy đơn hàng!");
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void ghi_log_admin_da_huy_don_hang()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 300;//đã hủy 
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "TD đã hủy đơn hàng";
+            v_us.Insert();
+        }
+
+        private void update_log_admin_huy_don_hang()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "admin hủy đơn hàng";
+            v_us.Update();
+        }
+
+        #endregion
+
+        #region TD hoàn thành đơn hàng
+        private void m_cmd_admin_hoan_thanh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                update_hoan_thanh_don_hang_TD();
+                ghi_log_admin_da_hoan_thanh_don_hang_TD();
+                MessageBox.Show("Hoàn thành!");
+            }
+            catch (Exception v_e )
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void ghi_log_admin_da_hoan_thanh_don_hang_TD()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 309;//đã nghiệm thu
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "TD đã nghiệm thu";
+            v_us.Insert();
+        }
+
+        private void update_hoan_thanh_don_hang_TD()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "TD đã xử lý xong";
+            v_us.Update();
+        }
+        #endregion
+
+        #region PM bao cáo hoàn hành MO
+        private void m_cmd_PM_bao_Cao_hoan_thanh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                update_hoan_thanh_don_hang_PM();
+                ghi_log_admin_da_hoan_thanh_don_hang_PM();
+                MessageBox.Show("Hoàn thành!");
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+        /// <summary>
+        /// hàm này còn sai trạng thái của loại thao tác vì trong từ điển còn thiếu
+        /// </summary>
+        private void ghi_log_admin_da_hoan_thanh_don_hang_PM()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 309;//
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "PM báo cáo hoàn thành, chờ TM nghiệm thu";
+            v_us.Insert(); 
+        }
+
+        private void update_hoan_thanh_don_hang_PM()
+        {
+          
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "PM đã hoàn thành,chờ TM nghiệm thu";
+            v_us.Update();
+        }
+        #endregion
     }
 }
