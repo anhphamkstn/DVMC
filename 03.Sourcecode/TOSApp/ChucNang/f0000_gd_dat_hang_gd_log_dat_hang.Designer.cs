@@ -92,9 +92,9 @@
             this.panel1.Controls.Add(this.m_cmd_chinh_sua_don_hang);
             this.panel1.Controls.Add(this.m_cmd_them_moi_don_hang);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 314);
+            this.panel1.Location = new System.Drawing.Point(0, 296);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1114, 180);
+            this.panel1.Size = new System.Drawing.Size(1114, 198);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_FO_tiep_nhan
@@ -103,12 +103,12 @@
             this.m_cmd_FO_tiep_nhan.Name = "m_cmd_FO_tiep_nhan";
             this.m_cmd_FO_tiep_nhan.Size = new System.Drawing.Size(146, 23);
             this.m_cmd_FO_tiep_nhan.TabIndex = 1;
-            this.m_cmd_FO_tiep_nhan.Text = "FO tiếp nhận đơn hàng";
+            this.m_cmd_FO_tiep_nhan.Text = "BO tiếp nhận đơn hàng";
             this.m_cmd_FO_tiep_nhan.Click += new System.EventHandler(this.m_cmd_FO_tiep_nhan_Click);
             // 
             // m_cmd_PM_tiep_nhan
             // 
-            this.m_cmd_PM_tiep_nhan.Location = new System.Drawing.Point(201, 92);
+            this.m_cmd_PM_tiep_nhan.Location = new System.Drawing.Point(178, 92);
             this.m_cmd_PM_tiep_nhan.Name = "m_cmd_PM_tiep_nhan";
             this.m_cmd_PM_tiep_nhan.Size = new System.Drawing.Size(134, 23);
             this.m_cmd_PM_tiep_nhan.TabIndex = 1;
@@ -121,7 +121,7 @@
             this.m_cmd_FO_tu_choi.Name = "m_cmd_FO_tu_choi";
             this.m_cmd_FO_tu_choi.Size = new System.Drawing.Size(146, 23);
             this.m_cmd_FO_tu_choi.TabIndex = 1;
-            this.m_cmd_FO_tu_choi.Text = "FO từ chối đơn hàng";
+            this.m_cmd_FO_tu_choi.Text = "BO từ chối đơn hàng";
             this.m_cmd_FO_tu_choi.Click += new System.EventHandler(this.m_cmd_FO_tu_choi_Click);
             // 
             // m_cmd_dieu_phoi_cho_PM
@@ -152,7 +152,7 @@
             this.m_cmd_bao_cao_hoan_thanh.Name = "m_cmd_bao_cao_hoan_thanh";
             this.m_cmd_bao_cao_hoan_thanh.Size = new System.Drawing.Size(146, 23);
             this.m_cmd_bao_cao_hoan_thanh.TabIndex = 1;
-            this.m_cmd_bao_cao_hoan_thanh.Text = "FO báo cáo hoàn thành";
+            this.m_cmd_bao_cao_hoan_thanh.Text = "BO báo cáo hoàn thành";
             this.m_cmd_bao_cao_hoan_thanh.Click += new System.EventHandler(this.m_cmd_bao_cao_hoan_thanh_Click);
             // 
             // m_cmd_dieu_phoi_lai
@@ -216,7 +216,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1114, 314);
+            this.panel2.Size = new System.Drawing.Size(1114, 296);
             this.panel2.TabIndex = 0;
             // 
             // m_grc_gd_dat_hang_gd_log_dat_hang
@@ -226,7 +226,7 @@
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
-            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1114, 314);
+            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1114, 296);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.TabIndex = 0;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_gd_dat_hang_gd_log_dat_hang});
@@ -475,7 +475,7 @@
             // 
             // m_cmd_admin_hoan_thanh
             // 
-            this.m_cmd_admin_hoan_thanh.Location = new System.Drawing.Point(931, 139);
+            this.m_cmd_admin_hoan_thanh.Location = new System.Drawing.Point(931, 147);
             this.m_cmd_admin_hoan_thanh.Name = "m_cmd_admin_hoan_thanh";
             this.m_cmd_admin_hoan_thanh.Size = new System.Drawing.Size(146, 23);
             this.m_cmd_admin_hoan_thanh.TabIndex = 2;

@@ -539,6 +539,7 @@
             this.m_grb_thoi_gian_hoan_thanh.TabIndex = 10;
             this.m_grb_thoi_gian_hoan_thanh.TabStop = false;
             this.m_grb_thoi_gian_hoan_thanh.Text = "Thời gian cần hoàn thành";
+            this.m_grb_thoi_gian_hoan_thanh.Enter += new System.EventHandler(this.m_grb_thoi_gian_hoan_thanh_Enter);
             // 
             // m_rdb_loai_time_1thang
             // 
@@ -618,7 +619,6 @@
             this.groupBox5.TabIndex = 12;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Thông tin người xử lý đặt hàng";
-//            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // m_cmd_danh_sach_nguoi_xu_ly
             // 

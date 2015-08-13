@@ -126,9 +126,18 @@ namespace TOSApp.ChucNang
                 
                 if (Kiem_tra_du_lieu_truoc_luu() == true)
                 {
-                    luu_don_hang();
-                    dieu_phoi_don_hang();
-                    this.Close();
+                    if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
+                    {
+                        udpate_don_hang();
+                        update_log_thay_doi_don_hang();
+                        ghi_log_thay_doi_don_hang();
+                    }
+                    else
+                    {
+                        luu_don_hang();
+                        dieu_phoi_don_hang();
+                        this.Close();
+                    }
   
                 }
             }
@@ -137,6 +146,51 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void ghi_log_thay_doi_don_hang()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 293;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
+            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
+            v_us.Insert();
+            m_id_tiep_nhan = v_us.dcID;
+            MessageBox.Show("đơn hàng đã được cập nhật thông tin");
+            //return v_us.dcID; 
+        }
+
+        private void update_log_thay_doi_don_hang()
+        {
+
+           //tuasn anh viet hooj ham nay
+        }
+
+        private void udpate_don_hang()
+        {
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG();
+            v_us.strDIEN_THOAI = m_txt_dien_thoai.Text;
+            v_us.strMA_DON_HANG = m_txt_ma_don_hang.Text;
+             v_us.strHO_TEN_USER_DAT_HANG=  m_txt_ho_ten_nguoi_dat_hang.Text;
+            v_us.strHO_TEN_USER_DAT_HANG =  m_cbo_user_nhan_vien_dat_hang.SelectedValue.ToString();
+             v_us.strMA_DON_HANG  =m_cbo_dv_don_vi.SelectedValue.ToString() ;
+             v_us.dcID_USER_NV_DAT_HANG =CIPConvert.ToDecimal( m_cbo_user_nhan_vien_dat_hang.SelectedValue);
+             v_us.dcID_DON_VI =CIPConvert.ToDecimal( m_cbo_dv_don_vi.SelectedValue);
+             v_us.dcID_DV_YEU_CAU =CIPConvert.ToDecimal( m_cbo_loai_dich_vu.SelectedValue);
+             v_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
+             v_us.strPHAN_HOI_TU_DVMC = m_txt_phan_hoi_tu_dvmc.Text;
+             v_us.strY_KIEN_KHAC_TU_USER_DAT_HANG = m_txt_lich_su_trao_doi.Text;
+             v_us.datTHOI_GIAN_TAO = m_dat_thoi_gian_dat_hang.Value;
+             v_us.dcID_PHUONG_THUC_DAT_HANG = 148;
+             v_us.dcID_NGUOI_TAO = 69761;//bij ngu
+             v_us.dcID_CHI_NHANH = 1;
+             v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut,m_rdb_loai_time_4h,m_rdb_loai_time_1ngay,m_rdb_loai_time_1tuan,m_rdb_loai_time_1thang);
+             v_us.Update();
+           
         }
 
         private void dieu_phoi_don_hang()
@@ -446,17 +500,6 @@ namespace TOSApp.ChucNang
 
         }
 
-
-
-
-
-
-
-
-
-
-
-
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             try
@@ -464,6 +507,7 @@ namespace TOSApp.ChucNang
                 us_2_form(v_us);
                 format_controlls();
                 m_e_form_mode= DataEntryFormMode.UpdateDataState;
+                this.ShowDialog();
 
             }
             catch (Exception v_e)
@@ -476,7 +520,7 @@ namespace TOSApp.ChucNang
         private void us_2_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
-
+            m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
             m_txt_ho_ten_nguoi_dat_hang.Text = v_us.strHO_TEN_USER_DAT_HANG;
             m_cbo_user_nhan_vien_dat_hang.SelectedValue = v_us.strHO_TEN_USER_DAT_HANG;
             m_cbo_dv_don_vi.SelectedValue = v_us.strMA_DON_VI;
@@ -503,6 +547,11 @@ namespace TOSApp.ChucNang
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.Enabled = false;
             m_dat_thoi_gian_dat_hang.Enabled = false;
+        }
+
+        private void m_grb_thoi_gian_hoan_thanh_Enter(object sender, EventArgs e)
+        {
+
         }
 
         
