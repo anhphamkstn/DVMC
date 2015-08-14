@@ -830,7 +830,7 @@ namespace IPCOREDS.CDBNames
 
     public class V_GD_DAT_HANG_GD_LOG_DAT_HANG
     {
-        public const string ID = "ID";
+        public const string ID_DON_HANG = "ID_DON_HANG";
         public const string MA_DON_HANG = "MA_DON_HANG";
         public const string ID_USER_NV_DAT_HANG = "ID_USER_NV_DAT_HANG";
         public const string HO_TEN_USER_DAT_HANG = "HO_TEN_USER_DAT_HANG";
@@ -855,7 +855,7 @@ namespace IPCOREDS.CDBNames
         public const string NGUOI_TAO_THAO_TAC = "NGUOI_TAO_THAO_TAC";
         public const string ID_CHI_NHANH = "ID_CHI_NHANH";
         public const string TEN_CHI_NHANH = "TEN_CHI_NHANH";
-        public const string ID_LOG_DAT_HANG = "ID_LOG_DAT_HANG";
+        public const string ID = "ID";
         public const string ID_LOAI_THAO_TAC = "ID_LOAI_THAO_TAC";
         public const string TEN_LOAI_THAO_TAC_LOG = "TEN_LOAI_THAO_TAC_LOG";
         public const string THAO_TAC_HET_HAN_YN = "THAO_TAC_HET_HAN_YN";
@@ -866,5 +866,6 @@ namespace IPCOREDS.CDBNames
         public const string ID_NGUOI_TAO_THAO_TAC = "ID_NGUOI_TAO_THAO_TAC";
         public const string TEN_NGUOI_TAO_THAO_TAC_LOG = "TEN_NGUOI_TAO_THAO_TAC_LOG";
     }
+
 
 }

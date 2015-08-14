@@ -17,32 +17,46 @@ namespace TOSApp.ChucNang
             InitializeComponent();
         }
 
-   
+        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
 
         private void m_cmd_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        internal void displayForUpdate(US_GD_DAT_HANG v_us)
-        {
-            load_data_to_form(v_us);
-            this.ShowDialog();
-
-            
-        }
-
-        private void load_data_to_form(US_GD_DAT_HANG v_us)
-        {
-            m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
-          //  WinFormControls.load_data_to_combobox();
-            m_txt_gui_kem.Focus();
-
-        }
-
         private void m_cmd_Ok_Click(object sender, EventArgs e)
         {
+            insert_log_gui_cho_pm(m_us);
+            this.Close();
+        }
+
+        private void insert_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        {
+            US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
+            v_US.dcID_LOAI_THAO_TAC = 303;//đã chuyển cho PM
+            v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
+            v_US.dcID_NGUOI_TAO_THAO_TAC = 1;
+            v_US.dcID_NGUOI_NHAN_THAO_TAC = 15;//Quản lý có id 15
+            v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_US.strTHAO_TAC_HET_HAN_YN = "N";
+            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM \n" +m_txt_gui_kem.Text;
+            v_US.Insert();
             
+        }
+
+        internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        {
+            load_data_to_form(v_us);
+
+            this.ShowDialog();
+        }
+
+        private void load_data_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        {
+            m_us = v_us;
+            m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
+            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_ds_PM);
+            m_txt_gui_kem.Focus();
         }
     }
 }

@@ -279,7 +279,7 @@ namespace IPCOREDS {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class V_GD_DAT_HANG_GD_LOG_DAT_HANGDataTable : global::System.Data.DataTable, global::System.Collections.IEnumerable {
             
-            private global::System.Data.DataColumn columnID;
+            private global::System.Data.DataColumn columnID_DON_HANG;
             
             private global::System.Data.DataColumn columnMA_DON_HANG;
             
@@ -329,7 +329,7 @@ namespace IPCOREDS {
             
             private global::System.Data.DataColumn columnTEN_CHI_NHANH;
             
-            private global::System.Data.DataColumn columnID_LOG_DAT_HANG;
+            private global::System.Data.DataColumn columnID;
             
             private global::System.Data.DataColumn columnID_LOAI_THAO_TAC;
             
@@ -384,9 +384,9 @@ namespace IPCOREDS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IDColumn {
+            public global::System.Data.DataColumn ID_DON_HANGColumn {
                 get {
-                    return this.columnID;
+                    return this.columnID_DON_HANG;
                 }
             }
             
@@ -584,9 +584,9 @@ namespace IPCOREDS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ID_LOG_DAT_HANGColumn {
+            public global::System.Data.DataColumn IDColumn {
                 get {
-                    return this.columnID_LOG_DAT_HANG;
+                    return this.columnID;
                 }
             }
             
@@ -700,7 +700,7 @@ namespace IPCOREDS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public V_GD_DAT_HANG_GD_LOG_DAT_HANGRow AddV_GD_DAT_HANG_GD_LOG_DAT_HANGRow(
-                        decimal ID, 
+                        decimal ID_DON_HANG, 
                         string MA_DON_HANG, 
                         decimal ID_USER_NV_DAT_HANG, 
                         string HO_TEN_USER_DAT_HANG, 
@@ -725,7 +725,7 @@ namespace IPCOREDS {
                         string NGUOI_TAO_THAO_TAC, 
                         decimal ID_CHI_NHANH, 
                         string TEN_CHI_NHANH, 
-                        decimal ID_LOG_DAT_HANG, 
+                        decimal ID, 
                         decimal ID_LOAI_THAO_TAC, 
                         string TEN_LOAI_THAO_TAC_LOG, 
                         string THAO_TAC_HET_HAN_YN, 
@@ -737,7 +737,7 @@ namespace IPCOREDS {
                         string TEN_NGUOI_TAO_THAO_TAC_LOG) {
                 V_GD_DAT_HANG_GD_LOG_DAT_HANGRow rowV_GD_DAT_HANG_GD_LOG_DAT_HANGRow = ((V_GD_DAT_HANG_GD_LOG_DAT_HANGRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID,
+                        ID_DON_HANG,
                         MA_DON_HANG,
                         ID_USER_NV_DAT_HANG,
                         HO_TEN_USER_DAT_HANG,
@@ -762,7 +762,7 @@ namespace IPCOREDS {
                         NGUOI_TAO_THAO_TAC,
                         ID_CHI_NHANH,
                         TEN_CHI_NHANH,
-                        ID_LOG_DAT_HANG,
+                        ID,
                         ID_LOAI_THAO_TAC,
                         TEN_LOAI_THAO_TAC_LOG,
                         THAO_TAC_HET_HAN_YN,
@@ -800,7 +800,7 @@ namespace IPCOREDS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnID = base.Columns["ID"];
+                this.columnID_DON_HANG = base.Columns["ID_DON_HANG"];
                 this.columnMA_DON_HANG = base.Columns["MA_DON_HANG"];
                 this.columnID_USER_NV_DAT_HANG = base.Columns["ID_USER_NV_DAT_HANG"];
                 this.columnHO_TEN_USER_DAT_HANG = base.Columns["HO_TEN_USER_DAT_HANG"];
@@ -825,7 +825,7 @@ namespace IPCOREDS {
                 this.columnNGUOI_TAO_THAO_TAC = base.Columns["NGUOI_TAO_THAO_TAC"];
                 this.columnID_CHI_NHANH = base.Columns["ID_CHI_NHANH"];
                 this.columnTEN_CHI_NHANH = base.Columns["TEN_CHI_NHANH"];
-                this.columnID_LOG_DAT_HANG = base.Columns["ID_LOG_DAT_HANG"];
+                this.columnID = base.Columns["ID"];
                 this.columnID_LOAI_THAO_TAC = base.Columns["ID_LOAI_THAO_TAC"];
                 this.columnTEN_LOAI_THAO_TAC_LOG = base.Columns["TEN_LOAI_THAO_TAC_LOG"];
                 this.columnTHAO_TAC_HET_HAN_YN = base.Columns["THAO_TAC_HET_HAN_YN"];
@@ -840,8 +840,8 @@ namespace IPCOREDS {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
+                this.columnID_DON_HANG = new global::System.Data.DataColumn("ID_DON_HANG", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_DON_HANG);
                 this.columnMA_DON_HANG = new global::System.Data.DataColumn("MA_DON_HANG", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMA_DON_HANG);
                 this.columnID_USER_NV_DAT_HANG = new global::System.Data.DataColumn("ID_USER_NV_DAT_HANG", typeof(decimal), null, global::System.Data.MappingType.Element);
@@ -890,8 +890,8 @@ namespace IPCOREDS {
                 base.Columns.Add(this.columnID_CHI_NHANH);
                 this.columnTEN_CHI_NHANH = new global::System.Data.DataColumn("TEN_CHI_NHANH", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTEN_CHI_NHANH);
-                this.columnID_LOG_DAT_HANG = new global::System.Data.DataColumn("ID_LOG_DAT_HANG", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID_LOG_DAT_HANG);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
                 this.columnID_LOAI_THAO_TAC = new global::System.Data.DataColumn("ID_LOAI_THAO_TAC", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_LOAI_THAO_TAC);
                 this.columnTEN_LOAI_THAO_TAC_LOG = new global::System.Data.DataColumn("TEN_LOAI_THAO_TAC_LOG", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1070,17 +1070,18 @@ namespace IPCOREDS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal ID {
+            public decimal ID_DON_HANG {
                 get {
                     try {
-                        return ((decimal)(this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn]));
+                        return ((decimal)(this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_DON_HANGColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ID\' in table \'V_GD_DAT_HANG_GD_LOG_DAT_HANG\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ID_DON_HANG\' in table \'V_GD_DAT_HANG_GD_LOG_DAT_HANG\' is DB" +
+                                "Null.", e);
                     }
                 }
                 set {
-                    this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn] = value;
+                    this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_DON_HANGColumn] = value;
                 }
             }
             
@@ -1494,18 +1495,17 @@ namespace IPCOREDS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal ID_LOG_DAT_HANG {
+            public decimal ID {
                 get {
                     try {
-                        return ((decimal)(this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_LOG_DAT_HANGColumn]));
+                        return ((decimal)(this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ID_LOG_DAT_HANG\' in table \'V_GD_DAT_HANG_GD_LOG_DAT_HANG\' i" +
-                                "s DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ID\' in table \'V_GD_DAT_HANG_GD_LOG_DAT_HANG\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_LOG_DAT_HANGColumn] = value;
+                    this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn] = value;
                 }
             }
             
@@ -1664,14 +1664,14 @@ namespace IPCOREDS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsIDNull() {
-                return this.IsNull(this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn);
+            public bool IsID_DON_HANGNull() {
+                return this.IsNull(this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_DON_HANGColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetIDNull() {
-                this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn] = global::System.Convert.DBNull;
+            public void SetID_DON_HANGNull() {
+                this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_DON_HANGColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1964,14 +1964,14 @@ namespace IPCOREDS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsID_LOG_DAT_HANGNull() {
-                return this.IsNull(this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_LOG_DAT_HANGColumn);
+            public bool IsIDNull() {
+                return this.IsNull(this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetID_LOG_DAT_HANGNull() {
-                this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.ID_LOG_DAT_HANGColumn] = global::System.Convert.DBNull;
+            public void SetIDNull() {
+                this[this.tableV_GD_DAT_HANG_GD_LOG_DAT_HANG.IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2242,7 +2242,7 @@ namespace IPCOREDS.DS_V_GD_DAT_HANG_GD_LOG_DAT_HANGTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "V_GD_DAT_HANG_GD_LOG_DAT_HANG";
-            tableMapping.ColumnMappings.Add("ID", "ID");
+            tableMapping.ColumnMappings.Add("ID_DON_HANG", "ID_DON_HANG");
             tableMapping.ColumnMappings.Add("MA_DON_HANG", "MA_DON_HANG");
             tableMapping.ColumnMappings.Add("ID_USER_NV_DAT_HANG", "ID_USER_NV_DAT_HANG");
             tableMapping.ColumnMappings.Add("HO_TEN_USER_DAT_HANG", "HO_TEN_USER_DAT_HANG");
@@ -2267,7 +2267,7 @@ namespace IPCOREDS.DS_V_GD_DAT_HANG_GD_LOG_DAT_HANGTableAdapters {
             tableMapping.ColumnMappings.Add("NGUOI_TAO_THAO_TAC", "NGUOI_TAO_THAO_TAC");
             tableMapping.ColumnMappings.Add("ID_CHI_NHANH", "ID_CHI_NHANH");
             tableMapping.ColumnMappings.Add("TEN_CHI_NHANH", "TEN_CHI_NHANH");
-            tableMapping.ColumnMappings.Add("ID_LOG_DAT_HANG", "ID_LOG_DAT_HANG");
+            tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("ID_LOAI_THAO_TAC", "ID_LOAI_THAO_TAC");
             tableMapping.ColumnMappings.Add("TEN_LOAI_THAO_TAC_LOG", "TEN_LOAI_THAO_TAC_LOG");
             tableMapping.ColumnMappings.Add("THAO_TAC_HET_HAN_YN", "THAO_TAC_HET_HAN_YN");
@@ -2293,7 +2293,7 @@ namespace IPCOREDS.DS_V_GD_DAT_HANG_GD_LOG_DAT_HANGTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT ID, MA_DON_HANG, ID_USER_NV_DAT_HANG, HO_TEN_USER_DAT_HANG, ID_DON_VI, MA_DON_VI, DIEN_THOAI, THOI_GIAN_DAT_HANG, ID_NHOM_DV_YEU_CAU, TEN_NHOM_DICH_VU_YEU_CAU, NOI_DUNG_DAT_HANG, ID_LOAI_THOI_GIAN_CAN_HOAN_THANH, LOAI_THOI_GIAN_CAN_HOAN_THANH, PHAN_HOI_TU_DVMC, ID_DANH_GIA_TU_USER_DAT_HANG, TEN_DANH_GIA_TU_USER_DAT_HANG, THOI_GIAN_HOAN_THANH, Y_KIEN_KHAC_TU_USER_DAT_HANG, THOI_GIAN_TAO, ID_PHUONG_THUC_DAT_HANG, TEN_PHUONG_THUC_DAT_HANG, ID_NGUOI_TAO, NGUOI_TAO_THAO_TAC, ID_CHI_NHANH, TEN_CHI_NHANH, ID_LOG_DAT_HANG, ID_LOAI_THAO_TAC, TEN_LOAI_THAO_TAC_LOG, THAO_TAC_HET_HAN_YN, NGAY_LAP_THAO_TAC, GHI_CHU, ID_NGUOI_NHAN_THAO_TAC, TEN_NGUOI_NHAN_THAO_TAC, ID_NGUOI_TAO_THAO_TAC, TEN_NGUOI_TAO_THAO_TAC_LOG FROM dbo.V_GD_DAT_HANG_GD_LOG_DAT_HANG";
+            this._commandCollection[0].CommandText = @"SELECT ID_DON_HANG, MA_DON_HANG, ID_USER_NV_DAT_HANG, HO_TEN_USER_DAT_HANG, ID_DON_VI, MA_DON_VI, DIEN_THOAI, THOI_GIAN_DAT_HANG, ID_NHOM_DV_YEU_CAU, TEN_NHOM_DICH_VU_YEU_CAU, NOI_DUNG_DAT_HANG, ID_LOAI_THOI_GIAN_CAN_HOAN_THANH, LOAI_THOI_GIAN_CAN_HOAN_THANH, PHAN_HOI_TU_DVMC, ID_DANH_GIA_TU_USER_DAT_HANG, TEN_DANH_GIA_TU_USER_DAT_HANG, THOI_GIAN_HOAN_THANH, Y_KIEN_KHAC_TU_USER_DAT_HANG, THOI_GIAN_TAO, ID_PHUONG_THUC_DAT_HANG, TEN_PHUONG_THUC_DAT_HANG, ID_NGUOI_TAO, NGUOI_TAO_THAO_TAC, ID_CHI_NHANH, TEN_CHI_NHANH, ID, ID_LOAI_THAO_TAC, TEN_LOAI_THAO_TAC_LOG, THAO_TAC_HET_HAN_YN, NGAY_LAP_THAO_TAC, GHI_CHU, ID_NGUOI_NHAN_THAO_TAC, TEN_NGUOI_NHAN_THAO_TAC, ID_NGUOI_TAO_THAO_TAC, TEN_NGUOI_TAO_THAO_TAC_LOG FROM dbo.V_GD_DAT_HANG_GD_LOG_DAT_HANG";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

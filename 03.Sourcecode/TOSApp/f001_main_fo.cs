@@ -23,9 +23,9 @@ namespace TOSApp
         {
             try
             {
-                f500_cong_viec_FO_chi_tiet v_f500 = new f500_cong_viec_FO_chi_tiet();
-              v_f500.MdiParent = this;
-                v_f500.Show();
+            //    f500_cong_viec_FO_chi_tiet v_f500 = new f500_cong_viec_FO_chi_tiet();
+            //  v_f500.MdiParent = this;
+            //    v_f500.Show();
             }
             catch (Exception v_e)
             {

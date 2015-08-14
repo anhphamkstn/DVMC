@@ -101,9 +101,11 @@ namespace TOSApp.ChucNang
             try
             {
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-                update_trang_thai_don_hang(v_us);
-                ghi_log_gui_cho_pm(v_us);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f112_FO_chuyen_don_hang_cho_PM v_f = new f112_FO_chuyen_don_hang_cho_PM();
+                v_f.displayForUpdate(v_us);
+              //  update_trang_thai_don_hang(v_us);
+                update_log_gui_cho_pm(v_us);
                 MessageBox.Show("Hoàn thành!");
             }
             catch (Exception v_e)
@@ -112,26 +114,24 @@ namespace TOSApp.ChucNang
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
-//hàm được fix cứng 1 vài giá trị cần phải thay đổi khi làm liên quan đến hệ thống
-        private void ghi_log_gui_cho_pm(US_GD_DAT_HANG v_us)
+
+        private void update_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
-            US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
-            v_US.dcID_LOAI_THAO_TAC = 174;
-            v_US.dcID_GD_DAT_HANG = v_us.dcID;
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 69763;
-            v_US.dcID_NGUOI_NHAN_THAO_TAC = 69762;
-            v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng được gửi cho PM";
-            v_US.Insert();
+            US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);
+            //v_US.dcID_LOAI_THAO_TAC = 174;
+            //v_US.dcID_GD_DAT_HANG = v_us.dcID;
+            //v_US.dcID_NGUOI_TAO_THAO_TAC = 1;
+            //v_US.dcID_NGUOI_NHAN_THAO_TAC = 15;//Quản lý có id 15
+            //v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_US.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
+            v_US.Update();
         }
 
-        private void update_trang_thai_don_hang(US_GD_DAT_HANG v_us)
-        {
-            f112_FO_chuyen_don_hang_cho_PM v_f = new f112_FO_chuyen_don_hang_cho_PM();
-            v_f.displayForUpdate(v_us);
-        }
-   
+
+//hàm được fix cứng 1 vài giá trị cần phải thay đổi khi làm liên quan đến hệ thống
+      
+ 
 
      
 
@@ -164,7 +164,7 @@ namespace TOSApp.ChucNang
         }
         private void update_log_tiep_nhan()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
            // v_us.dcID = m_us.dcID_LOG_DAT_HANG;
             //v_us.dcID_GD_DAT_HANG = m_us.dcID;
             //v_us.dcID_LOAI_THAO_TAC = 296;//BO tiếp nhận xử lý
@@ -181,8 +181,8 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 231;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 3;//TuanPA
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
@@ -217,7 +217,7 @@ namespace TOSApp.ChucNang
 
         private void update_log_trang_thai_don_hang()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
            // v_us.dcID = m_us.dcID_LOG_DAT_HANG;
            // v_us.dcID_GD_DAT_HANG = m_us.dcID;
            // v_us.dcID_LOAI_THAO_TAC =311 ;//BO từ chối xử lý-FO chờ điều phối lại
@@ -277,8 +277,8 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 3;//TuanPA
+            v_us.dcID_NGUOI_NHAN_THAO_TAC=22;//thang TM có id 22 cần vào nhiệm thu
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
@@ -289,11 +289,11 @@ namespace TOSApp.ChucNang
         private void update_hoan_thanh_don_hang_BO()
         {
           
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
             //v_us.dcID_GD_DAT_HANG = m_us.dcID;
             //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 22;//cho thang TM có id 22 xu ly
             //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
             //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
@@ -338,7 +338,7 @@ namespace TOSApp.ChucNang
         private void update_log_PM_tiep_nhan()
         {
 
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
             //v_us.dcID_GD_DAT_HANG = m_us.dcID;
             //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
@@ -385,7 +385,7 @@ namespace TOSApp.ChucNang
 
         private void update_log_admin_tiep_nhan()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
             //v_us.dcID_GD_DAT_HANG = m_us.dcID;
             //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
@@ -432,7 +432,7 @@ namespace TOSApp.ChucNang
 
         private void update_log_admin_huy_don_hang()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
             //v_us.dcID_GD_DAT_HANG = m_us.dcID;
             //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
@@ -479,13 +479,13 @@ namespace TOSApp.ChucNang
 
         private void update_hoan_thanh_don_hang_TD()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
+            //v_us.dcID = m_us.dcID;
+            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "TD đã xử lý xong";
             v_us.Update();
@@ -528,7 +528,7 @@ namespace TOSApp.ChucNang
         private void update_hoan_thanh_don_hang_PM()
         {
 
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
             //v_us.dcID_GD_DAT_HANG = m_us.dcID;
             //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
