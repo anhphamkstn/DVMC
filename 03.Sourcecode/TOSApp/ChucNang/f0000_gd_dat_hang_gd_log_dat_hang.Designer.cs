@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_cmd_admin_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_FO_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_PM_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_FO_tu_choi = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_BO_tu_choi = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_PM_bao_Cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_bao_cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_PM_gui_cho_admin = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_admin_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_admin_tiep_nhan_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_them_moi_don_hang = new DevExpress.XtraEditors.SimpleButton();
@@ -67,8 +69,6 @@
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_NHAN_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_TAO_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_cmd_admin_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_admin_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.m_cmd_admin_hoan_thanh);
             this.panel1.Controls.Add(this.m_cmd_FO_tiep_nhan);
             this.panel1.Controls.Add(this.m_cmd_PM_tiep_nhan);
-            this.panel1.Controls.Add(this.m_cmd_FO_tu_choi);
+            this.panel1.Controls.Add(this.m_cmd_BO_tu_choi);
             this.panel1.Controls.Add(this.m_cmd_dieu_phoi_cho_PM);
             this.panel1.Controls.Add(this.m_cmd_PM_bao_Cao_hoan_thanh);
             this.panel1.Controls.Add(this.m_cmd_bao_cao_hoan_thanh);
@@ -96,6 +96,15 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1114, 198);
             this.panel1.TabIndex = 0;
+            // 
+            // m_cmd_admin_hoan_thanh
+            // 
+            this.m_cmd_admin_hoan_thanh.Location = new System.Drawing.Point(931, 147);
+            this.m_cmd_admin_hoan_thanh.Name = "m_cmd_admin_hoan_thanh";
+            this.m_cmd_admin_hoan_thanh.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_admin_hoan_thanh.TabIndex = 2;
+            this.m_cmd_admin_hoan_thanh.Text = "admin hoàn thành đơn hàng";
+            this.m_cmd_admin_hoan_thanh.Click += new System.EventHandler(this.m_cmd_admin_hoan_thanh_Click);
             // 
             // m_cmd_FO_tiep_nhan
             // 
@@ -115,14 +124,14 @@
             this.m_cmd_PM_tiep_nhan.Text = "PM tiếp nhận đơn hàng";
             this.m_cmd_PM_tiep_nhan.Click += new System.EventHandler(this.m_cmd_PM_tiep_nhan_Click);
             // 
-            // m_cmd_FO_tu_choi
+            // m_cmd_BO_tu_choi
             // 
-            this.m_cmd_FO_tu_choi.Location = new System.Drawing.Point(744, 25);
-            this.m_cmd_FO_tu_choi.Name = "m_cmd_FO_tu_choi";
-            this.m_cmd_FO_tu_choi.Size = new System.Drawing.Size(146, 23);
-            this.m_cmd_FO_tu_choi.TabIndex = 1;
-            this.m_cmd_FO_tu_choi.Text = "BO từ chối đơn hàng";
-            this.m_cmd_FO_tu_choi.Click += new System.EventHandler(this.m_cmd_FO_tu_choi_Click);
+            this.m_cmd_BO_tu_choi.Location = new System.Drawing.Point(744, 25);
+            this.m_cmd_BO_tu_choi.Name = "m_cmd_BO_tu_choi";
+            this.m_cmd_BO_tu_choi.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_BO_tu_choi.TabIndex = 1;
+            this.m_cmd_BO_tu_choi.Text = "BO từ chối đơn hàng";
+            this.m_cmd_BO_tu_choi.Click += new System.EventHandler(this.m_cmd_BO_tu_choi_Click);
             // 
             // m_cmd_dieu_phoi_cho_PM
             // 
@@ -180,6 +189,16 @@
             this.m_cmd_PM_gui_cho_admin.Size = new System.Drawing.Size(146, 23);
             this.m_cmd_PM_gui_cho_admin.TabIndex = 1;
             this.m_cmd_PM_gui_cho_admin.Text = "PM gửi đơn hàng cho admin";
+            this.m_cmd_PM_gui_cho_admin.Click += new System.EventHandler(this.m_cmd_PM_gui_cho_admin_Click);
+            // 
+            // m_cmd_admin_huy_hon_hang
+            // 
+            this.m_cmd_admin_huy_hon_hang.Location = new System.Drawing.Point(931, 92);
+            this.m_cmd_admin_huy_hon_hang.Name = "m_cmd_admin_huy_hon_hang";
+            this.m_cmd_admin_huy_hon_hang.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_admin_huy_hon_hang.TabIndex = 1;
+            this.m_cmd_admin_huy_hon_hang.Text = "admin hủy đơn hàng";
+            this.m_cmd_admin_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_admin_huy_hon_hang_Click);
             // 
             // m_cmd_admin_tiep_nhan_xu_ly
             // 
@@ -464,24 +483,6 @@
             this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
             this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 21;
             // 
-            // m_cmd_admin_huy_hon_hang
-            // 
-            this.m_cmd_admin_huy_hon_hang.Location = new System.Drawing.Point(931, 92);
-            this.m_cmd_admin_huy_hon_hang.Name = "m_cmd_admin_huy_hon_hang";
-            this.m_cmd_admin_huy_hon_hang.Size = new System.Drawing.Size(146, 23);
-            this.m_cmd_admin_huy_hon_hang.TabIndex = 1;
-            this.m_cmd_admin_huy_hon_hang.Text = "admin hủy đơn hàng";
-            this.m_cmd_admin_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_admin_huy_hon_hang_Click);
-            // 
-            // m_cmd_admin_hoan_thanh
-            // 
-            this.m_cmd_admin_hoan_thanh.Location = new System.Drawing.Point(931, 147);
-            this.m_cmd_admin_hoan_thanh.Name = "m_cmd_admin_hoan_thanh";
-            this.m_cmd_admin_hoan_thanh.Size = new System.Drawing.Size(146, 23);
-            this.m_cmd_admin_hoan_thanh.TabIndex = 2;
-            this.m_cmd_admin_hoan_thanh.Text = "admin hoàn thành đơn hàng";
-            this.m_cmd_admin_hoan_thanh.Click += new System.EventHandler(this.m_cmd_admin_hoan_thanh_Click);
-            // 
             // f0000_gd_dat_hang_gd_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,7 +509,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_gd_dat_hang_gd_log_dat_hang;
         private DevExpress.XtraEditors.SimpleButton m_cmd_FO_tiep_nhan;
         private DevExpress.XtraEditors.SimpleButton m_cmd_PM_tiep_nhan;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_FO_tu_choi;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_BO_tu_choi;
         private DevExpress.XtraEditors.SimpleButton m_cmd_dieu_phoi_cho_PM;
         private DevExpress.XtraEditors.SimpleButton m_cmd_PM_bao_Cao_hoan_thanh;
         private DevExpress.XtraEditors.SimpleButton m_cmd_bao_cao_hoan_thanh;

@@ -164,20 +164,20 @@ namespace TOSApp.ChucNang
         }
         private void update_log_tiep_nhan()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = 296;//BO tiếp nhận xử lý
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+           // v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            //v_us.dcID_LOAI_THAO_TAC = 296;//BO tiếp nhận xử lý
+            //v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            //v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            //v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "BO đã tiếp nhận";
             v_us.Update();
         }
         //hàm này được fixx cung người tạo thao tác là dành cho FO 
         // FO tự nhận và xử lý đơn hàng đối với các trường hợp nhất định
-        private void ghi_log_da_nhan_xu_ly()
+        private void  ghi_log_da_nhan_xu_ly()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 231;
@@ -193,8 +193,8 @@ namespace TOSApp.ChucNang
 
         #endregion
 
-        #region FO từ chối đơn hàng
-        private void m_cmd_FO_tu_choi_Click(object sender, EventArgs e)
+        #region BO từ chối đơn hàng
+        private void m_cmd_BO_tu_choi_Click(object sender, EventArgs e)
         {
 
             try
@@ -217,13 +217,13 @@ namespace TOSApp.ChucNang
 
         private void update_log_trang_thai_don_hang()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC =311 ;//BO từ chối xử lý-FO chờ điều phối lại
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+           // v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+           // v_us.dcID_GD_DAT_HANG = m_us.dcID;
+           // v_us.dcID_LOAI_THAO_TAC =311 ;//BO từ chối xử lý-FO chờ điều phối lại
+          //  v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+          //  v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+          //  v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "FO đã từ chối";
             v_us.Update();
@@ -338,13 +338,13 @@ namespace TOSApp.ChucNang
         private void update_log_PM_tiep_nhan()
         {
 
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "PM đã tiếp nhận xử lý";
             v_us.Update();
@@ -385,13 +385,13 @@ namespace TOSApp.ChucNang
 
         private void update_log_admin_tiep_nhan()
         {
-             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "admin đã tiếp nhận xử lý";
             v_us.Update();
@@ -432,13 +432,13 @@ namespace TOSApp.ChucNang
 
         private void update_log_admin_huy_don_hang()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "admin hủy đơn hàng";
             v_us.Update();
@@ -527,18 +527,23 @@ namespace TOSApp.ChucNang
 
         private void update_hoan_thanh_don_hang_PM()
         {
-          
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID_LOG_DAT_HANG);
+            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
+            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
+            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "PM đã hoàn thành,chờ TM nghiệm thu";
             v_us.Update();
         }
         #endregion
+
+        private void m_cmd_PM_gui_cho_admin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

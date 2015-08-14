@@ -95,6 +95,7 @@ namespace TOSApp.ChucNang
             m_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             m_US.strTHAO_TAC_HET_HAN_YN = "Y";
             m_US.strGHI_CHU = m_txt_ly_do_tu_choi.Text;
+            
         }
     }
 }
