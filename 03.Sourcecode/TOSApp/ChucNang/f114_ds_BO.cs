@@ -39,7 +39,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
 
             //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH WHERE ID_NHOM = 2");
+            v_us.FillDatasetWithQuery(v_ds, " select * from HT_NGUOI_SU_DUNG");
             m_grc_ds_BO.DataSource = v_ds.Tables[0];
 
         }

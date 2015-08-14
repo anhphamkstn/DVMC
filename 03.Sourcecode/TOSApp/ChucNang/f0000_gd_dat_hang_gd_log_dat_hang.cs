@@ -326,7 +326,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 304;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = 15;//thang pm co id 15
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
@@ -377,8 +377,8 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 306;//TD xử lý
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 21;//TD có id = 21
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
@@ -424,8 +424,8 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 300;//đã hủy 
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC =21;//TuanPA
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
@@ -444,7 +444,7 @@ namespace TOSApp.ChucNang
             //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
             //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "admin hủy đơn hàng";
+            v_us.strGHI_CHU = "TD hủy đơn hàng";
             v_us.Update();
         }
 
@@ -471,13 +471,13 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 309;//đã nghiệm thu
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO_THAO_TAC;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "TD đã nghiệm thu";
+            v_us.strGHI_CHU = "TD hoàn thành đơn hàng,chờ TM nghiệm thu";
             v_us.Insert();
         }
 
@@ -519,9 +519,9 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 309;//
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 15;//thang pm co id =15
+            v_us.dcID_NGUOI_NHAN_THAO_TAC=22;//thagn TM có id =22
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
