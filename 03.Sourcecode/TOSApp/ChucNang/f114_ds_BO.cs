@@ -119,7 +119,7 @@ namespace TOSApp.ChucNang
         {
 
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 296;//fix cung cho tao tac dieu huong--> bi ngu
+            v_us.dcID_LOAI_THAO_TAC = 311;//fix cung cho tao tac dieu huong--> bi ngu
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_NHAN_THAO_TAC = p;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
@@ -135,9 +135,10 @@ namespace TOSApp.ChucNang
             {
                 US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_lst_id_log_dat_hang[i]);
    
-                v_us.dcID_GD_DAT_HANG = m_id_gd_dat_hang;
-                v_us.dcID_NGUOI_NHAN_THAO_TAC = p;
+              //  v_us.dcID_GD_DAT_HANG = m_id_gd_dat_hang;
+               // v_us.dcID_NGUOI_NHAN_THAO_TAC = p;
                 v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+                v_us.strGHI_CHU = "đã điều phối lại";
                 v_us.Update();
             }
  	      

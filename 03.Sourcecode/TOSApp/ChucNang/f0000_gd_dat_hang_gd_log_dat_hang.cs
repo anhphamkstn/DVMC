@@ -85,6 +85,7 @@ namespace TOSApp.ChucNang
                 f114_ds_BO v_f114 = new f114_ds_BO();
                 v_f114.display_dieu_huong(v_us);
                 load_data_2_grid();
+                MessageBox.Show("Thành công");
                
             }
             catch (Exception v_e)
@@ -106,6 +107,7 @@ namespace TOSApp.ChucNang
                 v_f.displayForUpdate(v_us);
               //  update_trang_thai_don_hang(v_us);
                 update_log_gui_cho_pm(v_us);
+                load_data_2_grid();
                 MessageBox.Show("Hoàn thành!");
             }
             catch (Exception v_e)
@@ -309,7 +311,7 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 update_log_PM_tiep_nhan();
-                ghi_log_PM_da_nhan_xu_ly();
+                ghi_log_PM_da_nhan_xu_ly(m_us);
                 load_data_2_grid();
                 MessageBox.Show("Hoàn thành!");
             }
@@ -320,12 +322,12 @@ namespace TOSApp.ChucNang
             }
         }
 
-        private void ghi_log_PM_da_nhan_xu_ly()
+        private void ghi_log_PM_da_nhan_xu_ly(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 304;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 69772;//TuanPA
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 15;//thang pm co id 15
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
@@ -333,6 +335,8 @@ namespace TOSApp.ChucNang
             v_us.strGHI_CHU = "PM nhận xử lý";
             v_us.Insert();
         }
+
+     
         
 
         private void update_log_PM_tiep_nhan()

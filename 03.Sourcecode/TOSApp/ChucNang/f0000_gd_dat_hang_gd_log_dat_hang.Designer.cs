@@ -69,6 +69,7 @@
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_NHAN_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_TAO_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
@@ -77,6 +78,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.m_cmd_admin_hoan_thanh);
             this.panel1.Controls.Add(this.m_cmd_FO_tiep_nhan);
             this.panel1.Controls.Add(this.m_cmd_PM_tiep_nhan);
@@ -483,6 +485,16 @@
             this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
             this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 21;
             // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.simpleButton1.Appearance.Options.UseForeColor = true;
+            this.simpleButton1.Location = new System.Drawing.Point(744, 146);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(146, 23);
+            this.simpleButton1.TabIndex = 3;
+            this.simpleButton1.Text = "admin báo cáo hoàn thành";
+            // 
             // f0000_gd_dat_hang_gd_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -543,5 +555,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
         private DevExpress.XtraEditors.SimpleButton m_cmd_admin_hoan_thanh;
         private DevExpress.XtraEditors.SimpleButton m_cmd_admin_huy_hon_hang;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
