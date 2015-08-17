@@ -28,17 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            this.m_panel_PM = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.m_cmd_PM_bao_Cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.m_cmd_PM_gui_cho_admin = new DevExpress.XtraEditors.SimpleButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.m_cmd_PM_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_admin_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_FO_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_PM_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_BO_tu_choi = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_PM_bao_Cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_bao_cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_PM_gui_cho_admin = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_admin_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_admin_tiep_nhan_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
@@ -69,166 +74,269 @@
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_NHAN_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_TAO_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel1.SuspendLayout();
+            this.m_panel_FO = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.m_panel_BO = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.m_panel_TD = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.m_panel_TM = new System.Windows.Forms.Panel();
+            this.m_panel_PM.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).BeginInit();
+            this.m_panel_FO.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.m_panel_BO.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.m_panel_TD.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.m_panel_TM.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // m_panel_PM
             // 
-            this.panel1.Controls.Add(this.m_cmd_admin_hoan_thanh);
-            this.panel1.Controls.Add(this.m_cmd_FO_tiep_nhan);
-            this.panel1.Controls.Add(this.m_cmd_PM_tiep_nhan);
-            this.panel1.Controls.Add(this.m_cmd_BO_tu_choi);
-            this.panel1.Controls.Add(this.m_cmd_dieu_phoi_cho_PM);
-            this.panel1.Controls.Add(this.m_cmd_PM_bao_Cao_hoan_thanh);
-            this.panel1.Controls.Add(this.m_cmd_bao_cao_hoan_thanh);
-            this.panel1.Controls.Add(this.m_cmd_dieu_phoi_lai);
-            this.panel1.Controls.Add(this.m_cmd_TM_danh_gia);
-            this.panel1.Controls.Add(this.m_cmd_PM_gui_cho_admin);
-            this.panel1.Controls.Add(this.m_cmd_admin_huy_hon_hang);
-            this.panel1.Controls.Add(this.m_cmd_admin_tiep_nhan_xu_ly);
-            this.panel1.Controls.Add(this.m_cmd_chinh_sua_don_hang);
-            this.panel1.Controls.Add(this.m_cmd_them_moi_don_hang);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 296);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1114, 198);
-            this.panel1.TabIndex = 0;
+            this.m_panel_PM.Controls.Add(this.panel10);
+            this.m_panel_PM.Controls.Add(this.panel9);
+            this.m_panel_PM.Controls.Add(this.panel8);
+            this.m_panel_PM.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_panel_PM.Location = new System.Drawing.Point(0, 371);
+            this.m_panel_PM.Name = "m_panel_PM";
+            this.m_panel_PM.Size = new System.Drawing.Size(1114, 34);
+            this.m_panel_PM.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.m_cmd_PM_bao_Cao_hoan_thanh);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(343, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(252, 34);
+            this.panel10.TabIndex = 0;
+            // 
+            // m_cmd_PM_bao_Cao_hoan_thanh
+            // 
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Appearance.Options.UseFont = true;
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Appearance.Options.UseForeColor = true;
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_PM_bao_Cao_hoan_thanh.Image")));
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Name = "m_cmd_PM_bao_Cao_hoan_thanh";
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Size = new System.Drawing.Size(252, 34);
+            this.m_cmd_PM_bao_Cao_hoan_thanh.TabIndex = 1;
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Text = "PM báo cáo hoàn thành";
+            this.m_cmd_PM_bao_Cao_hoan_thanh.Click += new System.EventHandler(this.m_cmd_PM_bao_Cao_hoan_thanh_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.m_cmd_PM_gui_cho_admin);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(595, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(275, 34);
+            this.panel9.TabIndex = 0;
+            // 
+            // m_cmd_PM_gui_cho_admin
+            // 
+            this.m_cmd_PM_gui_cho_admin.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_PM_gui_cho_admin.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.m_cmd_PM_gui_cho_admin.Appearance.Options.UseFont = true;
+            this.m_cmd_PM_gui_cho_admin.Appearance.Options.UseForeColor = true;
+            this.m_cmd_PM_gui_cho_admin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_PM_gui_cho_admin.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_PM_gui_cho_admin.Image")));
+            this.m_cmd_PM_gui_cho_admin.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_PM_gui_cho_admin.Name = "m_cmd_PM_gui_cho_admin";
+            this.m_cmd_PM_gui_cho_admin.Size = new System.Drawing.Size(275, 34);
+            this.m_cmd_PM_gui_cho_admin.TabIndex = 1;
+            this.m_cmd_PM_gui_cho_admin.Text = "PM gửi đơn hàng cho admin";
+            this.m_cmd_PM_gui_cho_admin.Click += new System.EventHandler(this.m_cmd_PM_gui_cho_admin_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.m_cmd_PM_tiep_nhan);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel8.Location = new System.Drawing.Point(870, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(244, 34);
+            this.panel8.TabIndex = 0;
+            // 
+            // m_cmd_PM_tiep_nhan
+            // 
+            this.m_cmd_PM_tiep_nhan.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_PM_tiep_nhan.Appearance.Options.UseFont = true;
+            this.m_cmd_PM_tiep_nhan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_PM_tiep_nhan.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_PM_tiep_nhan.Image")));
+            this.m_cmd_PM_tiep_nhan.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_PM_tiep_nhan.Name = "m_cmd_PM_tiep_nhan";
+            this.m_cmd_PM_tiep_nhan.Size = new System.Drawing.Size(244, 34);
+            this.m_cmd_PM_tiep_nhan.TabIndex = 1;
+            this.m_cmd_PM_tiep_nhan.Text = "PM tiếp nhận đơn hàng";
+            this.m_cmd_PM_tiep_nhan.Click += new System.EventHandler(this.m_cmd_PM_tiep_nhan_Click);
             // 
             // m_cmd_admin_hoan_thanh
             // 
-            this.m_cmd_admin_hoan_thanh.Location = new System.Drawing.Point(931, 147);
+            this.m_cmd_admin_hoan_thanh.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_admin_hoan_thanh.Appearance.Options.UseFont = true;
+            this.m_cmd_admin_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_admin_hoan_thanh.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_admin_hoan_thanh.Image")));
+            this.m_cmd_admin_hoan_thanh.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_admin_hoan_thanh.Name = "m_cmd_admin_hoan_thanh";
-            this.m_cmd_admin_hoan_thanh.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_admin_hoan_thanh.Size = new System.Drawing.Size(275, 41);
             this.m_cmd_admin_hoan_thanh.TabIndex = 2;
             this.m_cmd_admin_hoan_thanh.Text = "admin hoàn thành đơn hàng";
             this.m_cmd_admin_hoan_thanh.Click += new System.EventHandler(this.m_cmd_admin_hoan_thanh_Click);
             // 
             // m_cmd_FO_tiep_nhan
             // 
-            this.m_cmd_FO_tiep_nhan.Location = new System.Drawing.Point(562, 25);
+            this.m_cmd_FO_tiep_nhan.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_FO_tiep_nhan.Appearance.Options.UseFont = true;
+            this.m_cmd_FO_tiep_nhan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_FO_tiep_nhan.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_FO_tiep_nhan.Image")));
+            this.m_cmd_FO_tiep_nhan.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_FO_tiep_nhan.Name = "m_cmd_FO_tiep_nhan";
-            this.m_cmd_FO_tiep_nhan.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_FO_tiep_nhan.Size = new System.Drawing.Size(244, 39);
             this.m_cmd_FO_tiep_nhan.TabIndex = 1;
             this.m_cmd_FO_tiep_nhan.Text = "BO tiếp nhận đơn hàng";
             this.m_cmd_FO_tiep_nhan.Click += new System.EventHandler(this.m_cmd_FO_tiep_nhan_Click);
             // 
-            // m_cmd_PM_tiep_nhan
-            // 
-            this.m_cmd_PM_tiep_nhan.Location = new System.Drawing.Point(178, 92);
-            this.m_cmd_PM_tiep_nhan.Name = "m_cmd_PM_tiep_nhan";
-            this.m_cmd_PM_tiep_nhan.Size = new System.Drawing.Size(134, 23);
-            this.m_cmd_PM_tiep_nhan.TabIndex = 1;
-            this.m_cmd_PM_tiep_nhan.Text = "PM tiếp nhận đơn hàng";
-            this.m_cmd_PM_tiep_nhan.Click += new System.EventHandler(this.m_cmd_PM_tiep_nhan_Click);
-            // 
             // m_cmd_BO_tu_choi
             // 
-            this.m_cmd_BO_tu_choi.Location = new System.Drawing.Point(744, 25);
+            this.m_cmd_BO_tu_choi.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_BO_tu_choi.Appearance.Options.UseFont = true;
+            this.m_cmd_BO_tu_choi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_BO_tu_choi.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_BO_tu_choi.Image")));
+            this.m_cmd_BO_tu_choi.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_BO_tu_choi.Name = "m_cmd_BO_tu_choi";
-            this.m_cmd_BO_tu_choi.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_BO_tu_choi.Size = new System.Drawing.Size(275, 39);
             this.m_cmd_BO_tu_choi.TabIndex = 1;
             this.m_cmd_BO_tu_choi.Text = "BO từ chối đơn hàng";
             this.m_cmd_BO_tu_choi.Click += new System.EventHandler(this.m_cmd_BO_tu_choi_Click);
             // 
             // m_cmd_dieu_phoi_cho_PM
             // 
-            this.m_cmd_dieu_phoi_cho_PM.Location = new System.Drawing.Point(274, 25);
+            this.m_cmd_dieu_phoi_cho_PM.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_dieu_phoi_cho_PM.Appearance.Options.UseFont = true;
+            this.m_cmd_dieu_phoi_cho_PM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_dieu_phoi_cho_PM.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_dieu_phoi_cho_PM.Image")));
+            this.m_cmd_dieu_phoi_cho_PM.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_dieu_phoi_cho_PM.Name = "m_cmd_dieu_phoi_cho_PM";
-            this.m_cmd_dieu_phoi_cho_PM.Size = new System.Drawing.Size(124, 23);
+            this.m_cmd_dieu_phoi_cho_PM.Size = new System.Drawing.Size(252, 39);
             this.m_cmd_dieu_phoi_cho_PM.TabIndex = 1;
             this.m_cmd_dieu_phoi_cho_PM.Text = "Điều phối lại cho PM";
             this.m_cmd_dieu_phoi_cho_PM.Click += new System.EventHandler(this.m_cmd_dieu_phoi_cho_PM_Click);
             // 
-            // m_cmd_PM_bao_Cao_hoan_thanh
-            // 
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Appearance.Options.UseForeColor = true;
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Location = new System.Drawing.Point(360, 92);
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Name = "m_cmd_PM_bao_Cao_hoan_thanh";
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Size = new System.Drawing.Size(161, 23);
-            this.m_cmd_PM_bao_Cao_hoan_thanh.TabIndex = 1;
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Text = "PM báo cáo hoàn thành";
-            this.m_cmd_PM_bao_Cao_hoan_thanh.Click += new System.EventHandler(this.m_cmd_PM_bao_Cao_hoan_thanh_Click);
-            // 
             // m_cmd_bao_cao_hoan_thanh
             // 
+            this.m_cmd_bao_cao_hoan_thanh.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_bao_cao_hoan_thanh.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_cmd_bao_cao_hoan_thanh.Appearance.Options.UseFont = true;
             this.m_cmd_bao_cao_hoan_thanh.Appearance.Options.UseForeColor = true;
-            this.m_cmd_bao_cao_hoan_thanh.Location = new System.Drawing.Point(931, 25);
+            this.m_cmd_bao_cao_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_bao_cao_hoan_thanh.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_bao_cao_hoan_thanh.Image")));
+            this.m_cmd_bao_cao_hoan_thanh.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_bao_cao_hoan_thanh.Name = "m_cmd_bao_cao_hoan_thanh";
-            this.m_cmd_bao_cao_hoan_thanh.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_bao_cao_hoan_thanh.Size = new System.Drawing.Size(252, 39);
             this.m_cmd_bao_cao_hoan_thanh.TabIndex = 1;
             this.m_cmd_bao_cao_hoan_thanh.Text = "BO báo cáo hoàn thành";
             this.m_cmd_bao_cao_hoan_thanh.Click += new System.EventHandler(this.m_cmd_bao_cao_hoan_thanh_Click);
             // 
             // m_cmd_dieu_phoi_lai
             // 
+            this.m_cmd_dieu_phoi_lai.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_dieu_phoi_lai.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.m_cmd_dieu_phoi_lai.Appearance.Options.UseFont = true;
             this.m_cmd_dieu_phoi_lai.Appearance.Options.UseForeColor = true;
-            this.m_cmd_dieu_phoi_lai.Location = new System.Drawing.Point(159, 25);
+            this.m_cmd_dieu_phoi_lai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_dieu_phoi_lai.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_dieu_phoi_lai.Image")));
+            this.m_cmd_dieu_phoi_lai.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_dieu_phoi_lai.Name = "m_cmd_dieu_phoi_lai";
-            this.m_cmd_dieu_phoi_lai.Size = new System.Drawing.Size(100, 23);
+            this.m_cmd_dieu_phoi_lai.Size = new System.Drawing.Size(275, 39);
             this.m_cmd_dieu_phoi_lai.TabIndex = 1;
             this.m_cmd_dieu_phoi_lai.Text = "Điều phối lại";
             this.m_cmd_dieu_phoi_lai.Click += new System.EventHandler(this.m_cmd_dieu_phoi_lai_Click);
             // 
             // m_cmd_TM_danh_gia
             // 
-            this.m_cmd_TM_danh_gia.Location = new System.Drawing.Point(38, 92);
+            this.m_cmd_TM_danh_gia.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_TM_danh_gia.Appearance.Options.UseFont = true;
+            this.m_cmd_TM_danh_gia.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_TM_danh_gia.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_TM_danh_gia.Image")));
+            this.m_cmd_TM_danh_gia.Location = new System.Drawing.Point(870, 0);
             this.m_cmd_TM_danh_gia.Name = "m_cmd_TM_danh_gia";
-            this.m_cmd_TM_danh_gia.Size = new System.Drawing.Size(119, 23);
+            this.m_cmd_TM_danh_gia.Size = new System.Drawing.Size(244, 40);
             this.m_cmd_TM_danh_gia.TabIndex = 1;
             this.m_cmd_TM_danh_gia.Text = "TM đánh giá đơn hàng";
             this.m_cmd_TM_danh_gia.Click += new System.EventHandler(this.m_cmd_TM_danh_gia_Click);
             // 
-            // m_cmd_PM_gui_cho_admin
-            // 
-            this.m_cmd_PM_gui_cho_admin.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.m_cmd_PM_gui_cho_admin.Appearance.Options.UseForeColor = true;
-            this.m_cmd_PM_gui_cho_admin.Location = new System.Drawing.Point(562, 92);
-            this.m_cmd_PM_gui_cho_admin.Name = "m_cmd_PM_gui_cho_admin";
-            this.m_cmd_PM_gui_cho_admin.Size = new System.Drawing.Size(146, 23);
-            this.m_cmd_PM_gui_cho_admin.TabIndex = 1;
-            this.m_cmd_PM_gui_cho_admin.Text = "PM gửi đơn hàng cho admin";
-            this.m_cmd_PM_gui_cho_admin.Click += new System.EventHandler(this.m_cmd_PM_gui_cho_admin_Click);
-            // 
             // m_cmd_admin_huy_hon_hang
             // 
-            this.m_cmd_admin_huy_hon_hang.Location = new System.Drawing.Point(931, 92);
+            this.m_cmd_admin_huy_hon_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_admin_huy_hon_hang.Appearance.Options.UseFont = true;
+            this.m_cmd_admin_huy_hon_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_admin_huy_hon_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_admin_huy_hon_hang.Image")));
+            this.m_cmd_admin_huy_hon_hang.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_admin_huy_hon_hang.Name = "m_cmd_admin_huy_hon_hang";
-            this.m_cmd_admin_huy_hon_hang.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_admin_huy_hon_hang.Size = new System.Drawing.Size(252, 41);
             this.m_cmd_admin_huy_hon_hang.TabIndex = 1;
             this.m_cmd_admin_huy_hon_hang.Text = "admin hủy đơn hàng";
             this.m_cmd_admin_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_admin_huy_hon_hang_Click);
             // 
             // m_cmd_admin_tiep_nhan_xu_ly
             // 
-            this.m_cmd_admin_tiep_nhan_xu_ly.Location = new System.Drawing.Point(744, 92);
+            this.m_cmd_admin_tiep_nhan_xu_ly.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_admin_tiep_nhan_xu_ly.Appearance.Options.UseFont = true;
+            this.m_cmd_admin_tiep_nhan_xu_ly.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_admin_tiep_nhan_xu_ly.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_admin_tiep_nhan_xu_ly.Image")));
+            this.m_cmd_admin_tiep_nhan_xu_ly.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_admin_tiep_nhan_xu_ly.Name = "m_cmd_admin_tiep_nhan_xu_ly";
-            this.m_cmd_admin_tiep_nhan_xu_ly.Size = new System.Drawing.Size(146, 23);
+            this.m_cmd_admin_tiep_nhan_xu_ly.Size = new System.Drawing.Size(244, 41);
             this.m_cmd_admin_tiep_nhan_xu_ly.TabIndex = 1;
             this.m_cmd_admin_tiep_nhan_xu_ly.Text = "admin tiếp nhận xử lý";
             this.m_cmd_admin_tiep_nhan_xu_ly.Click += new System.EventHandler(this.m_cmd_admin_tiep_nhan_xu_ly_Click);
             // 
             // m_cmd_chinh_sua_don_hang
             // 
+            this.m_cmd_chinh_sua_don_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_cmd_chinh_sua_don_hang.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseFont = true;
             this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseForeColor = true;
-            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(415, 25);
+            this.m_cmd_chinh_sua_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_chinh_sua_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chinh_sua_don_hang.Image")));
+            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
-            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(106, 23);
+            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(230, 39);
             this.m_cmd_chinh_sua_don_hang.TabIndex = 1;
             this.m_cmd_chinh_sua_don_hang.Text = "Chỉnh sửa đơn hàng";
             this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
             // 
             // m_cmd_them_moi_don_hang
             // 
-            this.m_cmd_them_moi_don_hang.Location = new System.Drawing.Point(38, 25);
+            this.m_cmd_them_moi_don_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_them_moi_don_hang.Appearance.Options.UseFont = true;
+            this.m_cmd_them_moi_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_them_moi_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_them_moi_don_hang.Image")));
+            this.m_cmd_them_moi_don_hang.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_them_moi_don_hang.Name = "m_cmd_them_moi_don_hang";
-            this.m_cmd_them_moi_don_hang.Size = new System.Drawing.Size(110, 23);
+            this.m_cmd_them_moi_don_hang.Size = new System.Drawing.Size(244, 39);
             this.m_cmd_them_moi_don_hang.TabIndex = 0;
             this.m_cmd_them_moi_don_hang.Text = "Thêm mới đơn hàng";
             this.m_cmd_them_moi_don_hang.Click += new System.EventHandler(this.m_cmd_them_moi_don_hang_Click);
@@ -239,17 +347,20 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1114, 296);
+            this.panel2.Size = new System.Drawing.Size(1114, 371);
             this.panel2.TabIndex = 0;
             // 
             // m_grc_gd_dat_hang_gd_log_dat_hang
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode1.RelationName = "Level1";
+            this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
-            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1114, 296);
+            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1114, 371);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.TabIndex = 0;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_gd_dat_hang_gd_log_dat_hang});
@@ -340,7 +451,7 @@
             // TEN_NHOM_DICH_VU
             // 
             this.TEN_NHOM_DICH_VU.Caption = "DỊCH VỤ SỬ DỤNG";
-            this.TEN_NHOM_DICH_VU.FieldName = "TEN_NHOM_DICH_VU";
+            this.TEN_NHOM_DICH_VU.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
             this.TEN_NHOM_DICH_VU.Name = "TEN_NHOM_DICH_VU";
             this.TEN_NHOM_DICH_VU.Visible = true;
             this.TEN_NHOM_DICH_VU.VisibleIndex = 5;
@@ -487,26 +598,181 @@
             this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
             this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 21;
             // 
+            // m_panel_FO
+            // 
+            this.m_panel_FO.Controls.Add(this.panel7);
+            this.m_panel_FO.Controls.Add(this.panel6);
+            this.m_panel_FO.Controls.Add(this.panel5);
+            this.m_panel_FO.Controls.Add(this.panel4);
+            this.m_panel_FO.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_panel_FO.Location = new System.Drawing.Point(0, 332);
+            this.m_panel_FO.Name = "m_panel_FO";
+            this.m_panel_FO.Size = new System.Drawing.Size(1114, 39);
+            this.m_panel_FO.TabIndex = 3;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.m_cmd_chinh_sua_don_hang);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(113, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(230, 39);
+            this.panel7.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.m_cmd_dieu_phoi_cho_PM);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(343, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(252, 39);
+            this.panel6.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.m_cmd_dieu_phoi_lai);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(595, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(275, 39);
+            this.panel5.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.m_cmd_them_moi_don_hang);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(870, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(244, 39);
+            this.panel4.TabIndex = 0;
+            // 
+            // m_panel_BO
+            // 
+            this.m_panel_BO.Controls.Add(this.panel12);
+            this.m_panel_BO.Controls.Add(this.panel13);
+            this.m_panel_BO.Controls.Add(this.panel14);
+            this.m_panel_BO.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_panel_BO.Location = new System.Drawing.Point(0, 293);
+            this.m_panel_BO.Name = "m_panel_BO";
+            this.m_panel_BO.Size = new System.Drawing.Size(1114, 39);
+            this.m_panel_BO.TabIndex = 4;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.m_cmd_bao_cao_hoan_thanh);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel12.Location = new System.Drawing.Point(343, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(252, 39);
+            this.panel12.TabIndex = 0;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.m_cmd_BO_tu_choi);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel13.Location = new System.Drawing.Point(595, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(275, 39);
+            this.panel13.TabIndex = 0;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.m_cmd_FO_tiep_nhan);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel14.Location = new System.Drawing.Point(870, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(244, 39);
+            this.panel14.TabIndex = 0;
+            // 
+            // m_panel_TD
+            // 
+            this.m_panel_TD.Controls.Add(this.panel16);
+            this.m_panel_TD.Controls.Add(this.panel17);
+            this.m_panel_TD.Controls.Add(this.panel18);
+            this.m_panel_TD.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_panel_TD.Location = new System.Drawing.Point(0, 252);
+            this.m_panel_TD.Name = "m_panel_TD";
+            this.m_panel_TD.Size = new System.Drawing.Size(1114, 41);
+            this.m_panel_TD.TabIndex = 5;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.m_cmd_admin_huy_hon_hang);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel16.Location = new System.Drawing.Point(343, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(252, 41);
+            this.panel16.TabIndex = 0;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.m_cmd_admin_hoan_thanh);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel17.Location = new System.Drawing.Point(595, 0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(275, 41);
+            this.panel17.TabIndex = 0;
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.m_cmd_admin_tiep_nhan_xu_ly);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel18.Location = new System.Drawing.Point(870, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(244, 41);
+            this.panel18.TabIndex = 0;
+            // 
+            // m_panel_TM
+            // 
+            this.m_panel_TM.Controls.Add(this.m_cmd_TM_danh_gia);
+            this.m_panel_TM.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_panel_TM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_panel_TM.Location = new System.Drawing.Point(0, 212);
+            this.m_panel_TM.Name = "m_panel_TM";
+            this.m_panel_TM.Size = new System.Drawing.Size(1114, 40);
+            this.m_panel_TM.TabIndex = 6;
+            // 
             // f0000_gd_dat_hang_gd_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1114, 494);
+            this.ClientSize = new System.Drawing.Size(1114, 405);
+            this.Controls.Add(this.m_panel_TM);
+            this.Controls.Add(this.m_panel_TD);
+            this.Controls.Add(this.m_panel_BO);
+            this.Controls.Add(this.m_panel_FO);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.m_panel_PM);
             this.Name = "f0000_gd_dat_hang_gd_log_dat_hang";
             this.Text = "f0000_gd_dat_hang_gd_log_dat_hang";
-            this.panel1.ResumeLayout(false);
+            this.m_panel_PM.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).EndInit();
+            this.m_panel_FO.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.m_panel_BO.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.m_panel_TD.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.m_panel_TM.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel m_panel_PM;
         private DevExpress.XtraEditors.SimpleButton m_cmd_them_moi_don_hang;
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraGrid.GridControl m_grc_gd_dat_hang_gd_log_dat_hang;
@@ -547,5 +813,22 @@
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
         private DevExpress.XtraEditors.SimpleButton m_cmd_admin_hoan_thanh;
         private DevExpress.XtraEditors.SimpleButton m_cmd_admin_huy_hon_hang;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel m_panel_FO;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel m_panel_BO;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel m_panel_TD;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel m_panel_TM;
     }
 }

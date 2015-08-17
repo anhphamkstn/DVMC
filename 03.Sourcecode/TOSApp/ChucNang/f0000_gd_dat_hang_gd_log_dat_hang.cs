@@ -17,7 +17,17 @@ namespace TOSApp.ChucNang
         {
             InitializeComponent();
             load_data_2_grid();
+            if (id_ht_nhom_nguoi_sd == 1) format_controll_FO();
+            else
+                if (id_ht_nhom_nguoi_sd == 2) format_controll_BO();
+                else if (id_ht_nhom_nguoi_sd == 3) format_controll_PM();
+                else if (id_ht_nhom_nguoi_sd == 4) format_controll_TD();
+                else format_controll_TM();
+                   
         }
+
+      
+        decimal id_ht_nhom_nguoi_sd=2;
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
         private void load_data_2_grid()
         {
@@ -549,5 +559,175 @@ namespace TOSApp.ChucNang
         {
 
         }
+
+        #region format controll for each user
+
+        private void format_controll_FO()
+        {
+           m_panel_FO.Visible = true;
+            m_panel_BO.Visible = false;
+            m_panel_PM.Visible = false;
+            m_panel_TD.Visible = false;
+            m_panel_TM.Visible = false;
+            MA_DON_HANG.Visible = true;
+            HO_TEN_USER_DAT_HANG.Visible = true;
+            DON_VI.Visible = true;
+            DIEN_THOAI.Visible = true;
+            THOI_GIAN_DAT_HANG.Visible = true;
+            TEN_NHOM_DICH_VU.Visible = true;
+            NOI_DUNG_DAT_HANG.Visible = true;
+            THOI_GIAN_CAN_HOAN_THANH.Visible = true;
+            PHAN_HOI_TU_DVMC.Visible = true;
+            DANH_GIA_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            NGUOI_TAO_DON_HANG.Visible = true;
+            CHI_NHANH.Visible = true;
+            PHUONG_THUC_DAT_HANG.Visible = true;
+            ID_LOG_DAT_HANG.Visible = false;
+            LOAI_THAO_TAC_LOG.Visible = false;
+            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+            NGUOI_TAO_THAO_TAC_LOG.Visible = false;
+            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+            GHI_CHU.Visible = false;
+
+
+        }
+        private void format_controll_BO()
+        {
+            m_panel_FO.Visible = false;
+            m_panel_BO.Visible = true;
+            m_panel_PM.Visible = false;
+            m_panel_TD.Visible = false;
+            m_panel_TM.Visible = false;
+            MA_DON_HANG.Visible = true;
+            HO_TEN_USER_DAT_HANG.Visible = true;
+            DON_VI.Visible = true;
+            DIEN_THOAI.Visible = true;
+            THOI_GIAN_DAT_HANG.Visible = true;
+            TEN_NHOM_DICH_VU.Visible = true;
+            NOI_DUNG_DAT_HANG.Visible = true;
+            THOI_GIAN_CAN_HOAN_THANH.Visible = true;
+            PHAN_HOI_TU_DVMC.Visible = true;
+            DANH_GIA_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            NGUOI_TAO_DON_HANG.Visible = true;
+            CHI_NHANH.Visible = true;
+            PHUONG_THUC_DAT_HANG.Visible = true;
+            ID_LOG_DAT_HANG.Visible = false;
+            LOAI_THAO_TAC_LOG.Visible = false;
+            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+            NGUOI_TAO_THAO_TAC_LOG.Visible = false;
+            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+            GHI_CHU.Visible = false;
+
+
+        }
+        private void format_controll_PM()
+        {
+            m_panel_FO.Visible = false;
+            m_panel_BO.Visible = false;
+            m_panel_PM.Visible = true;
+            m_panel_TD.Visible = false;
+            m_panel_TM.Visible = false;
+            MA_DON_HANG.Visible = true;
+            HO_TEN_USER_DAT_HANG.Visible = true;
+            DON_VI.Visible = true;
+            DIEN_THOAI.Visible = true;
+            THOI_GIAN_DAT_HANG.Visible = true;
+            TEN_NHOM_DICH_VU.Visible = true;
+            NOI_DUNG_DAT_HANG.Visible = true;
+            THOI_GIAN_CAN_HOAN_THANH.Visible = true;
+            PHAN_HOI_TU_DVMC.Visible = true;
+            DANH_GIA_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            NGUOI_TAO_DON_HANG.Visible = true;
+            CHI_NHANH.Visible = true;
+            PHUONG_THUC_DAT_HANG.Visible = true;
+            ID_LOG_DAT_HANG.Visible = false;
+            LOAI_THAO_TAC_LOG.Visible = false;
+            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+            NGUOI_TAO_THAO_TAC_LOG.Visible = false;
+            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+            GHI_CHU.Visible = false;
+
+        }
+        private void format_controll_TD()
+        {
+            m_panel_FO.Visible = false;
+            m_panel_BO.Visible = false;
+            m_panel_PM.Visible = false;
+            m_panel_TD.Visible = true;
+            m_panel_TM.Visible = false;
+            MA_DON_HANG.Visible = true;
+            HO_TEN_USER_DAT_HANG.Visible = true;
+            DON_VI.Visible = true;
+            DIEN_THOAI.Visible = true;
+            THOI_GIAN_DAT_HANG.Visible = true;
+            TEN_NHOM_DICH_VU.Visible = true;
+            NOI_DUNG_DAT_HANG.Visible = true;
+            THOI_GIAN_CAN_HOAN_THANH.Visible = true;
+            PHAN_HOI_TU_DVMC.Visible = true;
+            DANH_GIA_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            NGUOI_TAO_DON_HANG.Visible = true;
+            CHI_NHANH.Visible = true;
+            PHUONG_THUC_DAT_HANG.Visible = true;
+            ID_LOG_DAT_HANG.Visible = false;
+            LOAI_THAO_TAC_LOG.Visible = false;
+            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+            NGUOI_TAO_THAO_TAC_LOG.Visible = false;
+            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+            GHI_CHU.Visible = false;
+
+        }
+
+        private void format_controll_TM()
+        {
+            m_panel_FO.Visible = false;
+            m_panel_BO.Visible = false;
+            m_panel_PM.Visible = false;
+            m_panel_TD.Visible = false;
+            m_panel_TM.Visible = true;
+            MA_DON_HANG.Visible = true;
+            HO_TEN_USER_DAT_HANG.Visible = true;
+            DON_VI.Visible = true;
+            DIEN_THOAI.Visible = true;
+            THOI_GIAN_DAT_HANG.Visible = true;
+            TEN_NHOM_DICH_VU.Visible = true;
+            NOI_DUNG_DAT_HANG.Visible = true;
+            THOI_GIAN_CAN_HOAN_THANH.Visible = true;
+            PHAN_HOI_TU_DVMC.Visible = true;
+            DANH_GIA_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
+            THOI_GIAN_HOAN_THANH.Visible = true;
+            NGUOI_TAO_DON_HANG.Visible = true;
+            CHI_NHANH.Visible = true;
+            PHUONG_THUC_DAT_HANG.Visible = true;
+            ID_LOG_DAT_HANG.Visible = false;
+            LOAI_THAO_TAC_LOG.Visible = false;
+            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+            NGUOI_TAO_THAO_TAC_LOG.Visible = false;
+            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+            GHI_CHU.Visible = false;
+
+        }
+
+        #endregion 
+
+
     }
 }

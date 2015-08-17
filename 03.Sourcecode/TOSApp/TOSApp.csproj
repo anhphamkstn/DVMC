@@ -301,6 +301,12 @@
     <Compile Include="f003_main_PM.designer.cs">
       <DependentUpon>f003_main_PM.cs</DependentUpon>
     </Compile>
+    <Compile Include="f999_main_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f999_main_form.Designer.cs">
+      <DependentUpon>f999_main_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web References\SCMServices\DS_V_DM_DIEM_HOC_VIEN.cs">
       <DependentUpon>DS_V_DM_DIEM_HOC_VIEN.xsd</DependentUpon>
@@ -370,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f115_TM_danh_gia.resx">
       <DependentUpon>f115_TM_danh_gia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f999_main_form.resx">
+      <DependentUpon>f999_main_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenses.licx" />
     <EmbeddedResource Include="f001_main_FO.resx">
