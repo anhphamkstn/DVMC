@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using TOSApp.ChucNang;
 using IP.Core.IPCommon;
+using TOSApp.BaoCao;
 
 namespace TOSApp
 {
@@ -17,6 +18,7 @@ namespace TOSApp
         {
             InitializeComponent();
         }
+        //decimal id_nguoi_dung;
 
         private void m_cmd_FO_cong_viec_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -59,6 +61,7 @@ namespace TOSApp
                 v_f.MdiParent = this;
 
                 v_f.Show();
+                
             }
             catch (Exception v_e)
             {
@@ -90,6 +93,52 @@ namespace TOSApp
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
                 v_f.MdiParent = this;
 
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_cmd_bao_cao_tiep_nhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                f510_BAO_CAO_TIEP_NHAN v_f = new f510_BAO_CAO_TIEP_NHAN();
+                v_f.MdiParent = this;
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+         
+        }
+
+        private void m_cmd_bao_cao_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                f520_BAO_CAO_XU_LI v_f = new f520_BAO_CAO_XU_LI();
+                v_f.MdiParent = this;
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_cmd_bao_cao_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+               f500_BAO_CAO_DANH_GIA v_f = new f500_BAO_CAO_DANH_GIA();
+                v_f.MdiParent = this;
                 v_f.Show();
             }
             catch (Exception v_e)

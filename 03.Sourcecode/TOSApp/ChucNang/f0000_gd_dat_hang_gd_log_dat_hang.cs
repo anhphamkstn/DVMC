@@ -27,7 +27,7 @@ namespace TOSApp.ChucNang
         }
 
       
-        decimal id_ht_nhom_nguoi_sd=2;
+        decimal id_ht_nhom_nguoi_sd=1;
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
         private void load_data_2_grid()
         {
