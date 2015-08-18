@@ -53,6 +53,7 @@ namespace TOSApp.HT
 
         private bool check_login()
         {
+            
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());

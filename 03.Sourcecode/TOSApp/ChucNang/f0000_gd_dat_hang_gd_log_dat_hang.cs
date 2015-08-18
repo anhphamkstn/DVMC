@@ -139,9 +139,8 @@ namespace TOSApp.ChucNang
                 f112_FO_chuyen_don_hang_cho_PM v_f = new f112_FO_chuyen_don_hang_cho_PM();
                 v_f.displayForUpdate(v_us);
               //  update_trang_thai_don_hang(v_us);
-                update_log_gui_cho_pm(v_us);
+          
                 load_data_2_grid();
-                MessageBox.Show("Hoàn thành!");
             }
             catch (Exception v_e)
             {
@@ -195,12 +194,7 @@ namespace TOSApp.ChucNang
         private void update_log_tiep_nhan()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-           // v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = 296;//BO tiếp nhận xử lý
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-            //v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+        
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "BO đã tiếp nhận";
             v_us.Update();
@@ -265,7 +259,7 @@ namespace TOSApp.ChucNang
                 fill_data_to_m_us();
                 v_f115.displayForTM(m_us);
                 load_data_2_grid();
-                MessageBox.Show("Hoàn thành");
+              
             }
             catch (Exception v_e )
             {
@@ -344,7 +338,7 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 304;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 15;//thang pm co id 15
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//thang pm co id 15
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;

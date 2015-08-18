@@ -61,10 +61,9 @@ namespace TOSApp.ChucNang
         private void load_data_2_ma_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
-            m_id_gd_dat_hang = v_us.dcID;
-            m_us = v_us;
+            m_id_gd_dat_hang = v_us.dcID_DON_HANG;
+            m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
            
-
         }
 
       
@@ -73,17 +72,12 @@ namespace TOSApp.ChucNang
             try
             {
 
-                DataSet v_ds = new DataSet();
-                v_ds.Tables.Add(new DataTable());
-                v_us_dc.FillDatasetWithQuery(v_ds, "select * from gd_log_dat_hang where id_gd_dat_hang=" + m_id_gd_dat_hang.ToString());
-                for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
-                {
-                    m_lst_id_log_dat_hang.Add(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i]["ID"].ToString()));
-                }
+
                 for (int i = 0; i < m_grv_ds_BO.SelectedRowsCount; i++)
                 {
-                    m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["TEN_BO"].ToString()));
+                    m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID"].ToString()));
                 }
+
                 for (int i = 0; i < m_lst_ds_BO.Count; i++)
                 {
                     update_don_hang(m_lst_ds_BO[i]);
@@ -131,12 +125,10 @@ namespace TOSApp.ChucNang
 
         private void update_don_hang(decimal p)
         {
-            for (int i = 0; i < m_lst_id_log_dat_hang.Count; i++)
+            for (int i = 0; i < m_lst_ds_BO.Count; i++)
             {
-                US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_lst_id_log_dat_hang[i]);
+                US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_lst_ds_BO[i]);
    
-              //  v_us.dcID_GD_DAT_HANG = m_id_gd_dat_hang;
-               // v_us.dcID_NGUOI_NHAN_THAO_TAC = p;
                 v_us.strTHAO_TAC_HET_HAN_YN = "Y";
                 v_us.strGHI_CHU = "đã điều phối lại";
                 v_us.Update();

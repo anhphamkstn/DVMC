@@ -51,6 +51,7 @@ namespace TOSApp.ChucNang
                     update_trang_thai_don_hang_chua_hoan_thanh(v_us);
                     ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(v_us);
                 }
+                MessageBox.Show("Hoàn thành");
                 this.Close();
             }
             catch (Exception)
