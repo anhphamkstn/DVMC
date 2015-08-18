@@ -539,7 +539,7 @@
             this.m_grb_thoi_gian_hoan_thanh.TabIndex = 10;
             this.m_grb_thoi_gian_hoan_thanh.TabStop = false;
             this.m_grb_thoi_gian_hoan_thanh.Text = "Thời gian cần hoàn thành";
-            this.m_grb_thoi_gian_hoan_thanh.Enter += new System.EventHandler(this.m_grb_thoi_gian_hoan_thanh_Enter);
+//            this.m_grb_thoi_gian_hoan_thanh.Enter += new System.EventHandler(this.m_grb_thoi_gian_hoan_thanh_Enter);
             // 
             // m_rdb_loai_time_1thang
             // 

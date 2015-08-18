@@ -115,6 +115,7 @@ namespace TOSApp.ChucNang
             {
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+
                 f114_ds_BO v_f114 = new f114_ds_BO();
                 v_f114.display_dieu_huong(v_us);
                 load_data_2_grid();
@@ -295,7 +296,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; //TuanPA
-            v_us.dcID_NGUOI_NHAN_THAO_TAC=63; //thang TM có id 63 cần vào nhiệm thu
+            v_us.dcID_NGUOI_NHAN_THAO_TAC=22; //thang TM có id 63 cần vào nhiệm thu
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
@@ -308,7 +309,7 @@ namespace TOSApp.ChucNang
           
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
            
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 63;      
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 22;      
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "FO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
             v_us.Update();
@@ -558,7 +559,22 @@ namespace TOSApp.ChucNang
 
         private void m_cmd_PM_gui_cho_admin_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+                DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+               f116_ds_TD v_f = new f116_ds_TD();
+                v_f.displayForUpdate(v_us);
+               
+
+                load_data_2_grid();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
 
         #region format controll for each user

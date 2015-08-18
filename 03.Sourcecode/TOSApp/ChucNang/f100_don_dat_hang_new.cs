@@ -27,6 +27,7 @@ namespace TOSApp.ChucNang
         }
         DataEntryFormMode m_e_form_mode = new DataEntryFormMode();
         US_GD_DAT_HANG m_us = new US_GD_DAT_HANG();
+        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG M_us;
         List<decimal> m_lst_id_nguoi_xu_ly = new List<decimal>();
 
         #region load data to selected
@@ -129,7 +130,10 @@ namespace TOSApp.ChucNang
                     if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
                     {
                         udpate_don_hang();
-                        update_log_thay_doi_don_hang();
+                        /// bản chất ta không update log trong trường hợp này là vì 
+                        /// bên kia sẽ tự chịu trách nhiệm sau khi update trạng thái đơn hàng và trạng thái của 
+                        /// nó sẽ chỉ thay đổi từ khi được update còn trước đó sẽ k thay đổi log
+                        // update_log_thay_doi_don_hang();
                         ghi_log_thay_doi_don_hang();
                     }
                     else
@@ -166,7 +170,7 @@ namespace TOSApp.ChucNang
         private void update_log_thay_doi_don_hang()
         {
 
-           //tuasn anh viet hooj ham nay
+           
         }
 
         private void udpate_don_hang()
@@ -488,15 +492,8 @@ namespace TOSApp.ChucNang
           
         }
 
-        private void m_grb_phan_hoi_tu_dvm_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+  
+  
 
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
@@ -505,6 +502,7 @@ namespace TOSApp.ChucNang
                 us_2_form(v_us);
                 format_controlls();
                 m_e_form_mode= DataEntryFormMode.UpdateDataState;
+                M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                 this.ShowDialog();
 
             }
@@ -547,11 +545,7 @@ namespace TOSApp.ChucNang
             m_dat_thoi_gian_dat_hang.Enabled = false;
         }
 
-        private void m_grb_thoi_gian_hoan_thanh_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+      
         
     }
 }

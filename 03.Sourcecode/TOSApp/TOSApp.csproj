@@ -283,6 +283,12 @@
     <Compile Include="ChucNang\f115_TM_danh_gia.Designer.cs">
       <DependentUpon>f115_TM_danh_gia.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f116_ds_TD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f116_ds_TD.Designer.cs">
+      <DependentUpon>f116_ds_TD.cs</DependentUpon>
+    </Compile>
     <Compile Include="f001_main_FO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -384,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f115_TM_danh_gia.resx">
       <DependentUpon>f115_TM_danh_gia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f116_ds_TD.resx">
+      <DependentUpon>f116_ds_TD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="f999_main_form.resx">
       <DependentUpon>f999_main_form.cs</DependentUpon>

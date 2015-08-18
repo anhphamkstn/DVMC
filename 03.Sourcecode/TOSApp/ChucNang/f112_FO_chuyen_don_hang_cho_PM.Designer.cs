@@ -94,9 +94,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(28, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 13);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "PM";
+            this.label2.Text = "Gửi cho";
             // 
             // m_cbo_ds_PM
             // 
