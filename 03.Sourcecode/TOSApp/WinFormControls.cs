@@ -269,14 +269,9 @@ namespace TOSApp
             v_cstore.fillDataSetByCommand(this, op_ds);
         }
 
-        public void FillDatasetGDChiTietChucVu(DataSet op_ds, DateTime ip_dat)
-        {
-            CStoredProc v_cstore = new CStoredProc("rpt_tinh_hinh_dao_tao");
-            v_cstore.addDatetimeInputParam("@ip_dat_ngay_bao_cao",ip_dat );
-            v_cstore.fillDataSetByCommand(this, op_ds);
-        }
+       
 
-        internal void FillDatasetCBO(DataSet op_ds, string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition)
+        public void FillDatasetCBO(DataSet op_ds, string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition)
         {
             CStoredProc v_cstore = new CStoredProc("get_data_for_cbo");
             v_cstore.addNVarcharInputParam("@TABLE_NAME", ip_str_table_name);
@@ -300,10 +295,12 @@ namespace TOSApp
             v_cstore.fillDataSetByCommand(this, op_ds);
         }
 
-        internal void FillDatasetChungChiHetHan(DataSet v_ds, DateTime dateTime)
+        public void FillDatasetLogin(DataSet v_ds, string user,string pass, decimal id_chi_nhanh)
         {
-            CStoredProc v_cstore = new CStoredProc("get_chung_chi_het_han_theo_ngach");
-            v_cstore.addDatetimeInputParam("@ngay",dateTime );
+            CStoredProc v_cstore = new CStoredProc("check_login");
+            v_cstore.addNVarcharInputParam("@user", user);
+            v_cstore.addNVarcharInputParam("@pass", pass);
+            v_cstore.addDecimalInputParam("@id_chi_nhanh", id_chi_nhanh);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
 
@@ -313,6 +310,8 @@ namespace TOSApp
             v_cstore.addNVarcharInputParam("@str_query", p);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
+
+        
     }
 
     public class iParameter

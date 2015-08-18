@@ -82,7 +82,7 @@ namespace TOSApp.ChucNang
                 }
                 for (int i = 0; i < m_grv_ds_BO.SelectedRowsCount; i++)
                 {
-                    m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID_NGUOI_SU_DUNG"].ToString()));
+                    m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["TEN_BO"].ToString()));
                 }
                 for (int i = 0; i < m_lst_ds_BO.Count; i++)
                 {

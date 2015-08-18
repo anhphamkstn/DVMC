@@ -12,7 +12,7 @@ using TOSApp.BaoCao;
 
 namespace TOSApp
 {
-    public partial class f999_main_form : Form
+    public partial class f999_main_form : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public f999_main_form()
         {
@@ -24,9 +24,8 @@ namespace TOSApp
         {
             try
             {
-                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
-
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -41,7 +40,7 @@ namespace TOSApp
         {
             try
             {
-                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
 
                 v_f.Show();
@@ -57,7 +56,7 @@ namespace TOSApp
         {
             try
             {
-                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
 
                 v_f.Show();
@@ -74,7 +73,7 @@ namespace TOSApp
         {
             try
             {
-                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
 
                 v_f.Show();
@@ -90,7 +89,7 @@ namespace TOSApp
         {
             try
             {
-                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
 
                 v_f.Show();

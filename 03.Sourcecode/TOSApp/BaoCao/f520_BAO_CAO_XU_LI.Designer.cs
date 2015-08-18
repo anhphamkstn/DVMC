@@ -34,29 +34,29 @@
             DevExpress.XtraCharts.SeriesTitle seriesTitle1 = new DevExpress.XtraCharts.SeriesTitle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.pivotGridField1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField2 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField3 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField4 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField5 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.chartControl1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(493, 0);
+            this.panel1.Location = new System.Drawing.Point(475, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(273, 360);
+            this.panel1.Size = new System.Drawing.Size(291, 360);
             this.panel1.TabIndex = 0;
             // 
             // chartControl1
@@ -83,17 +83,8 @@
             pieSeriesView1.Titles.AddRange(new DevExpress.XtraCharts.SeriesTitle[] {
             seriesTitle1});
             this.chartControl1.SeriesTemplate.View = pieSeriesView1;
-            this.chartControl1.Size = new System.Drawing.Size(273, 360);
+            this.chartControl1.Size = new System.Drawing.Size(291, 360);
             this.chartControl1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pivotGridControl1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(493, 360);
-            this.panel2.TabIndex = 1;
             // 
             // pivotGridControl1
             // 
@@ -106,7 +97,7 @@
             this.pivotGridField5});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
-            this.pivotGridControl1.Size = new System.Drawing.Size(493, 360);
+            this.pivotGridControl1.Size = new System.Drawing.Size(475, 360);
             this.pivotGridControl1.TabIndex = 0;
             // 
             // pivotGridField1
@@ -150,6 +141,15 @@
             this.pivotGridField5.FieldName = "DANH_GIA";
             this.pivotGridField5.Name = "pivotGridField5";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pivotGridControl1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(475, 360);
+            this.panel2.TabIndex = 1;
+            // 
             // f520_BAO_CAO_XU_LI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -164,8 +164,8 @@
             ((System.ComponentModel.ISupportInitialize)(pieSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

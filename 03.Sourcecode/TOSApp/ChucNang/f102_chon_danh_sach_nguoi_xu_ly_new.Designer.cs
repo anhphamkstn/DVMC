@@ -28,22 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f102_chon_danh_sach_nguoi_xu_ly_new));
-            this.ImageList = new System.Windows.Forms.ImageList();
-            this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
-            this.m_cmd_oke = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.GroupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.m_grc_ht_nguoi_su_dung = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ht_nguoi_su_dung = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.HO_VA_TEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID_NGUOI_SU_DUNG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_pnl_out_place_dm.SuspendLayout();
+            this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).BeginInit();
             this.GroupControl1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).BeginInit();
+            this.m_pnl_out_place_dm.SuspendLayout();
             this.SuspendLayout();
             // 
             // ImageList
@@ -73,68 +76,35 @@
             this.ImageList.Images.SetKeyName(20, "");
             this.ImageList.Images.SetKeyName(21, "");
             // 
-            // m_pnl_out_place_dm
-            // 
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_oke);
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
-            this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 271);
-            this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
-            this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(787, 36);
-            this.m_pnl_out_place_dm.TabIndex = 4;
-            // 
-            // m_cmd_oke
-            // 
-            this.m_cmd_oke.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_oke.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_oke.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_oke.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_oke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_oke.ImageIndex = 13;
-            this.m_cmd_oke.ImageList = this.ImageList;
-            this.m_cmd_oke.Location = new System.Drawing.Point(634, 4);
-            this.m_cmd_oke.Name = "m_cmd_oke";
-            this.m_cmd_oke.Size = new System.Drawing.Size(61, 28);
-            this.m_cmd_oke.TabIndex = 2;
-            this.m_cmd_oke.Text = "OKE";
-            this.m_cmd_oke.Click += new System.EventHandler(this.m_cmd_oke_Click);
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(695, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_exit.TabIndex = 4;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
-            this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click);
-            // 
             // GroupControl1
             // 
-            this.GroupControl1.Controls.Add(this.m_grc_ht_nguoi_su_dung);
+            this.GroupControl1.Controls.Add(this.panel1);
+            this.GroupControl1.Controls.Add(this.m_pnl_out_place_dm);
             this.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GroupControl1.Location = new System.Drawing.Point(0, 0);
             this.GroupControl1.Name = "GroupControl1";
-            this.GroupControl1.Size = new System.Drawing.Size(787, 307);
+            this.GroupControl1.Size = new System.Drawing.Size(787, 331);
             this.GroupControl1.TabIndex = 5;
             this.GroupControl1.Text = "Danh sách người xử lý";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.m_grc_ht_nguoi_su_dung);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(2, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(783, 268);
+            this.panel1.TabIndex = 10;
             // 
             // m_grc_ht_nguoi_su_dung
             // 
             this.m_grc_ht_nguoi_su_dung.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_ht_nguoi_su_dung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(2, 21);
+            this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
             this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
-            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(783, 284);
-            this.m_grc_ht_nguoi_su_dung.TabIndex = 0;
+            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(783, 268);
+            this.m_grc_ht_nguoi_su_dung.TabIndex = 8;
             this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ht_nguoi_su_dung});
             // 
@@ -173,21 +143,53 @@
             this.ID_NGUOI_SU_DUNG.Visible = true;
             this.ID_NGUOI_SU_DUNG.VisibleIndex = 2;
             // 
+            // m_pnl_out_place_dm
+            // 
+            this.m_pnl_out_place_dm.Controls.Add(this.simpleButton2);
+            this.m_pnl_out_place_dm.Controls.Add(this.simpleButton1);
+            this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(2, 289);
+            this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
+            this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(783, 40);
+            this.m_pnl_out_place_dm.TabIndex = 9;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(587, 4);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(102, 32);
+            this.simpleButton2.TabIndex = 1;
+            this.simpleButton2.Text = "Điều phối";
+            this.simpleButton2.Click += new System.EventHandler(this.m_cmd_oke_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(689, 4);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(90, 32);
+            this.simpleButton1.TabIndex = 0;
+            this.simpleButton1.Text = "Thoát";
+            this.simpleButton1.Click += new System.EventHandler(this.m_cmd_exit_Click);
+            // 
             // f102_chon_danh_sach_nguoi_xu_ly_new
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 307);
-            this.Controls.Add(this.m_pnl_out_place_dm);
+            this.ClientSize = new System.Drawing.Size(787, 331);
             this.Controls.Add(this.GroupControl1);
             this.Name = "f102_chon_danh_sach_nguoi_xu_ly_new";
             this.Text = "f102_chon_danh_sach_nguoi_xu_ly_new";
-//            this.Load += new System.EventHandler(this.f102_chon_danh_sach_nguoi_xu_ly_new_Load);
-            this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).EndInit();
             this.GroupControl1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).EndInit();
+            this.m_pnl_out_place_dm.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -195,14 +197,15 @@
         #endregion
 
         internal System.Windows.Forms.ImageList ImageList;
-        internal System.Windows.Forms.Panel m_pnl_out_place_dm;
-        internal SIS.Controls.Button.SiSButton m_cmd_oke;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
         private DevExpress.XtraEditors.GroupControl GroupControl1;
+        private System.Windows.Forms.Panel panel1;
+        internal System.Windows.Forms.Panel m_pnl_out_place_dm;
         private DevExpress.XtraGrid.GridControl m_grc_ht_nguoi_su_dung;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ht_nguoi_su_dung;
         private DevExpress.XtraGrid.Columns.GridColumn HO_VA_TEN;
         private DevExpress.XtraGrid.Columns.GridColumn ID;
         private DevExpress.XtraGrid.Columns.GridColumn ID_NGUOI_SU_DUNG;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

@@ -180,6 +180,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_V_HT_NGUOI_SU_DUNG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -330,6 +335,17 @@
     </None>
     <None Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xss">
       <DependentUpon>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_HT_NGUOI_SU_DUNG.xsc">
+      <DependentUpon>DS_V_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_HT_NGUOI_SU_DUNG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_HT_NGUOI_SU_DUNG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_HT_NGUOI_SU_DUNG.xss">
+      <DependentUpon>DS_V_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

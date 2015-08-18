@@ -29,17 +29,10 @@ namespace TOSApp
         static void Main()
         {
             try
-            {
-                //f001_main_FO f_FO = new f001_main_FO();
-               // f500_cong_viec_FO_chi_tiet f_FO = new f500_cong_viec_FO_chi_tiet();
-               // f104_danh_sach_don_hang_dang_xu_ly_BO f_FO = new f104_danh_sach_don_hang_dang_xu_ly_BO();
-             //f002_main_BO f_FO = new f002_main_BO();
-              //f000_login_fake f_FO = new f000_login_fake();
-              //  f113_danh_sach_can_phe_duyet_PM f_FO = new f113_danh_sach_can_phe_duyet_PM();
+            { 
               //  f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
-               f999_main_form v_f = new f999_main_form();
-                v_f.ShowDialog();
-              
+                TOSApp.HT.f000_login v_f = new HT.f000_login();
+                v_f.ShowDialog();             
             }
             catch (Exception v_e)
             {

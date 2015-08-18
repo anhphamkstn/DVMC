@@ -36,12 +36,12 @@
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.pivotGridField1 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pivotGridField2 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField3 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField4 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField5 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField6 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram1)).BeginInit();
@@ -67,9 +67,10 @@
             this.chartControl1.DataSource = this.pivotGridControl1;
             simpleDiagram1.EqualPieSize = false;
             this.chartControl1.Diagram = simpleDiagram1;
+            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Legend.Direction = DevExpress.XtraCharts.LegendDirection.BottomToTop;
             this.chartControl1.Legend.MaxHorizontalPercentage = 30D;
-            this.chartControl1.Location = new System.Drawing.Point(23, 132);
+            this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
             this.chartControl1.SeriesDataMember = "Series";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
@@ -84,7 +85,7 @@
             pieSeriesView1.Titles.AddRange(new DevExpress.XtraCharts.SeriesTitle[] {
             seriesTitle1});
             this.chartControl1.SeriesTemplate.View = pieSeriesView1;
-            this.chartControl1.Size = new System.Drawing.Size(300, 200);
+            this.chartControl1.Size = new System.Drawing.Size(326, 468);
             this.chartControl1.TabIndex = 0;
             // 
             // pivotGridControl1
@@ -109,15 +110,6 @@
             this.pivotGridField1.Caption = "Chi nhánh";
             this.pivotGridField1.FieldName = "TEN_CHI_NHANH";
             this.pivotGridField1.Name = "pivotGridField1";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pivotGridControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(522, 468);
-            this.panel1.TabIndex = 2;
             // 
             // pivotGridField2
             // 
@@ -159,6 +151,15 @@
             this.pivotGridField6.Caption = "Số lượt điều phối lại";
             this.pivotGridField6.FieldName = "SO_DIEU_PHOI_LAI";
             this.pivotGridField6.Name = "pivotGridField6";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pivotGridControl1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(522, 468);
+            this.panel1.TabIndex = 2;
             // 
             // f510_BAO_CAO_TIEP_NHAN
             // 

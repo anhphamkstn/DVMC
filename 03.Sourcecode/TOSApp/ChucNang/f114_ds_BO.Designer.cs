@@ -50,25 +50,25 @@
             this.panel1.Controls.Add(this.m_cmd_Cancel);
             this.panel1.Controls.Add(this.m_cmd_OK);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 342);
+            this.panel1.Location = new System.Drawing.Point(0, 369);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(608, 83);
+            this.panel1.Size = new System.Drawing.Size(608, 89);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_Cancel
             // 
-            this.m_cmd_Cancel.Location = new System.Drawing.Point(467, 38);
+            this.m_cmd_Cancel.Location = new System.Drawing.Point(467, 41);
             this.m_cmd_Cancel.Name = "m_cmd_Cancel";
-            this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 25);
             this.m_cmd_Cancel.TabIndex = 0;
             this.m_cmd_Cancel.Text = "Cancel";
             this.m_cmd_Cancel.Click += new System.EventHandler(this.m_cmd_Cancel_Click);
             // 
             // m_cmd_OK
             // 
-            this.m_cmd_OK.Location = new System.Drawing.Point(341, 38);
+            this.m_cmd_OK.Location = new System.Drawing.Point(341, 41);
             this.m_cmd_OK.Name = "m_cmd_OK";
-            this.m_cmd_OK.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_OK.Size = new System.Drawing.Size(75, 25);
             this.m_cmd_OK.TabIndex = 0;
             this.m_cmd_OK.Text = "OK";
             this.m_cmd_OK.Click += new System.EventHandler(this.m_cmd_OK_Click);
@@ -80,24 +80,24 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(608, 83);
+            this.panel3.Size = new System.Drawing.Size(608, 64);
             this.panel3.TabIndex = 0;
             // 
             // m_txt_ma_don_hang
             // 
             this.m_txt_ma_don_hang.AutoSize = true;
-            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(256, 28);
+            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(256, 30);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
-            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 13);
+            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 14);
             this.m_txt_ma_don_hang.TabIndex = 0;
             this.m_txt_ma_don_hang.Text = "mã đơn hàng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 28);
+            this.label1.Location = new System.Drawing.Point(41, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã đơn hàng";
             // 
@@ -105,9 +105,9 @@
             // 
             this.panel2.Controls.Add(this.m_grc_ds_BO);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 83);
+            this.panel2.Location = new System.Drawing.Point(0, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(608, 259);
+            this.panel2.Size = new System.Drawing.Size(608, 305);
             this.panel2.TabIndex = 1;
             // 
             // m_grc_ds_BO
@@ -117,7 +117,7 @@
             this.m_grc_ds_BO.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_BO.MainView = this.m_grv_ds_BO;
             this.m_grc_ds_BO.Name = "m_grc_ds_BO";
-            this.m_grc_ds_BO.Size = new System.Drawing.Size(608, 259);
+            this.m_grc_ds_BO.Size = new System.Drawing.Size(608, 305);
             this.m_grc_ds_BO.TabIndex = 0;
             this.m_grc_ds_BO.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_BO});
@@ -141,9 +141,9 @@
             // 
             // f114_ds_BO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 425);
+            this.ClientSize = new System.Drawing.Size(608, 458);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

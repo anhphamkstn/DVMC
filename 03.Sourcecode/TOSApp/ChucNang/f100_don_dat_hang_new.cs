@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using IP.Core.IPCommon;
 using TOSApp;
 using IPCOREUS;
+
 namespace TOSApp.ChucNang
 {
     public partial class f100_don_dat_hang_new : Form
@@ -185,7 +186,7 @@ namespace TOSApp.ChucNang
              v_us.strY_KIEN_KHAC_TU_USER_DAT_HANG = m_txt_lich_su_trao_doi.Text;
              v_us.datTHOI_GIAN_TAO = m_dat_thoi_gian_dat_hang.Value;
              v_us.dcID_PHUONG_THUC_DAT_HANG = 148;
-             v_us.dcID_NGUOI_TAO = 69761;//bij ngu
+             v_us.dcID_NGUOI_TAO = TOSApp.us_user.dcID;
              v_us.dcID_CHI_NHANH = 1;
              v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut,m_rdb_loai_time_4h,m_rdb_loai_time_1ngay,m_rdb_loai_time_1tuan,m_rdb_loai_time_1thang);
              v_us.Update();
@@ -232,7 +233,7 @@ namespace TOSApp.ChucNang
             v_us.strGHI_CHU = "FO đã tiep nhan";
             v_us.Insert();
             m_id_tiep_nhan = v_us.dcID;
-            MessageBox.Show("đã tiếp nhận đơn hàng");
+          //  MessageBox.Show("Đã tiếp nhận đơn hàng");
             return v_us.dcID;
 
         }
@@ -245,7 +246,7 @@ namespace TOSApp.ChucNang
                 m_us.Insert();
             }
             else m_us.Update();
-            MessageBox.Show("hoan thanh viec luu don hang!");
+          //  MessageBox.Show("hoan thanh viec luu don hang!");
         }
 
         private void xac_nhan_dieu_phoi(List<decimal> v_lst_id_nguoi_xu_ly, US_GD_DAT_HANG m_us)
@@ -291,7 +292,7 @@ namespace TOSApp.ChucNang
                 //System.DateTime.Now.ToString("yyyy/MM/dd/hh/mm/ss");
             m_us.dcID_PHUONG_THUC_DAT_HANG =183;//---phuong thuc dat hang la goi dien
             m_us.dcID_NGUOI_TAO = CIPConvert.ToDecimal(m_cbo_nguoi_nhan_dat_hang.SelectedValue);///xem lai
-            m_us.dcID_CHI_NHANH= 1; //--fix lai sau mac dinh la 1 -HA NOI
+            m_us.dcID_CHI_NHANH= TOSApp.us_user.dcCHI_NHANH; //--fix lai sau mac dinh la 1 -HA NOI
         }
         //tra lai thoi gian sau khi hoan thanh don hang dua vao thoi gian dat hang + thoi gian can de hoan thanh don hang
         private DateTime get_thoi_gian_hoan_thanh(DateTime dateTime)
@@ -338,7 +339,7 @@ namespace TOSApp.ChucNang
             US_DM_MA_DON_HANG v_us = new US_DM_MA_DON_HANG();
             v_us.strMA_DON_HANG = p;
             v_us.Insert();
-            MessageBox.Show("thành công!");
+          //  MessageBox.Show("thành công!");
         }
 
 
@@ -477,7 +478,7 @@ namespace TOSApp.ChucNang
         private void ghi_log_tu_choi_don_hang()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 230;
+            v_us.dcID_LOAI_THAO_TAC = 294;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
