@@ -14,40 +14,46 @@ namespace TOSApp.ChucNang
 {
     public partial class f0000_gd_dat_hang_gd_log_dat_hang : Form
     {
+        public decimal kieu_load_form = 1;
         public f0000_gd_dat_hang_gd_log_dat_hang(int i)
         {
             InitializeComponent();
+            kieu_load_form = i;
             load_data_2_grid();
             if (us_user.dcIDNhom == 1) format_controll_FO();
             else
                 if (us_user.dcIDNhom == 2) format_controll_BO();
                 else if (us_user.dcIDNhom == 3) format_controll_PM();
                 else if (us_user.dcIDNhom == 4) format_controll_TD();
-                else format_controll_TM();
-                   
+                else format_controll_TM();                
         }
 
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
         private void load_data_2_grid()
         {
+            
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
 
             string m_query = "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where THAO_TAC_HET_HAN_YN = 'N'";
-
-
             if (us_user.dcIDNhom == 1) //fo
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 310 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID ;
 
             else if (us_user.dcIDNhom == 2) //bo
+                if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 295 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                else m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
 
             else if (us_user.dcIDNhom == 3) //pm
+                if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 303 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                else m_query = m_query + "And ID_LOAI_THAO_TAC = 304 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
 
             else if (us_user.dcIDNhom == 4) //td
+                if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 305 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
                  //tm
             else m_query = m_query + "And ID_LOAI_THAO_TAC = 297 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
 
@@ -204,9 +210,9 @@ namespace TOSApp.ChucNang
         private void  ghi_log_da_nhan_xu_ly()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 231;
+            v_us.dcID_LOAI_THAO_TAC = 296;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 3;//TuanPA
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
@@ -228,7 +234,7 @@ namespace TOSApp.ChucNang
                 f107_tu_choi_don_hang v_f107 = new f107_tu_choi_don_hang();
                 v_f107.displayForRefuse(m_us);
                 load_data_2_grid();
-                MessageBox.Show("Thành công!");
+             
             }
             catch (Exception v_e)
             {
@@ -294,8 +300,8 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 3;//TuanPA
-            v_us.dcID_NGUOI_NHAN_THAO_TAC=22;//thang TM có id 22 cần vào nhiệm thu
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; //TuanPA
+            v_us.dcID_NGUOI_NHAN_THAO_TAC=63; //thang TM có id 63 cần vào nhiệm thu
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
@@ -307,12 +313,8 @@ namespace TOSApp.ChucNang
         {
           
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 22;//cho thang TM có id 22 xu ly
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+           
+            v_us.dcID_NGUOI_TAO_THAO_TAC = 63;      
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "FO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
             v_us.Update();

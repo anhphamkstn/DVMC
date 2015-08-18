@@ -137,8 +137,7 @@ namespace TOSApp.ChucNang
                         luu_don_hang();
                         dieu_phoi_don_hang();
                         this.Close();
-                    }
-  
+                    }  
                 }
             }
             catch (Exception v_e)
@@ -159,7 +158,7 @@ namespace TOSApp.ChucNang
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
             v_us.Insert();
-            m_id_tiep_nhan = v_us.dcID;
+            TOSApp.us_user.dcID = v_us.dcID;
             MessageBox.Show("đơn hàng đã được cập nhật thông tin");
             //return v_us.dcID; 
         }
@@ -201,22 +200,21 @@ namespace TOSApp.ChucNang
             }
             cap_nhat_lai_trang_thai_tiep_nhan();
             xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
-            MessageBox.Show("FO da dieu phoi");
+            MessageBox.Show("FO đã điều phối");
         }
 
         private void cap_nhat_lai_trang_thai_tiep_nhan()
         {
            //cap nhat lai trang thai cua log don hang truoc khi thuc hien thao tac dieu huong
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_id_tiep_nhan);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(TOSApp.us_user.dcID);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.Update();  
             
         }
 
-        decimal m_id_tiep_nhan;
+      
         private void luu_don_hang()
-        {
-            
+        {        
             ghi_don_hang();
             ghi_log_tiep_nhan();
         }
@@ -232,7 +230,7 @@ namespace TOSApp.ChucNang
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "FO đã tiep nhan";
             v_us.Insert();
-            m_id_tiep_nhan = v_us.dcID;
+            TOSApp.us_user.dcID = v_us.dcID;
           //  MessageBox.Show("Đã tiếp nhận đơn hàng");
             return v_us.dcID;
 
@@ -486,7 +484,7 @@ namespace TOSApp.ChucNang
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "tiep nhan";
             v_us.Insert();
-            MessageBox.Show("da tu choi");
+            MessageBox.Show("Đã từ chối đơn hàng");
           
         }
 

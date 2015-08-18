@@ -66,7 +66,7 @@ namespace TOSApp.ChucNang
 
             v_US.dcID_GD_DAT_HANG = v_us.dcID;
             v_US.dcID_LOAI_THAO_TAC = 313;//cần xử lý lại
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 22;//TM có id 22
+            v_US.dcID_NGUOI_TAO_THAO_TAC = 63;//TM có id 22
             v_US.dcID_NGUOI_NHAN_THAO_TAC = 3;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
@@ -77,12 +77,6 @@ namespace TOSApp.ChucNang
         private void update_trang_thai_don_hang_chua_hoan_thanh(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);
-            //v_US.dcID = v_us.dcID;
-            //v_US.dcID_GD_DAT_HANG = v_us.dcID;
-            //v_US.dcID_LOAI_THAO_TAC = v_us.dcID_LOAI_THAO_TAC;//TM đã nghiệm thu
-            //v_US.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_US.dcID_NGUOI_NHAN_THAO_TAC = v_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_US.datNGAY_LAP_THAO_TAC = v_us.datNGAY_LAP_THAO_TAC;
             v_US.strTHAO_TAC_HET_HAN_YN = "Y";
             v_US.strGHI_CHU = "đơn hàng chưa hoàn thành! TM không chấp nhận nghiệm thu";
             v_US.Update();
@@ -94,7 +88,7 @@ namespace TOSApp.ChucNang
            
             v_US.dcID_GD_DAT_HANG = v_us.dcID;
             v_US.dcID_LOAI_THAO_TAC = 309;//TM đã nghiệm thu
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 22;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_US.dcID_NGUOI_TAO_THAO_TAC = 63;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
             v_US.SetID_NGUOI_NHAN_THAO_TACNull();
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
@@ -104,13 +98,7 @@ namespace TOSApp.ChucNang
 
         private void update_trang_thai_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
-            US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);
-            //v_US.dcID = v_us.dcID_LOG_DAT_HANG;
-            //v_US.dcID_GD_DAT_HANG = v_us.dcID;
-            //v_US.dcID_LOAI_THAO_TAC = v_us.dcID_LOAI_THAO_TAC;//TM đã nghiệm thu
-            //v_US.dcID_NGUOI_TAO_THAO_TAC = 69761;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_US.dcID_NGUOI_NHAN_THAO_TAC = v_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_US.datNGAY_LAP_THAO_TAC = v_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);        
             v_US.strTHAO_TAC_HET_HAN_YN = "Y";
             v_US.strGHI_CHU = "TM đã nghiệm thu hoàn thành";
             v_US.Update();
