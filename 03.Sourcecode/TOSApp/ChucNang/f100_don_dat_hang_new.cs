@@ -274,9 +274,7 @@ namespace TOSApp.ChucNang
             v_us.Insert();
         }
         //ghi lai log tai bang gd_log_dat_hang sau khi thuc hien thao tac insert
-       
-        
-     
+           
         private void form_2_us()
         {
             m_us.strMA_DON_HANG = m_txt_ma_don_hang.Text;
@@ -311,8 +309,7 @@ namespace TOSApp.ChucNang
             return dateTime;
         
         }
-
-     
+   
         //kiem tra cac trang thai cua button radio cua thoi gian can de hoan thanh don hang va tra ve ma
         private int return_loai_thoi_gian_can_hoan_thanh(RadioButton m_rdb_loai_time_15phut, RadioButton m_rdb_loai_time_4h, RadioButton m_rdb_loai_time_1ngay, RadioButton m_rdb_loai_time_1tuan, RadioButton m_rdb_loai_time_1thang)
         {
@@ -328,6 +325,7 @@ namespace TOSApp.ChucNang
            
             return true;
         }
+
         internal void displayForInsert()
         {
             m_e_form_mode = DataEntryFormMode.InsertDataState;
@@ -343,10 +341,6 @@ namespace TOSApp.ChucNang
             v_us.Insert();
           //  MessageBox.Show("thành công!");
         }
-
-
-
-       
 
         internal void displayForUpdate(IPCOREUS.US_GD_DAT_HANG v_us)
         {
@@ -413,8 +407,6 @@ namespace TOSApp.ChucNang
         {
             
         }
-
-       
 
         //private void load_nguoi_xu_ly_dat_hang(decimal p)
         //{
@@ -518,18 +510,22 @@ namespace TOSApp.ChucNang
             m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
             m_txt_ho_ten_nguoi_dat_hang.Text = v_us.strHO_TEN_USER_DAT_HANG;
-            m_cbo_user_nhan_vien_dat_hang.SelectedValue = v_us.strHO_TEN_USER_DAT_HANG;
-            m_cbo_dv_don_vi.SelectedValue = v_us.strMA_DON_VI;
+           m_cbo_user_nhan_vien_dat_hang.SelectedValue = v_us.dcID_USER_NV_DAT_HANG;
+           // WinFormControls.load_data_to_combobox_with_query(m_cbo_user_nhan_vien_dat_hang,"ID","TEN_KHACH_HANG",WinFormControls.eTAT_CA.NO," where ID ="+ v_us.dcid 
+            m_cbo_dv_don_vi.SelectedValue = v_us.dcID_DON_VI;
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
             m_cmd_tu_choi.Enabled = false;
-            m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.strNGUOI_TAO_THAO_TAC;
+            m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.dcID_NGUOI_TAO_THAO_TAC;
             m_dat_thoi_gian_dat_hang.Text = v_us.datTHOI_GIAN_DAT_HANG.ToString();
-            m_cbo_loai_dich_vu.SelectedValue = v_us.strTEN_NHOM_DICH_VU_YEU_CAU;
-            m_cbo_dich_vu.SelectedValue = v_us.strTEN_NHOM_DICH_VU_YEU_CAU;
+      //      m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
+            m_cbo_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
+
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_loai_dich_vu, "ID", "ten_dich_vu", WinFormControls.eTAT_CA.NO, " where id_cha=" + v_us.dcID_NHOM_DV_YEU_CAU);
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
             m_txt_phan_hoi_tu_dvmc.Text = v_us.strPHAN_HOI_TU_DVMC;
             m_txt_lich_su_trao_doi.Text = "";
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_trang_thai_don_hang, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN= 17 AND ID=" + v_us.dcID_LOAI_THAO_TAC);
+            m_cbo_trang_thai_don_hang.SelectedValue = v_us.dcID_LOAI_THAO_TAC;
+           // WinFormControls.load_data_to_combobox_with_query(m_cbo_trang_thai_don_hang, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN= 17 AND ID=" + v_us.dcID_LOAI_THAO_TAC);
 
         }
 

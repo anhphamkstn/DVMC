@@ -31,8 +31,8 @@ namespace TOSApp
             try
             { 
            // f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
-              //  TOSApp.HT.f000_login v_f = new HT.f000_login();
-               f116_ds_TD v_f = new f116_ds_TD();
+                TOSApp.HT.f000_login v_f = new HT.f000_login();
+              // f116_ds_TD v_f = new f116_ds_TD();
                 v_f.ShowDialog();             
             }
             catch (Exception v_e)
