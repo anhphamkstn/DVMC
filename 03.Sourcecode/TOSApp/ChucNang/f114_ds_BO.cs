@@ -107,7 +107,7 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 311;//fo đã điều phối lại
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 1;//fo có id 1
+            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//fo có id 1
             v_US.dcID_NGUOI_NHAN_THAO_TAC = p;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
@@ -133,7 +133,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 311;//fix cung cho tao tac dieu huong--> bi ngu
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_NHAN_THAO_TAC = p;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "FO đã điều phối lại cho BO";

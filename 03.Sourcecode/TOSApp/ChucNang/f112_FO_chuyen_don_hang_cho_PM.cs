@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using IPCOREUS;
+using IP.Core.IPCommon;
+
 
 namespace TOSApp.ChucNang
 {
@@ -43,14 +45,21 @@ namespace TOSApp.ChucNang
 
         private void insert_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
+            US_DUNG_CHUNG l_us = new US_DUNG_CHUNG();
+            DataSet l_ds = new DataSet();
+            l_ds.Tables.Add( new DataTable());
+
+            l_us.FillDatasetWithQuery(l_ds,"select ID_PM from HT_BO_PM_TD where id_BO ="+m_us.dcID_NGUOI_TAO_THAO_TAC);
+           
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 303;//đã chuyển cho PM
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 1;
-            v_US.dcID_NGUOI_NHAN_THAO_TAC = 15;//Quản lý có id 15
+            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal( l_ds.Tables[0].Rows[0][0]);//Quản lý có id 15
+            
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM \n" +m_txt_gui_kem.Text;
+            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có id là: \n"+m_us.dcID_NGUOI_NHAN_THAO_TAC+" ,gửi kèm:  " +m_txt_gui_kem.Text;
             v_US.Insert();
             
         }
@@ -64,9 +73,17 @@ namespace TOSApp.ChucNang
 
         private void load_data_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
+            US_DUNG_CHUNG l_us = new US_DUNG_CHUNG();
+            DataSet l_ds = new DataSet();
+            l_ds.Tables.Add(new DataTable());
+
+            l_us.FillDatasetWithQuery(l_ds, "select ID_PM from HT_BO_PM_TD where id_BO =" + v_us.dcID_NGUOI_TAO_THAO_TAC);
+
+            m_txt_PM.Text = "id của PM là:" + l_ds.Tables[0].Rows[0][0].ToString();
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
-            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_ds_PM);
+
+          //  WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_ds_PM);
             m_txt_gui_kem.Focus();
         }
     }

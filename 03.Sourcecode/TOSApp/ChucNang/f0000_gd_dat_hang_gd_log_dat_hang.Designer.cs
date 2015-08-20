@@ -58,7 +58,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_panel_TM = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_TD = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -375,7 +374,6 @@
             // 
             // m_panel_TM
             // 
-            this.m_panel_TM.Controls.Add(this.simpleButton1);
             this.m_panel_TM.Controls.Add(this.m_cmd_TM_danh_gia);
             this.m_panel_TM.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_panel_TM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -383,16 +381,6 @@
             this.m_panel_TM.Name = "m_panel_TM";
             this.m_panel_TM.Size = new System.Drawing.Size(1114, 40);
             this.m_panel_TM.TabIndex = 13;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(778, 0);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(164, 40);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "Xử li lại";
             // 
             // m_cmd_TM_danh_gia
             // 
@@ -843,7 +831,6 @@
         private System.Windows.Forms.Panel panel18;
         private DevExpress.XtraEditors.SimpleButton m_cmd_admin_tiep_nhan_xu_ly;
         private System.Windows.Forms.Panel m_panel_TM;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
     }
 }

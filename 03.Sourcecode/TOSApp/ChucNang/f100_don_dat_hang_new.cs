@@ -228,7 +228,7 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 293;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            v_us.dcID_NGUOI_TAO_THAO_TAC =us_user.dcID;
             v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";

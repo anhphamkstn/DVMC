@@ -67,8 +67,8 @@ namespace TOSApp.ChucNang
 
             v_US.dcID_GD_DAT_HANG = v_us.dcID;
             v_US.dcID_LOAI_THAO_TAC = 313;//cần xử lý lại
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 63;//TM có id 22
-            v_US.dcID_NGUOI_NHAN_THAO_TAC = 3;
+            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_US.dcID_NGUOI_NHAN_THAO_TAC = v_us.dcID_NGUOI_TAO_THAO_TAC;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
             v_US.strGHI_CHU = "đơn hàng cần được thực hiện lại! TM chưa chấp nhận nghiệm thu!";
@@ -89,7 +89,7 @@ namespace TOSApp.ChucNang
            
             v_US.dcID_GD_DAT_HANG = v_us.dcID;
             v_US.dcID_LOAI_THAO_TAC = 309;//TM đã nghiệm thu
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 63;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
+            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_US.SetID_NGUOI_NHAN_THAO_TACNull();
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";

@@ -35,7 +35,7 @@
             this.m_cmd_Ok = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_cancel = new DevExpress.XtraEditors.SimpleButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.m_cbo_ds_PM = new System.Windows.Forms.ComboBox();
+            this.m_txt_PM = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -98,24 +98,23 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Gửi cho";
             // 
-            // m_cbo_ds_PM
+            // m_txt_PM
             // 
-            this.m_cbo_ds_PM.FormattingEnabled = true;
-            this.m_cbo_ds_PM.Location = new System.Drawing.Point(118, 82);
-            this.m_cbo_ds_PM.Name = "m_cbo_ds_PM";
-            this.m_cbo_ds_PM.Size = new System.Drawing.Size(160, 21);
-            this.m_cbo_ds_PM.TabIndex = 4;
+            this.m_txt_PM.Location = new System.Drawing.Point(118, 85);
+            this.m_txt_PM.Name = "m_txt_PM";
+            this.m_txt_PM.Size = new System.Drawing.Size(160, 20);
+            this.m_txt_PM.TabIndex = 1;
             // 
             // f112_FO_chuyen_don_hang_cho_PM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 262);
-            this.Controls.Add(this.m_cbo_ds_PM);
+            this.ClientSize = new System.Drawing.Size(397, 425);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.m_cmd_cancel);
             this.Controls.Add(this.m_cmd_Ok);
             this.Controls.Add(this.m_txt_gui_kem);
+            this.Controls.Add(this.m_txt_PM);
             this.Controls.Add(this.m_txt_ma_don_hang);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -135,6 +134,6 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_Ok;
         private DevExpress.XtraEditors.SimpleButton m_cmd_cancel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox m_cbo_ds_PM;
+        private System.Windows.Forms.TextBox m_txt_PM;
     }
 }

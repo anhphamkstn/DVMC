@@ -52,11 +52,16 @@ namespace TOSApp.ChucNang
 
         private void insert_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
+             US_DUNG_CHUNG l_us = new US_DUNG_CHUNG();
+            DataSet l_ds = new DataSet();
+            l_ds.Tables.Add( new DataTable());
+
+            l_us.FillDatasetWithQuery(l_ds,"select ID_PM from HT_BO_PM_TD where id_PM ="+us_user.dcID);
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 305;//đã chuyển cho TD
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_US.dcID_NGUOI_TAO_THAO_TAC = 15;//Quản lý có id 15
-            v_US.dcID_NGUOI_NHAN_THAO_TAC = 21;
+            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//Quản lý có id 15
+            v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal(l_ds.Tables[0].Rows[0][0]) ;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
             v_US.strGHI_CHU = "đơn hàng đã được gửi cho TD \n" + m_txt_gui_kem.Text;
