@@ -115,10 +115,20 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CDBNames.cs" />
+    <Compile Include="DS_CM_DM_TU_DIEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_CAU_HOI.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_DM_CAU_TRA_LOI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_CAU_TRA_LOI.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_DM_DON_VI.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -193,6 +203,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="DS_CM_DM_TU_DIEN.xsc">
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
+    <None Include="DS_CM_DM_TU_DIEN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CM_DM_TU_DIEN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_CM_DM_TU_DIEN.xss">
+      <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
     <None Include="DS_DM_CAU_HOI.xsc">
       <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>
     </None>
@@ -203,6 +224,17 @@
     </None>
     <None Include="DS_DM_CAU_HOI.xss">
       <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_CAU_TRA_LOI.xsc">
+      <DependentUpon>DS_DM_CAU_TRA_LOI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_CAU_TRA_LOI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_CAU_TRA_LOI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_CAU_TRA_LOI.xss">
+      <DependentUpon>DS_DM_CAU_TRA_LOI.xsd</DependentUpon>
     </None>
     <None Include="DS_DM_DON_VI.xsc">
       <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>

@@ -866,6 +866,15 @@ namespace IPCOREDS.CDBNames
         public const string ID_NGUOI_TAO_THAO_TAC = "ID_NGUOI_TAO_THAO_TAC";
         public const string TEN_NGUOI_TAO_THAO_TAC_LOG = "TEN_NGUOI_TAO_THAO_TAC_LOG";
     }
-
+    public class DM_CAU_TRA_LOI
+    {
+        public const string ID = "ID";
+        public const string ID_CAU_HOI = "ID_CAU_HOI";
+        public const string CAU_TRA_LOI = "CAU_TRA_LOI";
+        public const string NGUOI_TAO = "NGUOI_TAO";
+        public const string NGAY_TAO = "NGAY_TAO";
+        public const string ID_TRANG_THAI = "ID_TRANG_THAI";
+        public const string LINK_TL_THAM_KHAO = "LINK_TL_THAM_KHAO";
+    }
 
 }

@@ -91,8 +91,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.Data.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.SpellChecker.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -119,6 +121,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\DevExpress 14.1\Components\Bin\Framework\DevExpress.XtraPrinting.v14.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraSpellChecker.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Interop.Excel">
       <HintPath>..\DLL\Interop.Excel.dll</HintPath>
@@ -289,6 +292,30 @@
     <Compile Include="ChucNang\f116_ds_TD.Designer.cs">
       <DependentUpon>f116_ds_TD.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMuc\f100_dm_cau_hoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f100_dm_cau_hoi.Designer.cs">
+      <DependentUpon>f100_dm_cau_hoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f100_dm_cau_hoi_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f100_dm_cau_hoi_de.Designer.cs">
+      <DependentUpon>f100_dm_cau_hoi_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f101_dm_mau_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f101_dm_mau_email.Designer.cs">
+      <DependentUpon>f101_dm_mau_email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f101_dm_mau_email_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f101_dm_mau_email_de.Designer.cs">
+      <DependentUpon>f101_dm_mau_email_de.cs</DependentUpon>
+    </Compile>
     <Compile Include="f001_main_FO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -394,6 +421,18 @@
     <EmbeddedResource Include="ChucNang\f116_ds_TD.resx">
       <DependentUpon>f116_ds_TD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f100_dm_cau_hoi.resx">
+      <DependentUpon>f100_dm_cau_hoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f100_dm_cau_hoi_de.resx">
+      <DependentUpon>f100_dm_cau_hoi_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f101_dm_mau_email.resx">
+      <DependentUpon>f101_dm_mau_email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f101_dm_mau_email_de.resx">
+      <DependentUpon>f101_dm_mau_email_de.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="f999_main_form.resx">
       <DependentUpon>f999_main_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -463,7 +502,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="DanhMuc\" />
     <Folder Include="Logs\" />
   </ItemGroup>
   <ItemGroup>

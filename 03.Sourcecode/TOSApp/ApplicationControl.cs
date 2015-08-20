@@ -11,6 +11,7 @@ using System.Threading;
 using TOSApp.App_Code;
 using IPCOREDS.CDBNames;
 using TOSApp.ChucNang;
+using TOSApp.DanhMuc;
 
 namespace TOSApp
 {
