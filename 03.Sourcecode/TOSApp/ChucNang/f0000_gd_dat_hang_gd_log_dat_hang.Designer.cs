@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode4 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -89,6 +89,8 @@
             this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.m_cmd_them_moi_don_hang = new DevExpress.XtraEditors.SimpleButton();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.m_cmd_PM_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).BeginInit();
@@ -113,6 +115,7 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridView1
@@ -132,12 +135,12 @@
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.LevelTemplate = this.gridView1;
-            gridLevelNode1.RelationName = "Level1";
-            gridLevelNode2.RelationName = "Level2";
+            gridLevelNode3.LevelTemplate = this.gridView1;
+            gridLevelNode3.RelationName = "Level1";
+            gridLevelNode4.RelationName = "Level2";
             this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1,
-            gridLevelNode2});
+            gridLevelNode3,
+            gridLevelNode4});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
@@ -474,6 +477,7 @@
             // 
             // m_panel_PM
             // 
+            this.m_panel_PM.Controls.Add(this.panel11);
             this.m_panel_PM.Controls.Add(this.panel10);
             this.m_panel_PM.Controls.Add(this.panel9);
             this.m_panel_PM.Controls.Add(this.panel8);
@@ -736,6 +740,26 @@
             this.m_cmd_them_moi_don_hang.Text = "Thêm mới đơn hàng";
             this.m_cmd_them_moi_don_hang.Click += new System.EventHandler(this.m_cmd_them_moi_don_hang_Click);
             // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.m_cmd_PM_dieu_phoi_lai);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(441, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(172, 34);
+            this.panel11.TabIndex = 1;
+            // 
+            // m_cmd_PM_dieu_phoi_lai
+            // 
+            this.m_cmd_PM_dieu_phoi_lai.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_PM_dieu_phoi_lai.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_PM_dieu_phoi_lai.Image")));
+            this.m_cmd_PM_dieu_phoi_lai.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_PM_dieu_phoi_lai.Name = "m_cmd_PM_dieu_phoi_lai";
+            this.m_cmd_PM_dieu_phoi_lai.Size = new System.Drawing.Size(172, 34);
+            this.m_cmd_PM_dieu_phoi_lai.TabIndex = 0;
+            this.m_cmd_PM_dieu_phoi_lai.Text = "Điều phối lại";
+            this.m_cmd_PM_dieu_phoi_lai.Click += new System.EventHandler(this.m_cmd_PM_dieu_phoi_lai_Click);
+            // 
             // f0000_gd_dat_hang_gd_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -768,6 +792,7 @@
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -832,5 +857,7 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_admin_tiep_nhan_xu_ly;
         private System.Windows.Forms.Panel m_panel_TM;
         private DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
+        private System.Windows.Forms.Panel panel11;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_PM_dieu_phoi_lai;
     }
 }
