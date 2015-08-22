@@ -29,6 +29,7 @@ namespace TOSApp.ChucNang
         }
 
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
+
         private void load_data_2_grid()
         {
             
@@ -43,8 +44,8 @@ namespace TOSApp.ChucNang
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 295 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
-                else m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
-
+                else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
+                   
             else if (us_user.dcIDNhom == 3) //pm
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 303 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
@@ -62,6 +63,9 @@ namespace TOSApp.ChucNang
             
             m_grc_gd_dat_hang_gd_log_dat_hang.DataSource = v_ds.Tables[0];
         }
+
+
+        
         US_GD_LOG_DAT_HANG m_us_log = new US_GD_LOG_DAT_HANG();
 
         /// <Chú ý cho tất cả các hàm ghi log>
