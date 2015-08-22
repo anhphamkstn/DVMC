@@ -17,6 +17,55 @@ namespace TOSApp
         public f999_main_form()
         {
             InitializeComponent();
+            format_button_controll();
+        }
+
+        private void format_button_controll()
+        {
+            if (user_id == 1)
+            {
+                m_rbc_FO.Visible = true;
+                m_rbc_BO.Visible = false;
+                m_rbc_PM.Visible = false;
+                m_rbc_TD.Visible = false;
+                m_rbc_TM.Visible = false;
+                m_rbc_bao_cao.Visible = false;
+            }
+            else if (user_id == 2)
+            {
+                m_rbc_FO.Visible = false;
+                m_rbc_BO.Visible = true;
+                m_rbc_PM.Visible = false;
+                m_rbc_TD.Visible = false;
+                m_rbc_TM.Visible = false;
+                m_rbc_bao_cao.Visible = false;
+            }
+            else if (user_id == 3)
+            {
+                m_rbc_FO.Visible = false;
+                m_rbc_BO.Visible = false;
+                m_rbc_PM.Visible = true;
+                m_rbc_TD.Visible = false;
+                m_rbc_TM.Visible = false;
+                m_rbc_bao_cao.Visible = false;
+            }
+            else if (user_id == 4)
+            {
+                m_rbc_FO.Visible = false;
+                m_rbc_BO.Visible = false;
+                m_rbc_PM.Visible = false;
+                m_rbc_TD.Visible = true;
+                m_rbc_TM.Visible = false;
+            }
+            else
+            {
+                m_rbc_FO.Visible = false;
+                m_rbc_BO.Visible = false;
+                m_rbc_PM.Visible = false;
+                m_rbc_TD.Visible = false;
+                m_rbc_TM.Visible = true;
+                m_rbc_bao_cao.Visible = false;
+            }
         }
         //decimal id_nguoi_dung;
         #region old format
@@ -163,6 +212,8 @@ namespace TOSApp
         }
 
         #endregion
+        decimal user_id = us_user.dcIDNhom;
+        
 
         #region format controll for each user
         private void m_cmd_ds_don_hang_can_tiep_nhan_BO_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -300,6 +351,21 @@ namespace TOSApp
             }
         }
         #endregion
+
+        private void m_cmd_ds_don_hang_dieu_phoi_lai_FO_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
+                v_f.MdiParent = this;
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
 
 
 
