@@ -135,6 +135,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_LOAI_YEU_CAU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_MAU_EMAIL.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -246,6 +251,17 @@
     </None>
     <None Include="DS_DM_DON_VI.xss">
       <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_LOAI_YEU_CAU.xsc">
+      <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_LOAI_YEU_CAU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_LOAI_YEU_CAU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_LOAI_YEU_CAU.xss">
+      <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
     </None>
     <None Include="DS_DM_MAU_EMAIL.xsc">
       <DependentUpon>DS_DM_MAU_EMAIL.xsd</DependentUpon>

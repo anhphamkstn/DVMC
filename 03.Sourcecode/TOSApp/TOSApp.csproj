@@ -322,6 +322,18 @@
     <Compile Include="DanhMuc\f101_dm_mau_email_de.Designer.cs">
       <DependentUpon>f101_dm_mau_email_de.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMuc\f102_dm_loai_yeu_cau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f102_dm_loai_yeu_cau.Designer.cs">
+      <DependentUpon>f102_dm_loai_yeu_cau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\f102_dm_loai_yeu_cau_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\f102_dm_loai_yeu_cau_de.Designer.cs">
+      <DependentUpon>f102_dm_loai_yeu_cau_de.cs</DependentUpon>
+    </Compile>
     <Compile Include="f001_main_FO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -441,6 +453,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f101_dm_mau_email_de.resx">
       <DependentUpon>f101_dm_mau_email_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f102_dm_loai_yeu_cau.resx">
+      <DependentUpon>f102_dm_loai_yeu_cau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\f102_dm_loai_yeu_cau_de.resx">
+      <DependentUpon>f102_dm_loai_yeu_cau_de.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="f999_main_form.resx">
       <DependentUpon>f999_main_form.cs</DependentUpon>

@@ -131,6 +131,7 @@
     <Compile Include="US_DM_CAU_HOI.cs" />
     <Compile Include="US_DM_CAU_TRA_LOI.cs" />
     <Compile Include="US_DM_DON_VI.cs" />
+    <Compile Include="US_DM_LOAI_YEU_CAU.cs" />
     <Compile Include="US_DM_MAU_EMAIL.cs" />
     <Compile Include="US_DM_MA_DON_HANG.cs" />
     <Compile Include="US_DM_NGUOI_DUNG_STATION.cs" />

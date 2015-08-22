@@ -795,7 +795,9 @@ namespace IPCOREDS.CDBNames
         public const string ID = "ID";
         public const string ID_CHA = "ID_CHA";
         public const string TEN_YEU_CAU = "TEN_YEU_CAU";
-        public const string SU_DUNG_YN = "SU_DUNG_YN";
+        public const string DIEM_KHOI_LUONG = "DIEM_KHOI_LUONG";
+        public const string ID_THOI_GIAN_XU_LY = "ID_THOI_GIAN_XU_LY";
+        public const string TRANG_THAI_HSD = "TRANG_THAI_HSD";
     }
     public class DM_DON_VI
     {
