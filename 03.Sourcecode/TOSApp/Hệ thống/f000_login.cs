@@ -39,8 +39,7 @@ namespace TOSApp.HT
                         this.Close();
                         f999_main_form v_f = new f999_main_form();
                         v_f.ShowDialog();
-                        
-
+                       
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";
 

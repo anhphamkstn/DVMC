@@ -30,12 +30,9 @@ namespace TOSApp
         static void Main()
         {
             try
-            { 
-           // f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang();
-                TOSApp.HT.f000_login v_f = new HT.f000_login();
-              // f116_ds_TD v_f = new f116_ds_TD();
-                //f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
-                v_f.ShowDialog();             
+            {
+                TOSApp.HT.f000_login v_f_login = new HT.f000_login();
+                v_f_login.ShowDialog();
             }
             catch (Exception v_e)
             {

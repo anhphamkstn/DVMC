@@ -609,7 +609,7 @@ namespace TOSApp.ChucNang
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+           
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -641,7 +641,6 @@ namespace TOSApp.ChucNang
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -674,7 +673,7 @@ namespace TOSApp.ChucNang
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            //THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -706,7 +705,7 @@ namespace TOSApp.ChucNang
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+          //  THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -739,7 +738,7 @@ namespace TOSApp.ChucNang
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            THAO_TAC_HET_HAN_YN_LOG.Visible = false;
+            //THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -768,6 +767,11 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_grc_gd_dat_hang_gd_log_dat_hang_Click(object sender, EventArgs e)
+        {
+
         }
 
      

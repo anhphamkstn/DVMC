@@ -84,6 +84,7 @@
             // 
             this.m_txt_pass.Location = new System.Drawing.Point(84, 120);
             this.m_txt_pass.Name = "m_txt_pass";
+            this.m_txt_pass.PasswordChar = '*';
             this.m_txt_pass.Size = new System.Drawing.Size(163, 20);
             this.m_txt_pass.TabIndex = 6;
             // 
@@ -172,6 +173,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "f000_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.f000_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
