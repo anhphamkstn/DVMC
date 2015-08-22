@@ -769,11 +769,6 @@ namespace TOSApp.ChucNang
             }
         }
 
-        private void m_grc_gd_dat_hang_gd_log_dat_hang_Click(object sender, EventArgs e)
-        {
-
-        }
-
      
 
        

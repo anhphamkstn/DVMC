@@ -119,7 +119,8 @@ namespace TOSApp
             }
         }
 
-        public static void load_data_to_combobox(string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition, eTAT_CA ip_e_tat_ca,ComboBox ip_cbo) {
+        public static void load_data_to_combobox(string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition, eTAT_CA ip_e_tat_ca,ComboBox ip_cbo)
+        {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             DataTable v_dt = new DataTable();
