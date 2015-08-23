@@ -15,22 +15,10 @@ namespace TOSApp.ChucNang
         public f102_chon_danh_sach_nguoi_xu_ly_new()
         {
             InitializeComponent();
-            load_data_2_grid();
+         
         }
 
-        private void load_data_2_grid()
-        {
-          
-            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            DataSet v_ds = new DataSet();
-            v_ds.Tables.Add(new DataTable());
-
-          //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
-            v_us.FillDatasetWithQuery(v_ds," select * from V_HT_NGUOI_SU_DUNG where ID between 3 and 14");
-            m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
-
-        
-        }
+    
 
         private void m_cmd_exit_Click(object sender, EventArgs e)
         {
@@ -62,8 +50,33 @@ namespace TOSApp.ChucNang
             this.Close();
         }
 
-        
 
-       
+
+
+
+        internal void Display(ref List<decimal> m_lst_id_nguoi_xu_ly, decimal m_id_dich_vu)
+        {
+            load_data_2_grid(m_id_dich_vu);
+            this.ShowDialog();
+            if (DialogResult == System.Windows.Forms.DialogResult.OK)
+            {
+                for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
+                {
+                    m_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
+                }
+            }
+        }
+
+        private void load_data_2_grid(decimal m_id_dich_vu)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+
+            //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
+            v_us.FillDatasetWithQuery(v_ds, " select * from V_BO_DICH_VU WHERE TEN_TRUY_CAP is not null and ID_DICH_VU="+m_id_dich_vu);
+            m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
+
+        }
     }
 }

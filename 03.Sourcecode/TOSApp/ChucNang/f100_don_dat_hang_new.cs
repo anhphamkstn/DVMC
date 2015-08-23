@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using IP.Core.IPCommon;
 using TOSApp;
 using IPCOREUS;
+using IP.Core.IPCommon;
 
 namespace TOSApp.ChucNang
 {
@@ -18,6 +19,7 @@ namespace TOSApp.ChucNang
         decimal m_dc_id_loai_dich_vu=-1;
         //decimal m_dc_loai_dich_vu = -1;
         //decimal m_dc_ten_dich_vu = -1;
+        decimal m_id_dich_vu;
 
         public f100_don_dat_hang_new()
         {
@@ -87,9 +89,9 @@ namespace TOSApp.ChucNang
         //load du liệu lên selected  dịch vụ
         private void load_data_2_selected_dich_vu()
         {
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select DISTINCT ID, TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_2.SelectedValue.ToString());
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_2.SelectedValue.ToString());
             //WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " Where ID_CHA=" +m_cbo_loai_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
-            
+    
         }
         //load len trang thai cua selected don hang
         private void load_data_2_selected_trang_thai_don_hang()
@@ -130,14 +132,10 @@ namespace TOSApp.ChucNang
        
         private void load_data_2_dich_vu_ver2()
         {
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU","ID","TEN_YEU_CAU"," where ID_CHA="+m_cbo_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO,m_cbo_loai_dich_vu_2);
+           // WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU","ID","TEN_YEU_CAU"," where ID_CHA="+m_cbo_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO,m_cbo_loai_dich_vu_2);
         }
 
-        private void m_cbo_loai_dich_vu_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          //  m_dc_id_loai_dich_vu = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString());
-            load_data_2_selected_dich_vu();
-        }
+       
 
         private void m_cmd_xac_nhan_don_hang_Click(object sender, EventArgs e)
         {
@@ -463,11 +461,27 @@ namespace TOSApp.ChucNang
 
         private void m_cmd_danh_sach_nguoi_xu_ly_Click(object sender, EventArgs e)
         {
-            f102_chon_danh_sach_nguoi_xu_ly_new v_f102 = new f102_chon_danh_sach_nguoi_xu_ly_new();
-           
+            try
+            {
+                f102_chon_danh_sach_nguoi_xu_ly_new v_f102 = new f102_chon_danh_sach_nguoi_xu_ly_new();
 
-            v_f102.Display(ref m_lst_id_nguoi_xu_ly);
+                m_id_dich_vu = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString());
+                if (m_id_dich_vu == 0)
+                {
+                    MessageBox.Show("hãy chọn dịch vụ");
 
+                }else
+
+
+                v_f102.Display(ref m_lst_id_nguoi_xu_ly, m_id_dich_vu);
+
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+      
           //  v_f102.ShowDialog();
 
         }
@@ -562,10 +576,16 @@ namespace TOSApp.ChucNang
 
         private void m_cbo_loai_dich_vu_1_SelectedValueChanged(object sender, EventArgs e)
         {
+            
             load_data_2_loai_dich_vu_2();
         }
 
-      
+        private void m_cbo_loai_dich_vu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            //  m_dc_id_loai_dich_vu = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString());
+            load_data_2_selected_dich_vu();
+        }
 
       
         
