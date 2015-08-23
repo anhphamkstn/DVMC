@@ -29,7 +29,7 @@ namespace TOSApp
                 m_rbc_PM.Visible = false;
                 m_rbc_TD.Visible = false;
                 m_rbc_TM.Visible = false;
-                m_rbc_bao_cao.Visible = false;
+             m_rbc_bao_cao.Visible = true;
             }
             else if (user_id == 2)
             {
@@ -49,13 +49,14 @@ namespace TOSApp
                 m_rbc_TM.Visible = false;
                 m_rbc_bao_cao.Visible = false;
             }
-            else if (user_id == 4)
+            else if (user_id == 5)
             {
                 m_rbc_FO.Visible = false;
                 m_rbc_BO.Visible = false;
                 m_rbc_PM.Visible = false;
                 m_rbc_TD.Visible = true;
-                m_rbc_TM.Visible = false;
+               m_rbc_TM.Visible = false;
+               m_rbc_bao_cao.Visible = true;
             }
             else
             {

@@ -65,6 +65,7 @@ namespace TOSApp.ChucNang
                     m_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
                 }
             }
+         
         }
 
         private void load_data_2_grid(decimal m_id_dich_vu)

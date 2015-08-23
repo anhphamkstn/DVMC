@@ -31,8 +31,9 @@ namespace TOSApp
         {
             try
             {
-               // TOSApp.HT.f000_login v_f = new HT.f000_login();
-                f100_don_dat_hang_new v_f= new f100_don_dat_hang_new();
+                TOSApp.HT.f000_login v_f = new HT.f000_login();
+                //f100_don_dat_hang_new v_f= new f100_don_dat_hang_new();
+               // f999_main_form v_f = new f999_main_form();
                 v_f.ShowDialog();
             }
             catch (Exception v_e)

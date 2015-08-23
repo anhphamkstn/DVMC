@@ -142,8 +142,7 @@ namespace TOSApp.ChucNang
             try
             {
                 
-                if (Kiem_tra_du_lieu_truoc_luu() == true)
-                {
+                
                     if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
                     {
                         udpate_don_hang();
@@ -159,7 +158,7 @@ namespace TOSApp.ChucNang
                         dieu_phoi_don_hang();
                         this.Close();
                     }  
-                }
+                
             }
             catch (Exception v_e)
             {
