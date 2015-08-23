@@ -49,7 +49,7 @@ namespace TOSApp.ChucNang
 
         private void load_data_2_selected_nguoi_tiep_nhan()
         {
-            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
+            WinFormControls.load_data_to_combobox("V_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID_NGUOI_SU_DUNG", "TEN", " Where ID_NHOM=1", WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
         }
 
         private void load_data_2_user_nhan_vien_dat_hang()

@@ -74,7 +74,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
 
             //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_BO_DICH_VU WHERE TEN_TRUY_CAP is not null and ID_DICH_VU="+m_id_dich_vu);
+            v_us.FillDatasetWithQuery(v_ds, " select * from V_BO_DICH_VU where ID_DICH_VU="+m_id_dich_vu);
             m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
 
         }

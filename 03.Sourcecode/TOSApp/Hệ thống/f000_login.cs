@@ -42,7 +42,7 @@ namespace TOSApp.HT
                        
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";
-
+                this.Close();
             }
             catch (Exception v_e)
             {
