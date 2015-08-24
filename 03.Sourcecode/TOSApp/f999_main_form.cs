@@ -223,6 +223,7 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
+                
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -366,6 +367,13 @@ namespace TOSApp
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_cmd_show_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f118_ds_log_dat_hang v_f = new f118_ds_log_dat_hang();
+            v_f.MdiParent = this;
+            v_f.Show();
         }
 
       

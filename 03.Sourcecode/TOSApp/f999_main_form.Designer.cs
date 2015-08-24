@@ -73,6 +73,9 @@
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.m_cmd_show = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -432,9 +435,10 @@
             this.m_cmd_ds_don_hang_can_xu_ly_TD,
             this.m_cmd_ds_don_hang_dang_xu_ly_TD,
             this.m_cmd_tat_ca_don_hang_TD,
-            this.m_cmd_ds_don_hang_can_danh_gia_TM});
+            this.m_cmd_ds_don_hang_can_danh_gia_TM,
+            this.m_cmd_show});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 21;
+            this.ribbonControl1.MaxItemId = 22;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -443,9 +447,31 @@
             this.m_rbc_PM,
             this.m_rbc_TD,
             this.m_rbc_TM,
-            this.m_rbc_bao_cao});
+            this.m_rbc_bao_cao,
+            this.ribbonPage2});
             this.ribbonControl1.Size = new System.Drawing.Size(1186, 163);
-//            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
+            // 
+            // m_cmd_show
+            // 
+            this.m_cmd_show.Caption = "Show";
+            this.m_cmd_show.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_show.Glyph")));
+            this.m_cmd_show.Id = 21;
+            this.m_cmd_show.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_show.LargeGlyph")));
+            this.m_cmd_show.Name = "m_cmd_show";
+            this.m_cmd_show.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_show_ItemClick);
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup15});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "Lịch sử giao dịch";
+            // 
+            // ribbonPageGroup15
+            // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.m_cmd_show);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            this.ribbonPageGroup15.Text = "Lịch sử giao dịch";
             // 
             // f999_main_form
             // 
@@ -509,6 +535,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_show;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
 
     }
 }

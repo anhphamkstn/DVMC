@@ -298,6 +298,12 @@
     <Compile Include="ChucNang\f117_ds_tat_ca_don_dat_hang.Designer.cs">
       <DependentUpon>f117_ds_tat_ca_don_dat_hang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f118_ds_log_dat_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f118_ds_log_dat_hang.Designer.cs">
+      <DependentUpon>f118_ds_log_dat_hang.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc\f100_dm_cau_hoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -453,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f117_ds_tat_ca_don_dat_hang.resx">
       <DependentUpon>f117_ds_tat_ca_don_dat_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f118_ds_log_dat_hang.resx">
+      <DependentUpon>f118_ds_log_dat_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f100_dm_cau_hoi.resx">
       <DependentUpon>f100_dm_cau_hoi.cs</DependentUpon>
