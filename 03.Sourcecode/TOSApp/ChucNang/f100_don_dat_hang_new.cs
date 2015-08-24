@@ -216,6 +216,7 @@ namespace TOSApp.ChucNang
         {
             if (m_lst_id_nguoi_xu_ly.Count==0)
             {
+                MessageBox.Show("hãy chọn người xử lý!");
                 return;
             }
           

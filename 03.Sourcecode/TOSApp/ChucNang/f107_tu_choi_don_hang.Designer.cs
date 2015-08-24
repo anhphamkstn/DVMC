@@ -68,6 +68,7 @@
             // 
             this.m_txt_nguoi_nhan_tao_tac.Location = new System.Drawing.Point(178, 64);
             this.m_txt_nguoi_nhan_tao_tac.Name = "m_txt_nguoi_nhan_tao_tac";
+            this.m_txt_nguoi_nhan_tao_tac.ReadOnly = true;
             this.m_txt_nguoi_nhan_tao_tac.Size = new System.Drawing.Size(188, 20);
             this.m_txt_nguoi_nhan_tao_tac.TabIndex = 7;
             // 
@@ -75,6 +76,7 @@
             // 
             this.m_txt_ma_don_hang.Location = new System.Drawing.Point(178, 31);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
+            this.m_txt_ma_don_hang.ReadOnly = true;
             this.m_txt_ma_don_hang.Size = new System.Drawing.Size(188, 20);
             this.m_txt_ma_don_hang.TabIndex = 8;
             // 

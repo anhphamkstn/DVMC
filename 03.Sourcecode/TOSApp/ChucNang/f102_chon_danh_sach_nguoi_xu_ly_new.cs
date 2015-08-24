@@ -59,6 +59,7 @@ namespace TOSApp.ChucNang
             load_data_2_grid(m_id_dich_vu);
             
             this.ShowDialog();
+            m_lst_id_nguoi_xu_ly.Clear();
             if (DialogResult == System.Windows.Forms.DialogResult.OK)
             {
                 for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
@@ -76,7 +77,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
 
             //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_BO_DICH_VU where ID_DICH_VU="+m_id_dich_vu);
+            v_us.FillDatasetWithQuery(v_ds, " select distinct * from V_BO_DICH_VU where ID_DICH_VU="+m_id_dich_vu);
             m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
 
         }

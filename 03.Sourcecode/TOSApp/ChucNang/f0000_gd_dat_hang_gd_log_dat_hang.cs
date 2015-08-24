@@ -24,7 +24,7 @@ namespace TOSApp.ChucNang
             else
                 if (us_user.dcIDNhom == 2) format_controll_BO();
                 else if (us_user.dcIDNhom == 3) format_controll_PM();
-                else if (us_user.dcIDNhom == 4) format_controll_TD();
+                else if (us_user.dcIDNhom == 5) format_controll_TD();
                 else format_controll_TM();                
         }
 
@@ -51,12 +51,12 @@ namespace TOSApp.ChucNang
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 303 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else m_query = m_query + "And ID_LOAI_THAO_TAC = 304 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
 
-            else if (us_user.dcIDNhom == 4) //td
+            else if (us_user.dcIDNhom == 5) //td
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC = 305 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
                  //tm
-            else m_query = m_query + "And ID_LOAI_THAO_TAC = 297 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+            else m_query = m_query + "And ID_LOAI_THAO_TAC = 297";
 
 
             v_us.FillDatasetWithQuery(v_ds,m_query);
@@ -301,7 +301,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; //TuanPA
-          //  v_us.dcID_NGUOI_NHAN_THAO_TAC=22; //thang TM có id 63 cần vào nhiệm thu
+           v_us.SetID_NGUOI_NHAN_THAO_TACNull(); //thang TM có id 63 cần vào nhiệm thu
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
@@ -487,7 +487,7 @@ namespace TOSApp.ChucNang
         private void ghi_log_admin_da_hoan_thanh_don_hang_TD()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 309;//đã nghiệm thu
+            v_us.dcID_LOAI_THAO_TAC = 297;//đã nghiệm thu
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO_THAO_TAC;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
@@ -535,10 +535,10 @@ namespace TOSApp.ChucNang
         private void ghi_log_admin_da_hoan_thanh_don_hang_PM()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 309;//
+            v_us.dcID_LOAI_THAO_TAC = 297;//
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 15;//thang pm co id =15
-            v_us.dcID_NGUOI_NHAN_THAO_TAC=22;//thagn TM có id =22
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//thang pm co id =15
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();//thagn TM có id =22
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
