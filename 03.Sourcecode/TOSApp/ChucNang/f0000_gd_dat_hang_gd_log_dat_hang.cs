@@ -43,7 +43,7 @@ namespace TOSApp.ChucNang
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
                    
             else if (us_user.dcIDNhom == 3) //pm
@@ -751,6 +751,26 @@ namespace TOSApp.ChucNang
         private void m_cmd_PM_dieu_phoi_lai_Click(object sender, EventArgs e)
         {
 
+            try
+            {
+                DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+
+                f114_ds_BO v_f114 = new f114_ds_BO();
+                v_f114.display_dieu_huong(v_us);
+                load_data_2_grid();
+                //  MessageBox.Show("Thành công");
+
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_cmd_PM_dieu_phoi_Click(object sender, EventArgs e)
+        {
             try
             {
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
