@@ -31,6 +31,7 @@ namespace TOSApp.ChucNang
         DataEntryFormMode m_e_form_mode = new DataEntryFormMode();
         US_GD_DAT_HANG m_us = new US_GD_DAT_HANG();
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG M_us;
+        decimal id_log;
         List<decimal> m_lst_id_nguoi_xu_ly = new List<decimal>();
 
         #region load data to selected
@@ -230,7 +231,7 @@ namespace TOSApp.ChucNang
         private void cap_nhat_lai_trang_thai_tiep_nhan()
         {
            //cap nhat lai trang thai cua log don hang truoc khi thuc hien thao tac dieu huong
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(TOSApp.us_user.dcID);
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(id_log);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.Update();  
             
@@ -249,13 +250,14 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 293;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC =us_user.dcID;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
+           // v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_TAO;
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "FO đã tiep nhan";
             v_us.Insert();
-            TOSApp.us_user.dcID = v_us.dcID;
+            //TOSApp.us_user.dcID = v_us.dcID;
           //  MessageBox.Show("Đã tiếp nhận đơn hàng");
+            id_log = v_us.dcID;
             return v_us.dcID;
 
         }
@@ -510,7 +512,7 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 294;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
