@@ -85,6 +85,7 @@
             // 
             this.m_txt_ma_don_hang.Location = new System.Drawing.Point(125, 17);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
+            this.m_txt_ma_don_hang.ReadOnly = true;
             this.m_txt_ma_don_hang.Size = new System.Drawing.Size(160, 20);
             this.m_txt_ma_don_hang.TabIndex = 8;
             // 

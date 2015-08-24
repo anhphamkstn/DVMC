@@ -33,14 +33,14 @@
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.GroupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.label1 = new System.Windows.Forms.Label();
-            this.m_cbo_danh_sach_PM = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.m_txt_ID_don_hang = new System.Windows.Forms.TextBox();
-            this.m_txt_dich_vu_yeu_cau = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.m_txt_noi_dung_dat_hang = new System.Windows.Forms.TextBox();
+            this.m_txt_dich_vu_yeu_cau = new System.Windows.Forms.TextBox();
+            this.m_txt_ID_don_hang = new System.Windows.Forms.TextBox();
+            this.m_cbo_danh_sach_PM = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).BeginInit();
@@ -101,14 +101,30 @@
             this.GroupControl1.TabIndex = 6;
             this.GroupControl1.Text = "Danh sách người xử lý";
             // 
-            // label1
+            // m_txt_noi_dung_dat_hang
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 221);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách PM";
+            this.m_txt_noi_dung_dat_hang.Location = new System.Drawing.Point(259, 148);
+            this.m_txt_noi_dung_dat_hang.Multiline = true;
+            this.m_txt_noi_dung_dat_hang.Name = "m_txt_noi_dung_dat_hang";
+            this.m_txt_noi_dung_dat_hang.ReadOnly = true;
+            this.m_txt_noi_dung_dat_hang.Size = new System.Drawing.Size(350, 50);
+            this.m_txt_noi_dung_dat_hang.TabIndex = 2;
+            // 
+            // m_txt_dich_vu_yeu_cau
+            // 
+            this.m_txt_dich_vu_yeu_cau.Location = new System.Drawing.Point(259, 104);
+            this.m_txt_dich_vu_yeu_cau.Name = "m_txt_dich_vu_yeu_cau";
+            this.m_txt_dich_vu_yeu_cau.ReadOnly = true;
+            this.m_txt_dich_vu_yeu_cau.Size = new System.Drawing.Size(350, 20);
+            this.m_txt_dich_vu_yeu_cau.TabIndex = 2;
+            // 
+            // m_txt_ID_don_hang
+            // 
+            this.m_txt_ID_don_hang.Location = new System.Drawing.Point(259, 51);
+            this.m_txt_ID_don_hang.Name = "m_txt_ID_don_hang";
+            this.m_txt_ID_don_hang.ReadOnly = true;
+            this.m_txt_ID_don_hang.Size = new System.Drawing.Size(350, 20);
+            this.m_txt_ID_don_hang.TabIndex = 2;
             // 
             // m_cbo_danh_sach_PM
             // 
@@ -118,14 +134,14 @@
             this.m_cbo_danh_sach_PM.Size = new System.Drawing.Size(350, 21);
             this.m_cbo_danh_sach_PM.TabIndex = 1;
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(104, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Dịch vụ yêu cầu";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(104, 151);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Nội dung đặt hàng";
             // 
             // label3
             // 
@@ -136,35 +152,23 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã đơn hàng";
             // 
-            // m_txt_ID_don_hang
+            // label2
             // 
-            this.m_txt_ID_don_hang.Location = new System.Drawing.Point(259, 51);
-            this.m_txt_ID_don_hang.Name = "m_txt_ID_don_hang";
-            this.m_txt_ID_don_hang.Size = new System.Drawing.Size(350, 20);
-            this.m_txt_ID_don_hang.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(104, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Dịch vụ yêu cầu";
             // 
-            // m_txt_dich_vu_yeu_cau
+            // label1
             // 
-            this.m_txt_dich_vu_yeu_cau.Location = new System.Drawing.Point(259, 104);
-            this.m_txt_dich_vu_yeu_cau.Name = "m_txt_dich_vu_yeu_cau";
-            this.m_txt_dich_vu_yeu_cau.Size = new System.Drawing.Size(350, 20);
-            this.m_txt_dich_vu_yeu_cau.TabIndex = 2;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(104, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Nội dung đặt hàng";
-            // 
-            // m_txt_noi_dung_dat_hang
-            // 
-            this.m_txt_noi_dung_dat_hang.Location = new System.Drawing.Point(259, 157);
-            this.m_txt_noi_dung_dat_hang.Name = "m_txt_noi_dung_dat_hang";
-            this.m_txt_noi_dung_dat_hang.Size = new System.Drawing.Size(350, 20);
-            this.m_txt_noi_dung_dat_hang.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(104, 221);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách PM";
             // 
             // f111_dieu_phoi_cho_BO
             // 

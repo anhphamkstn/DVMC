@@ -28,7 +28,7 @@ namespace TOSApp.ChucNang
         private void load_data_2_form()
         {
             
-            load_data_2_grid();
+            
         }
 
       
@@ -40,7 +40,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
 
             //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
-            v_us.FillDatasetWithQuery(v_ds, " select * from HT_NGUOI_SU_DUNG");
+            v_us.FillDatasetWithQuery(v_ds, " select * from V_BO_DICH_VU where ID_DICH_VU = " + m_us.dcID_NHOM_DV_YEU_CAU);
             m_grc_ds_BO.DataSource = v_ds.Tables[0];
 
         }
@@ -55,6 +55,7 @@ namespace TOSApp.ChucNang
         internal void display_dieu_huong(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             load_data_2_ma_don_hang(v_us);
+            load_data_2_grid();
             this.ShowDialog();
         }
         US_DUNG_CHUNG v_us_dc = new US_DUNG_CHUNG();
@@ -64,7 +65,7 @@ namespace TOSApp.ChucNang
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
             m_id_gd_dat_hang = v_us.dcID_DON_HANG;
-            m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
+           // m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
            
         }
 
@@ -75,7 +76,7 @@ namespace TOSApp.ChucNang
            {
                for (int i = 0; i < m_grv_ds_BO.SelectedRowsCount; i++)
                {
-                   m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID"].ToString()));
+                   m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID_NGUOI_SU_DUNG"].ToString()));
                }
 
 	               update_don_hang(m_us);

@@ -43,7 +43,7 @@ namespace TOSApp.ChucNang
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC = 295 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
                    
             else if (us_user.dcIDNhom == 3) //pm
@@ -247,7 +247,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "FO đã từ chối";
+            v_us.strGHI_CHU = "BO đã từ chối";
             v_us.Update();
 
 
@@ -299,7 +299,7 @@ namespace TOSApp.ChucNang
 
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; //TuanPA
            v_us.SetID_NGUOI_NHAN_THAO_TACNull(); //thang TM có id 63 cần vào nhiệm thu
 

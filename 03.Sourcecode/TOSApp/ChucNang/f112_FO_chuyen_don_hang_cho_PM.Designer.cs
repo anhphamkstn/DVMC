@@ -51,6 +51,7 @@
             // 
             this.m_txt_ma_don_hang.Location = new System.Drawing.Point(118, 25);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
+            this.m_txt_ma_don_hang.ReadOnly = true;
             this.m_txt_ma_don_hang.Size = new System.Drawing.Size(160, 20);
             this.m_txt_ma_don_hang.TabIndex = 1;
             // 
@@ -102,6 +103,7 @@
             // 
             this.m_txt_PM.Location = new System.Drawing.Point(118, 85);
             this.m_txt_PM.Name = "m_txt_PM";
+            this.m_txt_PM.ReadOnly = true;
             this.m_txt_PM.Size = new System.Drawing.Size(160, 20);
             this.m_txt_PM.TabIndex = 1;
             // 
