@@ -21,20 +21,6 @@ namespace TOSApp.ChucNang
 
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
 
-        private void m_cmd_cancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void m_cmd_Ok_Click(object sender, EventArgs e)
-        {
-            insert_log_gui_cho_pm(m_us);
-            update_log_gui_cho_pm(m_us);
-
-            MessageBox.Show("Hoàn thành!");
-            this.Close();
-        }
-
         private void update_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(m_us.dcID);
@@ -86,5 +72,37 @@ namespace TOSApp.ChucNang
           //  WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_ds_PM);
             m_txt_gui_kem.Focus();
         }
+
+        private void m_cmd_Ok_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (m_txt_gui_kem.Text == "")
+                {
+                    MessageBox.Show("Nhập lý do!");
+                    m_txt_gui_kem.Focus();
+                }
+                else
+                {
+                    insert_log_gui_cho_pm(m_us);
+                    update_log_gui_cho_pm(m_us);
+
+                    MessageBox.Show("Hoàn thành!");
+                    this.Close();
+                }
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_cmd_cancel_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
     }
 }

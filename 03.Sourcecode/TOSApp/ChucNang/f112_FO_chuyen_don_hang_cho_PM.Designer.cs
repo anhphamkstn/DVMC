@@ -32,10 +32,10 @@
             this.m_txt_ma_don_hang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.m_txt_gui_kem = new System.Windows.Forms.TextBox();
-            this.m_cmd_Ok = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_cancel = new DevExpress.XtraEditors.SimpleButton();
             this.label2 = new System.Windows.Forms.Label();
             this.m_txt_PM = new System.Windows.Forms.TextBox();
+            this.m_cmd_Ok = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_cancel = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
             // 
             // label1
@@ -72,24 +72,6 @@
             this.m_txt_gui_kem.Size = new System.Drawing.Size(252, 64);
             this.m_txt_gui_kem.TabIndex = 1;
             // 
-            // m_cmd_Ok
-            // 
-            this.m_cmd_Ok.Location = new System.Drawing.Point(146, 227);
-            this.m_cmd_Ok.Name = "m_cmd_Ok";
-            this.m_cmd_Ok.Size = new System.Drawing.Size(75, 23);
-            this.m_cmd_Ok.TabIndex = 2;
-            this.m_cmd_Ok.Text = "OK";
-            this.m_cmd_Ok.Click += new System.EventHandler(this.m_cmd_Ok_Click);
-            // 
-            // m_cmd_cancel
-            // 
-            this.m_cmd_cancel.Location = new System.Drawing.Point(253, 227);
-            this.m_cmd_cancel.Name = "m_cmd_cancel";
-            this.m_cmd_cancel.Size = new System.Drawing.Size(75, 23);
-            this.m_cmd_cancel.TabIndex = 2;
-            this.m_cmd_cancel.Text = "Cancel";
-            this.m_cmd_cancel.Click += new System.EventHandler(this.m_cmd_cancel_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -107,14 +89,32 @@
             this.m_txt_PM.Size = new System.Drawing.Size(160, 20);
             this.m_txt_PM.TabIndex = 1;
             // 
+            // m_cmd_Ok
+            // 
+            this.m_cmd_Ok.Location = new System.Drawing.Point(179, 230);
+            this.m_cmd_Ok.Name = "m_cmd_Ok";
+            this.m_cmd_Ok.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_Ok.TabIndex = 4;
+            this.m_cmd_Ok.Text = "OK";
+            this.m_cmd_Ok.Click += new System.EventHandler(this.m_cmd_Ok_Click_1);
+            // 
+            // m_cmd_cancel
+            // 
+            this.m_cmd_cancel.Location = new System.Drawing.Point(295, 230);
+            this.m_cmd_cancel.Name = "m_cmd_cancel";
+            this.m_cmd_cancel.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_cancel.TabIndex = 4;
+            this.m_cmd_cancel.Text = "Cancel";
+            this.m_cmd_cancel.Click += new System.EventHandler(this.m_cmd_cancel_Click_1);
+            // 
             // f112_FO_chuyen_don_hang_cho_PM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 425);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(397, 276);
             this.Controls.Add(this.m_cmd_cancel);
             this.Controls.Add(this.m_cmd_Ok);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.m_txt_gui_kem);
             this.Controls.Add(this.m_txt_PM);
             this.Controls.Add(this.m_txt_ma_don_hang);
@@ -133,9 +133,9 @@
         private System.Windows.Forms.TextBox m_txt_ma_don_hang;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox m_txt_gui_kem;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_Ok;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_cancel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox m_txt_PM;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_Ok;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_cancel;
     }
 }

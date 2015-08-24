@@ -48,8 +48,16 @@ namespace TOSApp.ChucNang
                 }
                 else
                 {
-                    update_trang_thai_don_hang_chua_hoan_thanh(v_us);
-                    ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(v_us);
+                    if (m_txt_nhan_xet.Text=="")
+                    {
+                        MessageBox.Show("Nhập lý do không nghiệm thu!");
+                        m_txt_nhan_xet.Focus();
+                    }
+                    else
+                    {
+                        update_trang_thai_don_hang_chua_hoan_thanh(v_us);
+                        ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(v_us);
+                    }
                 }
                 MessageBox.Show("Hoàn thành");
                 this.Close();
