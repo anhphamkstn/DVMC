@@ -12,6 +12,7 @@ using TOSApp.App_Code;
 using IPCOREDS.CDBNames;
 using TOSApp.ChucNang;
 using TOSApp.DanhMuc;
+using TOSApp.Hệ_thống;
 
 namespace TOSApp
 {
@@ -31,9 +32,10 @@ namespace TOSApp
         {
             try
             {
-                TOSApp.HT.f000_login v_f = new HT.f000_login();
+                //TOSApp.HT.f000_login v_f = new HT.f000_login();
                 //f100_don_dat_hang_new v_f= new f100_don_dat_hang_new();
                // f999_main_form v_f = new f999_main_form();
+                f999_ht_nguoi_su_dung v_f = new f999_ht_nguoi_su_dung();
                 v_f.ShowDialog();
             }
             catch (Exception v_e)

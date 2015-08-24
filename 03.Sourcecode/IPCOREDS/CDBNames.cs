@@ -396,10 +396,10 @@ namespace IPCOREDS.CDBNames
         public const string NGUOI_TAO = "NGUOI_TAO";
         public const string TRANG_THAI = "TRANG_THAI";
         public const string BUILT_IN_YN = "BUILT_IN_YN";
-        public const string ID_NHOM_NGUOI_DUNG = "ID_NHOM_NGUOI_DUNG";
         public const string EMAIL = "EMAIL";
         public const string MAT_KHAU_EMAIL = "MAT_KHAU_EMAIL";
     }
+
     public class HT_QUYEN_USER
     {
         public const string ID = "ID";

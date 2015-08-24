@@ -82,10 +82,5 @@ namespace TOSApp.DanhMuc
             m_grc_dm_loai_yeu_cau.DataSource = v_ds.Tables[0];
         }
 
-        private void m_grc_dm_loai_yeu_cau_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

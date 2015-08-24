@@ -140,6 +140,7 @@
     <Compile Include="US_GD_CUOC_GOI_YEU_CAU.cs" />
     <Compile Include="US_GD_DAT_HANG.cs" />
     <Compile Include="US_GD_LOG_DAT_HANG.cs" />
+    <Compile Include="US_HT_NGUOI_SU_DUNG.cs" />
     <Compile Include="US_UT_SEQUENCES.cs" />
     <Compile Include="US_V_GD_DAT_HANG_GD_LOG_DAT_HANG.cs" />
   </ItemGroup>
