@@ -79,7 +79,7 @@ namespace TOSApp.ChucNang
 
         private void us_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
-            v_us = m_us;
+            v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG( m_us.dcID);
             m_txt_ma_don_hang.Text = m_us.strMA_DON_HANG;
             m_txt_nguoi_nhan_tao_tac.Text = m_us.dcID_NGUOI_TAO_THAO_TAC.ToString();
             m_txt_ly_do_tu_choi.Focus();
