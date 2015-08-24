@@ -57,12 +57,13 @@ namespace TOSApp.ChucNang
         internal void Display(ref List<decimal> m_lst_id_nguoi_xu_ly, decimal m_id_dich_vu)
         {
             load_data_2_grid(m_id_dich_vu);
+            
             this.ShowDialog();
             if (DialogResult == System.Windows.Forms.DialogResult.OK)
             {
                 for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
                 {
-                    m_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
+                    m_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID_NGUOI_SU_DUNG"].ToString()));
                 }
             }
          

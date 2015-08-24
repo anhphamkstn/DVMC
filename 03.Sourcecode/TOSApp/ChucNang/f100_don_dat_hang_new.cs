@@ -218,8 +218,11 @@ namespace TOSApp.ChucNang
             {
                 return;
             }
-            cap_nhat_lai_trang_thai_tiep_nhan();
-            xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
+          
+                cap_nhat_lai_trang_thai_tiep_nhan();
+                xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
+           
+            
             MessageBox.Show("FO đã điều phối");
         }
 

@@ -82,7 +82,7 @@ namespace TOSApp.ChucNang
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
 
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
-            WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_ds_TD);
+            WinFormControls.load_data_to_combobox("V_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID_NGUOI_SU_DUNG", "TEN", " where id_nhom = 5 and ID_CHI_NHANH=1", WinFormControls.eTAT_CA.NO, m_cbo_ds_TD);
             m_txt_gui_kem.Focus();
           
         }
