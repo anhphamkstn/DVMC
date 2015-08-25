@@ -41,26 +41,29 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                if (m_rdb_hoan_thanh.Checked == true)
+                if (m_txt_nhan_xet.Text == "")
                 {
-                    update_trang_thai_don_hang(v_us);
-                    ghi_log_nghiem_thu_don_hang(v_us);
+                    MessageBox.Show("Nhập lý do không nghiệm thu!");
+                    m_txt_nhan_xet.Focus();
                 }
                 else
                 {
-                    if (m_txt_nhan_xet.Text=="")
+                    if (m_rdb_hoan_thanh.Checked == true)
                     {
-                        MessageBox.Show("Nhập lý do không nghiệm thu!");
-                        m_txt_nhan_xet.Focus();
+                       
+                        ghi_log_nghiem_thu_don_hang(v_us);
+                        update_trang_thai_don_hang(v_us);
                     }
                     else
                     {
-                        update_trang_thai_don_hang_chua_hoan_thanh(v_us);
                         ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(v_us);
+
+                        update_trang_thai_don_hang_chua_hoan_thanh(v_us);
+                       
                     }
+                    MessageBox.Show("Hoàn thành");
+                    this.Close();
                 }
-                MessageBox.Show("Hoàn thành");
-                this.Close();
             }
             catch (Exception)
             {
@@ -73,7 +76,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
 
-            v_US.dcID_GD_DAT_HANG = v_us.dcID;
+            v_US.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
             v_US.dcID_LOAI_THAO_TAC = 313;//cần xử lý lại
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_US.dcID_NGUOI_NHAN_THAO_TAC = v_us.dcID_NGUOI_TAO_THAO_TAC;
@@ -95,7 +98,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
            
-            v_US.dcID_GD_DAT_HANG = v_us.dcID;
+            v_US.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
             v_US.dcID_LOAI_THAO_TAC = 309;//TM đã nghiệm thu
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_US.SetID_NGUOI_NHAN_THAO_TACNull();
