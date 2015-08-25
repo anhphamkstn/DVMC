@@ -33,16 +33,16 @@ namespace TOSApp.HT
                 if ((m_txt_id.Text == "") || (m_txt_pass.Text == ""))
                     m_lab_error.Text = "Tên truy cập và password không được để trống.";
                 else
-                
-                    if(check_login())
+                {
+                    if (check_login())
                     {
                         this.Close();
                         f999_main_form v_f = new f999_main_form();
                         v_f.ShowDialog();
-                       
+
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";
-                this.Close();
+                }
             }
             catch (Exception v_e)
             {
