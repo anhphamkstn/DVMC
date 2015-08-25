@@ -51,7 +51,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 261);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(954, 100);
+            this.panel3.Size = new System.Drawing.Size(752, 100);
             this.panel3.TabIndex = 1;
             // 
             // panel1
@@ -60,7 +60,7 @@
             this.panel1.Controls.Add(this.m_btn_them);
             this.panel1.Controls.Add(this.m_btn_sua);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(535, 0);
+            this.panel1.Location = new System.Drawing.Point(333, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(419, 100);
             this.panel1.TabIndex = 4;
@@ -105,7 +105,7 @@
             this.m_grc_dm_mau_email.Location = new System.Drawing.Point(0, 0);
             this.m_grc_dm_mau_email.MainView = this.m_grv_dm_mau_email;
             this.m_grc_dm_mau_email.Name = "m_grc_dm_mau_email";
-            this.m_grc_dm_mau_email.Size = new System.Drawing.Size(954, 261);
+            this.m_grc_dm_mau_email.Size = new System.Drawing.Size(752, 261);
             this.m_grc_dm_mau_email.TabIndex = 2;
             this.m_grc_dm_mau_email.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_dm_mau_email});
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 361);
+            this.ClientSize = new System.Drawing.Size(752, 361);
             this.Controls.Add(this.m_grc_dm_mau_email);
             this.Controls.Add(this.panel3);
             this.Name = "f101_dm_mau_email";

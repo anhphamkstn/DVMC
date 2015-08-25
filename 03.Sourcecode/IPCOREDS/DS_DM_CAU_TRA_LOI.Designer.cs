@@ -499,7 +499,6 @@ namespace IPCOREDS {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnID_CAU_HOI.AllowDBNull = false;
-                this.columnCAU_TRA_LOI.AllowDBNull = false;
                 this.columnCAU_TRA_LOI.MaxLength = 1073741823;
                 this.columnNGUOI_TAO.AllowDBNull = false;
                 this.columnID_TRANG_THAI.AllowDBNull = false;
@@ -670,7 +669,12 @@ namespace IPCOREDS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string CAU_TRA_LOI {
                 get {
-                    return ((string)(this[this.tableDM_CAU_TRA_LOI.CAU_TRA_LOIColumn]));
+                    try {
+                        return ((string)(this[this.tableDM_CAU_TRA_LOI.CAU_TRA_LOIColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CAU_TRA_LOI\' in table \'DM_CAU_TRA_LOI\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableDM_CAU_TRA_LOI.CAU_TRA_LOIColumn] = value;
@@ -729,6 +733,18 @@ namespace IPCOREDS {
                 set {
                     this[this.tableDM_CAU_TRA_LOI.LINK_TL_THAM_KHAOColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCAU_TRA_LOINull() {
+                return this.IsNull(this.tableDM_CAU_TRA_LOI.CAU_TRA_LOIColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCAU_TRA_LOINull() {
+                this[this.tableDM_CAU_TRA_LOI.CAU_TRA_LOIColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1087,7 +1103,7 @@ SELECT ID, ID_CAU_HOI, CAU_TRA_LOI, NGUOI_TAO, NGAY_TAO, ID_TRANG_THAI, LINK_TL_
         public virtual int Insert(decimal ID_CAU_HOI, string CAU_TRA_LOI, decimal NGUOI_TAO, global::System.Nullable<global::System.DateTime> NGAY_TAO, decimal ID_TRANG_THAI, string LINK_TL_THAM_KHAO) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((decimal)(ID_CAU_HOI));
             if ((CAU_TRA_LOI == null)) {
-                throw new global::System.ArgumentNullException("CAU_TRA_LOI");
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(CAU_TRA_LOI));
@@ -1129,7 +1145,7 @@ SELECT ID, ID_CAU_HOI, CAU_TRA_LOI, NGUOI_TAO, NGAY_TAO, ID_TRANG_THAI, LINK_TL_
         public virtual int Update(decimal ID_CAU_HOI, string CAU_TRA_LOI, decimal NGUOI_TAO, global::System.Nullable<global::System.DateTime> NGAY_TAO, decimal ID_TRANG_THAI, string LINK_TL_THAM_KHAO, decimal Original_ID, decimal Original_ID_CAU_HOI, decimal Original_NGUOI_TAO, global::System.Nullable<global::System.DateTime> Original_NGAY_TAO, decimal Original_ID_TRANG_THAI, string Original_LINK_TL_THAM_KHAO, decimal ID) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((decimal)(ID_CAU_HOI));
             if ((CAU_TRA_LOI == null)) {
-                throw new global::System.ArgumentNullException("CAU_TRA_LOI");
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(CAU_TRA_LOI));

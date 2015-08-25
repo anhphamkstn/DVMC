@@ -22,10 +22,18 @@ namespace TOSApp.DanhMuc
         US_DM_CAU_HOI m_us_cau_hoi = new US_DM_CAU_HOI();
         US_CM_DM_TU_DIEN m_us_cmtd = new US_CM_DM_TU_DIEN();
         US_DM_CAU_TRA_LOI m_us_cau_tra_loi = new US_DM_CAU_TRA_LOI();
+        
 
         private void f100_dm_cau_hoi_de_Load(object sender, EventArgs e)
         {
-
+            if(us_user.dcIDNhom == 1)
+            {
+                layout_cau_tra_loi.Enabled = false;
+            }
+            else
+            {
+                layout_cau_tra_loi.Enabled = true;
+            }
         }
 
         private void load_data_cbo()
@@ -71,48 +79,11 @@ namespace TOSApp.DanhMuc
             else cb_da_duyet.Checked = false;
 
         }
-
-        private void btn_Luu_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (kiemtradulieu() == true)
-                {
-
-                    if (m_e_form_mode == DataEntryFormMode.InsertDataState)
-                    {
-                        form_to_us_cau_hoi();
-                        m_us_cau_hoi.Insert();
-                        form_to_us_cau_tra_loi();
-                        m_us_cau_tra_loi.Insert();
-                    }
-                    else
-                    {
-                        form_to_us_cau_hoi();
-                        m_us_cau_hoi.Update();
-                        form_to_us_cau_tra_loi();
-                        m_us_cau_tra_loi.Update();
-                    }
-                    MessageBox.Show("Thành công!");
-                    this.Close();
-                }
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
         private bool kiemtradulieu()
         {
             if (txt_cau_hoi.Text == "")
             {
                 MessageBox.Show("Nhập câu hỏi!");
-                return false;
-            }
-            else if (txt_cau_tra_loi.Text == "")
-            {
-                MessageBox.Show("Nhập câu trả lời!");
                 return false;
             }
             return true;
@@ -144,9 +115,46 @@ namespace TOSApp.DanhMuc
 
         }
 
-        private void btn_thoat_Click(object sender, EventArgs e)
+        private void simpbtn_luu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kiemtradulieu() == true)
+                {
+
+                    if (m_e_form_mode == DataEntryFormMode.InsertDataState)
+                    {
+                        form_to_us_cau_hoi();
+                        m_us_cau_hoi.Insert();
+                        form_to_us_cau_tra_loi();
+                        m_us_cau_tra_loi.Insert();
+                    }
+                    else
+                    {
+                        form_to_us_cau_hoi();
+                        m_us_cau_hoi.Update();
+                        form_to_us_cau_tra_loi();
+                        m_us_cau_tra_loi.Update();
+                    }
+                    MessageBox.Show("Thành công!");
+                    this.Close();
+                }
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+
+        }
+
+        private void simpbtn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
     }
