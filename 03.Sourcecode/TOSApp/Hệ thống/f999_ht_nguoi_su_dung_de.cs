@@ -19,32 +19,7 @@ namespace TOSApp.Hệ_thống
         }
         DataEntryFormMode m_e_form_mode = new DataEntryFormMode();
         US_HT_NGUOI_SU_DUNG m_us = new US_HT_NGUOI_SU_DUNG();
-        private void btn_luu_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if(kiemtrdulieu())
-                {
-                    if (m_e_form_mode == DataEntryFormMode.InsertDataState)
-                    {
-                        form_to_us();
-                        m_us.Insert();
-                    }
-                    else
-                    {
-                        form_to_us();
-                        m_us.Update();
-                    }
-                }
-                MessageBox.Show("Thành công!");
-                this.Close();
-            }
-            catch( Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
+        
         private void form_to_us()
         {
             m_us.strTEN_TRUY_CAP = txt_ten_truy_cap.Text;
@@ -69,11 +44,6 @@ namespace TOSApp.Hệ_thống
                 return false;
             }
             return true;
-        }
-
-        private void btn_thoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         internal void displayinsert()
@@ -110,6 +80,37 @@ namespace TOSApp.Hệ_thống
                 rad_n.Checked = true;
             }
                
+        }
+
+        private void simpbtn_luu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kiemtrdulieu())
+                {
+                    if (m_e_form_mode == DataEntryFormMode.InsertDataState)
+                    {
+                        form_to_us();
+                        m_us.Insert();
+                    }
+                    else
+                    {
+                        form_to_us();
+                        m_us.Update();
+                    }
+                }
+                MessageBox.Show("Thành công!");
+                this.Close();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void simpbtn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

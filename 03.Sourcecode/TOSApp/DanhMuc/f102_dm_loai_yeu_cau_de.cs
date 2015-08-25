@@ -26,33 +26,6 @@ namespace TOSApp.DanhMuc
 
         }
 
-        private void btn_luu_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (kiemtradulieu() == true)
-                {
-
-                    if (m_e_form_mode == DataEntryFormMode.InsertDataState)
-                    {
-                        form_to_us();
-                        m_us.Insert();
-                    }
-                    else
-                    {
-                        form_to_us();
-                        m_us.Update();
-                    }
-                    MessageBox.Show("Thành công!");
-                    this.Close();
-                }
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
         private void form_to_us()
         {
             m_us.dcID_CHA = CIPConvert.ToDecimal(cbo_nhom_dich_vu.SelectedValue.ToString());
@@ -67,11 +40,6 @@ namespace TOSApp.DanhMuc
         {
 
             return true;
-        }
-
-        private void btn_thoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         internal void displayinsert()
@@ -123,6 +91,38 @@ namespace TOSApp.DanhMuc
                 e.Handled = true;
             }
 
+        }
+
+        private void simpbtn_luu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (kiemtradulieu() == true)
+                {
+
+                    if (m_e_form_mode == DataEntryFormMode.InsertDataState)
+                    {
+                        form_to_us();
+                        m_us.Insert();
+                    }
+                    else
+                    {
+                        form_to_us();
+                        m_us.Update();
+                    }
+                    MessageBox.Show("Thành công!");
+                    this.Close();
+                }
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void simpbtn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

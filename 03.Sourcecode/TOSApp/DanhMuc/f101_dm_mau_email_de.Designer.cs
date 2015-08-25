@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f101_dm_mau_email_de));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,10 +40,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.m_btn_luu = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_thoat = new System.Windows.Forms.Button();
             this.m_richedit_noi_dung_email = new DevExpress.XtraRichEdit.RichEditControl();
+            this.simpbtn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.simpbtn_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -150,43 +151,19 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.m_btn_luu);
-            this.panel4.Location = new System.Drawing.Point(27, 22);
+            this.panel4.Controls.Add(this.simpbtn_luu);
+            this.panel4.Location = new System.Drawing.Point(23, 22);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 60);
+            this.panel4.Size = new System.Drawing.Size(104, 60);
             this.panel4.TabIndex = 10;
-            // 
-            // m_btn_luu
-            // 
-            this.m_btn_luu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_luu.Location = new System.Drawing.Point(0, 0);
-            this.m_btn_luu.Name = "m_btn_luu";
-            this.m_btn_luu.Size = new System.Drawing.Size(100, 60);
-            this.m_btn_luu.TabIndex = 8;
-            this.m_btn_luu.Text = "&Lưu";
-            this.m_btn_luu.UseVisualStyleBackColor = true;
-            this.m_btn_luu.Click += new System.EventHandler(this.m_btn_luu_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btn_thoat);
+            this.panel5.Controls.Add(this.simpbtn_thoat);
             this.panel5.Location = new System.Drawing.Point(158, 22);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(100, 60);
+            this.panel5.Size = new System.Drawing.Size(112, 60);
             this.panel5.TabIndex = 11;
-            // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(0, 0);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(100, 60);
-            this.btn_thoat.TabIndex = 9;
-            this.btn_thoat.Text = "&Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // m_richedit_noi_dung_email
             // 
@@ -199,6 +176,32 @@
             this.m_richedit_noi_dung_email.Options.MailMerge.KeepLastParagraph = false;
             this.m_richedit_noi_dung_email.Size = new System.Drawing.Size(813, 294);
             this.m_richedit_noi_dung_email.TabIndex = 15;
+            // 
+            // simpbtn_luu
+            // 
+            this.simpbtn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_luu.Appearance.Options.UseFont = true;
+            this.simpbtn_luu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpbtn_luu.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_luu.Image")));
+            this.simpbtn_luu.Location = new System.Drawing.Point(0, 0);
+            this.simpbtn_luu.Name = "simpbtn_luu";
+            this.simpbtn_luu.Size = new System.Drawing.Size(104, 60);
+            this.simpbtn_luu.TabIndex = 12;
+            this.simpbtn_luu.Text = "&Lưu";
+            this.simpbtn_luu.Click += new System.EventHandler(this.simpbtn_luu_Click);
+            // 
+            // simpbtn_thoat
+            // 
+            this.simpbtn_thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_thoat.Appearance.Options.UseFont = true;
+            this.simpbtn_thoat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpbtn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_thoat.Image")));
+            this.simpbtn_thoat.Location = new System.Drawing.Point(0, 0);
+            this.simpbtn_thoat.Name = "simpbtn_thoat";
+            this.simpbtn_thoat.Size = new System.Drawing.Size(112, 60);
+            this.simpbtn_thoat.TabIndex = 13;
+            this.simpbtn_thoat.Text = "&Thoát";
+            this.simpbtn_thoat.Click += new System.EventHandler(this.simpbtn_thoat_Click);
             // 
             // f101_dm_mau_email_de
             // 
@@ -234,10 +237,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button m_btn_luu;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btn_thoat;
         private DevExpress.XtraRichEdit.RichEditControl m_richedit_noi_dung_email;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_luu;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_thoat;
 
 
     }

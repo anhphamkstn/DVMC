@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f102_dm_loai_yeu_cau_de));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_thoat = new System.Windows.Forms.Button();
-            this.btn_luu = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.cbo_thoi_gian_xu_ly = new System.Windows.Forms.ComboBox();
@@ -48,6 +47,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.cbo_loai_dich_vu = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.simpbtn_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.simpbtn_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -69,35 +70,13 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btn_thoat);
-            this.panel2.Controls.Add(this.btn_luu);
+            this.panel2.Controls.Add(this.simpbtn_thoat);
+            this.panel2.Controls.Add(this.simpbtn_luu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(385, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(412, 77);
             this.panel2.TabIndex = 0;
-            // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_thoat.Location = new System.Drawing.Point(289, 14);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(111, 51);
-            this.btn_thoat.TabIndex = 1;
-            this.btn_thoat.Text = "&Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
-            // 
-            // btn_luu
-            // 
-            this.btn_luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luu.Location = new System.Drawing.Point(147, 14);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(111, 51);
-            this.btn_luu.TabIndex = 0;
-            this.btn_luu.Text = "&Lưu";
-            this.btn_luu.UseVisualStyleBackColor = true;
-            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -262,6 +241,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Loại dịch vụ :";
             // 
+            // simpbtn_thoat
+            // 
+            this.simpbtn_thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_thoat.Appearance.Options.UseFont = true;
+            this.simpbtn_thoat.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_thoat.Image")));
+            this.simpbtn_thoat.Location = new System.Drawing.Point(283, 20);
+            this.simpbtn_thoat.Name = "simpbtn_thoat";
+            this.simpbtn_thoat.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_thoat.TabIndex = 5;
+            this.simpbtn_thoat.Text = "&Thoát";
+            this.simpbtn_thoat.Click += new System.EventHandler(this.simpbtn_thoat_Click);
+            // 
+            // simpbtn_luu
+            // 
+            this.simpbtn_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_luu.Appearance.Options.UseFont = true;
+            this.simpbtn_luu.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_luu.Image")));
+            this.simpbtn_luu.Location = new System.Drawing.Point(137, 20);
+            this.simpbtn_luu.Name = "simpbtn_luu";
+            this.simpbtn_luu.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_luu.TabIndex = 4;
+            this.simpbtn_luu.Text = "&Lưu";
+            this.simpbtn_luu.Click += new System.EventHandler(this.simpbtn_luu_Click);
+            // 
             // f102_dm_loai_yeu_cau_de
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,8 +296,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_thoat;
-        private System.Windows.Forms.Button btn_luu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ComboBox cbo_loai_dich_vu;
@@ -311,5 +312,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_diem_khoi_luong;
         private System.Windows.Forms.TextBox txt_dich_vu;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_thoat;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_luu;
     }
 }

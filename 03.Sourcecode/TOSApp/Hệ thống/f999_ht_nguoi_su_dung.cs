@@ -34,7 +34,7 @@ namespace TOSApp.Hệ_thống
 
         }
 
-        private void btn_them_Click(object sender, EventArgs e)
+        private void simpbtn_them_Click(object sender, EventArgs e)
         {
             try
             {
@@ -43,15 +43,16 @@ namespace TOSApp.Hệ_thống
                 load_data_griv();
 
             }
-            catch ( Exception v_e)
+            catch (Exception v_e)
             {
-                
+
                 CSystemLog_100.ExceptionHandle(v_e);
             }
         }
 
-        private void btn_sua_Click(object sender, EventArgs e)
+        private void simpbtn_sua_Click(object sender, EventArgs e)
         {
+
             try
             {
                 DataRow v_dr = m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.FocusedRowHandle);

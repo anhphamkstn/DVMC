@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f101_dm_mau_email));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_btn_xoa = new System.Windows.Forms.Button();
-            this.m_btn_them = new System.Windows.Forms.Button();
-            this.m_btn_sua = new System.Windows.Forms.Button();
             this.m_grc_dm_mau_email = new DevExpress.XtraGrid.GridControl();
             this.m_grv_dm_mau_email = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.c_tieu_de_mail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_noi_dung_email = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_gui_cc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_ma_email = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.simpbtn_them = new DevExpress.XtraEditors.SimpleButton();
+            this.simpbtn_sua = new DevExpress.XtraEditors.SimpleButton();
+            this.simpbtn_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_mau_email)).BeginInit();
@@ -56,47 +57,14 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_btn_xoa);
-            this.panel1.Controls.Add(this.m_btn_them);
-            this.panel1.Controls.Add(this.m_btn_sua);
+            this.panel1.Controls.Add(this.simpbtn_xoa);
+            this.panel1.Controls.Add(this.simpbtn_sua);
+            this.panel1.Controls.Add(this.simpbtn_them);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(333, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(419, 100);
             this.panel1.TabIndex = 4;
-            // 
-            // m_btn_xoa
-            // 
-            this.m_btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa.Location = new System.Drawing.Point(308, 33);
-            this.m_btn_xoa.Name = "m_btn_xoa";
-            this.m_btn_xoa.Size = new System.Drawing.Size(99, 45);
-            this.m_btn_xoa.TabIndex = 3;
-            this.m_btn_xoa.Text = "&Xóa";
-            this.m_btn_xoa.UseVisualStyleBackColor = true;
-            this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
-            // 
-            // m_btn_them
-            // 
-            this.m_btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_them.Location = new System.Drawing.Point(10, 33);
-            this.m_btn_them.Name = "m_btn_them";
-            this.m_btn_them.Size = new System.Drawing.Size(99, 45);
-            this.m_btn_them.TabIndex = 1;
-            this.m_btn_them.Text = "&Thêm";
-            this.m_btn_them.UseVisualStyleBackColor = true;
-            this.m_btn_them.Click += new System.EventHandler(this.m_btn_them_Click);
-            // 
-            // m_btn_sua
-            // 
-            this.m_btn_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_sua.Location = new System.Drawing.Point(160, 33);
-            this.m_btn_sua.Name = "m_btn_sua";
-            this.m_btn_sua.Size = new System.Drawing.Size(99, 45);
-            this.m_btn_sua.TabIndex = 2;
-            this.m_btn_sua.Text = "&Sửa";
-            this.m_btn_sua.UseVisualStyleBackColor = true;
-            this.m_btn_sua.Click += new System.EventHandler(this.m_btn_sua_Click);
             // 
             // m_grc_dm_mau_email
             // 
@@ -152,6 +120,42 @@
             this.c_ma_email.Visible = true;
             this.c_ma_email.VisibleIndex = 3;
             // 
+            // simpbtn_them
+            // 
+            this.simpbtn_them.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_them.Appearance.Options.UseFont = true;
+            this.simpbtn_them.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_them.Image")));
+            this.simpbtn_them.Location = new System.Drawing.Point(31, 19);
+            this.simpbtn_them.Name = "simpbtn_them";
+            this.simpbtn_them.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_them.TabIndex = 5;
+            this.simpbtn_them.Text = "&Thêm";
+            this.simpbtn_them.Click += new System.EventHandler(this.simpbtn_them_Click);
+            // 
+            // simpbtn_sua
+            // 
+            this.simpbtn_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_sua.Appearance.Options.UseFont = true;
+            this.simpbtn_sua.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_sua.Image")));
+            this.simpbtn_sua.Location = new System.Drawing.Point(167, 19);
+            this.simpbtn_sua.Name = "simpbtn_sua";
+            this.simpbtn_sua.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_sua.TabIndex = 6;
+            this.simpbtn_sua.Text = "&Sửa";
+            this.simpbtn_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
+            // 
+            // simpbtn_xoa
+            // 
+            this.simpbtn_xoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_xoa.Appearance.Options.UseFont = true;
+            this.simpbtn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_xoa.Image")));
+            this.simpbtn_xoa.Location = new System.Drawing.Point(295, 19);
+            this.simpbtn_xoa.Name = "simpbtn_xoa";
+            this.simpbtn_xoa.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_xoa.TabIndex = 7;
+            this.simpbtn_xoa.Text = "&Xóa";
+            this.simpbtn_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
+            // 
             // f101_dm_mau_email
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,14 +178,14 @@
 
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button m_btn_xoa;
-        private System.Windows.Forms.Button m_btn_them;
-        private System.Windows.Forms.Button m_btn_sua;
         private DevExpress.XtraGrid.GridControl m_grc_dm_mau_email;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_dm_mau_email;
         private DevExpress.XtraGrid.Columns.GridColumn c_tieu_de_mail;
         private DevExpress.XtraGrid.Columns.GridColumn c_noi_dung_email;
         private DevExpress.XtraGrid.Columns.GridColumn c_gui_cc;
         private DevExpress.XtraGrid.Columns.GridColumn c_ma_email;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_them;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_sua;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_xoa;
     }
 }

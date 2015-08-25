@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f102_dm_loai_yeu_cau));
             this.m_grc_dm_loai_yeu_cau = new DevExpress.XtraGrid.GridControl();
             this.m_grv_dm_loai_yeu_cau = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.c_ten_yeu_cau_cha_cha = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -37,12 +38,12 @@
             this.c_thoi_gian_xu_ly = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.m_btn_them = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_btn_sua = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.m_btn_xoa = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.simpbtn_xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.simpbtn_sua = new DevExpress.XtraEditors.SimpleButton();
+            this.simpbtn_them = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_loai_yeu_cau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_dm_loai_yeu_cau)).BeginInit();
             this.panel1.SuspendLayout();
@@ -131,63 +132,30 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.m_btn_them);
+            this.panel5.Controls.Add(this.simpbtn_them);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel5.Location = new System.Drawing.Point(383, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(139, 90);
             this.panel5.TabIndex = 2;
             // 
-            // m_btn_them
-            // 
-            this.m_btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_them.Location = new System.Drawing.Point(19, 30);
-            this.m_btn_them.Name = "m_btn_them";
-            this.m_btn_them.Size = new System.Drawing.Size(105, 48);
-            this.m_btn_them.TabIndex = 0;
-            this.m_btn_them.Text = "&Thêm";
-            this.m_btn_them.UseVisualStyleBackColor = true;
-            this.m_btn_them.Click += new System.EventHandler(this.m_btn_them_Click);
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.m_btn_sua);
+            this.panel2.Controls.Add(this.simpbtn_sua);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(522, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(139, 90);
             this.panel2.TabIndex = 2;
             // 
-            // m_btn_sua
-            // 
-            this.m_btn_sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_sua.Location = new System.Drawing.Point(17, 30);
-            this.m_btn_sua.Name = "m_btn_sua";
-            this.m_btn_sua.Size = new System.Drawing.Size(105, 48);
-            this.m_btn_sua.TabIndex = 1;
-            this.m_btn_sua.Text = "&Sửa";
-            this.m_btn_sua.UseVisualStyleBackColor = true;
-            this.m_btn_sua.Click += new System.EventHandler(this.m_btn_sua_Click);
-            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.m_btn_xoa);
+            this.panel4.Controls.Add(this.simpbtn_xoa);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(661, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(139, 90);
             this.panel4.TabIndex = 1;
-            // 
-            // m_btn_xoa
-            // 
-            this.m_btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_btn_xoa.Location = new System.Drawing.Point(22, 30);
-            this.m_btn_xoa.Name = "m_btn_xoa";
-            this.m_btn_xoa.Size = new System.Drawing.Size(105, 48);
-            this.m_btn_xoa.TabIndex = 2;
-            this.m_btn_xoa.Text = "&Xóa";
-            this.m_btn_xoa.UseVisualStyleBackColor = true;
-            this.m_btn_xoa.Click += new System.EventHandler(this.m_btn_xoa_Click);
             // 
             // panel3
             // 
@@ -197,6 +165,42 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 346);
             this.panel3.TabIndex = 2;
+            // 
+            // simpbtn_xoa
+            // 
+            this.simpbtn_xoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_xoa.Appearance.Options.UseFont = true;
+            this.simpbtn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_xoa.Image")));
+            this.simpbtn_xoa.Location = new System.Drawing.Point(19, 30);
+            this.simpbtn_xoa.Name = "simpbtn_xoa";
+            this.simpbtn_xoa.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_xoa.TabIndex = 5;
+            this.simpbtn_xoa.Text = "&Xóa";
+            this.simpbtn_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
+            // 
+            // simpbtn_sua
+            // 
+            this.simpbtn_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_sua.Appearance.Options.UseFont = true;
+            this.simpbtn_sua.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_sua.Image")));
+            this.simpbtn_sua.Location = new System.Drawing.Point(22, 30);
+            this.simpbtn_sua.Name = "simpbtn_sua";
+            this.simpbtn_sua.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_sua.TabIndex = 4;
+            this.simpbtn_sua.Text = "&Sửa";
+            this.simpbtn_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
+            // 
+            // simpbtn_them
+            // 
+            this.simpbtn_them.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_them.Appearance.Options.UseFont = true;
+            this.simpbtn_them.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_them.Image")));
+            this.simpbtn_them.Location = new System.Drawing.Point(22, 30);
+            this.simpbtn_them.Name = "simpbtn_them";
+            this.simpbtn_them.Size = new System.Drawing.Size(98, 45);
+            this.simpbtn_them.TabIndex = 3;
+            this.simpbtn_them.Text = "&Thêm";
+            this.simpbtn_them.Click += new System.EventHandler(this.simpbtn_them_Click);
             // 
             // f102_dm_loai_yeu_cau
             // 
@@ -229,12 +233,12 @@
         private DevExpress.XtraGrid.Columns.GridColumn c_diem_khoi_luong;
         private DevExpress.XtraGrid.Columns.GridColumn c_thoi_gian_xu_ly;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button m_btn_xoa;
-        private System.Windows.Forms.Button m_btn_sua;
-        private System.Windows.Forms.Button m_btn_them;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_xoa;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_sua;
+        private DevExpress.XtraEditors.SimpleButton simpbtn_them;
     }
 }

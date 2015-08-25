@@ -51,20 +51,52 @@ namespace TOSApp.DanhMuc
             }
         }
 
-        private void m_btn_them_Click(object sender, EventArgs e)
+        private void simpbtn_them_Click(object sender, EventArgs e)
         {
-            f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
-            v_f.DisPlayForInsert();
-            load_data_grid();
+            try
+            {
+
+                f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
+                v_f.DisPlayForInsert();
+                load_data_grid();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
 
-        private void m_btn_sua_Click(object sender, EventArgs e)
+        private void simpbtn_xoa_Click(object sender, EventArgs e)
         {
-            DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
-            US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString()));
-            f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
-            v_f.DisPlayForUpdate(v_us);
-            load_data_grid();
+            try
+            {
+                DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
+                decimal v_id = CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString());
+                US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(v_id);
+                v_us.Delete();
+                MessageBox.Show("Da xoa thanh cong " + v_dr[DM_MAU_EMAIL.ID].ToString());
+                load_data_grid();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void simpbtn_sua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
+                US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString()));
+                f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
+                v_f.DisPlayForUpdate(v_us);
+                load_data_grid();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
        
     }

@@ -53,12 +53,12 @@ namespace TOSApp.DanhMuc
             m_us.strNOI_DUNG_EMAIL = m_richedit_noi_dung_email.HtmlText;
         }
 
-        private void btn_thoat_Click(object sender, EventArgs e)
+        private void f101_dm_mau_email_de_Load(object sender, EventArgs e)
         {
-            this.Close();
+
         }
 
-        private void m_btn_luu_Click(object sender, EventArgs e)
+        private void simpbtn_luu_Click(object sender, EventArgs e)
         {
 
             if (m_e_form_mode == DataEntryFormMode.InsertDataState)
@@ -76,9 +76,9 @@ namespace TOSApp.DanhMuc
             this.Close();
         }
 
-        private void f101_dm_mau_email_de_Load(object sender, EventArgs e)
+        private void simpbtn_thoat_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
