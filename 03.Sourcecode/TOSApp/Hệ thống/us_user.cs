@@ -29,6 +29,18 @@ namespace TOSApp
 		public static string strMAT_KHAU ;	
 		public static string strEMAIL ;
         public static decimal dcIDNhom;
+        public static string GetMD5(string txt)
+        {
+            string str = "";
+            Byte[] buffer = System.Text.Encoding.UTF8.GetBytes(txt);
+            System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
+            buffer = md5.ComputeHash(buffer);
+            foreach (byte tmp in buffer)
+            {
+                str += tmp.ToString("x2");
+            }
+            return str;
+        }
 
 	
 		#endregion

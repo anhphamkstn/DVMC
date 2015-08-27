@@ -389,6 +389,18 @@
     <Compile Include="Hệ thống\f000_login.Designer.cs">
       <DependentUpon>f000_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hệ thống\f999_doi_mat_khau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hệ thống\f999_doi_mat_khau.Designer.cs">
+      <DependentUpon>f999_doi_mat_khau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hệ thống\f999_doi_ten_dang_nhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hệ thống\f999_doi_ten_dang_nhap.Designer.cs">
+      <DependentUpon>f999_doi_ten_dang_nhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hệ thống\f999_ht_nguoi_su_dung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -508,6 +520,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hệ thống\f000_login.resx">
       <DependentUpon>f000_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hệ thống\f999_doi_mat_khau.resx">
+      <DependentUpon>f999_doi_mat_khau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hệ thống\f999_doi_ten_dang_nhap.resx">
+      <DependentUpon>f999_doi_ten_dang_nhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hệ thống\f999_ht_nguoi_su_dung.resx">
       <DependentUpon>f999_ht_nguoi_su_dung.cs</DependentUpon>

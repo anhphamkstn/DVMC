@@ -75,6 +75,13 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.m_cmd_show = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_dm_cau_hoi = new DevExpress.XtraBars.BarButtonItem();
+            this.m_barlist_thiet_lap = new DevExpress.XtraBars.BarListItem();
+            this.m_barsubitem_thiet_lap = new DevExpress.XtraBars.BarSubItem();
+            this.m_barsubitem_thiet_lap_tai_khoan = new DevExpress.XtraBars.BarSubItem();
+            this.m_barsubitem_doi_ten_dang_nhap = new DevExpress.XtraBars.BarSubItem();
+            this.m_barsubitem_doi_mat_khau = new DevExpress.XtraBars.BarSubItem();
+            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
+            this.m_barstatic_thiet_lap_tai_khoan = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_rbc_cau_hoi = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -442,10 +449,18 @@
             this.m_cmd_tat_ca_don_hang_TD,
             this.m_cmd_ds_don_hang_can_danh_gia_TM,
             this.m_cmd_show,
-            this.m_cmd_dm_cau_hoi});
+            this.m_cmd_dm_cau_hoi,
+            this.m_barlist_thiet_lap,
+            this.m_barsubitem_thiet_lap,
+            this.barListItem1,
+            this.m_barstatic_thiet_lap_tai_khoan,
+            this.m_barsubitem_thiet_lap_tai_khoan,
+            this.m_barsubitem_doi_ten_dang_nhap,
+            this.m_barsubitem_doi_mat_khau});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 24;
+            this.ribbonControl1.MaxItemId = 35;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.m_rbc_FO,
@@ -475,6 +490,53 @@
             this.m_cmd_dm_cau_hoi.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_cau_hoi.LargeGlyph")));
             this.m_cmd_dm_cau_hoi.Name = "m_cmd_dm_cau_hoi";
             this.m_cmd_dm_cau_hoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_dm_cau_hoi_ItemClick);
+            // 
+            // m_barlist_thiet_lap
+            // 
+            this.m_barlist_thiet_lap.Id = 32;
+            this.m_barlist_thiet_lap.Name = "m_barlist_thiet_lap";
+            // 
+            // m_barsubitem_thiet_lap
+            // 
+            this.m_barsubitem_thiet_lap.Caption = "Thiết lập";
+            this.m_barsubitem_thiet_lap.Id = 25;
+            this.m_barsubitem_thiet_lap.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_thiet_lap_tai_khoan)});
+            this.m_barsubitem_thiet_lap.Name = "m_barsubitem_thiet_lap";
+            // 
+            // m_barsubitem_thiet_lap_tai_khoan
+            // 
+            this.m_barsubitem_thiet_lap_tai_khoan.Caption = "Thiết lập tài khoản";
+            this.m_barsubitem_thiet_lap_tai_khoan.Id = 29;
+            this.m_barsubitem_thiet_lap_tai_khoan.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_ten_dang_nhap),
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_mat_khau)});
+            this.m_barsubitem_thiet_lap_tai_khoan.Name = "m_barsubitem_thiet_lap_tai_khoan";
+            // 
+            // m_barsubitem_doi_ten_dang_nhap
+            // 
+            this.m_barsubitem_doi_ten_dang_nhap.Caption = "Đổi tên đăng nhập";
+            this.m_barsubitem_doi_ten_dang_nhap.Id = 30;
+            this.m_barsubitem_doi_ten_dang_nhap.Name = "m_barsubitem_doi_ten_dang_nhap";
+            this.m_barsubitem_doi_ten_dang_nhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_barsubitem_doi_ten_dang_nhap_ItemClick);
+            // 
+            // m_barsubitem_doi_mat_khau
+            // 
+            this.m_barsubitem_doi_mat_khau.Caption = "Đổi mật khẩu";
+            this.m_barsubitem_doi_mat_khau.Id = 31;
+            this.m_barsubitem_doi_mat_khau.Name = "m_barsubitem_doi_mat_khau";
+            this.m_barsubitem_doi_mat_khau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_barsubitem_doi_mat_khau_ItemClick);
+            // 
+            // barListItem1
+            // 
+            this.barListItem1.Id = 33;
+            this.barListItem1.Name = "barListItem1";
+            // 
+            // m_barstatic_thiet_lap_tai_khoan
+            // 
+            this.m_barstatic_thiet_lap_tai_khoan.Id = 34;
+            this.m_barstatic_thiet_lap_tai_khoan.Name = "m_barstatic_thiet_lap_tai_khoan";
+            this.m_barstatic_thiet_lap_tai_khoan.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonPage2
             // 
@@ -588,6 +650,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup16;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarListItem m_barlist_thiet_lap;
+        private DevExpress.XtraBars.BarSubItem m_barsubitem_thiet_lap;
+        private DevExpress.XtraBars.BarListItem barListItem1;
+        private DevExpress.XtraBars.BarStaticItem m_barstatic_thiet_lap_tai_khoan;
+        private DevExpress.XtraBars.BarSubItem m_barsubitem_thiet_lap_tai_khoan;
+        private DevExpress.XtraBars.BarSubItem m_barsubitem_doi_ten_dang_nhap;
+        private DevExpress.XtraBars.BarSubItem m_barsubitem_doi_mat_khau;
 
     }
 }

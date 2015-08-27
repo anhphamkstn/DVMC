@@ -56,17 +56,20 @@ namespace TOSApp.HT
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetLogin(v_ds, m_txt_id.Text, m_txt_pass.Text,CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString()));
-            if (v_ds.Tables[0].Rows.Count > 0)
-            {
-                DataRow v_dr = v_ds.Tables[0].Rows[0];
-                US_V_HT_NGUOI_SU_DUNG ht_us = new US_V_HT_NGUOI_SU_DUNG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-                us_user.dcID = ht_us.dcID;
-                us_user.dcIDNhom = ht_us.dcID_NHOM;
-                us_user.dcCHI_NHANH = CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString());
-               return true;    
-            }
-            else return false;
+            string str = "SELECT *FROM [BKI_DVMC].[dbo].[V_HT_NGUOI_SU_DUNG] WHERE TEN_TRUY_CAP = " + " '" + m_txt_id.Text + "' " + "AND MAT_KHAU = " + " '" + us_user.GetMD5(m_txt_pass.Text) + "' " + "AND ID_CHI_NHANH =" + m_cb_chi_nhanh.SelectedValue.ToString();
+            v_us.FillDatasetWithQuery(v_ds,str );
+            
+                //v_us.FillDatasetLogin(v_ds, m_txt_id.Text, m_txt_pass.Text, CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString()));
+                if (v_ds.Tables[0].Rows.Count > 0)
+                {
+                    DataRow v_dr = v_ds.Tables[0].Rows[0];
+                    US_V_HT_NGUOI_SU_DUNG ht_us = new US_V_HT_NGUOI_SU_DUNG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                    us_user.dcID = ht_us.dcID;
+                    us_user.dcIDNhom = ht_us.dcID_NHOM;
+                    us_user.dcCHI_NHANH = CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString());
+                    return true;
+                }
+                else return false;
         }
 
        

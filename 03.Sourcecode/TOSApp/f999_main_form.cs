@@ -10,6 +10,7 @@ using TOSApp.ChucNang;
 using IP.Core.IPCommon;
 using TOSApp.BaoCao;
 using TOSApp.DanhMuc;
+using TOSApp.Hệ_thống;
 
 namespace TOSApp
 {
@@ -387,6 +388,18 @@ namespace TOSApp
             f100_dm_cau_hoi v_f = new f100_dm_cau_hoi();
             v_f.MdiParent = this;
             v_f.Show();
+        }
+
+        private void m_barsubitem_doi_ten_dang_nhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f999_doi_ten_dang_nhap v_f = new f999_doi_ten_dang_nhap();
+            v_f.ShowDialog();
+        }
+
+        private void m_barsubitem_doi_mat_khau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f999_doi_mat_khau v_f = new f999_doi_mat_khau();
+            v_f.ShowDialog();
         }
 
       
