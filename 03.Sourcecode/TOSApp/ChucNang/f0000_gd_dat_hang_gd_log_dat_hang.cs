@@ -144,7 +144,7 @@ namespace TOSApp.ChucNang
 
             else if (us_user.dcIDNhom == 5) //td
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC = 305 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (305,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
                  //tm
             else m_query = m_query + "And ID_LOAI_THAO_TAC = 297";
@@ -567,6 +567,7 @@ namespace TOSApp.ChucNang
                 update_hoan_thanh_don_hang_TD();
                 ghi_log_admin_da_hoan_thanh_don_hang_TD();
                 MessageBox.Show("Hoàn thành!");
+                load_data_2_grid();
             }
             catch (Exception v_e )
             {
@@ -613,6 +614,7 @@ namespace TOSApp.ChucNang
                 update_hoan_thanh_don_hang_PM();
                 ghi_log_admin_da_hoan_thanh_don_hang_PM();
                 MessageBox.Show("Hoàn thành!");
+                load_data_2_grid();
             }
             catch (Exception v_e)
             {
