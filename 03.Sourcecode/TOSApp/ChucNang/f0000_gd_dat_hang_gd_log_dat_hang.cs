@@ -134,7 +134,7 @@ namespace TOSApp.ChucNang
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
                    
             else if (us_user.dcIDNhom == 3) //pm
@@ -194,6 +194,7 @@ namespace TOSApp.ChucNang
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate(v_us);
+                
             }
             catch (Exception v_e)
             {
