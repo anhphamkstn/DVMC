@@ -58,27 +58,27 @@
             this.m_panel_TM = new System.Windows.Forms.Panel();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_TD = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.m_panel_TD_tu_choi = new System.Windows.Forms.Panel();
             this.m_cmd_TD_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.panel17 = new System.Windows.Forms.Panel();
+            this.m_panel_TD_hoan_thanh = new System.Windows.Forms.Panel();
             this.m_cmd_TD_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
-            this.panel18 = new System.Windows.Forms.Panel();
+            this.m_panel_TD_tiep_nhan = new System.Windows.Forms.Panel();
             this.m_cmd_TD_tiep_nhan_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_PM = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.m_panel_PM_dieu_phoi_lai = new System.Windows.Forms.Panel();
             this.m_cmd_PM_dieu_phoi = new DevExpress.XtraEditors.SimpleButton();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.m_panel_PM_hoan_thanh = new System.Windows.Forms.Panel();
             this.m_cmd_PM_bao_Cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.m_panel_PM_gui_TD = new System.Windows.Forms.Panel();
             this.m_cmd_PM_gui_cho_TD = new DevExpress.XtraEditors.SimpleButton();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.m_panel_PM_tiep_nhan = new System.Windows.Forms.Panel();
             this.m_cmd_PM_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_BO = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.m_panel_BO_hoan_thanh = new System.Windows.Forms.Panel();
             this.m_cmd_bao_cao_hoan_thanh = new DevExpress.XtraEditors.SimpleButton();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.m_panel_BO_tu_choi = new System.Windows.Forms.Panel();
             this.m_cmd_BO_tu_choi = new DevExpress.XtraEditors.SimpleButton();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.m_panel_BO_tiep_nhan = new System.Windows.Forms.Panel();
             this.m_cmd_FO_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_FO = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -97,18 +97,18 @@
             this.panel1.SuspendLayout();
             this.m_panel_TM.SuspendLayout();
             this.m_panel_TD.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
+            this.m_panel_TD_tu_choi.SuspendLayout();
+            this.m_panel_TD_hoan_thanh.SuspendLayout();
+            this.m_panel_TD_tiep_nhan.SuspendLayout();
             this.m_panel_PM.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.m_panel_PM_dieu_phoi_lai.SuspendLayout();
+            this.m_panel_PM_hoan_thanh.SuspendLayout();
+            this.m_panel_PM_gui_TD.SuspendLayout();
+            this.m_panel_PM_tiep_nhan.SuspendLayout();
             this.m_panel_BO.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.m_panel_BO_hoan_thanh.SuspendLayout();
+            this.m_panel_BO_tu_choi.SuspendLayout();
+            this.m_panel_BO_tiep_nhan.SuspendLayout();
             this.m_panel_FO.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -132,7 +132,6 @@
             // m_grc_gd_dat_hang_gd_log_dat_hang
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
             gridLevelNode1.LevelTemplate = this.gridView1;
             gridLevelNode1.RelationName = "Level1";
             this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
@@ -363,17 +362,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1242, 472);
+            this.panel1.Size = new System.Drawing.Size(1242, 509);
             this.panel1.TabIndex = 24;
             // 
             // m_panel_TM
             // 
             this.m_panel_TM.Controls.Add(this.m_cmd_TM_danh_gia);
-            this.m_panel_TM.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_panel_TM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_panel_TM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_panel_TM.Location = new System.Drawing.Point(0, 472);
+            this.m_panel_TM.Location = new System.Drawing.Point(0, 0);
             this.m_panel_TM.Name = "m_panel_TM";
-            this.m_panel_TM.Size = new System.Drawing.Size(1242, 37);
+            this.m_panel_TM.Size = new System.Drawing.Size(1242, 509);
             this.m_panel_TM.TabIndex = 23;
             this.m_panel_TM.Visible = false;
             // 
@@ -385,7 +384,7 @@
             this.m_cmd_TM_danh_gia.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_TM_danh_gia.Image")));
             this.m_cmd_TM_danh_gia.Location = new System.Drawing.Point(1070, 0);
             this.m_cmd_TM_danh_gia.Name = "m_cmd_TM_danh_gia";
-            this.m_cmd_TM_danh_gia.Size = new System.Drawing.Size(172, 37);
+            this.m_cmd_TM_danh_gia.Size = new System.Drawing.Size(172, 509);
             this.m_cmd_TM_danh_gia.TabIndex = 1;
             this.m_cmd_TM_danh_gia.Text = "Đánh giá";
             this.m_cmd_TM_danh_gia.Visible = false;
@@ -393,9 +392,9 @@
             // 
             // m_panel_TD
             // 
-            this.m_panel_TD.Controls.Add(this.panel16);
-            this.m_panel_TD.Controls.Add(this.panel17);
-            this.m_panel_TD.Controls.Add(this.panel18);
+            this.m_panel_TD.Controls.Add(this.m_panel_TD_tu_choi);
+            this.m_panel_TD.Controls.Add(this.m_panel_TD_hoan_thanh);
+            this.m_panel_TD.Controls.Add(this.m_panel_TD_tiep_nhan);
             this.m_panel_TD.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_panel_TD.Location = new System.Drawing.Point(0, 509);
             this.m_panel_TD.Name = "m_panel_TD";
@@ -403,14 +402,14 @@
             this.m_panel_TD.TabIndex = 22;
             this.m_panel_TD.Visible = false;
             // 
-            // panel16
+            // m_panel_TD_tu_choi
             // 
-            this.panel16.Controls.Add(this.m_cmd_TD_huy_hon_hang);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel16.Location = new System.Drawing.Point(741, 0);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(165, 39);
-            this.panel16.TabIndex = 0;
+            this.m_panel_TD_tu_choi.Controls.Add(this.m_cmd_TD_huy_hon_hang);
+            this.m_panel_TD_tu_choi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_TD_tu_choi.Location = new System.Drawing.Point(741, 0);
+            this.m_panel_TD_tu_choi.Name = "m_panel_TD_tu_choi";
+            this.m_panel_TD_tu_choi.Size = new System.Drawing.Size(165, 39);
+            this.m_panel_TD_tu_choi.TabIndex = 0;
             // 
             // m_cmd_TD_huy_hon_hang
             // 
@@ -426,14 +425,14 @@
             this.m_cmd_TD_huy_hon_hang.Visible = false;
             this.m_cmd_TD_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_admin_huy_hon_hang_Click);
             // 
-            // panel17
+            // m_panel_TD_hoan_thanh
             // 
-            this.panel17.Controls.Add(this.m_cmd_TD_hoan_thanh);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel17.Location = new System.Drawing.Point(906, 0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(164, 39);
-            this.panel17.TabIndex = 0;
+            this.m_panel_TD_hoan_thanh.Controls.Add(this.m_cmd_TD_hoan_thanh);
+            this.m_panel_TD_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_TD_hoan_thanh.Location = new System.Drawing.Point(906, 0);
+            this.m_panel_TD_hoan_thanh.Name = "m_panel_TD_hoan_thanh";
+            this.m_panel_TD_hoan_thanh.Size = new System.Drawing.Size(164, 39);
+            this.m_panel_TD_hoan_thanh.TabIndex = 0;
             // 
             // m_cmd_TD_hoan_thanh
             // 
@@ -449,14 +448,14 @@
             this.m_cmd_TD_hoan_thanh.Visible = false;
             this.m_cmd_TD_hoan_thanh.Click += new System.EventHandler(this.m_cmd_admin_hoan_thanh_Click);
             // 
-            // panel18
+            // m_panel_TD_tiep_nhan
             // 
-            this.panel18.Controls.Add(this.m_cmd_TD_tiep_nhan_xu_ly);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel18.Location = new System.Drawing.Point(1070, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(172, 39);
-            this.panel18.TabIndex = 0;
+            this.m_panel_TD_tiep_nhan.Controls.Add(this.m_cmd_TD_tiep_nhan_xu_ly);
+            this.m_panel_TD_tiep_nhan.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_TD_tiep_nhan.Location = new System.Drawing.Point(1070, 0);
+            this.m_panel_TD_tiep_nhan.Name = "m_panel_TD_tiep_nhan";
+            this.m_panel_TD_tiep_nhan.Size = new System.Drawing.Size(172, 39);
+            this.m_panel_TD_tiep_nhan.TabIndex = 0;
             // 
             // m_cmd_TD_tiep_nhan_xu_ly
             // 
@@ -474,10 +473,10 @@
             // 
             // m_panel_PM
             // 
-            this.m_panel_PM.Controls.Add(this.panel15);
-            this.m_panel_PM.Controls.Add(this.panel10);
-            this.m_panel_PM.Controls.Add(this.panel9);
-            this.m_panel_PM.Controls.Add(this.panel8);
+            this.m_panel_PM.Controls.Add(this.m_panel_PM_dieu_phoi_lai);
+            this.m_panel_PM.Controls.Add(this.m_panel_PM_hoan_thanh);
+            this.m_panel_PM.Controls.Add(this.m_panel_PM_gui_TD);
+            this.m_panel_PM.Controls.Add(this.m_panel_PM_tiep_nhan);
             this.m_panel_PM.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_panel_PM.Location = new System.Drawing.Point(0, 548);
             this.m_panel_PM.Name = "m_panel_PM";
@@ -485,14 +484,14 @@
             this.m_panel_PM.TabIndex = 21;
             this.m_panel_PM.Visible = false;
             // 
-            // panel15
+            // m_panel_PM_dieu_phoi_lai
             // 
-            this.panel15.Controls.Add(this.m_cmd_PM_dieu_phoi);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel15.Location = new System.Drawing.Point(569, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(172, 34);
-            this.panel15.TabIndex = 1;
+            this.m_panel_PM_dieu_phoi_lai.Controls.Add(this.m_cmd_PM_dieu_phoi);
+            this.m_panel_PM_dieu_phoi_lai.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_PM_dieu_phoi_lai.Location = new System.Drawing.Point(569, 0);
+            this.m_panel_PM_dieu_phoi_lai.Name = "m_panel_PM_dieu_phoi_lai";
+            this.m_panel_PM_dieu_phoi_lai.Size = new System.Drawing.Size(172, 34);
+            this.m_panel_PM_dieu_phoi_lai.TabIndex = 1;
             // 
             // m_cmd_PM_dieu_phoi
             // 
@@ -508,14 +507,14 @@
             this.m_cmd_PM_dieu_phoi.Visible = false;
             this.m_cmd_PM_dieu_phoi.Click += new System.EventHandler(this.m_cmd_PM_dieu_phoi_Click);
             // 
-            // panel10
+            // m_panel_PM_hoan_thanh
             // 
-            this.panel10.Controls.Add(this.m_cmd_PM_bao_Cao_hoan_thanh);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(741, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(165, 34);
-            this.panel10.TabIndex = 0;
+            this.m_panel_PM_hoan_thanh.Controls.Add(this.m_cmd_PM_bao_Cao_hoan_thanh);
+            this.m_panel_PM_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_PM_hoan_thanh.Location = new System.Drawing.Point(741, 0);
+            this.m_panel_PM_hoan_thanh.Name = "m_panel_PM_hoan_thanh";
+            this.m_panel_PM_hoan_thanh.Size = new System.Drawing.Size(165, 34);
+            this.m_panel_PM_hoan_thanh.TabIndex = 0;
             // 
             // m_cmd_PM_bao_Cao_hoan_thanh
             // 
@@ -533,14 +532,14 @@
             this.m_cmd_PM_bao_Cao_hoan_thanh.Visible = false;
             this.m_cmd_PM_bao_Cao_hoan_thanh.Click += new System.EventHandler(this.m_cmd_PM_bao_Cao_hoan_thanh_Click);
             // 
-            // panel9
+            // m_panel_PM_gui_TD
             // 
-            this.panel9.Controls.Add(this.m_cmd_PM_gui_cho_TD);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(906, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(164, 34);
-            this.panel9.TabIndex = 0;
+            this.m_panel_PM_gui_TD.Controls.Add(this.m_cmd_PM_gui_cho_TD);
+            this.m_panel_PM_gui_TD.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_PM_gui_TD.Location = new System.Drawing.Point(906, 0);
+            this.m_panel_PM_gui_TD.Name = "m_panel_PM_gui_TD";
+            this.m_panel_PM_gui_TD.Size = new System.Drawing.Size(164, 34);
+            this.m_panel_PM_gui_TD.TabIndex = 0;
             // 
             // m_cmd_PM_gui_cho_TD
             // 
@@ -558,14 +557,14 @@
             this.m_cmd_PM_gui_cho_TD.Visible = false;
             this.m_cmd_PM_gui_cho_TD.Click += new System.EventHandler(this.m_cmd_PM_gui_cho_admin_Click);
             // 
-            // panel8
+            // m_panel_PM_tiep_nhan
             // 
-            this.panel8.Controls.Add(this.m_cmd_PM_tiep_nhan);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel8.Location = new System.Drawing.Point(1070, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(172, 34);
-            this.panel8.TabIndex = 0;
+            this.m_panel_PM_tiep_nhan.Controls.Add(this.m_cmd_PM_tiep_nhan);
+            this.m_panel_PM_tiep_nhan.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_PM_tiep_nhan.Location = new System.Drawing.Point(1070, 0);
+            this.m_panel_PM_tiep_nhan.Name = "m_panel_PM_tiep_nhan";
+            this.m_panel_PM_tiep_nhan.Size = new System.Drawing.Size(172, 34);
+            this.m_panel_PM_tiep_nhan.TabIndex = 0;
             // 
             // m_cmd_PM_tiep_nhan
             // 
@@ -583,9 +582,9 @@
             // 
             // m_panel_BO
             // 
-            this.m_panel_BO.Controls.Add(this.panel12);
-            this.m_panel_BO.Controls.Add(this.panel13);
-            this.m_panel_BO.Controls.Add(this.panel14);
+            this.m_panel_BO.Controls.Add(this.m_panel_BO_hoan_thanh);
+            this.m_panel_BO.Controls.Add(this.m_panel_BO_tu_choi);
+            this.m_panel_BO.Controls.Add(this.m_panel_BO_tiep_nhan);
             this.m_panel_BO.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_panel_BO.Location = new System.Drawing.Point(0, 582);
             this.m_panel_BO.Name = "m_panel_BO";
@@ -593,14 +592,14 @@
             this.m_panel_BO.TabIndex = 20;
             this.m_panel_BO.Visible = false;
             // 
-            // panel12
+            // m_panel_BO_hoan_thanh
             // 
-            this.panel12.Controls.Add(this.m_cmd_bao_cao_hoan_thanh);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel12.Location = new System.Drawing.Point(741, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(165, 39);
-            this.panel12.TabIndex = 0;
+            this.m_panel_BO_hoan_thanh.Controls.Add(this.m_cmd_bao_cao_hoan_thanh);
+            this.m_panel_BO_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_BO_hoan_thanh.Location = new System.Drawing.Point(741, 0);
+            this.m_panel_BO_hoan_thanh.Name = "m_panel_BO_hoan_thanh";
+            this.m_panel_BO_hoan_thanh.Size = new System.Drawing.Size(165, 39);
+            this.m_panel_BO_hoan_thanh.TabIndex = 0;
             // 
             // m_cmd_bao_cao_hoan_thanh
             // 
@@ -618,14 +617,14 @@
             this.m_cmd_bao_cao_hoan_thanh.Visible = false;
             this.m_cmd_bao_cao_hoan_thanh.Click += new System.EventHandler(this.m_cmd_bao_cao_hoan_thanh_Click);
             // 
-            // panel13
+            // m_panel_BO_tu_choi
             // 
-            this.panel13.Controls.Add(this.m_cmd_BO_tu_choi);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel13.Location = new System.Drawing.Point(906, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(164, 39);
-            this.panel13.TabIndex = 0;
+            this.m_panel_BO_tu_choi.Controls.Add(this.m_cmd_BO_tu_choi);
+            this.m_panel_BO_tu_choi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_BO_tu_choi.Location = new System.Drawing.Point(906, 0);
+            this.m_panel_BO_tu_choi.Name = "m_panel_BO_tu_choi";
+            this.m_panel_BO_tu_choi.Size = new System.Drawing.Size(164, 39);
+            this.m_panel_BO_tu_choi.TabIndex = 0;
             // 
             // m_cmd_BO_tu_choi
             // 
@@ -641,14 +640,14 @@
             this.m_cmd_BO_tu_choi.Visible = false;
             this.m_cmd_BO_tu_choi.Click += new System.EventHandler(this.m_cmd_BO_tu_choi_Click);
             // 
-            // panel14
+            // m_panel_BO_tiep_nhan
             // 
-            this.panel14.Controls.Add(this.m_cmd_FO_tiep_nhan);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(1070, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(172, 39);
-            this.panel14.TabIndex = 0;
+            this.m_panel_BO_tiep_nhan.Controls.Add(this.m_cmd_FO_tiep_nhan);
+            this.m_panel_BO_tiep_nhan.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_BO_tiep_nhan.Location = new System.Drawing.Point(1070, 0);
+            this.m_panel_BO_tiep_nhan.Name = "m_panel_BO_tiep_nhan";
+            this.m_panel_BO_tiep_nhan.Size = new System.Drawing.Size(172, 39);
+            this.m_panel_BO_tiep_nhan.TabIndex = 0;
             // 
             // m_cmd_FO_tiep_nhan
             // 
@@ -698,7 +697,7 @@
             this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
             this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(172, 39);
             this.m_cmd_chinh_sua_don_hang.TabIndex = 1;
-            this.m_cmd_chinh_sua_don_hang.Text = "Chỉnh sửa đơn hàng";
+            this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật đơn hàng";
             this.m_cmd_chinh_sua_don_hang.Visible = false;
             this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
             // 
@@ -789,18 +788,18 @@
             this.panel1.ResumeLayout(false);
             this.m_panel_TM.ResumeLayout(false);
             this.m_panel_TD.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
+            this.m_panel_TD_tu_choi.ResumeLayout(false);
+            this.m_panel_TD_hoan_thanh.ResumeLayout(false);
+            this.m_panel_TD_tiep_nhan.ResumeLayout(false);
             this.m_panel_PM.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            this.m_panel_PM_dieu_phoi_lai.ResumeLayout(false);
+            this.m_panel_PM_hoan_thanh.ResumeLayout(false);
+            this.m_panel_PM_gui_TD.ResumeLayout(false);
+            this.m_panel_PM_tiep_nhan.ResumeLayout(false);
             this.m_panel_BO.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
+            this.m_panel_BO_hoan_thanh.ResumeLayout(false);
+            this.m_panel_BO_tu_choi.ResumeLayout(false);
+            this.m_panel_BO_tiep_nhan.ResumeLayout(false);
             this.m_panel_FO.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -817,26 +816,8 @@
         private System.Windows.Forms.Panel m_panel_TM;
         private DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
         private System.Windows.Forms.Panel m_panel_TD;
-        private System.Windows.Forms.Panel panel16;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_TD_huy_hon_hang;
-        private System.Windows.Forms.Panel panel17;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_TD_hoan_thanh;
-        private System.Windows.Forms.Panel panel18;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_TD_tiep_nhan_xu_ly;
         private System.Windows.Forms.Panel m_panel_PM;
-        private System.Windows.Forms.Panel panel10;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_PM_bao_Cao_hoan_thanh;
-        private System.Windows.Forms.Panel panel9;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_PM_gui_cho_TD;
-        private System.Windows.Forms.Panel panel8;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_PM_tiep_nhan;
         private System.Windows.Forms.Panel m_panel_BO;
-        private System.Windows.Forms.Panel panel12;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_bao_cao_hoan_thanh;
-        private System.Windows.Forms.Panel panel13;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_BO_tu_choi;
-        private System.Windows.Forms.Panel panel14;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_FO_tiep_nhan;
         private System.Windows.Forms.Panel m_panel_FO;
         private System.Windows.Forms.Panel panel7;
         private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
@@ -871,7 +852,25 @@
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
         private System.Windows.Forms.Panel panel11;
         private DevExpress.XtraEditors.SimpleButton m_cmd_PM_dieu_phoi_lai;
-        private System.Windows.Forms.Panel panel15;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_PM_dieu_phoi;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_TD_hoan_thanh;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_PM_bao_Cao_hoan_thanh;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_bao_cao_hoan_thanh;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_TD_huy_hon_hang;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_TD_tiep_nhan_xu_ly;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_PM_gui_cho_TD;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_PM_tiep_nhan;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_BO_tu_choi;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_FO_tiep_nhan;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_PM_dieu_phoi;
+        public System.Windows.Forms.Panel m_panel_TD_tu_choi;
+        public System.Windows.Forms.Panel m_panel_TD_hoan_thanh;
+        public System.Windows.Forms.Panel m_panel_TD_tiep_nhan;
+        public System.Windows.Forms.Panel m_panel_PM_hoan_thanh;
+        public System.Windows.Forms.Panel m_panel_PM_gui_TD;
+        public System.Windows.Forms.Panel m_panel_PM_tiep_nhan;
+        public System.Windows.Forms.Panel m_panel_BO_hoan_thanh;
+        public System.Windows.Forms.Panel m_panel_BO_tu_choi;
+        public System.Windows.Forms.Panel m_panel_BO_tiep_nhan;
+        public System.Windows.Forms.Panel m_panel_PM_dieu_phoi_lai;
     }
 }

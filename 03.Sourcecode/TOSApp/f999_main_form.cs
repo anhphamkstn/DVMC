@@ -303,7 +303,7 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
-                
+                v_f.m_panel_BO_hoan_thanh.Visible = false;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -319,6 +319,8 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                 v_f.MdiParent = this;
+                v_f.m_panel_BO_tu_choi.Visible = false;
+                v_f.m_panel_BO_tiep_nhan.Visible = false;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -334,6 +336,7 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
+                v_f.m_panel_PM_hoan_thanh.Visible = false;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -349,6 +352,9 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                 v_f.MdiParent = this;
+                v_f.m_panel_PM_dieu_phoi_lai.Visible = false;
+                v_f.m_panel_PM_gui_TD.Visible = false;
+                v_f.m_panel_PM_tiep_nhan.Visible = false;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -364,6 +370,7 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                 v_f.MdiParent = this;
+                v_f.m_panel_TD_hoan_thanh.Visible = false;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -379,6 +386,8 @@ namespace TOSApp
             {
                 f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                 v_f.MdiParent = this;
+                v_f.m_panel_TD_tu_choi.Visible = false;
+                v_f.m_panel_TD_tiep_nhan.Visible = false;
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -409,6 +418,7 @@ namespace TOSApp
             {
                 f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
                 v_f.MdiParent = this;
+                
                 v_f.Show();
             }
             catch (Exception v_e)

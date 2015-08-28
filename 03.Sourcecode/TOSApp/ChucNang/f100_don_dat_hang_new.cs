@@ -527,8 +527,9 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                us_2_form(v_us);
                 format_controlls();
+                us_2_form(v_us);
+             
                 m_e_form_mode= DataEntryFormMode.UpdateDataState;
                 M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                 this.ShowDialog();
@@ -575,6 +576,7 @@ namespace TOSApp.ChucNang
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.Enabled = false;
             m_dat_thoi_gian_dat_hang.Enabled = false;
+            m_cbo_trang_thai_don_hang.Enabled = false;
         }
 
         private void m_cbo_loai_dich_vu_1_SelectedValueChanged(object sender, EventArgs e)

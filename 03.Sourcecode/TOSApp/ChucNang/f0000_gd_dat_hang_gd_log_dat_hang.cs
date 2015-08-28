@@ -27,7 +27,8 @@ namespace TOSApp.ChucNang
             //    if (us_user.dcIDNhom == 2) format_controll_BO();
             //    else if (us_user.dcIDNhom == 3) format_controll_PM();
             //    else if (us_user.dcIDNhom == 5) format_controll_TD();
-            //    else format_controll_TM();                
+            //    else format_controll_TM(); 
+            
         }
 
         private void format_controll_for_each_user(decimal p)
@@ -878,6 +879,8 @@ namespace TOSApp.ChucNang
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+    
 
      
 

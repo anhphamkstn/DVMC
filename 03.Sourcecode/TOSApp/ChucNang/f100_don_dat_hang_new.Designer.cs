@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f100_don_dat_hang_new));
             this.label1 = new System.Windows.Forms.Label();
             this.m_txt_ma_don_hang = new System.Windows.Forms.TextBox();
             this.m_grb_loai_dich_vu = new System.Windows.Forms.GroupBox();
+            this.m_cbo_dich_vu = new System.Windows.Forms.ComboBox();
+            this.m_cbo_loai_dich_vu_2 = new System.Windows.Forms.ComboBox();
+            this.m_cbo_loai_dich_vu_1 = new System.Windows.Forms.ComboBox();
             this.m_lbl_dich_vu = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,7 +45,7 @@
             this.m_chk_gui_mail_yn = new System.Windows.Forms.CheckBox();
             this.m_cbo_trang_thai_don_hang = new System.Windows.Forms.ComboBox();
             this.m_lbl_trang_thai_don_hang = new System.Windows.Forms.Label();
-            this.ImageList = new System.Windows.Forms.ImageList(this.components);
+            this.ImageList = new System.Windows.Forms.ImageList();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_pnl_nguoi_dat_hang_infor = new System.Windows.Forms.Panel();
             this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
@@ -79,9 +81,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.m_txt_lich_su_trao_doi = new System.Windows.Forms.TextBox();
             this.m_txt_phan_hoi_tu_dvmc = new System.Windows.Forms.TextBox();
-            this.m_cbo_loai_dich_vu_1 = new System.Windows.Forms.ComboBox();
-            this.m_cbo_loai_dich_vu_2 = new System.Windows.Forms.ComboBox();
-            this.m_cbo_dich_vu = new System.Windows.Forms.ComboBox();
             this.m_grb_loai_dich_vu.SuspendLayout();
             this.m_pnl_out_place_dm.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -142,6 +141,32 @@
             this.m_grb_loai_dich_vu.TabIndex = 8;
             this.m_grb_loai_dich_vu.TabStop = false;
             this.m_grb_loai_dich_vu.Text = "Loại dịch vụ yêu cầu";
+            // 
+            // m_cbo_dich_vu
+            // 
+            this.m_cbo_dich_vu.FormattingEnabled = true;
+            this.m_cbo_dich_vu.Location = new System.Drawing.Point(790, 31);
+            this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
+            this.m_cbo_dich_vu.Size = new System.Drawing.Size(171, 22);
+            this.m_cbo_dich_vu.TabIndex = 36;
+            // 
+            // m_cbo_loai_dich_vu_2
+            // 
+            this.m_cbo_loai_dich_vu_2.FormattingEnabled = true;
+            this.m_cbo_loai_dich_vu_2.Location = new System.Drawing.Point(445, 30);
+            this.m_cbo_loai_dich_vu_2.Name = "m_cbo_loai_dich_vu_2";
+            this.m_cbo_loai_dich_vu_2.Size = new System.Drawing.Size(225, 22);
+            this.m_cbo_loai_dich_vu_2.TabIndex = 35;
+            this.m_cbo_loai_dich_vu_2.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_SelectedIndexChanged);
+            // 
+            // m_cbo_loai_dich_vu_1
+            // 
+            this.m_cbo_loai_dich_vu_1.FormattingEnabled = true;
+            this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(103, 32);
+            this.m_cbo_loai_dich_vu_1.Name = "m_cbo_loai_dich_vu_1";
+            this.m_cbo_loai_dich_vu_1.Size = new System.Drawing.Size(207, 22);
+            this.m_cbo_loai_dich_vu_1.TabIndex = 34;
+            this.m_cbo_loai_dich_vu_1.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_1_SelectedValueChanged);
             // 
             // m_lbl_dich_vu
             // 
@@ -331,7 +356,7 @@
             this.m_dat_thoi_gian_dat_hang.Name = "m_dat_thoi_gian_dat_hang";
             this.m_dat_thoi_gian_dat_hang.Size = new System.Drawing.Size(206, 20);
             this.m_dat_thoi_gian_dat_hang.TabIndex = 4;
-            this.m_dat_thoi_gian_dat_hang.Value = new System.DateTime(2015, 5, 17, 0, 0, 0, 0);
+            this.m_dat_thoi_gian_dat_hang.Value = new System.DateTime(2015, 8, 28, 14, 2, 37, 0);
             // 
             // m_txt_dien_thoai
             // 
@@ -698,32 +723,6 @@
             this.m_txt_phan_hoi_tu_dvmc.Name = "m_txt_phan_hoi_tu_dvmc";
             this.m_txt_phan_hoi_tu_dvmc.Size = new System.Drawing.Size(481, 45);
             this.m_txt_phan_hoi_tu_dvmc.TabIndex = 0;
-            // 
-            // m_cbo_loai_dich_vu_1
-            // 
-            this.m_cbo_loai_dich_vu_1.FormattingEnabled = true;
-            this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(103, 32);
-            this.m_cbo_loai_dich_vu_1.Name = "m_cbo_loai_dich_vu_1";
-            this.m_cbo_loai_dich_vu_1.Size = new System.Drawing.Size(207, 22);
-            this.m_cbo_loai_dich_vu_1.TabIndex = 34;
-            this.m_cbo_loai_dich_vu_1.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_1_SelectedValueChanged);
-            // 
-            // m_cbo_loai_dich_vu_2
-            // 
-            this.m_cbo_loai_dich_vu_2.FormattingEnabled = true;
-            this.m_cbo_loai_dich_vu_2.Location = new System.Drawing.Point(445, 30);
-            this.m_cbo_loai_dich_vu_2.Name = "m_cbo_loai_dich_vu_2";
-            this.m_cbo_loai_dich_vu_2.Size = new System.Drawing.Size(225, 22);
-            this.m_cbo_loai_dich_vu_2.TabIndex = 35;
-            this.m_cbo_loai_dich_vu_2.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_SelectedIndexChanged);
-            // 
-            // m_cbo_dich_vu
-            // 
-            this.m_cbo_dich_vu.FormattingEnabled = true;
-            this.m_cbo_dich_vu.Location = new System.Drawing.Point(790, 31);
-            this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
-            this.m_cbo_dich_vu.Size = new System.Drawing.Size(171, 22);
-            this.m_cbo_dich_vu.TabIndex = 36;
             // 
             // f100_don_dat_hang_new
             // 
