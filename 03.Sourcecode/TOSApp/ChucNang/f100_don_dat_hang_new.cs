@@ -147,16 +147,23 @@ namespace TOSApp.ChucNang
                 
                     if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
                     {
-                        udpate_don_hang();                     
+                        udpate_don_hang();
+                        update_log_gd_dat_hang();
                         ghi_log_thay_doi_don_hang();
                         MessageBox.Show("đơn hàng đã được cập nhật thông tin");
                         this.Close();
                     }
                     else
                     {
-                        luu_don_hang();
-                        dieu_phoi_don_hang();
-                        this.Close();
+                        if (Kiem_tra_du_lieu_truoc_luu() == true)
+                        {
+                            luu_don_hang();
+                            dieu_phoi_don_hang();
+                            this.Close();
+                        }
+                        else
+                            MessageBox.Show("thông tin đơn hàng chưa đủ");
+                        
                     }  
                 
             }
@@ -165,6 +172,14 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void update_log_gd_dat_hang()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(M_us.dcID);
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "đơn hàng vừa được cập nhật";
+            v_us.Update();
         }
 
         private void ghi_log_thay_doi_don_hang()
@@ -331,7 +346,15 @@ namespace TOSApp.ChucNang
 
         private bool Kiem_tra_du_lieu_truoc_luu()
         {
-           
+            if (m_txt_ho_ten_nguoi_dat_hang.Text=="")
+            {
+                return false;
+            }else
+            if( m_txt_dien_thoai.Text=="")return false;
+            else if (m_txt_phan_hoi_tu_dvmc.Text=="")
+            {
+                return false;
+            }
             return true;
         }
 
@@ -569,7 +592,11 @@ namespace TOSApp.ChucNang
         private void format_controlls()
         {
             m_txt_dien_thoai.Enabled = false;
+            m_txt_dien_thoai.BackColor = SystemColors.Control;
             m_txt_ho_ten_nguoi_dat_hang.Enabled = false;
+            m_txt_ma_don_hang.BackColor = SystemColors.Control;
+            m_txt_ho_ten_nguoi_dat_hang.Enabled = false;
+            m_txt_ho_ten_nguoi_dat_hang.BackColor = SystemColors.Control;
             m_cbo_user_nhan_vien_dat_hang.Enabled = false;
             m_cbo_dv_don_vi.Enabled = false;
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;

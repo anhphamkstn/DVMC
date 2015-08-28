@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IP.Core.IPCommon;
+using IPCOREUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +32,23 @@ namespace TOSApp.ChucNang
 
           
  
+        }
+
+        private void m_cmd_chinh_sua_don_hang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                v_f100.displayForUpdate(v_us);
+
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
     }
 }

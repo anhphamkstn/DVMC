@@ -130,7 +130,7 @@ namespace TOSApp.ChucNang
 
             string m_query = "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where THAO_TAC_HET_HAN_YN = 'N'";
             if (us_user.dcIDNhom == 1) //fo
-                m_query = m_query + "And ID_LOAI_THAO_TAC = 310 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID ;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (310,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID ;
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
@@ -188,19 +188,7 @@ namespace TOSApp.ChucNang
         #region chỉnh sửa đơn hàng
         private void m_cmd_chinh_sua_don_hang_Click(object sender, EventArgs e)
         {
-            try
-            {
-                DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-                v_f100.displayForUpdate(v_us);
-                
-            }
-            catch (Exception v_e)
-            {
-
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
+          
         }
         #endregion
 

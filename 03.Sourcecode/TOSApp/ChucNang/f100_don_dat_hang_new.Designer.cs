@@ -161,6 +161,7 @@
             // 
             // m_cbo_loai_dich_vu_1
             // 
+            this.m_cbo_loai_dich_vu_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.m_cbo_loai_dich_vu_1.FormattingEnabled = true;
             this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(103, 32);
             this.m_cbo_loai_dich_vu_1.Name = "m_cbo_loai_dich_vu_1";
@@ -356,7 +357,7 @@
             this.m_dat_thoi_gian_dat_hang.Name = "m_dat_thoi_gian_dat_hang";
             this.m_dat_thoi_gian_dat_hang.Size = new System.Drawing.Size(206, 20);
             this.m_dat_thoi_gian_dat_hang.TabIndex = 4;
-            this.m_dat_thoi_gian_dat_hang.Value = new System.DateTime(2015, 8, 28, 14, 2, 37, 0);
+            this.m_dat_thoi_gian_dat_hang.Value = new System.DateTime(2015, 8, 28, 0, 0, 0, 0);
             // 
             // m_txt_dien_thoai
             // 

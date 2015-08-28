@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -82,7 +82,6 @@
             this.m_cmd_FO_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_FO = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -110,7 +109,6 @@
             this.m_panel_BO_tu_choi.SuspendLayout();
             this.m_panel_BO_tiep_nhan.SuspendLayout();
             this.m_panel_FO.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -133,10 +131,10 @@
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.LevelTemplate = this.gridView1;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.LevelTemplate = this.gridView1;
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
@@ -679,28 +677,11 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.m_cmd_chinh_sua_don_hang);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(569, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(172, 39);
             this.panel7.TabIndex = 2;
-            // 
-            // m_cmd_chinh_sua_don_hang
-            // 
-            this.m_cmd_chinh_sua_don_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_chinh_sua_don_hang.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseFont = true;
-            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseForeColor = true;
-            this.m_cmd_chinh_sua_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_chinh_sua_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chinh_sua_don_hang.Image")));
-            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
-            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(172, 39);
-            this.m_cmd_chinh_sua_don_hang.TabIndex = 1;
-            this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật đơn hàng";
-            this.m_cmd_chinh_sua_don_hang.Visible = false;
-            this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
             // 
             // panel6
             // 
@@ -802,7 +783,6 @@
             this.m_panel_BO_tu_choi.ResumeLayout(false);
             this.m_panel_BO_tiep_nhan.ResumeLayout(false);
             this.m_panel_FO.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -821,7 +801,6 @@
         private System.Windows.Forms.Panel m_panel_BO;
         private System.Windows.Forms.Panel m_panel_FO;
         private System.Windows.Forms.Panel panel7;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
         private System.Windows.Forms.Panel panel6;
         private DevExpress.XtraEditors.SimpleButton m_cmd_dieu_phoi_cho_PM;
         private System.Windows.Forms.Panel panel5;

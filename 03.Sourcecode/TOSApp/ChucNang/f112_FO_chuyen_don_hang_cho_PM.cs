@@ -45,7 +45,7 @@ namespace TOSApp.ChucNang
             
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có id là: \n"+m_us.dcID_NGUOI_NHAN_THAO_TAC+" ,gửi kèm:  " +m_txt_gui_kem.Text;
+            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có id là: \n"+m_us.strTEN_NGUOI_NHAN_THAO_TAC+" ,gửi kèm:  " +m_txt_gui_kem.Text;
             v_US.Insert();
             
         }
