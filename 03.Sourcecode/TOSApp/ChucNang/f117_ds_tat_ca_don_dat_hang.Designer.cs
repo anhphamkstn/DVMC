@@ -230,7 +230,6 @@
             this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(200, 43);
             this.m_cmd_chinh_sua_don_hang.TabIndex = 2;
             this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật đơn hàng";
-            this.m_cmd_chinh_sua_don_hang.Visible = false;
             this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
             // 
             // f117_ds_tat_ca_don_dat_hang
