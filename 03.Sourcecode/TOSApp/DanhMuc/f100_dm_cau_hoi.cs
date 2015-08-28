@@ -32,9 +32,12 @@ namespace TOSApp.DanhMuc
             v_us.FillDatasetWithTableName(v_ds, "V_DM_CAU_HOI");
             m_grc_dm_cau_hoi.DataSource = v_ds.Tables[0];
             if (us_user.dcIDNhom == 1)
-                simpbtn_xoa.Visible = false;
+            {
+
+                m_panel_xoa.Visible = false;
+            }
             else
-                simpbtn_xoa.Visible = true;
+                m_panel_xoa.Visible = true;
         }
 
         private void m_grv_dm_cau_hoi_RowUpdated(object sender, DevExpress.XtraGrid.Views.Base.RowObjectEventArgs e)

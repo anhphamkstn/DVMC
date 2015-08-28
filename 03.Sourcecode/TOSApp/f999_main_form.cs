@@ -11,6 +11,9 @@ using IP.Core.IPCommon;
 using TOSApp.BaoCao;
 using TOSApp.DanhMuc;
 using TOSApp.Hệ_thống;
+using DevExpress.XtraEditors;
+using DevExpress.XtraBars.Ribbon;
+using System.Collections;
 
 namespace TOSApp
 {
@@ -19,10 +22,80 @@ namespace TOSApp
         public f999_main_form()
         {
             InitializeComponent();
-            format_button_controll();
+            format_controll_for_each_user(us_user.dcIDNhom);
+           // format_button_controll();
         }
 
-        private void format_button_controll()
+
+        private void GetAllControl(f999_main_form c, List<Control> list)
+        {
+            foreach (Control control in c.Controls)
+            {
+                list.Add(control);
+
+                if (control.GetType() == typeof(Panel))
+                    GetAllControl(c, list);
+            }
+        }
+
+        private void format_controll_for_each_user(decimal p)
+        {
+
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_HT_PHAN_QUYEN_CHO_NHOM where id_NHOM_NGUOI_SU_DUNG=" + us_user.dcIDNhom);
+
+            //List<Control> list = new List<Control>();
+
+            //GetAllControl(this, list);
+
+            ArrayList visiblePages = ribbonControl1.TotalPageCategory.GetVisiblePages();
+            foreach (RibbonPage page in visiblePages)
+            {
+                for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
+                {
+                    if (page.Name == v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
+                    {
+                        page.Visible = true;
+                        break;
+                    }
+                    else page.Visible = false;
+
+                }
+
+
+                //if (page.Text == "Selection")
+                //{
+                //    page.Visible = false;
+                //    break;
+                //}
+            }
+
+
+            //foreach (Control control in list)
+            //{
+            //    if (control.GetType() == typeof(RibbonPage) )
+            //    {
+            //        for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
+            //        {
+            //            if (control.Name == v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
+            //            {
+            //                control.Visible = true;
+            //            }
+
+            //        }
+            //    }
+            //}
+        }
+
+    
+
+        
+
+       
+
+        private  void format_button_controll()
         {
             if (user_id == 1)
             {

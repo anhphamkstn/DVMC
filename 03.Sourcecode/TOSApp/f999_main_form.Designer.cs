@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -82,7 +81,7 @@
             this.m_barsubitem_doi_mat_khau = new DevExpress.XtraBars.BarSubItem();
             this.barListItem1 = new DevExpress.XtraBars.BarListItem();
             this.m_barstatic_thiet_lap_tai_khoan = new DevExpress.XtraBars.BarStaticItem();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.m_rbc_ls_giao_dich = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_rbc_cau_hoi = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -105,7 +104,6 @@
             this.m_rbc_bao_cao.Image = ((System.Drawing.Image)(resources.GetObject("m_rbc_bao_cao.Image")));
             this.m_rbc_bao_cao.Name = "m_rbc_bao_cao";
             this.m_rbc_bao_cao.Text = "Báo cáo";
-            this.m_rbc_bao_cao.Visible = false;
             // 
             // ribbonPageGroup6
             // 
@@ -462,15 +460,14 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1,
             this.m_rbc_FO,
             this.m_rbc_BO,
             this.m_rbc_PM,
             this.m_rbc_TD,
             this.m_rbc_TM,
-            this.m_rbc_bao_cao,
-            this.ribbonPage2,
-            this.m_rbc_cau_hoi});
+            this.m_rbc_ls_giao_dich,
+            this.m_rbc_cau_hoi,
+            this.m_rbc_bao_cao});
             this.ribbonControl1.Size = new System.Drawing.Size(1186, 163);
             // 
             // m_cmd_show
@@ -538,12 +535,12 @@
             this.m_barstatic_thiet_lap_tai_khoan.Name = "m_barstatic_thiet_lap_tai_khoan";
             this.m_barstatic_thiet_lap_tai_khoan.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
-            // ribbonPage2
+            // m_rbc_ls_giao_dich
             // 
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.m_rbc_ls_giao_dich.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup15});
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Lịch sử giao dịch";
+            this.m_rbc_ls_giao_dich.Name = "m_rbc_ls_giao_dich";
+            this.m_rbc_ls_giao_dich.Text = "Lịch sử giao dịch";
             // 
             // ribbonPageGroup15
             // 
@@ -643,7 +640,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.BarButtonItem m_cmd_show;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPage m_rbc_ls_giao_dich;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.BarButtonItem m_cmd_dm_cau_hoi;
         private DevExpress.XtraBars.Ribbon.RibbonPage m_rbc_cau_hoi;

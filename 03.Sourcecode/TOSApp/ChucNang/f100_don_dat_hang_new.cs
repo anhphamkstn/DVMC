@@ -255,8 +255,6 @@ namespace TOSApp.ChucNang
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "FO đã tiep nhan";
             v_us.Insert();
-            //TOSApp.us_user.dcID = v_us.dcID;
-          //  MessageBox.Show("Đã tiếp nhận đơn hàng");
             id_log = v_us.dcID;
             return v_us.dcID;
 

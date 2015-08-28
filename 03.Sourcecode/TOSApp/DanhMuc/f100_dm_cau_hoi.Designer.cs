@@ -59,12 +59,12 @@
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.simpbtn_xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.simpbtn_sua = new DevExpress.XtraEditors.SimpleButton();
-            this.simpbtn_them = new DevExpress.XtraEditors.SimpleButton();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.m_cmd_them = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.m_cmd_sua = new DevExpress.XtraEditors.SimpleButton();
+            this.m_panel_xoa = new System.Windows.Forms.Panel();
+            this.m_cmd_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_cau_hoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_dm_cau_hoi)).BeginInit();
@@ -86,9 +86,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.m_panel_xoa.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,7 +116,7 @@
             this.repositoryItemCheckEdit1,
             this.repositoryItemLookUpEdit1,
             this.repositoryItemComboBox6});
-            this.m_grc_dm_cau_hoi.Size = new System.Drawing.Size(838, 431);
+            this.m_grc_dm_cau_hoi.Size = new System.Drawing.Size(838, 457);
             this.m_grc_dm_cau_hoi.TabIndex = 2;
             this.m_grc_dm_cau_hoi.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_dm_cau_hoi});
@@ -342,84 +342,87 @@
             // 
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 431);
+            this.panel1.Location = new System.Drawing.Point(0, 457);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 75);
+            this.panel1.Size = new System.Drawing.Size(838, 49);
             this.panel1.TabIndex = 6;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.m_panel_xoa);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(364, 0);
+            this.panel2.Location = new System.Drawing.Point(212, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(474, 75);
+            this.panel2.Size = new System.Drawing.Size(626, 49);
             this.panel2.TabIndex = 4;
-            // 
-            // simpbtn_xoa
-            // 
-            this.simpbtn_xoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpbtn_xoa.Appearance.Options.UseFont = true;
-            this.simpbtn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_xoa.Image")));
-            this.simpbtn_xoa.Location = new System.Drawing.Point(18, 14);
-            this.simpbtn_xoa.Name = "simpbtn_xoa";
-            this.simpbtn_xoa.Size = new System.Drawing.Size(98, 45);
-            this.simpbtn_xoa.TabIndex = 2;
-            this.simpbtn_xoa.Text = "&Xóa";
-            this.simpbtn_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
-            // 
-            // simpbtn_sua
-            // 
-            this.simpbtn_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpbtn_sua.Appearance.Options.UseFont = true;
-            this.simpbtn_sua.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_sua.Image")));
-            this.simpbtn_sua.Location = new System.Drawing.Point(15, 14);
-            this.simpbtn_sua.Name = "simpbtn_sua";
-            this.simpbtn_sua.Size = new System.Drawing.Size(98, 45);
-            this.simpbtn_sua.TabIndex = 1;
-            this.simpbtn_sua.Text = "&Sửa";
-            this.simpbtn_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
-            // 
-            // simpbtn_them
-            // 
-            this.simpbtn_them.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpbtn_them.Appearance.Options.UseFont = true;
-            this.simpbtn_them.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_them.Image")));
-            this.simpbtn_them.Location = new System.Drawing.Point(9, 14);
-            this.simpbtn_them.Name = "simpbtn_them";
-            this.simpbtn_them.Size = new System.Drawing.Size(98, 45);
-            this.simpbtn_them.TabIndex = 0;
-            this.simpbtn_them.Text = "&Thêm";
-            this.simpbtn_them.Click += new System.EventHandler(this.simpbtn_them_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.simpbtn_sua);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(218, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(128, 75);
-            this.panel3.TabIndex = 5;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.simpbtn_them);
+            this.panel4.Controls.Add(this.m_cmd_them);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(90, 0);
+            this.panel4.Location = new System.Drawing.Point(83, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(128, 75);
+            this.panel4.Size = new System.Drawing.Size(188, 49);
             this.panel4.TabIndex = 6;
             // 
-            // panel5
+            // m_cmd_them
             // 
-            this.panel5.Controls.Add(this.simpbtn_xoa);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(346, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(128, 75);
-            this.panel5.TabIndex = 6;
+            this.m_cmd_them.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_them.Appearance.Options.UseFont = true;
+            this.m_cmd_them.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_them.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_them.Image")));
+            this.m_cmd_them.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_them.Name = "m_cmd_them";
+            this.m_cmd_them.Size = new System.Drawing.Size(188, 49);
+            this.m_cmd_them.TabIndex = 0;
+            this.m_cmd_them.Text = "&Thêm";
+            this.m_cmd_them.Click += new System.EventHandler(this.simpbtn_them_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.m_cmd_sua);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(271, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(182, 49);
+            this.panel3.TabIndex = 5;
+            // 
+            // m_cmd_sua
+            // 
+            this.m_cmd_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_sua.Appearance.Options.UseFont = true;
+            this.m_cmd_sua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_sua.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_sua.Image")));
+            this.m_cmd_sua.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_sua.Name = "m_cmd_sua";
+            this.m_cmd_sua.Size = new System.Drawing.Size(182, 49);
+            this.m_cmd_sua.TabIndex = 1;
+            this.m_cmd_sua.Text = "&Sửa";
+            this.m_cmd_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
+            // 
+            // m_panel_xoa
+            // 
+            this.m_panel_xoa.Controls.Add(this.m_cmd_xoa);
+            this.m_panel_xoa.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_xoa.Location = new System.Drawing.Point(453, 0);
+            this.m_panel_xoa.Name = "m_panel_xoa";
+            this.m_panel_xoa.Size = new System.Drawing.Size(173, 49);
+            this.m_panel_xoa.TabIndex = 6;
+            // 
+            // m_cmd_xoa
+            // 
+            this.m_cmd_xoa.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_xoa.Appearance.Options.UseFont = true;
+            this.m_cmd_xoa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_xoa.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xoa.Image")));
+            this.m_cmd_xoa.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_xoa.Name = "m_cmd_xoa";
+            this.m_cmd_xoa.Size = new System.Drawing.Size(173, 49);
+            this.m_cmd_xoa.TabIndex = 2;
+            this.m_cmd_xoa.Text = "&Xóa";
+            this.m_cmd_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
             // 
             // panel6
             // 
@@ -427,7 +430,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(838, 431);
+            this.panel6.Size = new System.Drawing.Size(838, 457);
             this.panel6.TabIndex = 7;
             // 
             // f100_dm_cau_hoi
@@ -460,9 +463,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.m_panel_xoa.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -499,12 +502,12 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox6;
-        private DevExpress.XtraEditors.SimpleButton simpbtn_xoa;
-        private DevExpress.XtraEditors.SimpleButton simpbtn_sua;
-        private DevExpress.XtraEditors.SimpleButton simpbtn_them;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_xoa;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_sua;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_them;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel m_panel_xoa;
         private System.Windows.Forms.Panel panel6;
     }
 }
