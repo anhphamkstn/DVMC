@@ -188,7 +188,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 321;//trang thai vua được cập nhật
             v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            v_us.dcID_NGUOI_NHAN_THAO_TAC= M_us.dcID_NGUOI_NHAN_THAO_TAC;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
