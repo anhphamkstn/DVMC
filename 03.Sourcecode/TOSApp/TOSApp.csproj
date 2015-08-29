@@ -359,18 +359,6 @@
     <Compile Include="DanhMuc\UserControl_dm_cau_hoi.Designer.cs">
       <DependentUpon>UserControl_dm_cau_hoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="f001_main_FO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f001_main_FO.Designer.cs">
-      <DependentUpon>f001_main_FO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="f002_main_BO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="f002_main_BO.designer.cs">
-      <DependentUpon>f002_main_BO.cs</DependentUpon>
-    </Compile>
     <Compile Include="f003_main_PM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -534,12 +522,6 @@
       <DependentUpon>f999_ht_nguoi_su_dung_de.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="licenses.licx" />
-    <EmbeddedResource Include="f001_main_FO.resx">
-      <DependentUpon>f001_main_FO.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="f002_main_BO.resx">
-      <DependentUpon>f002_main_BO.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="f003_main_PM.resx">
       <DependentUpon>f003_main_PM.cs</DependentUpon>
     </EmbeddedResource>

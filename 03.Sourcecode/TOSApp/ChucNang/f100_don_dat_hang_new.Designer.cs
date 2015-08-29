@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f100_don_dat_hang_new));
             this.label1 = new System.Windows.Forms.Label();
             this.m_txt_ma_don_hang = new System.Windows.Forms.TextBox();
@@ -45,7 +46,7 @@
             this.m_chk_gui_mail_yn = new System.Windows.Forms.CheckBox();
             this.m_cbo_trang_thai_don_hang = new System.Windows.Forms.ComboBox();
             this.m_lbl_trang_thai_don_hang = new System.Windows.Forms.Label();
-            this.ImageList = new System.Windows.Forms.ImageList();
+            this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_pnl_nguoi_dat_hang_infor = new System.Windows.Forms.Panel();
             this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
@@ -144,6 +145,7 @@
             // 
             // m_cbo_dich_vu
             // 
+            this.m_cbo_dich_vu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_dich_vu.FormattingEnabled = true;
             this.m_cbo_dich_vu.Location = new System.Drawing.Point(790, 31);
             this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
@@ -152,6 +154,7 @@
             // 
             // m_cbo_loai_dich_vu_2
             // 
+            this.m_cbo_loai_dich_vu_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_loai_dich_vu_2.FormattingEnabled = true;
             this.m_cbo_loai_dich_vu_2.Location = new System.Drawing.Point(445, 30);
             this.m_cbo_loai_dich_vu_2.Name = "m_cbo_loai_dich_vu_2";
@@ -161,7 +164,7 @@
             // 
             // m_cbo_loai_dich_vu_1
             // 
-            this.m_cbo_loai_dich_vu_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.m_cbo_loai_dich_vu_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_loai_dich_vu_1.FormattingEnabled = true;
             this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(103, 32);
             this.m_cbo_loai_dich_vu_1.Name = "m_cbo_loai_dich_vu_1";

@@ -36,9 +36,10 @@ namespace TOSApp.HT
                 {
                     if (check_login())
                     {
-                       
+                        this.Hide();
                         f999_main_form v_f = new f999_main_form();
                         v_f.ShowDialog();
+                        this.Close();
 
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";
@@ -57,10 +58,7 @@ namespace TOSApp.HT
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            string str = "SELECT *FROM [BKI_DVMC].[dbo].[V_HT_NGUOI_SU_DUNG] WHERE TEN_TRUY_CAP = " + " '" + m_txt_id.Text + "' " + "AND MAT_KHAU = " + " '" + us_user.GetMD5(m_txt_pass.Text) + "' " + "AND ID_CHI_NHANH =" + m_cb_chi_nhanh.SelectedValue.ToString();
-            v_us.FillDatasetWithQuery(v_ds,str );
-            
-                //v_us.FillDatasetLogin(v_ds, m_txt_id.Text, m_txt_pass.Text, CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString()));
+            v_us.FillDatasetLogin(v_ds, m_txt_id.Text, us_user.GetMD5(m_txt_pass.Text), CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString()));
                 if (v_ds.Tables[0].Rows.Count > 0)
                 {
                     DataRow v_dr = v_ds.Tables[0].Rows[0];

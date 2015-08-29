@@ -120,6 +120,7 @@ namespace TOSApp.ChucNang
         }
 
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
+        public decimal m_id_nguoi_dieu_phoi;
 
         private void load_data_2_grid()
         {
@@ -139,7 +140,7 @@ namespace TOSApp.ChucNang
                    
             else if (us_user.dcIDNhom == 3) //pm
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in( 303,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in( 303,321,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
                 else m_query = m_query + "And ID_LOAI_THAO_TAC = 304 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
 
             else if (us_user.dcIDNhom == 5) //td
@@ -268,6 +269,7 @@ namespace TOSApp.ChucNang
                 update_log_tiep_nhan();
                 ghi_log_da_nhan_xu_ly();
                 load_data_2_grid();
+                //m_id_nguoi_dieu_phoi = m_us.dcID_NGUOI_TAO_THAO_TAC;
                 MessageBox.Show("Đã tiếp nhận!");
             }
             catch (Exception v_e)
@@ -305,13 +307,26 @@ namespace TOSApp.ChucNang
         #region BO từ chối đơn hàng
         private void m_cmd_BO_tu_choi_Click(object sender, EventArgs e)
         {
-
+            decimal id_nguoi_tao;
             try
             {
                 fill_data_to_m_us();
-                update_log_trang_thai_don_hang();
+                if(m_us.dcID_LOAI_THAO_TAC == 313)
+                {
+                    US_DUNG_CHUNG v_us_dung_chung = new US_DUNG_CHUNG();
+                    DataSet v_ds = new DataSet();
+                    v_ds.Tables.Add(new DataTable());
+                    v_us_dung_chung.FillDatasetWithQuery(v_ds, "SELECT id FROM GD_LOG_DAT_HANG gldh WHERE gldh.ID_LOAI_THAO_TAC in (295,311) AND gldh.ID_GD_DAT_HANG = " + m_us.dcID_DON_HANG + "ORDER BY id DESC");
+                    US_GD_LOG_DAT_HANG v_us_log = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[0]["ID"].ToString()));
+                    id_nguoi_tao = v_us_log.dcID_NGUOI_TAO_THAO_TAC;
+                }
+                else
+                {
+                    id_nguoi_tao = m_us.dcID_NGUOI_TAO_THAO_TAC;
+                }
                 f107_tu_choi_don_hang v_f107 = new f107_tu_choi_don_hang();
-                v_f107.displayForRefuse(m_us);
+                v_f107.displayForRefuse(m_us, id_nguoi_tao);
+                //update_log_trang_thai_don_hang();
                 load_data_2_grid();
              
             }
@@ -340,8 +355,8 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                f115_TM_danh_gia v_f115 = new f115_TM_danh_gia();
                 fill_data_to_m_us();
+                f115_TM_danh_gia v_f115 = new f115_TM_danh_gia();
                 v_f115.displayForTM(m_us);
                 load_data_2_grid();
               

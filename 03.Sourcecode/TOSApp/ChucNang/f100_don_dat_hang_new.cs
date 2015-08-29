@@ -143,8 +143,6 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                
-                
                     if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
                     {
                         udpate_don_hang();
@@ -157,9 +155,16 @@ namespace TOSApp.ChucNang
                     {
                         if (Kiem_tra_du_lieu_truoc_luu() == true)
                         {
-                            luu_don_hang();
-                            dieu_phoi_don_hang();
-                            this.Close();
+                            if (m_lst_id_nguoi_xu_ly.Count == 0)
+                            {
+                                MessageBox.Show("Vui lòng chọn người tiếp nhận xử lý!");
+                            }
+                            else
+                            {
+                                luu_don_hang();
+                                dieu_phoi_don_hang();
+                                this.Close();
+                            }
                         }
                         else
                             MessageBox.Show("thông tin đơn hàng chưa đủ");
@@ -219,16 +224,8 @@ namespace TOSApp.ChucNang
 
         private void dieu_phoi_don_hang()
         {
-            if (m_lst_id_nguoi_xu_ly.Count==0)
-            {
-                MessageBox.Show("hãy chọn người xử lý!");
-                return;
-            }
-          
-                cap_nhat_lai_trang_thai_tiep_nhan();
-                xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
-           
-            
+            cap_nhat_lai_trang_thai_tiep_nhan();
+            xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
             MessageBox.Show("FO đã điều phối");
         }
 
@@ -271,7 +268,7 @@ namespace TOSApp.ChucNang
             {
                 m_us.Insert();
             }
-            else m_us.Update();
+            else m_us.Update();//?? văn
           //  MessageBox.Show("hoan thanh viec luu don hang!");
         }
 
@@ -291,7 +288,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 295;//fix cung cho tao tac dieu huong--> bi ngu
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_NHAN_THAO_TAC = nguoi_nhan_tao_tac_i;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO;//?? văn
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = "đã điều phối cho BO ";
@@ -302,7 +299,7 @@ namespace TOSApp.ChucNang
         private void form_2_us()
         {
             m_us.strMA_DON_HANG = m_txt_ma_don_hang.Text;
-            m_us.dcID_USER_NV_DAT_HANG = CIPConvert.ToDecimal(m_cbo_user_nhan_vien_dat_hang.SelectedValue);
+            m_us.dcID_USER_NV_DAT_HANG = CIPConvert.ToDecimal(m_cbo_user_nhan_vien_dat_hang.SelectedValue.ToString());
             m_us.dcID_DON_VI = CIPConvert.ToDecimal( m_cbo_dv_don_vi.SelectedValue.ToString());//xem lai
             m_us.strDIEN_THOAI = m_txt_dien_thoai.Text;
             m_us.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten_nguoi_dat_hang.Text ;
@@ -315,7 +312,7 @@ namespace TOSApp.ChucNang
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
                 //System.DateTime.Now.ToString("yyyy/MM/dd/hh/mm/ss");
             m_us.dcID_PHUONG_THUC_DAT_HANG =183;//---phuong thuc dat hang la goi dien
-            m_us.dcID_NGUOI_TAO = CIPConvert.ToDecimal(m_cbo_nguoi_nhan_dat_hang.SelectedValue);///xem lai
+            m_us.dcID_NGUOI_TAO = CIPConvert.ToDecimal(m_cbo_nguoi_nhan_dat_hang.SelectedValue.ToString());///xem lai
             m_us.dcID_CHI_NHANH= TOSApp.us_user.dcCHI_NHANH; //--fix lai sau mac dinh la 1 -HA NOI
         }
         //tra lai thoi gian sau khi hoan thanh don hang dua vao thoi gian dat hang + thoi gian can de hoan thanh don hang
@@ -528,11 +525,11 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 294;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//?? văn
             v_us.SetID_NGUOI_NHAN_THAO_TACNull();
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "tiep nhan";
+            v_us.strGHI_CHU = "FO từ chối đơn hàng";
             v_us.Insert();
             MessageBox.Show("Đã từ chối đơn hàng");
           

@@ -41,33 +41,33 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                if (m_txt_nhan_xet.Text == "")
+                if (m_rdb_hoan_thanh.Checked == true)
                 {
-                    MessageBox.Show("Nhập lý do không nghiệm thu!");
-                    m_txt_nhan_xet.Focus();
+
+                    ghi_log_nghiem_thu_don_hang(v_us);
+                    update_trang_thai_don_hang(v_us);
+                    MessageBox.Show("Hoàn thành");
+                    this.Close();
                 }
                 else
                 {
-                    if (m_rdb_hoan_thanh.Checked == true)
+                    if (m_txt_nhan_xet.Text == "")
                     {
-                       
-                        ghi_log_nghiem_thu_don_hang(v_us);
-                        update_trang_thai_don_hang(v_us);
+                        MessageBox.Show("Nhập lý do không nghiệm thu!");
+                        m_txt_nhan_xet.Focus();
                     }
                     else
                     {
                         ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(v_us);
-
                         update_trang_thai_don_hang_chua_hoan_thanh(v_us);
-                       
+                        this.Close();
                     }
-                    MessageBox.Show("Hoàn thành");
-                    this.Close();
+
                 }
             }
             catch (Exception)
             {
-                
+
                 throw;
             }
         }

@@ -312,7 +312,7 @@
             this.GHI_CHU.Name = "GHI_CHU";
             this.GHI_CHU.Visible = true;
             this.GHI_CHU.VisibleIndex = 17;
-            this.GHI_CHU.Width = 20;
+            this.GHI_CHU.Width = 93;
             // 
             // NGUOI_NHAN_THAO_TAC_LOG
             // 

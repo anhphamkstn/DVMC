@@ -33,13 +33,13 @@ namespace TOSApp.ChucNang
             m_txt_ma_don_hang.Text = m_us.dcID_GD_DAT_HANG.ToString();
             m_txt_nguoi_nhan_tao_tac.Text = m_us.dcID_NGUOI_TAO_THAO_TAC.ToString();
             m_txt_ly_do_tu_choi.Focus();
-
         }
 
         private void m_cmd_gui_Click(object sender, EventArgs e)
         {
             try
             {
+                update_log_tu_choi();
                 ghi_log_tu_choi();
                 this.Close();
                 MessageBox.Show("Hoàn thành!");
@@ -49,6 +49,15 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+
+        }
+
+        private void update_log_tu_choi()
+        {
+            US_GD_LOG_DAT_HANG v_us_tu_choi = new US_GD_LOG_DAT_HANG(v_us.dcID);
+            v_us_tu_choi.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us_tu_choi.strGHI_CHU = "BO đã từ chối";
+            v_us_tu_choi.Update();
 
         }
 
@@ -70,18 +79,18 @@ namespace TOSApp.ChucNang
             this.Close();
         }
 
-        internal void displayForRefuse(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        internal void displayForRefuse(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us, decimal id_nguoi_tao)
         {
 
-            us_to_form(m_us);
+            us_to_form(m_us, id_nguoi_tao);
             this.ShowDialog();
         }
 
-        private void us_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        private void us_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us, decimal id_nguoi_tao)
         {
             v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG( m_us.dcID);
-            m_txt_ma_don_hang.Text = m_us.strMA_DON_HANG;
-            m_txt_nguoi_nhan_tao_tac.Text = m_us.dcID_NGUOI_TAO_THAO_TAC.ToString();
+            m_txt_ma_don_hang.Text = m_us.strMA_DON_HANG;//?? văn
+            m_txt_nguoi_nhan_tao_tac.Text =id_nguoi_tao.ToString();
             m_txt_ly_do_tu_choi.Focus();
         }
     }

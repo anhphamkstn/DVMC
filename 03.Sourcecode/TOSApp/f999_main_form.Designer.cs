@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -87,6 +88,7 @@
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.m_barsubitem_dang_xuat = new DevExpress.XtraBars.BarSubItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -454,9 +456,10 @@
             this.m_barstatic_thiet_lap_tai_khoan,
             this.m_barsubitem_thiet_lap_tai_khoan,
             this.m_barsubitem_doi_ten_dang_nhap,
-            this.m_barsubitem_doi_mat_khau});
+            this.m_barsubitem_doi_mat_khau,
+            this.m_barsubitem_dang_xuat});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 35;
+            this.ribbonControl1.MaxItemId = 36;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -654,6 +657,7 @@
         private DevExpress.XtraBars.BarSubItem m_barsubitem_thiet_lap_tai_khoan;
         private DevExpress.XtraBars.BarSubItem m_barsubitem_doi_ten_dang_nhap;
         private DevExpress.XtraBars.BarSubItem m_barsubitem_doi_mat_khau;
+        private DevExpress.XtraBars.BarSubItem m_barsubitem_dang_xuat;
 
     }
 }
