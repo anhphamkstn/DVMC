@@ -130,7 +130,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Dịch vụ yêu cầu";
-            this.gridColumn5.FieldName = "TEN_YEU_CAU";
+            this.gridColumn5.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 5;
@@ -154,7 +154,7 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "Loại thời gian cần hoàn thành";
-            this.gridColumn8.FieldName = "LOAI_TG_CAN_HOAN-THANH";
+            this.gridColumn8.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
@@ -170,7 +170,7 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Phương thức đặt hàng";
-            this.gridColumn1.FieldName = "PHUONG_THUC_DAT_HANG";
+            this.gridColumn1.FieldName = "TEN_PHUONG_THUC_DAT_HANG";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 9;
@@ -178,7 +178,7 @@
             // gridColumn10
             // 
             this.gridColumn10.Caption = "Người tạo";
-            this.gridColumn10.FieldName = "NGUOI_TAO";
+            this.gridColumn10.FieldName = "NGUOI_TAO_THAO_TAC";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 10;
@@ -193,8 +193,8 @@
             // 
             // gridColumn12
             // 
-            this.gridColumn12.Caption = "Trạng thái đơn hàng";
-            this.gridColumn12.FieldName = "TRANG_THAI_DON_HANG";
+            this.gridColumn12.Caption = "Trạng thái hết hạn đơn hàng";
+            this.gridColumn12.FieldName = "THAO_TAC_HET_HAN_YN";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
             this.gridColumn12.VisibleIndex = 12;
