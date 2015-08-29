@@ -146,7 +146,7 @@ namespace TOSApp.ChucNang
                     if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
                     {
                         udpate_don_hang();
-                        update_log_gd_dat_hang();
+                       // update_log_gd_dat_hang();
                         ghi_log_thay_doi_don_hang();
                         MessageBox.Show("đơn hàng đã được cập nhật thông tin");
                         this.Close();
@@ -195,7 +195,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_us.dcID_NGUOI_NHAN_THAO_TAC= M_us.dcID_NGUOI_NHAN_THAO_TAC;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "N";
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
             v_us.Insert();
            
