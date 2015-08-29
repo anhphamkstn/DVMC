@@ -57,12 +57,7 @@
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.m_cmd_them = new DevExpress.XtraEditors.SimpleButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.m_cmd_sua = new DevExpress.XtraEditors.SimpleButton();
+            this.m_pan_xoa = new System.Windows.Forms.Panel();
             this.m_panel_xoa = new System.Windows.Forms.Panel();
             this.m_cmd_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -84,10 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.m_pan_xoa.SuspendLayout();
             this.m_panel_xoa.SuspendLayout();
             this.panel6.SuspendLayout();
             this.SuspendLayout();
@@ -116,7 +108,7 @@
             this.repositoryItemCheckEdit1,
             this.repositoryItemLookUpEdit1,
             this.repositoryItemComboBox6});
-            this.m_grc_dm_cau_hoi.Size = new System.Drawing.Size(838, 457);
+            this.m_grc_dm_cau_hoi.Size = new System.Drawing.Size(838, 453);
             this.m_grc_dm_cau_hoi.TabIndex = 2;
             this.m_grc_dm_cau_hoi.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_dm_cau_hoi});
@@ -138,9 +130,11 @@
             this.c_trang_thai});
             this.m_grv_dm_cau_hoi.GridControl = this.m_grc_dm_cau_hoi;
             this.m_grv_dm_cau_hoi.Name = "m_grv_dm_cau_hoi";
-            this.m_grv_dm_cau_hoi.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.True;
-            this.m_grv_dm_cau_hoi.OptionsEditForm.ShowUpdateCancelPanel = DevExpress.Utils.DefaultBoolean.False;
-            this.m_grv_dm_cau_hoi.RowUpdated += new DevExpress.XtraGrid.Views.Base.RowObjectEventHandler(this.m_grv_dm_cau_hoi_RowUpdated);
+            this.m_grv_dm_cau_hoi.NewItemRowText = "Click vào đây để thêm mới";
+            this.m_grv_dm_cau_hoi.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
+            this.m_grv_dm_cau_hoi.OptionsBehavior.ReadOnly = true;
+            this.m_grv_dm_cau_hoi.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.m_grv_dm_cau_hoi.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_dm_cau_hoi_RowCellClick);
             // 
             // c_noi_dung_cau_hoi
             // 
@@ -338,77 +332,22 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
             // 
-            // panel1
+            // m_pan_xoa
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 457);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 49);
-            this.panel1.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.m_panel_xoa);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(212, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(626, 49);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.m_cmd_them);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(83, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(188, 49);
-            this.panel4.TabIndex = 6;
-            // 
-            // m_cmd_them
-            // 
-            this.m_cmd_them.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_them.Appearance.Options.UseFont = true;
-            this.m_cmd_them.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_them.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_them.Image")));
-            this.m_cmd_them.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_them.Name = "m_cmd_them";
-            this.m_cmd_them.Size = new System.Drawing.Size(188, 49);
-            this.m_cmd_them.TabIndex = 0;
-            this.m_cmd_them.Text = "&Thêm";
-            this.m_cmd_them.Click += new System.EventHandler(this.simpbtn_them_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.m_cmd_sua);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(271, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(182, 49);
-            this.panel3.TabIndex = 5;
-            // 
-            // m_cmd_sua
-            // 
-            this.m_cmd_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_sua.Appearance.Options.UseFont = true;
-            this.m_cmd_sua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_sua.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_sua.Image")));
-            this.m_cmd_sua.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_sua.Name = "m_cmd_sua";
-            this.m_cmd_sua.Size = new System.Drawing.Size(182, 49);
-            this.m_cmd_sua.TabIndex = 1;
-            this.m_cmd_sua.Text = "&Sửa";
-            this.m_cmd_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
+            this.m_pan_xoa.Controls.Add(this.m_panel_xoa);
+            this.m_pan_xoa.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_pan_xoa.Location = new System.Drawing.Point(0, 453);
+            this.m_pan_xoa.Name = "m_pan_xoa";
+            this.m_pan_xoa.Size = new System.Drawing.Size(838, 53);
+            this.m_pan_xoa.TabIndex = 6;
             // 
             // m_panel_xoa
             // 
             this.m_panel_xoa.Controls.Add(this.m_cmd_xoa);
             this.m_panel_xoa.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_panel_xoa.Location = new System.Drawing.Point(453, 0);
+            this.m_panel_xoa.Location = new System.Drawing.Point(678, 0);
             this.m_panel_xoa.Name = "m_panel_xoa";
-            this.m_panel_xoa.Size = new System.Drawing.Size(173, 49);
+            this.m_panel_xoa.Size = new System.Drawing.Size(160, 53);
             this.m_panel_xoa.TabIndex = 6;
             // 
             // m_cmd_xoa
@@ -419,7 +358,7 @@
             this.m_cmd_xoa.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xoa.Image")));
             this.m_cmd_xoa.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_xoa.Name = "m_cmd_xoa";
-            this.m_cmd_xoa.Size = new System.Drawing.Size(173, 49);
+            this.m_cmd_xoa.Size = new System.Drawing.Size(160, 53);
             this.m_cmd_xoa.TabIndex = 2;
             this.m_cmd_xoa.Text = "&Xóa";
             this.m_cmd_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
@@ -430,7 +369,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(838, 457);
+            this.panel6.Size = new System.Drawing.Size(838, 453);
             this.panel6.TabIndex = 7;
             // 
             // f100_dm_cau_hoi
@@ -439,7 +378,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(838, 506);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.m_pan_xoa);
             this.Name = "f100_dm_cau_hoi";
             this.Text = "f100_dm_cau_hoi";
             this.Load += new System.EventHandler(this.f100_dm_cau_hoi_Load);
@@ -461,10 +400,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.m_pan_xoa.ResumeLayout(false);
             this.m_panel_xoa.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -487,8 +423,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn c_ngay_tao;
         private DevExpress.XtraGrid.Columns.GridColumn c_link_tl_tham_khao;
         private DevExpress.XtraGrid.Columns.GridColumn c_trang_thai;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel m_pan_xoa;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
         private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit repositoryItemMemoEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit2;
@@ -503,10 +438,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox6;
         private DevExpress.XtraEditors.SimpleButton m_cmd_xoa;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_sua;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_them;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel m_panel_xoa;
         private System.Windows.Forms.Panel panel6;
     }

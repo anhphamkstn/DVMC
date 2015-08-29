@@ -34,52 +34,47 @@ namespace TOSApp.DanhMuc
             if (us_user.dcIDNhom == 1)
             {
 
-                m_panel_xoa.Visible = false;
+                m_pan_xoa.Visible = false;
             }
             else
-                m_panel_xoa.Visible = true;
-        }
-
-        private void m_grv_dm_cau_hoi_RowUpdated(object sender, DevExpress.XtraGrid.Views.Base.RowObjectEventArgs e)
-        {
-          //repositoryItemMemoEdit1
-
-        }
-
-        private void simpbtn_them_Click(object sender, EventArgs e)
-        {
-            try
             {
-
-                f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
-                v_f.DisPlayForInsert();
-                load_data_grid();
+                m_pan_xoa.Visible = true;
+                m_grv_dm_cau_hoi.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.None;
             }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
+               
         }
+        //private void simpbtn_them_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
+        //        v_f.DisPlayForInsert();
+        //        load_data_grid();
+        //    }
+        //    catch (Exception v_e)
+        //    {
+        //        CSystemLog_301.ExceptionHandle(v_e);
+        //    }
+        //}
 
-        private void simpbtn_sua_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DataRow v_dr = m_grv_dm_cau_hoi.GetDataRow(m_grv_dm_cau_hoi.FocusedRowHandle);
-                US_DM_CAU_HOI v_us1 = new US_DM_CAU_HOI(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID].ToString()));
-                US_CM_DM_TU_DIEN v_us2 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_NHOM_CAU_HOI].ToString()));
-                US_CM_DM_TU_DIEN v_us3 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_TO_CHUC].ToString()));
-                US_DM_CAU_TRA_LOI v_us4 = new US_DM_CAU_TRA_LOI(CIPConvert.ToDecimal(v_dr[16].ToString()));
-                f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
-                v_f.DisPlayForUpdate(v_us1, v_us2, v_us3, v_us4);
-                load_data_grid();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
+        //private void simpbtn_sua_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        DataRow v_dr = m_grv_dm_cau_hoi.GetDataRow(m_grv_dm_cau_hoi.FocusedRowHandle);
+        //        US_DM_CAU_HOI v_us1 = new US_DM_CAU_HOI(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID].ToString()));
+        //        US_CM_DM_TU_DIEN v_us2 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_NHOM_CAU_HOI].ToString()));
+        //        US_CM_DM_TU_DIEN v_us3 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_TO_CHUC].ToString()));
+        //        US_DM_CAU_TRA_LOI v_us4 = new US_DM_CAU_TRA_LOI(CIPConvert.ToDecimal(v_dr[16].ToString()));
+        //        f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
+        //        v_f.DisPlayForUpdate(v_us1, v_us2, v_us3, v_us4);
+        //        load_data_grid();
+        //    }
+        //    catch (Exception v_e)
+        //    {
+        //        CSystemLog_301.ExceptionHandle(v_e);
+        //    }
+        //}
         private void simpbtn_xoa_Click(object sender, EventArgs e)
         {
             try
@@ -106,6 +101,42 @@ namespace TOSApp.DanhMuc
             catch (Exception v_e)
             {
                 CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_grv_dm_cau_hoi_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            DataRow v_dr_grv = m_grv_dm_cau_hoi.GetDataRow(m_grv_dm_cau_hoi.FocusedRowHandle);
+            if (v_dr_grv==null)
+            {
+                try
+                {
+                    f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
+                    v_f.DisPlayForInsert();
+                    load_data_grid();
+                }
+                catch (Exception v_e)
+                {
+                    CSystemLog_301.ExceptionHandle(v_e);
+                }
+            }
+            else
+            {
+                try
+                {
+                    DataRow v_dr = m_grv_dm_cau_hoi.GetDataRow(m_grv_dm_cau_hoi.FocusedRowHandle);
+                    US_DM_CAU_HOI v_us1 = new US_DM_CAU_HOI(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID].ToString()));
+                    US_CM_DM_TU_DIEN v_us2 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_NHOM_CAU_HOI].ToString()));
+                    US_CM_DM_TU_DIEN v_us3 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_TO_CHUC].ToString()));
+                    US_DM_CAU_TRA_LOI v_us4 = new US_DM_CAU_TRA_LOI(CIPConvert.ToDecimal(v_dr[16].ToString()));
+                    f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
+                    v_f.DisPlayForUpdate(v_us1, v_us2, v_us3, v_us4);
+                    load_data_grid();
+                }
+                catch (Exception v_e)
+                {
+                    CSystemLog_301.ExceptionHandle(v_e);
+                }
             }
         }
 

@@ -38,6 +38,7 @@ namespace TOSApp.HT
                     {
                         this.Hide();
                         f999_main_form v_f = new f999_main_form();
+                        v_f.WindowState = FormWindowState.Maximized;
                         v_f.ShowDialog();
                         this.Close();
 

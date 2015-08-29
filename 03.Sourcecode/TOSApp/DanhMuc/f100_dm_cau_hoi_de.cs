@@ -28,11 +28,11 @@ namespace TOSApp.DanhMuc
         {
             if(us_user.dcIDNhom == 1)
             {
-                layout_cau_tra_loi.Enabled = false;
+                txt_cau_tra_loi.ReadOnly = true;
             }
             else
             {
-                layout_cau_tra_loi.Enabled = true;
+                txt_cau_hoi.ReadOnly = true;
             }
         }
 
@@ -40,13 +40,11 @@ namespace TOSApp.DanhMuc
         {
             WinFormControls.load_data_to_combobox_with_query(cbo_nhom_cau_hoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT   ID, TEN FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN = 5");
             WinFormControls.load_data_to_combobox_with_query(cbo_to_chuc, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT  ID, TEN FROM CM_DM_TU_DIEN  WHERE ID_LOAI_TU_DIEN= 11 ");
-            WinFormControls.load_data_to_combobox_with_query(cbo_nguoi_tao_cau_hoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT DISTINCT ID, TEN FROM HT_NGUOI_SU_DUNG ");
-            WinFormControls.load_data_to_combobox_with_query(cbo_nguoi_cap_nhat_cuoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT DISTINCT ID, TEN FROM HT_NGUOI_SU_DUNG ");
-            WinFormControls.load_data_to_combobox_with_query(cbo_nguoi_tao_cau_tra_loi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT DISTINCT ID, TEN FROM HT_NGUOI_SU_DUNG ");
         }
 
         public void DisPlayForInsert()
         {
+
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             load_data_cbo();
             this.ShowDialog();
@@ -58,6 +56,13 @@ namespace TOSApp.DanhMuc
             m_us_cau_hoi = v_us1;
             m_us_cau_tra_loi = v_us4;
             us_to_form(v_us1, v_us2, v_us3, v_us4);
+            if (us_user.dcIDNhom == 1)
+            {
+                txt_cau_hoi.ReadOnly = true;
+                cbo_nhom_cau_hoi.Enabled = false;
+                cbo_to_chuc.Enabled = false;
+                m_pan_luu.Visible = false;
+            }
             this.ShowDialog();
         }
 
@@ -65,19 +70,9 @@ namespace TOSApp.DanhMuc
         {
             load_data_cbo();
             txt_cau_hoi.Text = v_us1.strNOI_DUNG_CAU_HOI;
-            m_dat_ngay_tao_cau_hoi.Text = v_us1.datNGAY_TAO.ToString();
-            m_dat_ngay_cap_nhat_cuoi.Text = v_us1.datNGAY_CAP_NHAP_CUOI.ToString();
-            cbo_nguoi_tao_cau_hoi.SelectedValue = v_us1.dcNGUOI_TAO;
-            cbo_nguoi_cap_nhat_cuoi.SelectedValue = v_us1.dcNGUOI_CAP_NHAT_CUOI;
             cbo_to_chuc.SelectedValue = v_us3.dcID;
             cbo_nhom_cau_hoi.SelectedValue = v_us2.dcID;
             txt_cau_tra_loi.Text = v_us4.strCAU_TRA_LOI;
-            m_dat_ngay_tao_cau_tra_loi.Text = v_us4.datNGAY_TAO.ToString();
-            cbo_nguoi_tao_cau_tra_loi.SelectedValue = v_us4.dcNGUOI_TAO;
-            if (v_us4.dcID_TRANG_THAI == 22)
-                cb_da_duyet.Checked = true;
-            else cb_da_duyet.Checked = false;
-
         }
         private bool kiemtradulieu()
         {
@@ -95,10 +90,13 @@ namespace TOSApp.DanhMuc
             m_us_cau_hoi.dcID_TO_CHUC = CIPConvert.ToDecimal(cbo_to_chuc.SelectedValue.ToString());
             m_us_cau_hoi.dcID_NHOM_CAU_HOI = CIPConvert.ToDecimal(cbo_nhom_cau_hoi.SelectedValue.ToString());
             m_us_cau_hoi.strNOI_DUNG_CAU_HOI = txt_cau_hoi.Text;
-            m_us_cau_hoi.datNGAY_TAO = Convert.ToDateTime(m_dat_ngay_tao_cau_hoi.Text);
-            m_us_cau_hoi.dcNGUOI_TAO = CIPConvert.ToDecimal(cbo_nguoi_tao_cau_hoi.SelectedValue.ToString());
-            m_us_cau_hoi.dcNGUOI_CAP_NHAT_CUOI = CIPConvert.ToDecimal(cbo_nguoi_cap_nhat_cuoi.SelectedValue.ToString());
-            m_us_cau_hoi.datNGAY_CAP_NHAP_CUOI = Convert.ToDateTime(m_dat_ngay_cap_nhat_cuoi.Text);
+            if (m_e_form_mode == DataEntryFormMode.InsertDataState)
+            { 
+                m_us_cau_hoi.datNGAY_TAO = System.DateTime.Now;
+                m_us_cau_hoi.dcNGUOI_TAO = us_user.dcID;
+            }
+            m_us_cau_hoi.dcNGUOI_CAP_NHAT_CUOI = us_user.dcID;
+            m_us_cau_hoi.datNGAY_CAP_NHAP_CUOI = System.DateTime.Now;
         }
 
         private void form_to_us_cau_tra_loi()
@@ -106,9 +104,9 @@ namespace TOSApp.DanhMuc
             //bảng câu trả lời
             m_us_cau_tra_loi.dcID_CAU_HOI = m_us_cau_hoi.dcID;
             m_us_cau_tra_loi.strCAU_TRA_LOI = txt_cau_tra_loi.Text;
-            m_us_cau_tra_loi.datNGAY_TAO = Convert.ToDateTime(m_dat_ngay_tao_cau_tra_loi.Text);
-            m_us_cau_tra_loi.dcNGUOI_TAO = CIPConvert.ToDecimal(cbo_nguoi_tao_cau_tra_loi.SelectedValue.ToString());
-            if (cb_da_duyet.Checked == true)
+            m_us_cau_tra_loi.datNGAY_TAO = System.DateTime.Now;
+            m_us_cau_tra_loi.dcNGUOI_TAO = us_user.dcID;
+            if (txt_cau_tra_loi.Text !=null)
                 m_us_cau_tra_loi.dcID_TRANG_THAI = 22;
             else
                 m_us_cau_tra_loi.dcID_TRANG_THAI = 21;
