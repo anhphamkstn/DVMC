@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f100_dm_cau_hoi_de));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_pan_luu = new System.Windows.Forms.Panel();
+            this.m_cmd_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_cmd_thoat = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_luu = new DevExpress.XtraEditors.SimpleButton();
             this.txt_cau_tra_loi = new DevExpress.XtraEditors.MemoEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_cau_hoi = new DevExpress.XtraEditors.MemoEdit();
@@ -44,45 +45,44 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbo_nhom_cau_hoi = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.m_pan_luu = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.m_pan_luu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_tra_loi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_hoi.Properties)).BeginInit();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.panel14.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.m_pan_luu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,6 +94,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1030, 57);
             this.panel1.TabIndex = 52;
+            // 
+            // m_pan_luu
+            // 
+            this.m_pan_luu.Controls.Add(this.m_cmd_luu);
+            this.m_pan_luu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_pan_luu.Location = new System.Drawing.Point(689, 0);
+            this.m_pan_luu.Name = "m_pan_luu";
+            this.m_pan_luu.Size = new System.Drawing.Size(170, 57);
+            this.m_pan_luu.TabIndex = 1;
+            // 
+            // m_cmd_luu
+            // 
+            this.m_cmd_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_luu.Appearance.Options.UseFont = true;
+            this.m_cmd_luu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_luu.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_luu.Image")));
+            this.m_cmd_luu.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_luu.Name = "m_cmd_luu";
+            this.m_cmd_luu.Size = new System.Drawing.Size(170, 57);
+            this.m_cmd_luu.TabIndex = 2;
+            this.m_cmd_luu.Text = "&Lưu";
+            this.m_cmd_luu.Click += new System.EventHandler(this.simpbtn_luu_Click);
             // 
             // panel2
             // 
@@ -116,19 +138,6 @@
             this.m_cmd_thoat.TabIndex = 3;
             this.m_cmd_thoat.Text = "&Thoát";
             this.m_cmd_thoat.Click += new System.EventHandler(this.simpbtn_thoat_Click);
-            // 
-            // m_cmd_luu
-            // 
-            this.m_cmd_luu.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_luu.Appearance.Options.UseFont = true;
-            this.m_cmd_luu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_luu.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_luu.Image")));
-            this.m_cmd_luu.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_luu.Name = "m_cmd_luu";
-            this.m_cmd_luu.Size = new System.Drawing.Size(170, 57);
-            this.m_cmd_luu.TabIndex = 2;
-            this.m_cmd_luu.Text = "&Lưu";
-            this.m_cmd_luu.Click += new System.EventHandler(this.simpbtn_luu_Click);
             // 
             // txt_cau_tra_loi
             // 
@@ -248,80 +257,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1030, 506);
             this.tableLayoutPanel1.TabIndex = 53;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 103);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(509, 400);
-            this.panel3.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(518, 103);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(509, 400);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(509, 41);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.txt_cau_hoi);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 41);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(509, 359);
-            this.panel6.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(509, 41);
-            this.panel7.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.txt_cau_tra_loi);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 41);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(509, 359);
-            this.panel8.TabIndex = 1;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.cbo_to_chuc);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 48);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(248, 40);
-            this.panel9.TabIndex = 48;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.cbo_nhom_cau_hoi);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(0, 48);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(249, 40);
-            this.panel12.TabIndex = 38;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
@@ -347,6 +282,15 @@
             this.panel13.Size = new System.Drawing.Size(249, 88);
             this.panel13.TabIndex = 0;
             // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.cbo_nhom_cau_hoi);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel12.Location = new System.Drawing.Point(0, 48);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(249, 40);
+            this.panel12.TabIndex = 38;
+            // 
             // panel14
             // 
             this.panel14.Controls.Add(this.panel19);
@@ -356,6 +300,71 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(248, 88);
             this.panel14.TabIndex = 1;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.cbo_to_chuc);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 48);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(248, 40);
+            this.panel9.TabIndex = 48;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(518, 103);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(509, 400);
+            this.panel4.TabIndex = 8;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.txt_cau_tra_loi);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(0, 41);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(509, 359);
+            this.panel8.TabIndex = 1;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label3);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(509, 41);
+            this.panel7.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 103);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(509, 400);
+            this.panel3.TabIndex = 7;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.txt_cau_hoi);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 41);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(509, 359);
+            this.panel6.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(509, 41);
+            this.panel5.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
@@ -374,17 +383,17 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(509, 94);
             this.tableLayoutPanel3.TabIndex = 40;
             // 
-            // pictureBox6
+            // pictureBox2
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(163, 88);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 116;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(341, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(165, 88);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 118;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -398,26 +407,17 @@
             this.pictureBox1.TabIndex = 117;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox6
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(341, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(165, 88);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 118;
-            this.pictureBox2.TabStop = false;
-            // 
-            // m_pan_luu
-            // 
-            this.m_pan_luu.Controls.Add(this.m_cmd_luu);
-            this.m_pan_luu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_pan_luu.Location = new System.Drawing.Point(689, 0);
-            this.m_pan_luu.Name = "m_pan_luu";
-            this.m_pan_luu.Size = new System.Drawing.Size(170, 57);
-            this.m_pan_luu.TabIndex = 1;
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(163, 88);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 116;
+            this.pictureBox6.TabStop = false;
             // 
             // f100_dm_cau_hoi_de
             // 
@@ -430,6 +430,7 @@
             this.Text = "f100_dm_cau_hoi_de";
             this.Load += new System.EventHandler(this.f100_dm_cau_hoi_de_Load);
             this.panel1.ResumeLayout(false);
+            this.m_pan_luu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_tra_loi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_hoi.Properties)).EndInit();
@@ -438,24 +439,23 @@
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.m_pan_luu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }

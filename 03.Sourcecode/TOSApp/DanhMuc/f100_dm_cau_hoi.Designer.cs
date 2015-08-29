@@ -129,11 +129,15 @@
             this.c_link_tl_tham_khao,
             this.c_trang_thai});
             this.m_grv_dm_cau_hoi.GridControl = this.m_grc_dm_cau_hoi;
+            this.m_grv_dm_cau_hoi.GroupCount = 2;
             this.m_grv_dm_cau_hoi.Name = "m_grv_dm_cau_hoi";
             this.m_grv_dm_cau_hoi.NewItemRowText = "Click vào đây để thêm mới";
             this.m_grv_dm_cau_hoi.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_cau_hoi.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_cau_hoi.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.m_grv_dm_cau_hoi.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_to_chuc, DevExpress.Data.ColumnSortOrder.Ascending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_nhom_cau_hoi, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.m_grv_dm_cau_hoi.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_dm_cau_hoi_RowCellClick);
             // 
             // c_noi_dung_cau_hoi
@@ -240,7 +244,7 @@
             this.c_nhom_cau_hoi.FieldName = "NHOM_CAU_HOI";
             this.c_nhom_cau_hoi.Name = "c_nhom_cau_hoi";
             this.c_nhom_cau_hoi.Visible = true;
-            this.c_nhom_cau_hoi.VisibleIndex = 6;
+            this.c_nhom_cau_hoi.VisibleIndex = 5;
             this.c_nhom_cau_hoi.Width = 63;
             // 
             // repositoryItemComboBox1
@@ -257,7 +261,7 @@
             this.c_cau_tra_loi.FieldName = "CAU_TRA_LOI";
             this.c_cau_tra_loi.Name = "c_cau_tra_loi";
             this.c_cau_tra_loi.Visible = true;
-            this.c_cau_tra_loi.VisibleIndex = 7;
+            this.c_cau_tra_loi.VisibleIndex = 5;
             // 
             // repositoryItemMemoEdit2
             // 
@@ -270,7 +274,7 @@
             this.c_nguoi_tao.FieldName = "TEN_NGUOI_TAO_CAU_TRA_LOI";
             this.c_nguoi_tao.Name = "c_nguoi_tao";
             this.c_nguoi_tao.Visible = true;
-            this.c_nguoi_tao.VisibleIndex = 8;
+            this.c_nguoi_tao.VisibleIndex = 6;
             // 
             // repositoryItemComboBox5
             // 
@@ -286,7 +290,7 @@
             this.c_ngay_tao.FieldName = "NGAY_TAO_CAU_TRA_LOI";
             this.c_ngay_tao.Name = "c_ngay_tao";
             this.c_ngay_tao.Visible = true;
-            this.c_ngay_tao.VisibleIndex = 9;
+            this.c_ngay_tao.VisibleIndex = 7;
             // 
             // repositoryItemDateEdit3
             // 
@@ -303,7 +307,7 @@
             this.c_link_tl_tham_khao.FieldName = "LINK_TL_THAM_KHAO";
             this.c_link_tl_tham_khao.Name = "c_link_tl_tham_khao";
             this.c_link_tl_tham_khao.Visible = true;
-            this.c_link_tl_tham_khao.VisibleIndex = 10;
+            this.c_link_tl_tham_khao.VisibleIndex = 8;
             // 
             // c_trang_thai
             // 
@@ -311,7 +315,7 @@
             this.c_trang_thai.FieldName = "TEN";
             this.c_trang_thai.Name = "c_trang_thai";
             this.c_trang_thai.Visible = true;
-            this.c_trang_thai.VisibleIndex = 11;
+            this.c_trang_thai.VisibleIndex = 9;
             // 
             // repositoryItemComboBox2
             // 

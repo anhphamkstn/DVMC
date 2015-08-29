@@ -544,7 +544,6 @@ namespace TOSApp.ChucNang
             {
                 format_controlls();
                 us_2_form(v_us);
-             
                 m_e_form_mode= DataEntryFormMode.UpdateDataState;
                 M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                 this.ShowDialog();
