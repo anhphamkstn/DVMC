@@ -486,6 +486,24 @@ namespace TOSApp
             v_f.ShowDialog();
         }
 
+        private void m_cmd_ds_don_hang_hoan_thanh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+               f119_ds_don_hang_hoan_thanh v_f = new f119_ds_don_hang_hoan_thanh();
+                v_f.MdiParent = this;
+
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+     
+
       
 
 

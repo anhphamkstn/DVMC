@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -82,13 +81,16 @@
             this.m_barsubitem_doi_mat_khau = new DevExpress.XtraBars.BarSubItem();
             this.barListItem1 = new DevExpress.XtraBars.BarListItem();
             this.m_barstatic_thiet_lap_tai_khoan = new DevExpress.XtraBars.BarStaticItem();
+            this.m_barsubitem_dang_xuat = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_ds_don_hang_hoan_thanh = new DevExpress.XtraBars.BarButtonItem();
             this.m_rbc_ls_giao_dich = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_rbc_cau_hoi = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.m_barsubitem_dang_xuat = new DevExpress.XtraBars.BarSubItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -339,7 +341,7 @@
             // 
             // m_cmd_ds_tat_ca_don_hang
             // 
-            this.m_cmd_ds_tat_ca_don_hang.Caption = "Tất cả các đơn hàng";
+            this.m_cmd_ds_tat_ca_don_hang.Caption = "Tất cả các đơn hàng đang xử lý";
             this.m_cmd_ds_tat_ca_don_hang.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_tat_ca_don_hang.Glyph")));
             this.m_cmd_ds_tat_ca_don_hang.Id = 11;
             this.m_cmd_ds_tat_ca_don_hang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_tat_ca_don_hang.LargeGlyph")));
@@ -457,9 +459,11 @@
             this.m_barsubitem_thiet_lap_tai_khoan,
             this.m_barsubitem_doi_ten_dang_nhap,
             this.m_barsubitem_doi_mat_khau,
-            this.m_barsubitem_dang_xuat});
+            this.m_barsubitem_dang_xuat,
+            this.barButtonItem6,
+            this.m_cmd_ds_don_hang_hoan_thanh});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 36;
+            this.ribbonControl1.MaxItemId = 40;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -538,18 +542,47 @@
             this.m_barstatic_thiet_lap_tai_khoan.Name = "m_barstatic_thiet_lap_tai_khoan";
             this.m_barstatic_thiet_lap_tai_khoan.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
+            // m_barsubitem_dang_xuat
+            // 
+            this.m_barsubitem_dang_xuat.Id = 36;
+            this.m_barsubitem_dang_xuat.Name = "m_barsubitem_dang_xuat";
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "barButtonItem6";
+            this.barButtonItem6.Id = 37;
+            this.barButtonItem6.Name = "barButtonItem6";
+            // 
+            // m_cmd_ds_don_hang_hoan_thanh
+            // 
+            this.m_cmd_ds_don_hang_hoan_thanh.Caption = "Danh sách đơn hàng đã hoàn thành";
+            this.m_cmd_ds_don_hang_hoan_thanh.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_don_hang_hoan_thanh.Glyph")));
+            this.m_cmd_ds_don_hang_hoan_thanh.Id = 38;
+            this.m_cmd_ds_don_hang_hoan_thanh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_don_hang_hoan_thanh.LargeGlyph")));
+            this.m_cmd_ds_don_hang_hoan_thanh.Name = "m_cmd_ds_don_hang_hoan_thanh";
+            this.m_cmd_ds_don_hang_hoan_thanh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_don_hang_hoan_thanh_ItemClick);
+            // 
             // m_rbc_ls_giao_dich
             // 
             this.m_rbc_ls_giao_dich.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup15});
+            this.ribbonPageGroup15,
+            this.ribbonPageGroup17});
             this.m_rbc_ls_giao_dich.Name = "m_rbc_ls_giao_dich";
             this.m_rbc_ls_giao_dich.Text = "Lịch sử giao dịch";
             // 
             // ribbonPageGroup15
             // 
+            this.ribbonPageGroup15.AllowTextClipping = false;
             this.ribbonPageGroup15.ItemLinks.Add(this.m_cmd_show);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             this.ribbonPageGroup15.Text = "Lịch sử giao dịch";
+            // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.AllowTextClipping = false;
+            this.ribbonPageGroup17.ItemLinks.Add(this.m_cmd_ds_don_hang_hoan_thanh);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            this.ribbonPageGroup17.Text = "danh sách đơn hàng đã nghiệm thu";
             // 
             // m_rbc_cau_hoi
             // 
@@ -658,6 +691,9 @@
         private DevExpress.XtraBars.BarSubItem m_barsubitem_doi_ten_dang_nhap;
         private DevExpress.XtraBars.BarSubItem m_barsubitem_doi_mat_khau;
         private DevExpress.XtraBars.BarSubItem m_barsubitem_dang_xuat;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_ds_don_hang_hoan_thanh;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup17;
 
     }
 }

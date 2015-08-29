@@ -25,7 +25,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
 
              //v_us.FillDatasetWithTableName(v_ds, "V_GD_DAT_HANG_GD_LOG_DAT_HANG");
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where MA_DON_HANG is not null and TEN_NGUOI_TAO_THAO_TAC_LOG is not null and TEN_LOAI_THAO_TAC_LOG is not null");
+            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG WHERE ID IS NOT NULL");
             m_grc_ds_log_gd_dat_hang.DataSource = v_ds.Tables[0];
 
         }

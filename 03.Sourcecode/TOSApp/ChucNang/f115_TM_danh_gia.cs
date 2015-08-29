@@ -89,9 +89,14 @@ namespace TOSApp.ChucNang
         private void update_trang_thai_don_hang_chua_hoan_thanh(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);
+            
             v_US.strTHAO_TAC_HET_HAN_YN = "Y";
             v_US.strGHI_CHU = "đơn hàng chưa hoàn thành! TM không chấp nhận nghiệm thu";
             v_US.Update();
+            //cập nhật thời gian hoàn thành cho đơn hàng
+            US_GD_DAT_HANG v_us1 = new US_GD_DAT_HANG(v_us.dcID_DON_HANG);
+            v_us1.datTHOI_GIAN_HOAN_THANH= System.DateTime.Now;
+            v_us1.Update();
         }
 
         private void ghi_log_nghiem_thu_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)

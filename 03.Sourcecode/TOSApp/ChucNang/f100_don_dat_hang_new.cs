@@ -308,7 +308,7 @@ namespace TOSApp.ChucNang
             m_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
             m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal( return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
             m_us.strPHAN_HOI_TU_DVMC = m_txt_phan_hoi_tu_dvmc.Text;
-            m_us.SetTHOI_GIAN_HOAN_THANHNull(); 
+            m_us.datTHOI_GIAN_HOAN_THANH = System.DateTime.Now; 
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
                 //System.DateTime.Now.ToString("yyyy/MM/dd/hh/mm/ss");
             m_us.dcID_PHUONG_THUC_DAT_HANG =183;//---phuong thuc dat hang la goi dien
