@@ -27,8 +27,8 @@ namespace TOSApp.ChucNang
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
 
-           v_us.FillDatasetWithTableName(v_ds, "v_GD_DAT_HANG_GD_LOG_DAT_HANG");
-           
+          // v_us.FillDatasetWithTableName(v_ds, "v_GD_DAT_HANG_GD_LOG_DAT_HANG");
+           v_us.FillDatasetWithQuery(v_ds,"select distinct  from v_GD_DAT_HANG_GD_LOG_DAT_HANG where THAo_tac_het_han_YN= 'N'");
             m_grc_ds_don_dat_hang.DataSource = v_ds.Tables[0];
 
           

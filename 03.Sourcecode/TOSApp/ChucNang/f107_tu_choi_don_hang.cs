@@ -31,7 +31,7 @@ namespace TOSApp.ChucNang
         {
             m_US = m_us;
             m_txt_ma_don_hang.Text = m_us.dcID_GD_DAT_HANG.ToString();
-            m_txt_nguoi_nhan_tao_tac.Text = m_us.dcID_NGUOI_TAO_THAO_TAC.ToString();
+            m_txt_nguoi_nhan_tao_tac.Text = "người nhận thao tác có id là:"+v_us.strNGUOI_TAO_THAO_TAC;
             m_txt_ly_do_tu_choi.Focus();
         }
 
@@ -67,7 +67,7 @@ namespace TOSApp.ChucNang
             v_US.dcID_LOAI_THAO_TAC = 310;//CHỜ FO điều phối lại
             v_US.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
             v_US.dcID_NGUOI_TAO_THAO_TAC = TOSApp.us_user.dcID;
-            v_US.dcID_NGUOI_NHAN_THAO_TAC = CIPConvert.ToDecimal(m_txt_nguoi_nhan_tao_tac.Text);
+            v_US.dcID_NGUOI_NHAN_THAO_TAC = CIPConvert.ToDecimal(v_us.dcID_NGUOI_TAO_THAO_TAC);
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
             v_US.strGHI_CHU = m_txt_ly_do_tu_choi.Text;
@@ -90,7 +90,7 @@ namespace TOSApp.ChucNang
         {
             v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG( m_us.dcID);
             m_txt_ma_don_hang.Text = m_us.strMA_DON_HANG;//?? văn
-            m_txt_nguoi_nhan_tao_tac.Text =id_nguoi_tao.ToString();
+            m_txt_nguoi_nhan_tao_tac.Text =m_us.strNGUOI_TAO_THAO_TAC;
             m_txt_ly_do_tu_choi.Focus();
         }
     }
