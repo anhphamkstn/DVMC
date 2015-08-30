@@ -149,6 +149,7 @@ namespace TOSApp.ChucNang
                        // update_log_gd_dat_hang();
                         ghi_log_thay_doi_don_hang();
                         MessageBox.Show("đơn hàng đã được cập nhật thông tin");
+
                         this.Close();
                     }
                     else
