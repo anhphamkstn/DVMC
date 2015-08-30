@@ -47,6 +47,8 @@ namespace TOSApp.ChucNang
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
             load_data_2_selected_loai_dich_vu();
+           
+
         }
 
         private void load_data_2_selected_nguoi_tiep_nhan()
@@ -358,6 +360,7 @@ namespace TOSApp.ChucNang
 
         internal void displayForInsert()
         {
+            m_dat_thoi_gian_dat_hang.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
             this.ShowDialog();
@@ -569,6 +572,7 @@ namespace TOSApp.ChucNang
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.dcID_NGUOI_TAO;
             m_dat_thoi_gian_dat_hang.Text = v_us.datTHOI_GIAN_DAT_HANG.ToString();
+           // m_dat_thoi_gian_dat_hang.Value = v_us.datTHOI_GIAN_DAT_HANG;
       //      m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
             //m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
             if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 200) m_rdb_loai_time_15phut.Checked = true;

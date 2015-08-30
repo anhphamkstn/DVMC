@@ -356,10 +356,12 @@
             this.m_dat_thoi_gian_dat_hang.CustomFormat = "dd/MM/yyyy HH:mm:ss";
             this.m_dat_thoi_gian_dat_hang.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.m_dat_thoi_gian_dat_hang.Location = new System.Drawing.Point(723, 4);
+            this.m_dat_thoi_gian_dat_hang.MaxDate = new System.DateTime(2099, 8, 30, 0, 0, 0, 0);
+            this.m_dat_thoi_gian_dat_hang.MinDate = new System.DateTime(1957, 8, 30, 0, 0, 0, 0);
             this.m_dat_thoi_gian_dat_hang.Name = "m_dat_thoi_gian_dat_hang";
             this.m_dat_thoi_gian_dat_hang.Size = new System.Drawing.Size(206, 20);
             this.m_dat_thoi_gian_dat_hang.TabIndex = 5;
-            this.m_dat_thoi_gian_dat_hang.Value = new System.DateTime(2015, 8, 28, 0, 0, 0, 0);
+            this.m_dat_thoi_gian_dat_hang.Value = new System.DateTime(2015, 8, 30, 0, 0, 0, 0);
             // 
             // m_txt_dien_thoai
             // 

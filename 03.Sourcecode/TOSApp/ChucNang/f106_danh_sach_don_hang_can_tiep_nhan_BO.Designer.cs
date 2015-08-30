@@ -59,18 +59,18 @@
             // 
             // m_cmd_tu_choi
             // 
-            this.m_cmd_tu_choi.Location = new System.Drawing.Point(506, 23);
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(542, 23);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
-            this.m_cmd_tu_choi.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_tu_choi.Size = new System.Drawing.Size(89, 23);
             this.m_cmd_tu_choi.TabIndex = 0;
             this.m_cmd_tu_choi.Text = "Từ chối";
             this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);
             // 
             // m_cmd_tiep_nhan
             // 
-            this.m_cmd_tiep_nhan.Location = new System.Drawing.Point(392, 23);
+            this.m_cmd_tiep_nhan.Location = new System.Drawing.Point(413, 23);
             this.m_cmd_tiep_nhan.Name = "m_cmd_tiep_nhan";
-            this.m_cmd_tiep_nhan.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_tiep_nhan.Size = new System.Drawing.Size(89, 23);
             this.m_cmd_tiep_nhan.TabIndex = 0;
             this.m_cmd_tiep_nhan.Text = "Tiếp nhận";
             this.m_cmd_tiep_nhan.Click += new System.EventHandler(this.m_cmd_tiep_nhan_Click);
