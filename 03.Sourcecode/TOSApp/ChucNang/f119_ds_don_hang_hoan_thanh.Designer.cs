@@ -80,6 +80,8 @@
             this.gridColumn9});
             this.m_grv_ds_dh_hoan_thanh.GridControl = this.m_grc_ds_dh_hoan_thanh;
             this.m_grv_ds_dh_hoan_thanh.Name = "m_grv_ds_dh_hoan_thanh";
+            this.m_grv_ds_dh_hoan_thanh.OptionsBehavior.Editable = false;
+            this.m_grv_ds_dh_hoan_thanh.OptionsBehavior.ReadOnly = true;
             // 
             // gridColumn1
             // 

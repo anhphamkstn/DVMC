@@ -168,6 +168,7 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Name = "m_grv_gd_dat_hang_gd_log_dat_hang";
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsBehavior.ReadOnly = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ColumnAutoWidth = false;
             // 
             // MA_DON_HANG

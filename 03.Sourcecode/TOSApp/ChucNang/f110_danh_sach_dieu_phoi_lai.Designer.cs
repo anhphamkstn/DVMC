@@ -110,6 +110,8 @@
             this.DICH_VU_YEU_CAU});
             this.m_grv_ds_dieu_phoi_lai.GridControl = this.m_grc_ds_dieu_phoi_lai;
             this.m_grv_ds_dieu_phoi_lai.Name = "m_grv_ds_dieu_phoi_lai";
+            this.m_grv_ds_dieu_phoi_lai.OptionsBehavior.Editable = false;
+            this.m_grv_ds_dieu_phoi_lai.OptionsBehavior.ReadOnly = true;
             // 
             // ID_GD_DAT_HANG
             // 

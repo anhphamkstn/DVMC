@@ -26,7 +26,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds,"select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where THAo_tac_het_han_YN= 'N'");
+            v_us.FillDatasetWithQuery(v_ds,"select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where THAo_tac_het_han_YN= 'N' and thoi_gian_hoan_thanh is null");
             m_grc_ds_don_dat_hang.DataSource = v_ds.Tables[0];
 
           
@@ -50,5 +50,25 @@ namespace TOSApp.ChucNang
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+        private void m_grv_ds_don_dat_hang_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            //try
+            //{
+            //    DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
+            //    US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            //    f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+            //    v_f100.displayForUpdate(v_us);
+            //    load_data_2_grid();
+
+            //}
+            //catch (Exception v_e)
+            //{
+
+            //    CSystemLog_301.ExceptionHandle(v_e);
+            //}
+        }
+
+      
     }
 }

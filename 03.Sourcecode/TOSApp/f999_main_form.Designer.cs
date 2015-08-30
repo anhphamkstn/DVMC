@@ -85,17 +85,17 @@
             this.m_barsubitem_dang_xuat = new DevExpress.XtraBars.BarSubItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_ds_don_hang_hoan_thanh = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_dm_email = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_dm_dich_vu = new DevExpress.XtraBars.BarButtonItem();
             this.m_rbc_ls_giao_dich = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_rbc_cau_hoi = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.m_rbc_danh_muc = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.m_rib_dm_cau_hoi = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_rib_dm_email = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_rib_dm_dich_vu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.m_rib_dm_email = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_cmd_dm_email = new DevExpress.XtraBars.BarButtonItem();
-            this.m_rib_dm_dich_vu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_cmd_dm_dich_vu = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -480,7 +480,7 @@
             this.m_rbc_TD,
             this.m_rbc_TM,
             this.m_rbc_ls_giao_dich,
-            this.m_rbc_cau_hoi,
+            this.m_rbc_danh_muc,
             this.m_rbc_bao_cao});
             this.ribbonControl1.Size = new System.Drawing.Size(1186, 163);
             // 
@@ -569,6 +569,24 @@
             this.m_cmd_ds_don_hang_hoan_thanh.Name = "m_cmd_ds_don_hang_hoan_thanh";
             this.m_cmd_ds_don_hang_hoan_thanh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_don_hang_hoan_thanh_ItemClick);
             // 
+            // m_cmd_dm_email
+            // 
+            this.m_cmd_dm_email.Caption = "Danh mục Email";
+            this.m_cmd_dm_email.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_email.Glyph")));
+            this.m_cmd_dm_email.Id = 40;
+            this.m_cmd_dm_email.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_email.LargeGlyph")));
+            this.m_cmd_dm_email.Name = "m_cmd_dm_email";
+            this.m_cmd_dm_email.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_dm_email_ItemClick);
+            // 
+            // m_cmd_dm_dich_vu
+            // 
+            this.m_cmd_dm_dich_vu.Caption = "Danh mục dịch vụ";
+            this.m_cmd_dm_dich_vu.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_dich_vu.Glyph")));
+            this.m_cmd_dm_dich_vu.Id = 41;
+            this.m_cmd_dm_dich_vu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_dich_vu.LargeGlyph")));
+            this.m_cmd_dm_dich_vu.Name = "m_cmd_dm_dich_vu";
+            this.m_cmd_dm_dich_vu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_dm_dich_vu_ItemClick);
+            // 
             // m_rbc_ls_giao_dich
             // 
             this.m_rbc_ls_giao_dich.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -590,14 +608,14 @@
             this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             this.ribbonPageGroup17.Text = "danh sách đơn hàng đã nghiệm thu";
             // 
-            // m_rbc_cau_hoi
+            // m_rbc_danh_muc
             // 
-            this.m_rbc_cau_hoi.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.m_rbc_danh_muc.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.m_rib_dm_cau_hoi,
             this.m_rib_dm_email,
             this.m_rib_dm_dich_vu});
-            this.m_rbc_cau_hoi.Name = "m_rbc_cau_hoi";
-            this.m_rbc_cau_hoi.Text = "Danh mục";
+            this.m_rbc_danh_muc.Name = "m_rbc_danh_muc";
+            this.m_rbc_danh_muc.Text = "Danh mục";
             // 
             // m_rib_dm_cau_hoi
             // 
@@ -605,6 +623,18 @@
             this.m_rib_dm_cau_hoi.ItemLinks.Add(this.m_cmd_dm_cau_hoi);
             this.m_rib_dm_cau_hoi.Name = "m_rib_dm_cau_hoi";
             this.m_rib_dm_cau_hoi.Text = "Show";
+            // 
+            // m_rib_dm_email
+            // 
+            this.m_rib_dm_email.ItemLinks.Add(this.m_cmd_dm_email);
+            this.m_rib_dm_email.Name = "m_rib_dm_email";
+            this.m_rib_dm_email.Text = "Show";
+            // 
+            // m_rib_dm_dich_vu
+            // 
+            this.m_rib_dm_dich_vu.ItemLinks.Add(this.m_cmd_dm_dich_vu);
+            this.m_rib_dm_dich_vu.Name = "m_rib_dm_dich_vu";
+            this.m_rib_dm_dich_vu.Text = "Show";
             // 
             // barButtonItem2
             // 
@@ -621,36 +651,6 @@
             this.barButtonItem3.Id = 21;
             this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
             this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // m_rib_dm_email
-            // 
-            this.m_rib_dm_email.ItemLinks.Add(this.m_cmd_dm_email);
-            this.m_rib_dm_email.Name = "m_rib_dm_email";
-            this.m_rib_dm_email.Text = "Show";
-            // 
-            // m_cmd_dm_email
-            // 
-            this.m_cmd_dm_email.Caption = "Danh mục Email";
-            this.m_cmd_dm_email.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_email.Glyph")));
-            this.m_cmd_dm_email.Id = 40;
-            this.m_cmd_dm_email.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_email.LargeGlyph")));
-            this.m_cmd_dm_email.Name = "m_cmd_dm_email";
-            this.m_cmd_dm_email.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_dm_email_ItemClick);
-            // 
-            // m_rib_dm_dich_vu
-            // 
-            this.m_rib_dm_dich_vu.ItemLinks.Add(this.m_cmd_dm_dich_vu);
-            this.m_rib_dm_dich_vu.Name = "m_rib_dm_dich_vu";
-            this.m_rib_dm_dich_vu.Text = "Show";
-            // 
-            // m_cmd_dm_dich_vu
-            // 
-            this.m_cmd_dm_dich_vu.Caption = "Danh mục dịch vụ";
-            this.m_cmd_dm_dich_vu.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_dich_vu.Glyph")));
-            this.m_cmd_dm_dich_vu.Id = 41;
-            this.m_cmd_dm_dich_vu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_dich_vu.LargeGlyph")));
-            this.m_cmd_dm_dich_vu.Name = "m_cmd_dm_dich_vu";
-            this.m_cmd_dm_dich_vu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_dm_dich_vu_ItemClick);
             // 
             // f999_main_form
             // 
@@ -719,7 +719,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage m_rbc_ls_giao_dich;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.BarButtonItem m_cmd_dm_cau_hoi;
-        private DevExpress.XtraBars.Ribbon.RibbonPage m_rbc_cau_hoi;
+        private DevExpress.XtraBars.Ribbon.RibbonPage m_rbc_danh_muc;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_rib_dm_cau_hoi;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;

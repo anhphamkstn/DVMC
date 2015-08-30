@@ -128,6 +128,8 @@
             this.TEN_BO});
             this.m_grv_ds_BO.GridControl = this.m_grc_ds_BO;
             this.m_grv_ds_BO.Name = "m_grv_ds_BO";
+            this.m_grv_ds_BO.OptionsBehavior.Editable = false;
+            this.m_grv_ds_BO.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_BO.OptionsSelection.MultiSelect = true;
             this.m_grv_ds_BO.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             // 

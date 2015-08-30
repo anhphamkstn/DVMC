@@ -83,6 +83,8 @@
             this.NGUOI_DAT_HANG});
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.GridControl = this.m_grc_xac_nhan_don_hang;
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.Name = "m_grv_danh_sach_don_hang_tiep_nhan_BO";
+            this.m_grv_danh_sach_don_hang_tiep_nhan_BO.OptionsBehavior.Editable = false;
+            this.m_grv_danh_sach_don_hang_tiep_nhan_BO.OptionsBehavior.ReadOnly = true;
             // 
             // ID_GD_DAT_HANG
             // 

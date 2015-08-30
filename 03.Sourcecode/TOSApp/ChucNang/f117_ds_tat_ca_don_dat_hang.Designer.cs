@@ -96,6 +96,9 @@
             this.gridColumn12});
             this.m_grv_ds_don_dat_hang.GridControl = this.m_grc_ds_don_dat_hang;
             this.m_grv_ds_don_dat_hang.Name = "m_grv_ds_don_dat_hang";
+            this.m_grv_ds_don_dat_hang.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
+            this.m_grv_ds_don_dat_hang.OptionsBehavior.ReadOnly = true;
+            this.m_grv_ds_don_dat_hang.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_ds_don_dat_hang_RowCellClick);
             // 
             // MA_DON_HANG
             // 

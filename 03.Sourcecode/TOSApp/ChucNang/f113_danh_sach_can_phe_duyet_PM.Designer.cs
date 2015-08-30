@@ -105,6 +105,8 @@
             this.TRANG_THAI});
             this.m_grv_danh_sach_can_phe_duyet_PM.GridControl = this.m_grc_danh_sach_can_phe_duyet_PM;
             this.m_grv_danh_sach_can_phe_duyet_PM.Name = "m_grv_danh_sach_can_phe_duyet_PM";
+            this.m_grv_danh_sach_can_phe_duyet_PM.OptionsBehavior.Editable = false;
+            this.m_grv_danh_sach_can_phe_duyet_PM.OptionsBehavior.ReadOnly = true;
             // 
             // ID
             // 

@@ -571,6 +571,12 @@ namespace TOSApp.ChucNang
             m_dat_thoi_gian_dat_hang.Text = v_us.datTHOI_GIAN_DAT_HANG.ToString();
       //      m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
             //m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
+            if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 200) m_rdb_loai_time_15phut.Checked = true;
+            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 201) m_rdb_loai_time_4h.Checked = true;
+            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 202) m_rdb_loai_time_1ngay.Checked = true;
+            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 203) m_rdb_loai_time_1tuan.Checked = true;
+            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 204) m_rdb_loai_time_1thang.Checked = true;
+            
 
            // WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "ten_dich_vu", WinFormControls.eTAT_CA.NO, " where id_cha=" + v_us.dcID_NHOM_DV_YEU_CAU);
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;

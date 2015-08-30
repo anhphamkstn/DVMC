@@ -24,7 +24,7 @@ namespace TOSApp
         {
             InitializeComponent();
             format_controll_for_each_user(us_user.dcIDNhom);
-           // format_button_controll();
+        //   format_button_controll();
         }
 
 
@@ -52,16 +52,20 @@ namespace TOSApp
             //GetAllControl(this, list);
 
             ArrayList visiblePages = ribbonControl1.TotalPageCategory.GetVisiblePages();
+  
             foreach (RibbonPage page in visiblePages)
             {
                 for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
                 {
                     if (page.Name == v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
                     {
+                        
+
                         page.Visible = true;
                         break;
                     }
                     else page.Visible = false;
+
 
                 }
 
@@ -72,8 +76,12 @@ namespace TOSApp
                 //    break;
                 //}
             }
-
-
+            if (us_user.dcIDNhom == 1 || us_user.dcIDNhom == 5)
+            {
+                m_rib_dm_cau_hoi.Visible = true;
+            }
+            else m_rib_dm_cau_hoi.Visible = false;
+     
             //foreach (Control control in list)
             //{
             //    if (control.GetType() == typeof(RibbonPage) )

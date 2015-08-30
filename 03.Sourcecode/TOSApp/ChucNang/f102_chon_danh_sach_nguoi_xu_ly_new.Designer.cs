@@ -114,6 +114,8 @@
             this.HO_VA_TEN});
             this.m_grv_ht_nguoi_su_dung.GridControl = this.m_grc_ht_nguoi_su_dung;
             this.m_grv_ht_nguoi_su_dung.Name = "m_grv_ht_nguoi_su_dung";
+            this.m_grv_ht_nguoi_su_dung.OptionsBehavior.Editable = false;
+            this.m_grv_ht_nguoi_su_dung.OptionsBehavior.ReadOnly = true;
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             // 
