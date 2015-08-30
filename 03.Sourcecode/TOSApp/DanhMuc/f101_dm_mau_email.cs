@@ -98,6 +98,11 @@ namespace TOSApp.DanhMuc
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+        private void m_grv_dm_mau_email_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        {
+            
+        }
        
     }
 }

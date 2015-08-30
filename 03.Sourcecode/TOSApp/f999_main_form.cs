@@ -105,8 +105,8 @@ namespace TOSApp
                 m_rbc_PM.Visible = false;
                 m_rbc_TD.Visible = false;
                 m_rbc_TM.Visible = false;
-             m_rbc_bao_cao.Visible = true;
-             m_rbc_cau_hoi.Visible = true;
+                m_rbc_bao_cao.Visible = true;
+                m_rib_dm_cau_hoi.Visible = true;
             }
             else if (user_id == 2)
             {
@@ -116,7 +116,7 @@ namespace TOSApp
                 m_rbc_TD.Visible = false;
                 m_rbc_TM.Visible = false;
                 m_rbc_bao_cao.Visible = false;
-                m_rbc_cau_hoi.Visible = false;
+                m_rib_dm_cau_hoi.Visible = false;
             }
             else if (user_id == 3)
             {
@@ -126,7 +126,7 @@ namespace TOSApp
                 m_rbc_TD.Visible = false;
                 m_rbc_TM.Visible = false;
                 m_rbc_bao_cao.Visible = false;
-                m_rbc_cau_hoi.Visible = false;
+                m_rib_dm_cau_hoi.Visible = false;
             }
             else if (user_id == 5)
             {
@@ -134,9 +134,9 @@ namespace TOSApp
                 m_rbc_BO.Visible = false;
                 m_rbc_PM.Visible = false;
                 m_rbc_TD.Visible = true;
-               m_rbc_TM.Visible = false;
-               m_rbc_bao_cao.Visible = true;
-               m_rbc_cau_hoi.Visible = true;
+                m_rbc_TM.Visible = false;
+                m_rbc_bao_cao.Visible = true;
+                m_rib_dm_cau_hoi.Visible = true;
             }
             else
             {
@@ -146,7 +146,7 @@ namespace TOSApp
                 m_rbc_TD.Visible = false;
                 m_rbc_TM.Visible = true;
                 m_rbc_bao_cao.Visible = false;
-                m_rbc_cau_hoi.Visible = false;
+                m_rib_dm_cau_hoi.Visible = false;
             }
         }
         //decimal id_nguoi_dung;
@@ -500,6 +500,20 @@ namespace TOSApp
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_cmd_dm_email_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f101_dm_mau_email v_f = new f101_dm_mau_email();
+            v_f.MdiParent = this;
+            v_f.Show();
+        }
+
+        private void m_cmd_dm_dich_vu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f102_dm_loai_yeu_cau v_f = new f102_dm_loai_yeu_cau();
+            v_f.MdiParent = this;
+            v_f.Show();
         }
 
      
