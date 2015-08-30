@@ -32,40 +32,15 @@ namespace TOSApp.DanhMuc
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_DM_MAU_EMAIL");
             m_grc_dm_mau_email.DataSource = v_ds.Tables[0];
-        }
-
-        private void m_btn_xoa_Click(object sender, EventArgs e)
-        {
-            try
+            if(us_user.dcIDNhom == 5)
+            { }
+            else
             {
-                DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
-                decimal v_id = CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString());
-                US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(v_id);
-                v_us.Delete();
-                MessageBox.Show("Da xoa thanh cong " + v_dr[DM_MAU_EMAIL.ID].ToString());
-                load_data_grid();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
+                m_pan_button.Visible = false;
+                m_grv_dm_mau_email.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.None;
             }
         }
-
-        private void simpbtn_them_Click(object sender, EventArgs e)
-        {
-            try
-            {
-
-                f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
-                v_f.DisPlayForInsert();
-                load_data_grid();
-            }
-            catch (Exception v_e)
-            {
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
-
+       
         private void simpbtn_xoa_Click(object sender, EventArgs e)
         {
             try
@@ -83,23 +58,41 @@ namespace TOSApp.DanhMuc
             }
         }
 
-        private void simpbtn_sua_Click(object sender, EventArgs e)
+        private void m_grv_dm_mau_email_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            try
+            DataRow v_dr_grv = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
+            if(v_dr_grv == null)
             {
-                DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
-                US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString()));
-                f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
-                v_f.DisPlayForUpdate(v_us);
-                load_data_grid();
+                try
+                {
+
+                    f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
+                    v_f.DisPlayForInsert();
+                    load_data_grid();
+                }
+                catch (Exception v_e)
+                {
+                    CSystemLog_301.ExceptionHandle(v_e);
+                }
             }
-            catch (Exception v_e)
+            else
             {
-                CSystemLog_301.ExceptionHandle(v_e);
+                try
+                {
+                    DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
+                    US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString()));
+                    f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
+                    v_f.DisPlayForUpdate(v_us);
+                    load_data_grid();
+                }
+                catch (Exception v_e)
+                {
+                    CSystemLog_301.ExceptionHandle(v_e);
+                }
             }
         }
 
-        private void m_grv_dm_mau_email_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        private void m_grv_dm_mau_email_DoubleClick(object sender, EventArgs e)
         {
             
         }

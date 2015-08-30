@@ -23,7 +23,17 @@ namespace TOSApp.DanhMuc
         DataEntryFormMode m_e_form_mode = new DataEntryFormMode();
         private void f102_dm_loai_yeu_cau_de_Load(object sender, EventArgs e)
         {
-
+            if (us_user.dcIDNhom == 5)
+            { }
+            else
+            {
+                cbo_loai_dich_vu.Enabled =false;
+                cbo_nhom_dich_vu.Enabled = false; ;
+                cbo_thoi_gian_xu_ly.Enabled = false; ;
+                txt_dich_vu.ReadOnly = true;
+                txt_diem_khoi_luong.ReadOnly = true;
+                m_pan_button.Visible = false;
+            }
         }
 
         private void form_to_us()

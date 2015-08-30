@@ -24,7 +24,6 @@ namespace TOSApp.DanhMuc
         {
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             this.ShowDialog();
-
         }
 
         internal void DisPlayForUpdate(US_DM_MAU_EMAIL v_us)
@@ -55,7 +54,16 @@ namespace TOSApp.DanhMuc
 
         private void f101_dm_mau_email_de_Load(object sender, EventArgs e)
         {
-
+            if (us_user.dcIDNhom == 5)
+            { }
+            else
+            {
+                m_pan_button.Visible = false;
+                m_txt_gui_cc.ReadOnly = true;
+                m_txt_ma_email.ReadOnly = true;
+                m_txt_tieu_de_mail.ReadOnly = true;
+                m_richedit_noi_dung_email.ReadOnly = true;
+            }
         }
 
         private void simpbtn_luu_Click(object sender, EventArgs e)
