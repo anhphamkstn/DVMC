@@ -70,13 +70,14 @@
             this.m_grv_dm_loai_yeu_cau.GridControl = this.m_grc_dm_loai_yeu_cau;
             this.m_grv_dm_loai_yeu_cau.GroupCount = 2;
             this.m_grv_dm_loai_yeu_cau.Name = "m_grv_dm_loai_yeu_cau";
+            this.m_grv_dm_loai_yeu_cau.OptionsBehavior.Editable = false;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_loai_yeu_cau.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             this.m_grv_dm_loai_yeu_cau.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_ten_yeu_cau_cha_cha, DevExpress.Data.ColumnSortOrder.Ascending),
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_ten_yeu_cau_cha, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.m_grv_dm_loai_yeu_cau.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_dm_loai_yeu_cau_RowCellClick);
+            this.m_grv_dm_loai_yeu_cau.DoubleClick += new System.EventHandler(this.m_grv_dm_loai_yeu_cau_DoubleClick);
             // 
             // c_ten_yeu_cau_cha_cha
             // 

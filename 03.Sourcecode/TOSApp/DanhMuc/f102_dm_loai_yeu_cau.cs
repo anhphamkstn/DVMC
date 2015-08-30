@@ -1,4 +1,6 @@
-﻿using IP.Core.IPCommon;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using IP.Core.IPCommon;
 using IPCOREDS.CDBNames;
 using IPCOREUS;
 using System;
@@ -19,12 +21,12 @@ namespace TOSApp.DanhMuc
             InitializeComponent();
         }
 
- 
         private void f102_dm_loai_yeu_cau_Load(object sender, EventArgs e)
         {
 
             load_data_griv();
         }
+
         private void load_data_griv()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
@@ -61,36 +63,47 @@ namespace TOSApp.DanhMuc
             }
         }
 
-        private void m_grv_dm_loai_yeu_cau_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
+        private void m_grv_dm_loai_yeu_cau_DoubleClick(object sender, EventArgs e)
         {
-            DataRow v_dr_grv = m_grv_dm_loai_yeu_cau.GetDataRow(m_grv_dm_loai_yeu_cau.FocusedRowHandle);
-            if (v_dr_grv==null)
+            GridView view = (GridView)sender;
+            Point pt = view.GridControl.PointToClient(Control.MousePosition);
+            DoRowDoubleClick(view, pt);
+        }
+
+        private void DoRowDoubleClick(GridView view, Point pt)
+        {
+            GridHitInfo info = view.CalcHitInfo(pt);
+            if (info.InRow || info.InRowCell)
             {
-                try
+                DataRow v_dr_grv = m_grv_dm_loai_yeu_cau.GetDataRow(m_grv_dm_loai_yeu_cau.FocusedRowHandle);
+                if (v_dr_grv == null)
                 {
-                    f102_dm_loai_yeu_cau_de v_f = new f102_dm_loai_yeu_cau_de();
-                    v_f.displayinsert();
-                    load_data_griv();
+                    try
+                    {
+                        f102_dm_loai_yeu_cau_de v_f = new f102_dm_loai_yeu_cau_de();
+                        v_f.displayinsert();
+                        load_data_griv();
+                    }
+                    catch (Exception v_e)
+                    {
+                        CSystemLog_301.ExceptionHandle(v_e);
+                    }
                 }
-                catch (Exception v_e)
+                else
                 {
-                    CSystemLog_301.ExceptionHandle(v_e);
-                }
-            }
-            else
-            {
-                try
-                {
-                    DataRow v_dr = m_grv_dm_loai_yeu_cau.GetDataRow(m_grv_dm_loai_yeu_cau.FocusedRowHandle);
-                    US_DM_LOAI_YEU_CAU v_us1 = new US_DM_LOAI_YEU_CAU(CIPConvert.ToDecimal(v_dr[DM_LOAI_YEU_CAU.ID].ToString()));
-                    US_DM_LOAI_YEU_CAU v_us2 = new US_DM_LOAI_YEU_CAU(CIPConvert.ToDecimal(v_dr[DM_LOAI_YEU_CAU.ID_CHA].ToString()));
-                    f102_dm_loai_yeu_cau_de v_f = new f102_dm_loai_yeu_cau_de();
-                    v_f.displayupdate(v_us1, v_us2);
-                    load_data_griv();
-                }
-                catch (Exception v_e)
-                {
-                    CSystemLog_301.ExceptionHandle(v_e);
+                    try
+                    {
+                        DataRow v_dr = m_grv_dm_loai_yeu_cau.GetDataRow(m_grv_dm_loai_yeu_cau.FocusedRowHandle);
+                        US_DM_LOAI_YEU_CAU v_us1 = new US_DM_LOAI_YEU_CAU(CIPConvert.ToDecimal(v_dr[DM_LOAI_YEU_CAU.ID].ToString()));
+                        US_DM_LOAI_YEU_CAU v_us2 = new US_DM_LOAI_YEU_CAU(CIPConvert.ToDecimal(v_dr[DM_LOAI_YEU_CAU.ID_CHA].ToString()));
+                        f102_dm_loai_yeu_cau_de v_f = new f102_dm_loai_yeu_cau_de();
+                        v_f.displayupdate(v_us1, v_us2);
+                        load_data_griv();
+                    }
+                    catch (Exception v_e)
+                    {
+                        CSystemLog_301.ExceptionHandle(v_e);
+                    }
                 }
             }
         }

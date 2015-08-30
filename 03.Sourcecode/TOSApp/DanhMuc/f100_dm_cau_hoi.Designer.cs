@@ -132,13 +132,14 @@
             this.m_grv_dm_cau_hoi.GroupCount = 2;
             this.m_grv_dm_cau_hoi.Name = "m_grv_dm_cau_hoi";
             this.m_grv_dm_cau_hoi.NewItemRowText = "Click vào đây để thêm mới";
+            this.m_grv_dm_cau_hoi.OptionsBehavior.Editable = false;
             this.m_grv_dm_cau_hoi.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_cau_hoi.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_cau_hoi.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
             this.m_grv_dm_cau_hoi.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_to_chuc, DevExpress.Data.ColumnSortOrder.Ascending),
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_nhom_cau_hoi, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.m_grv_dm_cau_hoi.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_dm_cau_hoi_RowCellClick);
+            this.m_grv_dm_cau_hoi.DoubleClick += new System.EventHandler(this.m_grv_dm_cau_hoi_DoubleClick);
             // 
             // c_noi_dung_cau_hoi
             // 

@@ -1,4 +1,6 @@
-﻿using IP.Core.IPCommon;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using IP.Core.IPCommon;
 using IPCOREDS.CDBNames;
 using IPCOREUS;
 using System;
@@ -18,7 +20,6 @@ namespace TOSApp.DanhMuc
         {
             InitializeComponent();
         }
-
 
         private void f101_dm_mau_email_Load(object sender, EventArgs e)
         {
@@ -58,44 +59,51 @@ namespace TOSApp.DanhMuc
             }
         }
 
-        private void m_grv_dm_mau_email_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
-        {
-            DataRow v_dr_grv = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
-            if(v_dr_grv == null)
-            {
-                try
-                {
-
-                    f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
-                    v_f.DisPlayForInsert();
-                    load_data_grid();
-                }
-                catch (Exception v_e)
-                {
-                    CSystemLog_301.ExceptionHandle(v_e);
-                }
-            }
-            else
-            {
-                try
-                {
-                    DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
-                    US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString()));
-                    f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
-                    v_f.DisPlayForUpdate(v_us);
-                    load_data_grid();
-                }
-                catch (Exception v_e)
-                {
-                    CSystemLog_301.ExceptionHandle(v_e);
-                }
-            }
-        }
-
         private void m_grv_dm_mau_email_DoubleClick(object sender, EventArgs e)
         {
-            
+            GridView view = (GridView)sender;
+            Point pt = view.GridControl.PointToClient(Control.MousePosition);
+            DoRowDoubleClick(view, pt);
         }
+
+        private void DoRowDoubleClick(GridView view, Point pt)
+        {
+            GridHitInfo info = view.CalcHitInfo(pt);
+            if (info.InRow || info.InRowCell)
+            {
+                DataRow v_dr_grv = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
+                if (v_dr_grv == null)
+                {
+                    try
+                    {
+
+                        f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
+                        v_f.DisPlayForInsert();
+                        load_data_grid();
+                    }
+                    catch (Exception v_e)
+                    {
+                        CSystemLog_301.ExceptionHandle(v_e);
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        DataRow v_dr = m_grv_dm_mau_email.GetDataRow(m_grv_dm_mau_email.FocusedRowHandle);
+                        US_DM_MAU_EMAIL v_us = new US_DM_MAU_EMAIL(CIPConvert.ToDecimal(v_dr[DM_MAU_EMAIL.ID].ToString()));
+                        f101_dm_mau_email_de v_f = new f101_dm_mau_email_de();
+                        v_f.DisPlayForUpdate(v_us);
+                        load_data_grid();
+                    }
+                    catch (Exception v_e)
+                    {
+                        CSystemLog_301.ExceptionHandle(v_e);
+                    }
+                }
+            }
+        }
+
        
     }
 }

@@ -50,14 +50,14 @@
             this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_pan_button.Location = new System.Drawing.Point(0, 305);
             this.m_pan_button.Name = "m_pan_button";
-            this.m_pan_button.Size = new System.Drawing.Size(752, 56);
+            this.m_pan_button.Size = new System.Drawing.Size(773, 56);
             this.m_pan_button.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.m_cmd_xoa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(562, 0);
+            this.panel1.Location = new System.Drawing.Point(583, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(190, 56);
             this.panel1.TabIndex = 4;
@@ -82,7 +82,7 @@
             this.m_grc_dm_mau_email.Location = new System.Drawing.Point(0, 0);
             this.m_grc_dm_mau_email.MainView = this.m_grv_dm_mau_email;
             this.m_grc_dm_mau_email.Name = "m_grc_dm_mau_email";
-            this.m_grc_dm_mau_email.Size = new System.Drawing.Size(752, 305);
+            this.m_grc_dm_mau_email.Size = new System.Drawing.Size(773, 305);
             this.m_grc_dm_mau_email.TabIndex = 2;
             this.m_grc_dm_mau_email.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_dm_mau_email});
@@ -96,10 +96,10 @@
             this.c_ma_email});
             this.m_grv_dm_mau_email.GridControl = this.m_grc_dm_mau_email;
             this.m_grv_dm_mau_email.Name = "m_grv_dm_mau_email";
+            this.m_grv_dm_mau_email.OptionsBehavior.Editable = false;
             this.m_grv_dm_mau_email.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_mau_email.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_mau_email.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
-            this.m_grv_dm_mau_email.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_dm_mau_email_RowCellClick);
             this.m_grv_dm_mau_email.DoubleClick += new System.EventHandler(this.m_grv_dm_mau_email_DoubleClick);
             // 
             // c_tieu_de_mail
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 361);
+            this.ClientSize = new System.Drawing.Size(773, 361);
             this.Controls.Add(this.m_grc_dm_mau_email);
             this.Controls.Add(this.m_pan_button);
             this.Name = "f101_dm_mau_email";
