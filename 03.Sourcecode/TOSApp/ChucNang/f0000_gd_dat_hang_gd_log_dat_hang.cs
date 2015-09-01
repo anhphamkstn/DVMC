@@ -131,22 +131,22 @@ namespace TOSApp.ChucNang
 
             string m_query = "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where THAO_TAC_HET_HAN_YN = 'N'";
             if (us_user.dcIDNhom == 1) //fo
-                m_query = m_query + "And ID_LOAI_THAO_TAC =310 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID ;
+                m_query = m_query + "And ID_LOAI_THAO_TAC =310 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString() ;
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
-                else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
+                else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
                    
             else if (us_user.dcIDNhom == 3) //pm
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in( 303,321,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
-                else m_query = m_query + "And ID_LOAI_THAO_TAC = 304 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in( 303,321,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
+                else m_query = m_query + "And ID_LOAI_THAO_TAC = 304 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
 
             else if (us_user.dcIDNhom == 5) //td
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in (305,313,321s) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID;
-                else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID;
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (305,313,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
+                else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
                  //tm
             else m_query = m_query + "And ID_LOAI_THAO_TAC = 297";
 
