@@ -359,12 +359,6 @@
     <Compile Include="DanhMuc\f102_dm_loai_yeu_cau_de.Designer.cs">
       <DependentUpon>f102_dm_loai_yeu_cau_de.cs</DependentUpon>
     </Compile>
-    <Compile Include="DanhMuc\UserControl_dm_cau_hoi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DanhMuc\UserControl_dm_cau_hoi.Designer.cs">
-      <DependentUpon>UserControl_dm_cau_hoi.cs</DependentUpon>
-    </Compile>
     <Compile Include="f003_main_PM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -508,9 +502,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f102_dm_loai_yeu_cau_de.resx">
       <DependentUpon>f102_dm_loai_yeu_cau_de.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DanhMuc\UserControl_dm_cau_hoi.resx">
-      <DependentUpon>UserControl_dm_cau_hoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="f999_main_form.resx">
       <DependentUpon>f999_main_form.cs</DependentUpon>

@@ -151,7 +151,6 @@ namespace TOSApp.ChucNang
                        // update_log_gd_dat_hang();
                         ghi_log_thay_doi_don_hang();
                         MessageBox.Show("đơn hàng đã được cập nhật thông tin");
-
                         this.Close();
                     }
                     else
@@ -219,7 +218,7 @@ namespace TOSApp.ChucNang
             v_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
             v_us.strPHAN_HOI_TU_DVMC = m_txt_phan_hoi_tu_dvmc.Text;
             v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal(return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
-            v_us.datTHOI_GIAN_HOAN_THANH = m_dat_thoi_gian_dat_hang.Value;
+            v_us.datTHOI_GIAN_DAT_HANG = m_dat_thoi_gian_dat_hang.Value;
             v_us.Update();
 
            
