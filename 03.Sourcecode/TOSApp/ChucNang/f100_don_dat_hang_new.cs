@@ -347,7 +347,13 @@ namespace TOSApp.ChucNang
             m_us.dcID_DON_VI = CIPConvert.ToDecimal( m_cbo_dv_don_vi.SelectedValue.ToString());//xem lai
             m_us.strDIEN_THOAI = m_txt_dien_thoai.Text;
             m_us.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten_nguoi_dat_hang.Text ;
-            m_us.datTHOI_DIEM_CAN_HOAN_THANH =m_dat_thoi_diem_can_hoan_thanh.Value;
+
+            if (m_checkbox_m2_m3.Checked == false)
+            {
+                m_us.datTHOI_DIEM_CAN_HOAN_THANH = m_dat_thoi_diem_can_hoan_thanh.Value;
+            }
+            else m_us.SetTHOI_DIEM_CAN_HOAN_THANHNull();
+
             m_us.dcID_DV_YEU_CAU = CIPConvert.ToDecimal( m_cbo_dich_vu.SelectedValue);//xem ai chi lay id
             m_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
    //         m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal( return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
@@ -646,6 +652,7 @@ namespace TOSApp.ChucNang
 
         private void format_controlls()
         {
+            m_checkbox_m2_m3.Enabled = false;
             m_txt_dien_thoai.Enabled = false;
             m_txt_dien_thoai.BackColor = SystemColors.Control;
             m_txt_ho_ten_nguoi_dat_hang.Enabled = false;
@@ -713,5 +720,16 @@ namespace TOSApp.ChucNang
             m_txt_phan_hoi_tu_dvmc.Enabled = false;
             m_dat_thoi_diem_can_hoan_thanh.Enabled = true;
         }
+
+        private void m_checkbox_change(object sender, EventArgs e)
+        {
+            if (m_checkbox_m2_m3.Checked == true)
+            {
+                m_dat_thoi_diem_can_hoan_thanh.Enabled = false;
+
+            }
+            else m_dat_thoi_diem_can_hoan_thanh.Enabled = true;
+        }
+
     }
 }

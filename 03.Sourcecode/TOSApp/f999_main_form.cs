@@ -604,6 +604,22 @@ namespace TOSApp
             }
         }
 
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                F120_ds_don_hang_khach_hang v_f = new F120_ds_don_hang_khach_hang();
+                v_f.MdiParent = this;
+
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
      
 
       
