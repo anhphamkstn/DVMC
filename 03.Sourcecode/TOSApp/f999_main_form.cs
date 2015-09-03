@@ -39,6 +39,14 @@ namespace TOSApp
             }
         }
 
+        public bool IsFormOpen(Form checkForm)
+        {
+            foreach (Form form in Application.OpenForms)
+                if (form.Name == checkForm.Name)
+                    return true;
+            return false;
+        }
+
         private void format_controll_for_each_user(decimal p)
         {
 
@@ -59,7 +67,6 @@ namespace TOSApp
                 {
                     if (page.Name == v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
                     {
-                        
 
                         page.Visible = true;
                         break;
@@ -457,9 +464,12 @@ namespace TOSApp
         {
             try
             {
-                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
-                v_f.MdiParent = this;
-                v_f.Show();
+                if (FrmPost2Group == null || !IsFormOpen(FrmPost2Group))
+                {
+                    f0000_gd_dat_hang_gd_log_dat_hang v_f0000_gd_dat_hang_gd_log_dat_hang = new f0000_gd_dat_hang_gd_log_dat_hang(1);
+                    v_f.MdiParent = this;
+                    v_f.Show();
+                }
             }
             catch (Exception v_e)
             {
