@@ -36,15 +36,15 @@
             this.c_dich_vu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_diem_khoi_luong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_thoi_gian_xu_ly = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_pan_button = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.m_cmd_xoa = new DevExpress.XtraEditors.SimpleButton();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.m_pan_button = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_loai_yeu_cau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_dm_loai_yeu_cau)).BeginInit();
-            this.m_pan_button.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.m_pan_button.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_grc_dm_loai_yeu_cau
@@ -121,14 +121,14 @@
             this.c_thoi_gian_xu_ly.Visible = true;
             this.c_thoi_gian_xu_ly.VisibleIndex = 2;
             // 
-            // m_pan_button
+            // panel3
             // 
-            this.m_pan_button.Controls.Add(this.panel4);
-            this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pan_button.Location = new System.Drawing.Point(0, 383);
-            this.m_pan_button.Name = "m_pan_button";
-            this.m_pan_button.Size = new System.Drawing.Size(800, 53);
-            this.m_pan_button.TabIndex = 1;
+            this.panel3.Controls.Add(this.m_grc_dm_loai_yeu_cau);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(800, 383);
+            this.panel3.TabIndex = 2;
             // 
             // panel4
             // 
@@ -152,14 +152,14 @@
             this.m_cmd_xoa.Text = "&Xóa";
             this.m_cmd_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
             // 
-            // panel3
+            // m_pan_button
             // 
-            this.panel3.Controls.Add(this.m_grc_dm_loai_yeu_cau);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(800, 383);
-            this.panel3.TabIndex = 2;
+            this.m_pan_button.Controls.Add(this.panel4);
+            this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_pan_button.Location = new System.Drawing.Point(0, 383);
+            this.m_pan_button.Name = "m_pan_button";
+            this.m_pan_button.Size = new System.Drawing.Size(800, 53);
+            this.m_pan_button.TabIndex = 1;
             // 
             // f102_dm_loai_yeu_cau
             // 
@@ -173,9 +173,9 @@
             this.Load += new System.EventHandler(this.f102_dm_loai_yeu_cau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_loai_yeu_cau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_dm_loai_yeu_cau)).EndInit();
-            this.m_pan_button.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.m_pan_button.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -189,9 +189,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn c_dich_vu;
         private DevExpress.XtraGrid.Columns.GridColumn c_diem_khoi_luong;
         private DevExpress.XtraGrid.Columns.GridColumn c_thoi_gian_xu_ly;
-        private System.Windows.Forms.Panel m_pan_button;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton m_cmd_xoa;
+        private System.Windows.Forms.Panel m_pan_button;
     }
 }

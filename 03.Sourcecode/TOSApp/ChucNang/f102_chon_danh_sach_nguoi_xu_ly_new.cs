@@ -41,8 +41,6 @@ namespace TOSApp.ChucNang
                     v_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
                 }
             }
-           
-
         }
 
         private void m_cmd_oke_Click(object sender, EventArgs e)
@@ -50,10 +48,6 @@ namespace TOSApp.ChucNang
             DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
         }
-
-
-
-
 
         internal void Display(ref List<decimal> m_lst_id_nguoi_xu_ly, decimal m_id_dich_vu)
         {

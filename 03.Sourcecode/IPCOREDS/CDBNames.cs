@@ -878,5 +878,12 @@ namespace IPCOREDS.CDBNames
         public const string ID_TRANG_THAI = "ID_TRANG_THAI";
         public const string LINK_TL_THAM_KHAO = "LINK_TL_THAM_KHAO";
     }
-
+    public class ht_bo_dich_vu
+    {
+        public const string ID = "ID";
+        public const string ID_DICH_VU = "ID_DICH_VU";
+        public const string ID_NGUOI_SU_DUNG = "ID_NGUOI_SU_DUNG";
+        public const string CAP_SU_DUNG = "CAP_SU_DUNG";
+        public const string TRANG_THAI_HSD = "TRANG_THAI_HSD";
+    }
 }

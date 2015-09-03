@@ -43,9 +43,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.simpbtn_sua = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.simpbtn_them = new DevExpress.XtraEditors.SimpleButton();
-            this.simpbtn_sua = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -61,7 +61,7 @@
             this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(3, 3);
             this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
             this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
-            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(720, 317);
+            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(755, 317);
             this.m_grc_ht_nguoi_su_dung.TabIndex = 0;
             this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ht_nguoi_su_dung});
@@ -165,7 +165,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(726, 404);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(761, 404);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -176,7 +176,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(413, 326);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(448, 326);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -191,6 +191,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(149, 69);
             this.panel2.TabIndex = 5;
+            // 
+            // simpbtn_sua
+            // 
+            this.simpbtn_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpbtn_sua.Appearance.Options.UseFont = true;
+            this.simpbtn_sua.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_sua.Image")));
+            this.simpbtn_sua.Location = new System.Drawing.Point(22, 7);
+            this.simpbtn_sua.Name = "simpbtn_sua";
+            this.simpbtn_sua.Size = new System.Drawing.Size(106, 55);
+            this.simpbtn_sua.TabIndex = 1;
+            this.simpbtn_sua.Text = "&Sửa";
+            this.simpbtn_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
             // 
             // panel1
             // 
@@ -213,23 +225,11 @@
             this.simpbtn_them.Text = "&Thêm";
             this.simpbtn_them.Click += new System.EventHandler(this.simpbtn_them_Click);
             // 
-            // simpbtn_sua
-            // 
-            this.simpbtn_sua.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpbtn_sua.Appearance.Options.UseFont = true;
-            this.simpbtn_sua.Image = ((System.Drawing.Image)(resources.GetObject("simpbtn_sua.Image")));
-            this.simpbtn_sua.Location = new System.Drawing.Point(22, 7);
-            this.simpbtn_sua.Name = "simpbtn_sua";
-            this.simpbtn_sua.Size = new System.Drawing.Size(106, 55);
-            this.simpbtn_sua.TabIndex = 1;
-            this.simpbtn_sua.Text = "&Sửa";
-            this.simpbtn_sua.Click += new System.EventHandler(this.simpbtn_sua_Click);
-            // 
             // f999_ht_nguoi_su_dung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 404);
+            this.ClientSize = new System.Drawing.Size(761, 404);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "f999_ht_nguoi_su_dung";
             this.Text = "f999_ht_nguoi_su_dung";

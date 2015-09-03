@@ -185,6 +185,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_GD_LOG_DAT_HANG.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_HT_BO_DICH_VU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_BO_DICH_VU.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_HT_NGUOI_SU_DUNG.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -366,6 +371,17 @@
     </None>
     <None Include="DS_GD_LOG_DAT_HANG.xss">
       <DependentUpon>DS_GD_LOG_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_BO_DICH_VU.xsc">
+      <DependentUpon>DS_HT_BO_DICH_VU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_BO_DICH_VU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_BO_DICH_VU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_BO_DICH_VU.xss">
+      <DependentUpon>DS_HT_BO_DICH_VU.xsd</DependentUpon>
     </None>
     <None Include="DS_HT_NGUOI_SU_DUNG.xsc">
       <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
