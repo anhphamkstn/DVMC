@@ -464,12 +464,9 @@ namespace TOSApp
         {
             try
             {
-                if (FrmPost2Group == null || !IsFormOpen(FrmPost2Group))
-                {
-                    f0000_gd_dat_hang_gd_log_dat_hang v_f0000_gd_dat_hang_gd_log_dat_hang = new f0000_gd_dat_hang_gd_log_dat_hang(1);
-                    v_f.MdiParent = this;
-                    v_f.Show();
-                }
+                f0000_gd_dat_hang_gd_log_dat_hang v_f = new f0000_gd_dat_hang_gd_log_dat_hang(1);
+                v_f.MdiParent = this;
+                v_f.Show();
             }
             catch (Exception v_e)
             {
