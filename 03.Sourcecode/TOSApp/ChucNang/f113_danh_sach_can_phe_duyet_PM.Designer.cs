@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_khong_duyet = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_duyet = new DevExpress.XtraEditors.SimpleButton();
@@ -40,6 +41,7 @@
             this.TEN_YEU_CAU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.BO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TRANG_THAI = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_danh_sach_can_phe_duyet_PM)).BeginInit();
@@ -155,6 +157,11 @@
             this.TRANG_THAI.Visible = true;
             this.TRANG_THAI.VisibleIndex = 5;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            // 
             // f113_danh_sach_can_phe_duyet_PM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,5 +193,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn TEN_YEU_CAU;
         private DevExpress.XtraGrid.Columns.GridColumn BO;
         private DevExpress.XtraGrid.Columns.GridColumn TRANG_THAI;
+        private System.Windows.Forms.Timer timer1;
     }
 }

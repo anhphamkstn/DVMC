@@ -104,5 +104,12 @@ namespace TOSApp.ChucNang
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.Update();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_2_grid();
+
+        }
+
     }
 }

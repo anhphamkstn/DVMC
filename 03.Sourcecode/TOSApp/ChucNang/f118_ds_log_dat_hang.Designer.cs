@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_grc_ds_log_gd_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_log_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -39,6 +40,7 @@
             this.NGUOI_NHAN_THAO_TAC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_log_dat_hang)).BeginInit();
@@ -143,6 +145,11 @@
             this.MA_DON_HANG.Visible = true;
             this.MA_DON_HANG.VisibleIndex = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            // 
             // f118_ds_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,5 +178,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC;
         private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.m_grc_xac_nhan_don_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -35,13 +36,13 @@
             this.NGUOI_TAO_THAO_TAC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DICH_VU_YEU_CAU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NOI_DUNG_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.THOI_GIAN_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.THOI_GIAN_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.m_cmd_bao_cao_da_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_cap_nhat_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tu_choi_don_hang = new DevExpress.XtraEditors.SimpleButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_xac_nhan_don_hang)).BeginInit();
@@ -56,7 +57,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(792, 465);
+            this.panelControl1.Size = new System.Drawing.Size(948, 465);
             this.panelControl1.TabIndex = 0;
             // 
             // m_grc_xac_nhan_don_hang
@@ -66,7 +67,7 @@
             this.m_grc_xac_nhan_don_hang.Location = new System.Drawing.Point(2, 2);
             this.m_grc_xac_nhan_don_hang.MainView = this.m_grv_danh_sach_don_hang_tiep_nhan_BO;
             this.m_grc_xac_nhan_don_hang.Name = "m_grc_xac_nhan_don_hang";
-            this.m_grc_xac_nhan_don_hang.Size = new System.Drawing.Size(788, 461);
+            this.m_grc_xac_nhan_don_hang.Size = new System.Drawing.Size(944, 461);
             this.m_grc_xac_nhan_don_hang.TabIndex = 0;
             this.m_grc_xac_nhan_don_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO});
@@ -78,8 +79,7 @@
             this.NGUOI_TAO_THAO_TAC,
             this.DICH_VU_YEU_CAU,
             this.NOI_DUNG_DAT_HANG,
-            this.THOI_GIAN_DAT_HANG,
-            this.THOI_GIAN_CAN_HOAN_THANH,
+            this.THOI_DIEM_CAN_HOAN_THANH,
             this.NGUOI_DAT_HANG});
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.GridControl = this.m_grc_xac_nhan_don_hang;
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.Name = "m_grv_danh_sach_don_hang_tiep_nhan_BO";
@@ -118,21 +118,13 @@
             this.NOI_DUNG_DAT_HANG.Visible = true;
             this.NOI_DUNG_DAT_HANG.VisibleIndex = 4;
             // 
-            // THOI_GIAN_DAT_HANG
+            // THOI_DIEM_CAN_HOAN_THANH
             // 
-            this.THOI_GIAN_DAT_HANG.Caption = "THỜI GIAN ĐẶT HÀNG";
-            this.THOI_GIAN_DAT_HANG.FieldName = "THOI_GIAN_DAT_HANG";
-            this.THOI_GIAN_DAT_HANG.Name = "THOI_GIAN_DAT_HANG";
-            this.THOI_GIAN_DAT_HANG.Visible = true;
-            this.THOI_GIAN_DAT_HANG.VisibleIndex = 5;
-            // 
-            // THOI_GIAN_CAN_HOAN_THANH
-            // 
-            this.THOI_GIAN_CAN_HOAN_THANH.Caption = "THỜI GIAN CẦN HOÀN THÀNH";
-            this.THOI_GIAN_CAN_HOAN_THANH.FieldName = "THOI_GIAN_CAN_HOAN_THANH";
-            this.THOI_GIAN_CAN_HOAN_THANH.Name = "THOI_GIAN_CAN_HOAN_THANH";
-            this.THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            this.THOI_GIAN_CAN_HOAN_THANH.VisibleIndex = 6;
+            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 6;
             // 
             // NGUOI_DAT_HANG
             // 
@@ -150,7 +142,7 @@
             this.panelControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelControl2.Location = new System.Drawing.Point(0, 410);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(792, 55);
+            this.panelControl2.Size = new System.Drawing.Size(948, 55);
             this.panelControl2.TabIndex = 0;
             // 
             // m_cmd_bao_cao_da_xu_ly
@@ -180,11 +172,16 @@
             this.m_cmd_tu_choi_don_hang.Text = "Từ chối đơn hàng";
             this.m_cmd_tu_choi_don_hang.Click += new System.EventHandler(this.m_cmd_tu_choi_don_hang_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            // 
             // f104_danh_sach_don_hang_dang_xu_ly_BO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 465);
+            this.ClientSize = new System.Drawing.Size(948, 465);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Name = "f104_danh_sach_don_hang_dang_xu_ly_BO";
@@ -211,9 +208,9 @@
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC;
         private DevExpress.XtraGrid.Columns.GridColumn DICH_VU_YEU_CAU;
         private DevExpress.XtraGrid.Columns.GridColumn NOI_DUNG_DAT_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_DAT_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_CAN_HOAN_THANH;
+        private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
         private DevExpress.XtraEditors.SimpleButton m_cmd_bao_cao_da_xu_ly;
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_DAT_HANG;
+        private System.Windows.Forms.Timer timer1;
     }
 }

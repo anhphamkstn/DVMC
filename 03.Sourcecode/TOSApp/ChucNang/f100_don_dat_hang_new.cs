@@ -49,8 +49,14 @@ namespace TOSApp.ChucNang
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
             load_data_2_selected_loai_dich_vu();
+            load_data_2_selected_thoi_gian_hoan_thanh();
            
 
+        }
+
+        private void load_data_2_selected_thoi_gian_hoan_thanh()
+        {
+            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN", " where ID_LOAI_TU_DIEN = 20", WinFormControls.eTAT_CA.NO, m_cbo_thoi_gian_hoan_thanh);
         }
 
         private void load_data_2_selected_nguoi_tiep_nhan()
@@ -62,6 +68,8 @@ namespace TOSApp.ChucNang
         {
  	       WinFormControls.load_data_to_combobox("DM_khach_hang", "ID", "ten_khach_hang", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
         }
+
+        
         //don vị đặt hàng
         private void load_data_2_selected_don_vi()
         {
@@ -219,8 +227,9 @@ namespace TOSApp.ChucNang
             US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(M_us.dcID_DON_HANG);
             v_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
             v_us.strPHAN_HOI_TU_DVMC = m_txt_phan_hoi_tu_dvmc.Text;
-            v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal(return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
-            v_us.datTHOI_GIAN_DAT_HANG = m_dat_thoi_gian_dat_hang.Value;
+         //   v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal(return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
+            v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH =CIPConvert.ToDecimal( m_cbo_thoi_gian_hoan_thanh.SelectedValue);
+            v_us.datTHOI_DIEM_CAN_HOAN_THANH = m_dat_thoi_diem_can_hoan_thanh.Value;
             v_us.Update();
 
            
@@ -307,12 +316,13 @@ namespace TOSApp.ChucNang
             m_us.dcID_DON_VI = CIPConvert.ToDecimal( m_cbo_dv_don_vi.SelectedValue.ToString());//xem lai
             m_us.strDIEN_THOAI = m_txt_dien_thoai.Text;
             m_us.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten_nguoi_dat_hang.Text ;
-            m_us.datTHOI_GIAN_DAT_HANG =m_dat_thoi_gian_dat_hang.Value;
+            m_us.datTHOI_DIEM_CAN_HOAN_THANH =m_dat_thoi_diem_can_hoan_thanh.Value;
             m_us.dcID_DV_YEU_CAU = CIPConvert.ToDecimal( m_cbo_dich_vu.SelectedValue);//xem ai chi lay id
             m_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
-            m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal( return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
+   //         m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal( return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
+            m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal(m_cbo_thoi_gian_hoan_thanh.SelectedValue);
             m_us.strPHAN_HOI_TU_DVMC = m_txt_phan_hoi_tu_dvmc.Text;
-            m_us.datTHOI_GIAN_HOAN_THANH = System.DateTime.Now; 
+            m_us.SetTHOI_GIAN_HOAN_THANHNull(); 
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
                 //System.DateTime.Now.ToString("yyyy/MM/dd/hh/mm/ss");
             m_us.dcID_PHUONG_THUC_DAT_HANG =183;//---phuong thuc dat hang la goi dien
@@ -320,20 +330,20 @@ namespace TOSApp.ChucNang
             m_us.dcID_CHI_NHANH= TOSApp.us_user.dcCHI_NHANH; //--fix lai sau mac dinh la 1 -HA NOI
         }
         //tra lai thoi gian sau khi hoan thanh don hang dua vao thoi gian dat hang + thoi gian can de hoan thanh don hang
-        private DateTime get_thoi_gian_hoan_thanh(DateTime dateTime)
-        {
-            if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 200)
-                dateTime.AddMinutes(15);
-            else if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 201)
-                dateTime.AddHours(4);
-            else if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 202)
-                dateTime.AddDays(1);
-            else if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 203)
-                dateTime.AddDays(7);
-            else dateTime.AddMonths(1);
-            return dateTime;
+        //private DateTime get_thoi_gian_hoan_thanh(DateTime dateTime)
+        //{
+        //    if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 200)
+        //        dateTime.AddMinutes(15);
+        //    else if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 201)
+        //        dateTime.AddHours(4);
+        //    else if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 202)
+        //        dateTime.AddDays(1);
+        //    else if (return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang) == 203)
+        //        dateTime.AddDays(7);
+        //    else dateTime.AddMonths(1);
+        //    return dateTime;
         
-        }
+        //}
    
         //kiem tra cac trang thai cua button radio cua thoi gian can de hoan thanh don hang va tra ve ma
         private int return_loai_thoi_gian_can_hoan_thanh(RadioButton m_rdb_loai_time_15phut, RadioButton m_rdb_loai_time_4h, RadioButton m_rdb_loai_time_1ngay, RadioButton m_rdb_loai_time_1tuan, RadioButton m_rdb_loai_time_1thang)
@@ -361,7 +371,7 @@ namespace TOSApp.ChucNang
 
         internal void displayForInsert()
         {
-            m_dat_thoi_gian_dat_hang.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
+            m_dat_thoi_diem_can_hoan_thanh.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
             this.ShowDialog();
@@ -386,7 +396,7 @@ namespace TOSApp.ChucNang
         private void us_to_form(IPCOREUS.US_GD_DAT_HANG v_us)
         {
             
-            v_time = v_us.datTHOI_GIAN_HOAN_THANH.ToString();
+          //  v_time = v_us.datTHOI_GIAN_HOAN_THANH.ToString();
 
 
             m_cbo_user_nhan_vien_dat_hang.SelectedValue = "---------";
@@ -394,9 +404,10 @@ namespace TOSApp.ChucNang
             //m_cbo_dv_don_vi.SelectedValue = 
             load_don_vi(v_us.dcID_DON_VI);
             m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
-            m_dat_thoi_gian_dat_hang.Text = v_us.datTHOI_GIAN_DAT_HANG.ToString();
+            m_dat_thoi_diem_can_hoan_thanh.Text = v_us.datTHOI_DIEM_CAN_HOAN_THANH.ToString();
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
-            check_thoi_gian_can_hoan_thanh(v_time);
+           // check_thoi_gian_can_hoan_thanh(v_time);
+            m_cbo_thoi_gian_hoan_thanh.SelectedValue = v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH;
             
             m_cbo_dich_vu.SelectedValue = v_us.dcID_DV_YEU_CAU;
          //   m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_DV_YEU_CAU;
@@ -411,37 +422,37 @@ namespace TOSApp.ChucNang
 
         }
 
-        private void check_thoi_gian_can_hoan_thanh(string v_time)
-        {
-            if (check_value_with_radiobutton_thoi_gian(v_time) == 1)
-            {
-                m_rdb_loai_time_15phut.Checked = true;
+        //private void check_thoi_gian_can_hoan_thanh(string v_time)
+        //{
+        //    if (check_value_with_radiobutton_thoi_gian(v_time) == 1)
+        //    {
+        //        m_rdb_loai_time_15phut.Checked = true;
 
-                if (check_value_with_radiobutton_thoi_gian(v_time) == 2)
-                {
-                    m_rdb_loai_time_4h.Checked = true;
-                    if (check_value_with_radiobutton_thoi_gian(v_time) == 3)
-                    {
-                        m_rdb_loai_time_1ngay.Checked = true;
-                        if (check_value_with_radiobutton_thoi_gian(v_time) == 4)
-                        {
-                            m_rdb_loai_time_1tuan.Checked = true;
-                            if (check_value_with_radiobutton_thoi_gian(v_time) == 5)
-                                m_rdb_loai_time_1thang.Checked = true;
-                            else
-                            {
-                                m_rdb_loai_time_15phut.Checked = false;
-                                m_rdb_loai_time_4h.Checked = false;
-                                m_rdb_loai_time_1ngay.Checked = false;
-                                m_rdb_loai_time_1tuan.Checked = false;
-                                m_rdb_loai_time_1thang.Checked = false;
-                            }
-                        }
-                    }
-                }
-            }
+        //        if (check_value_with_radiobutton_thoi_gian(v_time) == 2)
+        //        {
+        //            m_rdb_loai_time_4h.Checked = true;
+        //            if (check_value_with_radiobutton_thoi_gian(v_time) == 3)
+        //            {
+        //                m_rdb_loai_time_1ngay.Checked = true;
+        //                if (check_value_with_radiobutton_thoi_gian(v_time) == 4)
+        //                {
+        //                    m_rdb_loai_time_1tuan.Checked = true;
+        //                    if (check_value_with_radiobutton_thoi_gian(v_time) == 5)
+        //                        m_rdb_loai_time_1thang.Checked = true;
+        //                    else
+        //                    {
+        //                        m_rdb_loai_time_15phut.Checked = false;
+        //                        m_rdb_loai_time_4h.Checked = false;
+        //                        m_rdb_loai_time_1ngay.Checked = false;
+        //                        m_rdb_loai_time_1tuan.Checked = false;
+        //                        m_rdb_loai_time_1thang.Checked = false;
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
 
-        }
+        //}
 
         private void load_nguoi_xu_ly_dat_hang(decimal p)
         {
@@ -573,17 +584,17 @@ namespace TOSApp.ChucNang
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.dcID_NGUOI_TAO;
-            m_dat_thoi_gian_dat_hang.Text = v_us.datTHOI_GIAN_DAT_HANG.ToString();
+            m_dat_thoi_diem_can_hoan_thanh.Text = v_us.datTHOI_DIEM_CAN_HOAN_THANH.ToString();
            // m_dat_thoi_gian_dat_hang.Value = v_us.datTHOI_GIAN_DAT_HANG;
       //      m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
             //m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
-            if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 200) m_rdb_loai_time_15phut.Checked = true;
-            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 201) m_rdb_loai_time_4h.Checked = true;
-            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 202) m_rdb_loai_time_1ngay.Checked = true;
-            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 203) m_rdb_loai_time_1tuan.Checked = true;
-            else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 204) m_rdb_loai_time_1thang.Checked = true;
-            
+            //if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 200) m_rdb_loai_time_15phut.Checked = true;
+            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 201) m_rdb_loai_time_4h.Checked = true;
+            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 202) m_rdb_loai_time_1ngay.Checked = true;
+            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 203) m_rdb_loai_time_1tuan.Checked = true;
+            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 204) m_rdb_loai_time_1thang.Checked = true;
 
+            m_cbo_thoi_gian_hoan_thanh.SelectedValue = v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH;
            // WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "ten_dich_vu", WinFormControls.eTAT_CA.NO, " where id_cha=" + v_us.dcID_NHOM_DV_YEU_CAU);
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
             m_txt_phan_hoi_tu_dvmc.Text = v_us.strPHAN_HOI_TU_DVMC;
@@ -611,7 +622,7 @@ namespace TOSApp.ChucNang
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.Enabled = false;
-            m_dat_thoi_gian_dat_hang.Enabled = false;
+            m_dat_thoi_diem_can_hoan_thanh.Enabled = false;
             m_cbo_trang_thai_don_hang.Enabled = false;
             m_cbo_loai_dich_vu_1.Enabled = false;
             m_cbo_loai_dich_vu_2.Enabled = false;

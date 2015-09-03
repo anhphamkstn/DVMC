@@ -136,7 +136,7 @@
             // TEN_BO
             // 
             this.TEN_BO.Caption = "TÊN BO";
-            this.TEN_BO.FieldName = "TEN_TRUY_CAP";
+            this.TEN_BO.FieldName = "BO";
             this.TEN_BO.Name = "TEN_BO";
             this.TEN_BO.Visible = true;
             this.TEN_BO.VisibleIndex = 1;

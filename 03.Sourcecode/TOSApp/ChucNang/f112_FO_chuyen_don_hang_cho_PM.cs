@@ -41,11 +41,11 @@ namespace TOSApp.ChucNang
             v_US.dcID_LOAI_THAO_TAC = 303;//đã chuyển cho PM
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal( l_ds.Tables[0].Rows[0][0]);//Quản lý có id 15
+            v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal( m_cbo_PM.SelectedValue);
             
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có id là: \n"+m_us.strTEN_NGUOI_NHAN_THAO_TAC+" ,gửi kèm:  " +m_txt_gui_kem.Text;
+            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có tên là: \n"+m_cbo_PM.Text+" ,gửi kèm:  " +m_txt_gui_kem.Text;
             v_US.Insert();
             
         }
@@ -63,9 +63,10 @@ namespace TOSApp.ChucNang
             DataSet l_ds = new DataSet();
             l_ds.Tables.Add(new DataTable());
 
-            l_us.FillDatasetWithQuery(l_ds, "select ID_PM from HT_BO_PM_TD where id_BO =" + v_us.dcID_NGUOI_TAO_THAO_TAC);
+            l_us.FillDatasetWithQuery(l_ds, "select ID_PM, PM  from   V_DICH_VU_BO_PM_TD where ID_BO =" + v_us.dcID_NGUOI_TAO_THAO_TAC + " and ID_DICH_VU=" + v_us.dcID_NHOM_DV_YEU_CAU);
 
-            m_txt_PM.Text = "id của PM là:" + l_ds.Tables[0].Rows[0][0].ToString();
+            //m_txt_PM.Text = "id của PM là:" + l_ds.Tables[0].Rows[0][0].ToString();
+            WinFormControls.load_data_to_combobox("V_DICH_VU_BO_PM_TD", "ID_PM", "PM", " where ID_BO = " + v_us.dcID_NGUOI_TAO_THAO_TAC + " and ID_DICH_VU = " + v_us.dcID_NHOM_DV_YEU_CAU, WinFormControls.eTAT_CA.NO, m_cbo_PM);
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
 

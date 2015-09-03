@@ -76,6 +76,11 @@ namespace TOSApp.ChucNang
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_2_grid();
+
+        }
 
      
 

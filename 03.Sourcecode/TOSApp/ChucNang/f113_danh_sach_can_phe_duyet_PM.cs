@@ -79,7 +79,12 @@ namespace TOSApp.ChucNang
             v_us.Update();
 
         }
-     
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_2_grid();
+
+        }
 
         
     }

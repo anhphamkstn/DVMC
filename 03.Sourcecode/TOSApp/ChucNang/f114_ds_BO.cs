@@ -35,7 +35,11 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             m_lst_BO_da_duoc_dieu_phoi = new List<decimal>();
             lay_ds_BO_da_dc_dieu_phoi(m_lst_BO_da_duoc_dieu_phoi);
-            string m_str_query = " select * from V_BO_DICH_VU where ID_DICH_VU = " + m_us.dcID_NHOM_DV_YEU_CAU.ToString() + " And ID_NGUOI_SU_DUNG not in ( ";
+            string m_str_query = " select distinct ID_BO,BO from V_DICH_VU_BO_PM_TD where ID_DICH_VU = " + m_us.dcID_NHOM_DV_YEU_CAU.ToString() + " And ID_BO not in ( ";
+            if (m_lst_BO_da_duoc_dieu_phoi.Count==0)
+            {
+                m_str_query +=  "0 )";
+            }
             for (int i = 0; i < m_lst_BO_da_duoc_dieu_phoi.Count; i++)
             {
                 if (i < m_lst_BO_da_duoc_dieu_phoi.Count - 1)
@@ -96,7 +100,7 @@ namespace TOSApp.ChucNang
            {
                for (int i = 0; i < m_grv_ds_BO.SelectedRowsCount; i++)
                {
-                   m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID_NGUOI_SU_DUNG"].ToString()));
+                   m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID_BO"].ToString()));
                }
 
 	               update_don_hang(m_us);
@@ -128,7 +132,7 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 311;//fo đã điều phối lại
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//fo có id 1
+            v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_US.dcID_NGUOI_NHAN_THAO_TAC = p;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";

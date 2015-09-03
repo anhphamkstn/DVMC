@@ -11,6 +11,7 @@ using IPCOREUS;
 using TOSApp.HT;
 using DevExpress.XtraEditors;
 
+
 namespace TOSApp.ChucNang
 {
     public partial class f0000_gd_dat_hang_gd_log_dat_hang : Form
@@ -21,6 +22,8 @@ namespace TOSApp.ChucNang
             InitializeComponent();
             kieu_load_form = i;
             load_data_2_grid();
+            
+            
             format_controll_for_each_user(us_user.dcIDNhom);
             //if (us_user.dcIDNhom == 1) format_controll_FO();
             //else
@@ -98,7 +101,7 @@ namespace TOSApp.ChucNang
             HO_TEN_USER_DAT_HANG.Visible = true;
             DON_VI.Visible = true;
             DIEN_THOAI.Visible = true;
-            THOI_GIAN_DAT_HANG.Visible = true;
+            THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
@@ -395,8 +398,8 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; //TuanPA
-           v_us.SetID_NGUOI_NHAN_THAO_TACNull(); //thang TM có id 63 cần vào nhiệm thu
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; 
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull(); 
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
@@ -409,7 +412,7 @@ namespace TOSApp.ChucNang
           
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
            
-            v_us.dcID_NGUOI_TAO_THAO_TAC = 22;      
+           // v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;      
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "FO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
             v_us.Update();
@@ -501,13 +504,7 @@ namespace TOSApp.ChucNang
 
         private void update_log_admin_tiep_nhan()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);          
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "admin đã tiếp nhận xử lý";
             v_us.Update();
@@ -634,8 +631,8 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//thang pm co id =15
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();//thagn TM có id =22
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
 
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
@@ -647,12 +644,6 @@ namespace TOSApp.ChucNang
         {
 
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "PM đã hoàn thành,chờ TM nghiệm thu";
             v_us.Update();
@@ -692,7 +683,7 @@ namespace TOSApp.ChucNang
             HO_TEN_USER_DAT_HANG.Visible = true;
             DON_VI.Visible = true;
             DIEN_THOAI.Visible = true;
-            THOI_GIAN_DAT_HANG.Visible = true;
+            THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
@@ -724,7 +715,7 @@ namespace TOSApp.ChucNang
             HO_TEN_USER_DAT_HANG.Visible = true;
             DON_VI.Visible = true;
             DIEN_THOAI.Visible = true;
-            THOI_GIAN_DAT_HANG.Visible = true;
+            THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
@@ -756,7 +747,7 @@ namespace TOSApp.ChucNang
             HO_TEN_USER_DAT_HANG.Visible = true;
             DON_VI.Visible = true;
             DIEN_THOAI.Visible = true;
-            THOI_GIAN_DAT_HANG.Visible = true;
+            THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
@@ -788,7 +779,7 @@ namespace TOSApp.ChucNang
             HO_TEN_USER_DAT_HANG.Visible = true;
             DON_VI.Visible = true;
             DIEN_THOAI.Visible = true;
-            THOI_GIAN_DAT_HANG.Visible = true;
+            THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
@@ -821,7 +812,7 @@ namespace TOSApp.ChucNang
             HO_TEN_USER_DAT_HANG.Visible = true;
             DON_VI.Visible = true;
             DIEN_THOAI.Visible = true;
-            THOI_GIAN_DAT_HANG.Visible = true;
+            THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
@@ -884,6 +875,13 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+        //load lại data sau mỗi một thời gian nào đó
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_2_grid();
+         //   MessageBox.Show(kieu_load_form.ToString());
+          
         }
 
     

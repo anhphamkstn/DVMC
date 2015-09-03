@@ -65,7 +65,7 @@ namespace TOSApp.ChucNang
             {
                 for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
                 {
-                    m_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID_NGUOI_SU_DUNG"].ToString()));
+                    m_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID_BO"].ToString()));
                 }
             }
          
@@ -78,7 +78,7 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
 
             //  v_us.FillDatasetWithTableName(v_ds, "V_HT_NGUOI_SU_DUNG");
-            v_us.FillDatasetWithQuery(v_ds, " select distinct * from V_BO_DICH_VU where ID_DICH_VU="+m_id_dich_vu);
+            v_us.FillDatasetWithQuery(v_ds, " select distinct ID_BO, BO from V_DICH_VU_BO_PM_TD where ID_DICH_VU=" + m_id_dich_vu);
             m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
 
         }

@@ -28,6 +28,11 @@ namespace TOSApp.ChucNang
 
             m_grc_ds_dh_hoan_thanh.DataSource = v_ds.Tables[0];
         }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_2_grid();
+
+        }
 
        
     }

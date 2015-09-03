@@ -169,6 +169,11 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
             m_us.Update();
         }
         #endregion
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_2_grid();
+
+        }
 
 
 

@@ -122,7 +122,7 @@
             // HO_VA_TEN
             // 
             this.HO_VA_TEN.Caption = "HỌ VÀ TÊN";
-            this.HO_VA_TEN.FieldName = "TEN_TRUY_CAP";
+            this.HO_VA_TEN.FieldName = "BO";
             this.HO_VA_TEN.Name = "HO_VA_TEN";
             this.HO_VA_TEN.Visible = true;
             this.HO_VA_TEN.VisibleIndex = 1;
