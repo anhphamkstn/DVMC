@@ -161,7 +161,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 7;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 6;
             this.THOI_DIEM_CAN_HOAN_THANH.Width = 89;
             // 
             // gridColumn9
@@ -170,7 +170,7 @@
             this.gridColumn9.FieldName = "THOI_GIAN_TAO";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
+            this.gridColumn9.VisibleIndex = 7;
             this.gridColumn9.Width = 89;
             // 
             // gridColumn1
@@ -179,7 +179,7 @@
             this.gridColumn1.FieldName = "TEN_PHUONG_THUC_DAT_HANG";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 9;
+            this.gridColumn1.VisibleIndex = 8;
             this.gridColumn1.Width = 89;
             // 
             // gridColumn10
@@ -188,7 +188,7 @@
             this.gridColumn10.FieldName = "NGUOI_TAO_THAO_TAC";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 10;
+            this.gridColumn10.VisibleIndex = 9;
             this.gridColumn10.Width = 89;
             // 
             // gridColumn11
@@ -197,7 +197,7 @@
             this.gridColumn11.FieldName = "TEN_CHI_NHANH";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 11;
+            this.gridColumn11.VisibleIndex = 10;
             this.gridColumn11.Width = 89;
             // 
             // gridColumn12
@@ -206,7 +206,7 @@
             this.gridColumn12.FieldName = "THAO_TAC_HET_HAN_YN";
             this.gridColumn12.Name = "gridColumn12";
             this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 12;
+            this.gridColumn12.VisibleIndex = 11;
             this.gridColumn12.Width = 118;
             // 
             // panel2
@@ -239,7 +239,7 @@
             this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
             this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(200, 53);
             this.m_cmd_chinh_sua_don_hang.TabIndex = 2;
-            this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật đơn hàng";
+            this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật ";
             this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
             // 
             // panel4

@@ -570,6 +570,40 @@ namespace TOSApp
             }
         }
 
+        private void m_cmd_cap_nhat_deadline_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            decimal deadline_id = 1;
+            try
+            {
+                f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
+                v_f.MdiParent = this;
+
+                v_f.display_for_refurse_dealine(deadline_id);
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_cmd_PM_cap_nhat_deadline_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            decimal deadline_id = 1;
+            try
+            {
+                f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
+                v_f.MdiParent = this;
+
+                v_f.display_for_refurse_dealine(deadline_id);
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
      
 
       
