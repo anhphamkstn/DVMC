@@ -377,7 +377,6 @@
             this.m_cmd_FO_cong_viec.Id = 1;
             this.m_cmd_FO_cong_viec.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_FO_cong_viec.LargeGlyph")));
             this.m_cmd_FO_cong_viec.Name = "m_cmd_FO_cong_viec";
-            this.m_cmd_FO_cong_viec.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_FO_cong_viec_ItemClick);
             // 
             // barButtonItem1
             // 
@@ -386,7 +385,6 @@
             this.barButtonItem1.Id = 9;
             this.barButtonItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.LargeGlyph")));
             this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // m_cmd_BO
             // 
@@ -395,7 +393,6 @@
             this.m_cmd_BO.Id = 2;
             this.m_cmd_BO.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_BO.LargeGlyph")));
             this.m_cmd_BO.Name = "m_cmd_BO";
-            this.m_cmd_BO.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_BO_ItemClick);
             // 
             // m_cmd_PM
             // 
@@ -404,7 +401,6 @@
             this.m_cmd_PM.Id = 3;
             this.m_cmd_PM.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_PM.LargeGlyph")));
             this.m_cmd_PM.Name = "m_cmd_PM";
-            this.m_cmd_PM.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_PM_ItemClick);
             // 
             // barButtonItem4
             // 
@@ -413,7 +409,6 @@
             this.barButtonItem4.Id = 4;
             this.barButtonItem4.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.LargeGlyph")));
             this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barButtonItem5
             // 
@@ -422,7 +417,6 @@
             this.barButtonItem5.Id = 5;
             this.barButtonItem5.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.LargeGlyph")));
             this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // barButtonItem10
             // 
