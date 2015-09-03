@@ -11,6 +11,8 @@ using TOSApp;
 using IPCOREUS;
 using IP.Core.IPCommon;
 
+
+
 namespace TOSApp.ChucNang
 {
     public partial class f100_don_dat_hang_new : Form
@@ -491,7 +493,8 @@ namespace TOSApp.ChucNang
                 {
                     MessageBox.Show("hãy chọn dịch vụ");
 
-                }else
+                }
+                else
 
 
                 v_f102.Display(ref m_lst_id_nguoi_xu_ly, m_id_dich_vu);
@@ -626,6 +629,11 @@ namespace TOSApp.ChucNang
             
             //  m_dc_id_loai_dich_vu = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString());
             load_data_2_selected_dich_vu();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+          
         }
 
       

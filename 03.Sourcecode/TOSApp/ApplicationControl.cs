@@ -36,7 +36,7 @@ namespace TOSApp
                 //f100_don_dat_hang_new v_f= new f100_don_dat_hang_new();
                // f999_main_form v_f = new f999_main_form();
                // f118_ds_log_dat_hang v_f = new f118_ds_log_dat_hang();
-                v_f.ShowDialog();
+                Application.Run(v_f);
             }
             catch (Exception v_e)
             {

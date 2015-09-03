@@ -33,6 +33,7 @@ namespace TOSApp.ChucNang
         internal void Display(ref List<decimal> v_lst_id_nguoi_xu_ly)
         {
             this.ShowDialog();
+
             if (DialogResult== System.Windows.Forms.DialogResult.OK)
             {
                 for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)

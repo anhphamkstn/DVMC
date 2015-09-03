@@ -40,7 +40,7 @@ namespace TOSApp.HT
                         f999_main_form v_f = new f999_main_form();
                         v_f.WindowState = FormWindowState.Maximized;
                         v_f.ShowDialog();
-                        this.Close();
+                        this.Dispose();
 
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";

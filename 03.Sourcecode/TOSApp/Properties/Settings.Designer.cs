@@ -36,10 +36,21 @@ namespace TOSApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.10.252:8080/TPCDialOut2/services/CallCenter")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://203.162.121.70:8080/TPCDialOut2/services/CallCenter")]
         public string TOSApp_WSCallCenter_CallCenterService {
             get {
                 return ((string)(this["TOSApp_WSCallCenter_CallCenterService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=27.118.16.97;Initial Catalog=BKI_DVMC;Persist Security Info=True;User" +
+            " ID=sa;Password=123@bcdE.!@#_ATT")]
+        public string BKI_DVMCConnectionString {
+            get {
+                return ((string)(this["BKI_DVMCConnectionString"]));
             }
         }
     }
