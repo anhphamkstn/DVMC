@@ -592,7 +592,6 @@ namespace TOSApp
             {
                 f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
                 v_f.MdiParent = this;
-
                 v_f.display_for_refurse_dealine(deadline_id);
             }
             catch (Exception v_e)

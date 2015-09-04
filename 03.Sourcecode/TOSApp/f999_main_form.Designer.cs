@@ -734,7 +734,7 @@
             this.IsMdiContainer = true;
             this.Name = "f999_main_form";
             this.Ribbon = this.ribbonControl1;
-            this.Text = "f999_main_form";
+            this.Text = "Dịch vụ một cửa";
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
