@@ -94,12 +94,9 @@
             this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
             this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage();
             this.appointmentsBindingSource = new System.Windows.Forms.BindingSource();
-            this.bKI_DVMCDataSet = new TOSApp.BKI_DVMCDataSet();
             this.resourcesBindingSource = new System.Windows.Forms.BindingSource();
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             this.changeAppointmentReminderItem2 = new DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem();
-            this.appointmentsTableAdapter = new TOSApp.BKI_DVMCDataSetTableAdapters.AppointmentsTableAdapter();
-            this.resourcesTableAdapter = new TOSApp.BKI_DVMCDataSetTableAdapters.ResourcesTableAdapter();
             this.dateNavigator = new DevExpress.XtraScheduler.DateNavigator();
             this.m_sch = new DevExpress.XtraScheduler.SchedulerControl();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -110,7 +107,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_DVMCDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator)).BeginInit();
@@ -597,17 +593,13 @@
             // appointmentsBindingSource
             // 
             this.appointmentsBindingSource.DataMember = "Appointments";
-            this.appointmentsBindingSource.DataSource = this.bKI_DVMCDataSet;
             // 
             // bKI_DVMCDataSet
             // 
-            this.bKI_DVMCDataSet.DataSetName = "BKI_DVMCDataSet";
-            this.bKI_DVMCDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // resourcesBindingSource
             // 
             this.resourcesBindingSource.DataMember = "Resources";
-            this.resourcesBindingSource.DataSource = this.bKI_DVMCDataSet;
             // 
             // schedulerBarController1
             // 
@@ -660,11 +652,9 @@
             // 
             // appointmentsTableAdapter
             // 
-            this.appointmentsTableAdapter.ClearBeforeFill = true;
             // 
             // resourcesTableAdapter
             // 
-            this.resourcesTableAdapter.ClearBeforeFill = true;
             // 
             // dateNavigator
             // 
@@ -725,7 +715,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bKI_DVMCDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator)).EndInit();
@@ -804,11 +793,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem changeAppointmentReminderItem2;
-        private BKI_DVMCDataSet bKI_DVMCDataSet;
         private System.Windows.Forms.BindingSource appointmentsBindingSource;
-        private BKI_DVMCDataSetTableAdapters.AppointmentsTableAdapter appointmentsTableAdapter;
         private System.Windows.Forms.BindingSource resourcesBindingSource;
-        private BKI_DVMCDataSetTableAdapters.ResourcesTableAdapter resourcesTableAdapter;
         private DevExpress.XtraScheduler.SchedulerControl m_sch;
         private DevExpress.XtraScheduler.DateNavigator dateNavigator;
         private System.Windows.Forms.Panel panel1;
