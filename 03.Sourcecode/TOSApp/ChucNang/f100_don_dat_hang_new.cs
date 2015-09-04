@@ -210,7 +210,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds,"select * from dm_mau_email where id =6");
+            v_us.FillDatasetWithQuery(v_ds,"select * from dm_mau_email where id =11");
             string TIEU_DE = v_ds.Tables[0].Rows[0]["TIEU_DE_MAIL"].ToString() ;
             string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString() ;
             string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
@@ -234,7 +234,7 @@ namespace TOSApp.ChucNang
                 US_DUNG_CHUNG v_us_2 = new US_DUNG_CHUNG();
                 DataSet v_ds_2 = new DataSet();
                 v_ds_2.Tables.Add(new DataTable());
-                v_us_2.FillDatasetWithQuery(v_ds_2, "select * ht_nguoi_su_dung where id=" + m_lst_id_nguoi_xu_ly[i]);
+                v_us_2.FillDatasetWithQuery(v_ds_2, "select * from ht_nguoi_su_dung where id=" + m_lst_id_nguoi_xu_ly[i]);
                 nguoi_xu_ly+=v_ds_2.Tables[0].Rows[0]["TEN_TRUY_CAP"].ToString()+" , ";
 			}
               NOI_DUNG= NOI_DUNG.Replace("NGUOI_XU_LY_DON_HANG",nguoi_xu_ly);
@@ -246,11 +246,12 @@ namespace TOSApp.ChucNang
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
 
-            string user_email="";
-            string password="";
+            string user_email="daothihienhien@gmail.com";
+            string password="daothihien";
             try
             {
-                Mail.sendEmail(user_email,password, to_cc, TIEU_DE, NOI_DUNG);
+               Mail.sendEmail(user_email,password,to_cc, TIEU_DE, NOI_DUNG);
+                
             }
           
             catch (Exception v_e)
