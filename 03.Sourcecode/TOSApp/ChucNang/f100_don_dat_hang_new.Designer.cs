@@ -49,6 +49,7 @@
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_pnl_nguoi_dat_hang_infor = new System.Windows.Forms.Panel();
+            this.m_checkbox_m2_m3 = new System.Windows.Forms.CheckBox();
             this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
             this.m_txt_ho_ten_nguoi_dat_hang = new System.Windows.Forms.TextBox();
             this.m_dat_thoi_diem_can_hoan_thanh = new System.Windows.Forms.DateTimePicker();
@@ -86,7 +87,6 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_txt_phan_hoi_tu_dvmc = new System.Windows.Forms.TextBox();
-            this.m_checkbox_m2_m3 = new System.Windows.Forms.CheckBox();
             this.m_grb_loai_dich_vu.SuspendLayout();
             this.m_pnl_out_place_dm.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -337,6 +337,17 @@
             this.m_pnl_nguoi_dat_hang_infor.Name = "m_pnl_nguoi_dat_hang_infor";
             this.m_pnl_nguoi_dat_hang_infor.Size = new System.Drawing.Size(998, 33);
             this.m_pnl_nguoi_dat_hang_infor.TabIndex = 0;
+            // 
+            // m_checkbox_m2_m3
+            // 
+            this.m_checkbox_m2_m3.AutoSize = true;
+            this.m_checkbox_m2_m3.Location = new System.Drawing.Point(935, 5);
+            this.m_checkbox_m2_m3.Name = "m_checkbox_m2_m3";
+            this.m_checkbox_m2_m3.Size = new System.Drawing.Size(57, 17);
+            this.m_checkbox_m2_m3.TabIndex = 6;
+            this.m_checkbox_m2_m3.Text = "m2,m3";
+            this.m_checkbox_m2_m3.UseVisualStyleBackColor = true;
+            this.m_checkbox_m2_m3.CheckedChanged += new System.EventHandler(this.m_checkbox_change);
             // 
             // m_cbo_user_nhan_vien_dat_hang
             // 
@@ -761,17 +772,6 @@
             this.m_txt_phan_hoi_tu_dvmc.Size = new System.Drawing.Size(481, 48);
             this.m_txt_phan_hoi_tu_dvmc.TabIndex = 15;
             // 
-            // m_checkbox_m2_m3
-            // 
-            this.m_checkbox_m2_m3.AutoSize = true;
-            this.m_checkbox_m2_m3.Location = new System.Drawing.Point(935, 5);
-            this.m_checkbox_m2_m3.Name = "m_checkbox_m2_m3";
-            this.m_checkbox_m2_m3.Size = new System.Drawing.Size(57, 17);
-            this.m_checkbox_m2_m3.TabIndex = 6;
-            this.m_checkbox_m2_m3.Text = "m2,m3";
-            this.m_checkbox_m2_m3.UseVisualStyleBackColor = true;
-            this.m_checkbox_m2_m3.CheckedChanged += new System.EventHandler(this.m_checkbox_change);
-            // 
             // f100_don_dat_hang_new
             // 
             this.AcceptButton = this.m_cmd_xac_nhan_don_hang;
@@ -784,7 +784,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f100_don_dat_hang_new";
-            this.Text = "f100_don_dat_hang_new";
+            this.Text = "Đơn đặt hàng mới";
             this.m_grb_loai_dich_vu.ResumeLayout(false);
             this.m_grb_loai_dich_vu.PerformLayout();
             this.m_pnl_out_place_dm.ResumeLayout(false);

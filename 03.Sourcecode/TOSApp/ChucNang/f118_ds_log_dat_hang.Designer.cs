@@ -41,18 +41,21 @@
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_log_dat_hang)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_grc_ds_log_gd_dat_hang);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Controls.Add(this.m_lab_tieu_de);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(993, 262);
+            this.panel1.Size = new System.Drawing.Size(993, 44);
             this.panel1.TabIndex = 0;
             // 
             // m_grc_ds_log_gd_dat_hang
@@ -62,7 +65,7 @@
             this.m_grc_ds_log_gd_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_log_gd_dat_hang.MainView = this.m_grv_ds_log_dat_hang;
             this.m_grc_ds_log_gd_dat_hang.Name = "m_grc_ds_log_gd_dat_hang";
-            this.m_grc_ds_log_gd_dat_hang.Size = new System.Drawing.Size(993, 262);
+            this.m_grc_ds_log_gd_dat_hang.Size = new System.Drawing.Size(993, 218);
             this.m_grc_ds_log_gd_dat_hang.TabIndex = 0;
             this.m_grc_ds_log_gd_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_log_dat_hang});
@@ -150,17 +153,40 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 3000;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.m_grc_ds_log_gd_dat_hang);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(993, 218);
+            this.panel2.TabIndex = 1;
+            // 
+            // m_lab_tieu_de
+            // 
+            this.m_lab_tieu_de.AutoSize = true;
+            this.m_lab_tieu_de.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lab_tieu_de.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lab_tieu_de.Location = new System.Drawing.Point(3, 21);
+            this.m_lab_tieu_de.Name = "m_lab_tieu_de";
+            this.m_lab_tieu_de.Size = new System.Drawing.Size(201, 20);
+            this.m_lab_tieu_de.TabIndex = 1;
+            this.m_lab_tieu_de.Text = "Danh sách log giao dịch";
+            // 
             // f118_ds_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 262);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f118_ds_log_dat_hang";
-            this.Text = "f118_ds_log_dat_hang";
+            this.Text = "LOG đặt hàng";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_log_dat_hang)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -179,5 +205,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label m_lab_tieu_de;
     }
 }

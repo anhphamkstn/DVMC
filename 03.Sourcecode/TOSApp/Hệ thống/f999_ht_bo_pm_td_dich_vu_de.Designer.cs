@@ -630,7 +630,7 @@
             this.ClientSize = new System.Drawing.Size(965, 521);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Name = "f999_ht_bo_pm_td_dich_vu_de";
-            this.Text = "f999_ht_bo_pm_td_dich_vu_de";
+            this.Text = "Dịch Vụ  - Người xử lý";
             this.Load += new System.EventHandler(this.f999_ht_bo_pm_td_dich_vu_de_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

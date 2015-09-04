@@ -169,7 +169,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.m_pan_button);
             this.Name = "f102_dm_loai_yeu_cau";
-            this.Text = "f102_dm_loai_yeu_cau";
+            this.Text = "Danh mục dịch vụ";
             this.Load += new System.EventHandler(this.f102_dm_loai_yeu_cau_Load);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_loai_yeu_cau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_dm_loai_yeu_cau)).EndInit();

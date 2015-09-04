@@ -49,7 +49,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(879, 68);
             this.panel1.TabIndex = 0;
-//            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // simpleButton2
             // 
@@ -101,7 +100,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f109_danh_sach_can_dieu_phoi";
-            this.Text = "f109_danh_sach_can_dieu_phoi";
+            this.Text = "Đơn hàng cần điều phối";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

@@ -183,7 +183,7 @@
             this.ClientSize = new System.Drawing.Size(787, 307);
             this.Controls.Add(this.GroupControl1);
             this.Name = "f102_chon_danh_sach_nguoi_xu_ly_new";
-            this.Text = "f102_chon_danh_sach_nguoi_xu_ly_new";
+            this.Text = "Danh sách nhân viên xử lý";
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).EndInit();
             this.GroupControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

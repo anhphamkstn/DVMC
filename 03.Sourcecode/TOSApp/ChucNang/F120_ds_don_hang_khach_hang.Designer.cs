@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_grc_ds_don_hang_nguoi_xu_ly = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_don_hang_nguoi_xu_ly = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -41,7 +42,6 @@
             this.TRANG_THAI_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_XU_LY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_nguoi_xu_ly)).BeginInit();
@@ -54,16 +54,27 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(913, 65);
+            this.panel2.Size = new System.Drawing.Size(913, 47);
             this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(3, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(273, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách khách hàng đơn hàng";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.m_grc_ds_don_hang_nguoi_xu_ly);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 65);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(913, 226);
+            this.panel1.Size = new System.Drawing.Size(913, 244);
             this.panel1.TabIndex = 1;
             // 
             // m_grc_ds_don_hang_nguoi_xu_ly
@@ -73,7 +84,7 @@
             this.m_grc_ds_don_hang_nguoi_xu_ly.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_hang_nguoi_xu_ly.MainView = this.m_grv_ds_don_hang_nguoi_xu_ly;
             this.m_grc_ds_don_hang_nguoi_xu_ly.Name = "m_grc_ds_don_hang_nguoi_xu_ly";
-            this.m_grc_ds_don_hang_nguoi_xu_ly.Size = new System.Drawing.Size(913, 226);
+            this.m_grc_ds_don_hang_nguoi_xu_ly.Size = new System.Drawing.Size(913, 244);
             this.m_grc_ds_don_hang_nguoi_xu_ly.TabIndex = 0;
             this.m_grc_ds_don_hang_nguoi_xu_ly.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_don_hang_nguoi_xu_ly});
@@ -169,17 +180,6 @@
             this.GHI_CHU.Visible = true;
             this.GHI_CHU.VisibleIndex = 6;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(10, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "F120_TAT_CA_CAC_DON_HANG";
-            // 
             // F120_ds_don_hang_khach_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,7 +188,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "F120_ds_don_hang_khach_hang";
-            this.Text = "F120_ds_don_hang_khach_hang";
+            this.Text = "Đơn hàng - Khách hàng";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

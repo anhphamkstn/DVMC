@@ -22,7 +22,6 @@ namespace TOSApp.Hệ_thống
 
         private void f999_ht_bo_dich_vu_Load(object sender, EventArgs e)
         {
-            us_user.dcIDNhom = 5;
             if(us_user.dcIDNhom !=5)
             {
                 m_grv_ht_bo_pm_td_dich_vu.OptionsView.NewItemRowPosition = NewItemRowPosition.None;

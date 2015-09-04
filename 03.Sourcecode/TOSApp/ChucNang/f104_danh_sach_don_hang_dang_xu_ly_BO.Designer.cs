@@ -124,7 +124,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 6;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 5;
             // 
             // NGUOI_DAT_HANG
             // 
@@ -185,7 +185,7 @@
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
             this.Name = "f104_danh_sach_don_hang_dang_xu_ly_BO";
-            this.Text = "f104_danh_sach_don_hang_dang_xu_ly_BO";
+            this.Text = "Đơn hàng đang xử lý";
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_xac_nhan_don_hang)).EndInit();

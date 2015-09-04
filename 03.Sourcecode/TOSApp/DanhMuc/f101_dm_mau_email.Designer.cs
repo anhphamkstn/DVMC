@@ -142,7 +142,7 @@
             this.Controls.Add(this.m_grc_dm_mau_email);
             this.Controls.Add(this.m_pan_button);
             this.Name = "f101_dm_mau_email";
-            this.Text = "f101_dm_mau_email";
+            this.Text = "Danh mục mẫu email";
             this.Load += new System.EventHandler(this.f101_dm_mau_email_Load);
             this.m_pan_button.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

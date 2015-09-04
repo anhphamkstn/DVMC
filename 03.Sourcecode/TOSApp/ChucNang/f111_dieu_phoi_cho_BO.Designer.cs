@@ -178,7 +178,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f111_dieu_phoi_cho_BO";
-            this.Text = "f111_ds_chon_BO";
+            this.Text = "Điều phối";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).EndInit();

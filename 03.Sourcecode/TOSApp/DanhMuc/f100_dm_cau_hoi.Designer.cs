@@ -385,7 +385,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.m_pan_xoa);
             this.Name = "f100_dm_cau_hoi";
-            this.Text = "f100_dm_cau_hoi";
+            this.Text = "Danh mục câu hỏi";
             this.Load += new System.EventHandler(this.f100_dm_cau_hoi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_dm_cau_hoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_dm_cau_hoi)).EndInit();

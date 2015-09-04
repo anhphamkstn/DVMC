@@ -25,15 +25,11 @@ namespace TOSApp.Hệ_thống
             m_us.strTEN_TRUY_CAP = txt_ten_truy_cap.Text;
             m_us.strTEN = txt_ten.Text;
             m_us.strMAT_KHAU = txt_mat_khau.Text;
-            m_us.strNGUOI_TAO = txt_nguoi_tao.Text;
+            //m_us.strNGUOI_TAO = txt_nguoi_tao.Text;
             m_us.strEMAIL = txt_email.Text;
             m_us.strMAT_KHAU_EMAIL = txt_mat_khau_email.Text;
-            m_us.strTRANG_THAI = txt_trang_thai.Text;
-            m_us.datNGAY_TAO = Convert.ToDateTime(dat_ngay_tao.Text);
-            if (rad_n.Checked == true)
-                m_us.strBUILT_IN_YN = "N";
-            else
-                m_us.strBUILT_IN_YN = "Y";
+            m_us.strTRANG_THAI = "N";
+            m_us.datNGAY_TAO = System.DateTime.Now;
         }
 
         private bool kiemtrdulieu()
@@ -66,19 +62,8 @@ namespace TOSApp.Hệ_thống
             txt_ten_truy_cap.Text = v_us.strTEN_TRUY_CAP;
             txt_mat_khau.Text = v_us.strMAT_KHAU;
             txt_ten.Text = v_us.strTEN;
-            txt_nguoi_tao.Text = v_us.strNGUOI_TAO;
-            txt_trang_thai.Text = v_us.strTRANG_THAI;
-            dat_ngay_tao.Text = v_us.datNGAY_TAO.ToString();
             txt_email.Text = v_us.strEMAIL;
             txt_mat_khau_email.Text = v_us.strMAT_KHAU_EMAIL;
-            if (v_us.strBUILT_IN_YN == "Y")
-            {
-                rad_y.Checked = true;
-            }
-            else
-            {
-                rad_n.Checked = true;
-            }
                
         }
 

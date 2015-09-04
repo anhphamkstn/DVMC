@@ -154,7 +154,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 7;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 6;
             this.THOI_DIEM_CAN_HOAN_THANH.Width = 92;
             // 
             // ID
@@ -182,7 +182,7 @@
             this.Controls.Add(this.m_cmd_dieu_phoi_cho_PM);
             this.Controls.Add(this.panel1);
             this.Name = "f110_danh_sach_dieu_phoi_lai";
-            this.Text = "f110_danh_sach_dieu_phoi_lai";
+            this.Text = "Đơn hàng chờ điều phối lại";
             this.panel1.ResumeLayout(false);
             this.m_cmd_dieu_phoi_cho_PM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dieu_phoi_lai)).EndInit();

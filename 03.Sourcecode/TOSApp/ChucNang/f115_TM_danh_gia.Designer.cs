@@ -33,8 +33,8 @@
             this.m_rdb_hoan_thanh = new System.Windows.Forms.RadioButton();
             this.m_rdb_chua_hoan_thanh = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.m_txt_nhan_xet = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1.SuspendLayout();
@@ -93,6 +93,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Đánh giá đơn hàng";
             // 
+            // m_txt_nhan_xet
+            // 
+            this.m_txt_nhan_xet.Location = new System.Drawing.Point(15, 89);
+            this.m_txt_nhan_xet.Multiline = true;
+            this.m_txt_nhan_xet.Name = "m_txt_nhan_xet";
+            this.m_txt_nhan_xet.Size = new System.Drawing.Size(305, 95);
+            this.m_txt_nhan_xet.TabIndex = 2;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -101,14 +109,6 @@
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nhận xét";
-            // 
-            // m_txt_nhan_xet
-            // 
-            this.m_txt_nhan_xet.Location = new System.Drawing.Point(15, 89);
-            this.m_txt_nhan_xet.Multiline = true;
-            this.m_txt_nhan_xet.Name = "m_txt_nhan_xet";
-            this.m_txt_nhan_xet.Size = new System.Drawing.Size(305, 95);
-            this.m_txt_nhan_xet.TabIndex = 2;
             // 
             // m_cmd_OK
             // 
@@ -139,7 +139,7 @@
             this.Controls.Add(this.m_txt_ma_don_hang);
             this.Controls.Add(this.label1);
             this.Name = "f115_TM_danh_gia";
-            this.Text = "f115_TM_danh_gia";
+            this.Text = "Đánh giá";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

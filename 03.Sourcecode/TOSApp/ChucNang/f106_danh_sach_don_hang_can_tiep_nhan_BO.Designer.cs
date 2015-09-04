@@ -141,7 +141,7 @@
             this.NOI_DUNG_DON_HANG.FieldName = "NOI_DUNG_DAT_HANG";
             this.NOI_DUNG_DON_HANG.Name = "NOI_DUNG_DON_HANG";
             this.NOI_DUNG_DON_HANG.Visible = true;
-            this.NOI_DUNG_DON_HANG.VisibleIndex = 6;
+            this.NOI_DUNG_DON_HANG.VisibleIndex = 5;
             // 
             // THOI_DIEM_CAN_HOAN_THANH
             // 
@@ -149,7 +149,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 5;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 4;
             // 
             // NGUOI_XU_LY
             // 
@@ -172,7 +172,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "f106_danh_sach_don_hang_can_tiep_nhan_BO";
-            this.Text = "f106_danh_sach_don_hang_can_tiep_nhan";
+            this.Text = "Đơn hàng cần tiếp nhận";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_can_tiep_nhan)).EndInit();

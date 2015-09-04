@@ -201,6 +201,8 @@ namespace TOSApp
                 {
                     v_don_hang_can_tiep_nhan_BO = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_can_tiep_nhan_BO.MdiParent = this;
+                    v_don_hang_can_tiep_nhan_BO.Text = "Đơn hàng cần tiếp nhận";
+                    v_don_hang_can_tiep_nhan_BO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần tiếp nhận";
                     v_don_hang_can_tiep_nhan_BO.m_panel_BO_hoan_thanh.Visible = false;  
                     v_don_hang_can_tiep_nhan_BO.Show();
                 }
@@ -225,6 +227,8 @@ namespace TOSApp
                 {
                     v_don_hang_dang_xu_ly_BO = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_dang_xu_ly_BO.MdiParent = this;
+                    v_don_hang_dang_xu_ly_BO.Text = "Đơn hàng đang xử lý";
+                    v_don_hang_dang_xu_ly_BO.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_BO.m_panel_BO_tu_choi.Visible = false;
                     v_don_hang_dang_xu_ly_BO.m_panel_BO_tiep_nhan.Visible = false;
                     v_don_hang_dang_xu_ly_BO.Show();
@@ -252,6 +256,8 @@ namespace TOSApp
                 {
                     v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_can_xu_ly_PM.MdiParent = this;
+                    v_don_hang_can_xu_ly_PM.Text = "Đơn hàng cần xử lý";
+                    v_don_hang_can_xu_ly_PM.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_PM.m_panel_PM_hoan_thanh.Visible = false;
                     v_don_hang_can_xu_ly_PM.Show();
                 }
@@ -277,6 +283,8 @@ namespace TOSApp
                 {
                     v_don_hang_dang_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_dang_xu_ly_PM.MdiParent = this;
+                    v_don_hang_dang_xu_ly_PM.Text = "Đơn hàng đang xử lý";
+                    v_don_hang_dang_xu_ly_PM.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_PM.m_panel_PM_dieu_phoi_lai.Visible = false;
                     v_don_hang_dang_xu_ly_PM.m_panel_PM_gui_TD.Visible = false;
                     v_don_hang_dang_xu_ly_PM.m_panel_PM_tiep_nhan.Visible = false;
@@ -302,6 +310,8 @@ namespace TOSApp
                 {
                     v_don_hang_can_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_can_xu_ly_TD.MdiParent = this;
+                    v_don_hang_can_xu_ly_TD.Text = "Đơn hàng cần xử lý";
+                    v_don_hang_can_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_TD.m_panel_TD_hoan_thanh.Visible = false;
                     v_don_hang_can_xu_ly_TD.Show();
                 }
@@ -326,6 +336,8 @@ namespace TOSApp
                 {
                     v_don_hang_dang_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_dang_xu_ly_TD.MdiParent = this;
+                    v_don_hang_dang_xu_ly_TD.Text = "Đơn hàng đang xử lý";
+                    v_don_hang_dang_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_TD.m_panel_TD_tu_choi.Visible = false;
                     v_don_hang_dang_xu_ly_TD.m_panel_TD_tiep_nhan.Visible = false;
                     v_don_hang_dang_xu_ly_TD.Show();
@@ -352,7 +364,8 @@ namespace TOSApp
                 {
                     v_don_hang_can_danh_gia_TM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_can_danh_gia_TM.MdiParent = this;
-                    
+                    v_don_hang_can_danh_gia_TM.Text = "Đơn hàng cần đánh giá";
+                    v_don_hang_can_danh_gia_TM.m_lab_tieu_de.Text = "Danh sách đơn hàng cần đánh giá";
                     v_don_hang_can_danh_gia_TM.Show();
                 }
                 else
@@ -422,6 +435,8 @@ namespace TOSApp
                 {
                     v_don_hang_dieu_phoi_lai_FO = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_dieu_phoi_lai_FO.MdiParent = this;
+                    v_don_hang_dieu_phoi_lai_FO.Text = "Đơn hàng điều phối lại";
+                    v_don_hang_dieu_phoi_lai_FO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần điều phối lại";
                     v_don_hang_dieu_phoi_lai_FO.Show();
                 }
                 else
@@ -618,6 +633,13 @@ namespace TOSApp
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_cmd_bo_pm_td_dich_vu_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f999_ht_bo_pm_td_dich_vu v_f = new f999_ht_bo_pm_td_dich_vu();
+            v_f.MdiParent = this;
+            v_f.Show();
         }
 
      

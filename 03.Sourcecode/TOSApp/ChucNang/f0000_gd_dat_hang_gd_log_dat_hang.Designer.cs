@@ -55,7 +55,10 @@
             this.NGUOI_TAO_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.m_panel_TM = new System.Windows.Forms.Panel();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_TD = new System.Windows.Forms.Panel();
@@ -95,7 +98,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.m_panel_TM.SuspendLayout();
             this.m_panel_TD.SuspendLayout();
             this.m_panel_TD_tu_choi.SuspendLayout();
@@ -140,7 +145,7 @@
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
-            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1242, 472);
+            this.m_grc_gd_dat_hang_gd_log_dat_hang.Size = new System.Drawing.Size(1242, 413);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.TabIndex = 20;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_gd_dat_hang_gd_log_dat_hang,
@@ -346,7 +351,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.panel9);
             this.panel3.Controls.Add(this.m_panel_TM);
             this.panel3.Controls.Add(this.m_panel_TD);
             this.panel3.Controls.Add(this.m_panel_PM);
@@ -358,14 +363,44 @@
             this.panel3.Size = new System.Drawing.Size(1242, 660);
             this.panel3.TabIndex = 3;
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.panel1);
+            this.panel9.Controls.Add(this.panel8);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1242, 472);
+            this.panel9.TabIndex = 21;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.m_grc_gd_dat_hang_gd_log_dat_hang);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1242, 472);
-            this.panel1.TabIndex = 24;
+            this.panel1.Size = new System.Drawing.Size(1242, 413);
+            this.panel1.TabIndex = 21;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.m_lab_tieu_de);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1242, 59);
+            this.panel8.TabIndex = 20;
+            // 
+            // m_lab_tieu_de
+            // 
+            this.m_lab_tieu_de.AutoSize = true;
+            this.m_lab_tieu_de.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lab_tieu_de.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lab_tieu_de.Location = new System.Drawing.Point(10, 21);
+            this.m_lab_tieu_de.Name = "m_lab_tieu_de";
+            this.m_lab_tieu_de.Size = new System.Drawing.Size(172, 20);
+            this.m_lab_tieu_de.TabIndex = 0;
+            this.m_lab_tieu_de.Text = "Danh sách giao dịch";
             // 
             // m_panel_TM
             // 
@@ -772,13 +807,16 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "f0000_gd_dat_hang_gd_log_dat_hang";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "f0000_gd_dat_hang_gd_log_dat_hang";
+            this.Text = "Giao dịch";
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.m_panel_TM.ResumeLayout(false);
             this.m_panel_TD.ResumeLayout(false);
             this.m_panel_TD_tu_choi.ResumeLayout(false);
@@ -818,7 +856,6 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_dieu_phoi_lai;
         private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraEditors.SimpleButton m_cmd_them_moi_don_hang;
-        private System.Windows.Forms.Panel panel1;
         private DevExpress.XtraGrid.GridControl m_grc_gd_dat_hang_gd_log_dat_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -864,5 +901,9 @@
         public System.Windows.Forms.Panel m_panel_BO_tiep_nhan;
         public System.Windows.Forms.Panel m_panel_PM_dieu_phoi_lai;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label m_lab_tieu_de;
     }
 }

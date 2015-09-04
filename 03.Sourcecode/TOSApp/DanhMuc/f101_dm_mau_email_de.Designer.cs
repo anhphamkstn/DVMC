@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f101_dm_mau_email_de));
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraRichEdit.Model.BorderInfo borderInfo1 = new DevExpress.XtraRichEdit.Model.BorderInfo();
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup7 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup8 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraRichEdit.Model.BorderInfo borderInfo2 = new DevExpress.XtraRichEdit.Model.BorderInfo();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation4 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.stylesRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.StylesRibbonPageGroup();
             this.galleryChangeStyleItem1 = new DevExpress.XtraRichEdit.UI.GalleryChangeStyleItem();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -46,8 +46,6 @@
             this.m_txt_gui_cc = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.m_txt_ma_email = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.m_pan_button = new System.Windows.Forms.Panel();
@@ -223,11 +221,10 @@
             this.mailingsRibbonPage1 = new DevExpress.XtraRichEdit.UI.MailingsRibbonPage();
             this.mailMergeRibbonPageGroup1 = new DevExpress.XtraRichEdit.UI.MailMergeRibbonPageGroup();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();       
             this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -235,7 +232,6 @@
             this.panel7.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.m_pan_button.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -245,11 +241,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineStyle1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineWeight1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();       
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // stylesRibbonPageGroup1
@@ -265,20 +260,20 @@
             // 
             this.galleryChangeStyleItem1.Gallery.ColumnCount = 10;
             this.galleryChangeStyleItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
+            galleryItemGroup7});
             this.galleryChangeStyleItem1.Gallery.ImageSize = new System.Drawing.Size(65, 46);
             this.galleryChangeStyleItem1.Id = 61;
             this.galleryChangeStyleItem1.Name = "galleryChangeStyleItem1";
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.panel6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 103);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(870, 154);
+            this.panel2.Size = new System.Drawing.Size(1087, 114);
             this.panel2.TabIndex = 13;
             // 
             // panel8
@@ -286,27 +281,27 @@
             this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel8.Location = new System.Drawing.Point(0, 19);
+            this.panel8.Location = new System.Drawing.Point(0, 40);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(870, 47);
+            this.panel8.Size = new System.Drawing.Size(1087, 36);
             this.panel8.TabIndex = 10;
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.m_txt_tieu_de_mail);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(153, 15);
+            this.panel10.Location = new System.Drawing.Point(133, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(717, 32);
+            this.panel10.Size = new System.Drawing.Size(954, 33);
             this.panel10.TabIndex = 3;
             // 
             // m_txt_tieu_de_mail
             // 
-            this.m_txt_tieu_de_mail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_txt_tieu_de_mail.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_txt_tieu_de_mail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_tieu_de_mail.Location = new System.Drawing.Point(0, 0);
+            this.m_txt_tieu_de_mail.Location = new System.Drawing.Point(0, 7);
             this.m_txt_tieu_de_mail.Name = "m_txt_tieu_de_mail";
-            this.m_txt_tieu_de_mail.Size = new System.Drawing.Size(717, 26);
+            this.m_txt_tieu_de_mail.Size = new System.Drawing.Size(954, 26);
             this.m_txt_tieu_de_mail.TabIndex = 0;
             // 
             // panel9
@@ -315,14 +310,14 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(153, 47);
+            this.panel9.Size = new System.Drawing.Size(133, 36);
             this.panel9.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 15);
+            this.label1.Location = new System.Drawing.Point(9, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 18);
             this.label1.TabIndex = 1;
@@ -333,27 +328,27 @@
             this.panel7.Controls.Add(this.panel12);
             this.panel7.Controls.Add(this.panel11);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 66);
+            this.panel7.Location = new System.Drawing.Point(0, 76);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(870, 44);
+            this.panel7.Size = new System.Drawing.Size(1087, 38);
             this.panel7.TabIndex = 9;
             // 
             // panel12
             // 
             this.panel12.Controls.Add(this.m_txt_gui_cc);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(153, 12);
+            this.panel12.Location = new System.Drawing.Point(133, 6);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(717, 32);
+            this.panel12.Size = new System.Drawing.Size(954, 32);
             this.panel12.TabIndex = 7;
             // 
             // m_txt_gui_cc
             // 
-            this.m_txt_gui_cc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_txt_gui_cc.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_txt_gui_cc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_gui_cc.Location = new System.Drawing.Point(0, 0);
+            this.m_txt_gui_cc.Location = new System.Drawing.Point(0, 6);
             this.m_txt_gui_cc.Name = "m_txt_gui_cc";
-            this.m_txt_gui_cc.Size = new System.Drawing.Size(717, 26);
+            this.m_txt_gui_cc.Size = new System.Drawing.Size(954, 26);
             this.m_txt_gui_cc.TabIndex = 4;
             // 
             // panel11
@@ -362,7 +357,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(153, 44);
+            this.panel11.Size = new System.Drawing.Size(133, 38);
             this.panel11.TabIndex = 6;
             // 
             // label3
@@ -375,39 +370,20 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Gửi cc :";
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 110);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(870, 44);
-            this.panel6.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Nội dung email :";
-            // 
             // m_txt_ma_email
             // 
-            this.m_txt_ma_email.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_txt_ma_email.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_txt_ma_email.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_txt_ma_email.Location = new System.Drawing.Point(0, 0);
+            this.m_txt_ma_email.Location = new System.Drawing.Point(0, 24);
             this.m_txt_ma_email.Name = "m_txt_ma_email";
-            this.m_txt_ma_email.Size = new System.Drawing.Size(285, 26);
+            this.m_txt_ma_email.Size = new System.Drawing.Size(954, 26);
             this.m_txt_ma_email.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 25);
+            this.label2.Location = new System.Drawing.Point(9, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 18);
             this.label2.TabIndex = 3;
@@ -418,18 +394,18 @@
             this.m_pan_button.Controls.Add(this.panel14);
             this.m_pan_button.Controls.Add(this.panel13);
             this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_pan_button.Location = new System.Drawing.Point(3, 380);
+            this.m_pan_button.Location = new System.Drawing.Point(3, 530);
             this.m_pan_button.Name = "m_pan_button";
-            this.m_pan_button.Size = new System.Drawing.Size(870, 54);
+            this.m_pan_button.Size = new System.Drawing.Size(1087, 24);
             this.m_pan_button.TabIndex = 14;
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.m_cmd_luu);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(490, 0);
+            this.panel14.Location = new System.Drawing.Point(707, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(190, 54);
+            this.panel14.Size = new System.Drawing.Size(190, 24);
             this.panel14.TabIndex = 15;
             // 
             // m_cmd_luu
@@ -440,7 +416,7 @@
             this.m_cmd_luu.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_luu.Image")));
             this.m_cmd_luu.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_luu.Name = "m_cmd_luu";
-            this.m_cmd_luu.Size = new System.Drawing.Size(190, 54);
+            this.m_cmd_luu.Size = new System.Drawing.Size(190, 24);
             this.m_cmd_luu.TabIndex = 12;
             this.m_cmd_luu.Text = "&Lưu";
             this.m_cmd_luu.Click += new System.EventHandler(this.simpbtn_luu_Click);
@@ -449,9 +425,9 @@
             // 
             this.panel13.Controls.Add(this.m_cmd_thoat);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel13.Location = new System.Drawing.Point(680, 0);
+            this.panel13.Location = new System.Drawing.Point(897, 0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(190, 54);
+            this.panel13.Size = new System.Drawing.Size(190, 24);
             this.panel13.TabIndex = 14;
             // 
             // m_cmd_thoat
@@ -462,7 +438,7 @@
             this.m_cmd_thoat.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_thoat.Image")));
             this.m_cmd_thoat.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_thoat.Name = "m_cmd_thoat";
-            this.m_cmd_thoat.Size = new System.Drawing.Size(190, 54);
+            this.m_cmd_thoat.Size = new System.Drawing.Size(190, 24);
             this.m_cmd_thoat.TabIndex = 13;
             this.m_cmd_thoat.Text = "&Thoát";
             this.m_cmd_thoat.Click += new System.EventHandler(this.simpbtn_thoat_Click);
@@ -471,13 +447,13 @@
             // 
             this.m_richedit_noi_dung_email.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_richedit_noi_dung_email.EnableToolTips = true;
-            this.m_richedit_noi_dung_email.Location = new System.Drawing.Point(3, 263);
+            this.m_richedit_noi_dung_email.Location = new System.Drawing.Point(3, 123);
             this.m_richedit_noi_dung_email.MenuManager = this.ribbonControl1;
             this.m_richedit_noi_dung_email.Name = "m_richedit_noi_dung_email";
             this.m_richedit_noi_dung_email.Options.CopyPaste.MaintainDocumentSectionSettings = false;
             this.m_richedit_noi_dung_email.Options.Fields.UseCurrentCultureDateTimeFormat = false;
             this.m_richedit_noi_dung_email.Options.MailMerge.KeepLastParagraph = false;
-            this.m_richedit_noi_dung_email.Size = new System.Drawing.Size(870, 111);
+            this.m_richedit_noi_dung_email.Size = new System.Drawing.Size(1087, 401);
             this.m_richedit_noi_dung_email.TabIndex = 15;
             // 
             // ribbonControl1
@@ -634,7 +610,7 @@
             this.repositoryItemRichEditFontSizeEdit1,
             this.repositoryItemBorderLineStyle1,
             this.repositoryItemBorderLineWeight1});
-            this.ribbonControl1.Size = new System.Drawing.Size(876, 144);
+            this.ribbonControl1.Size = new System.Drawing.Size(1093, 144);
             // 
             // undoItem1
             // 
@@ -1137,7 +1113,7 @@
             // 
             this.galleryChangeTableStyleItem1.Gallery.ColumnCount = 3;
             this.galleryChangeTableStyleItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup2});
+            galleryItemGroup8});
             this.galleryChangeTableStyleItem1.Gallery.ImageSize = new System.Drawing.Size(65, 46);
             this.galleryChangeTableStyleItem1.Id = 86;
             this.galleryChangeTableStyleItem1.ModifyItemLink = null;
@@ -1148,13 +1124,13 @@
             // changeTableBorderLineStyleItem1
             // 
             this.changeTableBorderLineStyleItem1.Edit = this.repositoryItemBorderLineStyle1;
-            borderInfo1.Color = System.Drawing.Color.Black;
-            borderInfo1.Frame = false;
-            borderInfo1.Offset = 0;
-            borderInfo1.Shadow = false;
-            borderInfo1.Style = DevExpress.XtraRichEdit.Model.BorderLineStyle.Single;
-            borderInfo1.Width = 10;
-            this.changeTableBorderLineStyleItem1.EditValue = borderInfo1;
+            borderInfo2.Color = System.Drawing.Color.Black;
+            borderInfo2.Frame = false;
+            borderInfo2.Offset = 0;
+            borderInfo2.Shadow = false;
+            borderInfo2.Style = DevExpress.XtraRichEdit.Model.BorderLineStyle.Single;
+            borderInfo2.Width = 10;
+            this.changeTableBorderLineStyleItem1.EditValue = borderInfo2;
             this.changeTableBorderLineStyleItem1.Id = 87;
             this.changeTableBorderLineStyleItem1.Name = "changeTableBorderLineStyleItem1";
             // 
@@ -1560,12 +1536,12 @@
             this.stylesRibbonPageGroup1,
             this.editingRibbonPageGroup1});
             this.homeRibbonPage1.Name = "homeRibbonPage1";
-            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.UntilAvailable;
-            reduceOperation1.Group = this.stylesRibbonPageGroup1;
-            reduceOperation1.ItemLinkIndex = 0;
-            reduceOperation1.ItemLinksCount = 0;
-            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
-            this.homeRibbonPage1.ReduceOperations.Add(reduceOperation1);
+            reduceOperation4.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.UntilAvailable;
+            reduceOperation4.Group = this.stylesRibbonPageGroup1;
+            reduceOperation4.ItemLinkIndex = 0;
+            reduceOperation4.ItemLinksCount = 0;
+            reduceOperation4.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.Gallery;
+            this.homeRibbonPage1.ReduceOperations.Add(reduceOperation4);
             // 
             // clipboardRibbonPageGroup1
             // 
@@ -1672,66 +1648,29 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.m_pan_button, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.m_richedit_noi_dung_email, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.m_pan_button, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.m_richedit_noi_dung_email, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 144);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(876, 437);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1093, 557);
             this.tableLayoutPanel1.TabIndex = 16;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.22222F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-       
-            this.tableLayoutPanel2.Controls.Add(this.panel3, 3, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(870, 94);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(582, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(285, 88);
-            this.panel3.TabIndex = 8;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.m_txt_ma_email);
+            this.panel5.Controls.Add(this.panel3);
+            this.panel5.Controls.Add(this.panel1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 62);
+            this.panel5.Location = new System.Drawing.Point(0, -10);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(285, 26);
+            this.panel5.Size = new System.Drawing.Size(1087, 50);
             this.panel5.TabIndex = 5;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(285, 88);
-            this.panel4.TabIndex = 4;
-         
             // 
             // richEditBarController1
             // 
@@ -1864,11 +1803,29 @@
             this.richEditBarController1.BarItems.Add(this.showTableOptionsFormItem1);
             this.richEditBarController1.Control = this.m_richedit_noi_dung_email;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(133, 50);
+            this.panel1.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.m_txt_ma_email);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(133, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(954, 50);
+            this.panel3.TabIndex = 7;
+            // 
             // f101_dm_mau_email_de
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 581);
+            this.ClientSize = new System.Drawing.Size(1093, 701);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "f101_dm_mau_email_de";
@@ -1886,8 +1843,6 @@
             this.panel12.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.m_pan_button.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -1897,13 +1852,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineStyle1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemBorderLineWeight1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();      
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1912,7 +1866,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox m_txt_tieu_de_mail;
         private System.Windows.Forms.TextBox m_txt_ma_email;
@@ -1924,19 +1877,15 @@
         private DevExpress.XtraEditors.SimpleButton m_cmd_luu;
         private DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraRichEdit.UI.UndoItem undoItem1;
         private DevExpress.XtraRichEdit.UI.RedoItem redoItem1;
@@ -2106,6 +2055,8 @@
         private DevExpress.XtraRichEdit.UI.MailingsRibbonPage mailingsRibbonPage1;
         private DevExpress.XtraRichEdit.UI.MailMergeRibbonPageGroup mailMergeRibbonPageGroup1;
         private DevExpress.XtraRichEdit.UI.RichEditBarController richEditBarController1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
 
 
     }

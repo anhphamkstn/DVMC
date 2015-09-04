@@ -170,7 +170,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f113_danh_sach_can_phe_duyet_PM";
-            this.Text = "f113_danh_sach_can_phe_duyet_PM";
+            this.Text = "Đơn hàng chờ đánh giá";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_danh_sach_can_phe_duyet_PM)).EndInit();

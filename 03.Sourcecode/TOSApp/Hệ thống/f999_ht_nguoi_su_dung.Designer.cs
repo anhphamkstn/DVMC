@@ -232,7 +232,7 @@
             this.ClientSize = new System.Drawing.Size(761, 404);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "f999_ht_nguoi_su_dung";
-            this.Text = "f999_ht_nguoi_su_dung";
+            this.Text = "Danh mục người sử dụng";
             this.Load += new System.EventHandler(this.f999_ht_nguoi_su_dung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_nguoi_su_dung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_nguoi_su_dung)).EndInit();

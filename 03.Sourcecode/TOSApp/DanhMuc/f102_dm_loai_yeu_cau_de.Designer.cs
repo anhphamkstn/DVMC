@@ -397,7 +397,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "f102_dm_loai_yeu_cau_de";
-            this.Text = "f102_dm_loai_yeu_cau_de";
+            this.Text = "Chi tiết dịch vụ";
             this.Load += new System.EventHandler(this.f102_dm_loai_yeu_cau_de_Load);
             this.m_pan_button.ResumeLayout(false);
             this.panel9.ResumeLayout(false);

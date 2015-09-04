@@ -139,7 +139,7 @@
             this.ClientSize = new System.Drawing.Size(784, 313);
             this.Controls.Add(this.m_pan_grv);
             this.Name = "f999_ht_bo_pm_td_dich_vu";
-            this.Text = "f999_ht_bo_dich_vu";
+            this.Text = "Dịch vụ - Người xử lý";
             this.Load += new System.EventHandler(this.f999_ht_bo_dich_vu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ht_bo_pm_td_dich_vu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ht_bo_pm_td_dich_vu)).EndInit();

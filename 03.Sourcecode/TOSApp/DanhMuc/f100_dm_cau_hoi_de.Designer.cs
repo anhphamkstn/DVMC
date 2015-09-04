@@ -427,7 +427,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "f100_dm_cau_hoi_de";
-            this.Text = "f100_dm_cau_hoi_de";
+            this.Text = "Chi tiết";
             this.Load += new System.EventHandler(this.f100_dm_cau_hoi_de_Load);
             this.panel1.ResumeLayout(false);
             this.m_pan_luu.ResumeLayout(false);

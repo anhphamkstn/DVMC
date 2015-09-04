@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_cmd_xu_ly_lai = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_nghiem_thu = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.m_cmd_nghiem_thu = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_xu_ly_lai = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -49,6 +49,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(933, 76);
             this.panel1.TabIndex = 0;
+            // 
+            // m_cmd_xu_ly_lai
+            // 
+            this.m_cmd_xu_ly_lai.Location = new System.Drawing.Point(791, 26);
+            this.m_cmd_xu_ly_lai.Name = "m_cmd_xu_ly_lai";
+            this.m_cmd_xu_ly_lai.Size = new System.Drawing.Size(100, 23);
+            this.m_cmd_xu_ly_lai.TabIndex = 0;
+            this.m_cmd_xu_ly_lai.Text = "Xử lý lại";
+            // 
+            // m_cmd_nghiem_thu
+            // 
+            this.m_cmd_nghiem_thu.Location = new System.Drawing.Point(635, 26);
+            this.m_cmd_nghiem_thu.Name = "m_cmd_nghiem_thu";
+            this.m_cmd_nghiem_thu.Size = new System.Drawing.Size(104, 23);
+            this.m_cmd_nghiem_thu.TabIndex = 0;
+            this.m_cmd_nghiem_thu.Text = "Nghiệm thu";
             // 
             // panel2
             // 
@@ -76,22 +92,6 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
-            // m_cmd_nghiem_thu
-            // 
-            this.m_cmd_nghiem_thu.Location = new System.Drawing.Point(635, 26);
-            this.m_cmd_nghiem_thu.Name = "m_cmd_nghiem_thu";
-            this.m_cmd_nghiem_thu.Size = new System.Drawing.Size(104, 23);
-            this.m_cmd_nghiem_thu.TabIndex = 0;
-            this.m_cmd_nghiem_thu.Text = "Nghiệm thu";
-            // 
-            // m_cmd_xu_ly_lai
-            // 
-            this.m_cmd_xu_ly_lai.Location = new System.Drawing.Point(791, 26);
-            this.m_cmd_xu_ly_lai.Name = "m_cmd_xu_ly_lai";
-            this.m_cmd_xu_ly_lai.Size = new System.Drawing.Size(100, 23);
-            this.m_cmd_xu_ly_lai.TabIndex = 0;
-            this.m_cmd_xu_ly_lai.Text = "Xử lý lại";
-            // 
             // f108_danh_sach_don_hang_hoa_thanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -100,7 +100,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f108_danh_sach_don_hang_hoa_thanh";
-            this.Text = "f108_danh_sach_don_hang_can_duyet";
+            this.Text = "Đơn hàng hoàn thành";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

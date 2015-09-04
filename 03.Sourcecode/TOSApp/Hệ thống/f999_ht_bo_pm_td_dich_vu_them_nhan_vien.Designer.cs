@@ -33,19 +33,19 @@
             this.grv_danh_sach = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.c_ds = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.m_cmd_ok = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.m_cmd_thoat = new DevExpress.XtraEditors.SimpleButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.grc_danh_sach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv_danh_sach)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // grc_danh_sach
@@ -88,33 +88,6 @@
             this.panel1.Size = new System.Drawing.Size(563, 52);
             this.panel1.TabIndex = 5;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.grc_danh_sach);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(563, 209);
-            this.panel2.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(436, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(127, 52);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.m_cmd_thoat);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(127, 52);
-            this.panel4.TabIndex = 1;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.m_cmd_ok);
@@ -137,6 +110,24 @@
             this.m_cmd_ok.Text = "&OK";
             this.m_cmd_ok.Click += new System.EventHandler(this.m_cmd_ok_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(436, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(127, 52);
+            this.panel3.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.m_cmd_thoat);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(127, 52);
+            this.panel4.TabIndex = 1;
+            // 
             // m_cmd_thoat
             // 
             this.m_cmd_thoat.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -150,6 +141,15 @@
             this.m_cmd_thoat.Text = "&Thoát";
             this.m_cmd_thoat.Click += new System.EventHandler(this.m_cmd_thoat_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.grc_danh_sach);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(563, 209);
+            this.panel2.TabIndex = 6;
+            // 
             // f999_ht_bo_pm_td_dich_vu_them_nhan_vien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,15 +158,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f999_ht_bo_pm_td_dich_vu_them_nhan_vien";
-            this.Text = "f999_ht_bo_pm_td_dich_vu_them_nhan_vien";
+            this.Text = "Danh sách";
             this.Load += new System.EventHandler(this.f999_ht_bo_pm_td_dich_vu_them_nhan_vien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grc_danh_sach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv_danh_sach)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

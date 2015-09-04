@@ -150,7 +150,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "f114_ds_BO";
-            this.Text = "f114_ds_BO";
+            this.Text = "Danh sách BO";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
