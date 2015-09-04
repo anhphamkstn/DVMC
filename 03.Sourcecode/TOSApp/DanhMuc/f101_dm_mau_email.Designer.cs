@@ -48,18 +48,18 @@
             // 
             this.m_pan_button.Controls.Add(this.panel1);
             this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pan_button.Location = new System.Drawing.Point(0, 305);
+            this.m_pan_button.Location = new System.Drawing.Point(0, 353);
             this.m_pan_button.Name = "m_pan_button";
-            this.m_pan_button.Size = new System.Drawing.Size(773, 56);
+            this.m_pan_button.Size = new System.Drawing.Size(773, 36);
             this.m_pan_button.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.m_cmd_xoa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(583, 0);
+            this.panel1.Location = new System.Drawing.Point(685, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(190, 56);
+            this.panel1.Size = new System.Drawing.Size(88, 36);
             this.panel1.TabIndex = 4;
             // 
             // m_cmd_xoa
@@ -70,7 +70,7 @@
             this.m_cmd_xoa.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xoa.Image")));
             this.m_cmd_xoa.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_xoa.Name = "m_cmd_xoa";
-            this.m_cmd_xoa.Size = new System.Drawing.Size(190, 56);
+            this.m_cmd_xoa.Size = new System.Drawing.Size(88, 36);
             this.m_cmd_xoa.TabIndex = 7;
             this.m_cmd_xoa.Text = "&Xóa";
             this.m_cmd_xoa.Click += new System.EventHandler(this.simpbtn_xoa_Click);
@@ -82,7 +82,7 @@
             this.m_grc_dm_mau_email.Location = new System.Drawing.Point(0, 0);
             this.m_grc_dm_mau_email.MainView = this.m_grv_dm_mau_email;
             this.m_grc_dm_mau_email.Name = "m_grc_dm_mau_email";
-            this.m_grc_dm_mau_email.Size = new System.Drawing.Size(773, 305);
+            this.m_grc_dm_mau_email.Size = new System.Drawing.Size(773, 353);
             this.m_grc_dm_mau_email.TabIndex = 2;
             this.m_grc_dm_mau_email.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_dm_mau_email});
@@ -136,9 +136,9 @@
             // 
             // f101_dm_mau_email
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 361);
+            this.ClientSize = new System.Drawing.Size(773, 389);
             this.Controls.Add(this.m_grc_dm_mau_email);
             this.Controls.Add(this.m_pan_button);
             this.Name = "f101_dm_mau_email";

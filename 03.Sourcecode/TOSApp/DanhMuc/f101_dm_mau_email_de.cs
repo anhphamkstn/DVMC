@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace TOSApp.DanhMuc
 {
-    public partial class f101_dm_mau_email_de : Form
+    public partial class f101_dm_mau_email_de : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public f101_dm_mau_email_de()
         {
