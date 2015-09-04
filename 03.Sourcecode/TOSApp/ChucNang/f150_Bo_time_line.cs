@@ -44,17 +44,13 @@ namespace TOSApp.ChucNang
 
         private void f150_Bo_time_line_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'bKI_DVMCDataSet.Resources' table. You can move, or remove it, as needed.
-            this.resourcesTableAdapter.Fill(this.bKI_DVMCDataSet.Resources);
-            // TODO: This line of code loads data into the 'bKI_DVMCDataSet.Appointments' table. You can move, or remove it, as needed.
-            this.appointmentsTableAdapter.Fill(this.bKI_DVMCDataSet.Appointments);
+           
 
         }
 
         private void OnAppointmentChangedInsertedDeleted(object sender, PersistentObjectsEventArgs e)
         {
-            appointmentsTableAdapter.Update(bKI_DVMCDataSet);
-            bKI_DVMCDataSet.AcceptChanges();
+           
         }
     }
 }
