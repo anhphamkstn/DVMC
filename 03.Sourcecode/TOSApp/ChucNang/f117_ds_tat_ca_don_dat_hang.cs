@@ -14,6 +14,8 @@ namespace TOSApp.ChucNang
 {
     public partial class f117_ds_tat_ca_don_dat_hang : Form
     {
+        decimal v_deadline =0;
+        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us;
         public f117_ds_tat_ca_don_dat_hang()
         {
             
@@ -41,7 +43,7 @@ namespace TOSApp.ChucNang
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                
-                v_f100.displayForUpdate(v_us);
+                v_f100.displayForUpdate(v_us,v_deadline);
                 load_data_2_grid();
 
             }
@@ -85,9 +87,10 @@ namespace TOSApp.ChucNang
             try
             {
                 DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-                v_f100.displayForUpdate(v_us,deadline_id);
+               m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                this.Show();
+
+                v_deadline = deadline_id;
                 load_data_2_grid();
 
             }

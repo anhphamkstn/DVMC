@@ -589,30 +589,33 @@ namespace TOSApp.ChucNang
           
         }
 
-  
-  
 
-        internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
-        {
-            try
-            {
-                format_controlls();
-                us_2_form(v_us);
-                m_e_form_mode= DataEntryFormMode.UpdateDataState;
-                M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
+
+        /// <hàm này tạm thời không dùng>
+        /// 
+        /// </summary>
+        /// <param name="v_us"></param>
+        //internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        //{
+        //    try
+        //    {
+        //        format_controlls();
+        //        us_2_form(v_us);
+        //        m_e_form_mode= DataEntryFormMode.UpdateDataState;
+        //        M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                
-                    load_data_2_lich_su_thuc_hien();
+        //            load_data_2_lich_su_thuc_hien();
 
                 
-                this.ShowDialog();
+        //        this.ShowDialog();
 
-            }
-            catch (Exception v_e)
-            {
+        //    }
+        //    catch (Exception v_e)
+        //    {
                 
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
+        //        CSystemLog_301.ExceptionHandle(v_e);
+        //    }
+        //}
 
         private void us_2_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
@@ -696,14 +699,30 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                format_controlls_for_refurse_deadline();
-                us_2_form(v_us);
-                m_e_form_mode = DataEntryFormMode.UpdateDataState;
-                M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
-                m_deadline_id = deadline_id;
-                load_data_2_lich_su_thuc_hien();
-                this.ShowDialog();
+                if (deadline_id == 1)
+                {
+                    format_controlls_for_refurse_deadline();
+                    us_2_form(v_us);
+                    m_e_form_mode = DataEntryFormMode.UpdateDataState;
+                    M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
+                    m_deadline_id = deadline_id;
+                    load_data_2_lich_su_thuc_hien();
+                    this.ShowDialog();
 
+                }
+                else
+                {
+                    format_controlls();
+                    us_2_form(v_us);
+                    m_e_form_mode = DataEntryFormMode.UpdateDataState;
+                    M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
+
+                    load_data_2_lich_su_thuc_hien();
+
+
+                    this.ShowDialog();
+                }
+              
             }
             catch (Exception v_e)
             {
