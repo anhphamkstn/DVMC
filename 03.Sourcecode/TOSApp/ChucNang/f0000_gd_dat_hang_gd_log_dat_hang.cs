@@ -17,6 +17,14 @@ namespace TOSApp.ChucNang
     public partial class f0000_gd_dat_hang_gd_log_dat_hang : Form
     {
         public decimal kieu_load_form = 1;
+
+        #region member email
+        US_DM_MAU_EMAIL m_us_dm_mau_mail = new US_DM_MAU_EMAIL();
+        DataSet m_ds_dm_mau_mail_xac_nhan = new DataSet();
+        DataSet m_ds_dm_mau_mail_hoan_thanh = new DataSet();
+        DataSet m_ds_dm_mau_mail_cap_nhat_don_hang = new DataSet();
+        #endregion
+
         public f0000_gd_dat_hang_gd_log_dat_hang(int i)
         {
             InitializeComponent();
