@@ -28,6 +28,7 @@ namespace TOSApp.ChucNang
         private void load_data_to_grid()
         {
 
+            
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
            
             DataSet v_ds_appointment = new DataSet();
