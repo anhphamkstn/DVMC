@@ -38,8 +38,8 @@ namespace TOSApp.ChucNang
 
             v_us.FillDatasetWithQuery(v_ds_resource,"");
 
-            schedulerStorage1.Appointments.DataSource = v_ds_appointment.Tables[0];
-            schedulerStorage1.Resources.DataSource = v_ds_resource.Tables[0];
+            schedulerStorage.Appointments.DataSource = v_ds_appointment.Tables[0];
+            schedulerStorage.Resources.DataSource = v_ds_resource.Tables[0];
         }
 
         private void f150_Bo_time_line_Load(object sender, EventArgs e)
