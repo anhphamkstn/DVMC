@@ -134,8 +134,8 @@ namespace TOSApp.ChucNang
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
 
-            string user_email = "vanndkstnk57@gmail.com";
-            string password = "van20121138";
+            string user_email = "daothihienhien@gmail.com";
+            string password = "daothihien";
             try
             {
                 
