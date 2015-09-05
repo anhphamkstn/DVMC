@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_Cancel = new DevExpress.XtraEditors.SimpleButton();
+            this.m_chk_gui_email_YN = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +113,7 @@
             // 
             // m_cmd_OK
             // 
-            this.m_cmd_OK.Location = new System.Drawing.Point(129, 284);
+            this.m_cmd_OK.Location = new System.Drawing.Point(156, 282);
             this.m_cmd_OK.Name = "m_cmd_OK";
             this.m_cmd_OK.Size = new System.Drawing.Size(75, 23);
             this.m_cmd_OK.TabIndex = 3;
@@ -128,11 +129,24 @@
             this.m_cmd_Cancel.Text = "Cancel";
             this.m_cmd_Cancel.Click += new System.EventHandler(this.m_cmd_Cancel_Click);
             // 
+            // m_chk_gui_email_YN
+            // 
+            this.m_chk_gui_email_YN.AutoSize = true;
+            this.m_chk_gui_email_YN.Checked = true;
+            this.m_chk_gui_email_YN.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.m_chk_gui_email_YN.Location = new System.Drawing.Point(2, 288);
+            this.m_chk_gui_email_YN.Name = "m_chk_gui_email_YN";
+            this.m_chk_gui_email_YN.Size = new System.Drawing.Size(148, 17);
+            this.m_chk_gui_email_YN.TabIndex = 3;
+            this.m_chk_gui_email_YN.Text = "gửi email cho khách hàng";
+            this.m_chk_gui_email_YN.UseVisualStyleBackColor = true;
+            // 
             // f115_TM_danh_gia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 319);
+            this.Controls.Add(this.m_chk_gui_email_YN);
             this.Controls.Add(this.m_cmd_Cancel);
             this.Controls.Add(this.m_cmd_OK);
             this.Controls.Add(this.groupBox1);
@@ -158,5 +172,6 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.SimpleButton m_cmd_OK;
         private DevExpress.XtraEditors.SimpleButton m_cmd_Cancel;
+        private System.Windows.Forms.CheckBox m_chk_gui_email_YN;
     }
 }

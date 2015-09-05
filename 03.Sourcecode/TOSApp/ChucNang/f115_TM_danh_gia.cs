@@ -18,7 +18,7 @@ namespace TOSApp.ChucNang
             InitializeComponent();
         }
 
-        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
+        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG M_us;
         
         internal void displayForTM(IPCOREUS.US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
@@ -29,7 +29,7 @@ namespace TOSApp.ChucNang
         private void load_data_2_form(IPCOREUS.US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
             m_txt_ma_don_hang.Text = m_us.strMA_DON_HANG;
-            v_us = m_us;
+            M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(m_us.dcID); ;
         }
 
         private void m_cmd_Cancel_Click(object sender, EventArgs e)
@@ -43,8 +43,14 @@ namespace TOSApp.ChucNang
             {
                 if (m_rdb_hoan_thanh.Checked == true)
                 {
-                    ghi_log_nghiem_thu_don_hang(v_us);
-                    update_trang_thai_don_hang(v_us);
+                   
+                    if (m_chk_gui_email_YN.Checked==true)
+                    {
+                        gui_email_bao_hoan_thanh();
+                    }
+                    update_thoi_gian_hoan_thanh(M_us);
+                    ghi_log_nghiem_thu_don_hang(M_us);
+                    update_trang_thai_don_hang(M_us);
                     MessageBox.Show("Hoàn thành");
                     this.Close();
                 }
@@ -57,8 +63,8 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
-                        ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(v_us);
-                        update_trang_thai_don_hang_chua_hoan_thanh(v_us);
+                        ghi_log_nghiem_thu_don_hang_chua_hoan_thanh(M_us);
+                        update_trang_thai_don_hang_chua_hoan_thanh(M_us);
                         this.Close();
                     }
 
@@ -68,6 +74,79 @@ namespace TOSApp.ChucNang
             {
 
                 throw;
+            }
+        }
+
+        private void update_thoi_gian_hoan_thanh(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG M_us)
+        {
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(M_us.dcID_DON_HANG);
+            v_us.datTHOI_GIAN_HOAN_THANH = System.DateTime.Now;
+            v_us.Update();
+        }
+
+        private void gui_email_bao_hoan_thanh()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "select * from dm_mau_email where id =6");
+            string TIEU_DE = v_ds.Tables[0].Rows[0]["TIEU_DE_MAIL"].ToString();
+            string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString();
+            string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
+
+            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", M_us.strMA_DON_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("MA_DON_HANG", M_us.strMA_DON_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("USER_NHAN_VIEN", M_us.strHO_TEN_USER_DAT_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("USER_DON_VI", M_us.strMA_DON_VI);
+            NOI_DUNG = NOI_DUNG.Replace("USER_DIEN_THOAI", M_us.strDIEN_THOAI);
+            NOI_DUNG = NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG", M_us.datTHOI_GIAN_TAO.ToString());
+            NOI_DUNG = NOI_DUNG.Replace("LOAI_DICH_VU_HO_TRO",M_us.strTEN_NHOM_DICH_VU_YEU_CAU);
+            NOI_DUNG = NOI_DUNG.Replace("YEU_CAU_CU_THE", M_us.strNOI_DUNG_DAT_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_HOAN_THANH_THUC_TE", M_us.datTHOI_GIAN_HOAN_THANH.ToString());
+            NOI_DUNG = NOI_DUNG.Replace("LICH_SU_TRAO_DOI", "Hoàn thành");
+            NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_MONG_MUON_SUA_XONG", M_us.datTHOI_DIEM_CAN_HOAN_THANH + "hoặc thời gian hoàn thành là:"+ M_us.datTHOI_GIAN_HOAN_THANH);
+            NOI_DUNG = NOI_DUNG.Replace("PHAN_HOI_CUA_DVMC", M_us.strPHAN_HOI_TU_DVMC);
+            string nguoi_xu_ly = "";
+            List<decimal> m_lst_id_nguoi_xu_ly = new List<decimal>();
+            US_DUNG_CHUNG v_us_3 = new US_DUNG_CHUNG();
+            DataSet v_ds_3 = new DataSet();
+            v_ds_3.Tables.Add(new DataTable());
+            v_us_3.FillDatasetWithQuery(v_ds_3, "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where ten_nguoi_tao_thao_tac_log is not null and thao_tac_het_han_yn='N' and ID_DON_HANG=" + M_us.dcID_DON_HANG);
+            for (int i = 0; i < v_ds_3.Tables[0].Rows.Count; i++)
+            {
+                nguoi_xu_ly+="," +v_ds_3.Tables[0].Rows[i]["TEN_NGUOI_TAO_THAO_TAC_LOG"].ToString();
+            }
+
+            //for (int i = 0; i < m_lst_id_nguoi_xu_ly.Count; i++)
+            //{
+            //    US_DUNG_CHUNG v_us_2 = new US_DUNG_CHUNG();
+            //    DataSet v_ds_2 = new DataSet();
+            //    v_ds_2.Tables.Add(new DataTable());
+            //    v_us_2.FillDatasetWithQuery(v_ds_2, "select * from ht_nguoi_su_dung where id=" + m_lst_id_nguoi_xu_ly[i]);
+            //    nguoi_xu_ly += v_ds_2.Tables[0].Rows[0]["TEN_TRUY_CAP"].ToString() + " , ";
+            //}
+            NOI_DUNG = NOI_DUNG.Replace("NGUOI_XU_LY_DON_HANG", nguoi_xu_ly);
+            NOI_DUNG = NOI_DUNG.Replace("NGUOI_NHAN_DAT_HANG", M_us.strNGUOI_TAO_THAO_TAC);
+            US_DUNG_CHUNG v_us_1 = new US_DUNG_CHUNG();
+            DataSet v_ds_1 = new DataSet();
+            v_ds_1.Tables.Add(new DataTable());
+            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id=" + M_us.dcID_USER_NV_DAT_HANG);
+            string to_cc = "";
+            to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
+
+            string user_email = "vanndkstnk57@gmail.com";
+            string password = "van20121138";
+            try
+            {
+                
+                Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
+
+            }
+
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
             }
         }
 

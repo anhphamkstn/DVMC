@@ -164,10 +164,13 @@ namespace TOSApp.ChucNang
                        // update_log_gd_dat_hang();
                         if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
                         {
-                            ghi_log_thay_doi_don_hang();
+                            ghi_log_thay_doi_don_hang();                          
                         }
-                        else ghi_log_thay_doi_deadline();
-                        
+                        else
+                        {                         
+                            ghi_log_thay_doi_deadline();                           
+                       }
+                        gui_emai_xac_nhan_cap_nhat_don_hang(M_us);
                         MessageBox.Show("đơn hàng đã được cập nhật thông tin");
                         this.Close();
                     }
@@ -205,6 +208,75 @@ namespace TOSApp.ChucNang
             }
         }
 
+        private void gui_emai_xac_nhan_cap_nhat_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "select * from dm_mau_email where id =7");
+            string TIEU_DE = v_ds.Tables[0].Rows[0]["TIEU_DE_MAIL"].ToString();
+            string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString();
+            string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
+
+            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("USER_NHAN_VIEN", m_txt_ho_ten_nguoi_dat_hang.Text);
+            NOI_DUNG = NOI_DUNG.Replace("USER_DON_VI", m_cbo_dv_don_vi.Text);
+            NOI_DUNG = NOI_DUNG.Replace("USER_DIEN_THOAI", m_txt_dien_thoai.Text);
+            NOI_DUNG = NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG", m_us.datTHOI_GIAN_TAO.ToString());
+            NOI_DUNG = NOI_DUNG.Replace("LOAI_DICH_VU_HO_TRO", m_cbo_dich_vu.Text);
+            NOI_DUNG = NOI_DUNG.Replace("YEU_CAU_CU_THE", m_txt_yeu_cau_cu_the.Text);
+            NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_HOAN_THANH_THUC_TE", "chưa có");
+            NOI_DUNG = NOI_DUNG.Replace("LICH_SU_TRAO_DOI", "Vừa tiếp nhận.");
+            
+            
+            NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_MONG_MUON_SUA_XONG", m_dat_thoi_diem_can_hoan_thanh.Text + "hoặc thời gian hoàn thành là:" + m_cbo_thoi_gian_hoan_thanh.Text);
+            NOI_DUNG = NOI_DUNG.Replace("PHAN_HOI_CUA_DVMC", m_txt_phan_hoi_tu_dvmc.Text);
+            string nguoi_xu_ly = "";
+
+            //for (int i = 0; i < m_lst_id_nguoi_xu_ly.Count; i++)
+            //{
+            //    US_DUNG_CHUNG v_us_2 = new US_DUNG_CHUNG();
+            //    DataSet v_ds_2 = new DataSet();
+            //    v_ds_2.Tables.Add(new DataTable());
+            //    v_us_2.FillDatasetWithQuery(v_ds_2, "select * from ht_nguoi_su_dung where id=" + m_lst_id_nguoi_xu_ly[i]);
+            //    nguoi_xu_ly += v_ds_2.Tables[0].Rows[0]["TEN_TRUY_CAP"].ToString() + " , ";
+            //}
+          
+            US_DUNG_CHUNG v_us_3 = new US_DUNG_CHUNG();
+            DataSet v_ds_3 = new DataSet();
+            v_ds_3.Tables.Add(new DataTable());
+            v_us_3.FillDatasetWithQuery(v_ds_3, "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where ten_nguoi_tao_thao_tac_log is not null and THAO_TAC_HET_HAN_YN ='N' and ID_DON_HANG=" + m_us.dcID_DON_HANG);
+            for (int i = 0; i < v_ds_3.Tables[0].Rows.Count; i++)
+            {
+                nguoi_xu_ly += ","+ v_ds_3.Tables[0].Rows[i]["TEN_NGUOI_TAO_THAO_TAC_LOG"].ToString();
+            }
+
+            NOI_DUNG = NOI_DUNG.Replace("NGUOI_XU_LY_DON_HANG", nguoi_xu_ly);
+            NOI_DUNG = NOI_DUNG.Replace("NGUOI_NHAN_DAT_HANG", m_cbo_nguoi_nhan_dat_hang.Text);
+            US_DUNG_CHUNG v_us_1 = new US_DUNG_CHUNG();
+            DataSet v_ds_1 = new DataSet();
+            v_ds_1.Tables.Add(new DataTable());
+            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id=" + m_us.dcID_USER_NV_DAT_HANG);
+            string to_cc = "";
+            to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
+
+            string user_email = "vanndkstnk57@gmail.com ";
+            string password = "van20121138";
+            try
+            {
+                Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
+
+            }
+
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+           
+        }
+
         private void gui_emai_xac_nhan(US_GD_DAT_HANG m_us)
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
@@ -215,17 +287,17 @@ namespace TOSApp.ChucNang
             string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString() ;
             string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
 
-            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
-              NOI_DUNG= NOI_DUNG.Replace("MA_DON_HANG",m_us.strMA_DON_HANG);
+            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", M_us.strMA_DON_HANG);
+              NOI_DUNG= NOI_DUNG.Replace("MA_DON_HANG",M_us.strMA_DON_HANG);
             NOI_DUNG= NOI_DUNG.Replace("USER_NHAN_VIEN",m_txt_ho_ten_nguoi_dat_hang.Text);
               NOI_DUNG= NOI_DUNG.Replace("USER_DON_VI",m_cbo_dv_don_vi.Text);
               NOI_DUNG= NOI_DUNG.Replace("USER_DIEN_THOAI",m_txt_dien_thoai.Text);
-              NOI_DUNG= NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG",m_us.datTHOI_GIAN_TAO.ToString());
+              NOI_DUNG= NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG",M_us.datTHOI_GIAN_TAO.ToString());
               NOI_DUNG= NOI_DUNG.Replace("LOAI_DICH_VU_HO_TRO",m_cbo_dich_vu.Text);
               NOI_DUNG= NOI_DUNG.Replace("YEU_CAU_CU_THE",m_txt_yeu_cau_cu_the.Text);
               NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_HOAN_THANH_THUC_TE", "chưa có");
               NOI_DUNG = NOI_DUNG.Replace("LICH_SU_TRAO_DOI", "Vừa tiếp nhận.");
-              NOI_DUNG= NOI_DUNG.Replace("THOI_GIAN_MONG_MUON_SUA_XONG_XONG",m_dat_thoi_diem_can_hoan_thanh.Text + "hoặc thời gian hoàn thành là:"+m_cbo_thoi_gian_hoan_thanh.Text);
+              NOI_DUNG= NOI_DUNG.Replace("THOI_GIAN_MONG_MUON_SUA_XONG",m_dat_thoi_diem_can_hoan_thanh.Text + "hoặc thời gian hoàn thành là:"+m_cbo_thoi_gian_hoan_thanh.Text);
               NOI_DUNG= NOI_DUNG.Replace("PHAN_HOI_CUA_DVMC",m_txt_phan_hoi_tu_dvmc.Text);
               string nguoi_xu_ly = "";
 
@@ -242,7 +314,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us_1 = new US_DUNG_CHUNG();
             DataSet v_ds_1 = new DataSet();
             v_ds_1.Tables.Add(new DataTable());
-            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id="+m_us.dcID_USER_NV_DAT_HANG);
+            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id="+M_us.dcID_USER_NV_DAT_HANG);
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
 

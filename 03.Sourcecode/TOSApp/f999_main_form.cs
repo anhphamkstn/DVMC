@@ -543,6 +543,7 @@ namespace TOSApp
         TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA v_bao_cao_danh_gia;
         TOSApp.BaoCao.f510_BAO_CAO_TIEP_NHAN v_bao_cao_tiep_nhan;
         TOSApp.BaoCao.f520_BAO_CAO_XU_LI v_bao_cao_xu_ly;
+
         private void m_cmd_bao_cao_tiep_nhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (v_bao_cao_tiep_nhan == null || !IsFormOpen(v_bao_cao_tiep_nhan))
@@ -592,6 +593,7 @@ namespace TOSApp
             {
                 f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
                 v_f.MdiParent = this;
+              
                 v_f.display_for_refurse_dealine(deadline_id);
             }
             catch (Exception v_e)
@@ -622,7 +624,7 @@ namespace TOSApp
         {
             try
             {
-                F120_ds_don_hang_khach_hang v_f = new F120_ds_don_hang_khach_hang();
+                f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;
 
                 v_f.Show();

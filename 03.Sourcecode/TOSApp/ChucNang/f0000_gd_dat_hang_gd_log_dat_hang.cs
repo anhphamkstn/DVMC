@@ -601,13 +601,7 @@ namespace TOSApp.ChucNang
 
         private void update_hoan_thanh_don_hang_TD()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            //v_us.dcID = m_us.dcID;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);           
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "TD đã xử lý xong";
             v_us.Update();
@@ -620,6 +614,7 @@ namespace TOSApp.ChucNang
             try
             {
                 fill_data_to_m_us();
+              //  update_thoi_gian_hoan_thanh_don_hang();
                 update_hoan_thanh_don_hang_PM();
                 ghi_log_admin_da_hoan_thanh_don_hang_PM();
                 MessageBox.Show("Hoàn thành!");
@@ -630,6 +625,13 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void update_thoi_gian_hoan_thanh_don_hang()
+        {
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(m_us.dcID_DON_HANG);
+            v_us.datTHOI_GIAN_HOAN_THANH = System.DateTime.Now;
+            v_us.Update();
         }
         /// <summary>
         /// hàm này còn sai trạng thái của loại thao tác vì trong từ điển còn thiếu
