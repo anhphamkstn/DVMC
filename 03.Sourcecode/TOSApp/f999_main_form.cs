@@ -643,6 +643,22 @@ namespace TOSApp
             v_f.Show();
         }
 
+        private void barButtonItem7_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                v_f100.displayForInsert();
+         
+
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
      
 
       

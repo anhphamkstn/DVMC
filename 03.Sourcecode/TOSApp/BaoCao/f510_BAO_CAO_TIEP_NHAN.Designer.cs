@@ -42,6 +42,14 @@
             this.pivotGridField5 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.pivotGridField6 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.m_cmd_loc = new DevExpress.XtraEditors.SimpleButton();
+            this.m_dat_tg_dat_dau = new System.Windows.Forms.DateTimePicker();
+            this.m_dat_tg_ket_thuc = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram1)).BeginInit();
@@ -49,15 +57,17 @@
             ((System.ComponentModel.ISupportInitialize)(pieSeriesView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.chartControl1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(522, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(686, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(326, 468);
+            this.panel2.Size = new System.Drawing.Size(343, 383);
             this.panel2.TabIndex = 1;
             // 
             // chartControl1
@@ -85,7 +95,7 @@
             pieSeriesView1.Titles.AddRange(new DevExpress.XtraCharts.SeriesTitle[] {
             seriesTitle1});
             this.chartControl1.SeriesTemplate.View = pieSeriesView1;
-            this.chartControl1.Size = new System.Drawing.Size(326, 468);
+            this.chartControl1.Size = new System.Drawing.Size(343, 383);
             this.chartControl1.TabIndex = 0;
             // 
             // pivotGridControl1
@@ -100,7 +110,7 @@
             this.pivotGridField6});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
-            this.pivotGridControl1.Size = new System.Drawing.Size(522, 468);
+            this.pivotGridControl1.Size = new System.Drawing.Size(686, 383);
             this.pivotGridControl1.TabIndex = 0;
             // 
             // pivotGridField1
@@ -155,19 +165,95 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.pivotGridControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(522, 468);
+            this.panel1.Size = new System.Drawing.Size(686, 383);
             this.panel1.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.m_cmd_loc);
+            this.panel3.Controls.Add(this.m_dat_tg_dat_dau);
+            this.panel3.Controls.Add(this.m_dat_tg_ket_thuc);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1029, 93);
+            this.panel3.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 93);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1029, 383);
+            this.panel4.TabIndex = 3;
+            // 
+            // m_cmd_loc
+            // 
+            this.m_cmd_loc.Location = new System.Drawing.Point(865, 47);
+            this.m_cmd_loc.Name = "m_cmd_loc";
+            this.m_cmd_loc.Size = new System.Drawing.Size(123, 23);
+            this.m_cmd_loc.TabIndex = 9;
+            this.m_cmd_loc.Text = "&Lọc";
+            // 
+            // m_dat_tg_dat_dau
+            // 
+            this.m_dat_tg_dat_dau.Location = new System.Drawing.Point(164, 53);
+            this.m_dat_tg_dat_dau.Name = "m_dat_tg_dat_dau";
+            this.m_dat_tg_dat_dau.Size = new System.Drawing.Size(200, 20);
+            this.m_dat_tg_dat_dau.TabIndex = 7;
+            // 
+            // m_dat_tg_ket_thuc
+            // 
+            this.m_dat_tg_ket_thuc.Location = new System.Drawing.Point(588, 53);
+            this.m_dat_tg_ket_thuc.Name = "m_dat_tg_ket_thuc";
+            this.m_dat_tg_ket_thuc.Size = new System.Drawing.Size(200, 20);
+            this.m_dat_tg_ket_thuc.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(42, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 15);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Thời gian bắt đầu ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(472, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Thời gian kết thúc";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(365, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "BÁO CÁO ĐÁNH GIÁ";
             // 
             // f510_BAO_CAO_TIEP_NHAN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 468);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1029, 476);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Name = "f510_BAO_CAO_TIEP_NHAN";
             this.Text = "f510_BAO_CAO_TIEP_NHAN";
             this.panel2.ResumeLayout(false);
@@ -177,6 +263,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -193,5 +282,13 @@
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField4;
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField5;
         private DevExpress.XtraPivotGrid.PivotGridField pivotGridField6;
+        private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_loc;
+        private System.Windows.Forms.DateTimePicker m_dat_tg_dat_dau;
+        private System.Windows.Forms.DateTimePicker m_dat_tg_ket_thuc;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel4;
     }
 }

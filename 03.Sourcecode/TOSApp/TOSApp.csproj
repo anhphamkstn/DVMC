@@ -326,11 +326,11 @@
     <Compile Include="ChucNang\f119_ds_don_hang_hoan_thanh.Designer.cs">
       <DependentUpon>f119_ds_don_hang_hoan_thanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\F120_ds_don_hang_khach_hang.cs">
+    <Compile Include="ChucNang\f120_ds_don_hang_khach_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChucNang\F120_ds_don_hang_khach_hang.Designer.cs">
-      <DependentUpon>F120_ds_don_hang_khach_hang.cs</DependentUpon>
+    <Compile Include="ChucNang\f120_ds_don_hang_khach_hang.Designer.cs">
+      <DependentUpon>f120_ds_don_hang_khach_hang.cs</DependentUpon>
     </Compile>
     <Compile Include="ChucNang\f150_Bo_time_line.cs">
       <SubType>Form</SubType>
@@ -531,8 +531,8 @@
     <EmbeddedResource Include="ChucNang\f119_ds_don_hang_hoan_thanh.resx">
       <DependentUpon>f119_ds_don_hang_hoan_thanh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\F120_ds_don_hang_khach_hang.resx">
-      <DependentUpon>F120_ds_don_hang_khach_hang.cs</DependentUpon>
+    <EmbeddedResource Include="ChucNang\f120_ds_don_hang_khach_hang.resx">
+      <DependentUpon>f120_ds_don_hang_khach_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f150_Bo_time_line.resx">
       <DependentUpon>f150_Bo_time_line.cs</DependentUpon>
@@ -588,10 +588,10 @@
     <EmbeddedResource Include="Hệ thống\f999_ht_nguoi_su_dung_de.resx">
       <DependentUpon>f999_ht_nguoi_su_dung_de.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="licenses.licx" />
     <EmbeddedResource Include="f003_main_PM.resx">
       <DependentUpon>f003_main_PM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

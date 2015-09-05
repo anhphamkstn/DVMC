@@ -69,6 +69,8 @@
             this.m_cmd_ds_tat_ca_don_hang = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_tat_ca_don_hang = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_FO_cong_viec = new DevExpress.XtraBars.BarButtonItem();
@@ -104,8 +106,6 @@
             this.m_rib_bo_pm_td_dich_vu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -414,6 +414,22 @@
             this.m_cmd_tat_ca_don_hang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tat_ca_don_hang.LargeGlyph")));
             this.m_cmd_tat_ca_don_hang.Name = "m_cmd_tat_ca_don_hang";
             this.m_cmd_tat_ca_don_hang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
+            // 
+            // ribbonPageGroup20
+            // 
+            this.ribbonPageGroup20.AllowTextClipping = false;
+            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
+            this.ribbonPageGroup20.Text = "Thêm mới đơn hàng";
+            // 
+            // barButtonItem7
+            // 
+            this.barButtonItem7.Caption = "Thêm mới đơn hàng";
+            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
+            this.barButtonItem7.Id = 43;
+            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick_1);
             // 
             // ribbonPage1
             // 
@@ -728,21 +744,6 @@
             this.barButtonItem3.Id = 21;
             this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
             this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // ribbonPageGroup20
-            // 
-            this.ribbonPageGroup20.AllowTextClipping = false;
-            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
-            this.ribbonPageGroup20.Text = "Thêm mới đơn hàng";
-            // 
-            // barButtonItem7
-            // 
-            this.barButtonItem7.Caption = "Thêm mới đơn hàng";
-            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
-            this.barButtonItem7.Id = 43;
-            this.barButtonItem7.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.LargeGlyph")));
-            this.barButtonItem7.Name = "barButtonItem7";
             // 
             // f999_main_form
             // 

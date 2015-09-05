@@ -18,11 +18,12 @@ namespace TOSApp
 
             using (MailMessage mail = new MailMessage())
             {
-                mail.From = new MailAddress(emailFrom);
-                mail.To.Add(emailTo);
+                mail.From = new MailAddress(emailFrom); //email của mình
+                mail.To.Add(emailTo); //gửi tới ai
                 mail.Subject = subject;
                 mail.Body = body;
                 mail.IsBodyHtml = true;
+               
                 // Can set to false, if you are sending pure text.
 
                 //mail.Attachments.Add(new Attachment("H:\\cpaior2012_path.pdf"));

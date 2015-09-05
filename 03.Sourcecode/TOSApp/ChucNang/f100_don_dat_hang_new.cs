@@ -55,8 +55,18 @@ namespace TOSApp.ChucNang
             load_data_2_selected_nguoi_tiep_nhan();
             load_data_2_selected_loai_dich_vu();
             load_data_2_selected_thoi_gian_hoan_thanh();
+            load_data_2_grid_khach_hang_don_hang();
            
 
+        }
+
+        private void load_data_2_grid_khach_hang_don_hang()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "select * from v_gd_dat_hang_gd_log_dat_hang where thao_tac_het_han_yn = 'N'");
+            m_grc_user_don_hang.DataSource = v_ds.Tables[0];
         }
 
         private void load_data_2_selected_thoi_gian_hoan_thanh()
@@ -156,7 +166,8 @@ namespace TOSApp.ChucNang
         {
             try
             {
-               
+                if (Kiem_tra_du_lieu_truoc_luu() == true)
+                {              
                     if (m_e_form_mode == DataEntryFormMode.UpdateDataState || m_deadline_id==1)
                     {
                         //load_data_2_lich_su_thuc_hien();
@@ -176,36 +187,32 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
-                        if (Kiem_tra_du_lieu_truoc_luu() == true)
+                        if (m_lst_id_nguoi_xu_ly.Count == 0)
                         {
-                            if (m_lst_id_nguoi_xu_ly.Count == 0)
-                            {
-                                MessageBox.Show("Vui lòng chọn người tiếp nhận xử lý!");
-                            }
-                            else
-                            {
-                                luu_don_hang();
-                                dieu_phoi_don_hang();
-                                
-                                if (m_chk_gui_mail_yn.Checked == true)
-                                {
-                                    gui_emai_xac_nhan(m_us);
-                                }
-                               
-                                this.Close();
-                            }
+                            MessageBox.Show("Vui lòng chọn người tiếp nhận xử lý!");
                         }
                         else
-                            MessageBox.Show("thông tin đơn hàng chưa đủ");
-                        
-                    }  
+                        {
+                            luu_don_hang();
+                            dieu_phoi_don_hang();
+
+                            if (m_chk_gui_mail_yn.Checked == true)
+                            {
+                                gui_emai_xac_nhan(m_us);
+                            }
+
+                            this.Close();
+                        }                                              
+                    }    
+                }
                 
-            }
+                   
+            }             
             catch (Exception v_e)
             {
 
                 CSystemLog_301.ExceptionHandle(v_e);
-            }
+            }     
         }
 
         private void gui_emai_xac_nhan_cap_nhat_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
@@ -531,15 +538,33 @@ namespace TOSApp.ChucNang
 
         private bool Kiem_tra_du_lieu_truoc_luu()
         {
+           
+            decimal v_id_time = CIPConvert.ToDecimal(m_cbo_thoi_gian_hoan_thanh.SelectedValue);
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.GetTimeByProcedure(v_ds,v_id_time,m_dat_thoi_diem_can_hoan_thanh.Value);
+            DateTime v_time = (DateTime)v_ds.Tables[0].Rows[0][0];
+
             if (m_txt_ho_ten_nguoi_dat_hang.Text=="")
             {
+                MessageBox.Show("người đặt hàng vẫn còn trống!");
                 return false;
             }else
             if( m_txt_dien_thoai.Text=="")return false;
             else if (m_txt_phan_hoi_tu_dvmc.Text=="")
             {
+
+                MessageBox.Show("phản hồi từ dvmc vẫn còn trống!");
                 return false;
+            }             
+            else if (v_time < System.DateTime.Now)
+            {
+                MessageBox.Show("Thời điểm cần hoàn thành chưa chính xác!Hãy chọn lại!");
+                return false;
+
             }
+
             return true;
         }
 
@@ -567,6 +592,7 @@ namespace TOSApp.ChucNang
         {
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             us_to_form(v_us);
+            m_panel_user_don_hang.Visible = false;
             this.ShowDialog();
         }
 
@@ -853,6 +879,7 @@ namespace TOSApp.ChucNang
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                     m_deadline_id = deadline_id;
                     load_data_2_lich_su_thuc_hien();
+                    m_panel_user_don_hang.Visible = false;
                     this.ShowDialog();
 
                 }
@@ -865,7 +892,7 @@ namespace TOSApp.ChucNang
 
                     load_data_2_lich_su_thuc_hien();
 
-
+                    m_panel_user_don_hang.Visible = false;
                     this.ShowDialog();
                 }
               
@@ -901,6 +928,10 @@ namespace TOSApp.ChucNang
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true; 
         }
+
+      
+       
+
 
     }
 }
