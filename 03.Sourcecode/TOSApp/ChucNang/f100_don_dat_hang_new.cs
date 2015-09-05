@@ -829,11 +829,17 @@ namespace TOSApp.ChucNang
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-          
+            try
+            {
+                f150_Bo_time_line v_f = new f150_Bo_time_line(CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString()));
+                v_f.ShowDialog();
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
-
-
-
 
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us, decimal deadline_id)
         {

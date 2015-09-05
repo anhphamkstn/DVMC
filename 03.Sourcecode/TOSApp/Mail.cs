@@ -9,6 +9,7 @@ namespace TOSApp
 {
     public static class Mail
     {
+        
         public static void sendEmail(string emailFrom, string password, string emailTo, string subject, string body)
         {
             string smtpAddress = "smtp.gmail.com";

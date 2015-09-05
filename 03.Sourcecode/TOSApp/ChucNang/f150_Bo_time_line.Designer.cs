@@ -451,22 +451,22 @@
             // 
             // schedulerStorage
             // 
-            this.schedulerStorage.Appointments.Mappings.AllDay = "AllDay";
-            this.schedulerStorage.Appointments.Mappings.Description = "Description";
+            //this.schedulerStorage.Appointments.Mappings.AllDay = "AllDay";
+            this.schedulerStorage.Appointments.Mappings.Description = "NOI_DUNG_DAT_HANG";
             this.schedulerStorage.Appointments.Mappings.End = "EndDate";
             this.schedulerStorage.Appointments.Mappings.Label = "Label";
-            this.schedulerStorage.Appointments.Mappings.Location = "Location";
+            this.schedulerStorage.Appointments.Mappings.Location = "TEN_CHI_NHANH";
             this.schedulerStorage.Appointments.Mappings.RecurrenceInfo = "RecurrenceInfo";
             this.schedulerStorage.Appointments.Mappings.ReminderInfo = "ReminderInfo";
-            this.schedulerStorage.Appointments.Mappings.ResourceId = "ResourceID";
+            this.schedulerStorage.Appointments.Mappings.ResourceId = "ID_NGUOI_TAO_THAO_TAC";
             this.schedulerStorage.Appointments.Mappings.Start = "StartDate";
             this.schedulerStorage.Appointments.Mappings.Status = "Status";
             this.schedulerStorage.Appointments.Mappings.Subject = "Subject";
             this.schedulerStorage.Appointments.Mappings.Type = "Type";
-            this.schedulerStorage.Resources.DataSource = this.resourcesBindingSource;
-            this.schedulerStorage.Resources.Mappings.Caption = "ResourceName";
-            this.schedulerStorage.Resources.Mappings.Color = "Color";
-            this.schedulerStorage.Resources.Mappings.Id = "ResourceID";
+
+            this.schedulerStorage.Resources.Mappings.Caption = "TEN_TRUY_CAP";
+            this.schedulerStorage.Resources.Mappings.Color = "CAP_SU_DUNG";
+            this.schedulerStorage.Resources.Mappings.Id = "ID_NGUOI_SU_DUNG";
             this.schedulerStorage.Resources.Mappings.Image = "Image";
             this.schedulerStorage.AppointmentsInserted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.OnAppointmentChangedInsertedDeleted);
             this.schedulerStorage.AppointmentsChanged += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.OnAppointmentChangedInsertedDeleted);

@@ -312,6 +312,21 @@ namespace TOSApp
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
 
+        public void FillAppointmentByDichVu(DataSet v_ds, decimal ma_loai_yeu_cau)
+        {
+            CStoredProc v_cstore = new CStoredProc("get_AppointmentByDichVu");
+            v_cstore.addDecimalInputParam("@id_dich_vu", ma_loai_yeu_cau);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        public void FillResourcesByDichVu(DataSet v_ds, decimal ma_loai_yeu_cau)
+        {
+            CStoredProc v_cstore = new CStoredProc("get_nguoi_xu_ly_by_dv");
+            v_cstore.addDecimalInputParam("@id_dich_vu", ma_loai_yeu_cau);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+
         
     }
 

@@ -568,7 +568,7 @@ namespace TOSApp
             }
             else
             {
-                v_bao_cao_tiep_nhan.Focus();
+                v_bao_cao_xu_ly.Focus();
             }
         }
 
