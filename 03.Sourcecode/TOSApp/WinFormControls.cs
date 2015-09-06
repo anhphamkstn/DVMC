@@ -318,10 +318,24 @@ namespace TOSApp
             CStoredProc v_cstore = new CStoredProc("get_start_date");
             v_cstore.addDecimalInputParam("@id_khoang_thoi_gian", id_time);
             v_cstore.addDatetimeInputParam("@deadline", deadline);
-            v_cstore.fillDataSetByCommand(this, v_ds);
-          
-            
+            v_cstore.fillDataSetByCommand(this, v_ds);     
         }
+
+        internal void FillAppointmentByDichVu(DataSet v_ds, decimal id_dich_vu)
+        {
+            CStoredProc v_cstore = new CStoredProc("get_AppointmentByDichVu");
+            v_cstore.addDecimalInputParam("@id_dich_vu", id_dich_vu);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+        internal void FillResourcesByDichVu(DataSet v_ds, decimal id_dich_vu)
+        {
+            CStoredProc v_cstore = new CStoredProc("get_nguoi_xu_ly_by_dv");
+            v_cstore.addDecimalInputParam("@id_dich_vu", id_dich_vu);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+        
+
+
 
         
     }

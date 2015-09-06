@@ -624,7 +624,7 @@ namespace TOSApp
         {
             try
             {
-                f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
+                F120_ds_don_hang_khach_hang v_f = new F120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;
 
                 v_f.Show();
