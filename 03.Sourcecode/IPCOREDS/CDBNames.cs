@@ -756,7 +756,7 @@ namespace IPCOREDS.CDBNames
         public const string TEN_DON_VI = "TEN_DON_VI";
         public const string DIEN_THOAI = "DIEN_THOAI";
         public const string HO_TEN_USER_DAT_HANG = "HO_TEN_USER_DAT_HANG";
-        public const string THOI_GIAN_DAT_HANG = "THOI_GIAN_DAT_HANG";
+        public const string THOI_DIEM_CAN_HOAN_THANH = "THOI_DIEM_CAN_HOAN_THANH";
         public const string ID_LOAI_DV_YEU_CAU = "ID_LOAI_DV_YEU_CAU";
         public const string TEN_LOAI_DICH_VU = "TEN_LOAI_DICH_VU";
         public const string ID_LOAI_YEU_CAU_CHA = "ID_LOAI_YEU_CAU_CHA";
@@ -830,6 +830,7 @@ namespace IPCOREDS.CDBNames
         public const string GHI_CHU = "GHI_CHU";
     }
 
+
     public class V_GD_DAT_HANG_GD_LOG_DAT_HANG
     {
         public const string ID_DON_HANG = "ID_DON_HANG";
@@ -869,6 +870,7 @@ namespace IPCOREDS.CDBNames
         public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
     }
 
+
     public class DM_CAU_TRA_LOI
     {
         public const string ID = "ID";
@@ -879,12 +881,34 @@ namespace IPCOREDS.CDBNames
         public const string ID_TRANG_THAI = "ID_TRANG_THAI";
         public const string LINK_TL_THAM_KHAO = "LINK_TL_THAM_KHAO";
     }
-    public class ht_bo_dich_vu
+    public class V_DS_DON_DAT_HANG_CHI_TIET
     {
         public const string ID = "ID";
-        public const string ID_DICH_VU = "ID_DICH_VU";
-        public const string ID_NGUOI_SU_DUNG = "ID_NGUOI_SU_DUNG";
-        public const string CAP_SU_DUNG = "CAP_SU_DUNG";
-        public const string TRANG_THAI_HSD = "TRANG_THAI_HSD";
+        public const string MA_DON_HANG = "MA_DON_HANG";
+        public const string ID_USER_NV_DAT_HANG = "ID_USER_NV_DAT_HANG";
+        public const string ID_DON_VI = "ID_DON_VI";
+        public const string MA_DON_VI = "MA_DON_VI";
+        public const string DIEN_THOAI = "DIEN_THOAI";
+        public const string HO_TEN_USER_DAT_HANG = "HO_TEN_USER_DAT_HANG";
+        public const string THOI_GIAN_DAT_HANG = "THOI_GIAN_DAT_HANG";
+        public const string ID_DV_YEU_CAU = "ID_DV_YEU_CAU";
+        public const string TEN_YEU_CAU = "TEN_YEU_CAU";
+        public const string NOI_DUNG_DAT_HANG = "NOI_DUNG_DAT_HANG";
+        public const string ID_LOAI_THOI_GIAN_CAN_HOAN_THANH = "ID_LOAI_THOI_GIAN_CAN_HOAN_THANH";
+        public const string LOAI_TG_CAN_HOAN_THANH = "LOAI_TG_CAN_HOAN_THANH";
+        public const string PHAN_HOI_TU_DVMC = "PHAN_HOI_TU_DVMC";
+        public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
+        public const string ID_DANH_GIA_TU_USER_DAT_HANG = "ID_DANH_GIA_TU_USER_DAT_HANG";
+        public const string DANH_GIA_TU_USER_DAT_HANG = "DANH_GIA_TU_USER_DAT_HANG";
+        public const string Y_KIEN_KHAC_TU_USER_DAT_HANG = "Y_KIEN_KHAC_TU_USER_DAT_HANG";
+        public const string THOI_GIAN_TAO = "THOI_GIAN_TAO";
+        public const string ID_PHUONG_THUC_DAT_HANG = "ID_PHUONG_THUC_DAT_HANG";
+        public const string PHUONG_THUC_DAT_HANG = "PHUONG_THUC_DAT_HANG";
+        public const string ID_NGUOI_TAO = "ID_NGUOI_TAO";
+        public const string NGUOI_TAO = "NGUOI_TAO";
+        public const string ID_CHI_NHANH = "ID_CHI_NHANH";
+        public const string TEN_CHI_NHANH = "TEN_CHI_NHANH";
+        public const string TRANG_THAI_DON_HANG = "TRANG_THAI_DON_HANG";
     }
+
 }

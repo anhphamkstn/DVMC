@@ -166,9 +166,7 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                if (Kiem_tra_du_lieu_truoc_luu() == true)
-                {              
-                    if (m_e_form_mode == DataEntryFormMode.UpdateDataState || m_deadline_id==1)
+                 if (m_e_form_mode == DataEntryFormMode.UpdateDataState || m_deadline_id==1)
                     {
                         //load_data_2_lich_su_thuc_hien();
                         udpate_don_hang();
@@ -187,6 +185,9 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
+                        if (Kiem_tra_du_lieu_truoc_luu() == true)
+                        {              
+                  
                         if (m_lst_id_nguoi_xu_ly.Count == 0)
                         {
                             MessageBox.Show("Vui lòng chọn người tiếp nhận xử lý!");
@@ -294,12 +295,12 @@ namespace TOSApp.ChucNang
             string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString() ;
             string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
 
-            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", M_us.strMA_DON_HANG);
-              NOI_DUNG= NOI_DUNG.Replace("MA_DON_HANG",M_us.strMA_DON_HANG);
+            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
+              NOI_DUNG= NOI_DUNG.Replace("MA_DON_HANG",m_us.strMA_DON_HANG);
             NOI_DUNG= NOI_DUNG.Replace("USER_NHAN_VIEN",m_txt_ho_ten_nguoi_dat_hang.Text);
               NOI_DUNG= NOI_DUNG.Replace("USER_DON_VI",m_cbo_dv_don_vi.Text);
               NOI_DUNG= NOI_DUNG.Replace("USER_DIEN_THOAI",m_txt_dien_thoai.Text);
-              NOI_DUNG= NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG",M_us.datTHOI_GIAN_TAO.ToString());
+              NOI_DUNG= NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG",m_us.datTHOI_GIAN_TAO.ToString());
               NOI_DUNG= NOI_DUNG.Replace("LOAI_DICH_VU_HO_TRO",m_cbo_dich_vu.Text);
               NOI_DUNG= NOI_DUNG.Replace("YEU_CAU_CU_THE",m_txt_yeu_cau_cu_the.Text);
               NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_HOAN_THANH_THUC_TE", "chưa có");
@@ -321,7 +322,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us_1 = new US_DUNG_CHUNG();
             DataSet v_ds_1 = new DataSet();
             v_ds_1.Tables.Add(new DataTable());
-            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id="+M_us.dcID_USER_NV_DAT_HANG);
+            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id="+m_us.dcID_USER_NV_DAT_HANG);
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
 
@@ -910,7 +911,7 @@ namespace TOSApp.ChucNang
             m_cbo_thoi_gian_hoan_thanh.Enabled = false;
             m_txt_yeu_cau_cu_the.Enabled = false;
             m_txt_phan_hoi_tu_dvmc.Enabled = false;
-            m_dat_thoi_diem_can_hoan_thanh.Enabled = true;
+         //   m_dat_thoi_diem_can_hoan_thanh.Enabled = true;
         }
 
         private void m_checkbox_change(object sender, EventArgs e)
