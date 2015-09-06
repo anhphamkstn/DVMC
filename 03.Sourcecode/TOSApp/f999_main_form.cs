@@ -254,7 +254,8 @@ namespace TOSApp
                 
                 if (v_don_hang_can_xu_ly_PM == null || !IsFormOpen(v_don_hang_can_xu_ly_PM))
                 {
-                    v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+                   // v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+                    v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_can_xu_ly_PM.MdiParent = this;
                     v_don_hang_can_xu_ly_PM.Text = "Đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_PM.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
@@ -624,7 +625,7 @@ namespace TOSApp
         {
             try
             {
-                F120_ds_don_hang_khach_hang v_f = new F120_ds_don_hang_khach_hang();
+                f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;
 
                 v_f.Show();

@@ -146,20 +146,20 @@ namespace TOSApp.ChucNang
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
                 else  m_query = m_query + "And ID_LOAI_THAO_TAC = 296 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
                    
             else if (us_user.dcIDNhom == 3) //pm
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in( 303,321,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
+                m_query = m_query + "And ID_LOAI_THAO_TAC in( 303,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
                 else m_query = m_query + "And ID_LOAI_THAO_TAC = 304 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
 
             else if (us_user.dcIDNhom == 5) //td
                 if (kieu_load_form==1)
-                m_query = m_query + "And ID_LOAI_THAO_TAC in (305,313,321) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
+                m_query = m_query + "And ID_LOAI_THAO_TAC in (305,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
                 else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
                  //tm
-            else m_query = m_query + "And ID_LOAI_THAO_TAC = 297";
+            else m_query = m_query + "And ID_LOAI_THAO_TAC in(321,297)";
 
 
             v_us.FillDatasetWithQuery(v_ds,m_query);
@@ -422,7 +422,7 @@ namespace TOSApp.ChucNang
            
            // v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;      
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "FO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
+            v_us.strGHI_CHU = "BO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
             v_us.Update();
         }
         #endregion

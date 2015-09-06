@@ -166,6 +166,8 @@ namespace TOSApp.ChucNang
         {
             try
             {
+                if (Kiem_tra_du_lieu_truoc_luu() == true)
+                {
                  if (m_e_form_mode == DataEntryFormMode.UpdateDataState || m_deadline_id==1)
                     {
                         //load_data_2_lich_su_thuc_hien();
@@ -185,8 +187,7 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
-                        if (Kiem_tra_du_lieu_truoc_luu() == true)
-                        {              
+                                     
                   
                         if (m_lst_id_nguoi_xu_ly.Count == 0)
                         {
@@ -559,7 +560,7 @@ namespace TOSApp.ChucNang
                 MessageBox.Show("phản hồi từ dvmc vẫn còn trống!");
                 return false;
             }             
-            else if (v_time < System.DateTime.Now)
+            else if (v_time < System.DateTime.Now.AddDays(1))
             {
                 MessageBox.Show("Thời điểm cần hoàn thành chưa chính xác!Hãy chọn lại!");
                 return false;
@@ -834,7 +835,7 @@ namespace TOSApp.ChucNang
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.Enabled = false;
-            m_dat_thoi_diem_can_hoan_thanh.Enabled = false;
+         //   m_dat_thoi_diem_can_hoan_thanh.Enabled = false;
             m_cbo_trang_thai_don_hang.Enabled = false;
             m_cbo_loai_dich_vu_1.Enabled = false;
             m_cbo_loai_dich_vu_2.Enabled = false;

@@ -153,6 +153,18 @@
             // 
             // m_grv_gd_dat_hang_gd_log_dat_hang
             // 
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.BorderColor = System.Drawing.Color.White;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.Options.UseBackColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.Options.UseBorderColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.Red;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.HeaderPanel.Options.UseFont = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.Lines.BackColor = System.Drawing.Color.Aquamarine;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.Lines.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.Lines.Options.UseBackColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.MA_DON_HANG,
             this.HO_TEN_USER_DAT_HANG,
