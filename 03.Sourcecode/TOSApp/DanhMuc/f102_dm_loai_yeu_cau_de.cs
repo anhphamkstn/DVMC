@@ -40,8 +40,18 @@ namespace TOSApp.DanhMuc
         {
             m_us.dcID_CHA = CIPConvert.ToDecimal(cbo_nhom_dich_vu.SelectedValue.ToString());
             m_us.strTEN_YEU_CAU = txt_dich_vu.Text;
-            m_us.dcDIEM_KHOI_LUONG = CIPConvert.ToDecimal(txt_diem_khoi_luong.Text);
-            m_us.dcID_THOI_GIAN_XU_LY = CIPConvert.ToDecimal(cbo_thoi_gian_xu_ly.SelectedValue.ToString());
+            if (txt_diem_khoi_luong.Text != "")
+                m_us.dcDIEM_KHOI_LUONG = CIPConvert.ToDecimal(txt_diem_khoi_luong.Text);
+            else
+                m_us.SetDIEM_KHOI_LUONGNull();
+            if(m_cbox_thoi_gian_xu_ly.Checked)
+            { 
+                m_us.dcID_THOI_GIAN_XU_LY = CIPConvert.ToDecimal(cbo_thoi_gian_xu_ly.SelectedValue.ToString());
+            }
+            else
+            {
+                m_us.SetID_THOI_GIAN_XU_LYNull();
+            }
             m_us.strTRANG_THAI_HSD = "N";
 
         }
@@ -73,8 +83,20 @@ namespace TOSApp.DanhMuc
             cbo_loai_dich_vu.SelectedValue = v_us2.dcID_CHA;
             cbo_nhom_dich_vu.SelectedValue = v_us1.dcID_CHA;
             txt_dich_vu.Text = v_us1.strTEN_YEU_CAU;
-            txt_diem_khoi_luong.Text = v_us1.dcDIEM_KHOI_LUONG.ToString();
-            cbo_thoi_gian_xu_ly.SelectedValue = v_us1.dcID_THOI_GIAN_XU_LY;
+            if (CIPConvert.ToDecimal(v_us1.dcDIEM_KHOI_LUONG.ToString()) != 0)
+                txt_diem_khoi_luong.Text = v_us1.dcDIEM_KHOI_LUONG.ToString();
+            if (CIPConvert.ToDecimal(v_us1.dcID_THOI_GIAN_XU_LY.ToString()) == 0)
+            {
+                m_cbox_thoi_gian_xu_ly.Checked = false;
+                cbo_thoi_gian_xu_ly.Enabled = false;
+            }
+            else
+            {
+                m_cbox_thoi_gian_xu_ly.Checked = true;
+                cbo_thoi_gian_xu_ly.Enabled = true;
+                cbo_thoi_gian_xu_ly.SelectedValue = v_us1.dcID_THOI_GIAN_XU_LY;
+            }
+               
         }
 
         private void load_data_combobox()
@@ -133,6 +155,18 @@ namespace TOSApp.DanhMuc
         private void simpbtn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void m_cbox_thoi_gian_xu_ly_CheckedChanged(object sender, EventArgs e)
+        {
+            if (m_cbox_thoi_gian_xu_ly.Checked == false)
+            {
+                cbo_thoi_gian_xu_ly.Enabled = false;
+            }
+            else
+            {
+                cbo_thoi_gian_xu_ly.Enabled = true;
+            }
         }
     }
 }

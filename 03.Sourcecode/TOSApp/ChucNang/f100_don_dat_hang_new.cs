@@ -95,7 +95,7 @@ namespace TOSApp.ChucNang
         private void load_data_2_selected_loai_dich_vu()
         {
            // WinFormControls.load_data_to_combobox_with_query(m_cbo_loai_dich_vu_1, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU from DM_LOAI_YEU_CAU where ID_CHA is null");
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is Null", WinFormControls.eTAT_CA.NO,m_cbo_loai_dich_vu_1);
+            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.NO,m_cbo_loai_dich_vu_1);
            // m_cbo_dich_vu.SelectedValue = m_dc_id_loai_dich_vu;
 
           //  load_data_2_loai_dich_vu_2();
@@ -113,12 +113,12 @@ namespace TOSApp.ChucNang
         private void load_data_2_loai_dich_vu_2()
         {
 
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_loai_dich_vu_2, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_1.SelectedValue.ToString());
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_loai_dich_vu_2, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_1.SelectedValue.ToString() + "AND TRANG_THAI_HSD = 'N'");
         }
         //load du liệu lên selected  dịch vụ
         private void load_data_2_selected_dich_vu()
         {
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_2.SelectedValue.ToString());
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_2.SelectedValue.ToString()+ "AND TRANG_THAI_HSD = 'N'");
             //WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " Where ID_CHA=" +m_cbo_loai_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
     
         }

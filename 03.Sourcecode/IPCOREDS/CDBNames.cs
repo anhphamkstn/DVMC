@@ -839,7 +839,6 @@ namespace IPCOREDS.CDBNames
         public const string ID_DON_VI = "ID_DON_VI";
         public const string MA_DON_VI = "MA_DON_VI";
         public const string DIEN_THOAI = "DIEN_THOAI";
-        public const string THOI_GIAN_DAT_HANG = "THOI_GIAN_DAT_HANG";
         public const string ID_NHOM_DV_YEU_CAU = "ID_NHOM_DV_YEU_CAU";
         public const string TEN_NHOM_DICH_VU_YEU_CAU = "TEN_NHOM_DICH_VU_YEU_CAU";
         public const string NOI_DUNG_DAT_HANG = "NOI_DUNG_DAT_HANG";
@@ -848,7 +847,6 @@ namespace IPCOREDS.CDBNames
         public const string PHAN_HOI_TU_DVMC = "PHAN_HOI_TU_DVMC";
         public const string ID_DANH_GIA_TU_USER_DAT_HANG = "ID_DANH_GIA_TU_USER_DAT_HANG";
         public const string TEN_DANH_GIA_TU_USER_DAT_HANG = "TEN_DANH_GIA_TU_USER_DAT_HANG";
-        public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
         public const string Y_KIEN_KHAC_TU_USER_DAT_HANG = "Y_KIEN_KHAC_TU_USER_DAT_HANG";
         public const string THOI_GIAN_TAO = "THOI_GIAN_TAO";
         public const string ID_PHUONG_THUC_DAT_HANG = "ID_PHUONG_THUC_DAT_HANG";
@@ -867,7 +865,10 @@ namespace IPCOREDS.CDBNames
         public const string TEN_NGUOI_NHAN_THAO_TAC = "TEN_NGUOI_NHAN_THAO_TAC";
         public const string ID_NGUOI_TAO_THAO_TAC = "ID_NGUOI_TAO_THAO_TAC";
         public const string TEN_NGUOI_TAO_THAO_TAC_LOG = "TEN_NGUOI_TAO_THAO_TAC_LOG";
+        public const string THOI_DIEM_CAN_HOAN_THANH = "THOI_DIEM_CAN_HOAN_THANH";
+        public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
     }
+
     public class DM_CAU_TRA_LOI
     {
         public const string ID = "ID";

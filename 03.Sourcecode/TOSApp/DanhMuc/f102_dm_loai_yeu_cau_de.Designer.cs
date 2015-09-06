@@ -56,7 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.cbo_thoi_gian_xu_ly = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.m_cbox_thoi_gian_xu_ly = new System.Windows.Forms.CheckBox();
             this.m_pan_button.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -359,8 +359,8 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.m_cbox_thoi_gian_xu_ly);
             this.panel7.Controls.Add(this.cbo_thoi_gian_xu_ly);
-            this.panel7.Controls.Add(this.label5);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(457, 3);
             this.panel7.Name = "panel7";
@@ -377,15 +377,17 @@
             this.cbo_thoi_gian_xu_ly.Size = new System.Drawing.Size(217, 28);
             this.cbo_thoi_gian_xu_ly.TabIndex = 4;
             // 
-            // label5
+            // m_cbox_thoi_gian_xu_ly
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Thời gian xử lý :";
+            this.m_cbox_thoi_gian_xu_ly.AutoSize = true;
+            this.m_cbox_thoi_gian_xu_ly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cbox_thoi_gian_xu_ly.Location = new System.Drawing.Point(3, 27);
+            this.m_cbox_thoi_gian_xu_ly.Name = "m_cbox_thoi_gian_xu_ly";
+            this.m_cbox_thoi_gian_xu_ly.Size = new System.Drawing.Size(126, 24);
+            this.m_cbox_thoi_gian_xu_ly.TabIndex = 5;
+            this.m_cbox_thoi_gian_xu_ly.Text = "Thời gian xử lý";
+            this.m_cbox_thoi_gian_xu_ly.UseVisualStyleBackColor = true;
+            this.m_cbox_thoi_gian_xu_ly.CheckedChanged += new System.EventHandler(this.m_cbox_thoi_gian_xu_ly_CheckedChanged);
             // 
             // f102_dm_loai_yeu_cau_de
             // 
@@ -438,7 +440,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.ComboBox cbo_thoi_gian_xu_ly;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_diem_khoi_luong;
@@ -454,5 +455,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox m_cbox_thoi_gian_xu_ly;
     }
 }
