@@ -160,7 +160,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 10000;
             // 
             // f113_danh_sach_can_phe_duyet_PM
             // 

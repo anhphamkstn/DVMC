@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.m_grc_ds_dh_hoan_thanh = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_dh_hoan_thanh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -43,7 +44,6 @@
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dh_hoan_thanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_dh_hoan_thanh)).BeginInit();
@@ -58,6 +58,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 52);
             this.panel1.TabIndex = 0;
+            // 
+            // m_lab_tieu_de
+            // 
+            this.m_lab_tieu_de.AutoSize = true;
+            this.m_lab_tieu_de.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lab_tieu_de.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.m_lab_tieu_de.Location = new System.Drawing.Point(3, 23);
+            this.m_lab_tieu_de.Name = "m_lab_tieu_de";
+            this.m_lab_tieu_de.Size = new System.Drawing.Size(296, 20);
+            this.m_lab_tieu_de.TabIndex = 1;
+            this.m_lab_tieu_de.Text = "Danh sách đơn hàng đã hoàn thành";
             // 
             // m_grc_ds_dh_hoan_thanh
             // 
@@ -163,7 +174,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 10000;
             // 
             // panel2
             // 
@@ -173,17 +184,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(850, 210);
             this.panel2.TabIndex = 1;
-            // 
-            // m_lab_tieu_de
-            // 
-            this.m_lab_tieu_de.AutoSize = true;
-            this.m_lab_tieu_de.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lab_tieu_de.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.m_lab_tieu_de.Location = new System.Drawing.Point(3, 23);
-            this.m_lab_tieu_de.Name = "m_lab_tieu_de";
-            this.m_lab_tieu_de.Size = new System.Drawing.Size(296, 20);
-            this.m_lab_tieu_de.TabIndex = 1;
-            this.m_lab_tieu_de.Text = "Danh sách đơn hàng đã hoàn thành";
             // 
             // f119_ds_don_hang_hoan_thanh
             // 

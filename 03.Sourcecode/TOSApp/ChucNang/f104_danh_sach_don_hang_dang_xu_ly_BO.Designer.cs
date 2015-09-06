@@ -175,7 +175,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 10000;
             // 
             // f104_danh_sach_don_hang_dang_xu_ly_BO
             // 

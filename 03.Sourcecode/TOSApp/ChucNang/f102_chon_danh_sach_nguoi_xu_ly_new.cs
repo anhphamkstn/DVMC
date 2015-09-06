@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using IP.Core.IPCommon;
-
+using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Design;
 namespace TOSApp.ChucNang
 {
     public partial class f102_chon_danh_sach_nguoi_xu_ly_new : Form

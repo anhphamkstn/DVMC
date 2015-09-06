@@ -174,6 +174,11 @@
             this.DICH_VU_YEU_CAU.Visible = true;
             this.DICH_VU_YEU_CAU.VisibleIndex = 4;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
+            // 
             // f110_danh_sach_dieu_phoi_lai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

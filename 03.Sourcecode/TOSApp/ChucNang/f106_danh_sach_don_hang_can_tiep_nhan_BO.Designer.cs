@@ -162,7 +162,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 3000;
+            this.timer1.Interval = 10000;
             // 
             // f106_danh_sach_don_hang_can_tiep_nhan_BO
             // 
