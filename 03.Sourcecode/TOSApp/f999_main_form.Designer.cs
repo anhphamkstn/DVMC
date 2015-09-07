@@ -504,7 +504,9 @@
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
+            
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.m_cmd_FO_cong_viec,
@@ -560,6 +562,7 @@
             this.m_rbc_danh_muc,
             this.m_rbc_bao_cao});
             this.ribbonControl1.Size = new System.Drawing.Size(1186, 163);
+          //  this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // m_cmd_show
             // 

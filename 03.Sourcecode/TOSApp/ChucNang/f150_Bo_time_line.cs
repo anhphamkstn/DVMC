@@ -42,8 +42,8 @@ namespace TOSApp.ChucNang
             DataSet v_ds_resource = new DataSet();
             v_ds_resource.Tables.Add(new DataTable());
 
-            v_us.FillAppointmentByDichVu(v_ds_appointment, id_dich_vu);
-            v_us.FillResourcesByDichVu(v_ds_resource, id_dich_vu);
+       //     v_us.FillAppointmentByDichVu(v_ds_appointment, id_dich_vu);
+         //   v_us.FillResourcesByDichVu(v_ds_resource, id_dich_vu);
 
             schedulerStorage.Appointments.DataSource = v_ds_appointment.Tables[0];
             schedulerStorage.Resources.DataSource = v_ds_resource.Tables[0];

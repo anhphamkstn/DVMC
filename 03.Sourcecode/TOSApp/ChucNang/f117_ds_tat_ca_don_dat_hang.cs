@@ -100,5 +100,7 @@ namespace TOSApp.ChucNang
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+    
     }
 }

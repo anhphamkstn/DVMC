@@ -153,7 +153,7 @@
             this.Controls.Add(this.m_txt_ma_don_hang);
             this.Controls.Add(this.label1);
             this.Name = "f115_TM_danh_gia";
-            this.Text = "Đánh giá";
+            this.Text = "f115_Đánh giá";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

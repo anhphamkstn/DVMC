@@ -95,8 +95,9 @@
             // 
             // m_grv_ds_don_dat_hang
             // 
-            this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.Options.UseBackColor = true;
             this.m_grv_ds_don_dat_hang.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
@@ -168,8 +169,9 @@
             this.m_grv_ds_don_dat_hang.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_ds_don_dat_hang.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_ds_don_dat_hang.Appearance.GroupRow.Options.UseForeColor = true;
-            this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
-            this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_ds_don_dat_hang.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -207,6 +209,11 @@
             this.m_grv_ds_don_dat_hang.Appearance.TopNewRow.Options.UseBackColor = true;
             this.m_grv_ds_don_dat_hang.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
             this.m_grv_ds_don_dat_hang.Appearance.VertLine.Options.UseBackColor = true;
+            this.m_grv_ds_don_dat_hang.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.AppearancePrint.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.AppearancePrint.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_dat_hang.AppearancePrint.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_ds_don_dat_hang.AppearancePrint.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_ds_don_dat_hang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.MA_DON_HANG,
             this.gridColumn2,
@@ -359,7 +366,7 @@
             // m_cmd_chinh_sua_don_hang
             // 
             this.m_cmd_chinh_sua_don_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_chinh_sua_don_hang.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.m_cmd_chinh_sua_don_hang.Appearance.ForeColor = System.Drawing.Color.Black;
             this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseFont = true;
             this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseForeColor = true;
             this.m_cmd_chinh_sua_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -403,7 +410,7 @@
             this.ClientSize = new System.Drawing.Size(1213, 344);
             this.Controls.Add(this.panel4);
             this.Name = "f117_ds_tat_ca_don_dat_hang";
-            this.Text = "Danh sách tất cả đơn hàng";
+            this.Text = "f117_Danh sách tất cả đơn hàng";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).EndInit();

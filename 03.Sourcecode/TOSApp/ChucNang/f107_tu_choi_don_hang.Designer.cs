@@ -121,7 +121,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "f107_tu_choi_don_hang";
-            this.Text = "Từ chối";
+            this.Text = "f107_Từ chối";
             this.ResumeLayout(false);
             this.PerformLayout();
 

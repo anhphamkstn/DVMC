@@ -121,7 +121,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "f116_ds_TD";
-            this.Text = "Điều phối TD";
+            this.Text = "f116_Điều phối TD";
+//            this.Load += new System.EventHandler(this.f116_ds_TD_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -100,7 +100,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f108_danh_sach_don_hang_hoa_thanh";
-            this.Text = "Đơn hàng hoàn thành";
+            this.Text = "f108_Đơn hàng hoàn thành";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

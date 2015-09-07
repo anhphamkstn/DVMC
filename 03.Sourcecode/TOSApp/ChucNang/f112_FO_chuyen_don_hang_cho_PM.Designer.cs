@@ -121,7 +121,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "f112_FO_chuyen_don_hang_cho_PM";
-            this.Text = "Điều phối lên PM";
+            this.Text = "f112_Điều phối lên PM";
             this.ResumeLayout(false);
             this.PerformLayout();
 

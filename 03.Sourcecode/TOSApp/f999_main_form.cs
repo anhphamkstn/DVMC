@@ -436,7 +436,7 @@ namespace TOSApp
                 {
                     v_don_hang_dieu_phoi_lai_FO = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_dieu_phoi_lai_FO.MdiParent = this;
-                    v_don_hang_dieu_phoi_lai_FO.Text = "Đơn hàng điều phối lại";
+                    v_don_hang_dieu_phoi_lai_FO.Text = "f000_Đơn hàng điều phối lại";
                     v_don_hang_dieu_phoi_lai_FO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần điều phối lại";
                     v_don_hang_dieu_phoi_lai_FO.Show();
                 }
@@ -660,6 +660,7 @@ namespace TOSApp
             }
         }
 
+      
      
 
       

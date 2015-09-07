@@ -123,6 +123,11 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Maroon;
+            this.gridView1.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.Maroon;
+            this.gridView1.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.Maroon;
+            this.gridView1.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.gridView1.Appearance.HeaderPanel.Options.UseBorderColor = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1});
             this.gridView1.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
@@ -226,8 +231,9 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -704,7 +710,7 @@
             // m_cmd_PM_gui_cho_TD
             // 
             this.m_cmd_PM_gui_cho_TD.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_PM_gui_cho_TD.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.m_cmd_PM_gui_cho_TD.Appearance.ForeColor = System.Drawing.Color.Black;
             this.m_cmd_PM_gui_cho_TD.Appearance.Options.UseFont = true;
             this.m_cmd_PM_gui_cho_TD.Appearance.Options.UseForeColor = true;
             this.m_cmd_PM_gui_cho_TD.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -930,7 +936,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "f0000_gd_dat_hang_gd_log_dat_hang";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Giao dịch";
+            this.Text = "f0000_Giao dịch";
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).EndInit();

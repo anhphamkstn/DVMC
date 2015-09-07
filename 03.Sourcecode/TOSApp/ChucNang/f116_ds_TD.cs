@@ -95,5 +95,7 @@ namespace TOSApp.ChucNang
         {
             this.Close();
         }
+
+      
     }
 }
