@@ -395,7 +395,6 @@ namespace IPCOREDS.CDBNames
         public const string NGAY_TAO = "NGAY_TAO";
         public const string NGUOI_TAO = "NGUOI_TAO";
         public const string TRANG_THAI = "TRANG_THAI";
-        public const string BUILT_IN_YN = "BUILT_IN_YN";
         public const string EMAIL = "EMAIL";
         public const string MAT_KHAU_EMAIL = "MAT_KHAU_EMAIL";
     }
@@ -910,5 +909,11 @@ namespace IPCOREDS.CDBNames
         public const string TEN_CHI_NHANH = "TEN_CHI_NHANH";
         public const string TRANG_THAI_DON_HANG = "TRANG_THAI_DON_HANG";
     }
-
+    public class HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH
+    {
+        public const string ID = "ID";
+        public const string ID_NGUOI_SU_DUNG = "ID_NGUOI_SU_DUNG";
+        public const string ID_NHOM = "ID_NHOM";
+        public const string ID_CHI_NHANH = "ID_CHI_NHANH";
+    }
 }

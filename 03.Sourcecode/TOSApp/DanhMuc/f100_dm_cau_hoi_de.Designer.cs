@@ -38,18 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_cau_hoi = new DevExpress.XtraEditors.MemoEdit();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbo_to_chuc = new System.Windows.Forms.ComboBox();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbo_nhom_cau_hoi = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -65,14 +54,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_tra_loi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_hoi.Properties)).BeginInit();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -179,72 +161,11 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Câu hỏi";
             // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.label7);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(0, 0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(248, 48);
-            this.panel19.TabIndex = 47;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 22);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Tổ chức";
-            // 
-            // cbo_to_chuc
-            // 
-            this.cbo_to_chuc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo_to_chuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_to_chuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_to_chuc.FormattingEnabled = true;
-            this.cbo_to_chuc.Location = new System.Drawing.Point(0, 0);
-            this.cbo_to_chuc.Name = "cbo_to_chuc";
-            this.cbo_to_chuc.Size = new System.Drawing.Size(248, 28);
-            this.cbo_to_chuc.TabIndex = 46;
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.label4);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(0, 0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(249, 88);
-            this.panel20.TabIndex = 37;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Nhóm câu hỏi";
-            // 
-            // cbo_nhom_cau_hoi
-            // 
-            this.cbo_nhom_cau_hoi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo_nhom_cau_hoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_nhom_cau_hoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_nhom_cau_hoi.FormattingEnabled = true;
-            this.cbo_nhom_cau_hoi.Location = new System.Drawing.Point(0, 0);
-            this.cbo_nhom_cau_hoi.Name = "cbo_nhom_cau_hoi";
-            this.cbo_nhom_cau_hoi.Size = new System.Drawing.Size(249, 28);
-            this.cbo_nhom_cau_hoi.TabIndex = 36;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
@@ -256,59 +177,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1030, 506);
             this.tableLayoutPanel1.TabIndex = 53;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.panel13, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel14, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(518, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(509, 94);
-            this.tableLayoutPanel2.TabIndex = 39;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.panel12);
-            this.panel13.Controls.Add(this.panel20);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(257, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(249, 88);
-            this.panel13.TabIndex = 0;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.cbo_nhom_cau_hoi);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(0, 48);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(249, 40);
-            this.panel12.TabIndex = 38;
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.panel19);
-            this.panel14.Controls.Add(this.panel9);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(3, 3);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(248, 88);
-            this.panel14.TabIndex = 1;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.cbo_to_chuc);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 48);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(248, 40);
-            this.panel9.TabIndex = 48;
             // 
             // panel4
             // 
@@ -434,16 +302,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_tra_loi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_hoi.Properties)).EndInit();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -470,14 +329,6 @@
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.MemoEdit txt_cau_hoi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbo_to_chuc;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cbo_nhom_cau_hoi;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel8;
@@ -485,9 +336,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox1;

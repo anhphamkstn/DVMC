@@ -195,6 +195,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_UT_SEQUENCES.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -393,6 +398,17 @@
     </None>
     <None Include="DS_HT_NGUOI_SU_DUNG.xss">
       <DependentUpon>DS_HT_NGUOI_SU_DUNG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsc">
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xss">
+      <DependentUpon>DS_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.xsd</DependentUpon>
     </None>
     <None Include="DS_UT_SEQUENCES.xsc">
       <DependentUpon>DS_UT_SEQUENCES.xsd</DependentUpon>

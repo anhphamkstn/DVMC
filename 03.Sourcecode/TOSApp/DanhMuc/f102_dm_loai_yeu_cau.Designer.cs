@@ -70,6 +70,7 @@
             this.m_grv_dm_loai_yeu_cau.GridControl = this.m_grc_dm_loai_yeu_cau;
             this.m_grv_dm_loai_yeu_cau.GroupCount = 2;
             this.m_grv_dm_loai_yeu_cau.Name = "m_grv_dm_loai_yeu_cau";
+            this.m_grv_dm_loai_yeu_cau.NewItemRowText = "Thêm mới dịch vụ";
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.Editable = false;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.ReadOnly = true;
@@ -116,7 +117,7 @@
             // c_thoi_gian_xu_ly
             // 
             this.c_thoi_gian_xu_ly.Caption = "Thời gian xử lý";
-            this.c_thoi_gian_xu_ly.FieldName = "TEN";
+            this.c_thoi_gian_xu_ly.FieldName = "THOI_GIAN_XU_LY";
             this.c_thoi_gian_xu_ly.Name = "c_thoi_gian_xu_ly";
             this.c_thoi_gian_xu_ly.Visible = true;
             this.c_thoi_gian_xu_ly.VisibleIndex = 2;

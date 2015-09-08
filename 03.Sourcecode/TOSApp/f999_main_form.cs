@@ -114,8 +114,14 @@ namespace TOSApp
             if (us_user.dcIDNhom == 1 || us_user.dcIDNhom == 5)
             {
                 m_rib_dm_cau_hoi.Visible = true;
+               
             }
             else m_rib_dm_cau_hoi.Visible = false;
+
+            if(us_user.dcIDNhom != 3 && us_user.dcIDNhom != 5)
+            {
+                m_barsubitem_tao_moi_user.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            }
      
             //foreach (Control control in list)
             //{
@@ -627,7 +633,6 @@ namespace TOSApp
             {
                 f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;
-
                 v_f.Show();
             }
             catch (Exception v_e)
@@ -658,6 +663,12 @@ namespace TOSApp
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_barsubitem_tao_moi_user_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f121_tao_user_moi v_f = new f121_tao_user_moi();
+            v_f.ShowDialog();
         }
 
       

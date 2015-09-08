@@ -36,43 +36,39 @@ namespace TOSApp.DanhMuc
             }
         }
 
-        private void load_data_cbo()
-        {
-            WinFormControls.load_data_to_combobox_with_query(cbo_nhom_cau_hoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT   ID, TEN FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN = 5");
-            WinFormControls.load_data_to_combobox_with_query(cbo_to_chuc, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT  ID, TEN FROM CM_DM_TU_DIEN  WHERE ID_LOAI_TU_DIEN= 11 ");
-        }
+        //private void load_data_cbo()
+        //{
+        //    WinFormControls.load_data_to_combobox_with_query(cbo_nhom_cau_hoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT   ID, TEN FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN = 5");
+        //    WinFormControls.load_data_to_combobox_with_query(cbo_to_chuc, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT  ID, TEN FROM CM_DM_TU_DIEN  WHERE ID_LOAI_TU_DIEN= 11 ");
+        //}
 
         public void DisPlayForInsert()
         {
 
             m_e_form_mode = DataEntryFormMode.InsertDataState;
-            load_data_cbo();
+            //load_data_cbo();
             this.ShowDialog();
         }
 
-        internal void DisPlayForUpdate(IPCOREUS.US_DM_CAU_HOI v_us1, IPCOREUS.US_CM_DM_TU_DIEN v_us2, IPCOREUS.US_CM_DM_TU_DIEN v_us3, IPCOREUS.US_DM_CAU_TRA_LOI v_us4)
+        internal void DisPlayForUpdate(IPCOREUS.US_DM_CAU_HOI v_us_cau_hoi, IPCOREUS.US_DM_CAU_TRA_LOI v_us_cau_tra_loi)
         {
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
-            m_us_cau_hoi = v_us1;
-            m_us_cau_tra_loi = v_us4;
-            us_to_form(v_us1, v_us2, v_us3, v_us4);
+            m_us_cau_hoi = v_us_cau_hoi;
+            m_us_cau_tra_loi = v_us_cau_tra_loi;
+            us_to_form(v_us_cau_hoi, v_us_cau_tra_loi);
             if (us_user.dcIDNhom == 1)
             {
                 txt_cau_hoi.ReadOnly = true;
-                cbo_nhom_cau_hoi.Enabled = false;
-                cbo_to_chuc.Enabled = false;
                 m_pan_luu.Visible = false;
             }
             this.ShowDialog();
         }
 
-        private void us_to_form(IPCOREUS.US_DM_CAU_HOI v_us1, IPCOREUS.US_CM_DM_TU_DIEN v_us2, IPCOREUS.US_CM_DM_TU_DIEN v_us3, IPCOREUS.US_DM_CAU_TRA_LOI v_us4)
+        private void us_to_form(IPCOREUS.US_DM_CAU_HOI v_us_cau_hoi, IPCOREUS.US_DM_CAU_TRA_LOI v_us_cau_tra_loi)
         {
-            load_data_cbo();
-            txt_cau_hoi.Text = v_us1.strNOI_DUNG_CAU_HOI;
-            cbo_to_chuc.SelectedValue = v_us3.dcID;
-            cbo_nhom_cau_hoi.SelectedValue = v_us2.dcID;
-            txt_cau_tra_loi.Text = v_us4.strCAU_TRA_LOI;
+            //load_data_cbo();
+            txt_cau_hoi.Text = v_us_cau_hoi.strNOI_DUNG_CAU_HOI;
+            txt_cau_tra_loi.Text = v_us_cau_tra_loi.strCAU_TRA_LOI;
         }
         private bool kiemtradulieu()
         {
@@ -87,8 +83,6 @@ namespace TOSApp.DanhMuc
         private void form_to_us_cau_hoi()
         {
             //bảng câu hỏi
-            m_us_cau_hoi.dcID_TO_CHUC = CIPConvert.ToDecimal(cbo_to_chuc.SelectedValue.ToString());
-            m_us_cau_hoi.dcID_NHOM_CAU_HOI = CIPConvert.ToDecimal(cbo_nhom_cau_hoi.SelectedValue.ToString());
             m_us_cau_hoi.strNOI_DUNG_CAU_HOI = txt_cau_hoi.Text;
             if (m_e_form_mode == DataEntryFormMode.InsertDataState)
             { 

@@ -106,6 +106,7 @@
             this.m_rib_bo_pm_td_dich_vu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.m_barsubitem_tao_moi_user = new DevExpress.XtraBars.BarSubItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -506,7 +507,6 @@
             // 
             this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.m_cmd_FO_cong_viec,
@@ -547,9 +547,10 @@
             this.m_cmd_PM_cap_nhat_deadline,
             this.m_cmd_tat_ca_don_hang,
             this.m_cmd_bo_pm_td_dich_vu,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.m_barsubitem_tao_moi_user});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 44;
+            this.ribbonControl1.MaxItemId = 45;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -562,7 +563,6 @@
             this.m_rbc_danh_muc,
             this.m_rbc_bao_cao});
             this.ribbonControl1.Size = new System.Drawing.Size(1186, 163);
-          //  this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // m_cmd_show
             // 
@@ -601,7 +601,8 @@
             this.m_barsubitem_thiet_lap_tai_khoan.Id = 29;
             this.m_barsubitem_thiet_lap_tai_khoan.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_ten_dang_nhap),
-            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_mat_khau)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_mat_khau),
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_tao_moi_user)});
             this.m_barsubitem_thiet_lap_tai_khoan.Name = "m_barsubitem_thiet_lap_tai_khoan";
             // 
             // m_barsubitem_doi_ten_dang_nhap
@@ -748,6 +749,13 @@
             this.barButtonItem3.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.LargeGlyph")));
             this.barButtonItem3.Name = "barButtonItem3";
             // 
+            // m_barsubitem_tao_moi_user
+            // 
+            this.m_barsubitem_tao_moi_user.Caption = "Tạo mới user";
+            this.m_barsubitem_tao_moi_user.Id = 44;
+            this.m_barsubitem_tao_moi_user.Name = "m_barsubitem_tao_moi_user";
+            this.m_barsubitem_tao_moi_user.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_barsubitem_tao_moi_user_ItemClick);
+            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -844,6 +852,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_rib_bo_pm_td_dich_vu;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
+        private DevExpress.XtraBars.BarSubItem m_barsubitem_tao_moi_user;
 
 	}
 }

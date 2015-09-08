@@ -73,12 +73,11 @@ namespace TOSApp.DanhMuc
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
-      
         private void m_grv_dm_cau_hoi_DoubleClick(object sender, EventArgs e)
         {
-            GridView view = (GridView)sender;
-            Point pt = view.GridControl.PointToClient(Control.MousePosition);
-            DoRowDoubleClick(view, pt);
+           GridView view = (GridView)sender;
+           Point pt = view.GridControl.PointToClient(Control.MousePosition);
+           DoRowDoubleClick(view, pt);
         }
 
         private void DoRowDoubleClick(GridView view, Point pt)
@@ -105,12 +104,10 @@ namespace TOSApp.DanhMuc
                     try
                     {
                         DataRow v_dr = m_grv_dm_cau_hoi.GetDataRow(m_grv_dm_cau_hoi.FocusedRowHandle);
-                        US_DM_CAU_HOI v_us1 = new US_DM_CAU_HOI(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID].ToString()));
-                        US_CM_DM_TU_DIEN v_us2 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_NHOM_CAU_HOI].ToString()));
-                        US_CM_DM_TU_DIEN v_us3 = new US_CM_DM_TU_DIEN(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID_TO_CHUC].ToString()));
-                        US_DM_CAU_TRA_LOI v_us4 = new US_DM_CAU_TRA_LOI(CIPConvert.ToDecimal(v_dr[16].ToString()));
+                        US_DM_CAU_HOI v_us_cau_hoi = new US_DM_CAU_HOI(CIPConvert.ToDecimal(v_dr[DM_CAU_HOI.ID].ToString()));
+                        US_DM_CAU_TRA_LOI v_us_cau_tra_loi = new US_DM_CAU_TRA_LOI(CIPConvert.ToDecimal(v_dr["ID_CAU_TRA_LOI"].ToString()));
                         f100_dm_cau_hoi_de v_f = new f100_dm_cau_hoi_de();
-                        v_f.DisPlayForUpdate(v_us1, v_us2, v_us3, v_us4);
+                        v_f.DisPlayForUpdate(v_us_cau_hoi, v_us_cau_tra_loi);
                         load_data_grid();
                     }
                     catch (Exception v_e)
@@ -120,6 +117,5 @@ namespace TOSApp.DanhMuc
                 }
             }
         }
-
     }
 }
