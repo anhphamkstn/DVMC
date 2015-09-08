@@ -696,6 +696,39 @@ namespace TOSApp
             }
         }
 
+        private void m_baritem_dang_xuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void m_cmd_pm_don_hang_dang_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f122_ds_don_hang_dang_xu_ly v_f = new f122_ds_don_hang_dang_xu_ly();
+            v_f.MdiParent = this;
+            v_f.Show();
+        }
+
+        private void m_cmd_pm_don_hang_can_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f123_ds_don_hang_can_xu_ly v_f = new f123_ds_don_hang_can_xu_ly();
+            v_f.MdiParent = this;
+            v_f.Show();
+        }
+
+        private void m_cmd_td_don_hang_dang_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f122_ds_don_hang_dang_xu_ly v_f = new f122_ds_don_hang_dang_xu_ly();
+            v_f.MdiParent = this;
+            v_f.Show();
+        }
+
+        private void m_cmd_td_don_hang_can_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f123_ds_don_hang_can_xu_ly v_f = new f123_ds_don_hang_can_xu_ly();
+            v_f.MdiParent = this;
+            v_f.Show();
+        }
+
       
      
 

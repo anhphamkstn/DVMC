@@ -402,6 +402,18 @@
     <Compile Include="ChucNang\f121_tao_user_moi.Designer.cs">
       <DependentUpon>f121_tao_user_moi.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f122_ds_don_hang_dang_xu_ly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f122_ds_don_hang_dang_xu_ly.Designer.cs">
+      <DependentUpon>f122_ds_don_hang_dang_xu_ly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f123_ds_don_hang_can_xu_ly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f123_ds_don_hang_can_xu_ly.Designer.cs">
+      <DependentUpon>f123_ds_don_hang_can_xu_ly.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f150_Bo_time_line.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -606,6 +618,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f121_tao_user_moi.resx">
       <DependentUpon>f121_tao_user_moi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f122_ds_don_hang_dang_xu_ly.resx">
+      <DependentUpon>f122_ds_don_hang_dang_xu_ly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f123_ds_don_hang_can_xu_ly.resx">
+      <DependentUpon>f123_ds_don_hang_can_xu_ly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f150_Bo_time_line.resx">
       <DependentUpon>f150_Bo_time_line.cs</DependentUpon>

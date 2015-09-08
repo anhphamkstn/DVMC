@@ -163,7 +163,6 @@ namespace TOSApp.ChucNang
 
 
             v_us.FillDatasetWithQuery(v_ds,m_query);
-            
             m_grc_gd_dat_hang_gd_log_dat_hang.DataSource = v_ds.Tables[0];
         }
 
