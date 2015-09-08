@@ -888,10 +888,43 @@ namespace TOSApp.ChucNang
         }
         //load lại data sau mỗi một thời gian nào đó
         private void timer1_Tick(object sender, EventArgs e)
-        {
+       {
             load_data_2_grid();
          //   MessageBox.Show(kieu_load_form.ToString());
           
+        }
+
+        private void m_cmd_cap_nhat_TD_Click(object sender, EventArgs e)
+        {
+            decimal v_deadline = 0;
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+
+            v_f100.displayForUpdate(v_us, v_deadline);
+            load_data_2_grid();
+        }
+
+        private void m_cmd_cap_nhat_PM_Click(object sender, EventArgs e)
+        {
+            decimal v_deadline = 0;
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+
+            v_f100.displayForUpdate(v_us, v_deadline);
+            load_data_2_grid();
+        }
+
+        private void m_cmd_cap_nhat_BO_Click(object sender, EventArgs e)
+        {
+            decimal v_deadline = 0;
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+
+            v_f100.displayForUpdate(v_us, v_deadline);
+            load_data_2_grid();
         }
 
       

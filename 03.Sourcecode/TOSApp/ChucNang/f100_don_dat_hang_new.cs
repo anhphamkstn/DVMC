@@ -11,6 +11,10 @@ using TOSApp;
 using IPCOREUS;
 using IP.Core.IPCommon;
 using TOSApp.App_Code;
+using TOSApp.DanhMuc;
+using DevExpress.XtraBars.Docking;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 
 
 
@@ -48,7 +52,7 @@ namespace TOSApp.ChucNang
         private void load_data_2_selected()
         {
             load_data_2_user_nhan_vien_dat_hang();
-            load_data_2_selected_don_vi();
+          //  load_data_2_selected_don_vi();
             
             load_data_2_selected_trang_thai_don_hang();
             random_data_2_ma_don_hang();
@@ -60,12 +64,39 @@ namespace TOSApp.ChucNang
 
         }
 
+        private void load_data_2_selected_nguoi_dat_hang_vs_dien_thoai(object sender, EventArgs e)
+        {
+            decimal ID_khach_hang =CIPConvert.ToDecimal( m_cbo_user_nhan_vien_dat_hang.SelectedValue);
+            US_DM_KHACH_HANG v_us = new US_DM_KHACH_HANG(ID_khach_hang);
+            load_data_to_selected_don_vi(v_us);
+            load_data_to_selected_ho_ten_nguoi_dat_hang(v_us);
+            load_data_to_selected_so_dien_thoai(v_us);
+            load_data_2_grid_khach_hang_don_hang();
+        }
+
+        private void load_data_to_selected_so_dien_thoai(US_DM_KHACH_HANG v_us)
+        {
+            m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
+        }
+
+        private void load_data_to_selected_ho_ten_nguoi_dat_hang(US_DM_KHACH_HANG v_us)
+        {
+            m_txt_ho_ten_nguoi_dat_hang.Text = v_us.strTEN_KHACH_HANG;
+        }
+
+        private void load_data_to_selected_don_vi(US_DM_KHACH_HANG v_us)
+        {
+            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", " where ID=" + v_us.dcDON_VI, WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
+        }
+
+       
+
         private void load_data_2_grid_khach_hang_don_hang()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from v_gd_dat_hang_gd_log_dat_hang where thao_tac_het_han_yn = 'N'");
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_DON_HANG_TRANG_THAI where ID_USER_NV_DAT_HANG ="+m_cbo_user_nhan_vien_dat_hang.SelectedValue);
             m_grc_user_don_hang.DataSource = v_ds.Tables[0];
         }
 
@@ -81,7 +112,7 @@ namespace TOSApp.ChucNang
 
         private void load_data_2_user_nhan_vien_dat_hang()
         {
- 	       WinFormControls.load_data_to_combobox("DM_khach_hang", "ID", "ten_khach_hang", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
+            WinFormControls.load_data_to_combobox("DM_khach_hang", "ID", "EMAIL", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
         }
 
         
@@ -489,7 +520,7 @@ namespace TOSApp.ChucNang
         private void form_2_us()
         {
             m_us.strMA_DON_HANG = m_txt_ma_don_hang.Text;
-            m_us.dcID_USER_NV_DAT_HANG = CIPConvert.ToDecimal(m_cbo_user_nhan_vien_dat_hang.SelectedValue.ToString());
+            m_us.dcID_USER_NV_DAT_HANG = CIPConvert.ToDecimal(m_cbo_user_nhan_vien_dat_hang.SelectedValue);
             m_us.dcID_DON_VI = CIPConvert.ToDecimal( m_cbo_dv_don_vi.SelectedValue.ToString());//xem lai
             m_us.strDIEN_THOAI = m_txt_dien_thoai.Text;
             m_us.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten_nguoi_dat_hang.Text ;
@@ -559,14 +590,18 @@ namespace TOSApp.ChucNang
 
                 MessageBox.Show("phản hồi từ dvmc vẫn còn trống!");
                 return false;
-            }             
-            else if (v_time < System.DateTime.Now.AddDays(1))
+            }
+            else if (m_checkbox_m2_m3.Checked==true)
             {
-                MessageBox.Show("Thời điểm cần hoàn thành chưa chính xác!Hãy chọn lại!");
-                return false;
+                if (v_time > System.DateTime.Now)
+                {
+                    MessageBox.Show("Thời điểm cần hoàn thành chưa chính xác!Hãy chọn lại!");
+                    return false;
+
+                }
 
             }
-
+              
             return true;
         }
 
@@ -594,7 +629,7 @@ namespace TOSApp.ChucNang
         {
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             us_to_form(v_us);
-            m_panel_user_don_hang.Visible = false;
+            //m_panel_user_don_hang.Visible = false;
             this.ShowDialog();
         }
 
@@ -881,7 +916,7 @@ namespace TOSApp.ChucNang
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                     m_deadline_id = deadline_id;
                     load_data_2_lich_su_thuc_hien();
-                    m_panel_user_don_hang.Visible = false;
+                   // m_panel_user_don_hang.Visible = false;
                     this.ShowDialog();
 
                 }
@@ -894,7 +929,7 @@ namespace TOSApp.ChucNang
 
                     load_data_2_lich_su_thuc_hien();
 
-                    m_panel_user_don_hang.Visible = false;
+                   // m_panel_user_don_hang.Visible = false;
                     this.ShowDialog();
                 }
               
@@ -931,8 +966,47 @@ namespace TOSApp.ChucNang
                 e.Handled = true; 
         }
 
-      
-       
+        private void m_cmd_giai_dap_thac_mac_Click(object sender, EventArgs e)
+        {
+            f100_dm_cau_hoi v_f = new f100_dm_cau_hoi();
+           
+            v_f.Show();
+        }
+
+        private void chinh_sua_don_hang(object sender, EventArgs e)
+        {
+            GridView view = (GridView)sender;
+            Point pt = view.GridControl.PointToClient(Control.MousePosition);
+            DoRowDoubleClick(view, pt);
+            
+
+
+        }
+
+        private void DoRowDoubleClick(GridView view, Point pt)
+        {
+            GridHitInfo info = view.CalcHitInfo(pt);
+            if (info.InRow || info.InRowCell)
+            {
+                decimal v_deadline = 0;
+                DataRow v_dr = m_grv_user_don_hang.GetDataRow(m_grv_user_don_hang.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                m_dp_don_hang.Hide();
+                
+                this.Hide();
+               // m_dp_don_hang.Close();
+             //   v_f100.m_dp_don_hang.Enabled = false;
+               // v_f100.m_dp_don_hang.Visibility = DockVisibility.Hidden;
+                v_f100.displayForUpdate(v_us, v_deadline);
+                this.Show();
+
+            }
+        }
+
+
+
+
 
 
     }

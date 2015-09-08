@@ -829,7 +829,6 @@ namespace IPCOREDS.CDBNames
         public const string GHI_CHU = "GHI_CHU";
     }
 
-
     public class V_GD_DAT_HANG_GD_LOG_DAT_HANG
     {
         public const string ID_DON_HANG = "ID_DON_HANG";
@@ -867,7 +866,9 @@ namespace IPCOREDS.CDBNames
         public const string TEN_NGUOI_TAO_THAO_TAC_LOG = "TEN_NGUOI_TAO_THAO_TAC_LOG";
         public const string THOI_DIEM_CAN_HOAN_THANH = "THOI_DIEM_CAN_HOAN_THANH";
         public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
+        public const string EMAIL = "EMAIL";
     }
+
 
 
     public class DM_CAU_TRA_LOI

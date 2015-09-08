@@ -629,7 +629,7 @@ namespace TOSApp
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
+             try
             {
                 f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;

@@ -135,6 +135,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_KHACH_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_KHACH_HANG.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_LOAI_YEU_CAU.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -169,6 +174,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_V_DON_HANG_TRANG_THAI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
     </Compile>
     <Compile Include="DS_GD_CUOC_GOI_YEU_CAU.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -267,6 +277,17 @@
     <None Include="DS_DM_DON_VI.xss">
       <DependentUpon>DS_DM_DON_VI.xsd</DependentUpon>
     </None>
+    <None Include="DS_DM_KHACH_HANG.xsc">
+      <DependentUpon>DS_DM_KHACH_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_KHACH_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_KHACH_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_KHACH_HANG.xss">
+      <DependentUpon>DS_DM_KHACH_HANG.xsd</DependentUpon>
+    </None>
     <None Include="DS_DM_LOAI_YEU_CAU.xsc">
       <DependentUpon>DS_DM_LOAI_YEU_CAU.xsd</DependentUpon>
     </None>
@@ -343,6 +364,17 @@
     </None>
     <None Include="DS_DOC_TABLE_COMMENT.xss">
       <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DON_HANG_TRANG_THAI.xsc">
+      <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DON_HANG_TRANG_THAI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_DON_HANG_TRANG_THAI.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_DON_HANG_TRANG_THAI.xss">
+      <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
     </None>
     <None Include="DS_GD_CUOC_GOI_YEU_CAU.xsc">
       <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
