@@ -333,11 +333,25 @@ namespace TOSApp
             v_cstore.addDecimalInputParam("@id_dich_vu", id_dich_vu);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
-        
+
+        internal void FillReportFOByTimeCreated(DataSet v_ds, DateTime StartDate, DateTime EndDate)
+        {
+            CStoredProc v_cstore = new CStoredProc("get_ReportFOByTimeCreated");
+            v_cstore.addDatetimeInputParam("@startDate", StartDate);
+            v_cstore.addDatetimeInputParam("@endDate", EndDate);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        internal void FillReportBOByTimeCreated(DataSet v_ds, DateTime StartDate, DateTime EndDate)
+        {
+            CStoredProc v_cstore = new CStoredProc("get_ReportBOByTimeCreated");
+            v_cstore.addDatetimeInputParam("@startDate", StartDate);
+            v_cstore.addDatetimeInputParam("@endDate", EndDate);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
 
 
-
-        
+           
     }
 
     public class iParameter

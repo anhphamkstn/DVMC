@@ -17,12 +17,12 @@ namespace TOSApp.ChucNang
         decimal v_deadline =0;
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us;
         public f117_ds_tat_ca_don_dat_hang()
-        {
-            
+        {          
             InitializeComponent();
             load_data_2_grid();
         }
-
+      
+       
         private void load_data_2_grid()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
@@ -30,9 +30,6 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithQuery(v_ds,"select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where Thao_tac_het_han_YN= 'N' and thoi_gian_hoan_thanh is null");
             m_grc_ds_don_dat_hang.DataSource = v_ds.Tables[0];
-
-          
- 
         }
 
         private void m_cmd_chinh_sua_don_hang_Click(object sender, EventArgs e)

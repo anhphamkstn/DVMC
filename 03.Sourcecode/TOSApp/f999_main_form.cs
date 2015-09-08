@@ -620,7 +620,6 @@ namespace TOSApp
             {
                 f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
                 v_f.MdiParent = this;
-
                 v_f.display_for_refurse_dealine(deadline_id);
             }
             catch (Exception v_e)
@@ -658,8 +657,6 @@ namespace TOSApp
             {
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForInsert();
-         
-
             }
             catch (Exception v_e)
             {
@@ -672,6 +669,31 @@ namespace TOSApp
         {
             f121_tao_user_moi v_f = new f121_tao_user_moi();
             v_f.ShowDialog();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                if (v_don_hang_dang_xu_ly_TD == null || !IsFormOpen(v_don_hang_dang_xu_ly_TD))
+                {
+                    v_don_hang_dang_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+                    v_don_hang_dang_xu_ly_TD.MdiParent = this;
+                    v_don_hang_dang_xu_ly_TD.Text = "Đơn hàng đang xử lý";
+                    v_don_hang_dang_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
+                    v_don_hang_dang_xu_ly_TD.m_panel_TD_tu_choi.Visible = false;
+                    v_don_hang_dang_xu_ly_TD.m_panel_TD_tiep_nhan.Visible = false;
+                    v_don_hang_dang_xu_ly_TD.Show();
+                }
+                else
+                {
+                    v_don_hang_dang_xu_ly_TD.Focus();
+                }
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
 
       
