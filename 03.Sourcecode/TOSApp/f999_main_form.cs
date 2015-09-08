@@ -209,7 +209,8 @@ namespace TOSApp
                     v_don_hang_can_tiep_nhan_BO.MdiParent = this;
                     v_don_hang_can_tiep_nhan_BO.Text = "Đơn hàng cần tiếp nhận";
                     v_don_hang_can_tiep_nhan_BO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần tiếp nhận";
-                    v_don_hang_can_tiep_nhan_BO.m_panel_BO_hoan_thanh.Visible = false;  
+                    v_don_hang_can_tiep_nhan_BO.m_panel_BO_hoan_thanh.Visible = false;
+                    v_don_hang_can_tiep_nhan_BO.m_cmd_cap_nhat_BO.Visible = false;
                     v_don_hang_can_tiep_nhan_BO.Show();
                 }
                 else
@@ -266,6 +267,7 @@ namespace TOSApp
                     v_don_hang_can_xu_ly_PM.Text = "Đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_PM.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_PM.m_panel_PM_hoan_thanh.Visible = false;
+                    v_don_hang_can_xu_ly_PM.m_cmd_cap_nhat_PM.Visible = false;
                     v_don_hang_can_xu_ly_PM.Show();
                 }
                 else
@@ -320,6 +322,7 @@ namespace TOSApp
                     v_don_hang_can_xu_ly_TD.Text = "Đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_TD.m_panel_TD_hoan_thanh.Visible = false;
+                    v_don_hang_can_xu_ly_TD.m_cmd_cap_nhat_TD.Visible = false;
                     v_don_hang_can_xu_ly_TD.Show();
                 }
                 else

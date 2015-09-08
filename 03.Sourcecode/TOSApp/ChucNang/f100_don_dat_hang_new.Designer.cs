@@ -647,6 +647,7 @@
             // 
             // m_cmd_giai_dap_thac_mac
             // 
+            this.m_cmd_giai_dap_thac_mac.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_giai_dap_thac_mac.Image")));
             this.m_cmd_giai_dap_thac_mac.Location = new System.Drawing.Point(26, 130);
             this.m_cmd_giai_dap_thac_mac.Name = "m_cmd_giai_dap_thac_mac";
             this.m_cmd_giai_dap_thac_mac.Size = new System.Drawing.Size(157, 31);
