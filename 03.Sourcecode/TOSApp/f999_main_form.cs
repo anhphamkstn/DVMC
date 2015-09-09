@@ -746,6 +746,13 @@ namespace TOSApp
             v_f.Show();
         }
 
+        private void dang_xuat(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            us_user.trang_thai_dang_nhap = false;
+            this.Close();
+
+        }
+
       
      
 
@@ -756,3 +763,4 @@ namespace TOSApp
 
     }
 }
+

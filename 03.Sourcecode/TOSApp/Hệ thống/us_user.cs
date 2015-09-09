@@ -44,7 +44,7 @@ namespace TOSApp
             return str;
         }
 
-	
+        public static bool trang_thai_dang_nhap;
 		#endregion
 
 

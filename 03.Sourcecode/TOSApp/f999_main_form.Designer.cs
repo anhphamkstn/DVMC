@@ -121,6 +121,7 @@
             this.m_cmd_blacklist_FO = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup27 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_blacklist_TD = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_dang_xuat = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -648,9 +649,10 @@
             this.m_cmd_td_don_hang_dang_xu_ly,
             this.m_cmd_td_don_hang_can_xu_ly,
             this.m_cmd_blacklist_FO,
-            this.m_cmd_blacklist_TD});
+            this.m_cmd_blacklist_TD,
+            this.m_cmd_dang_xuat});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 54;
+            this.ribbonControl1.MaxItemId = 55;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -692,7 +694,8 @@
             this.m_barsubitem_thiet_lap.Caption = "Thiết lập";
             this.m_barsubitem_thiet_lap.Id = 25;
             this.m_barsubitem_thiet_lap.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_thiet_lap_tai_khoan)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_thiet_lap_tai_khoan),
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_cmd_dang_xuat)});
             this.m_barsubitem_thiet_lap.Name = "m_barsubitem_thiet_lap";
             // 
             // m_barsubitem_thiet_lap_tai_khoan
@@ -702,8 +705,7 @@
             this.m_barsubitem_thiet_lap_tai_khoan.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_ten_dang_nhap),
             new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_mat_khau),
-            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_tao_moi_user),
-            new DevExpress.XtraBars.LinkPersistInfo(this.m_baritem_dang_xuat)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_tao_moi_user)});
             this.m_barsubitem_thiet_lap_tai_khoan.Name = "m_barsubitem_thiet_lap_tai_khoan";
             // 
             // m_barsubitem_doi_ten_dang_nhap
@@ -903,6 +905,13 @@
             this.m_cmd_blacklist_TD.Name = "m_cmd_blacklist_TD";
             this.m_cmd_blacklist_TD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_blacklist_TD_ItemClick);
             // 
+            // m_cmd_dang_xuat
+            // 
+            this.m_cmd_dang_xuat.Caption = "Đăng xuất";
+            this.m_cmd_dang_xuat.Id = 54;
+            this.m_cmd_dang_xuat.Name = "m_cmd_dang_xuat";
+            this.m_cmd_dang_xuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.dang_xuat);
+            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -1014,6 +1023,7 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_blacklist_FO;
         private DevExpress.XtraBars.BarButtonItem m_cmd_blacklist_TD;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup27;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_dang_xuat;
 
 	}
 }

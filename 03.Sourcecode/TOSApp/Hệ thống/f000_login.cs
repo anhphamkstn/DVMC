@@ -39,8 +39,15 @@ namespace TOSApp.HT
                         this.Hide();
                         f999_main_form v_f = new f999_main_form();
                         v_f.WindowState = FormWindowState.Maximized;
+                        us_user.trang_thai_dang_nhap = true;
                         v_f.ShowDialog();
-                        this.Dispose();
+                        if (us_user.trang_thai_dang_nhap == false)
+                        {
+                            this.Show();
+                        }
+                        else this.Close();
+
+                       // this.Dispose();
 
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";
