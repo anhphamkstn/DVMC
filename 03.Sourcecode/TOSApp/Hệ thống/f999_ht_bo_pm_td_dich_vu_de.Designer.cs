@@ -47,7 +47,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txt_dich_vu = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -77,6 +76,7 @@
             this.m_cmd_luu = new DevExpress.XtraEditors.SimpleButton();
             this.panel16 = new System.Windows.Forms.Panel();
             this.m_cmd_xoa = new DevExpress.XtraEditors.SimpleButton();
+            this.txt_dich_vu = new DevExpress.XtraEditors.MemoEdit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,6 +111,7 @@
             this.m_pan_button.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -180,18 +181,18 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label1);
+            this.panel10.Controls.Add(this.label3);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 22);
+            this.panel10.Location = new System.Drawing.Point(0, -15);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(314, 48);
+            this.panel10.Size = new System.Drawing.Size(314, 41);
             this.panel10.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 25);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 0;
@@ -199,22 +200,22 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cbo_loai_dich_vu);
+            this.panel1.Controls.Add(this.txt_dich_vu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 70);
+            this.panel1.Location = new System.Drawing.Point(0, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 38);
+            this.panel1.Size = new System.Drawing.Size(314, 82);
             this.panel1.TabIndex = 2;
             // 
             // cbo_loai_dich_vu
             // 
-            this.cbo_loai_dich_vu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbo_loai_dich_vu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbo_loai_dich_vu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbo_loai_dich_vu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_loai_dich_vu.FormattingEnabled = true;
-            this.cbo_loai_dich_vu.Location = new System.Drawing.Point(0, 10);
+            this.cbo_loai_dich_vu.Location = new System.Drawing.Point(0, 0);
             this.cbo_loai_dich_vu.Name = "cbo_loai_dich_vu";
-            this.cbo_loai_dich_vu.Size = new System.Drawing.Size(314, 28);
+            this.cbo_loai_dich_vu.Size = new System.Drawing.Size(474, 28);
             this.cbo_loai_dich_vu.TabIndex = 1;
             this.cbo_loai_dich_vu.SelectedIndexChanged += new System.EventHandler(this.cbo_loai_dich_vu_SelectedIndexChanged);
             // 
@@ -279,7 +280,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.label1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.Location = new System.Drawing.Point(0, 16);
             this.panel6.Name = "panel6";
@@ -290,7 +291,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 9);
+            this.label3.Location = new System.Drawing.Point(3, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 0;
@@ -298,21 +299,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txt_dich_vu);
+            this.panel2.Controls.Add(this.cbo_loai_dich_vu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(474, 51);
             this.panel2.TabIndex = 4;
-            // 
-            // txt_dich_vu
-            // 
-            this.txt_dich_vu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_dich_vu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dich_vu.Location = new System.Drawing.Point(0, 0);
-            this.txt_dich_vu.Name = "txt_dich_vu";
-            this.txt_dich_vu.Size = new System.Drawing.Size(474, 26);
-            this.txt_dich_vu.TabIndex = 3;
             // 
             // tableLayoutPanel2
             // 
@@ -623,6 +615,16 @@
             this.m_cmd_xoa.Text = "&Xóa";
             this.m_cmd_xoa.Click += new System.EventHandler(this.m_cmd_xoa_Click);
             // 
+            // txt_dich_vu
+            // 
+            this.txt_dich_vu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_dich_vu.Location = new System.Drawing.Point(0, 0);
+            this.txt_dich_vu.Name = "txt_dich_vu";
+            this.txt_dich_vu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dich_vu.Properties.Appearance.Options.UseFont = true;
+            this.txt_dich_vu.Size = new System.Drawing.Size(314, 82);
+            this.txt_dich_vu.TabIndex = 0;
+            // 
             // f999_ht_bo_pm_td_dich_vu_de
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -648,7 +650,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
@@ -673,6 +674,7 @@
             this.m_pan_button.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -697,7 +699,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txt_dich_vu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
@@ -727,5 +728,6 @@
         private System.Windows.Forms.Panel panel16;
         private DevExpress.XtraEditors.SimpleButton m_cmd_luu;
         private DevExpress.XtraEditors.SimpleButton m_cmd_xoa;
+        private DevExpress.XtraEditors.MemoEdit txt_dich_vu;
     }
 }

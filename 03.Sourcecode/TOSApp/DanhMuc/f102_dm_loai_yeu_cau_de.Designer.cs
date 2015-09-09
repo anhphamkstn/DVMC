@@ -52,11 +52,11 @@
             this.cbo_nhom_dich_vu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txt_dich_vu = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.cbo_thoi_gian_xu_ly = new System.Windows.Forms.ComboBox();
             this.m_cbox_thoi_gian_xu_ly = new System.Windows.Forms.CheckBox();
+            this.cbo_thoi_gian_xu_ly = new System.Windows.Forms.ComboBox();
+            this.txt_dich_vu = new DevExpress.XtraEditors.MemoEdit();
             this.m_pan_button.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -73,6 +73,7 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // m_pan_button
@@ -80,9 +81,9 @@
             this.m_pan_button.Controls.Add(this.panel9);
             this.m_pan_button.Controls.Add(this.panel8);
             this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_pan_button.Location = new System.Drawing.Point(3, 267);
+            this.m_pan_button.Location = new System.Drawing.Point(3, 289);
             this.m_pan_button.Name = "m_pan_button";
-            this.m_pan_button.Size = new System.Drawing.Size(910, 54);
+            this.m_pan_button.Size = new System.Drawing.Size(910, 55);
             this.m_pan_button.TabIndex = 0;
             // 
             // panel9
@@ -91,7 +92,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel9.Location = new System.Drawing.Point(530, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(190, 54);
+            this.panel9.Size = new System.Drawing.Size(190, 55);
             this.panel9.TabIndex = 6;
             // 
             // m_cmd_luu
@@ -102,7 +103,7 @@
             this.m_cmd_luu.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_luu.Image")));
             this.m_cmd_luu.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_luu.Name = "m_cmd_luu";
-            this.m_cmd_luu.Size = new System.Drawing.Size(190, 54);
+            this.m_cmd_luu.Size = new System.Drawing.Size(190, 55);
             this.m_cmd_luu.TabIndex = 4;
             this.m_cmd_luu.Text = "&Lưu";
             this.m_cmd_luu.Click += new System.EventHandler(this.simpbtn_luu_Click);
@@ -113,7 +114,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel8.Location = new System.Drawing.Point(720, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(190, 54);
+            this.panel8.Size = new System.Drawing.Size(190, 55);
             this.panel8.TabIndex = 6;
             // 
             // m_cmd_thoat
@@ -124,7 +125,7 @@
             this.m_cmd_thoat.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_thoat.Image")));
             this.m_cmd_thoat.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_thoat.Name = "m_cmd_thoat";
-            this.m_cmd_thoat.Size = new System.Drawing.Size(190, 54);
+            this.m_cmd_thoat.Size = new System.Drawing.Size(190, 55);
             this.m_cmd_thoat.TabIndex = 5;
             this.m_cmd_thoat.Text = "&Thoát";
             this.m_cmd_thoat.Click += new System.EventHandler(this.simpbtn_thoat_Click);
@@ -143,7 +144,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(916, 324);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(916, 347);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -162,7 +163,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(910, 126);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(910, 137);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox2
@@ -172,7 +173,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(407, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 120);
+            this.pictureBox2.Size = new System.Drawing.Size(196, 131);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 118;
             this.pictureBox2.TabStop = false;
@@ -184,7 +185,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(205, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 117;
             this.pictureBox1.TabStop = false;
@@ -196,7 +197,7 @@
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(3, 3);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(196, 120);
+            this.pictureBox6.Size = new System.Drawing.Size(196, 131);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 116;
             this.pictureBox6.TabStop = false;
@@ -208,23 +209,23 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(609, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(298, 120);
+            this.panel3.Size = new System.Drawing.Size(298, 131);
             this.panel3.TabIndex = 0;
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.label1);
+            this.panel10.Controls.Add(this.label3);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 41);
+            this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(298, 41);
+            this.panel10.Size = new System.Drawing.Size(298, 32);
             this.panel10.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 18);
+            this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 20);
             this.label1.TabIndex = 0;
@@ -232,22 +233,21 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cbo_loai_dich_vu);
+            this.panel1.Controls.Add(this.txt_dich_vu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 82);
+            this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(298, 38);
+            this.panel1.Size = new System.Drawing.Size(298, 99);
             this.panel1.TabIndex = 2;
             // 
             // cbo_loai_dich_vu
             // 
-            this.cbo_loai_dich_vu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.cbo_loai_dich_vu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbo_loai_dich_vu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbo_loai_dich_vu.FormattingEnabled = true;
-            this.cbo_loai_dich_vu.Location = new System.Drawing.Point(0, 10);
+            this.cbo_loai_dich_vu.Location = new System.Drawing.Point(3, 66);
             this.cbo_loai_dich_vu.Name = "cbo_loai_dich_vu";
-            this.cbo_loai_dich_vu.Size = new System.Drawing.Size(298, 28);
+            this.cbo_loai_dich_vu.Size = new System.Drawing.Size(215, 28);
             this.cbo_loai_dich_vu.TabIndex = 1;
             this.cbo_loai_dich_vu.SelectedIndexChanged += new System.EventHandler(this.cbo_loai_dich_vu_SelectedIndexChanged);
             // 
@@ -263,11 +263,11 @@
             this.tableLayoutPanel3.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel7, 2, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 135);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 146);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(910, 126);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(910, 137);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // panel6
@@ -277,13 +277,13 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(684, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(223, 120);
+            this.panel6.Size = new System.Drawing.Size(223, 131);
             this.panel6.TabIndex = 2;
             // 
             // txt_diem_khoi_luong
             // 
             this.txt_diem_khoi_luong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_diem_khoi_luong.Location = new System.Drawing.Point(8, 68);
+            this.txt_diem_khoi_luong.Location = new System.Drawing.Point(8, 66);
             this.txt_diem_khoi_luong.Name = "txt_diem_khoi_luong";
             this.txt_diem_khoi_luong.Size = new System.Drawing.Size(209, 26);
             this.txt_diem_khoi_luong.TabIndex = 5;
@@ -306,7 +306,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(221, 120);
+            this.panel4.Size = new System.Drawing.Size(221, 131);
             this.panel4.TabIndex = 2;
             // 
             // cbo_nhom_dich_vu
@@ -331,27 +331,19 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.txt_dich_vu);
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.cbo_loai_dich_vu);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(230, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(221, 120);
+            this.panel5.Size = new System.Drawing.Size(221, 131);
             this.panel5.TabIndex = 3;
-            // 
-            // txt_dich_vu
-            // 
-            this.txt_dich_vu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dich_vu.Location = new System.Drawing.Point(5, 68);
-            this.txt_dich_vu.Name = "txt_dich_vu";
-            this.txt_dich_vu.Size = new System.Drawing.Size(213, 26);
-            this.txt_dich_vu.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 27);
+            this.label3.Location = new System.Drawing.Point(3, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 0;
@@ -364,18 +356,8 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(457, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(221, 120);
+            this.panel7.Size = new System.Drawing.Size(221, 131);
             this.panel7.TabIndex = 2;
-            // 
-            // cbo_thoi_gian_xu_ly
-            // 
-            this.cbo_thoi_gian_xu_ly.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_thoi_gian_xu_ly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_thoi_gian_xu_ly.FormattingEnabled = true;
-            this.cbo_thoi_gian_xu_ly.Location = new System.Drawing.Point(1, 66);
-            this.cbo_thoi_gian_xu_ly.Name = "cbo_thoi_gian_xu_ly";
-            this.cbo_thoi_gian_xu_ly.Size = new System.Drawing.Size(217, 28);
-            this.cbo_thoi_gian_xu_ly.TabIndex = 4;
             // 
             // m_cbox_thoi_gian_xu_ly
             // 
@@ -389,12 +371,32 @@
             this.m_cbox_thoi_gian_xu_ly.UseVisualStyleBackColor = true;
             this.m_cbox_thoi_gian_xu_ly.CheckedChanged += new System.EventHandler(this.m_cbox_thoi_gian_xu_ly_CheckedChanged);
             // 
+            // cbo_thoi_gian_xu_ly
+            // 
+            this.cbo_thoi_gian_xu_ly.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo_thoi_gian_xu_ly.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_thoi_gian_xu_ly.FormattingEnabled = true;
+            this.cbo_thoi_gian_xu_ly.Location = new System.Drawing.Point(1, 66);
+            this.cbo_thoi_gian_xu_ly.Name = "cbo_thoi_gian_xu_ly";
+            this.cbo_thoi_gian_xu_ly.Size = new System.Drawing.Size(217, 28);
+            this.cbo_thoi_gian_xu_ly.TabIndex = 4;
+            // 
+            // txt_dich_vu
+            // 
+            this.txt_dich_vu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_dich_vu.Location = new System.Drawing.Point(0, 0);
+            this.txt_dich_vu.Name = "txt_dich_vu";
+            this.txt_dich_vu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dich_vu.Properties.Appearance.Options.UseFont = true;
+            this.txt_dich_vu.Size = new System.Drawing.Size(298, 99);
+            this.txt_dich_vu.TabIndex = 1;
+            // 
             // f102_dm_loai_yeu_cau_de
             // 
             this.AcceptButton = this.m_cmd_luu;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 324);
+            this.ClientSize = new System.Drawing.Size(916, 347);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -422,6 +424,7 @@
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -443,7 +446,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_diem_khoi_luong;
-        private System.Windows.Forms.TextBox txt_dich_vu;
         private DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
         private DevExpress.XtraEditors.SimpleButton m_cmd_luu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -456,5 +458,6 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox m_cbox_thoi_gian_xu_ly;
+        private DevExpress.XtraEditors.MemoEdit txt_dich_vu;
     }
 }

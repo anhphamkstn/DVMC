@@ -175,16 +175,16 @@
             // 
             this.m_cbo_dich_vu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_dich_vu.FormattingEnabled = true;
-            this.m_cbo_dich_vu.Location = new System.Drawing.Point(783, 35);
+            this.m_cbo_dich_vu.Location = new System.Drawing.Point(734, 38);
             this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
-            this.m_cbo_dich_vu.Size = new System.Drawing.Size(171, 22);
+            this.m_cbo_dich_vu.Size = new System.Drawing.Size(280, 22);
             this.m_cbo_dich_vu.TabIndex = 8;
             // 
             // m_cbo_loai_dich_vu_2
             // 
             this.m_cbo_loai_dich_vu_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_loai_dich_vu_2.FormattingEnabled = true;
-            this.m_cbo_loai_dich_vu_2.Location = new System.Drawing.Point(445, 32);
+            this.m_cbo_loai_dich_vu_2.Location = new System.Drawing.Point(435, 38);
             this.m_cbo_loai_dich_vu_2.Name = "m_cbo_loai_dich_vu_2";
             this.m_cbo_loai_dich_vu_2.Size = new System.Drawing.Size(225, 22);
             this.m_cbo_loai_dich_vu_2.TabIndex = 7;
@@ -194,9 +194,9 @@
             // 
             this.m_cbo_loai_dich_vu_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.m_cbo_loai_dich_vu_1.FormattingEnabled = true;
-            this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(103, 34);
+            this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(86, 38);
             this.m_cbo_loai_dich_vu_1.Name = "m_cbo_loai_dich_vu_1";
-            this.m_cbo_loai_dich_vu_1.Size = new System.Drawing.Size(207, 22);
+            this.m_cbo_loai_dich_vu_1.Size = new System.Drawing.Size(242, 22);
             this.m_cbo_loai_dich_vu_1.TabIndex = 6;
             this.m_cbo_loai_dich_vu_1.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_1_SelectedValueChanged);
             // 
@@ -204,7 +204,7 @@
             // 
             this.m_lbl_dich_vu.AutoSize = true;
             this.m_lbl_dich_vu.Font = new System.Drawing.Font("Arial", 9F);
-            this.m_lbl_dich_vu.Location = new System.Drawing.Point(692, 40);
+            this.m_lbl_dich_vu.Location = new System.Drawing.Point(676, 40);
             this.m_lbl_dich_vu.Name = "m_lbl_dich_vu";
             this.m_lbl_dich_vu.Size = new System.Drawing.Size(47, 15);
             this.m_lbl_dich_vu.TabIndex = 33;
@@ -224,7 +224,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 9F);
-            this.label8.Location = new System.Drawing.Point(351, 40);
+            this.label8.Location = new System.Drawing.Point(357, 40);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(72, 15);
             this.label8.TabIndex = 32;

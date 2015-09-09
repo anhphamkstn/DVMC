@@ -22,10 +22,10 @@ namespace TOSApp.Hệ_thống
 
         private void f999_ht_bo_dich_vu_Load(object sender, EventArgs e)
         {
-            if(us_user.dcIDNhom !=5)
-            {
-                m_grv_ht_bo_pm_td_dich_vu.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-            }
+            //if(us_user.dcIDNhom !=5)
+            //{
+            //    m_grv_ht_bo_pm_td_dich_vu.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+            //}
             load_data_to_grv();
         }
         private void load_data_to_grv()
@@ -33,7 +33,8 @@ namespace TOSApp.Hệ_thống
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithTableName(v_ds, "V_DICH_VU_BO_PM_TD");
+            string v_str_query = "SELECT * FROM V_DICH_VU_BO_PM_TD WHERE ID_TD = " + us_user.dcID.ToString();
+            v_us.FillDatasetWithQuery(v_ds, v_str_query);
             m_grc_ht_bo_pm_td_dich_vu.DataSource = v_ds.Tables[0];
         }
 
