@@ -39,6 +39,10 @@
             this.txt_cau_hoi = new DevExpress.XtraEditors.MemoEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.m_cbo_nhom_cau_hoi = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -55,6 +59,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_tra_loi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_hoi.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -166,6 +172,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panel9, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
@@ -177,6 +184,46 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1030, 506);
             this.tableLayoutPanel1.TabIndex = 53;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.label1);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(518, 3);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(509, 94);
+            this.panel9.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.m_cbo_nhom_cau_hoi);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(0, 54);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(509, 40);
+            this.panel10.TabIndex = 42;
+            // 
+            // m_cbo_nhom_cau_hoi
+            // 
+            this.m_cbo_nhom_cau_hoi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cbo_nhom_cau_hoi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.m_cbo_nhom_cau_hoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cbo_nhom_cau_hoi.FormattingEnabled = true;
+            this.m_cbo_nhom_cau_hoi.Location = new System.Drawing.Point(0, 0);
+            this.m_cbo_nhom_cau_hoi.Name = "m_cbo_nhom_cau_hoi";
+            this.m_cbo_nhom_cau_hoi.Size = new System.Drawing.Size(509, 28);
+            this.m_cbo_nhom_cau_hoi.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nhóm câu hỏi";
             // 
             // panel4
             // 
@@ -303,6 +350,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_tra_loi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cau_hoi.Properties)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -341,6 +391,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel m_pan_luu;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox m_cbo_nhom_cau_hoi;
 
     }
 }

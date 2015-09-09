@@ -33,26 +33,28 @@ namespace TOSApp.DanhMuc
             else
             {
                 txt_cau_hoi.ReadOnly = true;
+                m_cbo_nhom_cau_hoi.Enabled = false;
             }
         }
 
-        //private void load_data_cbo()
-        //{
-        //    WinFormControls.load_data_to_combobox_with_query(cbo_nhom_cau_hoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT   ID, TEN FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN = 5");
-        //    WinFormControls.load_data_to_combobox_with_query(cbo_to_chuc, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT  ID, TEN FROM CM_DM_TU_DIEN  WHERE ID_LOAI_TU_DIEN= 11 ");
-        //}
+        private void load_data_cbo()
+        {
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_nhom_cau_hoi, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT   ID, TEN FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN = 5");
+            //WinFormControls.load_data_to_combobox_with_query(cbo_to_chuc, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT  ID, TEN FROM CM_DM_TU_DIEN  WHERE ID_LOAI_TU_DIEN= 11 ");
+        }
 
         public void DisPlayForInsert()
         {
 
             m_e_form_mode = DataEntryFormMode.InsertDataState;
-            //load_data_cbo();
+            load_data_cbo();
             this.ShowDialog();
         }
 
         internal void DisPlayForUpdate(IPCOREUS.US_DM_CAU_HOI v_us_cau_hoi, IPCOREUS.US_DM_CAU_TRA_LOI v_us_cau_tra_loi)
         {
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
+            m_cbo_nhom_cau_hoi.Enabled = false;
             m_us_cau_hoi = v_us_cau_hoi;
             m_us_cau_tra_loi = v_us_cau_tra_loi;
             us_to_form(v_us_cau_hoi, v_us_cau_tra_loi);
@@ -66,7 +68,8 @@ namespace TOSApp.DanhMuc
 
         private void us_to_form(IPCOREUS.US_DM_CAU_HOI v_us_cau_hoi, IPCOREUS.US_DM_CAU_TRA_LOI v_us_cau_tra_loi)
         {
-            //load_data_cbo();
+            load_data_cbo();
+            m_cbo_nhom_cau_hoi.SelectedValue = CIPConvert.ToDecimal(v_us_cau_hoi.dcID_NHOM_CAU_HOI.ToString());
             txt_cau_hoi.Text = v_us_cau_hoi.strNOI_DUNG_CAU_HOI;
             txt_cau_tra_loi.Text = v_us_cau_tra_loi.strCAU_TRA_LOI;
         }
@@ -84,6 +87,7 @@ namespace TOSApp.DanhMuc
         {
             //bảng câu hỏi
             m_us_cau_hoi.strNOI_DUNG_CAU_HOI = txt_cau_hoi.Text;
+            m_us_cau_hoi.dcID_NHOM_CAU_HOI = CIPConvert.ToDecimal(m_cbo_nhom_cau_hoi.SelectedValue.ToString());
             if (m_e_form_mode == DataEntryFormMode.InsertDataState)
             { 
                 m_us_cau_hoi.datNGAY_TAO = System.DateTime.Now;

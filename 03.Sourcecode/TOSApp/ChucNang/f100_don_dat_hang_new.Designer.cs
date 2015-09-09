@@ -280,6 +280,7 @@
             this.m_chk_gui_mail_yn.AutoSize = true;
             this.m_chk_gui_mail_yn.Checked = true;
             this.m_chk_gui_mail_yn.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.m_chk_gui_mail_yn.Enabled = false;
             this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(394, 14);
             this.m_chk_gui_mail_yn.Name = "m_chk_gui_mail_yn";
             this.m_chk_gui_mail_yn.Size = new System.Drawing.Size(159, 17);

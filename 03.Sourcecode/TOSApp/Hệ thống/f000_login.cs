@@ -43,6 +43,7 @@ namespace TOSApp.HT
                         v_f.ShowDialog();
                         if (us_user.trang_thai_dang_nhap == false)
                         {
+                            m_txt_pass.Text = "";
                             this.Show();
                         }
                         else this.Close();

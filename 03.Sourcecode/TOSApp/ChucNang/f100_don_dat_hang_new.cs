@@ -112,7 +112,8 @@ namespace TOSApp.ChucNang
 
         private void load_data_2_user_nhan_vien_dat_hang()
         {
-            WinFormControls.load_data_to_combobox("DM_khach_hang", "ID", "EMAIL", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
+            //WinFormControls.load_data_to_combobox("DM_khach_hang", "ID", "EMAIL", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_user_nhan_vien_dat_hang, "ID", "USER_EMAIL", WinFormControls.eTAT_CA.NO, "SELECT ID, dbo.f_get_user_name_user_nhan_vien_dat_hang(EMAIL) as USER_EMAIL FROM DM_KHACH_HANG");
         }
 
         

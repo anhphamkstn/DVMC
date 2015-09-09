@@ -122,7 +122,11 @@ namespace TOSApp
             {
                 m_barsubitem_tao_moi_user.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
-     
+            if (us_user.dcID != 134 && us_user.dcID != 141)
+            {
+                m_rib_dm_email.Visible = false;
+                m_rib_blacklist.Visible = false;
+            }
             //foreach (Control control in list)
             //{
             //    if (control.GetType() == typeof(RibbonPage) )
@@ -751,6 +755,13 @@ namespace TOSApp
             us_user.trang_thai_dang_nhap = false;
             this.Close();
 
+        }
+
+        private void m_cmd_blacklist_pm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f122_blacklist v_f = new f122_blacklist();
+            v_f.MdiParent = this;
+            v_f.Show();
         }
 
       

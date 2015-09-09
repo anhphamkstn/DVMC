@@ -51,6 +51,7 @@
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemComboBox6 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.c_nhom_cau_hoi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pan_xoa.SuspendLayout();
             this.m_panel_xoa.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -147,13 +148,17 @@
             // 
             this.m_grv_dm_cau_hoi.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.c_noi_dung_cau_hoi,
-            this.c_cau_tra_loi});
+            this.c_cau_tra_loi,
+            this.c_nhom_cau_hoi});
             this.m_grv_dm_cau_hoi.GridControl = this.m_grc_dm_cau_hoi;
+            this.m_grv_dm_cau_hoi.GroupCount = 1;
             this.m_grv_dm_cau_hoi.Name = "m_grv_dm_cau_hoi";
             this.m_grv_dm_cau_hoi.NewItemRowText = "Thêm câu hỏi mới";
             this.m_grv_dm_cau_hoi.OptionsBehavior.Editable = false;
             this.m_grv_dm_cau_hoi.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_cau_hoi.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.m_grv_dm_cau_hoi.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_nhom_cau_hoi, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.m_grv_dm_cau_hoi.DoubleClick += new System.EventHandler(this.m_grv_dm_cau_hoi_DoubleClick);
             // 
             // c_noi_dung_cau_hoi
@@ -263,6 +268,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox6.Name = "repositoryItemComboBox6";
             // 
+            // c_nhom_cau_hoi
+            // 
+            this.c_nhom_cau_hoi.Caption = "Nhóm câu hỏi";
+            this.c_nhom_cau_hoi.FieldName = "NHOM_CAU_HOI";
+            this.c_nhom_cau_hoi.Name = "c_nhom_cau_hoi";
+            this.c_nhom_cau_hoi.Visible = true;
+            this.c_nhom_cau_hoi.VisibleIndex = 2;
+            // 
             // f100_dm_cau_hoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,5 +334,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox6;
+        private DevExpress.XtraGrid.Columns.GridColumn c_nhom_cau_hoi;
     }
 }
