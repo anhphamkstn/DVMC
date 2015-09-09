@@ -120,6 +120,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_DM_BLACK_LIST.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DM_BLACK_LIST.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_DM_CAU_HOI.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -243,6 +248,17 @@
     </None>
     <None Include="DS_CM_DM_TU_DIEN.xss">
       <DependentUpon>DS_CM_DM_TU_DIEN.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_BLACK_LIST.xsc">
+      <DependentUpon>DS_DM_BLACK_LIST.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DM_BLACK_LIST.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DM_BLACK_LIST.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_DM_BLACK_LIST.xss">
+      <DependentUpon>DS_DM_BLACK_LIST.xsd</DependentUpon>
     </None>
     <None Include="DS_DM_CAU_HOI.xsc">
       <DependentUpon>DS_DM_CAU_HOI.xsd</DependentUpon>

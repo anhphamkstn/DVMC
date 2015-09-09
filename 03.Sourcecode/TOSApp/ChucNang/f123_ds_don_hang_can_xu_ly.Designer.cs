@@ -39,8 +39,8 @@
             this.c_thoi_gian_tao = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_loai_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_can_xu_ly)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_hang_can_xu_ly)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,6 +61,118 @@
             // 
             // m_grv_ds_don_hang_can_xu_ly
             // 
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButton.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButtonActive.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Empty.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Empty.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.EvenRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.EvenRow.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.EvenRow.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterCloseButton.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterCloseButton.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterCloseButton.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterPanel.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FilterPanel.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(159)))), ((int)(((byte)(69)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FixedLine.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedCell.BackColor = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedCell.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedCell.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(152)))), ((int)(((byte)(49)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedRow.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FocusedRow.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FooterPanel.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FooterPanel.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.FooterPanel.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupButton.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupButton.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupButton.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupFooter.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupFooter.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupPanel.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupRow.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.GroupRow.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HeaderPanel.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(176)))), ((int)(((byte)(84)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HideSelectionRow.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.HorzLine.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.OddRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.OddRow.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.OddRow.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.Font = new System.Drawing.Font("Verdana", 7.5F);
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(90)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.Options.UseBorderColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.Options.UseFont = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Preview.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Row.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Row.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.Row.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.RowSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.RowSeparator.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.TopNewRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_xu_ly.Appearance.VertLine.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_xu_ly.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.c_loai_dich_vu,
             this.c_nhom_dich_vu,
@@ -73,6 +185,9 @@
             this.m_grv_ds_don_hang_can_xu_ly.GridControl = this.m_grc_ds_don_hang_can_xu_ly;
             this.m_grv_ds_don_hang_can_xu_ly.Name = "m_grv_ds_don_hang_can_xu_ly";
             this.m_grv_ds_don_hang_can_xu_ly.OptionsBehavior.Editable = false;
+            this.m_grv_ds_don_hang_can_xu_ly.OptionsView.EnableAppearanceEvenRow = true;
+            this.m_grv_ds_don_hang_can_xu_ly.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_don_hang_can_xu_ly.PaintStyleName = "Office2003";
             // 
             // c_loai_dich_vu
             // 
@@ -147,15 +262,6 @@
             this.panel1.Size = new System.Drawing.Size(794, 53);
             this.panel1.TabIndex = 2;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.m_grc_ds_don_hang_can_xu_ly);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 208);
-            this.panel2.TabIndex = 3;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -165,6 +271,15 @@
             this.label1.Size = new System.Drawing.Size(345, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách tất cả đơn hàng đang chờ xử lý";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.m_grc_ds_don_hang_can_xu_ly);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(794, 208);
+            this.panel2.TabIndex = 3;
             // 
             // f123_ds_don_hang_can_xu_ly
             // 

@@ -414,6 +414,18 @@
     <Compile Include="ChucNang\f123_ds_don_hang_can_xu_ly.Designer.cs">
       <DependentUpon>f123_ds_don_hang_can_xu_ly.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f122_blacklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f122_blacklist.Designer.cs">
+      <DependentUpon>f122_blacklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f122_blacklist_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f122_blacklist_detail.Designer.cs">
+      <DependentUpon>f122_blacklist_detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f150_Bo_time_line.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -624,6 +636,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f123_ds_don_hang_can_xu_ly.resx">
       <DependentUpon>f123_ds_don_hang_can_xu_ly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f122_blacklist.resx">
+      <DependentUpon>f122_blacklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f122_blacklist_detail.resx">
+      <DependentUpon>f122_blacklist_detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f150_Bo_time_line.resx">
       <DependentUpon>f150_Bo_time_line.cs</DependentUpon>

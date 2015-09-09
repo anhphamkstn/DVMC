@@ -729,6 +729,23 @@ namespace TOSApp
             v_f.Show();
         }
 
+        private void m_cmd_blacklist_FO_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f122_blacklist v_f = new f122_blacklist();
+            v_f.MdiParent = this;
+            v_f.Show();
+
+        }
+
+     
+
+        private void m_cmd_blacklist_TD_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f122_blacklist v_f = new f122_blacklist();
+            v_f.MdiParent = this;
+            v_f.Show();
+        }
+
       
      
 

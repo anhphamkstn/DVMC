@@ -32,7 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f117_ds_tat_ca_don_dat_hang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.m_grc_ds_don_dat_hang = new DevExpress.XtraGrid.GridControl();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.m_grv_ds_don_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -45,20 +50,14 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.m_grc_ds_don_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,17 +80,63 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh sách tất cả các đơn hàng";
             // 
-            // m_grc_ds_don_dat_hang
+            // panel2
             // 
-            this.m_grc_ds_don_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_ds_don_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_ds_don_dat_hang.Location = new System.Drawing.Point(0, 0);
-            this.m_grc_ds_don_dat_hang.MainView = this.m_grv_ds_don_dat_hang;
-            this.m_grc_ds_don_dat_hang.Name = "m_grc_ds_don_dat_hang";
-            this.m_grc_ds_don_dat_hang.Size = new System.Drawing.Size(1213, 238);
-            this.m_grc_ds_don_dat_hang.TabIndex = 0;
-            this.m_grc_ds_don_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_grv_ds_don_dat_hang});
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 291);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1213, 53);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.m_cmd_chinh_sua_don_hang);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1013, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 53);
+            this.panel3.TabIndex = 0;
+            // 
+            // m_cmd_chinh_sua_don_hang
+            // 
+            this.m_cmd_chinh_sua_don_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_chinh_sua_don_hang.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseFont = true;
+            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseForeColor = true;
+            this.m_cmd_chinh_sua_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_chinh_sua_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chinh_sua_don_hang.Image")));
+            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
+            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(200, 53);
+            this.m_cmd_chinh_sua_don_hang.TabIndex = 2;
+            this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật ";
+            this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1213, 344);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.m_grc_ds_don_dat_hang);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 53);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1213, 238);
+            this.panel5.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
             // 
             // m_grv_ds_don_dat_hang
             // 
@@ -225,8 +270,7 @@
             this.gridColumn9,
             this.gridColumn1,
             this.gridColumn10,
-            this.gridColumn11,
-            this.gridColumn12});
+            this.gridColumn11});
             this.m_grv_ds_don_dat_hang.GridControl = this.m_grc_ds_don_dat_hang;
             this.m_grv_ds_don_dat_hang.Name = "m_grv_ds_don_dat_hang";
             this.m_grv_ds_don_dat_hang.OptionsBehavior.Editable = false;
@@ -336,72 +380,17 @@
             this.gridColumn11.VisibleIndex = 10;
             this.gridColumn11.Width = 89;
             // 
-            // gridColumn12
+            // m_grc_ds_don_dat_hang
             // 
-            this.gridColumn12.Caption = "Trạng thái hết hạn đơn hàng";
-            this.gridColumn12.FieldName = "THAO_TAC_HET_HAN_YN";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 11;
-            this.gridColumn12.Width = 118;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 291);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1213, 53);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.m_cmd_chinh_sua_don_hang);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1013, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 53);
-            this.panel3.TabIndex = 0;
-            // 
-            // m_cmd_chinh_sua_don_hang
-            // 
-            this.m_cmd_chinh_sua_don_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_chinh_sua_don_hang.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseFont = true;
-            this.m_cmd_chinh_sua_don_hang.Appearance.Options.UseForeColor = true;
-            this.m_cmd_chinh_sua_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_chinh_sua_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chinh_sua_don_hang.Image")));
-            this.m_cmd_chinh_sua_don_hang.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_chinh_sua_don_hang.Name = "m_cmd_chinh_sua_don_hang";
-            this.m_cmd_chinh_sua_don_hang.Size = new System.Drawing.Size(200, 53);
-            this.m_cmd_chinh_sua_don_hang.TabIndex = 2;
-            this.m_cmd_chinh_sua_don_hang.Text = "Cập nhật ";
-            this.m_cmd_chinh_sua_don_hang.Click += new System.EventHandler(this.m_cmd_chinh_sua_don_hang_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.panel1);
-            this.panel4.Controls.Add(this.panel2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1213, 344);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.m_grc_ds_don_dat_hang);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 53);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1213, 238);
-            this.panel5.TabIndex = 2;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10000;
+            this.m_grc_ds_don_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_ds_don_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_ds_don_dat_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_grc_ds_don_dat_hang.MainView = this.m_grv_ds_don_dat_hang;
+            this.m_grc_ds_don_dat_hang.Name = "m_grc_ds_don_dat_hang";
+            this.m_grc_ds_don_dat_hang.Size = new System.Drawing.Size(1213, 238);
+            this.m_grc_ds_don_dat_hang.TabIndex = 0;
+            this.m_grc_ds_don_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_ds_don_dat_hang});
             // 
             // f117_ds_tat_ca_don_dat_hang
             // 
@@ -413,12 +402,12 @@
             this.Text = "f117_Danh sách tất cả đơn hàng";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,6 +415,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.GridControl m_grc_ds_don_dat_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_don_dat_hang;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
@@ -439,13 +435,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label1;
     }
 }

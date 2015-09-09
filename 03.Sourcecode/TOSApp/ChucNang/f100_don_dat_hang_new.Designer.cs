@@ -248,9 +248,9 @@
             // m_cmd_tu_choi
             // 
             this.m_cmd_tu_choi.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_tu_choi.Image")));
-            this.m_cmd_tu_choi.Location = new System.Drawing.Point(727, 4);
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(734, 4);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
-            this.m_cmd_tu_choi.Size = new System.Drawing.Size(117, 36);
+            this.m_cmd_tu_choi.Size = new System.Drawing.Size(110, 36);
             this.m_cmd_tu_choi.TabIndex = 21;
             this.m_cmd_tu_choi.Text = "&Từ chối ";
             this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);

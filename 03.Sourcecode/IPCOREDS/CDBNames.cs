@@ -917,4 +917,17 @@ namespace IPCOREDS.CDBNames
         public const string ID_NHOM = "ID_NHOM";
         public const string ID_CHI_NHANH = "ID_CHI_NHANH";
     }
+    public class DM_BLACK_LIST
+    {
+        public const string ID = "ID";
+        public const string SO_DIEN_THOAI = "SO_DIEN_THOAI";
+        public const string ID_NGUOI_ADD = "ID_NGUOI_ADD";
+        public const string ID_NGUOI_REMOVE = "ID_NGUOI_REMOVE";
+        public const string NGAY_ADD = "NGAY_ADD";
+        public const string NGAY_REMOVE = "NGAY_REMOVE";
+        public const string ADD_YN = "ADD_YN";
+        public const string HO_TEN_CHU_DIEN_THOAI = "HO_TEN_CHU_DIEN_THOAI";
+        public const string GHI_CHU_LY_DO = "GHI_CHU_LY_DO";
+    }
+
 }
