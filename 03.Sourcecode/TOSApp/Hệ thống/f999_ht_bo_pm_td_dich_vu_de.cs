@@ -241,16 +241,17 @@ namespace TOSApp.Hệ_thống
 
         private void f999_ht_bo_pm_td_dich_vu_de_Load(object sender, EventArgs e)
         {
-            if(us_user.dcIDNhom != 5)
-            {
-                grv_danh_sach_bo.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-                grv_danh_sach_pm.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-                grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-                m_pan_button.Visible = false;
-                txt_dich_vu.ReadOnly = true;
-                cbo_nhom_dich_vu.Enabled = false;
-                cbo_loai_dich_vu.Enabled = false;
-            }
+            grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+            //if(us_user.dcIDNhom != 5)
+            //{
+            //    grv_danh_sach_bo.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+            //    grv_danh_sach_pm.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+            //    grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+            //    m_pan_button.Visible = false;
+            //    txt_dich_vu.ReadOnly = true;
+            //    cbo_nhom_dich_vu.Enabled = false;
+            //    cbo_loai_dich_vu.Enabled = false;
+            //}
         }
 
         private void cbo_loai_dich_vu_SelectedIndexChanged(object sender, EventArgs e)
@@ -262,6 +263,7 @@ namespace TOSApp.Hệ_thống
         {
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             load_data_to_form();
+            m_pan_xoa.Visible = false;
             this.ShowDialog();
         }
 

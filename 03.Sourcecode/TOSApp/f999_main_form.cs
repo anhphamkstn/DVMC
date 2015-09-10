@@ -768,12 +768,21 @@ namespace TOSApp
             v_f.Show();
         }
 
-      
-     
+        private void m_cmd_ds_can_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(0);
+            v_f.MdiParent = this;
+            v_f.Text = "f125 - danh sách đơn hàng cần đánh giá";
+            v_f.Show();
+        }
 
-      
-
-
+        private void m_cmd_ds_da_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(1);
+            v_f.MdiParent = this;
+            v_f.Text = "f125 - danh sách đơn hàng đã đánh giá";
+            v_f.Show();
+        }
 
 
     }

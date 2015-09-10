@@ -65,6 +65,8 @@
             this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_pm_don_hang_dang_xu_ly = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_pm_don_hang_can_xu_ly = new DevExpress.XtraBars.BarButtonItem();
+            this.m_rib_blacklist = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_blacklist_pm = new DevExpress.XtraBars.BarButtonItem();
             this.m_rbc_BO = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_don_hang_can_tiep_nhan_BO = new DevExpress.XtraBars.BarButtonItem();
@@ -121,8 +123,9 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_rib_blacklist = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_cmd_blacklist_pm = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_ds_can_danh_gia = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_ds_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -193,7 +196,8 @@
             // m_rbc_TM
             // 
             this.m_rbc_TM.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup14});
+            this.ribbonPageGroup14,
+            this.ribbonPageGroup22});
             this.m_rbc_TM.Image = ((System.Drawing.Image)(resources.GetObject("m_rbc_TM.Image")));
             this.m_rbc_TM.Name = "m_rbc_TM";
             this.m_rbc_TM.Text = "Nghiệp vụ TM";
@@ -413,6 +417,22 @@
             this.m_cmd_pm_don_hang_can_xu_ly.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_pm_don_hang_can_xu_ly.LargeGlyph")));
             this.m_cmd_pm_don_hang_can_xu_ly.Name = "m_cmd_pm_don_hang_can_xu_ly";
             this.m_cmd_pm_don_hang_can_xu_ly.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_pm_don_hang_can_xu_ly_ItemClick);
+            // 
+            // m_rib_blacklist
+            // 
+            this.m_rib_blacklist.AllowTextClipping = false;
+            this.m_rib_blacklist.ItemLinks.Add(this.m_cmd_blacklist_pm);
+            this.m_rib_blacklist.Name = "m_rib_blacklist";
+            this.m_rib_blacklist.Text = "BlackList";
+            // 
+            // m_cmd_blacklist_pm
+            // 
+            this.m_cmd_blacklist_pm.Caption = "Black List";
+            this.m_cmd_blacklist_pm.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_blacklist_pm.Glyph")));
+            this.m_cmd_blacklist_pm.Id = 55;
+            this.m_cmd_blacklist_pm.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_blacklist_pm.LargeGlyph")));
+            this.m_cmd_blacklist_pm.Name = "m_cmd_blacklist_pm";
+            this.m_cmd_blacklist_pm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_blacklist_pm_ItemClick);
             // 
             // m_rbc_BO
             // 
@@ -670,9 +690,11 @@
             this.m_cmd_blacklist_FO,
             this.m_cmd_blacklist_TD,
             this.m_cmd_dang_xuat,
-            this.m_cmd_blacklist_pm});
+            this.m_cmd_blacklist_pm,
+            this.m_cmd_ds_can_danh_gia,
+            this.m_cmd_ds_da_danh_gia});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 56;
+            this.ribbonControl1.MaxItemId = 60;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -907,21 +929,30 @@
             this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             this.ribbonPageGroup23.Text = "Danh sách tất cả đơn hàng chờ xử lý";
             // 
-            // m_rib_blacklist
+            // ribbonPageGroup22
             // 
-            this.m_rib_blacklist.AllowTextClipping = false;
-            this.m_rib_blacklist.ItemLinks.Add(this.m_cmd_blacklist_pm);
-            this.m_rib_blacklist.Name = "m_rib_blacklist";
-            this.m_rib_blacklist.Text = "BlackList";
+            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_can_danh_gia);
+            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_da_danh_gia);
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
+            this.ribbonPageGroup22.Text = "Đánh giá của khách hàng";
             // 
-            // m_cmd_blacklist_pm
+            // m_cmd_ds_can_danh_gia
             // 
-            this.m_cmd_blacklist_pm.Caption = "Black List";
-            this.m_cmd_blacklist_pm.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_blacklist_pm.Glyph")));
-            this.m_cmd_blacklist_pm.Id = 55;
-            this.m_cmd_blacklist_pm.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_blacklist_pm.LargeGlyph")));
-            this.m_cmd_blacklist_pm.Name = "m_cmd_blacklist_pm";
-            this.m_cmd_blacklist_pm.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_blacklist_pm_ItemClick);
+            this.m_cmd_ds_can_danh_gia.Caption = "Danh sách đơn hàng cần đánh giá";
+            this.m_cmd_ds_can_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_can_danh_gia.Glyph")));
+            this.m_cmd_ds_can_danh_gia.Id = 58;
+            this.m_cmd_ds_can_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_can_danh_gia.LargeGlyph")));
+            this.m_cmd_ds_can_danh_gia.Name = "m_cmd_ds_can_danh_gia";
+            this.m_cmd_ds_can_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_can_danh_gia_ItemClick);
+            // 
+            // m_cmd_ds_da_danh_gia
+            // 
+            this.m_cmd_ds_da_danh_gia.Caption = "Danh sách đơn hàng đã đánh giá";
+            this.m_cmd_ds_da_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.Glyph")));
+            this.m_cmd_ds_da_danh_gia.Id = 59;
+            this.m_cmd_ds_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.LargeGlyph")));
+            this.m_cmd_ds_da_danh_gia.Name = "m_cmd_ds_da_danh_gia";
+            this.m_cmd_ds_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_da_danh_gia_ItemClick);
             // 
             // f999_main_form
             // 
@@ -1036,6 +1067,9 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_dang_xuat;
         private DevExpress.XtraBars.BarButtonItem m_cmd_blacklist_pm;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_rib_blacklist;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_ds_can_danh_gia;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_ds_da_danh_gia;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
 
 	}
 }

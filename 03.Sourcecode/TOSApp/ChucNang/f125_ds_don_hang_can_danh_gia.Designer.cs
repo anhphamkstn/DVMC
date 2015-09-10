@@ -1,6 +1,6 @@
 ﻿namespace TOSApp.ChucNang
 {
-    partial class f119_ds_don_hang_hoan_thanh
+    partial class f125_ds_don_hang_can_danh_gia
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f125_ds_don_hang_can_danh_gia));
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.m_grc_ds_dh_hoan_thanh = new DevExpress.XtraGrid.GridControl();
@@ -41,13 +41,14 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_pan_button = new System.Windows.Forms.Panel();
+            this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dh_hoan_thanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_dh_hoan_thanh)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.m_pan_button.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,8 +57,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(850, 52);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(835, 52);
+            this.panel1.TabIndex = 1;
             // 
             // m_lab_tieu_de
             // 
@@ -77,8 +78,8 @@
             this.m_grc_ds_dh_hoan_thanh.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_dh_hoan_thanh.MainView = this.m_grv_ds_dh_hoan_thanh;
             this.m_grc_ds_dh_hoan_thanh.Name = "m_grc_ds_dh_hoan_thanh";
-            this.m_grc_ds_dh_hoan_thanh.Size = new System.Drawing.Size(850, 212);
-            this.m_grc_ds_dh_hoan_thanh.TabIndex = 0;
+            this.m_grc_ds_dh_hoan_thanh.Size = new System.Drawing.Size(835, 245);
+            this.m_grc_ds_dh_hoan_thanh.TabIndex = 2;
             this.m_grc_ds_dh_hoan_thanh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_dh_hoan_thanh});
             // 
@@ -204,8 +205,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH,
             this.gridColumn6,
             this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9});
+            this.gridColumn8});
             this.m_grv_ds_dh_hoan_thanh.GridControl = this.m_grc_ds_dh_hoan_thanh;
             this.m_grv_ds_dh_hoan_thanh.Name = "m_grv_ds_dh_hoan_thanh";
             this.m_grv_ds_dh_hoan_thanh.OptionsBehavior.Editable = false;
@@ -278,43 +278,54 @@
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
             // 
-            // gridColumn9
+            // m_pan_button
             // 
-            this.gridColumn9.Caption = "GHI CHÚ";
-            this.gridColumn9.FieldName = "GHI_CHU";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
+            this.m_pan_button.Controls.Add(this.m_cmd_danh_gia);
+            this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_pan_button.Location = new System.Drawing.Point(0, 297);
+            this.m_pan_button.Name = "m_pan_button";
+            this.m_pan_button.Size = new System.Drawing.Size(835, 48);
+            this.m_pan_button.TabIndex = 3;
             // 
-            // timer1
+            // m_cmd_danh_gia
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10000;
+            this.m_cmd_danh_gia.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_danh_gia.Appearance.Options.UseFont = true;
+            this.m_cmd_danh_gia.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_danh_gia.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_danh_gia.Image")));
+            this.m_cmd_danh_gia.Location = new System.Drawing.Point(699, 0);
+            this.m_cmd_danh_gia.Name = "m_cmd_danh_gia";
+            this.m_cmd_danh_gia.Size = new System.Drawing.Size(136, 48);
+            this.m_cmd_danh_gia.TabIndex = 0;
+            this.m_cmd_danh_gia.Text = "Đánh giá";
+            this.m_cmd_danh_gia.Click += new System.EventHandler(this.m_cmd_danh_gia_Click);
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.Controls.Add(this.m_grc_ds_dh_hoan_thanh);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 52);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(850, 212);
-            this.panel2.TabIndex = 1;
+            this.panel3.Controls.Add(this.m_grc_ds_dh_hoan_thanh);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 52);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(835, 245);
+            this.panel3.TabIndex = 4;
             // 
-            // f119_ds_don_hang_hoan_thanh
+            // f125_ds_don_hang_can_danh_gia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 264);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(835, 345);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.m_pan_button);
             this.Controls.Add(this.panel1);
-            this.Name = "f119_ds_don_hang_hoan_thanh";
-            this.Text = "f119_Đơn hàng đã hoàn thành";
-            this.Load += new System.EventHandler(this.f119_ds_don_hang_hoan_thanh_Load);
+            this.Name = "f125_ds_don_hang_can_danh_gia";
+            this.Text = "f125_ds_don_hang_can_danh_gia";
+            this.Load += new System.EventHandler(this.f125_ds_don_hang_can_danh_gia_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dh_hoan_thanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_dh_hoan_thanh)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.m_pan_button.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -322,6 +333,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label m_lab_tieu_de;
         private DevExpress.XtraGrid.GridControl m_grc_ds_dh_hoan_thanh;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_dh_hoan_thanh;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -332,9 +344,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label m_lab_tieu_de;
+        private System.Windows.Forms.Panel m_pan_button;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_danh_gia;
+        private System.Windows.Forms.Panel panel3;
     }
 }

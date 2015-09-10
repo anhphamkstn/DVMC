@@ -22,15 +22,19 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-      //      string m_str_filed =" MA_DON_HANG,HO_TEN_USER_DAT_HANG,MA_DON_VI,DIEN_THOAI,TEN_YEU_CAU,NOI_DUNG_DAT_HANG,THOI_GIAN_HOAN_THANH,GHI_CHU ";
+            //string m_str_filed =" MA_DON_HANG,HO_TEN_USER_DAT_HANG,MA_DON_VI,DIEN_THOAI,TEN_YEU_CAU,NOI_DUNG_DAT_HANG,THOI_GIAN_HOAN_THANH,GHI_CHU ";
             //v_us.FillDatasetWithTableName(v_ds, "V_GD_DAT_HANG_GD_LOG_DAT_HANG");
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N'");
-
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where thoi_gian_hoan_thanh is not null AND (THAO_TAC_HET_HAN_YN = 'N' OR (THAO_TAC_HET_HAN_YN = 'Y' AND ID_LOAI_THAO_TAC = 299))");
             m_grc_ds_dh_hoan_thanh.DataSource = v_ds.Tables[0];
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
             load_data_2_grid();
+
+        }
+
+        private void f119_ds_don_hang_hoan_thanh_Load(object sender, EventArgs e)
+        {
 
         }
 

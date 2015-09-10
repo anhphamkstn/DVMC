@@ -39,6 +39,7 @@ namespace TOSApp.ChucNang
                     m_us_nguoi_sd_nhom_cn.dcID_CHI_NHANH = us_user.dcCHI_NHANH;
                     m_us_nguoi_sd_nhom_cn.Insert();
                     MessageBox.Show("Thành công!");
+                    this.Close();
                 }
             }
             catch (Exception v_e)
@@ -94,8 +95,8 @@ namespace TOSApp.ChucNang
         private void f121_tao_user_moi_Load(object sender, EventArgs e)
         {
             string v_str_query = "";
-            if (us_user.dcID == 5)
-                v_str_query = "SELECT ID, MA_NHOM FROM HT_NHOM_NGUOI_SU_DUNG NOT IN (6)";
+            if (us_user.dcIDNhom == 5)
+                v_str_query = "SELECT ID, MA_NHOM FROM HT_NHOM_NGUOI_SU_DUNG WHERE ID NOT IN (6)";
             else
                 v_str_query = "SELECT ID, MA_NHOM FROM HT_NHOM_NGUOI_SU_DUNG WHERE ID NOT IN  (3,4,5,6)";
             WinFormControls.load_data_to_combobox_with_query(m_cbo_cap_xu_ly, "ID", "MA_NHOM", WinFormControls.eTAT_CA.NO, v_str_query);

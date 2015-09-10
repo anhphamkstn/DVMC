@@ -426,6 +426,18 @@
     <Compile Include="ChucNang\f122_blacklist_detail.Designer.cs">
       <DependentUpon>f122_blacklist_detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f124_danh_gia_cua_khach_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f124_danh_gia_cua_khach_hang.Designer.cs">
+      <DependentUpon>f124_danh_gia_cua_khach_hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f125_ds_don_hang_can_danh_gia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f125_ds_don_hang_can_danh_gia.Designer.cs">
+      <DependentUpon>f125_ds_don_hang_can_danh_gia.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f150_Bo_time_line.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -636,6 +648,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f122_blacklist_detail.resx">
       <DependentUpon>f122_blacklist_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f124_danh_gia_cua_khach_hang.resx">
+      <DependentUpon>f124_danh_gia_cua_khach_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f125_ds_don_hang_can_danh_gia.resx">
+      <DependentUpon>f125_ds_don_hang_can_danh_gia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f150_Bo_time_line.resx">
       <DependentUpon>f150_Bo_time_line.cs</DependentUpon>

@@ -61,7 +61,7 @@
             this.m_txt_ho_ten.Location = new System.Drawing.Point(146, 27);
             this.m_txt_ho_ten.Name = "m_txt_ho_ten";
             this.m_txt_ho_ten.Size = new System.Drawing.Size(162, 22);
-            this.m_txt_ho_ten.TabIndex = 2;
+            this.m_txt_ho_ten.TabIndex = 1;
             // 
             // m_txt_ten_truy_cap
             // 
@@ -69,7 +69,7 @@
             this.m_txt_ten_truy_cap.Location = new System.Drawing.Point(146, 88);
             this.m_txt_ten_truy_cap.Name = "m_txt_ten_truy_cap";
             this.m_txt_ten_truy_cap.Size = new System.Drawing.Size(162, 22);
-            this.m_txt_ten_truy_cap.TabIndex = 4;
+            this.m_txt_ten_truy_cap.TabIndex = 2;
             // 
             // label2
             // 
@@ -87,7 +87,7 @@
             this.m_txt_mat_khau.Location = new System.Drawing.Point(146, 145);
             this.m_txt_mat_khau.Name = "m_txt_mat_khau";
             this.m_txt_mat_khau.Size = new System.Drawing.Size(162, 22);
-            this.m_txt_mat_khau.TabIndex = 6;
+            this.m_txt_mat_khau.TabIndex = 3;
             // 
             // label3
             // 
@@ -107,7 +107,7 @@
             this.m_cbo_cap_xu_ly.Location = new System.Drawing.Point(486, 148);
             this.m_cbo_cap_xu_ly.Name = "m_cbo_cap_xu_ly";
             this.m_cbo_cap_xu_ly.Size = new System.Drawing.Size(162, 24);
-            this.m_cbo_cap_xu_ly.TabIndex = 7;
+            this.m_cbo_cap_xu_ly.TabIndex = 6;
             // 
             // label4
             // 
@@ -125,7 +125,7 @@
             this.m_txt_email.Location = new System.Drawing.Point(486, 27);
             this.m_txt_email.Name = "m_txt_email";
             this.m_txt_email.Size = new System.Drawing.Size(162, 22);
-            this.m_txt_email.TabIndex = 11;
+            this.m_txt_email.TabIndex = 4;
             // 
             // label5
             // 
@@ -144,7 +144,7 @@
             this.m_txt_mat_khau_email.Name = "m_txt_mat_khau_email";
             this.m_txt_mat_khau_email.PasswordChar = '*';
             this.m_txt_mat_khau_email.Size = new System.Drawing.Size(162, 22);
-            this.m_txt_mat_khau_email.TabIndex = 13;
+            this.m_txt_mat_khau_email.TabIndex = 5;
             // 
             // label6
             // 
@@ -164,7 +164,7 @@
             this.m_cmd_luu.Location = new System.Drawing.Point(593, 223);
             this.m_cmd_luu.Name = "m_cmd_luu";
             this.m_cmd_luu.Size = new System.Drawing.Size(94, 43);
-            this.m_cmd_luu.TabIndex = 9;
+            this.m_cmd_luu.TabIndex = 7;
             this.m_cmd_luu.Text = "&Lưu";
             this.m_cmd_luu.Click += new System.EventHandler(this.m_cmd_luu_Click);
             // 
@@ -180,6 +180,7 @@
             // 
             // f121_tao_user_moi
             // 
+            this.AcceptButton = this.m_cmd_luu;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 278);

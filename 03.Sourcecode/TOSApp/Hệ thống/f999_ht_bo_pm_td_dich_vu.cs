@@ -28,6 +28,7 @@ namespace TOSApp.Hệ_thống
             //}
             load_data_to_grv();
         }
+
         private void load_data_to_grv()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
