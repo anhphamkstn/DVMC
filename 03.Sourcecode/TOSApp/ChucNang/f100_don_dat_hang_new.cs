@@ -55,7 +55,18 @@ namespace TOSApp.ChucNang
             load_data_2_selected_loai_dich_vu();
             load_data_2_selected_thoi_gian_hoan_thanh();
             load_data_2_grid_khach_hang_don_hang();
+            load_data_2_search_look_edit();
            
+
+        }
+
+        private void load_data_2_search_look_edit()
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithTableName(v_ds, "V_DM_LOAI_YEU_CAU");
+            m_searchLookUpEdit_dv.Properties.DataSource= v_ds.Tables[0];
 
         }
 

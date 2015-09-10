@@ -134,6 +134,7 @@
             this.m_chk_gui_email_YN.AutoSize = true;
             this.m_chk_gui_email_YN.Checked = true;
             this.m_chk_gui_email_YN.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.m_chk_gui_email_YN.Enabled = false;
             this.m_chk_gui_email_YN.Location = new System.Drawing.Point(2, 288);
             this.m_chk_gui_email_YN.Name = "m_chk_gui_email_YN";
             this.m_chk_gui_email_YN.Size = new System.Drawing.Size(148, 17);
