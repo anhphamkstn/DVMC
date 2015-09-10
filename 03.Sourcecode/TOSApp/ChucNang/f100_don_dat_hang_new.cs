@@ -24,18 +24,13 @@ namespace TOSApp.ChucNang
     public partial class f100_don_dat_hang_new : Form
     {
        
-        decimal m_dc_id_loai_dich_vu=-1;
-        //decimal m_dc_loai_dich_vu = -1;
-        //decimal m_dc_ten_dich_vu = -1;
+        decimal m_dc_id_loai_dich_vu=-1;     
         decimal m_id_dich_vu;
 
         public f100_don_dat_hang_new()
         {
-            InitializeComponent();
-         //   fomat_controlls_form();
-            load_data_2_selected();
-          
-            
+            InitializeComponent();        
+            load_data_2_selected();       
         }
 
         DataEntryFormMode m_e_form_mode = new DataEntryFormMode();
@@ -116,7 +111,7 @@ namespace TOSApp.ChucNang
             WinFormControls.load_data_to_combobox_with_query(m_cbo_user_nhan_vien_dat_hang, "ID", "USER_EMAIL", WinFormControls.eTAT_CA.NO, "SELECT ID, dbo.f_get_user_name_user_nhan_vien_dat_hang(EMAIL) as USER_EMAIL FROM DM_KHACH_HANG");
         }
 
-        
+
         //don vị đặt hàng
         private void load_data_2_selected_don_vi()
         {
@@ -160,26 +155,12 @@ namespace TOSApp.ChucNang
             WinFormControls.load_data_to_combobox_with_query(m_cbo_trang_thai_don_hang, "ID", "TEN", WinFormControls.eTAT_CA.NO, "select TEN from CM_DM_TU_DIEN where ID_LOAI_TU_DIEN =17");
         }
          
-       
 
         private void random_data_2_ma_don_hang()
         {
             m_txt_ma_don_hang.Text = "DVMC2015"+new Random().Next(100000, 999999).ToString();
         }
         #endregion
-
-        //hàm này dùng để fomat controll trước khi tạo một đơn hàng mới,
-        
-    
-     
-
-        private void m_chon_nguoi_xu_ly(object sender, EventArgs e)
-        {
-            f102_chon_danh_sach_nguoi_xu_ly_new v_f102 = new f102_chon_danh_sach_nguoi_xu_ly_new();
-            v_f102.ShowDialog();
-        }
-
-       
 
         private void m_cmd_thoat_Click(object sender, EventArgs e)
         {
@@ -219,8 +200,7 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
-                                     
-                  
+
                         if (m_lst_id_nguoi_xu_ly.Count == 0)
                         {
                             MessageBox.Show("Vui lòng chọn người tiếp nhận xử lý!");
@@ -739,27 +719,19 @@ namespace TOSApp.ChucNang
             try
             {
                 f102_chon_danh_sach_nguoi_xu_ly_new v_f102 = new f102_chon_danh_sach_nguoi_xu_ly_new();
-
                 m_id_dich_vu = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString());
                 if (m_id_dich_vu == 0)
                 {
                     MessageBox.Show("hãy chọn dịch vụ");
-
                 }
                 else
-
-
                 v_f102.Display(ref m_lst_id_nguoi_xu_ly, m_id_dich_vu);
-
             }
             catch (Exception v_e)
             {
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
-      
-          //  v_f102.ShowDialog();
-
         }
 
         private void m_cmd_tu_choi_Click(object sender, EventArgs e)
@@ -795,31 +767,7 @@ namespace TOSApp.ChucNang
 
 
 
-        /// <hàm này tạm thời không dùng>
-        /// 
-        /// </summary>
-        /// <param name="v_us"></param>
-        //internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
-        //{
-        //    try
-        //    {
-        //        format_controlls();
-        //        us_2_form(v_us);
-        //        m_e_form_mode= DataEntryFormMode.UpdateDataState;
-        //        M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
-               
-        //            load_data_2_lich_su_thuc_hien();
-
-                
-        //        this.ShowDialog();
-
-        //    }
-        //    catch (Exception v_e)
-        //    {
-                
-        //        CSystemLog_301.ExceptionHandle(v_e);
-        //    }
-        //}
+ 
 
         private void us_2_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
@@ -833,28 +781,12 @@ namespace TOSApp.ChucNang
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.dcID_NGUOI_TAO;
             m_dat_thoi_diem_can_hoan_thanh.Text = v_us.datTHOI_DIEM_CAN_HOAN_THANH.ToString();
-           // m_dat_thoi_gian_dat_hang.Value = v_us.datTHOI_GIAN_DAT_HANG;
-      //      m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
-            //m_cbo_loai_dich_vu.SelectedValue = v_us.dcID_NHOM_DV_YEU_CAU;
-            //if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 200) m_rdb_loai_time_15phut.Checked = true;
-            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 201) m_rdb_loai_time_4h.Checked = true;
-            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 202) m_rdb_loai_time_1ngay.Checked = true;
-            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 203) m_rdb_loai_time_1tuan.Checked = true;
-            //else if (v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH == 204) m_rdb_loai_time_1thang.Checked = true;
-
             m_cbo_thoi_gian_hoan_thanh.SelectedValue = v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH;
-           // WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "ten_dich_vu", WinFormControls.eTAT_CA.NO, " where id_cha=" + v_us.dcID_NHOM_DV_YEU_CAU);
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
             m_txt_phan_hoi_tu_dvmc.Text = v_us.strPHAN_HOI_TU_DVMC;
-          //  m_txt_lich_su_trao_doi.Text = "";
-          m_cbo_trang_thai_don_hang.SelectedText = v_us.strTEN_LOAI_THAO_TAC_LOG;
-           // WinFormControls.load_data_to_combobox("V_GD_DAT_HANG_GD_LOG_DAT_HANG","ID_LOAI_THAO_TAC","TEN_LOAI_THAO_TAC_LOG"," WHERE ID_LOAI_THAO_TAC="+v_us.dcID_LOAI_THAO_TAC,WinFormControls.eTAT_CA.NO,m_cbo_trang_thai_don_hang);
-          M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
-                
-          
-
-         //  WinFormControls.load_data_to_combobox_with_query(m_cbo_nguoi_nhan_dat_hang, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT * FROM CM_DM_TU_DIEN WHERE ID_LOAI_TU_DIEN= 17 AND ID=" + v_us.dcID_LOAI_THAO_TAC);
-
+             m_cbo_trang_thai_don_hang.SelectedText = v_us.strTEN_LOAI_THAO_TAC_LOG;
+              M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
+     
         }
 
         private void format_controlls()
@@ -871,7 +803,6 @@ namespace TOSApp.ChucNang
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.Enabled = false;
-         //   m_dat_thoi_diem_can_hoan_thanh.Enabled = false;
             m_cbo_trang_thai_don_hang.Enabled = false;
             m_cbo_loai_dich_vu_1.Enabled = false;
             m_cbo_loai_dich_vu_2.Enabled = false;
@@ -886,24 +817,11 @@ namespace TOSApp.ChucNang
 
         private void m_cbo_loai_dich_vu_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            //  m_dc_id_loai_dich_vu = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString());
+    
             load_data_2_selected_dich_vu();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                f150_Bo_time_line v_f = new f150_Bo_time_line(CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString()));
-                v_f.ShowDialog();
-            }
-            catch (Exception v_e)
-            {
-
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
+     
 
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us, decimal deadline_id)
         {
@@ -1005,10 +923,25 @@ namespace TOSApp.ChucNang
             }
         }
 
+        private void m_btn_timeline_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                f150_Bo_time_line v_f = new f150_Bo_time_line(CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue.ToString()));
+                v_f.ShowDialog();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
 
+        private void m_cbo_dv_don_vi_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
 
-
+        
 
     }
 }

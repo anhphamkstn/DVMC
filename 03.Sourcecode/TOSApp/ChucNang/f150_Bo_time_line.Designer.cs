@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
             DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -76,9 +77,7 @@
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.calendarToolsRibbonPageCategory1 = new DevExpress.XtraScheduler.UI.CalendarToolsRibbonPageCategory();
             this.m_sch = new DevExpress.XtraScheduler.SchedulerControl();
-            this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage();
-            this.appointmentsBindingSource = new System.Windows.Forms.BindingSource();
-            this.resourcesBindingSource = new System.Windows.Forms.BindingSource();
+            this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.appointmentRibbonPage1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPage();
             this.actionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup();
             this.optionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup();
@@ -96,6 +95,8 @@
             this.activeViewRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ActiveViewRibbonPageGroup();
             this.timeScaleRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.TimeScaleRibbonPageGroup();
             this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
+            this.appointmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             this.changeAppointmentReminderItem2 = new DevExpress.XtraScheduler.UI.ChangeAppointmentReminderItem();
             this.dateNavigator = new DevExpress.XtraScheduler.DateNavigator();
@@ -451,7 +452,6 @@
             // 
             // schedulerStorage
             // 
-            //this.schedulerStorage.Appointments.Mappings.AllDay = "AllDay";
             this.schedulerStorage.Appointments.Mappings.Description = "NOI_DUNG_DAT_HANG";
             this.schedulerStorage.Appointments.Mappings.End = "EndDate";
             this.schedulerStorage.Appointments.Mappings.Label = "Label";
@@ -463,22 +463,12 @@
             this.schedulerStorage.Appointments.Mappings.Status = "Status";
             this.schedulerStorage.Appointments.Mappings.Subject = "Subject";
             this.schedulerStorage.Appointments.Mappings.Type = "Type";
-
             this.schedulerStorage.Resources.Mappings.Caption = "TEN_TRUY_CAP";
-            this.schedulerStorage.Resources.Mappings.Color = "CAP_SU_DUNG";
             this.schedulerStorage.Resources.Mappings.Id = "ID_NGUOI_SU_DUNG";
             this.schedulerStorage.Resources.Mappings.Image = "Image";
             this.schedulerStorage.AppointmentsInserted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.OnAppointmentChangedInsertedDeleted);
             this.schedulerStorage.AppointmentsChanged += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.OnAppointmentChangedInsertedDeleted);
             this.schedulerStorage.AppointmentsDeleted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.OnAppointmentChangedInsertedDeleted);
-            // 
-            // appointmentsBindingSource
-            // 
-            this.appointmentsBindingSource.DataMember = "Appointments";
-            // 
-            // resourcesBindingSource
-            // 
-            this.resourcesBindingSource.DataMember = "Resources";
             // 
             // appointmentRibbonPage1
             // 
@@ -610,6 +600,14 @@
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.switchCellsAutoHeightItem1);
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.changeSnapToCellsUIItem1);
             this.layoutRibbonPageGroup1.Name = "layoutRibbonPageGroup1";
+            // 
+            // appointmentsBindingSource
+            // 
+            this.appointmentsBindingSource.DataMember = "Appointments";
+            // 
+            // resourcesBindingSource
+            // 
+            this.resourcesBindingSource.DataMember = "Resources";
             // 
             // schedulerBarController1
             // 
