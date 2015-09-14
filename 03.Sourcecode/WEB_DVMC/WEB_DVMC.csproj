@@ -19,6 +19,10 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -142,9 +146,7 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
-    <Content Include="Chức năng\BO.aspx" />
-    <Content Include="Chức năng\TD.aspx" />
-    <Content Include="Chức năng\PM.aspx" />
+    <Content Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -202,8 +204,57 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Images\accent.png" />
+    <Content Include="Images\background.png" />
+    <Content Include="Images\BGButton.jpg" />
+    <Content Include="Images\bg_searchF.jpg" />
+    <Content Include="Images\Border.JPG" />
+    <Content Include="Images\border.png" />
+    <Content Include="Images\bottom-bg.png" />
+    <Content Include="Images\btn_bg.jpg" />
     <Content Include="Images\bullet.png" />
+    <Content Include="Images\cal.gif" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\Captcha.bmp" />
+    <Content Include="Images\captcha.jpg" />
+    <Content Include="Images\ChamCong.png" />
+    <Content Include="Images\color.png" />
+    <Content Include="Images\Dialog\alpha.png" />
+    <Content Include="Images\Dialog\bottom-left.png" />
+    <Content Include="Images\Dialog\bottom-mid.png" />
+    <Content Include="Images\Dialog\bottom-right.png" />
+    <Content Include="Images\Dialog\bottom.gif" />
+    <Content Include="Images\Dialog\bottom_content.gif" />
+    <Content Include="Images\Dialog\bottom_left.gif" />
+    <Content Include="Images\Dialog\bottom_right.gif" />
+    <Content Include="Images\Dialog\close-down.png" />
+    <Content Include="Images\Dialog\close-hover.png" />
+    <Content Include="Images\Dialog\close.gif" />
+    <Content Include="Images\Dialog\close.png" />
+    <Content Include="Images\Dialog\left.gif" />
+    <Content Include="Images\Dialog\left.png" />
+    <Content Include="Images\Dialog\right.gif" />
+    <Content Include="Images\Dialog\right.png" />
+    <Content Include="Images\Dialog\spacer.gif" />
+    <Content Include="Images\Dialog\top-left.png" />
+    <Content Include="Images\Dialog\top-mid.png" />
+    <Content Include="Images\Dialog\top-right.png" />
+    <Content Include="Images\Dialog\top.gif" />
+    <Content Include="Images\Dialog\top_left.gif" />
+    <Content Include="Images\Dialog\top_right.gif" />
+    <Content Include="Images\DVMC.JPG" />
+    <Content Include="Images\DVMC_Infor.JPG" />
+    <Content Include="Images\error.png" />
+    <Content Include="Images\Excel_Document_Icon.PNG" />
+    <Content Include="Images\hai_long.JPG" />
     <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\Hoi_duoi.JPG" />
+    <Content Include="Images\homePortal.png" />
+    <Content Include="Images\KO_dat.JPG" />
+    <Content Include="Images\list_call.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\loadingBar.gif" />
+    <Content Include="Images\nav-bg.png" />
+    <Content Include="Images\notification_done.png" />
     <Content Include="Images\orderedList0.png" />
     <Content Include="Images\orderedList1.png" />
     <Content Include="Images\orderedList2.png" />
@@ -217,7 +268,16 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Rat_hai_long.JPG" />
+    <Content Include="Images\SoLuongCuocGoi.png" />
+    <Content Include="Images\stamp.png" />
+    <Content Include="Images\topicalogo.png" />
+    <Content Include="Images\top_border.JPG" />
+    <Content Include="Images\user_chat_01.png" />
+    <Content Include="Images\user_customer.png" />
+    <Content Include="Images\Xong_viec.JPG" />
     <Content Include="packages.config" />
+    <Content Include="Home2.master" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -245,8 +305,14 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Styles\calendar-blue.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\style.css" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
@@ -305,26 +371,12 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Chức năng\BO.aspx.cs">
-      <DependentUpon>BO.aspx</DependentUpon>
+    <Compile Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx.cs">
+      <DependentUpon>F100_DANH_GIA_DON_HANG.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Chức năng\BO.aspx.designer.cs">
-      <DependentUpon>BO.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Chức năng\TD.aspx.cs">
-      <DependentUpon>TD.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Chức năng\TD.aspx.designer.cs">
-      <DependentUpon>TD.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Chức năng\PM.aspx.cs">
-      <DependentUpon>PM.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Chức năng\PM.aspx.designer.cs">
-      <DependentUpon>PM.aspx</DependentUpon>
+    <Compile Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx.designer.cs">
+      <DependentUpon>F100_DANH_GIA_DON_HANG.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -342,6 +394,10 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home2.master.cs">
+      <DependentUpon>Home2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -375,6 +431,44 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPBusinessService\IPBusinessService.vbproj">
+      <Project>{73ca732c-2cfb-4a14-b0b9-f43763b1c2f3}</Project>
+      <Name>IPBusinessService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCommon\IPCommon.vbproj">
+      <Project>{2a74f1d1-c0ee-41fe-a708-a83b285accf2}</Project>
+      <Name>IPCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCOREDS\IPCOREDS.csproj">
+      <Project>{39dc1a18-a725-4df1-93ce-467c130ceef9}</Project>
+      <Name>IPCOREDS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPCOREUS\IPCOREUS.csproj">
+      <Project>{a6e36f4b-6825-44a8-9396-c5bbd8630cb0}</Project>
+      <Name>IPCOREUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPData\IPData.vbproj">
+      <Project>{9acedd70-fda2-44d8-a004-3a7eaf86a954}</Project>
+      <Name>IPData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPException\IPException.vbproj">
+      <Project>{b73156c2-7034-4dea-a308-5e1782ff8db4}</Project>
+      <Name>IPException</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPSystemAdmin\IPSystemAdmin.vbproj">
+      <Project>{455cd3a5-79ba-480a-b9bd-d4a7dda397a8}</Project>
+      <Name>IPSystemAdmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPUserService\IPUserService.vbproj">
+      <Project>{b490ea92-2990-4cbb-b58b-12901afcccb5}</Project>
+      <Name>IPUserService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TOSApp\TOSApp.csproj">
+      <Project>{ae651919-5790-4b89-bc0e-e5e4acd637fc}</Project>
+      <Name>TOSApp</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

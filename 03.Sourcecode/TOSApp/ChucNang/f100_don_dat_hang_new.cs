@@ -6,8 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using IP.Core.IPCommon;
 using TOSApp;
+
 using IPCOREUS;
 using IP.Core.IPCommon;
 using TOSApp.App_Code;
@@ -47,8 +47,7 @@ namespace TOSApp.ChucNang
         private void load_data_2_selected()
         {
             load_data_2_user_nhan_vien_dat_hang();
-          //  load_data_2_selected_don_vi();
-            
+          //  load_data_2_selected_don_vi();           
             load_data_2_selected_trang_thai_don_hang();
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
@@ -56,8 +55,6 @@ namespace TOSApp.ChucNang
             load_data_2_selected_thoi_gian_hoan_thanh();
             load_data_2_grid_khach_hang_don_hang();
             load_data_2_search_look_edit();
-           
-
         }
 
         private void load_data_2_search_look_edit()
@@ -66,7 +63,7 @@ namespace TOSApp.ChucNang
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_DM_LOAI_YEU_CAU");
-            m_searchLookUpEdit_dv.Properties.DataSource= v_ds.Tables[0];
+            m_searchLookUpEdit_dv.Properties.DataSource = v_ds.Tables[0];
 
         }
 
@@ -96,7 +93,6 @@ namespace TOSApp.ChucNang
         }
 
        
-
         private void load_data_2_grid_khach_hang_don_hang()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
@@ -211,7 +207,6 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
-
                         if (m_lst_id_nguoi_xu_ly.Count == 0)
                         {
                             MessageBox.Show("Vui lòng chọn người tiếp nhận xử lý!");
@@ -229,13 +224,10 @@ namespace TOSApp.ChucNang
                             this.Close();
                         }                                              
                     }    
-                }
-                
-                   
+                }                 
             }             
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }     
         }
@@ -303,10 +295,8 @@ namespace TOSApp.ChucNang
 
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
-            }
-           
+            }         
         }
 
         private void gui_emai_xac_nhan(US_GD_DAT_HANG m_us)
@@ -430,9 +420,7 @@ namespace TOSApp.ChucNang
          //   v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal(return_loai_thoi_gian_can_hoan_thanh(m_rdb_loai_time_15phut, m_rdb_loai_time_4h, m_rdb_loai_time_1ngay, m_rdb_loai_time_1tuan, m_rdb_loai_time_1thang).ToString());
             v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH =CIPConvert.ToDecimal( m_cbo_thoi_gian_hoan_thanh.SelectedValue);
             v_us.datTHOI_DIEM_CAN_HOAN_THANH = m_dat_thoi_diem_can_hoan_thanh.Value;
-            v_us.Update();
-
-           
+            v_us.Update();       
         }
 
         private void dieu_phoi_don_hang()
@@ -447,8 +435,7 @@ namespace TOSApp.ChucNang
            //cap nhat lai trang thai cua log don hang truoc khi thuc hien thao tac dieu huong
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(id_log);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.Update();  
-            
+            v_us.Update();           
         }
 
       
@@ -471,7 +458,6 @@ namespace TOSApp.ChucNang
             v_us.Insert();
             id_log = v_us.dcID;
             return v_us.dcID;
-
         }
 
         private void ghi_don_hang()

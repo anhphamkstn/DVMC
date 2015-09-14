@@ -30,6 +30,12 @@ namespace TOSApp
         [STAThread]
         static void Main()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture =
+                    new System.Globalization.CultureInfo("vi-VN");
+
+            // The following line provides localization for data formats. 
+            System.Threading.Thread.CurrentThread.CurrentCulture =
+                new System.Globalization.CultureInfo("vi-VN");
             try
             {
                TOSApp.HT.f000_login v_f = new HT.f000_login();

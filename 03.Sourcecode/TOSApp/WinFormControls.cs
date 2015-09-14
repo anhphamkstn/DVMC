@@ -289,7 +289,7 @@ namespace TOSApp
             v_cstore.fillDataSetByCommand(this, op_ds);
         }
 
-        internal void FillDatasetWithQuery(DataSet op_ds, string ip_query)
+        public void FillDatasetWithQuery(DataSet op_ds, string ip_query)
         {
             CStoredProc v_cstore = new CStoredProc("pr_fill_ds_with_query");
             v_cstore.addNVarcharInputParam("@SQL_QUERY", ip_query);
@@ -350,8 +350,7 @@ namespace TOSApp
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
 
-
-           
+       
     }
 
     public class iParameter

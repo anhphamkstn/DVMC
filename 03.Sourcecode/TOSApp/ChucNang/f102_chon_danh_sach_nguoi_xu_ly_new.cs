@@ -28,10 +28,18 @@ namespace TOSApp.ChucNang
 
         internal void Display(ref List<decimal> v_lst_id_nguoi_xu_ly)
         {
-            this.ShowDialog();
+            for (int j = 0; j < v_lst_id_nguoi_xu_ly.Count;j++ )
+            {
+                for (int i = 0; i < v_lst_id_nguoi_xu_ly.Count; i++)
+                    if (m_grv_ht_nguoi_su_dung.GetDataRow(i)["ID"].Equals(v_lst_id_nguoi_xu_ly[j].ToString()))
+                        m_grv_ht_nguoi_su_dung.SelectRow(i);
+
+            }
+                this.ShowDialog();
 
             if (DialogResult== System.Windows.Forms.DialogResult.OK)
             {
+
                 for (int i = 0; i < m_grv_ht_nguoi_su_dung.SelectedRowsCount; i++)
                 {
                     v_lst_id_nguoi_xu_ly.Add(CIPConvert.ToDecimal(m_grv_ht_nguoi_su_dung.GetDataRow(m_grv_ht_nguoi_su_dung.GetSelectedRows()[i])["ID"].ToString()));
@@ -48,7 +56,13 @@ namespace TOSApp.ChucNang
         internal void Display(ref List<decimal> m_lst_id_nguoi_xu_ly, decimal m_id_dich_vu)
         {
             load_data_2_grid(m_id_dich_vu);
-            
+            for (int j = 0; j < m_lst_id_nguoi_xu_ly.Count; j++)
+            {
+                for (int i = 0; i < m_grv_ht_nguoi_su_dung.RowCount; i++)
+                    if (m_grv_ht_nguoi_su_dung.GetDataRow(i)["ID_BO"].Equals(m_lst_id_nguoi_xu_ly[j]))
+                        m_grv_ht_nguoi_su_dung.SelectRow(i);
+
+            }
             this.ShowDialog();
             m_lst_id_nguoi_xu_ly.Clear();
             if (DialogResult == System.Windows.Forms.DialogResult.OK)

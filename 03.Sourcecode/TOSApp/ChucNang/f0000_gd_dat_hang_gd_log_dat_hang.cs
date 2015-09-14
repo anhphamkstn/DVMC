@@ -82,27 +82,12 @@ namespace TOSApp.ChucNang
                         if (control.Name == v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
                         {
                             control.Visible = true;
-                        }
-                        
+                        }                       
                     }
                 }
-               
-
+              }
+           
             }
-            //foreach (var control in this.Controls.OfType<Button>())
-            //{
-                
-            //        for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
-            //        {
-            //               if (control.Name== v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
-            //               {
-            //                control.Visible=true;
-            //               }               
-            //        }
-            //}
-            }
-        
-
         private void format_gridview()
         {
             MA_DON_HANG.Visible = true;
@@ -925,15 +910,5 @@ namespace TOSApp.ChucNang
             v_f100.displayForUpdate(v_us, v_deadline);
             load_data_2_grid();
         }
-
-      
-
-    
-
-     
-
-       
-
-
     }
 }
