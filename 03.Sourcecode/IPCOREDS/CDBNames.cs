@@ -946,5 +946,36 @@ namespace IPCOREDS.CDBNames
         public const string HO_TEN_CHU_DIEN_THOAI = "HO_TEN_CHU_DIEN_THOAI";
         public const string GHI_CHU_LY_DO = "GHI_CHU_LY_DO";
     }
+    public class V_DON_HANG_TRANG_THAI
+    {
+        public const string MA_DON_HANG = "MA_DON_HANG";
+        public const string TEN_NHOM_DICH_VU_YEU_CAU = "TEN_NHOM_DICH_VU_YEU_CAU";
+        public const string NOI_DUNG_DAT_HANG = "NOI_DUNG_DAT_HANG";
+        public const string THOI_GIAN_TAO = "THOI_GIAN_TAO";
+        public const string THOI_GIAN_HOAN_THANH = "THOI_GIAN_HOAN_THANH";
+        public const string TRANG_THAI_DON_HANG = "TRANG_THAI_DON_HANG";
+        public const string ID_USER_NV_DAT_HANG = "ID_USER_NV_DAT_HANG";
+        public const string ID = "ID";
+        public const string HO_TEN_USER_DAT_HANG = "HO_TEN_USER_DAT_HANG";
+    }
+    public class V_DM_LOAI_YEU_CAU
+    {
+        public const string ID = "ID";
+        public const string TEN_YEU_CAU = "TEN_YEU_CAU";
+        public const string DIEM_KHOI_LUONG = "DIEM_KHOI_LUONG";
+        public const string ID_THOI_GIAN_XU_LY = "ID_THOI_GIAN_XU_LY";
+        public const string THOI_GIAN_XU_LY = "THOI_GIAN_XU_LY";
+        public const string ID_CHA = "ID_CHA";
+        public const string ID_DM_YEU_CAU_2 = "ID_DM_YEU_CAU_2";
+        public const string ID_CHA_DM_YEU_CAU_2 = "ID_CHA_DM_YEU_CAU_2";
+        public const string TEN_YEU_CAU_CHA_CHA = "TEN_YEU_CAU_CHA_CHA";
+        public const string ID_DM_YEU_CAU_1 = "ID_DM_YEU_CAU_1";
+        public const string ID_CHA_DM_YEU_CAU_1 = "ID_CHA_DM_YEU_CAU_1";
+        public const string TEN_YEU_CAU_CHA = "TEN_YEU_CAU_CHA";
+        public const string ID_TU_DIEN = "ID_TU_DIEN";
+        public const string TRANG_THAI_HSD = "TRANG_THAI_HSD";
+    }
+
+
 
 }

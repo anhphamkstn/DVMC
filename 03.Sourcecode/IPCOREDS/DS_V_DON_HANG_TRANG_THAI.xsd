@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="DS_DON_HANG_TRANG_THAI" targetNamespace="http://tempuri.org/DS_DON_HANG_TRANG_THAI.xsd" xmlns:mstns="http://tempuri.org/DS_DON_HANG_TRANG_THAI.xsd" xmlns="http://tempuri.org/DS_DON_HANG_TRANG_THAI.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="DS_V_DON_HANG_TRANG_THAI" targetNamespace="http://tempuri.org/DS_V_DON_HANG_TRANG_THAI.xsd" xmlns:mstns="http://tempuri.org/DS_V_DON_HANG_TRANG_THAI.xsd" xmlns="http://tempuri.org/DS_V_DON_HANG_TRANG_THAI.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="BKI_DVMCConnectionString (Settings)" DbObjectName="BKI_DVMC.dbo.V_DON_HANG_TRANG_THAI" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT MA_DON_HANG, TEN_NHOM_DICH_VU_YEU_CAU, NOI_DUNG_DAT_HANG, THOI_GIAN_TAO, THOI_GIAN_HOAN_THANH, TRANG_THAI_DON_HANG, ID_USER_NV_DAT_HANG, ID FROM dbo.V_DON_HANG_TRANG_THAI</CommandText>
+                    <CommandText>SELECT MA_DON_HANG, TEN_NHOM_DICH_VU_YEU_CAU, NOI_DUNG_DAT_HANG, THOI_GIAN_TAO, THOI_GIAN_HOAN_THANH, TRANG_THAI_DON_HANG, ID_USER_NV_DAT_HANG, ID, HO_TEN_USER_DAT_HANG FROM dbo.V_DON_HANG_TRANG_THAI</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -27,6 +27,7 @@
               <Mapping SourceColumn="TRANG_THAI_DON_HANG" DataSetColumn="TRANG_THAI_DON_HANG" />
               <Mapping SourceColumn="ID_USER_NV_DAT_HANG" DataSetColumn="ID_USER_NV_DAT_HANG" />
               <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="HO_TEN_USER_DAT_HANG" DataSetColumn="HO_TEN_USER_DAT_HANG" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -35,7 +36,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DS_DON_HANG_TRANG_THAI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_DON_HANG_TRANG_THAI" msprop:Generator_UserDSName="DS_DON_HANG_TRANG_THAI">
+  <xs:element name="DS_V_DON_HANG_TRANG_THAI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_V_DON_HANG_TRANG_THAI" msprop:Generator_UserDSName="DS_V_DON_HANG_TRANG_THAI">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="V_DON_HANG_TRANG_THAI" msprop:Generator_TableClassName="V_DON_HANG_TRANG_THAIDataTable" msprop:Generator_TableVarName="tableV_DON_HANG_TRANG_THAI" msprop:Generator_TablePropName="V_DON_HANG_TRANG_THAI" msprop:Generator_RowDeletingName="V_DON_HANG_TRANG_THAIRowDeleting" msprop:Generator_RowChangingName="V_DON_HANG_TRANG_THAIRowChanging" msprop:Generator_RowEvHandlerName="V_DON_HANG_TRANG_THAIRowChangeEventHandler" msprop:Generator_RowDeletedName="V_DON_HANG_TRANG_THAIRowDeleted" msprop:Generator_UserTableName="V_DON_HANG_TRANG_THAI" msprop:Generator_RowChangedName="V_DON_HANG_TRANG_THAIRowChanged" msprop:Generator_RowEvArgName="V_DON_HANG_TRANG_THAIRowChangeEvent" msprop:Generator_RowClassName="V_DON_HANG_TRANG_THAIRow">
@@ -73,6 +74,13 @@
               </xs:element>
               <xs:element name="ID_USER_NV_DAT_HANG" msprop:Generator_ColumnVarNameInTable="columnID_USER_NV_DAT_HANG" msprop:Generator_ColumnPropNameInRow="ID_USER_NV_DAT_HANG" msprop:Generator_ColumnPropNameInTable="ID_USER_NV_DAT_HANGColumn" msprop:Generator_UserColumnName="ID_USER_NV_DAT_HANG" type="xs:decimal" minOccurs="0" />
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HO_TEN_USER_DAT_HANG" msprop:Generator_ColumnVarNameInTable="columnHO_TEN_USER_DAT_HANG" msprop:Generator_ColumnPropNameInRow="HO_TEN_USER_DAT_HANG" msprop:Generator_ColumnPropNameInTable="HO_TEN_USER_DAT_HANGColumn" msprop:Generator_UserColumnName="HO_TEN_USER_DAT_HANG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

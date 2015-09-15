@@ -115,7 +115,7 @@ namespace TOSApp.ChucNang
         private void load_data_2_user_nhan_vien_dat_hang()
         {
             //WinFormControls.load_data_to_combobox("DM_khach_hang", "ID", "EMAIL", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_user_nhan_vien_dat_hang, "ID", "USER_EMAIL", WinFormControls.eTAT_CA.NO, "SELECT ID, dbo.f_get_user_name_user_nhan_vien_dat_hang(EMAIL) as USER_EMAIL FROM DM_KHACH_HANG");
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_user_nhan_vien_dat_hang, "ID", "EMAIL", WinFormControls.eTAT_CA.NO, "SELECT ID, EMAIL FROM DM_KHACH_HANG");
         }
 
 
@@ -146,12 +146,13 @@ namespace TOSApp.ChucNang
         //hàm này load data len loai dịch vụ 2 là loại cấp 2
         private void load_data_2_loai_dich_vu_2()
         {
-
+            
             WinFormControls.load_data_to_combobox_with_query(m_cbo_loai_dich_vu_2, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_1.SelectedValue.ToString() + "AND TRANG_THAI_HSD = 'N'");
         }
         //load du liệu lên selected  dịch vụ
         private void load_data_2_selected_dich_vu()
         {
+           
             WinFormControls.load_data_to_combobox_with_query(m_cbo_dich_vu, "ID", "TEN_YEU_CAU", WinFormControls.eTAT_CA.NO, "select ID, TEN_YEU_CAU  from DM_LOAI_YEU_CAU where ID_CHA=" + m_cbo_loai_dich_vu_2.SelectedValue.ToString()+ "AND TRANG_THAI_HSD = 'N'");
             //WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " Where ID_CHA=" +m_cbo_loai_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
     
@@ -937,6 +938,43 @@ namespace TOSApp.ChucNang
         {
 
         }
+
+        private void fill_data_to_dich_vu(object sender, EventArgs e)
+        {
+
+            DataRow v_dr = m_searchLookUpEdit_dich_vu.GetDataRow(m_searchLookUpEdit_dich_vu.FocusedRowHandle);
+            US_V_DM_LOAI_YEU_CAU v_us = new US_V_DM_LOAI_YEU_CAU(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            load_data_to_dv1(v_us);
+        //  load_data_2_loai_dich_vu_2();
+            load_data_to_dv2(v_us);
+          // load_data_2_selected_dich_vu();
+            load_data_to_dv(v_us);
+            
+        }
+
+        private void load_data_to_dv(US_V_DM_LOAI_YEU_CAU v_us)
+        {
+           WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where id =" + v_us.dcID, WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
+            //US_DM_LOAI_YEU_CAU us = new US_DM_LOAI_YEU_CAU(v_us.dcID);
+            //m_cbo_loai_dich_vu_1.SelectedValue = us.dcID;
+        }
+
+        private void load_data_to_dv2(US_V_DM_LOAI_YEU_CAU v_us)
+        {
+           WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID=" + v_us.dcID_DM_YEU_CAU_2, WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_2);
+        //    US_DM_LOAI_YEU_CAU us = new US_DM_LOAI_YEU_CAU(v_us.dcID_DM_YEU_CAU_2);
+        //    m_cbo_loai_dich_vu_1.SelectedValue = us.dcID;
+        }
+
+        private void load_data_to_dv1(US_V_DM_LOAI_YEU_CAU v_us)
+        {
+          WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID=" + v_us.dcID_DM_YEU_CAU_1, WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_1);
+          //US_DM_LOAI_YEU_CAU us = new US_DM_LOAI_YEU_CAU(v_us.dcID_DM_YEU_CAU_1);
+          //m_cbo_loai_dich_vu_1.SelectedValue = us.dcID;
+        }
+
+    
+    
 
         
 

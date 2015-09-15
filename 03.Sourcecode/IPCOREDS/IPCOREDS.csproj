@@ -180,6 +180,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_V_DM_LOAI_YEU_CAU.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_V_DON_HANG_TRANG_THAI.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -380,6 +385,17 @@
     </None>
     <None Include="DS_DOC_TABLE_COMMENT.xss">
       <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DM_LOAI_YEU_CAU.xsc">
+      <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_DM_LOAI_YEU_CAU.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_DM_LOAI_YEU_CAU.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_DM_LOAI_YEU_CAU.xss">
+      <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>
     </None>
     <None Include="DS_V_DON_HANG_TRANG_THAI.xsc">
       <DependentUpon>DS_V_DON_HANG_TRANG_THAI.xsd</DependentUpon>
