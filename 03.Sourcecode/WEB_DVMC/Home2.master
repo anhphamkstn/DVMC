@@ -4,15 +4,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head id="Head1" runat="server">
     <title></title>
-    <link href="Styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Styles/style.css" rel="stylesheet" type="text/css"/>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="Form1" runat="server">
     <div id="header">
-        <img alt="Logo TOPICA" src="Images/DVMC.JPG" />
-        <img alt="Logo TOPICA" src="Images/DVMC_Infor.JPG" />
+        <img alt="Logo TOPICA" src="~/Images/DVMC.JPG" />
+        <img alt="Logo TOPICA" src="~/Images/DVMC_Infor.JPG" />
         <p style="text-align: right; padding-top: 20px; color: #810C15; font-size: 18px; font-weight: normal;">
             <span style="font-weight:bold;">
                         <asp:Label runat="server" ID="m_lbl_username"></asp:Label>

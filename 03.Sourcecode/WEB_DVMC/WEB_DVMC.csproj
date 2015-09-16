@@ -47,9 +47,6 @@
     <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.v14.1.14.1.8.0.Fakes">
-      <HintPath>FakesAssemblies\DevExpress.Web.v14.1.14.1.8.0.Fakes.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -58,10 +55,8 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
@@ -123,10 +118,6 @@
     <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.2.0.1\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
     </Reference>
-    <Reference Include="WebGrease">
-      <Private>True</Private>
-      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
-    </Reference>
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>E:\Lập trình\MVC\MVCDemo\MVCDemo\bin\Antlr3.Runtime.dll</HintPath>
@@ -138,6 +129,7 @@
     <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.0\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
@@ -147,6 +139,13 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx" />
+    <Content Include="Chức năng\f102_chon_danh_sach_nguoi_xu_ly_new.aspx" />
+    <Content Include="Chức năng\f122_blacklist.aspx" />
+    <Content Include="Chức năng\f122_blacklist_detail.aspx" />
+    <Content Include="Chức năng\f122_tat_ca_don_hang_dang_xu_ly.aspx" />
+    <Content Include="Chức năng\f123_ds_don_hang_can_xu_ly.aspx" />
+    <Content Include="Chức năng\Thanks.aspx" />
+    <Content Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -305,8 +304,10 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\calendar-blue.css" />
     <Content Include="Styles\Login.css" />
+    <Content Include="Styles\m_cmd.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Styles\style.css" />
     <Content Include="ViewSwitcher.ascx" />
@@ -377,6 +378,55 @@
     </Compile>
     <Compile Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx.designer.cs">
       <DependentUpon>F100_DANH_GIA_DON_HANG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\f102_chon_danh_sach_nguoi_xu_ly_new.aspx.cs">
+      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\f102_chon_danh_sach_nguoi_xu_ly_new.aspx.designer.cs">
+      <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\f122_blacklist.aspx.cs">
+      <DependentUpon>f122_blacklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\f122_blacklist.aspx.designer.cs">
+      <DependentUpon>f122_blacklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\f122_blacklist_detail.aspx.cs">
+      <DependentUpon>f122_blacklist_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\f122_blacklist_detail.aspx.designer.cs">
+      <DependentUpon>f122_blacklist_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\f122_tat_ca_don_hang_dang_xu_ly.aspx.cs">
+      <DependentUpon>f122_tat_ca_don_hang_dang_xu_ly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\f122_tat_ca_don_hang_dang_xu_ly.aspx.designer.cs">
+      <DependentUpon>f122_tat_ca_don_hang_dang_xu_ly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\f123_ds_don_hang_can_xu_ly.aspx.cs">
+      <DependentUpon>f123_ds_don_hang_can_xu_ly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\f123_ds_don_hang_can_xu_ly.aspx.designer.cs">
+      <DependentUpon>f123_ds_don_hang_can_xu_ly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\Thanks.aspx.cs">
+      <DependentUpon>Thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\Thanks.aspx.designer.cs">
+      <DependentUpon>Thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx.cs">
+      <DependentUpon>f0000_gd_dat_hang_gd_log_dat_hang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx.designer.cs">
+      <DependentUpon>f0000_gd_dat_hang_gd_log_dat_hang.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -464,10 +514,6 @@
     <ProjectReference Include="..\IPUserService\IPUserService.vbproj">
       <Project>{b490ea92-2990-4cbb-b58b-12901afcccb5}</Project>
       <Name>IPUserService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TOSApp\TOSApp.csproj">
-      <Project>{ae651919-5790-4b89-bc0e-e5e4acd637fc}</Project>
-      <Name>TOSApp</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

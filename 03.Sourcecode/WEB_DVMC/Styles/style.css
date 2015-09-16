@@ -257,3 +257,11 @@ label.error {
     color:Black;
     font-weight:normal;
 }
+#gridview {
+     <FooterStyle ForeColor="#8C4510" 
+              BackColor="#F7DFB5"></FooterStyle>
+             <PagerStyle ForeColor="#990000" 
+              HorizontalAlign="Center"></PagerStyle>
+            <HeaderStyle ForeColor="White" Font-Bold="True" 
+              BackColor="#A55129"></HeaderStyle>
+}
