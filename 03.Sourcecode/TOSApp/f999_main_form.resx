@@ -2893,4 +2893,7 @@
         HyAAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="m_timer_imcoming_call.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>207, 17</value>
+  </metadata>
 </root>

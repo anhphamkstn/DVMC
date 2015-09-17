@@ -45,7 +45,7 @@ namespace WEB_DVMC.Chức_năng
             }
             else if (Session["DON_HANG"] != null)
                 v_str_ma_don_hang = CIPConvert.ToStr(Session["DON_HANG"]);
-            v_str_ma_don_hang = "DVMC2015669492";
+           // v_str_ma_don_hang = "DVMC2015744680";
 
             v_us_gd_dat_hang.FillDatasetWithQuery(v_ds_gd_dat_hang, "select * from v_gd_dat_hang where MA_DON_HANG= '" + v_str_ma_don_hang +"'");
 

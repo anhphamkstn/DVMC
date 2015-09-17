@@ -15,6 +15,9 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraBars.Ribbon;
 using System.Collections;
 using TOSApp.HT;
+using TOSApp.App_Code;
+using IPCOREDS.CDBNames;
+using IPCOREUS;
 
 namespace TOSApp
 {
@@ -641,7 +644,7 @@ namespace TOSApp
         {
              try
             {
-                F120_ds_don_hang_khach_hang v_f = new F120_ds_don_hang_khach_hang();
+                f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;
                 v_f.Show();
             }
@@ -784,7 +787,48 @@ namespace TOSApp
             v_f.Show();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                check_incoming_call();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_100.ExceptionHandle(v_e);
+            }  
+        }
 
+        private void check_incoming_call()
+        {
+            string m_str_stationId = "2300"; //ip-phone
+            string v_str_result_api = "", v_str_link_services = "";
+
+            v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(m_str_stationId);
+
+            string v_str_output = CallCenterUtils.get_incoming_call(v_str_link_services).Data;
+            US_GD_CUOC_GOI_YEU_CAU m_us_gd_cuoc_goi_yc = new US_GD_CUOC_GOI_YEU_CAU();
+            if (v_str_output == "") return;
+            CallInfor v_obj_callinfo = HelpUtils.get_start_callinfo_from_client_string_call(v_str_output);
+            if (v_obj_callinfo.mobile_phone == "Anonymous") return;
+           // if (m_us_gd_cuoc_goi_yc.is_call_id_exist(v_obj_callinfo.call_id)) return; phải có check đấy nhé
+            if (v_obj_callinfo.call_id == ""
+                || v_obj_callinfo.call_id == null) return;
+
+            //HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.CALL_API, "SV_GOI_DEN", v_str_link_services, v_str_result_api);
+            // ghi log gọi điện
+
+            m_timer_imcoming_call.Enabled = false;
+            f100_don_dat_hang_new v_f = new f100_don_dat_hang_new();
+            v_f.display_for_ipphone(v_obj_callinfo);
+
+           // HelpUtils.open_form_sinh_vien_call(v_obj_callinfo);
+            m_timer_imcoming_call.Enabled = true;
+        }
+
+
+
+       
     }
 }
 

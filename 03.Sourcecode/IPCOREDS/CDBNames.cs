@@ -333,6 +333,7 @@ namespace IPCOREDS.CDBNames
         public const decimal ADD_BLACKLIST = 165;
         public const decimal REMOVE_BLACKLIST = 167;
         public const decimal ASSIGN_QLHT = 169;
+
     }
 
     public class CM_DM_LOAI_TD
@@ -975,7 +976,13 @@ namespace IPCOREDS.CDBNames
         public const string ID_TU_DIEN = "ID_TU_DIEN";
         public const string TRANG_THAI_HSD = "TRANG_THAI_HSD";
     }
-
-
+    public class DM_KHACH_HANG
+    {
+        public const string ID = "ID";
+        public const string TEN_KHACH_HANG = "TEN_KHACH_HANG";
+        public const string DON_VI = "DON_VI";
+        public const string DIEN_THOAI = "DIEN_THOAI";
+        public const string EMAIL = "EMAIL";
+    }
 
 }

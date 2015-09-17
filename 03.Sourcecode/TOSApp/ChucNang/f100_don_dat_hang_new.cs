@@ -15,6 +15,7 @@ using TOSApp.DanhMuc;
 using DevExpress.XtraBars.Docking;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using IPCOREDS.CDBNames;
 
 
 
@@ -31,6 +32,23 @@ namespace TOSApp.ChucNang
         {
             InitializeComponent();        
             load_data_2_selected();       
+        }
+
+        public void display_for_ipphone(CallInfor ip_call_infor)
+        {
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            v_us.FillDatasetWithQuery(v_ds, "select * from dm_khach_hang where DIEN_THOAI = '" + ip_call_infor.mobile_phone + "'");
+            if (v_ds.Tables[0].Rows.Count > 0)
+            {
+                m_cbo_user_nhan_vien_dat_hang.Text = v_ds.Tables[0].Rows[0][4].ToString();
+                m_txt_ho_ten_nguoi_dat_hang.Text = v_ds.Tables[0].Rows[0][2].ToString();
+                m_cbo_dv_don_vi.Text = v_ds.Tables[0].Rows[0][2].ToString();
+                m_txt_dien_thoai.Text = v_ds.Tables[0].Rows[0][3].ToString();
+            }
+            this.ShowDialog();
+            // nếu đang có đơn hàng thì xử lí như thế nào
         }
 
         DataEntryFormMode m_e_form_mode = new DataEntryFormMode();
@@ -895,9 +913,7 @@ namespace TOSApp.ChucNang
             GridView view = (GridView)sender;
             Point pt = view.GridControl.PointToClient(Control.MousePosition);
             DoRowDoubleClick(view, pt);
-            
-
-
+           
         }
 
         private void DoRowDoubleClick(GridView view, Point pt)

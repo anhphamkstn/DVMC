@@ -42,6 +42,9 @@
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_don_hang_can_danh_gia_TM = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_ds_can_danh_gia = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_ds_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.m_rbc_TD = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_don_hang_can_xu_ly_TD = new DevExpress.XtraBars.BarButtonItem();
@@ -123,9 +126,7 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_cmd_ds_can_danh_gia = new DevExpress.XtraBars.BarButtonItem();
-            this.m_cmd_ds_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
+            this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -226,6 +227,31 @@
             this.barButtonItem8.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.LargeGlyph")));
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
+            // 
+            // ribbonPageGroup22
+            // 
+            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_can_danh_gia);
+            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_da_danh_gia);
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
+            this.ribbonPageGroup22.Text = "Đánh giá của khách hàng";
+            // 
+            // m_cmd_ds_can_danh_gia
+            // 
+            this.m_cmd_ds_can_danh_gia.Caption = "Danh sách đơn hàng cần đánh giá";
+            this.m_cmd_ds_can_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_can_danh_gia.Glyph")));
+            this.m_cmd_ds_can_danh_gia.Id = 58;
+            this.m_cmd_ds_can_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_can_danh_gia.LargeGlyph")));
+            this.m_cmd_ds_can_danh_gia.Name = "m_cmd_ds_can_danh_gia";
+            this.m_cmd_ds_can_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_can_danh_gia_ItemClick);
+            // 
+            // m_cmd_ds_da_danh_gia
+            // 
+            this.m_cmd_ds_da_danh_gia.Caption = "Danh sách đơn hàng đã đánh giá";
+            this.m_cmd_ds_da_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.Glyph")));
+            this.m_cmd_ds_da_danh_gia.Id = 59;
+            this.m_cmd_ds_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.LargeGlyph")));
+            this.m_cmd_ds_da_danh_gia.Name = "m_cmd_ds_da_danh_gia";
+            this.m_cmd_ds_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_da_danh_gia_ItemClick);
             // 
             // m_rbc_TD
             // 
@@ -929,30 +955,11 @@
             this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             this.ribbonPageGroup23.Text = "Danh sách tất cả đơn hàng chờ xử lý";
             // 
-            // ribbonPageGroup22
+            // m_timer_imcoming_call
             // 
-            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_can_danh_gia);
-            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_da_danh_gia);
-            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
-            this.ribbonPageGroup22.Text = "Đánh giá của khách hàng";
-            // 
-            // m_cmd_ds_can_danh_gia
-            // 
-            this.m_cmd_ds_can_danh_gia.Caption = "Danh sách đơn hàng cần đánh giá";
-            this.m_cmd_ds_can_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_can_danh_gia.Glyph")));
-            this.m_cmd_ds_can_danh_gia.Id = 58;
-            this.m_cmd_ds_can_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_can_danh_gia.LargeGlyph")));
-            this.m_cmd_ds_can_danh_gia.Name = "m_cmd_ds_can_danh_gia";
-            this.m_cmd_ds_can_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_can_danh_gia_ItemClick);
-            // 
-            // m_cmd_ds_da_danh_gia
-            // 
-            this.m_cmd_ds_da_danh_gia.Caption = "Danh sách đơn hàng đã đánh giá";
-            this.m_cmd_ds_da_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.Glyph")));
-            this.m_cmd_ds_da_danh_gia.Id = 59;
-            this.m_cmd_ds_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.LargeGlyph")));
-            this.m_cmd_ds_da_danh_gia.Name = "m_cmd_ds_da_danh_gia";
-            this.m_cmd_ds_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_da_danh_gia_ItemClick);
+            this.m_timer_imcoming_call.Enabled = true;
+            this.m_timer_imcoming_call.Interval = 3000;
+            this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // f999_main_form
             // 
@@ -1070,6 +1077,7 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_ds_can_danh_gia;
         private DevExpress.XtraBars.BarButtonItem m_cmd_ds_da_danh_gia;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
+        private System.Windows.Forms.Timer m_timer_imcoming_call;
 
 	}
 }

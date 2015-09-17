@@ -144,7 +144,6 @@
     <Content Include="Chức năng\f122_blacklist_detail.aspx" />
     <Content Include="Chức năng\f122_tat_ca_don_hang_dang_xu_ly.aspx" />
     <Content Include="Chức năng\f123_ds_don_hang_can_xu_ly.aspx" />
-    <Content Include="Chức năng\Thanks.aspx" />
     <Content Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
@@ -413,13 +412,6 @@
     </Compile>
     <Compile Include="Chức năng\f123_ds_don_hang_can_xu_ly.aspx.designer.cs">
       <DependentUpon>f123_ds_don_hang_can_xu_ly.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Chức năng\Thanks.aspx.cs">
-      <DependentUpon>Thanks.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Chức năng\Thanks.aspx.designer.cs">
-      <DependentUpon>Thanks.aspx</DependentUpon>
     </Compile>
     <Compile Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx.cs">
       <DependentUpon>f0000_gd_dat_hang_gd_log_dat_hang.aspx</DependentUpon>

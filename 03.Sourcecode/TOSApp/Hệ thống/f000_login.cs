@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using TOSApp;
 using IPCOREUS;
 using IP.Core.IPCommon;
+using TOSApp.App_Code;
+using IPCOREDS.CDBNames;
 
 namespace TOSApp.HT
 {
@@ -38,6 +40,7 @@ namespace TOSApp.HT
                     {
                         this.Hide();
                         f999_main_form v_f = new f999_main_form();
+                        CallCenterUtils.add_or_remove_agent_ipphone_2_queue("2300", us_user.strTEN_TRUY_CAP, KHO_QUEUE.MIEN_BAC, 10);
                         v_f.WindowState = FormWindowState.Maximized;
                         us_user.trang_thai_dang_nhap = true;
                         v_f.ShowDialog();
@@ -75,6 +78,8 @@ namespace TOSApp.HT
                     us_user.dcID = ht_us.dcID;
                     us_user.dcIDNhom = ht_us.dcID_NHOM;
                     us_user.dcCHI_NHANH = CIPConvert.ToDecimal(m_cb_chi_nhanh.SelectedValue.ToString());
+                    us_user.strTEN_TRUY_CAP = ht_us.strTEN_TRUY_CAP;
+                    us_user.strEMAIL = ht_us.strEMAIL;
                     return true;
                 }
                 else return false;

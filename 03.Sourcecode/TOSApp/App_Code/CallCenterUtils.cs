@@ -25,9 +25,9 @@ namespace TOSApp.App_Code
             string v_str_link_services = "";
 
             if (ip_code_add_or_remove == 10)
-              //  v_str_link_services =  f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.ADD_VAO_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
-           // else if (ip_code_add_or_remove == 20)
-               // v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.REMOVE_KHOI_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
+                v_str_link_services =  "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.ADD_VAO_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
+            else if (ip_code_add_or_remove == 20)
+                v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.REMOVE_KHOI_QUEUE_GOI(ip_extension, ip_agent, ip_kho_queue);
 
             v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
 
@@ -129,13 +129,13 @@ namespace TOSApp.App_Code
         /// </summary>
         /// <param name="ip_extension">Mã máy điện thoại</param>
         /// <returns></returns>
-        public static CGetIncomingCallData get_incoming_call(string ip_extension)
+        public static CGetIncomingCallData get_incoming_call(string ip_str_link_services)
         {
             string v_str_result = "";
-            string v_str_link_services = "";
-          //  v_str_link_services = f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(ip_extension);
+            //string v_str_link_services = "";
+           // v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(ip_extension);
 
-            v_str_result = HelpUtils.get_content_from_weburl(v_str_link_services);
+            v_str_result = HelpUtils.get_content_from_weburl(ip_str_link_services);
 
             CGetIncomingCall v_obj_infor = JsonConvert.DeserializeObject<CGetIncomingCall>(v_str_result);
             return v_obj_infor.Action;

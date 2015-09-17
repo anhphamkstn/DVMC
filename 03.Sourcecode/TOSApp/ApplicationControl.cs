@@ -14,6 +14,7 @@ using TOSApp.ChucNang;
 using TOSApp.DanhMuc;
 using TOSApp.Hệ_thống;
 
+
 namespace TOSApp
 {
     #region Nhiệm vụ của Class
@@ -43,6 +44,7 @@ namespace TOSApp
                // f999_main_form v_f = new f999_main_form();
                // f118_ds_log_dat_hang v_f = new f118_ds_log_dat_hang();
                 Application.Run(v_f);
+                CallCenterUtils.add_or_remove_agent_ipphone_2_queue("2300", us_user.strTEN_TRUY_CAP, KHO_QUEUE.MIEN_BAC,20);
             }
             catch (Exception v_e)
             {
