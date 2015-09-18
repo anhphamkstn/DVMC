@@ -691,7 +691,7 @@ namespace TOSApp
             {
                 if (v_don_hang_dang_xu_ly_TD == null || !IsFormOpen(v_don_hang_dang_xu_ly_TD))
                 {
-                    v_don_hang_dang_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+                    v_don_hang_dang_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_dang_xu_ly_TD.MdiParent = this;
                     v_don_hang_dang_xu_ly_TD.Text = "Đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
