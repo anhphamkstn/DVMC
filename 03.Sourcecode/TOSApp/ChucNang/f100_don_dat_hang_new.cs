@@ -116,7 +116,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from V_DON_HANG_TRANG_THAI where ID_USER_NV_DAT_HANG ="+m_cbo_user_nhan_vien_dat_hang.SelectedValue);
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_DON_HANG_TRANG_THAI where ID_USER_NV_DAT_HANG ="+m_cbo_user_nhan_vien_dat_hang.SelectedValue + "order by THOI_GIAN_TAO");
             m_grc_user_don_hang.DataSource = v_ds.Tables[0];
         }
 
@@ -249,6 +249,19 @@ namespace TOSApp.ChucNang
             {
                 CSystemLog_301.ExceptionHandle(v_e);
             }     
+        }
+
+        private void ghi_log_thay_doi_don_hang()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+            v_us.dcID_LOAI_THAO_TAC = 321;//trang thai vua được cập nhật
+            v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
+            v_us.Insert();
         }
 
         private void gui_emai_xac_nhan_cap_nhat_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
@@ -396,38 +409,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where ID_DON_HANG=" + M_us.dcID_DON_HANG);
-            m_grc_lich_su_thuc_hien.DataSource = v_ds.Tables[0];
-        }
-
-        private void update_log_gd_dat_hang()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(M_us.dcID);
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "đơn hàng vừa được cập nhật";
-            v_us.Update();
-        }
-
-        private void ghi_log_thay_doi_don_hang()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 321;//trang thai vua được cập nhật
-            v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC= M_us.dcID_NGUOI_NHAN_THAO_TAC;
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
-            v_us.Insert();
-           
-           
-            //return v_us.dcID; 
-        }
-
-        private void update_log_thay_doi_don_hang()
-        {
-
-           
+            v_us.FillDatasetWithQuery(v_ds, "select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where ID_DON_HANG=" + M_us.dcID_DON_HANG + "order by THOI_GIAN_TAO");
         }
 
         private void udpate_don_hang()
@@ -482,6 +464,7 @@ namespace TOSApp.ChucNang
         private void ghi_don_hang()
         {
             form_2_us();
+            
             if (m_e_form_mode == DataEntryFormMode.InsertDataState)
             {
                 m_us.Insert();
@@ -754,10 +737,17 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                 ghi_don_hang();
-                 ghi_log_tu_choi_don_hang();
-                 this.Close();
-
+                if (m_txt_phan_hoi_tu_dvmc.Text == "")
+                {
+                    MessageBox.Show("hãy nhập lý do từ chối!");
+                    m_txt_phan_hoi_tu_dvmc.Focus();
+                }
+                else
+                {
+                    ghi_don_hang();
+                    ghi_log_tu_choi_don_hang();
+                    this.Close();
+                }
             }
             catch (Exception v_e)
             {
@@ -768,22 +758,22 @@ namespace TOSApp.ChucNang
 
         private void ghi_log_tu_choi_don_hang()
         {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 294;
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//?? văn
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-            v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
-            v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "FO từ chối đơn hàng";
-            v_us.Insert();
-            MessageBox.Show("Đã từ chối đơn hàng");
-          
+
+           
+                US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+                v_us.dcID_LOAI_THAO_TAC = 294;
+                v_us.dcID_GD_DAT_HANG = m_us.dcID;
+                v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//?? văn
+                v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+                v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
+                v_us.strTHAO_TAC_HET_HAN_YN = "N";
+                v_us.strGHI_CHU = m_txt_phan_hoi_tu_dvmc.Text;
+                v_us.Insert();
+                MessageBox.Show("Đã từ chối đơn hàng");
+           
         }
 
 
-
- 
 
         private void us_2_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
@@ -823,6 +813,8 @@ namespace TOSApp.ChucNang
             m_cbo_loai_dich_vu_1.Enabled = false;
             m_cbo_loai_dich_vu_2.Enabled = false;
             m_cbo_dich_vu.Enabled = false;
+            m_searchLookUpEdit_dv.Enabled = false;
+           
         }
 
         private void m_cbo_loai_dich_vu_1_SelectedValueChanged(object sender, EventArgs e)
@@ -882,6 +874,9 @@ namespace TOSApp.ChucNang
             m_cbo_thoi_gian_hoan_thanh.Enabled = false;
             m_txt_yeu_cau_cu_the.Enabled = false;
             m_txt_phan_hoi_tu_dvmc.Enabled = false;
+            m_searchLookUpEdit_dv.Enabled = false;
+           
+            
          //   m_dat_thoi_diem_can_hoan_thanh.Enabled = true;
         }
 

@@ -222,6 +222,7 @@ namespace TOSApp
                     v_don_hang_can_tiep_nhan_BO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần tiếp nhận";
                     v_don_hang_can_tiep_nhan_BO.m_panel_BO_hoan_thanh.Visible = false;
                     v_don_hang_can_tiep_nhan_BO.m_cmd_cap_nhat_BO.Visible = false;
+                    v_don_hang_can_tiep_nhan_BO.m_cmd_BO_cap_nhat_xu_ly.Visible = false;
                     v_don_hang_can_tiep_nhan_BO.Show();
                 }
                 else
@@ -279,6 +280,7 @@ namespace TOSApp
                     v_don_hang_can_xu_ly_PM.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_PM.m_panel_PM_hoan_thanh.Visible = false;
                     v_don_hang_can_xu_ly_PM.m_cmd_cap_nhat_PM.Visible = false;
+                    v_don_hang_can_xu_ly_PM.m_cmd_PM_cap_nhat_xu_ly.Visible = false;
                     v_don_hang_can_xu_ly_PM.Show();
                 }
                 else
@@ -328,12 +330,13 @@ namespace TOSApp
             {
                 if (v_don_hang_can_xu_ly_TD == null || !IsFormOpen(v_don_hang_can_xu_ly_TD))
                 {
-                    v_don_hang_can_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+                    v_don_hang_can_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_can_xu_ly_TD.MdiParent = this;
                     v_don_hang_can_xu_ly_TD.Text = "Đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng cần xử lý";
                     v_don_hang_can_xu_ly_TD.m_panel_TD_hoan_thanh.Visible = false;
                     v_don_hang_can_xu_ly_TD.m_cmd_cap_nhat_TD.Visible = false;
+                    v_don_hang_can_xu_ly_TD.m_cmd_TD_cap_nhat_xu_ly.Visible = false;
                     v_don_hang_can_xu_ly_TD.Show();
                 }
                 else
@@ -791,7 +794,7 @@ namespace TOSApp
         {
             try
             {
-                check_incoming_call();
+               // check_incoming_call();
             }
             catch (Exception v_e)
             {

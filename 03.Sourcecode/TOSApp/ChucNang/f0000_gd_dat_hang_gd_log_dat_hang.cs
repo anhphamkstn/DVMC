@@ -142,11 +142,11 @@ namespace TOSApp.ChucNang
             else if (us_user.dcIDNhom == 5) //td
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC in (305,313) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
-                else m_query = m_query + "And ID_LOAI_THAO_TAC = 306 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
+                else m_query = m_query + "And ID_LOAI_THAO_TAC = 305 And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
                  //tm
             else m_query = m_query + "And ID_LOAI_THAO_TAC in(321,297)";
 
-
+            m_query += "order by THOI_GIAN_TAO DESC";
             v_us.FillDatasetWithQuery(v_ds,m_query);
             m_grc_gd_dat_hang_gd_log_dat_hang.DataSource = v_ds.Tables[0];
         }
@@ -509,10 +509,8 @@ namespace TOSApp.ChucNang
             try
             {
                 fill_data_to_m_us();
-                update_log_admin_huy_don_hang();
-                ghi_log_admin_da_huy_don_hang();
-                load_data_2_grid();
-                MessageBox.Show("Đã hùy đơn hàng!");
+                f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
+                f103.Display(m_us);                       
             }
             catch (Exception v_e)
             {
@@ -521,33 +519,7 @@ namespace TOSApp.ChucNang
             }
         }
 
-        private void ghi_log_admin_da_huy_don_hang()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 300;//đã hủy 
-            v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC =us_user.dcID;
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "TD đã hủy đơn hàng";
-            v_us.Insert();
-        }
-
-        private void update_log_admin_huy_don_hang()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "TD đã hủy đơn hàng";
-            v_us.Update();
-        }
+      
 
         #endregion
 
@@ -908,6 +880,33 @@ namespace TOSApp.ChucNang
             f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
 
             v_f100.displayForUpdate(v_us, v_deadline);
+            load_data_2_grid();
+        }
+
+        private void m_cmd_cap_nhat_xu_ly_Click(object sender, EventArgs e)
+        {
+            f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal( v_dr["ID"].ToString()));
+            v_f.Display_for_update(v_us);
+            load_data_2_grid();
+        }
+
+        private void m_cmd_TD_cap_nhat_xu_ly_Click(object sender, EventArgs e)
+        {
+            f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            v_f.Display_for_update(v_us);
+            load_data_2_grid();
+        }
+
+        private void m_cmd_PM_cap_nhat_xu_ly_Click(object sender, EventArgs e)
+        {
+            f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            v_f.Display_for_update(v_us);
             load_data_2_grid();
         }
     }

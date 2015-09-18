@@ -43,6 +43,7 @@
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TEN_US_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_log_dat_hang)).BeginInit();
@@ -203,9 +204,12 @@
             this.THAO_THAC_HET_HAN_YN,
             this.NGUOI_NHAN_THAO_TAC,
             this.GHI_CHU,
-            this.MA_DON_HANG});
+            this.MA_DON_HANG,
+            this.TEN_US_HANG});
             this.m_grv_ds_log_dat_hang.GridControl = this.m_grc_ds_log_gd_dat_hang;
             this.m_grv_ds_log_dat_hang.Name = "m_grv_ds_log_dat_hang";
+            this.m_grv_ds_log_dat_hang.OptionsBehavior.Editable = false;
+            this.m_grv_ds_log_dat_hang.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_log_dat_hang.PaintStyleName = "Office2003";
@@ -216,7 +220,7 @@
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.Name = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.Visible = true;
-            this.TEN_NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 1;
+            this.TEN_NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 2;
             // 
             // THOI_GIAN_TAO
             // 
@@ -224,7 +228,7 @@
             this.THOI_GIAN_TAO.FieldName = "NGAY_LAP_THAO_TAC";
             this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Visible = true;
-            this.THOI_GIAN_TAO.VisibleIndex = 3;
+            this.THOI_GIAN_TAO.VisibleIndex = 4;
             // 
             // TEN_CHI_NHANH
             // 
@@ -232,7 +236,7 @@
             this.TEN_CHI_NHANH.FieldName = "TEN_CHI_NHANH";
             this.TEN_CHI_NHANH.Name = "TEN_CHI_NHANH";
             this.TEN_CHI_NHANH.Visible = true;
-            this.TEN_CHI_NHANH.VisibleIndex = 4;
+            this.TEN_CHI_NHANH.VisibleIndex = 5;
             // 
             // TEN_LOAI_THAO_TAC_LOG
             // 
@@ -240,7 +244,7 @@
             this.TEN_LOAI_THAO_TAC_LOG.FieldName = "TEN_LOAI_THAO_TAC_LOG";
             this.TEN_LOAI_THAO_TAC_LOG.Name = "TEN_LOAI_THAO_TAC_LOG";
             this.TEN_LOAI_THAO_TAC_LOG.Visible = true;
-            this.TEN_LOAI_THAO_TAC_LOG.VisibleIndex = 5;
+            this.TEN_LOAI_THAO_TAC_LOG.VisibleIndex = 6;
             // 
             // THAO_THAC_HET_HAN_YN
             // 
@@ -248,7 +252,7 @@
             this.THAO_THAC_HET_HAN_YN.FieldName = "THAO_TAC_HET_HAN_YN";
             this.THAO_THAC_HET_HAN_YN.Name = "THAO_THAC_HET_HAN_YN";
             this.THAO_THAC_HET_HAN_YN.Visible = true;
-            this.THAO_THAC_HET_HAN_YN.VisibleIndex = 6;
+            this.THAO_THAC_HET_HAN_YN.VisibleIndex = 7;
             // 
             // NGUOI_NHAN_THAO_TAC
             // 
@@ -256,7 +260,7 @@
             this.NGUOI_NHAN_THAO_TAC.FieldName = "TEN_NGUOI_NHAN_THAO_TAC";
             this.NGUOI_NHAN_THAO_TAC.Name = "NGUOI_NHAN_THAO_TAC";
             this.NGUOI_NHAN_THAO_TAC.Visible = true;
-            this.NGUOI_NHAN_THAO_TAC.VisibleIndex = 2;
+            this.NGUOI_NHAN_THAO_TAC.VisibleIndex = 3;
             // 
             // GHI_CHU
             // 
@@ -264,7 +268,7 @@
             this.GHI_CHU.FieldName = "GHI_CHU";
             this.GHI_CHU.Name = "GHI_CHU";
             this.GHI_CHU.Visible = true;
-            this.GHI_CHU.VisibleIndex = 7;
+            this.GHI_CHU.VisibleIndex = 8;
             // 
             // MA_DON_HANG
             // 
@@ -287,6 +291,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(993, 218);
             this.panel2.TabIndex = 1;
+            // 
+            // TEN_US_HANG
+            // 
+            this.TEN_US_HANG.Caption = "TÊN KHÁCH HÀNG";
+            this.TEN_US_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.TEN_US_HANG.Name = "TEN_US_HANG";
+            this.TEN_US_HANG.Visible = true;
+            this.TEN_US_HANG.VisibleIndex = 1;
             // 
             // f118_ds_log_dat_hang
             // 
@@ -322,5 +334,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label m_lab_tieu_de;
+        private DevExpress.XtraGrid.Columns.GridColumn TEN_US_HANG;
     }
 }

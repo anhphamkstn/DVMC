@@ -30,6 +30,7 @@ namespace TOSApp
 		public static string strMAT_KHAU ;	
 		public static string strEMAIL ;
         public static decimal dcIDNhom;
+        public static string TD_tu_choi;
         public static List <decimal> m_lst_id_nguoi_xu_ly = new List<decimal>(); 
         public static string GetMD5(string txt)
         {

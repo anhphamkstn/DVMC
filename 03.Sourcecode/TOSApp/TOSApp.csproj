@@ -212,6 +212,8 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>..\DLL\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -288,11 +290,23 @@
     <Compile Include="ChucNang\f100_don_dat_hang_new.Designer.cs">
       <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f101_cap_nhat_xu_don_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f101_cap_nhat_xu_don_hang.Designer.cs">
+      <DependentUpon>f101_cap_nhat_xu_don_hang.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.Designer.cs">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChucNang\f103_TD_ly_do_tu_choi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f103_TD_ly_do_tu_choi.Designer.cs">
+      <DependentUpon>f103_TD_ly_do_tu_choi.cs</DependentUpon>
     </Compile>
     <Compile Include="ChucNang\f104_danh_sach_don_hang_dang_xu_ly_BO.cs">
       <SubType>Form</SubType>
@@ -390,11 +404,11 @@
     <Compile Include="ChucNang\f119_ds_don_hang_hoan_thanh.Designer.cs">
       <DependentUpon>f119_ds_don_hang_hoan_thanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\F120_ds_don_hang_khach_hang.cs">
+    <Compile Include="ChucNang\f120_ds_don_hang_khach_hang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChucNang\F120_ds_don_hang_khach_hang.Designer.cs">
-      <DependentUpon>F120_ds_don_hang_khach_hang.cs</DependentUpon>
+    <Compile Include="ChucNang\f120_ds_don_hang_khach_hang.Designer.cs">
+      <DependentUpon>f120_ds_don_hang_khach_hang.cs</DependentUpon>
     </Compile>
     <Compile Include="ChucNang\f121_tao_user_moi.cs">
       <SubType>Form</SubType>
@@ -580,8 +594,14 @@
       <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f101_cap_nhat_xu_don_hang.resx">
+      <DependentUpon>f101_cap_nhat_xu_don_hang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f102_chon_danh_sach_nguoi_xu_ly_new.resx">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f103_TD_ly_do_tu_choi.resx">
+      <DependentUpon>f103_TD_ly_do_tu_choi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f104_danh_sach_don_hang_dang_xu_ly_BO.resx">
       <DependentUpon>f104_danh_sach_don_hang_dang_xu_ly_BO.cs</DependentUpon>
@@ -631,8 +651,8 @@
     <EmbeddedResource Include="ChucNang\f119_ds_don_hang_hoan_thanh.resx">
       <DependentUpon>f119_ds_don_hang_hoan_thanh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\F120_ds_don_hang_khach_hang.resx">
-      <DependentUpon>F120_ds_don_hang_khach_hang.cs</DependentUpon>
+    <EmbeddedResource Include="ChucNang\f120_ds_don_hang_khach_hang.resx">
+      <DependentUpon>f120_ds_don_hang_khach_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f121_tao_user_moi.resx">
       <DependentUpon>f121_tao_user_moi.cs</DependentUpon>
