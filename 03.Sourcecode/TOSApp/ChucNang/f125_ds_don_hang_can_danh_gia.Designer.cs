@@ -41,6 +41,7 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_danh_gia_cua_khach_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pan_button = new System.Windows.Forms.Panel();
             this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -205,7 +206,8 @@
             this.THOI_DIEM_CAN_HOAN_THANH,
             this.gridColumn6,
             this.gridColumn7,
-            this.gridColumn8});
+            this.gridColumn8,
+            this.m_danh_gia_cua_khach_hang});
             this.m_grv_ds_dh_hoan_thanh.GridControl = this.m_grc_ds_dh_hoan_thanh;
             this.m_grv_ds_dh_hoan_thanh.Name = "m_grv_ds_dh_hoan_thanh";
             this.m_grv_ds_dh_hoan_thanh.OptionsBehavior.Editable = false;
@@ -257,7 +259,7 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "DỊCH VỤ YÊU CẦU";
-            this.gridColumn6.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
+            this.gridColumn6.FieldName = "TEN_YEU_CAU";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 4;
@@ -277,6 +279,14 @@
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
+            // 
+            // m_danh_gia_cua_khach_hang
+            // 
+            this.m_danh_gia_cua_khach_hang.Caption = "ĐÁNH GIÁ CỦA KHÁCH HÀNG";
+            this.m_danh_gia_cua_khach_hang.FieldName = "TEN_DANH_GIA_TU_USER_DAT_HANG";
+            this.m_danh_gia_cua_khach_hang.Name = "m_danh_gia_cua_khach_hang";
+            this.m_danh_gia_cua_khach_hang.Visible = true;
+            this.m_danh_gia_cua_khach_hang.VisibleIndex = 8;
             // 
             // m_pan_button
             // 
@@ -347,5 +357,6 @@
         private System.Windows.Forms.Panel m_pan_button;
         private DevExpress.XtraEditors.SimpleButton m_cmd_danh_gia;
         private System.Windows.Forms.Panel panel3;
+        private DevExpress.XtraGrid.Columns.GridColumn m_danh_gia_cua_khach_hang;
     }
 }

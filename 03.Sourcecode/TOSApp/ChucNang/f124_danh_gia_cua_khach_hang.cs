@@ -20,10 +20,17 @@ namespace TOSApp.ChucNang
         US_GD_LOG_DAT_HANG m_us_log = new US_GD_LOG_DAT_HANG();
         private void m_cmd_ok_Click(object sender, EventArgs e)
         {
-            update_danh_gia();
-            update_log();
-            insert_log();
-            this.Close();
+            if ((m_radio_xong_viec.Checked || m_radio_hoi_duoi.Checked || m_radio_chua_dat.Checked) && m_txt_y_kien_khac.Text == "")
+            {
+                MessageBox.Show("nhập lý do!");
+            }
+            else
+            {
+                update_danh_gia();
+                update_log();
+                insert_log();
+                this.Close();
+            }
         }
         internal void display(US_GD_DAT_HANG v_us, US_GD_LOG_DAT_HANG v_us_log)
         {

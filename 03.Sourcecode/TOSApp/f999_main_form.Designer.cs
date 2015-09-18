@@ -197,8 +197,7 @@
             // m_rbc_TM
             // 
             this.m_rbc_TM.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup14,
-            this.ribbonPageGroup22});
+            this.ribbonPageGroup14});
             this.m_rbc_TM.Image = ((System.Drawing.Image)(resources.GetObject("m_rbc_TM.Image")));
             this.m_rbc_TM.Name = "m_rbc_TM";
             this.m_rbc_TM.Text = "Nghiệp vụ TM";
@@ -367,6 +366,7 @@
             this.ribbonPageGroup10,
             this.ribbonPageGroup18,
             this.ribbonPageGroup21,
+            this.ribbonPageGroup22,
             this.m_rib_blacklist});
             this.m_rbc_PM.Image = ((System.Drawing.Image)(resources.GetObject("m_rbc_PM.Image")));
             this.m_rbc_PM.Name = "m_rbc_PM";
