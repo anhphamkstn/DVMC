@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f100_don_dat_hang_new));
             this.label1 = new System.Windows.Forms.Label();
             this.m_txt_ma_don_hang = new System.Windows.Forms.TextBox();
@@ -51,7 +52,7 @@
             this.m_cbo_trang_thai_don_hang = new System.Windows.Forms.ComboBox();
             this.m_lbl_trang_thai_don_hang = new System.Windows.Forms.Label();
             this.m_cmd_xac_nhan_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.ImageList = new System.Windows.Forms.ImageList();
+            this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_pnl_nguoi_dat_hang_infor = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -107,7 +108,7 @@
             this.TEN_LOAI_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.KHACH_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager();
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.hideContainerRight = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.m_dp_don_hang = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel2_Container = new DevExpress.XtraBars.Docking.ControlContainer();

@@ -149,7 +149,7 @@ namespace TOSApp.ChucNang
             else
                 if (kieu_load_form==2)
                 {
-                    m_query = m_query + "And ID_LOAI_THAO_TAC in(321,297)";
+                    m_query = m_query + "And (ID_LOAI_THAO_TAC = 321 OR (ID_LOAI_THAO_TAC = 297 AND ID_LOAI_THAO_TAC = ALL (SELECT* FROM dbo.f_get_table_trang_thai_don_hang(ID_DON_HANG)))) ";
                 }
 
             m_query += "order by THOI_GIAN_TAO DESC";
