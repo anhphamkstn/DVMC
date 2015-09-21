@@ -27,16 +27,16 @@ namespace TOSApp
         {
             InitializeComponent();
             format_controll_for_each_user(us_user.dcIDNhom);
-        //   format_button_controll();
+            //   format_button_controll();
         }
 
         // forms in tabs
         f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_can_tiep_nhan_BO;
-        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_BO ;
-        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_can_xu_ly_PM ;
-        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_PM ;
-        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_can_xu_ly_TD ;
-        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_TD ;
+        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_BO;
+        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_can_xu_ly_PM;
+        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_PM;
+        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_can_xu_ly_TD;
+        f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_TD;
         f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_can_danh_gia_TM;
         f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dieu_phoi_lai_FO;
         f117_ds_tat_ca_don_dat_hang v_tat_ca_don_hang;
@@ -57,7 +57,7 @@ namespace TOSApp
                     GetAllControl(c, list);
             }
         }
-        public void openform( Form form, int i)
+        public void openform(Form form, int i)
         {
             if (form == null || !IsFormOpen(form))
             {
@@ -91,7 +91,7 @@ namespace TOSApp
             //GetAllControl(this, list);
 
             ArrayList visiblePages = ribbonControl1.TotalPageCategory.GetVisiblePages();
-  
+
             foreach (RibbonPage page in visiblePages)
             {
                 for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
@@ -117,11 +117,11 @@ namespace TOSApp
             if (us_user.dcIDNhom == 1 || us_user.dcIDNhom == 5)
             {
                 m_rib_dm_cau_hoi.Visible = true;
-               
+
             }
             else m_rib_dm_cau_hoi.Visible = false;
 
-            if(us_user.dcIDNhom != 3 && us_user.dcIDNhom != 5)
+            if (us_user.dcIDNhom != 3 && us_user.dcIDNhom != 5)
             {
                 m_barsubitem_tao_moi_user.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             }
@@ -150,7 +150,7 @@ namespace TOSApp
             //}
         }
 
-        private  void format_button_controll()
+        private void format_button_controll()
         {
             if (user_id == 1)
             {
@@ -204,11 +204,11 @@ namespace TOSApp
             }
         }
         //decimal id_nguoi_dung;
-      
+
         decimal user_id = us_user.dcIDNhom;
 
-        
-        
+
+
         #region format controll for each user
         private void m_cmd_ds_don_hang_can_tiep_nhan_BO_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -229,7 +229,7 @@ namespace TOSApp
                 {
                     v_don_hang_can_tiep_nhan_BO.Focus();
                 }
-                         
+
             }
             catch (Exception v_e)
             {
@@ -256,8 +256,8 @@ namespace TOSApp
                 {
                     v_don_hang_dang_xu_ly_BO.Focus();
                 }
-               
-    
+
+
             }
             catch (Exception v_e)
             {
@@ -270,10 +270,10 @@ namespace TOSApp
         {
             try
             {
-                
+
                 if (v_don_hang_can_xu_ly_PM == null || !IsFormOpen(v_don_hang_can_xu_ly_PM))
                 {
-                   // v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+                    // v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
                     v_don_hang_can_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(1);
                     v_don_hang_can_xu_ly_PM.MdiParent = this;
                     v_don_hang_can_xu_ly_PM.Text = "Đơn hàng cần xử lý";
@@ -287,8 +287,8 @@ namespace TOSApp
                 {
                     v_don_hang_can_xu_ly_PM.Focus();
                 }
-     
-                
+
+
             }
             catch (Exception v_e)
             {
@@ -296,6 +296,7 @@ namespace TOSApp
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+       
 
         private void m_cmd_ds_don_hang_dang_xu_ly_PM_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -304,6 +305,7 @@ namespace TOSApp
                 if (v_don_hang_dang_xu_ly_PM == null || !IsFormOpen(v_don_hang_can_xu_ly_PM))
                 {
                     v_don_hang_dang_xu_ly_PM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
+
                     v_don_hang_dang_xu_ly_PM.MdiParent = this;
                     v_don_hang_dang_xu_ly_PM.Text = "Đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_PM.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
@@ -315,7 +317,7 @@ namespace TOSApp
                 else
                 {
                     v_don_hang_dang_xu_ly_PM.Focus();
-                }           
+                }
             }
             catch (Exception v_e)
             {
@@ -342,8 +344,8 @@ namespace TOSApp
                 else
                 {
                     v_don_hang_can_xu_ly_TD.Focus();
-                }           
-               
+                }
+
             }
             catch (Exception v_e)
             {
@@ -369,9 +371,9 @@ namespace TOSApp
                 else
                 {
                     v_don_hang_dang_xu_ly_TD.Focus();
-                }           
-               
-             
+                }
+
+
             }
             catch (Exception v_e)
             {
@@ -395,7 +397,7 @@ namespace TOSApp
                 else
                 {
                     v_don_hang_can_danh_gia_TM.Focus();
-                }           
+                }
             }
             catch (Exception v_e)
             {
@@ -412,12 +414,12 @@ namespace TOSApp
                 {
                     v_tat_ca_don_hang = new f117_ds_tat_ca_don_dat_hang();
                     v_tat_ca_don_hang.MdiParent = this;
-                   v_tat_ca_don_hang.Show();
+                    v_tat_ca_don_hang.Show();
                 }
                 else
                 {
                     v_tat_ca_don_hang.Focus();
-                }           
+                }
 
             }
             catch (Exception v_e)
@@ -440,8 +442,8 @@ namespace TOSApp
                 else
                 {
                     v_tat_ca_don_hang_TD.Focus();
-                }           
-               
+                }
+
             }
             catch (Exception v_e)
             {
@@ -479,15 +481,15 @@ namespace TOSApp
         {
             if (v_log_dat_hang == null || !IsFormOpen(v_log_dat_hang))
             {
-                 v_log_dat_hang = new f118_ds_log_dat_hang();
-                 v_log_dat_hang.MdiParent = this;
-                 v_log_dat_hang.Show();
+                v_log_dat_hang = new f118_ds_log_dat_hang();
+                v_log_dat_hang.MdiParent = this;
+                v_log_dat_hang.Show();
             }
             else
             {
                 v_log_dat_hang.Focus();
             }
-           
+
         }
 
         private void m_cmd_dm_cau_hoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -523,7 +525,7 @@ namespace TOSApp
                 {
                     v_don_hang_hoan_thanh.Focus();
                 }
-              
+
             }
             catch (Exception v_e)
             {
@@ -546,7 +548,7 @@ namespace TOSApp
             {
                 v_dm_email.Focus();
             }
-            
+
         }
 
         private void m_cmd_dm_dich_vu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -561,7 +563,7 @@ namespace TOSApp
             {
                 v_dm_loai_yeu_cau.Focus();
             }
-         
+
         }
 
         TOSApp.BaoCao.f500_BAO_CAO_DANH_GIA v_bao_cao_danh_gia;
@@ -617,7 +619,7 @@ namespace TOSApp
             {
                 f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
                 v_f.MdiParent = this;
-              
+
                 v_f.display_for_refurse_dealine(deadline_id);
             }
             catch (Exception v_e)
@@ -645,7 +647,7 @@ namespace TOSApp
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-             try
+            try
             {
                 f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
                 v_f.MdiParent = this;
@@ -697,6 +699,7 @@ namespace TOSApp
                     v_don_hang_dang_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_TD.m_panel_TD_tu_choi.Visible = false;
                     v_don_hang_dang_xu_ly_TD.m_panel_TD_tiep_nhan.Visible = false;
+                    format_griview_don_hang_dang_xu_ly_TM(v_don_hang_dang_xu_ly_TD);
                     v_don_hang_dang_xu_ly_TD.Show();
                 }
                 else
@@ -708,6 +711,24 @@ namespace TOSApp
             {
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void format_griview_don_hang_dang_xu_ly_TM(f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dang_xu_ly_TD)
+        {
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[2].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[6].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[9].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[10].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[11].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[12].Visible = true;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[13].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[14].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[15].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[16].Visible = false;
+            v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[17].Visible = false;
+
+
+
         }
 
         private void m_baritem_dang_xuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -751,7 +772,7 @@ namespace TOSApp
 
         }
 
-     
+
 
         private void m_cmd_blacklist_TD_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -795,12 +816,12 @@ namespace TOSApp
             try
             {
 
-               // check_incoming_call();
+                // check_incoming_call();
             }
             catch (Exception v_e)
             {
                 CSystemLog_100.ExceptionHandle(v_e);
-            }  
+            }
         }
 
         //private void check_incoming_call()
@@ -828,11 +849,11 @@ namespace TOSApp
 
         //   // HelpUtils.open_form_sinh_vien_call(v_obj_callinfo);
         //    m_timer_imcoming_call.Enabled = true;
-       // }
+        // }
 
 
 
-       
+
     }
 }
 

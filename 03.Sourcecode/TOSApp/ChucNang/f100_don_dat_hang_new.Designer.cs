@@ -564,7 +564,7 @@
             this.m_cbo_user_nhan_vien_dat_hang.Size = new System.Drawing.Size(233, 21);
             this.m_cbo_user_nhan_vien_dat_hang.TabIndex = 1;
             this.m_cbo_user_nhan_vien_dat_hang.SelectedIndexChanged += new System.EventHandler(this.load_data_2_selected_nguoi_dat_hang_vs_dien_thoai);
-            // 
+
             // panel3
             // 
             this.panel3.Controls.Add(this.label5);
@@ -707,7 +707,7 @@
             this.groupBox2.Size = new System.Drawing.Size(1017, 117);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Yêu cầu cụ  thể (nếu có)";
+            this.groupBox2.Text = "Yêu cầu cụ  thể ";
             // 
             // m_txt_yeu_cau_cu_the
             // 
@@ -1057,6 +1057,7 @@
             this.m_txt_phan_hoi_tu_dvmc.Name = "m_txt_phan_hoi_tu_dvmc";
             this.m_txt_phan_hoi_tu_dvmc.Size = new System.Drawing.Size(578, 48);
             this.m_txt_phan_hoi_tu_dvmc.TabIndex = 15;
+            this.m_txt_phan_hoi_tu_dvmc.Text = "Tiếp nhận";
             // 
             // m_grc_user_don_hang
             // 
@@ -1371,6 +1372,8 @@
             this.ResumeLayout(false);
 
         }
+
+       
 
         #endregion
 

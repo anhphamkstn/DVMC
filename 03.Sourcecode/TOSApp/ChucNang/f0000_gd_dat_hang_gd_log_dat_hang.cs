@@ -10,7 +10,7 @@ using IP.Core.IPCommon;
 using IPCOREUS;
 using TOSApp.HT;
 using DevExpress.XtraEditors;
-
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace TOSApp.ChucNang
 {
@@ -914,6 +914,20 @@ namespace TOSApp.ChucNang
             US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
             v_f.Display_for_update(v_us);
             load_data_2_grid();
+        }
+
+        private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
+            GridView View = sender as GridView;
+            if (e.RowHandle >= 0)
+            {
+                DateTime category = CIPConvert.ToDatetime( View.GetRowCellDisplayText(e.RowHandle, View.Columns["THOI_DIEM_CAN_HOAN_THANH"]));
+                if (category < System.DateTime.Today)
+                {
+                    e.Appearance.BackColor = Color.Salmon;
+                    e.Appearance.BackColor2 = Color.SeaShell;
+                }
+            }
         }
     }
 }

@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -103,7 +105,7 @@
             this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.m_cmd_them_moi_don_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.timer1 = new System.Windows.Forms.Timer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).BeginInit();
@@ -160,12 +162,9 @@
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.LevelTemplate = this.gridView1;
-            gridLevelNode1.RelationName = "Level1";
-            gridLevelNode2.RelationName = "Level2";
+            gridLevelNode1.RelationName = "Level2";
             this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1,
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
@@ -317,16 +316,33 @@
             this.GHI_CHU,
             this.NGUOI_NHAN_THAO_TAC_LOG,
             this.NGUOI_TAO_THAO_TAC_LOG});
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.CustomizationFormBounds = new System.Drawing.Rectangle(1080, 445, 216, 178);
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
+    "AddDays(Today(),-1 ) )";
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Gold;
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Gold;
+            styleFormatCondition2.Appearance.Options.UseBackColor = true;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddDay(Today(),-1))";
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
+            styleFormatCondition1,
+            styleFormatCondition2});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Name = "m_grv_gd_dat_hang_gd_log_dat_hang";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsBehavior.ReadOnly = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsNavigation.AutoFocusNewRow = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ColumnAutoWidth = false;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.PaintStyleName = "Office2003";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.THOI_GIAN_TAO, DevExpress.Data.ColumnSortOrder.Descending)});
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             // 
             // MA_DON_HANG
             // 
@@ -439,7 +455,7 @@
             // LOAI_THAO_TAC_LOG
             // 
             this.LOAI_THAO_TAC_LOG.Caption = "LOẠI THAO TÁC";
-            this.LOAI_THAO_TAC_LOG.FieldName = "TEN_LOAI_THAO_TAC";
+            this.LOAI_THAO_TAC_LOG.FieldName = "TEN_LOAI_THAO_TAC_LOG";
             this.LOAI_THAO_TAC_LOG.Name = "LOAI_THAO_TAC_LOG";
             this.LOAI_THAO_TAC_LOG.Visible = true;
             this.LOAI_THAO_TAC_LOG.VisibleIndex = 13;
@@ -1131,25 +1147,8 @@
         private DevExpress.XtraGrid.GridControl m_grc_gd_dat_hang_gd_log_dat_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_gd_dat_hang_gd_log_dat_hang;
-        private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn HO_TEN_USER_DAT_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn DON_VI;
-        private DevExpress.XtraGrid.Columns.GridColumn DIEN_THOAI;
-        private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
-        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_CAN_HOAN_THANH;
-        private DevExpress.XtraGrid.Columns.GridColumn TEN_NHOM_DICH_VU;
-        private DevExpress.XtraGrid.Columns.GridColumn NOI_DUNG_DAT_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_TAO;
         private DevExpress.XtraGrid.Columns.GridColumn PHUONG_THUC_DAT_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn CHI_NHANH;
         private DevExpress.XtraGrid.Columns.GridColumn ID_LOG_DAT_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn LOAI_THAO_TAC_LOG;
-        private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_DON_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn NGAY_LAP_THAO_TAC_LOG;
-        private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
-        private DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC_LOG;
-        private DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
         private System.Windows.Forms.Panel panel11;
         private DevExpress.XtraEditors.SimpleButton m_cmd_PM_dieu_phoi_lai;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TD_hoan_thanh;
@@ -1189,5 +1188,22 @@
         public DevExpress.XtraEditors.SimpleButton m_cmd_TD_cap_nhat_xu_ly;
         private System.Windows.Forms.Panel panel10;
         public DevExpress.XtraEditors.SimpleButton m_cmd_PM_cap_nhat_xu_ly;
+        public DevExpress.XtraGrid.Views.Grid.GridView m_grv_gd_dat_hang_gd_log_dat_hang;
+        public DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
+        public DevExpress.XtraGrid.Columns.GridColumn HO_TEN_USER_DAT_HANG;
+        public DevExpress.XtraGrid.Columns.GridColumn DON_VI;
+        public DevExpress.XtraGrid.Columns.GridColumn DIEN_THOAI;
+        public DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
+        public DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_CAN_HOAN_THANH;
+        public DevExpress.XtraGrid.Columns.GridColumn TEN_NHOM_DICH_VU;
+        public DevExpress.XtraGrid.Columns.GridColumn NOI_DUNG_DAT_HANG;
+        public DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_TAO;
+        public DevExpress.XtraGrid.Columns.GridColumn CHI_NHANH;
+        public DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_DON_HANG;
+        public DevExpress.XtraGrid.Columns.GridColumn LOAI_THAO_TAC_LOG;
+        public DevExpress.XtraGrid.Columns.GridColumn NGAY_LAP_THAO_TAC_LOG;
+        public DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
+        public DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC_LOG;
+        public DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
     }
 }

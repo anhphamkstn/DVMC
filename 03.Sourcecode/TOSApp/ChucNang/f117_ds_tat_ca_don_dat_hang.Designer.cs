@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f117_ds_tat_ca_don_dat_hang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +36,7 @@
             this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.m_grc_ds_don_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_don_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,14 +49,14 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_grc_ds_don_dat_hang = new DevExpress.XtraGrid.GridControl();
+            this.timer1 = new System.Windows.Forms.Timer();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -133,10 +132,17 @@
             this.panel5.Size = new System.Drawing.Size(1213, 238);
             this.panel5.TabIndex = 2;
             // 
-            // timer1
+            // m_grc_ds_don_dat_hang
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 10000;
+            this.m_grc_ds_don_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_ds_don_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_ds_don_dat_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_grc_ds_don_dat_hang.MainView = this.m_grv_ds_don_dat_hang;
+            this.m_grc_ds_don_dat_hang.Name = "m_grc_ds_don_dat_hang";
+            this.m_grc_ds_don_dat_hang.Size = new System.Drawing.Size(1213, 238);
+            this.m_grc_ds_don_dat_hang.TabIndex = 0;
+            this.m_grc_ds_don_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_ds_don_dat_hang});
             // 
             // m_grv_ds_don_dat_hang
             // 
@@ -280,6 +286,7 @@
             this.m_grv_ds_don_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_dat_hang.PaintStyleName = "Office2003";
             this.m_grv_ds_don_dat_hang.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_ds_don_dat_hang_RowCellClick);
+            this.m_grv_ds_don_dat_hang.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             // 
             // MA_DON_HANG
             // 
@@ -380,17 +387,10 @@
             this.gridColumn11.VisibleIndex = 10;
             this.gridColumn11.Width = 89;
             // 
-            // m_grc_ds_don_dat_hang
+            // timer1
             // 
-            this.m_grc_ds_don_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_ds_don_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_ds_don_dat_hang.Location = new System.Drawing.Point(0, 0);
-            this.m_grc_ds_don_dat_hang.MainView = this.m_grv_ds_don_dat_hang;
-            this.m_grc_ds_don_dat_hang.Name = "m_grc_ds_don_dat_hang";
-            this.m_grc_ds_don_dat_hang.Size = new System.Drawing.Size(1213, 238);
-            this.m_grc_ds_don_dat_hang.TabIndex = 0;
-            this.m_grc_ds_don_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_grv_ds_don_dat_hang});
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
             // 
             // f117_ds_tat_ca_don_dat_hang
             // 
@@ -406,8 +406,8 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang)).EndInit();
             this.ResumeLayout(false);
 
         }

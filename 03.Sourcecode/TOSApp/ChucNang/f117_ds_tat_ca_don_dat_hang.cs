@@ -8,27 +8,27 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace TOSApp.ChucNang
 {
     public partial class f117_ds_tat_ca_don_dat_hang : Form
     {
-        decimal v_deadline =0;
+        decimal v_deadline = 0;
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us;
         public f117_ds_tat_ca_don_dat_hang()
-        {          
+        {
             InitializeComponent();
             load_data_2_grid();
         }
-      
-       
+
+
         private void load_data_2_grid()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds,"select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where Thao_tac_het_han_YN= 'N' and thoi_gian_hoan_thanh is null" );
+            v_us.FillDatasetWithQuery(v_ds, "select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where Thao_tac_het_han_YN= 'N' and thoi_gian_hoan_thanh is null");
             m_grc_ds_don_dat_hang.DataSource = v_ds.Tables[0];
         }
 
@@ -39,8 +39,8 @@ namespace TOSApp.ChucNang
                 DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-              
-                v_f100.displayForUpdate(v_us,v_deadline);
+
+                v_f100.displayForUpdate(v_us, v_deadline);
                 load_data_2_grid();
             }
             catch (Exception v_e)
@@ -73,8 +73,21 @@ namespace TOSApp.ChucNang
             load_data_2_grid();
 
         }
+        //fotmat mau cho luoi theo dieu kien
+        private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
 
-
+            GridView View = sender as GridView;
+            if (e.RowHandle >= 0)
+            {
+                DateTime category = CIPConvert.ToDatetime(View.GetRowCellDisplayText(e.RowHandle, View.Columns["THOI_DIEM_CAN_HOAN_THANH"]));
+                if (category < System.DateTime.Today)
+                {
+                    e.Appearance.BackColor = Color.Red;
+                    e.Appearance.BackColor2 = Color.Red;
+                }
+            }
+        }
 
 
         internal void display_for_refurse_dealine(decimal deadline_id)
@@ -97,6 +110,6 @@ namespace TOSApp.ChucNang
             }
         }
 
-    
+
     }
 }

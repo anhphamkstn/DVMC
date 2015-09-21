@@ -39,10 +39,18 @@ namespace TOSApp.ChucNang
         {
             try
             {
-                update_log_tu_choi();
-                ghi_log_tu_choi();
-                this.Close();
-                MessageBox.Show("Hoàn thành!");
+                if (m_txt_ly_do_tu_choi.Text == "")
+                {
+                    MessageBox.Show("Hãy nhập lý do từ chối!");
+                    m_txt_ly_do_tu_choi.Focus();
+                }
+                else
+                {
+                    update_log_tu_choi();
+                    ghi_log_tu_choi();
+                    this.Close();
+                    MessageBox.Show("Hoàn thành!");
+                }
             }
             catch (Exception v_e)
             {
