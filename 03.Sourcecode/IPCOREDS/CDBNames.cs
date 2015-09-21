@@ -576,8 +576,8 @@ namespace IPCOREDS.CDBNames
     }
     public class KHO_QUEUE
     {
-        public const string MIEN_BAC = "tos_mb";
-        public const string MIEN_NAM = "tos_mn";
+        public const string MIEN_BAC = "dvmc_6882_mb";
+        public const string MIEN_NAM = "dvmc_6882_mn";
     }
     public class V_GD_LICH_GOI_NOI_BO
     {

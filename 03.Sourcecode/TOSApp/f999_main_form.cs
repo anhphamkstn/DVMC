@@ -827,7 +827,8 @@ namespace TOSApp
 
         private void check_incoming_call()
         {
-            string m_str_stationId = "2300"; //ip-phone
+            string m_str_stationId = us_user.ipphone ; //ip-phone
+
             string v_str_result_api = "", v_str_link_services = "";
 
             v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(m_str_stationId);
@@ -837,7 +838,8 @@ namespace TOSApp
             if (v_str_output == "") return;
             CallInfor v_obj_callinfo = HelpUtils.get_start_callinfo_from_client_string_call(v_str_output);
             if (v_obj_callinfo.mobile_phone == "Anonymous") return;
-            // if (m_us_gd_cuoc_goi_yc.is_call_id_exist(v_obj_callinfo.call_id)) return; phải có check đấy nhé
+
+            if (m_us_gd_cuoc_goi_yc.is_call_id_exist(v_obj_callinfo.call_id)) return; 
             if (v_obj_callinfo.call_id == ""
                 || v_obj_callinfo.call_id == null) return;
 
