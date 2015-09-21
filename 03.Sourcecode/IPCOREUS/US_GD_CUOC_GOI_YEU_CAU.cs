@@ -368,7 +368,7 @@ namespace IPCOREUS
         public bool is_call_id_exist(string ip_str_call_id)
         {
             DS_GD_CUOC_GOI_YEU_CAU v_ds_gd_cuoc_goi_yc = new DS_GD_CUOC_GOI_YEU_CAU();
-            this.FillDataset(v_ds_gd_cuoc_goi_yc, " WHERE " + GD_CUOC_GOI_YEU_CAU.CALL_ID + " = '" + ip_str_call_id + "'");
+            this.FillDataset(v_ds_gd_cuoc_goi_yc, " WHERE GD_CUOC_GOI_YEU_CAU.CALL_ID" + " = '" + ip_str_call_id + "'");
             if (v_ds_gd_cuoc_goi_yc.GD_CUOC_GOI_YEU_CAU.Rows.Count > 0) return true;
             return false;
         }

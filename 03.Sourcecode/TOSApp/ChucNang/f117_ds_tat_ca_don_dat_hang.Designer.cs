@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f117_ds_tat_ca_don_dat_hang));
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -49,7 +51,7 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.timer1 = new System.Windows.Forms.Timer();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -277,6 +279,14 @@
             this.gridColumn1,
             this.gridColumn10,
             this.gridColumn11});
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
+    "AddDays(Today(),-1 ) )";
+            this.m_grv_ds_don_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
+            styleFormatCondition1});
             this.m_grv_ds_don_dat_hang.GridControl = this.m_grc_ds_don_dat_hang;
             this.m_grv_ds_don_dat_hang.Name = "m_grv_ds_don_dat_hang";
             this.m_grv_ds_don_dat_hang.OptionsBehavior.Editable = false;
@@ -285,6 +295,8 @@
             this.m_grv_ds_don_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_don_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_dat_hang.PaintStyleName = "Office2003";
+            this.m_grv_ds_don_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn9, DevExpress.Data.ColumnSortOrder.Descending)});
             this.m_grv_ds_don_dat_hang.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_ds_don_dat_hang_RowCellClick);
             this.m_grv_ds_don_dat_hang.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             // 

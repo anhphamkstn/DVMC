@@ -30,16 +30,7 @@ namespace TOSApp.ChucNang
             InitializeComponent();
             kieu_load_form = i;
             load_data_2_grid();
-            
-            
             format_controll_for_each_user(us_user.dcIDNhom);
-            //if (us_user.dcIDNhom == 1) format_controll_FO();
-            //else
-            //    if (us_user.dcIDNhom == 2) format_controll_BO();
-            //    else if (us_user.dcIDNhom == 3) format_controll_PM();
-            //    else if (us_user.dcIDNhom == 5) format_controll_TD();
-            //    else format_controll_TM(); 
-            
         }
 
         private void format_controll_for_each_user(decimal p)
@@ -98,11 +89,6 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            //PHAN_HOI_TU_DVMC.Visible = true;
-            //DANH_GIA_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
-            //Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
             NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
@@ -127,7 +113,7 @@ namespace TOSApp.ChucNang
 
             string m_query = "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where THAO_TAC_HET_HAN_YN = 'N'";
             if (us_user.dcIDNhom == 1) //fo
-                m_query += "And ((ID_LOAI_THAO_TAC = 310 AND ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString() + ") OR ID_LOAI_THAO_TAC in(313))";
+                m_query += "And ID_NGUOI_TAO = " + us_user.dcID.ToString() + " AND ((ID_LOAI_THAO_TAC = 310 AND ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString() + ") OR ID_LOAI_THAO_TAC in(313))";
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)

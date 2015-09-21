@@ -65,7 +65,10 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.m_txt_ho_ten_nguoi_dat_hang = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
+            this.m_searchLookUpEdit_user_nv_dat_hang = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.m_searchLookUpEditView_dm_khach_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.m_col_user_nv_dat_hang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_ho_ten_nv = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -123,6 +126,8 @@
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEdit_user_nv_dat_hang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEditView_dm_khach_hang)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -191,6 +196,7 @@
             this.m_grb_loai_dich_vu.TabIndex = 8;
             this.m_grb_loai_dich_vu.TabStop = false;
             this.m_grb_loai_dich_vu.Text = "Loại dịch vụ yêu cầu";
+            this.m_grb_loai_dich_vu.Enter += new System.EventHandler(this.m_grb_loai_dich_vu_Enter);
             // 
             // m_searchLookUpEdit_dv
             // 
@@ -199,8 +205,8 @@
             this.m_searchLookUpEdit_dv.Name = "m_searchLookUpEdit_dv";
             this.m_searchLookUpEdit_dv.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.m_searchLookUpEdit_dv.Properties.DisplayMember = "ID";
-            this.m_searchLookUpEdit_dv.Properties.ValueMember = "TEN_YEU_CAU";
+            this.m_searchLookUpEdit_dv.Properties.DisplayMember = "TEN_YEU_CAU";
+            this.m_searchLookUpEdit_dv.Properties.ValueMember = "ID";
             this.m_searchLookUpEdit_dv.Properties.View = this.m_searchLookUpEdit_dich_vu;
             this.m_searchLookUpEdit_dv.Size = new System.Drawing.Size(280, 20);
             this.m_searchLookUpEdit_dv.TabIndex = 35;
@@ -546,22 +552,57 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.m_cbo_user_nhan_vien_dat_hang);
+            this.panel7.Controls.Add(this.m_searchLookUpEdit_user_nv_dat_hang);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(233, 30);
             this.panel7.TabIndex = 0;
             // 
-            // m_cbo_user_nhan_vien_dat_hang
+            // m_searchLookUpEdit_user_nv_dat_hang
             // 
-            this.m_cbo_user_nhan_vien_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cbo_user_nhan_vien_dat_hang.FormattingEnabled = true;
-            this.m_cbo_user_nhan_vien_dat_hang.Location = new System.Drawing.Point(0, 0);
-            this.m_cbo_user_nhan_vien_dat_hang.Name = "m_cbo_user_nhan_vien_dat_hang";
-            this.m_cbo_user_nhan_vien_dat_hang.Size = new System.Drawing.Size(233, 22);
-            this.m_cbo_user_nhan_vien_dat_hang.TabIndex = 1;
-            this.m_cbo_user_nhan_vien_dat_hang.SelectedIndexChanged += new System.EventHandler(this.load_data_2_selected_nguoi_dat_hang_vs_dien_thoai);
+            this.m_searchLookUpEdit_user_nv_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_searchLookUpEdit_user_nv_dat_hang.EditValue = "Search";
+            this.m_searchLookUpEdit_user_nv_dat_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_searchLookUpEdit_user_nv_dat_hang.Name = "m_searchLookUpEdit_user_nv_dat_hang";
+            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.Appearance.Options.UseFont = true;
+            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.DisplayMember = "EMAIL";
+            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.ValueMember = "ID";
+            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.View = this.m_searchLookUpEditView_dm_khach_hang;
+            this.m_searchLookUpEdit_user_nv_dat_hang.Size = new System.Drawing.Size(233, 20);
+            this.m_searchLookUpEdit_user_nv_dat_hang.TabIndex = 36;
+            this.m_searchLookUpEdit_user_nv_dat_hang.EditValueChanged += new System.EventHandler(this.m_searchLookUpEdit_user_nv_dat_hang_EditValueChanged);
+            // 
+            // m_searchLookUpEditView_dm_khach_hang
+            // 
+            this.m_searchLookUpEditView_dm_khach_hang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.m_col_user_nv_dat_hang,
+            this.m_ho_ten_nv});
+            this.m_searchLookUpEditView_dm_khach_hang.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.m_searchLookUpEditView_dm_khach_hang.Name = "m_searchLookUpEditView_dm_khach_hang";
+            this.m_searchLookUpEditView_dm_khach_hang.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.m_searchLookUpEditView_dm_khach_hang.OptionsView.ShowGroupPanel = false;
+            this.m_searchLookUpEditView_dm_khach_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.m_ho_ten_nv, DevExpress.Data.ColumnSortOrder.Ascending)});
+            // 
+            // m_col_user_nv_dat_hang
+            // 
+            this.m_col_user_nv_dat_hang.Caption = "User nhân viên đặt hàng";
+            this.m_col_user_nv_dat_hang.FieldName = "EMAIL";
+            this.m_col_user_nv_dat_hang.Name = "m_col_user_nv_dat_hang";
+            this.m_col_user_nv_dat_hang.Visible = true;
+            this.m_col_user_nv_dat_hang.VisibleIndex = 0;
+            // 
+            // m_ho_ten_nv
+            // 
+            this.m_ho_ten_nv.Caption = "Họ tên nhân viên";
+            this.m_ho_ten_nv.FieldName = "TEN_KHACH_HANG";
+            this.m_ho_ten_nv.Name = "m_ho_ten_nv";
+            this.m_ho_ten_nv.Visible = true;
+            this.m_ho_ten_nv.VisibleIndex = 1;
             // 
             // panel3
             // 
@@ -1342,6 +1383,8 @@
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEdit_user_nv_dat_hang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEditView_dm_khach_hang)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1448,7 +1491,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ComboBox m_cbo_user_nhan_vien_dat_hang;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
         private DevExpress.XtraEditors.SearchLookUpEdit m_searchLookUpEdit_dv;
@@ -1458,6 +1500,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn KHACH_HANG;
+        private DevExpress.XtraEditors.SearchLookUpEdit m_searchLookUpEdit_user_nv_dat_hang;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_searchLookUpEditView_dm_khach_hang;
+        private DevExpress.XtraGrid.Columns.GridColumn m_col_user_nv_dat_hang;
+        private DevExpress.XtraGrid.Columns.GridColumn m_ho_ten_nv;
 
     }
 }

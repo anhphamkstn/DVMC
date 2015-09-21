@@ -615,7 +615,6 @@ namespace IPCOREDS {
                 this.columnCALL_ID.AllowDBNull = false;
                 this.columnCALL_ID.MaxLength = 50;
                 this.columnVOICE_CALL_LINK.MaxLength = 250;
-                this.columnSTATION_ID.AllowDBNull = false;
                 this.columnSTATUS.MaxLength = 15;
                 this.columnERROR_CODE.MaxLength = 15;
                 this.columnERROR_DESC.MaxLength = 15;
@@ -846,7 +845,12 @@ namespace IPCOREDS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public decimal STATION_ID {
                 get {
-                    return ((decimal)(this[this.tableGD_CUOC_GOI_YEU_CAU.STATION_IDColumn]));
+                    try {
+                        return ((decimal)(this[this.tableGD_CUOC_GOI_YEU_CAU.STATION_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'STATION_ID\' in table \'GD_CUOC_GOI_YEU_CAU\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableGD_CUOC_GOI_YEU_CAU.STATION_IDColumn] = value;
@@ -1006,6 +1010,18 @@ namespace IPCOREDS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetEND_TIMENull() {
                 this[this.tableGD_CUOC_GOI_YEU_CAU.END_TIMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSTATION_IDNull() {
+                return this.IsNull(this.tableGD_CUOC_GOI_YEU_CAU.STATION_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSTATION_IDNull() {
+                this[this.tableGD_CUOC_GOI_YEU_CAU.STATION_IDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1258,7 +1274,7 @@ namespace IPCOREDS.DS_GD_CUOC_GOI_YEU_CAUTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[GD_CUOC_GOI_YEU_CAU] WHERE (([ID] = @Original_ID) AND ([CUOC_GOI_VAO_YN] = @Original_CUOC_GOI_VAO_YN) AND ([CALL_ID] = @Original_CALL_ID) AND ((@IsNull_VOICE_CALL_LINK = 1 AND [VOICE_CALL_LINK] IS NULL) OR ([VOICE_CALL_LINK] = @Original_VOICE_CALL_LINK)) AND ((@IsNull_START_TIME = 1 AND [START_TIME] IS NULL) OR ([START_TIME] = @Original_START_TIME)) AND ((@IsNull_END_TIME = 1 AND [END_TIME] IS NULL) OR ([END_TIME] = @Original_END_TIME)) AND ([STATION_ID] = @Original_STATION_ID) AND ((@IsNull_DURATION = 1 AND [DURATION] IS NULL) OR ([DURATION] = @Original_DURATION)) AND ((@IsNull_STATUS = 1 AND [STATUS] IS NULL) OR ([STATUS] = @Original_STATUS)) AND ((@IsNull_ERROR_CODE = 1 AND [ERROR_CODE] IS NULL) OR ([ERROR_CODE] = @Original_ERROR_CODE)) AND ((@IsNull_ERROR_DESC = 1 AND [ERROR_DESC] IS NULL) OR ([ERROR_DESC] = @Original_ERROR_DESC)) AND ((@IsNull_DATETIME_RESPOND = 1 AND [DATETIME_RESPOND] IS NULL) OR ([DATETIME_RESPOND] = @Original_DATETIME_RESPOND)) AND ((@IsNull_RINGTIME = 1 AND [RINGTIME] IS NULL) OR ([RINGTIME] = @Original_RINGTIME)) AND ([THOI_DIEM_GOI] = @Original_THOI_DIEM_GOI) AND ([ID_DAT_HANG] = @Original_ID_DAT_HANG))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[GD_CUOC_GOI_YEU_CAU] WHERE (([ID] = @Original_ID) AND ([CUOC_GOI_VAO_YN] = @Original_CUOC_GOI_VAO_YN) AND ([CALL_ID] = @Original_CALL_ID) AND ((@IsNull_VOICE_CALL_LINK = 1 AND [VOICE_CALL_LINK] IS NULL) OR ([VOICE_CALL_LINK] = @Original_VOICE_CALL_LINK)) AND ((@IsNull_START_TIME = 1 AND [START_TIME] IS NULL) OR ([START_TIME] = @Original_START_TIME)) AND ((@IsNull_END_TIME = 1 AND [END_TIME] IS NULL) OR ([END_TIME] = @Original_END_TIME)) AND ((@IsNull_STATION_ID = 1 AND [STATION_ID] IS NULL) OR ([STATION_ID] = @Original_STATION_ID)) AND ((@IsNull_DURATION = 1 AND [DURATION] IS NULL) OR ([DURATION] = @Original_DURATION)) AND ((@IsNull_STATUS = 1 AND [STATUS] IS NULL) OR ([STATUS] = @Original_STATUS)) AND ((@IsNull_ERROR_CODE = 1 AND [ERROR_CODE] IS NULL) OR ([ERROR_CODE] = @Original_ERROR_CODE)) AND ((@IsNull_ERROR_DESC = 1 AND [ERROR_DESC] IS NULL) OR ([ERROR_DESC] = @Original_ERROR_DESC)) AND ((@IsNull_DATETIME_RESPOND = 1 AND [DATETIME_RESPOND] IS NULL) OR ([DATETIME_RESPOND] = @Original_DATETIME_RESPOND)) AND ((@IsNull_RINGTIME = 1 AND [RINGTIME] IS NULL) OR ([RINGTIME] = @Original_RINGTIME)) AND ([THOI_DIEM_GOI] = @Original_THOI_DIEM_GOI) AND ([ID_DAT_HANG] = @Original_ID_DAT_HANG))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CUOC_GOI_VAO_YN", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CUOC_GOI_VAO_YN", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1269,6 +1285,7 @@ namespace IPCOREDS.DS_GD_CUOC_GOI_YEU_CAUTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_START_TIME", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "START_TIME", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_END_TIME", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "END_TIME", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_END_TIME", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "END_TIME", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_STATION_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "STATION_ID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_STATION_ID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "STATION_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DURATION", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURATION", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DURATION", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "DURATION", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1315,19 +1332,20 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                 "AND ((@IsNull_VOICE_CALL_LINK = 1 AND [VOICE_CALL_LINK] IS NULL) OR ([VOICE_CALL" +
                 "_LINK] = @Original_VOICE_CALL_LINK)) AND ((@IsNull_START_TIME = 1 AND [START_TIM" +
                 "E] IS NULL) OR ([START_TIME] = @Original_START_TIME)) AND ((@IsNull_END_TIME = 1" +
-                " AND [END_TIME] IS NULL) OR ([END_TIME] = @Original_END_TIME)) AND ([STATION_ID]" +
-                " = @Original_STATION_ID) AND ((@IsNull_DURATION = 1 AND [DURATION] IS NULL) OR (" +
-                "[DURATION] = @Original_DURATION)) AND ((@IsNull_STATUS = 1 AND [STATUS] IS NULL)" +
-                " OR ([STATUS] = @Original_STATUS)) AND ((@IsNull_ERROR_CODE = 1 AND [ERROR_CODE]" +
-                " IS NULL) OR ([ERROR_CODE] = @Original_ERROR_CODE)) AND ((@IsNull_ERROR_DESC = 1" +
-                " AND [ERROR_DESC] IS NULL) OR ([ERROR_DESC] = @Original_ERROR_DESC)) AND ((@IsNu" +
-                "ll_DATETIME_RESPOND = 1 AND [DATETIME_RESPOND] IS NULL) OR ([DATETIME_RESPOND] =" +
-                " @Original_DATETIME_RESPOND)) AND ((@IsNull_RINGTIME = 1 AND [RINGTIME] IS NULL)" +
-                " OR ([RINGTIME] = @Original_RINGTIME)) AND ([THOI_DIEM_GOI] = @Original_THOI_DIE" +
-                "M_GOI) AND ([ID_DAT_HANG] = @Original_ID_DAT_HANG));\r\nSELECT ID, CUOC_GOI_VAO_YN" +
-                ", CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STATION_ID, DURATION, STATUS, " +
-                "ERROR_CODE, ERROR_DESC, DATETIME_RESPOND, RINGTIME, THOI_DIEM_GOI, ID_DAT_HANG F" +
-                "ROM GD_CUOC_GOI_YEU_CAU WHERE (ID = @ID)";
+                " AND [END_TIME] IS NULL) OR ([END_TIME] = @Original_END_TIME)) AND ((@IsNull_STA" +
+                "TION_ID = 1 AND [STATION_ID] IS NULL) OR ([STATION_ID] = @Original_STATION_ID)) " +
+                "AND ((@IsNull_DURATION = 1 AND [DURATION] IS NULL) OR ([DURATION] = @Original_DU" +
+                "RATION)) AND ((@IsNull_STATUS = 1 AND [STATUS] IS NULL) OR ([STATUS] = @Original" +
+                "_STATUS)) AND ((@IsNull_ERROR_CODE = 1 AND [ERROR_CODE] IS NULL) OR ([ERROR_CODE" +
+                "] = @Original_ERROR_CODE)) AND ((@IsNull_ERROR_DESC = 1 AND [ERROR_DESC] IS NULL" +
+                ") OR ([ERROR_DESC] = @Original_ERROR_DESC)) AND ((@IsNull_DATETIME_RESPOND = 1 A" +
+                "ND [DATETIME_RESPOND] IS NULL) OR ([DATETIME_RESPOND] = @Original_DATETIME_RESPO" +
+                "ND)) AND ((@IsNull_RINGTIME = 1 AND [RINGTIME] IS NULL) OR ([RINGTIME] = @Origin" +
+                "al_RINGTIME)) AND ([THOI_DIEM_GOI] = @Original_THOI_DIEM_GOI) AND ([ID_DAT_HANG]" +
+                " = @Original_ID_DAT_HANG));\r\nSELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LIN" +
+                "K, START_TIME, END_TIME, STATION_ID, DURATION, STATUS, ERROR_CODE, ERROR_DESC, D" +
+                "ATETIME_RESPOND, RINGTIME, THOI_DIEM_GOI, ID_DAT_HANG FROM GD_CUOC_GOI_YEU_CAU W" +
+                "HERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CUOC_GOI_VAO_YN", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CUOC_GOI_VAO_YN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CALL_ID", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CALL_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1352,6 +1370,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_START_TIME", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "START_TIME", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_END_TIME", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "END_TIME", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_END_TIME", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "END_TIME", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_STATION_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "STATION_ID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_STATION_ID", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "STATION_ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DURATION", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURATION", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DURATION", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "DURATION", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1446,7 +1465,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(decimal Original_ID, string Original_CUOC_GOI_VAO_YN, string Original_CALL_ID, string Original_VOICE_CALL_LINK, global::System.Nullable<global::System.DateTime> Original_START_TIME, global::System.Nullable<global::System.DateTime> Original_END_TIME, decimal Original_STATION_ID, global::System.Nullable<decimal> Original_DURATION, string Original_STATUS, string Original_ERROR_CODE, string Original_ERROR_DESC, global::System.Nullable<global::System.DateTime> Original_DATETIME_RESPOND, global::System.Nullable<decimal> Original_RINGTIME, System.DateTime Original_THOI_DIEM_GOI, decimal Original_ID_DAT_HANG) {
+        public virtual int Delete(decimal Original_ID, string Original_CUOC_GOI_VAO_YN, string Original_CALL_ID, string Original_VOICE_CALL_LINK, global::System.Nullable<global::System.DateTime> Original_START_TIME, global::System.Nullable<global::System.DateTime> Original_END_TIME, global::System.Nullable<decimal> Original_STATION_ID, global::System.Nullable<decimal> Original_DURATION, string Original_STATUS, string Original_ERROR_CODE, string Original_ERROR_DESC, global::System.Nullable<global::System.DateTime> Original_DATETIME_RESPOND, global::System.Nullable<decimal> Original_RINGTIME, System.DateTime Original_THOI_DIEM_GOI, decimal Original_ID_DAT_HANG) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((decimal)(Original_ID));
             if ((Original_CUOC_GOI_VAO_YN == null)) {
                 throw new global::System.ArgumentNullException("Original_CUOC_GOI_VAO_YN");
@@ -1484,57 +1503,64 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[9].Value = ((decimal)(Original_STATION_ID));
-            if ((Original_DURATION.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((decimal)(Original_DURATION.Value));
+            if ((Original_STATION_ID.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((decimal)(Original_STATION_ID.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_DURATION.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((decimal)(Original_DURATION.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             if ((Original_STATUS == null)) {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[13].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((string)(Original_STATUS));
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_STATUS));
             }
             if ((Original_ERROR_CODE == null)) {
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((string)(Original_ERROR_CODE));
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_ERROR_CODE));
             }
             if ((Original_ERROR_DESC == null)) {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((string)(Original_ERROR_DESC));
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_ERROR_DESC));
             }
             if ((Original_DATETIME_RESPOND.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((System.DateTime)(Original_DATETIME_RESPOND.Value));
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((System.DateTime)(Original_DATETIME_RESPOND.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             if ((Original_RINGTIME.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((decimal)(Original_RINGTIME.Value));
+                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[22].Value = ((decimal)(Original_RINGTIME.Value));
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
-            this.Adapter.DeleteCommand.Parameters[22].Value = ((System.DateTime)(Original_THOI_DIEM_GOI));
-            this.Adapter.DeleteCommand.Parameters[23].Value = ((decimal)(Original_ID_DAT_HANG));
+            this.Adapter.DeleteCommand.Parameters[23].Value = ((System.DateTime)(Original_THOI_DIEM_GOI));
+            this.Adapter.DeleteCommand.Parameters[24].Value = ((decimal)(Original_ID_DAT_HANG));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1555,7 +1581,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string CUOC_GOI_VAO_YN, string CALL_ID, string VOICE_CALL_LINK, global::System.Nullable<global::System.DateTime> START_TIME, global::System.Nullable<global::System.DateTime> END_TIME, decimal STATION_ID, global::System.Nullable<decimal> DURATION, string STATUS, string ERROR_CODE, string ERROR_DESC, global::System.Nullable<global::System.DateTime> DATETIME_RESPOND, global::System.Nullable<decimal> RINGTIME, System.DateTime THOI_DIEM_GOI, decimal ID_DAT_HANG) {
+        public virtual int Insert(string CUOC_GOI_VAO_YN, string CALL_ID, string VOICE_CALL_LINK, global::System.Nullable<global::System.DateTime> START_TIME, global::System.Nullable<global::System.DateTime> END_TIME, global::System.Nullable<decimal> STATION_ID, global::System.Nullable<decimal> DURATION, string STATUS, string ERROR_CODE, string ERROR_DESC, global::System.Nullable<global::System.DateTime> DATETIME_RESPOND, global::System.Nullable<decimal> RINGTIME, System.DateTime THOI_DIEM_GOI, decimal ID_DAT_HANG) {
             if ((CUOC_GOI_VAO_YN == null)) {
                 throw new global::System.ArgumentNullException("CUOC_GOI_VAO_YN");
             }
@@ -1586,7 +1612,12 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            this.Adapter.InsertCommand.Parameters[5].Value = ((decimal)(STATION_ID));
+            if ((STATION_ID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((decimal)(STATION_ID.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             if ((DURATION.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(DURATION.Value));
             }
@@ -1651,7 +1682,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                     string VOICE_CALL_LINK, 
                     global::System.Nullable<global::System.DateTime> START_TIME, 
                     global::System.Nullable<global::System.DateTime> END_TIME, 
-                    decimal STATION_ID, 
+                    global::System.Nullable<decimal> STATION_ID, 
                     global::System.Nullable<decimal> DURATION, 
                     string STATUS, 
                     string ERROR_CODE, 
@@ -1666,7 +1697,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                     string Original_VOICE_CALL_LINK, 
                     global::System.Nullable<global::System.DateTime> Original_START_TIME, 
                     global::System.Nullable<global::System.DateTime> Original_END_TIME, 
-                    decimal Original_STATION_ID, 
+                    global::System.Nullable<decimal> Original_STATION_ID, 
                     global::System.Nullable<decimal> Original_DURATION, 
                     string Original_STATUS, 
                     string Original_ERROR_CODE, 
@@ -1706,7 +1737,12 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((decimal)(STATION_ID));
+            if ((STATION_ID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((decimal)(STATION_ID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
             if ((DURATION.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(DURATION.Value));
             }
@@ -1782,58 +1818,65 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                 this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(Original_STATION_ID));
-            if ((Original_DURATION.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((decimal)(Original_DURATION.Value));
+            if ((Original_STATION_ID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((decimal)(Original_STATION_ID.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((Original_DURATION.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((decimal)(Original_DURATION.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             if ((Original_STATUS == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_STATUS));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_STATUS));
             }
             if ((Original_ERROR_CODE == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_ERROR_CODE));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_ERROR_CODE));
             }
             if ((Original_ERROR_DESC == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_ERROR_DESC));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_ERROR_DESC));
             }
             if ((Original_DATETIME_RESPOND.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((System.DateTime)(Original_DATETIME_RESPOND.Value));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((System.DateTime)(Original_DATETIME_RESPOND.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
             }
             if ((Original_RINGTIME.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((decimal)(Original_RINGTIME.Value));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((decimal)(Original_RINGTIME.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[36].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[36].Value = ((System.DateTime)(Original_THOI_DIEM_GOI));
-            this.Adapter.UpdateCommand.Parameters[37].Value = ((decimal)(Original_ID_DAT_HANG));
-            this.Adapter.UpdateCommand.Parameters[38].Value = ((decimal)(ID));
+            this.Adapter.UpdateCommand.Parameters[37].Value = ((System.DateTime)(Original_THOI_DIEM_GOI));
+            this.Adapter.UpdateCommand.Parameters[38].Value = ((decimal)(Original_ID_DAT_HANG));
+            this.Adapter.UpdateCommand.Parameters[39].Value = ((decimal)(ID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1860,7 +1903,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                     string VOICE_CALL_LINK, 
                     global::System.Nullable<global::System.DateTime> START_TIME, 
                     global::System.Nullable<global::System.DateTime> END_TIME, 
-                    decimal STATION_ID, 
+                    global::System.Nullable<decimal> STATION_ID, 
                     global::System.Nullable<decimal> DURATION, 
                     string STATUS, 
                     string ERROR_CODE, 
@@ -1875,7 +1918,7 @@ SELECT ID, CUOC_GOI_VAO_YN, CALL_ID, VOICE_CALL_LINK, START_TIME, END_TIME, STAT
                     string Original_VOICE_CALL_LINK, 
                     global::System.Nullable<global::System.DateTime> Original_START_TIME, 
                     global::System.Nullable<global::System.DateTime> Original_END_TIME, 
-                    decimal Original_STATION_ID, 
+                    global::System.Nullable<decimal> Original_STATION_ID, 
                     global::System.Nullable<decimal> Original_DURATION, 
                     string Original_STATUS, 
                     string Original_ERROR_CODE, 
