@@ -108,5 +108,19 @@ namespace TOSApp.DanhMuc
             }
         }
 
+        private void m_grv_dm_loai_yeu_cau_RowStyle(object sender, RowStyleEventArgs e)
+        {
+            GridView View = sender as GridView;
+            if (e.RowHandle >= 0)
+            {
+                string category = View.GetRowCellDisplayText(e.RowHandle, View.Columns["TEN_YEU_CAU"]);
+                if (category == "Ăn ca (<10 suất)")
+                {
+                    e.Appearance.BackColor = Color.Red;
+                    e.Appearance.BackColor2 = Color.White;
+                }
+            }
+        }
+
     }
 }

@@ -27,6 +27,7 @@ namespace TOSApp.ChucNang
 
         decimal m_dc_id_loai_dich_vu = -1;
         decimal m_id_dich_vu;
+        CallInfor m_ip_call_infor;
 
         public f100_don_dat_hang_new()
         {
@@ -36,17 +37,19 @@ namespace TOSApp.ChucNang
 
         public void display_for_ipphone(CallInfor ip_call_infor)
         {
+            m_ip_call_infor = ip_call_infor;
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             v_us.FillDatasetWithQuery(v_ds, "select * from dm_khach_hang where DIEN_THOAI = '" + ip_call_infor.mobile_phone + "'");
             if (v_ds.Tables[0].Rows.Count > 0)
             {
-                m_cbo_user_nhan_vien_dat_hang.Text = v_ds.Tables[0].Rows[0][4].ToString();
-                m_txt_ho_ten_nguoi_dat_hang.Text = v_ds.Tables[0].Rows[0][2].ToString();
-                m_cbo_dv_don_vi.Text = v_ds.Tables[0].Rows[0][2].ToString();
-                m_txt_dien_thoai.Text = v_ds.Tables[0].Rows[0][3].ToString();
+                m_cbo_user_nhan_vien_dat_hang.SelectedValue = CIPConvert.ToDecimal(v_ds.Tables[0].Rows[0][0].ToString());
+                //m_txt_ho_ten_nguoi_dat_hang.Text = v_ds.Tables[0].Rows[0][2].ToString();
+                //m_cbo_dv_don_vi.Text = v_ds.Tables[0].Rows[0][2].ToString();
+                //m_txt_dien_thoai.Text = v_ds.Tables[0].Rows[0][3].ToString();
             }
+            m_e_form_mode = DataEntryFormMode.InsertDataState;
             this.ShowDialog();
             // nếu đang có đơn hàng thì xử lí như thế nào
         }
@@ -201,6 +204,7 @@ namespace TOSApp.ChucNang
             // WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU","ID","TEN_YEU_CAU"," where ID_CHA="+m_cbo_dich_vu.SelectedValue.ToString(),WinFormControls.eTAT_CA.NO,m_cbo_loai_dich_vu_2);
         }
 
+
         private void m_cmd_xac_nhan_don_hang_Click(object sender, EventArgs e)
         {
             try
@@ -212,7 +216,7 @@ namespace TOSApp.ChucNang
                         //load_data_2_lich_su_thuc_hien();
                         udpate_don_hang();
                         // update_log_gd_dat_hang();
-                        if (m_e_form_mode == DataEntryFormMode.UpdateDataState)
+                        if (m_deadline_id == 0)
                         {
                             ghi_log_thay_doi_don_hang();
                         }
@@ -242,7 +246,8 @@ namespace TOSApp.ChucNang
                         {
                             luu_don_hang();
                             // dieu_phoi_don_hang();
-
+                            //if (m_ip_call_infor != null)
+                            //    insert_gd_cuoc_goi(m_ip_call_infor);
                             if (m_chk_gui_mail_yn.Checked == true)
                             {
                                 gui_emai_xac_nhan(m_us);
@@ -258,6 +263,29 @@ namespace TOSApp.ChucNang
             {
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void insert_gd_cuoc_goi(CallInfor v_ip_call_infor)
+        {
+
+            US_GD_CUOC_GOI_YEU_CAU v_us = new US_GD_CUOC_GOI_YEU_CAU();
+            v_us.strCALL_ID = v_ip_call_infor.call_id;
+            v_us.strVOICE_CALL_LINK = v_ip_call_infor.link_down_record;
+            v_us.datSTART_TIME = Convert.ToDateTime(v_ip_call_infor.start_time);
+            v_us.datEND_TIME = Convert.ToDateTime(v_ip_call_infor.end_time);
+            v_us.dcSTATION_ID = CIPConvert.ToDecimal(v_ip_call_infor.station_id.ToString());
+            v_us.dcDURATION = CIPConvert.ToDecimal(v_ip_call_infor.duration.ToString());
+            v_us.strSTATUS = v_ip_call_infor.status;
+            v_us.strERROR_CODE = v_ip_call_infor.error_code;
+            v_us.strERROR_DESC = v_ip_call_infor.error_desc;
+            v_us.datDATETIME_RESPOND = Convert.ToDateTime(v_ip_call_infor.datetime_response);
+            v_us.dcRINGTIME = CIPConvert.ToDecimal(v_ip_call_infor.ringtime.ToString());
+            v_us.datTHOI_DIEM_GOI = System.DateTime.Now;
+            v_us.dcID_DAT_HANG = m_us.dcID;
+            v_us.strCUOC_GOI_VAO_YN = "N";
+            v_us.Insert();
+
+
         }
 
         private void ghi_log_thay_doi_don_hang()
@@ -594,6 +622,7 @@ namespace TOSApp.ChucNang
 
         }
 
+
         private void insert_new_data_2_dm_ma_don_hang(string p)
         {
             US_DM_MA_DON_HANG v_us = new US_DM_MA_DON_HANG();
@@ -787,6 +816,7 @@ namespace TOSApp.ChucNang
             load_data_2_selected_dich_vu();
         }
 
+
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us, decimal deadline_id)
         {
             try
@@ -799,7 +829,6 @@ namespace TOSApp.ChucNang
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                     m_deadline_id = deadline_id;
                     load_data_2_lich_su_thuc_hien();
-                    // m_panel_user_don_hang.Visible = false;
                     this.ShowDialog();
 
                 }
@@ -809,10 +838,7 @@ namespace TOSApp.ChucNang
                     us_2_form(v_us);
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
-
                     load_data_2_lich_su_thuc_hien();
-
-                    // m_panel_user_don_hang.Visible = false;
                     this.ShowDialog();
                 }
 
@@ -939,5 +965,16 @@ namespace TOSApp.ChucNang
             //US_DM_LOAI_YEU_CAU us = new US_DM_LOAI_YEU_CAU(v_us.dcID_DM_YEU_CAU_1);
             //m_cbo_loai_dich_vu_1.SelectedValue = us.dcID;
         }
+
+        private void f100_don_dat_hang_new_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
     }
 }

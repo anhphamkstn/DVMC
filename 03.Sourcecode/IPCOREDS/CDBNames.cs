@@ -686,18 +686,6 @@ namespace IPCOREDS.CDBNames
     public class GD_CUOC_GOI_YEU_CAU
     {
         public const string ID = "ID";
-        public const string HO_TEN_SINH_VIEN = "HO_TEN_SINH_VIEN";
-        public const string SO_DIEN_THOAI = "SO_DIEN_THOAI";
-        public const string MA_SINH_VIEN = "MA_SINH_VIEN";
-        public const string NGAY_SINH = "NGAY_SINH";
-        public const string NOI_SINH = "NOI_SINH";
-        public const string LOP = "LOP";
-        public const string TRUONG = "TRUONG";
-        public const string ID_NGUOI_DUNG = "ID_NGUOI_DUNG";
-        public const string ID_CUOC_GOI_LIEN_QUAN = "ID_CUOC_GOI_LIEN_QUAN";
-        public const string ID_CAU_HOI_LIEN_QUAN = "ID_CAU_HOI_LIEN_QUAN";
-        public const string NOI_DUNG_TRAO_DOI = "NOI_DUNG_TRAO_DOI";
-        public const string ID_TRANG_THAI = "ID_TRANG_THAI";
         public const string CUOC_GOI_VAO_YN = "CUOC_GOI_VAO_YN";
         public const string CALL_ID = "CALL_ID";
         public const string VOICE_CALL_LINK = "VOICE_CALL_LINK";
@@ -710,9 +698,10 @@ namespace IPCOREDS.CDBNames
         public const string ERROR_DESC = "ERROR_DESC";
         public const string DATETIME_RESPOND = "DATETIME_RESPOND";
         public const string RINGTIME = "RINGTIME";
-        public const string HO_TEN_QLHT = "HO_TEN_QLHT";
-        public const string DIEN_THOAI_QLHT = "DIEN_THOAI_QLHT";
+        public const string THOI_DIEM_GOI = "THOI_DIEM_GOI";
+        public const string ID_DAT_HANG = "ID_DAT_HANG";
     }
+
     public class GD_CAU_HOI_HOC_VIEN
     {
         public const string ID = "ID";

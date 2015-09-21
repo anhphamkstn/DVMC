@@ -180,6 +180,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_GD_CUOC_GOI_YEU_CAU.cs">
+      <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DS_V_DM_LOAI_YEU_CAU.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -127,23 +127,23 @@ namespace TOSApp.ChucNang
 
             string m_query = "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where THAO_TAC_HET_HAN_YN = 'N'";
             if (us_user.dcIDNhom == 1) //fo
-                m_query = m_query + "And ID_LOAI_THAO_TAC =310 And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString() ;
+                m_query += "And ((ID_LOAI_THAO_TAC = 310 AND ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString() + ") OR ID_LOAI_THAO_TAC in(313))";
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC in (295,311) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
-                else m_query = m_query + " And ((ID_LOAI_THAO_TAC in (296) And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString() + ") or" + "(ID_LOAI_THAO_TAC in(313) and ID_NGUOI_NHAN_THAO_TAC =" + us_user.dcID + "))";
+                else m_query = m_query + " And ID_LOAI_THAO_TAC in (296) And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString() ;
                    
             else if (us_user.dcIDNhom == 3) //pm
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC in( 303) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
-                else m_query = m_query + " And ((ID_LOAI_THAO_TAC in (304) And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString() + ") or" + "(ID_LOAI_THAO_TAC in(313) and ID_NGUOI_NHAN_THAO_TAC =" + us_user.dcID + "))";
+                else m_query = m_query + " And ID_LOAI_THAO_TAC in (304) And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString() ;
                    
 
             else if (us_user.dcIDNhom == 5) //td
                 if (kieu_load_form==1)
                 m_query = m_query + "And ID_LOAI_THAO_TAC in (305) And ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString();
-                else m_query = m_query + " And ((ID_LOAI_THAO_TAC in (305) And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString() + ") or" + "(ID_LOAI_THAO_TAC in(313) and ID_NGUOI_NHAN_THAO_TAC =" + us_user.dcID + "))";
+                else m_query = m_query + " And ID_LOAI_THAO_TAC in (306) And ID_NGUOI_TAO_THAO_TAC = " + us_user.dcID.ToString();
                    
                  //tm
             else
@@ -474,6 +474,10 @@ namespace TOSApp.ChucNang
             try
             {
                 fill_data_to_m_us();
+                DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                v_f100.displayForUpdate(v_us, 1);
                 update_log_admin_tiep_nhan();
                 ghi_log_admin_da_nhan_xu_ly();
                 load_data_2_grid();

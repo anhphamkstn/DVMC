@@ -1,4 +1,5 @@
-﻿using IP.Core.IPCommon;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using IP.Core.IPCommon;
 using IPCOREUS;
 using System;
 using System.Collections.Generic;
@@ -59,6 +60,20 @@ namespace TOSApp.ChucNang
             catch (Exception v_e)
             {
                 CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_grv_ds_dh_hoan_thanh_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
+            GridView View = sender as GridView;
+            if (e.RowHandle >= 0)
+            {
+                string category = View.GetRowCellDisplayText(e.RowHandle, View.Columns["TEN_DANH_GIA_TU_USER_DAT_HANG"]);
+                if (category == "Hài lòng")
+                {
+                    e.Appearance.BackColor = Color.Red;
+                    e.Appearance.BackColor2 = Color.White;
+                }
             }
         }
     }

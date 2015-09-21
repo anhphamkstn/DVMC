@@ -68,16 +68,13 @@
             this.c_diem_khoi_luong,
             this.c_thoi_gian_xu_ly});
             this.m_grv_dm_loai_yeu_cau.GridControl = this.m_grc_dm_loai_yeu_cau;
-            this.m_grv_dm_loai_yeu_cau.GroupCount = 2;
             this.m_grv_dm_loai_yeu_cau.Name = "m_grv_dm_loai_yeu_cau";
             this.m_grv_dm_loai_yeu_cau.NewItemRowText = "Thêm mới dịch vụ";
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.Editable = false;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_loai_yeu_cau.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
-            this.m_grv_dm_loai_yeu_cau.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_ten_yeu_cau_cha_cha, DevExpress.Data.ColumnSortOrder.Ascending),
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.c_ten_yeu_cau_cha, DevExpress.Data.ColumnSortOrder.Ascending)});
+            this.m_grv_dm_loai_yeu_cau.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.m_grv_dm_loai_yeu_cau_RowStyle);
             this.m_grv_dm_loai_yeu_cau.DoubleClick += new System.EventHandler(this.m_grv_dm_loai_yeu_cau_DoubleClick);
             // 
             // c_ten_yeu_cau_cha_cha
@@ -86,7 +83,7 @@
             this.c_ten_yeu_cau_cha_cha.FieldName = "TEN_YEU_CAU_CHA_CHA";
             this.c_ten_yeu_cau_cha_cha.Name = "c_ten_yeu_cau_cha_cha";
             this.c_ten_yeu_cau_cha_cha.Visible = true;
-            this.c_ten_yeu_cau_cha_cha.VisibleIndex = 2;
+            this.c_ten_yeu_cau_cha_cha.VisibleIndex = 1;
             // 
             // c_ten_yeu_cau_cha
             // 
@@ -95,7 +92,7 @@
             this.c_ten_yeu_cau_cha.Name = "c_ten_yeu_cau_cha";
             this.c_ten_yeu_cau_cha.OptionsEditForm.ColumnSpan = 3;
             this.c_ten_yeu_cau_cha.Visible = true;
-            this.c_ten_yeu_cau_cha.VisibleIndex = 1;
+            this.c_ten_yeu_cau_cha.VisibleIndex = 2;
             // 
             // c_dich_vu
             // 
@@ -111,7 +108,7 @@
             this.c_diem_khoi_luong.FieldName = "DIEM_KHOI_LUONG";
             this.c_diem_khoi_luong.Name = "c_diem_khoi_luong";
             this.c_diem_khoi_luong.Visible = true;
-            this.c_diem_khoi_luong.VisibleIndex = 1;
+            this.c_diem_khoi_luong.VisibleIndex = 3;
             this.c_diem_khoi_luong.Width = 83;
             // 
             // c_thoi_gian_xu_ly
@@ -120,7 +117,7 @@
             this.c_thoi_gian_xu_ly.FieldName = "THOI_GIAN_XU_LY";
             this.c_thoi_gian_xu_ly.Name = "c_thoi_gian_xu_ly";
             this.c_thoi_gian_xu_ly.Visible = true;
-            this.c_thoi_gian_xu_ly.VisibleIndex = 2;
+            this.c_thoi_gian_xu_ly.VisibleIndex = 4;
             // 
             // panel3
             // 

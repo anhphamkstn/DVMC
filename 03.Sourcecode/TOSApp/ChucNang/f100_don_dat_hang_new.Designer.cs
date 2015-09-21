@@ -564,7 +564,7 @@
             this.m_cbo_user_nhan_vien_dat_hang.Size = new System.Drawing.Size(233, 21);
             this.m_cbo_user_nhan_vien_dat_hang.TabIndex = 1;
             this.m_cbo_user_nhan_vien_dat_hang.SelectedIndexChanged += new System.EventHandler(this.load_data_2_selected_nguoi_dat_hang_vs_dien_thoai);
-
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label5);
@@ -1327,6 +1327,7 @@
             this.MinimizeBox = false;
             this.Name = "f100_don_dat_hang_new";
             this.Text = "f100_Đơn đặt hàng mới";
+            this.Load += new System.EventHandler(this.f100_don_dat_hang_new_Load);
             this.m_grb_loai_dich_vu.ResumeLayout(false);
             this.m_grb_loai_dich_vu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEdit_dv.Properties)).EndInit();

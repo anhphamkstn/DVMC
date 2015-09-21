@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f125_ds_don_hang_can_danh_gia));
+            this.m_danh_gia_cua_khach_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.m_grc_ds_dh_hoan_thanh = new DevExpress.XtraGrid.GridControl();
@@ -41,7 +42,6 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_danh_gia_cua_khach_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pan_button = new System.Windows.Forms.Panel();
             this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -51,6 +51,14 @@
             this.m_pan_button.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // m_danh_gia_cua_khach_hang
+            // 
+            this.m_danh_gia_cua_khach_hang.Caption = "ĐÁNH GIÁ CỦA KHÁCH HÀNG";
+            this.m_danh_gia_cua_khach_hang.FieldName = "TEN_DANH_GIA_TU_USER_DAT_HANG";
+            this.m_danh_gia_cua_khach_hang.Name = "m_danh_gia_cua_khach_hang";
+            this.m_danh_gia_cua_khach_hang.Visible = true;
+            this.m_danh_gia_cua_khach_hang.VisibleIndex = 8;
             // 
             // panel1
             // 
@@ -185,10 +193,11 @@
             this.m_grv_ds_dh_hoan_thanh.Appearance.Preview.Options.UseBorderColor = true;
             this.m_grv_ds_dh_hoan_thanh.Appearance.Preview.Options.UseFont = true;
             this.m_grv_ds_dh_hoan_thanh.Appearance.Preview.Options.UseForeColor = true;
-            this.m_grv_ds_dh_hoan_thanh.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_ds_dh_hoan_thanh.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.m_grv_ds_dh_hoan_thanh.Appearance.Row.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dh_hoan_thanh.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_ds_dh_hoan_thanh.Appearance.Row.Options.UseForeColor = true;
+            this.m_grv_ds_dh_hoan_thanh.Appearance.Row.Options.UseTextOptions = true;
             this.m_grv_ds_dh_hoan_thanh.Appearance.RowSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
             this.m_grv_ds_dh_hoan_thanh.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White;
             this.m_grv_ds_dh_hoan_thanh.Appearance.RowSeparator.Options.UseBackColor = true;
@@ -215,6 +224,7 @@
             this.m_grv_ds_dh_hoan_thanh.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_dh_hoan_thanh.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_dh_hoan_thanh.PaintStyleName = "Office2003";
+            this.m_grv_ds_dh_hoan_thanh.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.m_grv_ds_dh_hoan_thanh_RowStyle);
             // 
             // gridColumn1
             // 
@@ -279,14 +289,6 @@
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
-            // 
-            // m_danh_gia_cua_khach_hang
-            // 
-            this.m_danh_gia_cua_khach_hang.Caption = "ĐÁNH GIÁ CỦA KHÁCH HÀNG";
-            this.m_danh_gia_cua_khach_hang.FieldName = "TEN_DANH_GIA_TU_USER_DAT_HANG";
-            this.m_danh_gia_cua_khach_hang.Name = "m_danh_gia_cua_khach_hang";
-            this.m_danh_gia_cua_khach_hang.Visible = true;
-            this.m_danh_gia_cua_khach_hang.VisibleIndex = 8;
             // 
             // m_pan_button
             // 
