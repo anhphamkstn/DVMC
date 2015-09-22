@@ -13,6 +13,7 @@ using IP.Core.IPCommon;
 using IP.Core.IPUserService;
 using System.Data.SqlClient;
 using System.Data;
+using IPCOREDS.CDBNames;
 
 
 namespace IPCOREUS

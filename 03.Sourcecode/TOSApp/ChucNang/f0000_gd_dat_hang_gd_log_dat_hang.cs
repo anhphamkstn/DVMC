@@ -39,8 +39,6 @@ namespace TOSApp.ChucNang
             format_controll(p);
         }
 
-
-
         private void GetAllControl(Control c, List<Control> list)
         {
             foreach (Control control in c.Controls)
@@ -94,7 +92,7 @@ namespace TOSApp.ChucNang
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+            NGAY_LAP_THAO_TAC_LOG.Visible = true;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
             GHI_CHU.Visible = false;

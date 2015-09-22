@@ -33,6 +33,7 @@ namespace TOSApp.ChucNang
         {
             InitializeComponent();
             load_data_2_selected();
+            
         }
 
         public void display_for_ipphone(CallInfor ip_call_infor)
@@ -164,7 +165,10 @@ namespace TOSApp.ChucNang
 
         private void random_data_2_ma_don_hang()
         {
-            m_txt_ma_don_hang.Text = "DVMC2015" + "000016";// new Random().Next(100000, 999999).ToString();
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();
+           // m_txt_ma_don_hang.Text = "DVMC2015" + "000016";// new Random().Next(100000, 999999).ToString();
+            insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
         }
         #endregion
 
@@ -297,8 +301,6 @@ namespace TOSApp.ChucNang
             NOI_DUNG = NOI_DUNG.Replace("YEU_CAU_CU_THE", m_txt_yeu_cau_cu_the.Text);
             NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_HOAN_THANH_THUC_TE", "chưa có");
             NOI_DUNG = NOI_DUNG.Replace("LICH_SU_TRAO_DOI", "Vừa tiếp nhận.");
-
-
             NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_MONG_MUON_SUA_XONG", m_dat_thoi_diem_can_hoan_thanh.Text + "hoặc thời gian hoàn thành là:" + m_cbo_thoi_gian_hoan_thanh.Text);
             NOI_DUNG = NOI_DUNG.Replace("PHAN_HOI_CUA_DVMC", m_txt_phan_hoi_tu_dvmc.Text);
             string nguoi_xu_ly = "";
@@ -584,7 +586,7 @@ namespace TOSApp.ChucNang
         }
 
 
-        private void insert_new_data_2_dm_ma_don_hang(string p)
+         void insert_new_data_2_dm_ma_don_hang(string p)
         {
             US_DM_MA_DON_HANG v_us = new US_DM_MA_DON_HANG();
             v_us.strMA_DON_HANG = p;

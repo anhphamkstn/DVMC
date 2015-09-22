@@ -27,7 +27,24 @@ namespace TOSApp
         {
             InitializeComponent();
             format_controll_for_each_user(us_user.dcIDNhom);
-            //   format_button_controll();
+        }
+
+        private void f999_main_form_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                m_timer_imcoming_call.Enabled = false;
+                if (us_user.dcIDNhom == 1)
+                {
+                    m_timer_imcoming_call.Enabled = true;
+                    f258_nhap_ma_ipphone v_nhap_ma_ipphone = new f258_nhap_ma_ipphone();
+                    v_nhap_ma_ipphone.ShowDialog();
+                }
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }    
         }
 
         // forms in tabs
@@ -86,10 +103,6 @@ namespace TOSApp
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithQuery(v_ds, "select * from V_HT_PHAN_QUYEN_CHO_NHOM where id_NHOM_NGUOI_SU_DUNG=" + us_user.dcIDNhom);
 
-            //List<Control> list = new List<Control>();
-
-            //GetAllControl(this, list);
-
             ArrayList visiblePages = ribbonControl1.TotalPageCategory.GetVisiblePages();
 
             foreach (RibbonPage page in visiblePages)
@@ -103,16 +116,7 @@ namespace TOSApp
                         break;
                     }
                     else page.Visible = false;
-
-
                 }
-
-
-                //if (page.Text == "Selection")
-                //{
-                //    page.Visible = false;
-                //    break;
-                //}
             }
             if (us_user.dcIDNhom == 1 || us_user.dcIDNhom == 5)
             {
@@ -134,20 +138,7 @@ namespace TOSApp
             {
                 m_rib_bo_pm_td_dich_vu.Visible = false;
             }
-            //foreach (Control control in list)
-            //{
-            //    if (control.GetType() == typeof(RibbonPage) )
-            //    {
-            //        for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
-            //        {
-            //            if (control.Name == v_ds.Tables[0].Rows[i]["CONTROL_NAME"].ToString())
-            //            {
-            //                control.Visible = true;
-            //            }
-
-            //        }
-            //    }
-            //}
+         
         }
 
         private void format_button_controll()
@@ -655,7 +646,6 @@ namespace TOSApp
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -727,8 +717,6 @@ namespace TOSApp
             v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[16].VisibleIndex = -1;
             v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[17].VisibleIndex = -1;
             v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ColumnAutoWidth = true;
-
-
 
         }
 
@@ -816,8 +804,8 @@ namespace TOSApp
         {
             try
             {
-
-               //check_incoming_call();
+                if (us_user.dcIDNhom ==1 && us_user.ipphone!="" && us_user.ipphone != null)
+                    check_incoming_call();
             }
             catch (Exception v_e)
             {
@@ -827,32 +815,43 @@ namespace TOSApp
 
         private void check_incoming_call()
         {
-            string m_str_stationId = us_user.ipphone ; //ip-phone
+            try
+            {
 
-            string v_str_result_api = "", v_str_link_services = "";
+                string m_str_stationId = us_user.ipphone; //ip-phone
 
-            v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(m_str_stationId);
+                string v_str_link_services = "";
 
-            string v_str_output = CallCenterUtils.get_incoming_call(v_str_link_services).Data;
-            US_GD_CUOC_GOI_YEU_CAU m_us_gd_cuoc_goi_yc = new US_GD_CUOC_GOI_YEU_CAU();
-            if (v_str_output == "") return;
-            CallInfor v_obj_callinfo = HelpUtils.get_start_callinfo_from_client_string_call(v_str_output);
-            if (v_obj_callinfo.mobile_phone == "Anonymous") return;
+                v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(m_str_stationId);
 
-            if (m_us_gd_cuoc_goi_yc.is_call_id_exist(v_obj_callinfo.call_id)) return; 
-            if (v_obj_callinfo.call_id == ""
-                || v_obj_callinfo.call_id == null) return;
+                string v_str_output = CallCenterUtils.get_incoming_call(v_str_link_services).Data;
+                US_GD_CUOC_GOI_YEU_CAU m_us_gd_cuoc_goi_yc = new US_GD_CUOC_GOI_YEU_CAU();
+                if (v_str_output == "") return;
+                CallInfor v_obj_callinfo = HelpUtils.get_start_callinfo_from_client_string_call(v_str_output);
+                if (v_obj_callinfo.mobile_phone == "Anonymous") return;
 
-            //HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.CALL_API, "SV_GOI_DEN", v_str_link_services, v_str_result_api);
-            // ghi log gọi điện
+                if (m_us_gd_cuoc_goi_yc.is_call_id_exist(v_obj_callinfo.call_id)) return;
+                if (v_obj_callinfo.call_id == ""
+                    || v_obj_callinfo.call_id == null) return;
 
-            m_timer_imcoming_call.Enabled = false;
-            f100_don_dat_hang_new v_f = new f100_don_dat_hang_new();
-            v_f.display_for_ipphone(v_obj_callinfo);
+                ////HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.CALL_API, "SV_GOI_DEN", v_str_link_services, v_str_result_api);
+                //// ghi log gọi điện
 
-            // HelpUtils.open_form_sinh_vien_call(v_obj_callinfo);
-            m_timer_imcoming_call.Enabled = true;
+                m_timer_imcoming_call.Enabled = false;
+                f100_don_dat_hang_new v_f = new f100_don_dat_hang_new();
+                v_f.display_for_ipphone(v_obj_callinfo);
+
+                // HelpUtils.open_form_sinh_vien_call(v_obj_callinfo);
+                m_timer_imcoming_call.Enabled = true;
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_100.ExceptionHandle(v_e);
+            }
+
         }
+
+        
 
 
 

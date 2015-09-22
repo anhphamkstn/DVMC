@@ -20,6 +20,7 @@ using System.Configuration;
 using System.Data.OleDb;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraGrid.Views.Grid;
+using System.Data.SqlClient;
 
 
 namespace TOSApp
@@ -348,6 +349,15 @@ namespace TOSApp
             v_cstore.addDatetimeInputParam("@startDate", StartDate);
             v_cstore.addDatetimeInputParam("@endDate", EndDate);
             v_cstore.fillDataSetByCommand(this, v_ds);
+        }
+
+        public string get_ma_dat_hang_tiep_theo()
+        {
+            string v_output = "";
+            CStoredProc v_cstore = new CStoredProc("pr_get_ma_don_hang");
+            SqlParameter v_result = v_cstore.addNVarcharOutputParam("@MA_DON_HANG", v_output);
+            v_cstore.ExecuteCommand(this);
+            return v_result.Value.ToString();
         }
 
        

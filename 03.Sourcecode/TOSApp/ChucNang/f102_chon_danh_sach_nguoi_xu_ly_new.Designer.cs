@@ -96,7 +96,7 @@
             this.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GroupControl1.Location = new System.Drawing.Point(0, 0);
             this.GroupControl1.Name = "GroupControl1";
-            this.GroupControl1.Size = new System.Drawing.Size(238, 386);
+            this.GroupControl1.Size = new System.Drawing.Size(238, 414);
             this.GroupControl1.TabIndex = 5;
             this.GroupControl1.Text = "Danh sách người xử lý";
             // 
@@ -106,7 +106,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(2, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 323);
+            this.panel1.Size = new System.Drawing.Size(234, 351);
             this.panel1.TabIndex = 10;
             // 
             // m_grc_ht_nguoi_su_dung
@@ -119,7 +119,7 @@
             this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
             this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
-            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(234, 323);
+            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(234, 351);
             this.m_grc_ht_nguoi_su_dung.TabIndex = 8;
             this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ht_nguoi_su_dung});
@@ -148,7 +148,7 @@
             this.m_pnl_out_place_dm.Controls.Add(this.simpleButton2);
             this.m_pnl_out_place_dm.Controls.Add(this.simpleButton1);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(2, 344);
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(2, 372);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
             this.m_pnl_out_place_dm.Size = new System.Drawing.Size(234, 40);
@@ -216,7 +216,7 @@
             this.dockPanel1.Location = new System.Drawing.Point(238, 0);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(649, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(649, 386);
+            this.dockPanel1.Size = new System.Drawing.Size(649, 414);
             this.dockPanel1.Text = "dockPanel1";
             // 
             // dockPanel1_Container
@@ -224,7 +224,7 @@
             this.dockPanel1_Container.Controls.Add(this.m_sch);
             this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(641, 359);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(641, 387);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // m_sch
@@ -232,7 +232,7 @@
             this.m_sch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_sch.Location = new System.Drawing.Point(0, 0);
             this.m_sch.Name = "m_sch";
-            this.m_sch.Size = new System.Drawing.Size(641, 359);
+            this.m_sch.Size = new System.Drawing.Size(641, 387);
             this.m_sch.Start = new System.DateTime(2015, 9, 10, 0, 0, 0, 0);
             this.m_sch.Storage = this.schedulerStorage1;
             this.m_sch.TabIndex = 0;
@@ -244,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 386);
+            this.ClientSize = new System.Drawing.Size(887, 414);
             this.Controls.Add(this.GroupControl1);
             this.Controls.Add(this.dockPanel1);
             this.Name = "f102_chon_danh_sach_nguoi_xu_ly_new";

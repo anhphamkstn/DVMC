@@ -229,6 +229,7 @@
     <Reference Include="System.Data">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Deployment">
       <Private>True</Private>
     </Reference>
@@ -518,6 +519,12 @@
     <Compile Include="Hệ thống\f000_login.Designer.cs">
       <DependentUpon>f000_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hệ thống\f258_nhap_ma_ipphone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hệ thống\f258_nhap_ma_ipphone.Designer.cs">
+      <DependentUpon>f258_nhap_ma_ipphone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hệ thống\f999_doi_mat_khau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -704,6 +711,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hệ thống\f000_login.resx">
       <DependentUpon>f000_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hệ thống\f258_nhap_ma_ipphone.resx">
+      <DependentUpon>f258_nhap_ma_ipphone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hệ thống\f999_doi_mat_khau.resx">
       <DependentUpon>f999_doi_mat_khau.cs</DependentUpon>

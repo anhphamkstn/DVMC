@@ -34,15 +34,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.m_txt_id = new System.Windows.Forms.TextBox();
             this.m_txt_pass = new System.Windows.Forms.TextBox();
-            this.m_lab_error = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.m_cb_chi_nhanh = new System.Windows.Forms.ComboBox();
             this.Panel2 = new System.Windows.Forms.Panel();
             this.PictureBox1 = new System.Windows.Forms.PictureBox();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.m_lbl_version_build = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.m_tb_ipphone = new System.Windows.Forms.TextBox();
+            this.m_lab_error = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +79,7 @@
             this.m_txt_id.Name = "m_txt_id";
             this.m_txt_id.Size = new System.Drawing.Size(163, 20);
             this.m_txt_id.TabIndex = 1;
+            this.m_txt_id.Enter += new System.EventHandler(this.m_txt_id_Enter);
             // 
             // m_txt_pass
             // 
@@ -89,16 +88,7 @@
             this.m_txt_pass.PasswordChar = '*';
             this.m_txt_pass.Size = new System.Drawing.Size(163, 20);
             this.m_txt_pass.TabIndex = 2;
-            // 
-            // m_lab_error
-            // 
-            this.m_lab_error.AutoSize = true;
-            this.m_lab_error.ForeColor = System.Drawing.Color.Red;
-            this.m_lab_error.Location = new System.Drawing.Point(23, 215);
-            this.m_lab_error.Name = "m_lab_error";
-            this.m_lab_error.Size = new System.Drawing.Size(10, 14);
-            this.m_lab_error.TabIndex = 7;
-            this.m_lab_error.Text = " ";
+            this.m_txt_pass.Enter += new System.EventHandler(this.m_txt_pass_Enter);
             // 
             // label4
             // 
@@ -157,21 +147,15 @@
             this.m_lbl_version_build.Text = "DVMC 4.0 v1.0 2015-08-18";
             this.m_lbl_version_build.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label3
+            // m_lab_error
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 215);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 14);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Mã ipphone";
-            // 
-            // m_tb_ipphone
-            // 
-            this.m_tb_ipphone.Location = new System.Drawing.Point(85, 210);
-            this.m_tb_ipphone.Name = "m_tb_ipphone";
-            this.m_tb_ipphone.Size = new System.Drawing.Size(162, 20);
-            this.m_tb_ipphone.TabIndex = 15;
+            this.m_lab_error.AutoSize = true;
+            this.m_lab_error.ForeColor = System.Drawing.Color.Red;
+            this.m_lab_error.Location = new System.Drawing.Point(22, 199);
+            this.m_lab_error.Name = "m_lab_error";
+            this.m_lab_error.Size = new System.Drawing.Size(10, 14);
+            this.m_lab_error.TabIndex = 7;
+            this.m_lab_error.Text = " ";
             // 
             // f000_login
             // 
@@ -179,8 +163,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(414, 265);
-            this.Controls.Add(this.m_tb_ipphone);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.m_lbl_version_build);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.PictureBox1);
@@ -212,15 +194,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox m_txt_id;
         private System.Windows.Forms.TextBox m_txt_pass;
-        private System.Windows.Forms.Label m_lab_error;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox m_cb_chi_nhanh;
         internal System.Windows.Forms.Panel Panel2;
         internal System.Windows.Forms.PictureBox PictureBox1;
         internal System.Windows.Forms.PictureBox PictureBox2;
         internal System.Windows.Forms.Label m_lbl_version_build;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox m_tb_ipphone;
+        private System.Windows.Forms.Label m_lab_error;
 
     }
 }

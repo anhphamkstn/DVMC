@@ -85,7 +85,7 @@ namespace TOSApp.ChucNang
             v_us.FillDatasetWithQuery(v_ds, " select distinct ID_BO, BO from V_DICH_VU_BO_PM_TD where ID_DICH_VU=" + m_id_dich_vu);
             m_grc_ht_nguoi_su_dung.DataSource = v_ds.Tables[0];
 
-           
+            Color.AliceBlue.ToArgb();
             DataSet v_ds_appointment = new DataSet();
             v_ds_appointment.Tables.Add(new DataTable());
 
@@ -96,8 +96,10 @@ namespace TOSApp.ChucNang
             SetUpMapping();
             schedulerStorage1.Appointments.DataSource = v_ds_appointment.Tables[0];
             schedulerStorage1.Resources.DataSource = v_ds_resource.Tables[0];
-            m_sch.ActiveViewType = SchedulerViewType.Timeline;
+            m_sch.ActiveViewType = SchedulerViewType.Day;
             m_sch.GroupType = SchedulerGroupType.Resource;
+            
+         
         }
 
         private void SetUpMapping()
@@ -116,6 +118,7 @@ namespace TOSApp.ChucNang
             schedulerStorage1.Resources.Mappings.Caption = "TEN_TRUY_CAP";
             schedulerStorage1.Resources.Mappings.Id = "ID_NGUOI_SU_DUNG";
             schedulerStorage1.Resources.Mappings.Image = "Image";
+          //  schedulerStorage1.Resources.Mappings.Color = "Color";
         }
 
        

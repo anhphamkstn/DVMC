@@ -40,11 +40,8 @@ namespace TOSApp
             try
             {
                TOSApp.HT.f000_login v_f = new HT.f000_login();
-                //f100_don_dat_hang_new v_f= new f100_don_dat_hang_new();
-               // f999_main_form v_f = new f999_main_form();
-               // f118_ds_log_dat_hang v_f = new f118_ds_log_dat_hang();
                 Application.Run(v_f);
-
+                if (us_user.ipphone!=null && us_user.ipphone!="" && us_user.strTEN_TRUY_CAP!="")
                 CallCenterUtils.add_or_remove_agent_ipphone_2_queue(us_user.ipphone.ToString(), us_user.strTEN_TRUY_CAP, KHO_QUEUE.MIEN_BAC,20);
             }
             catch (Exception v_e)

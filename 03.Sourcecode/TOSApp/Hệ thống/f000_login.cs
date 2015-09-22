@@ -18,7 +18,6 @@ namespace TOSApp.HT
     public partial class f000_login : Form
     {
       
-
         public f000_login()
         {
             InitializeComponent();
@@ -41,11 +40,6 @@ namespace TOSApp.HT
                     {
                         this.Hide();
                         f999_main_form v_f = new f999_main_form();
-                        if (m_tb_ipphone.Text != "")
-                        {
-                            CallCenterUtils.add_or_remove_agent_ipphone_2_queue(m_tb_ipphone.Text, us_user.strTEN_TRUY_CAP, KHO_QUEUE.MIEN_BAC, 10);
-                            us_user.ipphone = m_tb_ipphone.Text ;
-                        }
                         v_f.WindowState = FormWindowState.Maximized;
                         us_user.trang_thai_dang_nhap = true;
                         v_f.ShowDialog();
@@ -55,13 +49,9 @@ namespace TOSApp.HT
                             this.Show();
                         }
                         else this.Close();
-
-                       // this.Dispose();
-
                     }
                     else m_lab_error.Text = "Tên đăng nhập hoặc mật khẩu không đúng.";
-                }
-                
+                }            
             }
             catch (Exception v_e)
             {
@@ -88,6 +78,16 @@ namespace TOSApp.HT
                     return true;
                 }
                 else return false;
+        }
+
+        private void m_txt_id_Enter(object sender, EventArgs e)
+        {
+            m_lab_error.Text = "";
+        }
+
+        private void m_txt_pass_Enter(object sender, EventArgs e)
+        {
+            m_lab_error.Text = "";
         }
 
        
