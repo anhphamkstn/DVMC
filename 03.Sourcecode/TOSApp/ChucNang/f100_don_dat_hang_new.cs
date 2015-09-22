@@ -168,7 +168,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();
            // m_txt_ma_don_hang.Text = "DVMC2015" + "000016";// new Random().Next(100000, 999999).ToString();
-            insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
+            
         }
         #endregion
 
@@ -203,6 +203,7 @@ namespace TOSApp.ChucNang
                     {
                         if (m_lst_id_nguoi_xu_ly.Count != 0 & CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 293)
                         {
+                           
                             luu_don_hang();
                             dieu_phoi_don_hang();
                             if (m_ip_call_infor != null)
@@ -443,6 +444,7 @@ namespace TOSApp.ChucNang
 
         private void luu_don_hang()
         {
+            insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
             ghi_don_hang();
             ghi_log_tiep_nhan();
         }
