@@ -59,6 +59,8 @@ namespace TOSApp.ChucNang
             load_data_2_grid();
 
         }
+        //fotmat mau cho luoi theo dieu kien
+     
 
         internal void display_for_refurse_dealine(decimal deadline_id)
         {

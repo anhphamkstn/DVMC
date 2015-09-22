@@ -283,8 +283,8 @@
             styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
-    "AddDays(Today(),-1 ) )";
+            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddHours(Today(),12) )   And  [THOI_DIEM_CA" +
+    "N_HOAN_THANH] >=GetDate( AddDays(Today(),-1 ) )";
             this.m_grv_ds_don_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
             styleFormatCondition1});
             this.m_grv_ds_don_dat_hang.GridControl = this.m_grc_ds_don_dat_hang;
