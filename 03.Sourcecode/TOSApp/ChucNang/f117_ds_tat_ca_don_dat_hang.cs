@@ -52,42 +52,13 @@ namespace TOSApp.ChucNang
 
         private void m_grv_ds_don_dat_hang_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            //try
-            //{
-            //    DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
-            //    US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-            //    f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-            //    v_f100.displayForUpdate(v_us);
-            //    load_data_2_grid();
 
-            //}
-            //catch (Exception v_e)
-            //{
-
-            //    CSystemLog_301.ExceptionHandle(v_e);
-            //}
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
             load_data_2_grid();
 
         }
-        //fotmat mau cho luoi theo dieu kien
-        private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
-        {
-
-            GridView View = sender as GridView;
-            if (e.RowHandle >= 0)
-            {
-                DateTime category = CIPConvert.ToDatetime(View.GetRowCellDisplayText(e.RowHandle, View.Columns["THOI_DIEM_CAN_HOAN_THANH"]));
-                if (category < System.DateTime.Today)
-                {
-                    e.Appearance.BackColor = Color.Red;
-                    e.Appearance.BackColor2 = Color.Red;
-                }
-            }
-        }
-
 
         internal void display_for_refurse_dealine(decimal deadline_id)
         {

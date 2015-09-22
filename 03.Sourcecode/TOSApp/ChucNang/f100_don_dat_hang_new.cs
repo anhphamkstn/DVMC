@@ -45,9 +45,6 @@ namespace TOSApp.ChucNang
             if (v_ds.Tables[0].Rows.Count > 0)
             {
                 m_searchLookUpEdit_user_nv_dat_hang.EditValue = CIPConvert.ToDecimal(v_ds.Tables[0].Rows[0][0].ToString());
-                //m_txt_ho_ten_nguoi_dat_hang.Text = v_ds.Tables[0].Rows[0][2].ToString();
-                //m_cbo_dv_don_vi.Text = v_ds.Tables[0].Rows[0][2].ToString();
-                //m_txt_dien_thoai.Text = v_ds.Tables[0].Rows[0][3].ToString();
             }
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             this.ShowDialog();
@@ -74,9 +71,13 @@ namespace TOSApp.ChucNang
             load_data_2_selected_loai_dich_vu();
             load_data_2_selected_thoi_gian_hoan_thanh();
             load_data_2_search_look_edit_dich_vu();
+            load_data_to_cbo_don_vi();
             load_data_2_search_look_edit_user();
         }
-
+        private void load_data_to_cbo_don_vi()
+        {
+            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI","", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
+        }
         private void load_data_2_search_look_edit_dich_vu()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
@@ -94,15 +95,7 @@ namespace TOSApp.ChucNang
             v_us.FillDatasetWithTableName(v_ds, "DM_KHACH_HANG");
             m_searchLookUpEdit_user_nv_dat_hang.Properties.DataSource = v_ds.Tables[0];
         }
-        private void load_data_2_selected_nguoi_dat_hang_vs_dien_thoai(object sender, EventArgs e)
-        {
-            decimal ID_khach_hang = CIPConvert.ToDecimal(m_searchLookUpEdit_user_nv_dat_hang.EditValue);
-            US_DM_KHACH_HANG v_us = new US_DM_KHACH_HANG(ID_khach_hang);
-            load_data_to_selected_don_vi(v_us);
-            load_data_to_selected_ho_ten_nguoi_dat_hang(v_us);
-            load_data_to_selected_so_dien_thoai(v_us);
-        }
-
+        
         private void load_data_to_selected_so_dien_thoai(US_DM_KHACH_HANG v_us)
         {
             m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
@@ -112,12 +105,6 @@ namespace TOSApp.ChucNang
         {
             m_txt_ho_ten_nguoi_dat_hang.Text = v_us.strTEN_KHACH_HANG;
         }
-
-        private void load_data_to_selected_don_vi(US_DM_KHACH_HANG v_us)
-        {
-            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", " where ID=" + v_us.dcDON_VI, WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
-        }
-
 
         private void load_data_2_grid_khach_hang_don_hang()
         {
@@ -907,7 +894,7 @@ namespace TOSApp.ChucNang
         {
             decimal ID_khach_hang = CIPConvert.ToDecimal(m_searchLookUpEdit_user_nv_dat_hang.EditValue.ToString());
             US_DM_KHACH_HANG v_us = new US_DM_KHACH_HANG(ID_khach_hang);
-            load_data_to_selected_don_vi(v_us);
+            m_cbo_dv_don_vi.SelectedValue = CIPConvert.ToDecimal(v_us.dcDON_VI.ToString());
             load_data_to_selected_ho_ten_nguoi_dat_hang(v_us);
             load_data_to_selected_so_dien_thoai(v_us);
             load_data_2_grid_khach_hang_don_hang();
