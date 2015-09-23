@@ -122,11 +122,9 @@
             // 
             // m_grv_ds_blacklist
             // 
-            this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Beige;
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.Options.UseBackColor = true;
-            this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButton.Options.UseForeColor = true;
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
@@ -134,8 +132,8 @@
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_ds_blacklist.Appearance.Empty.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_blacklist.Appearance.Empty.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_ds_blacklist.Appearance.Empty.BackColor2 = System.Drawing.Color.Wheat;
             this.m_grv_ds_blacklist.Appearance.Empty.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
             this.m_grv_ds_blacklist.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
@@ -154,15 +152,15 @@
             this.m_grv_ds_blacklist.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.FilterPanel.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.FilterPanel.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(159)))), ((int)(((byte)(69)))));
+            this.m_grv_ds_blacklist.Appearance.FixedLine.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_blacklist.Appearance.FixedLine.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.FocusedCell.BackColor = System.Drawing.Color.White;
             this.m_grv_ds_blacklist.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.FocusedCell.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(152)))), ((int)(((byte)(49)))));
+            this.m_grv_ds_blacklist.Appearance.FocusedRow.BackColor = System.Drawing.Color.Aquamarine;
             this.m_grv_ds_blacklist.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
-            this.m_grv_ds_blacklist.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ds_blacklist.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.FocusedRow.Options.UseForeColor = true;
@@ -178,36 +176,38 @@
             this.m_grv_ds_blacklist.Appearance.GroupButton.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupButton.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupButton.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_blacklist.Appearance.GroupFooter.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.m_grv_ds_blacklist.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
             this.m_grv_ds_blacklist.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.GroupFooter.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupFooter.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupFooter.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.GroupPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_ds_blacklist.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_blacklist.Appearance.GroupPanel.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_blacklist.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.GroupPanel.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupPanel.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_blacklist.Appearance.GroupRow.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_blacklist.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
             this.m_grv_ds_blacklist.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.GroupRow.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_ds_blacklist.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_blacklist.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
-            this.m_grv_ds_blacklist.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_blacklist.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ds_blacklist.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv_ds_blacklist.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_ds_blacklist.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(176)))), ((int)(((byte)(84)))));
-            this.m_grv_ds_blacklist.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ds_blacklist.Appearance.HeaderPanel.Options.UseImage = true;
+            this.m_grv_ds_blacklist.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_ds_blacklist.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_ds_blacklist.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_blacklist.Appearance.HorzLine.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_blacklist.Appearance.HorzLine.Options.UseBackColor = true;
-            this.m_grv_ds_blacklist.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_ds_blacklist.Appearance.OddRow.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_blacklist.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
             this.m_grv_ds_blacklist.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.OddRow.Options.UseBackColor = true;
@@ -221,19 +221,22 @@
             this.m_grv_ds_blacklist.Appearance.Preview.Options.UseBorderColor = true;
             this.m_grv_ds_blacklist.Appearance.Preview.Options.UseFont = true;
             this.m_grv_ds_blacklist.Appearance.Preview.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_ds_blacklist.Appearance.Row.BackColor = System.Drawing.Color.Beige;
             this.m_grv_ds_blacklist.Appearance.Row.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Appearance.Row.Options.UseForeColor = true;
-            this.m_grv_ds_blacklist.Appearance.RowSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_ds_blacklist.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_blacklist.Appearance.RowSeparator.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_blacklist.Appearance.RowSeparator.Options.UseBackColor = true;
-            this.m_grv_ds_blacklist.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
+            this.m_grv_ds_blacklist.Appearance.SelectedRow.BackColor = System.Drawing.Color.Aquamarine;
+            this.m_grv_ds_blacklist.Appearance.SelectedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_blacklist.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.m_grv_ds_blacklist.Appearance.SelectedRow.Options.UseForeColor = true;
             this.m_grv_ds_blacklist.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
             this.m_grv_ds_blacklist.Appearance.TopNewRow.Options.UseBackColor = true;
-            this.m_grv_ds_blacklist.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_blacklist.Appearance.VertLine.BackColor = System.Drawing.Color.Beige;
             this.m_grv_ds_blacklist.Appearance.VertLine.Options.UseBackColor = true;
+            this.m_grv_ds_blacklist.Appearance.ViewCaption.BackColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_blacklist.Appearance.ViewCaption.Options.UseBackColor = true;
             this.m_grv_ds_blacklist.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.SO_DIEN_THOAI,
             this.HO_TEN,
@@ -244,7 +247,7 @@
             this.m_grv_ds_blacklist.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_blacklist.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_blacklist.OptionsView.ShowAutoFilterRow = true;
-            this.m_grv_ds_blacklist.PaintStyleName = "Office2003";
+            this.m_grv_ds_blacklist.PaintStyleName = "MixedXP";
             // 
             // SO_DIEN_THOAI
             // 

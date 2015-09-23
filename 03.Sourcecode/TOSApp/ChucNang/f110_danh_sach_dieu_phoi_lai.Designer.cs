@@ -100,11 +100,9 @@
             // 
             // m_grv_ds_dieu_phoi_lai
             // 
-            this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Beige;
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.Options.UseBackColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButton.Options.UseForeColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
@@ -112,8 +110,8 @@
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.Empty.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.Empty.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.Empty.BackColor2 = System.Drawing.Color.Wheat;
             this.m_grv_ds_dieu_phoi_lai.Appearance.Empty.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
             this.m_grv_ds_dieu_phoi_lai.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
@@ -132,15 +130,15 @@
             this.m_grv_ds_dieu_phoi_lai.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FilterPanel.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FilterPanel.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(159)))), ((int)(((byte)(69)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.FixedLine.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FixedLine.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedCell.BackColor = System.Drawing.Color.White;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedCell.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(152)))), ((int)(((byte)(49)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.BackColor = System.Drawing.Color.Aquamarine;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.FocusedRow.Options.UseForeColor = true;
@@ -156,36 +154,38 @@
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupButton.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupButton.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupButton.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupFooter.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupPanel.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupPanel.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupPanel.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.GroupRow.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.Options.UseBorderColor = true;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(176)))), ((int)(((byte)(84)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.White;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.Options.UseImage = true;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.HorzLine.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_dieu_phoi_lai.Appearance.HorzLine.Options.UseBackColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.OddRow.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_dieu_phoi_lai.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
             this.m_grv_ds_dieu_phoi_lai.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.OddRow.Options.UseBackColor = true;
@@ -199,19 +199,22 @@
             this.m_grv_ds_dieu_phoi_lai.Appearance.Preview.Options.UseBorderColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.Preview.Options.UseFont = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.Preview.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.Row.BackColor = System.Drawing.Color.Beige;
             this.m_grv_ds_dieu_phoi_lai.Appearance.Row.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.Row.Options.UseForeColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.RowSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_ds_dieu_phoi_lai.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.RowSeparator.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_ds_dieu_phoi_lai.Appearance.RowSeparator.Options.UseBackColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.SelectedRow.BackColor = System.Drawing.Color.Aquamarine;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.SelectedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_dieu_phoi_lai.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.SelectedRow.Options.UseForeColor = true;
             this.m_grv_ds_dieu_phoi_lai.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
             this.m_grv_ds_dieu_phoi_lai.Appearance.TopNewRow.Options.UseBackColor = true;
-            this.m_grv_ds_dieu_phoi_lai.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_dieu_phoi_lai.Appearance.VertLine.BackColor = System.Drawing.Color.Beige;
             this.m_grv_ds_dieu_phoi_lai.Appearance.VertLine.Options.UseBackColor = true;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.ViewCaption.BackColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_dieu_phoi_lai.Appearance.ViewCaption.Options.UseBackColor = true;
             this.m_grv_ds_dieu_phoi_lai.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.ID_GD_DAT_HANG,
             this.NGUOI_NHAN_THAO_TAC,
@@ -227,7 +230,7 @@
             this.m_grv_ds_dieu_phoi_lai.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.ShowAutoFilterRow = true;
-            this.m_grv_ds_dieu_phoi_lai.PaintStyleName = "Office2003";
+            this.m_grv_ds_dieu_phoi_lai.PaintStyleName = "MixedXP";
             // 
             // ID_GD_DAT_HANG
             // 

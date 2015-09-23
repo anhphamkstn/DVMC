@@ -66,18 +66,32 @@ namespace TOSApp.ChucNang
         //load data từ trong csdl lên vào các selected sẵn có 
         private void load_data_2_selected()
         {
+            load_data_2_dv_2();
+            load_data_2_dc_dich_vu();
             load_data_2_selected_trang_thai_don_hang();
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
             load_data_2_selected_loai_dich_vu();
+           
             load_data_2_selected_thoi_gian_hoan_thanh();
             load_data_2_search_look_edit_dich_vu();
             load_data_to_cbo_don_vi();
             load_data_2_search_look_edit_user();
         }
+
+        private void load_data_2_dc_dich_vu()
+        {
+            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is not Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
+        }
+
+        private void load_data_2_dv_2()
+        {
+            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is not Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_2);
+        }
         private void load_data_to_cbo_don_vi()
         {
-            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI","", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
+            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI","", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi
+);
         }
         private void load_data_2_search_look_edit_dich_vu()
         {
@@ -721,6 +735,10 @@ namespace TOSApp.ChucNang
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
             m_txt_phan_hoi_tu_dvmc.Text = v_us.strPHAN_HOI_TU_DVMC;
             m_cbo_trang_thai_don_hang.SelectedText = v_us.strTEN_LOAI_THAO_TAC_LOG;
+            US_V_DM_LOAI_YEU_CAU k_us = new US_V_DM_LOAI_YEU_CAU(v_us.dcID_NHOM_DV_YEU_CAU);
+            m_cbo_loai_dich_vu_1.SelectedValue = k_us.dcID_DM_YEU_CAU_1;
+            m_cbo_loai_dich_vu_2.SelectedValue = k_us.dcID_DM_YEU_CAU_2;
+            m_cbo_dich_vu.SelectedValue = k_us.dcID;
             M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
 
         }
@@ -842,6 +860,7 @@ namespace TOSApp.ChucNang
                 DataRow v_dr = m_grv_user_don_hang.GetDataRow(m_grv_user_don_hang.FocusedRowHandle);
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                v_f100.m_docmanager_don_hang.Visible = false;
                 m_dp_don_hang.Hide();
                 this.Hide();
                 v_f100.displayForUpdate(v_us, v_deadline);
@@ -927,7 +946,51 @@ namespace TOSApp.ChucNang
 
 
 
+        private void format_control_view_thong_tin_don_hang()
+        {
+            m_docmanager_don_hang.Visible =false;
+            m_checkbox_m2_m3.Enabled = false;
+            m_txt_dien_thoai.Enabled = false;
+            m_txt_dien_thoai.BackColor = SystemColors.Control;
+            m_txt_ho_ten_nguoi_dat_hang.Enabled = false;
+            m_txt_ma_don_hang.BackColor = SystemColors.Control;
+            m_txt_ho_ten_nguoi_dat_hang.Enabled = false;
+            m_txt_ho_ten_nguoi_dat_hang.BackColor = SystemColors.Control;
+            m_searchLookUpEdit_user_nv_dat_hang.Enabled = false;
+            m_cbo_dv_don_vi.Enabled = false;
+            m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
+            m_cmd_tu_choi.Enabled = false;
+            m_cbo_nguoi_nhan_dat_hang.Enabled = false;
+            m_cbo_trang_thai_don_hang.Enabled = false;
+            m_cbo_loai_dich_vu_1.Enabled = false;
+            m_cbo_loai_dich_vu_2.Enabled = false;
+            m_cbo_dich_vu.Enabled = false;
+            m_searchLookUpEdit_dv.Enabled = false;
+
+            m_dat_thoi_diem_can_hoan_thanh.Enabled = false;
+            m_checkbox_m2_m3.Enabled = false;
+            m_txt_yeu_cau_cu_the.Enabled = false;
+            m_txt_phan_hoi_tu_dvmc.Enabled = false;
+            m_cbo_nguoi_nhan_dat_hang.Enabled = false;
+            m_cbo_thoi_gian_hoan_thanh.Enabled = false;
+            m_cbo_trang_thai_don_hang.Enabled = false;
+            m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
+            m_cmd_giai_dap_thac_mac.Enabled = false;
+            m_btn_timeline.Enabled = false;
+            m_cmd_tu_choi.Visible = false;
+            m_cmd_xac_nhan_don_hang.Visible = false;
+            m_docmanager_don_hang.Visible = false;
+        }
 
 
+        internal void displayForUpdate2(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        {
+            format_control_view_thong_tin_don_hang();
+            us_2_form(v_us);
+            m_e_form_mode = DataEntryFormMode.UpdateDataState;
+            M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
+            load_data_2_lich_su_thuc_hien();
+            this.ShowDialog();
+        }
     }
 }

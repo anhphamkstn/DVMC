@@ -1,4 +1,8 @@
-﻿using System;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using IP.Core.IPCommon;
+using IPCOREUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,8 +33,30 @@ namespace TOSApp.ChucNang
 
         }
 
-       
+        private void view_thong_tin_don_hang(object sender, EventArgs e)
+        {
+            GridView view = (GridView)sender;
+            Point pt = view.GridControl.PointToClient(Control.MousePosition);
+            DoRowDoubleClick(view, pt);
+        }
 
+
+        private void DoRowDoubleClick(GridView view, Point pt)
+        {
+            GridHitInfo info = view.CalcHitInfo(pt);
+            if (info.InRow || info.InRowCell)
+            {
+                decimal v_deadline = 0;
+                DataRow v_dr = m_grv_ds_don_hang_nguoi_xu_ly.GetDataRow(m_grv_ds_don_hang_nguoi_xu_ly.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                
+                v_f100.displayForUpdate2(v_us);
+                this.Show();
+            }
+        }
+
+       
       
     }
 }
