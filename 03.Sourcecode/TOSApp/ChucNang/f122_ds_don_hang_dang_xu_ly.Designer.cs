@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.m_grc_ds_don_hang_dang_xu_ly = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_don_hang_dang_xu_ly = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.c_loai_dich_vu = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -41,6 +43,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_dang_xu_ly)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_hang_dang_xu_ly)).BeginInit();
             this.panel1.SuspendLayout();
@@ -184,7 +187,15 @@
             this.c_nguoi_xu_ly,
             this.c_nhan_vien_dat_hang,
             this.c_thoi_gian_tao,
-            this.c_loai_thoi_gian_can_hoan_thanh});
+            this.c_loai_thoi_gian_can_hoan_thanh,
+            this.THOI_DIEM_CAN_HOAN_THANH});
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Yellow;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition1.Expression = "[LOAI_THOI_GIAN_CAN_HOAN_THANH] == \'5 phút\'";
+            this.m_grv_ds_don_hang_dang_xu_ly.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
+            styleFormatCondition1,
+            styleFormatCondition2});
             this.m_grv_ds_don_hang_dang_xu_ly.GridControl = this.m_grc_ds_don_hang_dang_xu_ly;
             this.m_grv_ds_don_hang_dang_xu_ly.Name = "m_grv_ds_don_hang_dang_xu_ly";
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsBehavior.Editable = false;
@@ -192,6 +203,7 @@
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_dang_xu_ly.PaintStyleName = "MixedXP";
+            this.m_grv_ds_don_hang_dang_xu_ly.DoubleClick += new System.EventHandler(this.m_grv_ds_don_hang_dang_xu_ly_DoubleClick);
             // 
             // c_loai_dich_vu
             // 
@@ -285,6 +297,14 @@
             this.panel2.Size = new System.Drawing.Size(774, 202);
             this.panel2.TabIndex = 2;
             // 
+            // THOI_DIEM_CAN_HOAN_THANH
+            // 
+            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "Thời điểm cần hoàn thành";
+            this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 8;
+            // 
             // f122_ds_don_hang_dang_xu_ly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,5 +339,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
     }
 }

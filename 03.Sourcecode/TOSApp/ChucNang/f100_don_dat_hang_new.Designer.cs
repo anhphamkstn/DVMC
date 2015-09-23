@@ -1231,8 +1231,8 @@
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "ghi chú";
-            this.gridColumn4.FieldName = "GHI_CHU";
+            this.gridColumn4.Caption = "Người nhận thao tác";
+            this.gridColumn4.FieldName = "TEN_NGUOI_NHAN_THAO_TAC";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;

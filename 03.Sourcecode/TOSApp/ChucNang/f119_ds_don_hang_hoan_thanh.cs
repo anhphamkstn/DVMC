@@ -1,4 +1,8 @@
-﻿using System;
+﻿using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Grid.ViewInfo;
+using IP.Core.IPCommon;
+using IPCOREUS;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,8 +26,6 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            //string m_str_filed =" MA_DON_HANG,HO_TEN_USER_DAT_HANG,MA_DON_VI,DIEN_THOAI,TEN_YEU_CAU,NOI_DUNG_DAT_HANG,THOI_GIAN_HOAN_THANH,GHI_CHU ";
-            //v_us.FillDatasetWithTableName(v_ds, "V_GD_DAT_HANG_GD_LOG_DAT_HANG");
             v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where thoi_gian_hoan_thanh is not null AND (THAO_TAC_HET_HAN_YN = 'N' OR (THAO_TAC_HET_HAN_YN = 'Y' AND ID_LOAI_THAO_TAC = 299))");
             m_grc_ds_dh_hoan_thanh.DataSource = v_ds.Tables[0];
         }
@@ -38,6 +40,25 @@ namespace TOSApp.ChucNang
 
         }
 
+        private void m_grv_ds_dh_hoan_thanh_DoubleClick(object sender, EventArgs e)
+        {
+            GridView view = (GridView)sender;
+            Point pt = view.GridControl.PointToClient(Control.MousePosition);
+            DoRowDoubleClick(view, pt);
+        }
+
+        private void DoRowDoubleClick(GridView view, Point pt)
+        {
+            GridHitInfo info = view.CalcHitInfo(pt);
+            if (info.InRow || info.InRowCell)
+            {
+                DataRow v_dr = m_grv_ds_dh_hoan_thanh.GetDataRow(m_grv_ds_dh_hoan_thanh.FocusedRowHandle);
+                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
+                v_f100.displayForUpdate2(v_us);
+                this.Show();
+            }
+        }
        
     }
 }

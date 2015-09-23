@@ -217,6 +217,7 @@
             this.m_grv_ds_dh_hoan_thanh.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_dh_hoan_thanh.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_dh_hoan_thanh.PaintStyleName = "MixedXP";
+            this.m_grv_ds_dh_hoan_thanh.DoubleClick += new System.EventHandler(this.m_grv_ds_dh_hoan_thanh_DoubleClick);
             // 
             // gridColumn1
             // 

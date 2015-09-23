@@ -192,6 +192,7 @@
             this.m_grv_ds_don_hang_can_xu_ly.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_hang_can_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_can_xu_ly.PaintStyleName = "MixedXP";
+            this.m_grv_ds_don_hang_can_xu_ly.DoubleClick += new System.EventHandler(this.m_grv_ds_don_hang_can_xu_ly_DoubleClick);
             // 
             // c_loai_dich_vu
             // 

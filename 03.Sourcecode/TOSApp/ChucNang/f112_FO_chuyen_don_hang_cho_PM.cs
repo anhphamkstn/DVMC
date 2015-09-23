@@ -24,13 +24,22 @@ namespace TOSApp.ChucNang
         private void update_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            DataSet v_ds = new DataSet();
-            v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "SELECT *FROM GD_LOG_DAT_HANG WHERE ID_GD_DAT_HANG =" + v_US.dcID_GD_DAT_HANG.ToString() + "AND ID_LOAI_THAO_TAC in(310,313) AND THAO_TAC_HET_HAN_YN = 'N'");
-            for (int i = 0; i < v_ds.Tables[0].Rows.Count;i++ )
+            if (us_user.dcIDNhom == 1)
             {
-                v_US = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i][0].ToString()));
+                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+                DataSet v_ds = new DataSet();
+                v_ds.Tables.Add(new DataTable());
+                v_us.FillDatasetWithQuery(v_ds, "SELECT *FROM GD_LOG_DAT_HANG WHERE ID_GD_DAT_HANG =" + v_US.dcID_GD_DAT_HANG.ToString() + "AND ID_LOAI_THAO_TAC in(310,313) AND THAO_TAC_HET_HAN_YN = 'N'");
+                for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
+                {
+                    v_US = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i][0].ToString()));
+                    v_US.strTHAO_TAC_HET_HAN_YN = "Y";
+                    v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
+                    v_US.Update();
+                }
+            }
+            else if (us_user.dcIDNhom == 2)
+            {
                 v_US.strTHAO_TAC_HET_HAN_YN = "Y";
                 v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
                 v_US.Update();
@@ -40,21 +49,15 @@ namespace TOSApp.ChucNang
 
         private void insert_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
-            US_DUNG_CHUNG l_us = new US_DUNG_CHUNG();
-            DataSet l_ds = new DataSet();
-            l_ds.Tables.Add( new DataTable());
-
-            l_us.FillDatasetWithQuery(l_ds,"select ID_PM from HT_BO_PM_TD where id_BO ="+m_us.dcID_NGUOI_TAO_THAO_TAC);
            
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 303;//đã chuyển cho PM
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal( m_cbo_PM.SelectedValue);
-            
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có tên là: \n"+m_cbo_PM.Text+" ,gửi kèm:  " +m_txt_gui_kem.Text;
+            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có tên là: \n"+m_txt_ma_don_hang.Text+" ,gửi kèm:  " +m_txt_gui_kem.Text;
             v_US.Insert();
             
         }
@@ -62,7 +65,6 @@ namespace TOSApp.ChucNang
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             load_data_to_form(v_us);
-
             this.ShowDialog();
         }
 
@@ -87,7 +89,6 @@ namespace TOSApp.ChucNang
                 {
                     insert_log_gui_cho_pm(m_us);
                     update_log_gui_cho_pm(m_us);
-
                     MessageBox.Show("Hoàn thành!");
                     this.Close();
                 }

@@ -226,7 +226,7 @@
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_nguoi_xu_ly.PaintStyleName = "MixedXP";
             this.m_grv_ds_don_hang_nguoi_xu_ly.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.DIEN_THOAI, DevExpress.Data.ColumnSortOrder.Ascending),
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.MA_DON_HANG, DevExpress.Data.ColumnSortOrder.Ascending),
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.HO_TEN_USER_DAT_HANG, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.m_grv_ds_don_hang_nguoi_xu_ly.DoubleClick += new System.EventHandler(this.view_thong_tin_don_hang);
             // 
@@ -244,7 +244,7 @@
             this.HO_TEN_USER_DAT_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Name = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Visible = true;
-            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 1;
+            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 0;
             // 
             // MA_DON_VI
             // 
@@ -260,7 +260,7 @@
             this.DIEN_THOAI.FieldName = "DIEN_THOAI";
             this.DIEN_THOAI.Name = "DIEN_THOAI";
             this.DIEN_THOAI.Visible = true;
-            this.DIEN_THOAI.VisibleIndex = 3;
+            this.DIEN_THOAI.VisibleIndex = 0;
             // 
             // TEN_YEU_CAU
             // 
@@ -284,7 +284,7 @@
             this.TRANG_THAI_DON_HANG.FieldName = "TEN_LOAI_THAO_TAC_LOG";
             this.TRANG_THAI_DON_HANG.Name = "TRANG_THAI_DON_HANG";
             this.TRANG_THAI_DON_HANG.Visible = true;
-            this.TRANG_THAI_DON_HANG.VisibleIndex = 4;
+            this.TRANG_THAI_DON_HANG.VisibleIndex = 5;
             // 
             // NGUOI_XU_LY
             // 
@@ -292,7 +292,7 @@
             this.NGUOI_XU_LY.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.NGUOI_XU_LY.Name = "NGUOI_XU_LY";
             this.NGUOI_XU_LY.Visible = true;
-            this.NGUOI_XU_LY.VisibleIndex = 5;
+            this.NGUOI_XU_LY.VisibleIndex = 4;
             // 
             // GHI_CHU
             // 

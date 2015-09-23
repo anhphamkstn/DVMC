@@ -37,7 +37,6 @@
             this.THOI_GIAN_TAO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TEN_CHI_NHANH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TEN_LOAI_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.THAO_THAC_HET_HAN_YN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_NHAN_THAO_TAC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -204,7 +203,6 @@
             this.THOI_GIAN_TAO,
             this.TEN_CHI_NHANH,
             this.TEN_LOAI_THAO_TAC_LOG,
-            this.THAO_THAC_HET_HAN_YN,
             this.NGUOI_NHAN_THAO_TAC,
             this.GHI_CHU,
             this.MA_DON_HANG,
@@ -217,6 +215,7 @@
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_log_dat_hang.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_log_dat_hang.PaintStyleName = "MixedXP";
+            this.m_grv_ds_log_dat_hang.DoubleClick += new System.EventHandler(this.m_grv_ds_log_dat_hang_DoubleClick);
             // 
             // TEN_NGUOI_TAO_THAO_TAC_LOG
             // 
@@ -250,14 +249,6 @@
             this.TEN_LOAI_THAO_TAC_LOG.Visible = true;
             this.TEN_LOAI_THAO_TAC_LOG.VisibleIndex = 6;
             // 
-            // THAO_THAC_HET_HAN_YN
-            // 
-            this.THAO_THAC_HET_HAN_YN.Caption = "HẾT HẠN Y/N";
-            this.THAO_THAC_HET_HAN_YN.FieldName = "THAO_TAC_HET_HAN_YN";
-            this.THAO_THAC_HET_HAN_YN.Name = "THAO_THAC_HET_HAN_YN";
-            this.THAO_THAC_HET_HAN_YN.Visible = true;
-            this.THAO_THAC_HET_HAN_YN.VisibleIndex = 7;
-            // 
             // NGUOI_NHAN_THAO_TAC
             // 
             this.NGUOI_NHAN_THAO_TAC.Caption = "NGƯỜI NHẬN THAO TÁC";
@@ -268,11 +259,11 @@
             // 
             // GHI_CHU
             // 
-            this.GHI_CHU.Caption = "CHI CHÚ";
+            this.GHI_CHU.Caption = "GHI CHÚ";
             this.GHI_CHU.FieldName = "GHI_CHU";
             this.GHI_CHU.Name = "GHI_CHU";
             this.GHI_CHU.Visible = true;
-            this.GHI_CHU.VisibleIndex = 8;
+            this.GHI_CHU.VisibleIndex = 7;
             // 
             // MA_DON_HANG
             // 
@@ -331,7 +322,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn THOI_GIAN_TAO;
         private DevExpress.XtraGrid.Columns.GridColumn TEN_CHI_NHANH;
         private DevExpress.XtraGrid.Columns.GridColumn TEN_LOAI_THAO_TAC_LOG;
-        private DevExpress.XtraGrid.Columns.GridColumn THAO_THAC_HET_HAN_YN;
         private DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC;
         private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;

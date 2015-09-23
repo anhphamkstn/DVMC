@@ -442,7 +442,7 @@
             this.m_sch.Location = new System.Drawing.Point(0, 0);
             this.m_sch.MenuManager = this.ribbonControl1;
             this.m_sch.Name = "m_sch";
-            this.m_sch.Size = new System.Drawing.Size(691, 330);
+            this.m_sch.Size = new System.Drawing.Size(691, 296);
             this.m_sch.Start = new System.DateTime(2015, 8, 25, 0, 0, 0, 0);
             this.m_sch.Storage = this.schedulerStorage;
             this.m_sch.TabIndex = 3;
@@ -665,7 +665,7 @@
             this.dateNavigator.Location = new System.Drawing.Point(0, 0);
             this.dateNavigator.Name = "dateNavigator";
             this.dateNavigator.SchedulerControl = this.m_sch;
-            this.dateNavigator.Size = new System.Drawing.Size(219, 330);
+            this.dateNavigator.Size = new System.Drawing.Size(219, 296);
             this.dateNavigator.TabIndex = 2;
             // 
             // panel1
@@ -674,7 +674,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(691, 142);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 330);
+            this.panel1.Size = new System.Drawing.Size(219, 296);
             this.panel1.TabIndex = 4;
             // 
             // panel2
@@ -683,14 +683,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 142);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(691, 330);
+            this.panel2.Size = new System.Drawing.Size(691, 296);
             this.panel2.TabIndex = 5;
             // 
             // f150_Bo_time_line
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 472);
+            this.ClientSize = new System.Drawing.Size(910, 438);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ribbonControl1);

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -88,7 +88,9 @@
             this.m_panel_PM_tiep_nhan = new System.Windows.Forms.Panel();
             this.m_cmd_PM_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_BO = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.m_panel_bo_chuyen_len_pm = new System.Windows.Forms.Panel();
+            this.m_cmd_bo_chuyen_pm = new DevExpress.XtraEditors.SimpleButton();
+            this.m_panel_bo_cap_nhat_xu_ly = new System.Windows.Forms.Panel();
             this.m_cmd_BO_cap_nhat_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.m_panel_cap_nhat_don_hang_BO = new System.Windows.Forms.Panel();
             this.m_cmd_cap_nhat_BO = new DevExpress.XtraEditors.SimpleButton();
@@ -129,7 +131,8 @@
             this.m_panel_PM_gui_TD.SuspendLayout();
             this.m_panel_PM_tiep_nhan.SuspendLayout();
             this.m_panel_BO.SuspendLayout();
-            this.panel7.SuspendLayout();
+            this.m_panel_bo_chuyen_len_pm.SuspendLayout();
+            this.m_panel_bo_cap_nhat_xu_ly.SuspendLayout();
             this.m_panel_cap_nhat_don_hang_BO.SuspendLayout();
             this.m_panel_BO_hoan_thanh.SuspendLayout();
             this.m_panel_BO_tu_choi.SuspendLayout();
@@ -162,9 +165,9 @@
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level2";
+            gridLevelNode2.RelationName = "Level2";
             this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
@@ -319,24 +322,24 @@
             this.NGUOI_NHAN_THAO_TAC_LOG,
             this.NGUOI_TAO_THAO_TAC_LOG});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.CustomizationFormBounds = new System.Drawing.Rectangle(745, 437, 216, 178);
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.Options.UseBackColor = true;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
+            styleFormatCondition3.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition3.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition3.Appearance.Options.UseBackColor = true;
+            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition3.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
     "AddDays(Today(),-1 ) )";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Gold;
-            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Gold;
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddDay(Today(),-1))";
+            styleFormatCondition4.Appearance.BackColor = System.Drawing.Color.Gold;
+            styleFormatCondition4.Appearance.BackColor2 = System.Drawing.Color.Gold;
+            styleFormatCondition4.Appearance.Options.UseBackColor = true;
+            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition4.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddDay(Today(),-1))";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2});
+            styleFormatCondition3,
+            styleFormatCondition4});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Name = "m_grv_gd_dat_hang_gd_log_dat_hang";
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsBehavior.ReadOnly = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsBehavior.Editable = false;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsNavigation.AutoFocusNewRow = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ColumnAutoWidth = false;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
@@ -345,6 +348,7 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.PaintStyleName = "MixedXP";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.THOI_GIAN_TAO, DevExpress.Data.ColumnSortOrder.Descending)});
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.DoubleClick += new System.EventHandler(this.m_grv_gd_dat_hang_gd_log_dat_hang_DoubleClick);
             // 
             // MA_DON_HANG
             // 
@@ -352,7 +356,7 @@
             this.MA_DON_HANG.FieldName = "MA_DON_HANG";
             this.MA_DON_HANG.Name = "MA_DON_HANG";
             this.MA_DON_HANG.Visible = true;
-            this.MA_DON_HANG.VisibleIndex = 0;
+            this.MA_DON_HANG.VisibleIndex = 2;
             this.MA_DON_HANG.Width = 108;
             // 
             // HO_TEN_USER_DAT_HANG
@@ -361,7 +365,7 @@
             this.HO_TEN_USER_DAT_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Name = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Visible = true;
-            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 1;
+            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 3;
             this.HO_TEN_USER_DAT_HANG.Width = 135;
             // 
             // DON_VI
@@ -370,7 +374,7 @@
             this.DON_VI.FieldName = "MA_DON_VI";
             this.DON_VI.Name = "DON_VI";
             this.DON_VI.Visible = true;
-            this.DON_VI.VisibleIndex = 2;
+            this.DON_VI.VisibleIndex = 5;
             this.DON_VI.Width = 68;
             // 
             // DIEN_THOAI
@@ -379,7 +383,7 @@
             this.DIEN_THOAI.FieldName = "DIEN_THOAI";
             this.DIEN_THOAI.Name = "DIEN_THOAI";
             this.DIEN_THOAI.Visible = true;
-            this.DIEN_THOAI.VisibleIndex = 3;
+            this.DIEN_THOAI.VisibleIndex = 4;
             this.DIEN_THOAI.Width = 97;
             // 
             // THOI_DIEM_CAN_HOAN_THANH
@@ -388,7 +392,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 8;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 1;
             this.THOI_DIEM_CAN_HOAN_THANH.Width = 118;
             // 
             // THOI_GIAN_CAN_HOAN_THANH
@@ -397,7 +401,7 @@
             this.THOI_GIAN_CAN_HOAN_THANH.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
             this.THOI_GIAN_CAN_HOAN_THANH.Name = "THOI_GIAN_CAN_HOAN_THANH";
             this.THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            this.THOI_GIAN_CAN_HOAN_THANH.VisibleIndex = 7;
+            this.THOI_GIAN_CAN_HOAN_THANH.VisibleIndex = 12;
             this.THOI_GIAN_CAN_HOAN_THANH.Width = 140;
             // 
             // TEN_NHOM_DICH_VU
@@ -406,7 +410,7 @@
             this.TEN_NHOM_DICH_VU.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
             this.TEN_NHOM_DICH_VU.Name = "TEN_NHOM_DICH_VU";
             this.TEN_NHOM_DICH_VU.Visible = true;
-            this.TEN_NHOM_DICH_VU.VisibleIndex = 4;
+            this.TEN_NHOM_DICH_VU.VisibleIndex = 6;
             this.TEN_NHOM_DICH_VU.Width = 115;
             // 
             // NOI_DUNG_DAT_HANG
@@ -415,7 +419,7 @@
             this.NOI_DUNG_DAT_HANG.FieldName = "NOI_DUNG_DAT_HANG";
             this.NOI_DUNG_DAT_HANG.Name = "NOI_DUNG_DAT_HANG";
             this.NOI_DUNG_DAT_HANG.Visible = true;
-            this.NOI_DUNG_DAT_HANG.VisibleIndex = 5;
+            this.NOI_DUNG_DAT_HANG.VisibleIndex = 7;
             this.NOI_DUNG_DAT_HANG.Width = 117;
             // 
             // THOI_GIAN_TAO
@@ -424,7 +428,7 @@
             this.THOI_GIAN_TAO.FieldName = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Visible = true;
-            this.THOI_GIAN_TAO.VisibleIndex = 6;
+            this.THOI_GIAN_TAO.VisibleIndex = 0;
             this.THOI_GIAN_TAO.Width = 125;
             // 
             // PHUONG_THUC_DAT_HANG
@@ -433,7 +437,7 @@
             this.PHUONG_THUC_DAT_HANG.FieldName = "TEN_PHUONG_THUC_DAT_HANG";
             this.PHUONG_THUC_DAT_HANG.Name = "PHUONG_THUC_DAT_HANG";
             this.PHUONG_THUC_DAT_HANG.Visible = true;
-            this.PHUONG_THUC_DAT_HANG.VisibleIndex = 11;
+            this.PHUONG_THUC_DAT_HANG.VisibleIndex = 13;
             this.PHUONG_THUC_DAT_HANG.Width = 156;
             // 
             // CHI_NHANH
@@ -442,7 +446,7 @@
             this.CHI_NHANH.FieldName = "TEN_CHI_NHANH";
             this.CHI_NHANH.Name = "CHI_NHANH";
             this.CHI_NHANH.Visible = true;
-            this.CHI_NHANH.VisibleIndex = 10;
+            this.CHI_NHANH.VisibleIndex = 11;
             this.CHI_NHANH.Width = 86;
             // 
             // ID_LOG_DAT_HANG
@@ -451,7 +455,7 @@
             this.ID_LOG_DAT_HANG.FieldName = "ID_LOG_DAT_HANG";
             this.ID_LOG_DAT_HANG.Name = "ID_LOG_DAT_HANG";
             this.ID_LOG_DAT_HANG.Visible = true;
-            this.ID_LOG_DAT_HANG.VisibleIndex = 12;
+            this.ID_LOG_DAT_HANG.VisibleIndex = 14;
             this.ID_LOG_DAT_HANG.Width = 138;
             // 
             // LOAI_THAO_TAC_LOG
@@ -460,7 +464,7 @@
             this.LOAI_THAO_TAC_LOG.FieldName = "TEN_LOAI_THAO_TAC_LOG";
             this.LOAI_THAO_TAC_LOG.Name = "LOAI_THAO_TAC_LOG";
             this.LOAI_THAO_TAC_LOG.Visible = true;
-            this.LOAI_THAO_TAC_LOG.VisibleIndex = 13;
+            this.LOAI_THAO_TAC_LOG.VisibleIndex = 15;
             this.LOAI_THAO_TAC_LOG.Width = 88;
             // 
             // NGUOI_TAO_DON_HANG
@@ -469,7 +473,7 @@
             this.NGUOI_TAO_DON_HANG.FieldName = "NGUOI_TAO_THAO_TAC";
             this.NGUOI_TAO_DON_HANG.Name = "NGUOI_TAO_DON_HANG";
             this.NGUOI_TAO_DON_HANG.Visible = true;
-            this.NGUOI_TAO_DON_HANG.VisibleIndex = 9;
+            this.NGUOI_TAO_DON_HANG.VisibleIndex = 10;
             this.NGUOI_TAO_DON_HANG.Width = 137;
             // 
             // NGAY_LAP_THAO_TAC_LOG
@@ -478,7 +482,7 @@
             this.NGAY_LAP_THAO_TAC_LOG.FieldName = "NGAY_LAP_THAO_TAC";
             this.NGAY_LAP_THAO_TAC_LOG.Name = "NGAY_LAP_THAO_TAC_LOG";
             this.NGAY_LAP_THAO_TAC_LOG.Visible = true;
-            this.NGAY_LAP_THAO_TAC_LOG.VisibleIndex = 14;
+            this.NGAY_LAP_THAO_TAC_LOG.VisibleIndex = 16;
             this.NGAY_LAP_THAO_TAC_LOG.Width = 127;
             // 
             // GHI_CHU
@@ -496,16 +500,16 @@
             this.NGUOI_NHAN_THAO_TAC_LOG.FieldName = "TEN_NGUOI_NHAN_THAO_TAC";
             this.NGUOI_NHAN_THAO_TAC_LOG.Name = "NGUOI_NHAN_THAO_TAC_LOG";
             this.NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
-            this.NGUOI_NHAN_THAO_TAC_LOG.VisibleIndex = 15;
+            this.NGUOI_NHAN_THAO_TAC_LOG.VisibleIndex = 8;
             this.NGUOI_NHAN_THAO_TAC_LOG.Width = 155;
             // 
             // NGUOI_TAO_THAO_TAC_LOG
             // 
-            this.NGUOI_TAO_THAO_TAC_LOG.Caption = "NGƯỜI TẠO TAO TÁC LOG";
+            this.NGUOI_TAO_THAO_TAC_LOG.Caption = "NGƯỜI TẠO THAO TÁC LOG";
             this.NGUOI_TAO_THAO_TAC_LOG.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.NGUOI_TAO_THAO_TAC_LOG.Name = "NGUOI_TAO_THAO_TAC_LOG";
             this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
-            this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 16;
+            this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 9;
             this.NGUOI_TAO_THAO_TAC_LOG.Width = 136;
             // 
             // panel2
@@ -591,7 +595,7 @@
             this.m_cmd_TM_danh_gia.Name = "m_cmd_TM_danh_gia";
             this.m_cmd_TM_danh_gia.Size = new System.Drawing.Size(172, 37);
             this.m_cmd_TM_danh_gia.TabIndex = 1;
-            this.m_cmd_TM_danh_gia.Text = "Đánh giá";
+            this.m_cmd_TM_danh_gia.Text = "Nghiệm thu";
             this.m_cmd_TM_danh_gia.Visible = false;
             this.m_cmd_TM_danh_gia.Click += new System.EventHandler(this.m_cmd_TM_danh_gia_Click);
             // 
@@ -871,7 +875,8 @@
             // 
             // m_panel_BO
             // 
-            this.m_panel_BO.Controls.Add(this.panel7);
+            this.m_panel_BO.Controls.Add(this.m_panel_bo_chuyen_len_pm);
+            this.m_panel_BO.Controls.Add(this.m_panel_bo_cap_nhat_xu_ly);
             this.m_panel_BO.Controls.Add(this.m_panel_cap_nhat_don_hang_BO);
             this.m_panel_BO.Controls.Add(this.m_panel_BO_hoan_thanh);
             this.m_panel_BO.Controls.Add(this.m_panel_BO_tu_choi);
@@ -883,14 +888,36 @@
             this.m_panel_BO.TabIndex = 20;
             this.m_panel_BO.Visible = false;
             // 
-            // panel7
+            // m_panel_bo_chuyen_len_pm
             // 
-            this.panel7.Controls.Add(this.m_cmd_BO_cap_nhat_xu_ly);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(396, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(173, 39);
-            this.panel7.TabIndex = 2;
+            this.m_panel_bo_chuyen_len_pm.Controls.Add(this.m_cmd_bo_chuyen_pm);
+            this.m_panel_bo_chuyen_len_pm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_bo_chuyen_len_pm.Location = new System.Drawing.Point(228, 0);
+            this.m_panel_bo_chuyen_len_pm.Name = "m_panel_bo_chuyen_len_pm";
+            this.m_panel_bo_chuyen_len_pm.Size = new System.Drawing.Size(168, 39);
+            this.m_panel_bo_chuyen_len_pm.TabIndex = 3;
+            // 
+            // m_cmd_bo_chuyen_pm
+            // 
+            this.m_cmd_bo_chuyen_pm.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_bo_chuyen_pm.Appearance.Options.UseFont = true;
+            this.m_cmd_bo_chuyen_pm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_bo_chuyen_pm.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_bo_chuyen_pm.Image")));
+            this.m_cmd_bo_chuyen_pm.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_bo_chuyen_pm.Name = "m_cmd_bo_chuyen_pm";
+            this.m_cmd_bo_chuyen_pm.Size = new System.Drawing.Size(168, 39);
+            this.m_cmd_bo_chuyen_pm.TabIndex = 2;
+            this.m_cmd_bo_chuyen_pm.Text = "Chuyển lên PM";
+            this.m_cmd_bo_chuyen_pm.Click += new System.EventHandler(this.m_cmd_bo_chuyen_pm_Click);
+            // 
+            // m_panel_bo_cap_nhat_xu_ly
+            // 
+            this.m_panel_bo_cap_nhat_xu_ly.Controls.Add(this.m_cmd_BO_cap_nhat_xu_ly);
+            this.m_panel_bo_cap_nhat_xu_ly.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_panel_bo_cap_nhat_xu_ly.Location = new System.Drawing.Point(396, 0);
+            this.m_panel_bo_cap_nhat_xu_ly.Name = "m_panel_bo_cap_nhat_xu_ly";
+            this.m_panel_bo_cap_nhat_xu_ly.Size = new System.Drawing.Size(173, 39);
+            this.m_panel_bo_cap_nhat_xu_ly.TabIndex = 2;
             // 
             // m_cmd_BO_cap_nhat_xu_ly
             // 
@@ -911,6 +938,7 @@
             this.m_panel_cap_nhat_don_hang_BO.Name = "m_panel_cap_nhat_don_hang_BO";
             this.m_panel_cap_nhat_don_hang_BO.Size = new System.Drawing.Size(172, 39);
             this.m_panel_cap_nhat_don_hang_BO.TabIndex = 1;
+            this.m_panel_cap_nhat_don_hang_BO.Visible = false;
             // 
             // m_cmd_cap_nhat_BO
             // 
@@ -1117,7 +1145,8 @@
             this.m_panel_PM_gui_TD.ResumeLayout(false);
             this.m_panel_PM_tiep_nhan.ResumeLayout(false);
             this.m_panel_BO.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
+            this.m_panel_bo_chuyen_len_pm.ResumeLayout(false);
+            this.m_panel_bo_cap_nhat_xu_ly.ResumeLayout(false);
             this.m_panel_cap_nhat_don_hang_BO.ResumeLayout(false);
             this.m_panel_BO_hoan_thanh.ResumeLayout(false);
             this.m_panel_BO_tu_choi.ResumeLayout(false);
@@ -1134,8 +1163,6 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel m_panel_TM;
-        private DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
         private System.Windows.Forms.Panel m_panel_TD;
         private System.Windows.Forms.Panel m_panel_PM;
         private System.Windows.Forms.Panel m_panel_BO;
@@ -1184,7 +1211,6 @@
         public DevExpress.XtraEditors.SimpleButton m_cmd_cap_nhat_TD;
         public DevExpress.XtraEditors.SimpleButton m_cmd_cap_nhat_PM;
         public DevExpress.XtraEditors.SimpleButton m_cmd_cap_nhat_BO;
-        private System.Windows.Forms.Panel panel7;
         public DevExpress.XtraEditors.SimpleButton m_cmd_BO_cap_nhat_xu_ly;
         private System.Windows.Forms.Panel panel12;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TD_cap_nhat_xu_ly;
@@ -1207,5 +1233,10 @@
         public DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC_LOG;
         public DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_bo_chuyen_pm;
+        public System.Windows.Forms.Panel m_panel_bo_cap_nhat_xu_ly;
+        public System.Windows.Forms.Panel m_panel_bo_chuyen_len_pm;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
+        public System.Windows.Forms.Panel m_panel_TM;
     }
 }

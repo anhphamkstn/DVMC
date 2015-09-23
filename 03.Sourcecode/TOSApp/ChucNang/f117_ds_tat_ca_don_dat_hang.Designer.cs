@@ -77,9 +77,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(3, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 20);
+            this.label1.Size = new System.Drawing.Size(344, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Danh sách tất cả các đơn hàng";
+            this.label1.Text = "Danh sách tất cả các đơn hàng đang xử lý";
             // 
             // panel2
             // 
@@ -300,6 +300,7 @@
             this.m_grv_ds_don_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn9, DevExpress.Data.ColumnSortOrder.Descending)});
             this.m_grv_ds_don_dat_hang.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_ds_don_dat_hang_RowCellClick);
+            this.m_grv_ds_don_dat_hang.DoubleClick += new System.EventHandler(this.m_grv_ds_don_dat_hang_DoubleClick);
             // 
             // MA_DON_HANG
             // 
@@ -357,7 +358,7 @@
             // 
             // THOI_DIEM_CAN_HOAN_THANH
             // 
-            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "thời điểm cần hoàn thành";
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;

@@ -67,8 +67,7 @@ namespace TOSApp.ChucNang
         //load data từ trong csdl lên vào các selected sẵn có 
         private void load_data_2_selected()
         {
-            load_data_2_dv_2();
-            load_data_2_dc_dich_vu();
+            
             load_data_2_selected_trang_thai_don_hang();
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
@@ -306,7 +305,6 @@ namespace TOSApp.ChucNang
             string TIEU_DE = v_ds.Tables[0].Rows[0]["TIEU_DE_MAIL"].ToString();
             string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString();
             string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
-
             TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
             NOI_DUNG = NOI_DUNG.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
             NOI_DUNG = NOI_DUNG.Replace("USER_NHAN_VIEN", m_txt_ho_ten_nguoi_dat_hang.Text);
@@ -605,6 +603,8 @@ namespace TOSApp.ChucNang
         internal void displayForUpdate(IPCOREUS.US_GD_DAT_HANG v_us)
         {
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
+            load_data_2_dv_2();
+            load_data_2_dc_dich_vu();
             us_to_form(v_us);
             this.ShowDialog();
         }
@@ -779,6 +779,8 @@ namespace TOSApp.ChucNang
                 if (deadline_id == 1)
                 {
                     format_controlls_for_refurse_deadline();
+                    load_data_2_dv_2();
+                    load_data_2_dc_dich_vu();
                     us_2_form(v_us);
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
@@ -790,6 +792,8 @@ namespace TOSApp.ChucNang
                 else
                 {
                     format_controlls();
+                    load_data_2_dv_2();
+                    load_data_2_dc_dich_vu();
                     us_2_form(v_us);
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
@@ -980,6 +984,8 @@ namespace TOSApp.ChucNang
         internal void displayForUpdate2(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             format_control_view_thong_tin_don_hang();
+            load_data_2_dv_2();
+            load_data_2_dc_dich_vu();
             us_2_form(v_us);
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);

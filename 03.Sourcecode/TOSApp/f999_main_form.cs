@@ -212,8 +212,7 @@ namespace TOSApp
                     v_don_hang_can_tiep_nhan_BO.Text = "Đơn hàng cần tiếp nhận";
                     v_don_hang_can_tiep_nhan_BO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần tiếp nhận";
                     v_don_hang_can_tiep_nhan_BO.m_panel_BO_hoan_thanh.Visible = false;
-                    v_don_hang_can_tiep_nhan_BO.m_cmd_cap_nhat_BO.Visible = false;
-                    v_don_hang_can_tiep_nhan_BO.m_cmd_BO_cap_nhat_xu_ly.Visible = false;
+                    v_don_hang_can_tiep_nhan_BO.m_panel_bo_cap_nhat_xu_ly.Visible = false;
                     v_don_hang_can_tiep_nhan_BO.Show();
                 }
                 else
@@ -689,6 +688,7 @@ namespace TOSApp
                     v_don_hang_dang_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
                     v_don_hang_dang_xu_ly_TD.m_panel_TD_tu_choi.Visible = false;
                     v_don_hang_dang_xu_ly_TD.m_panel_TD_tiep_nhan.Visible = false;
+                    v_don_hang_dang_xu_ly_TD.m_panel_TM.Visible = false;
                     format_griview_don_hang_dang_xu_ly_TM(v_don_hang_dang_xu_ly_TD);
                     v_don_hang_dang_xu_ly_TD.Show();
                 }
@@ -791,14 +791,6 @@ namespace TOSApp
             v_f.Show();
         }
 
-        private void m_cmd_ds_da_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(1);
-            v_f.MdiParent = this;
-            v_f.Text = "f125 - danh sách đơn hàng đã đánh giá";
-            v_f.Show();
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             try
@@ -849,6 +841,42 @@ namespace TOSApp
             }
 
         }
+
+        private void m_cmd_tm_ds_don_hang_da_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(2);
+            v_f.MdiParent = this;
+            v_f.Text = "f125 - danh sách đơn hàng đã đánh giá";
+            v_f.Show();
+        }
+
+        private void m_cmd_pm_ds_don_hang_da_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(1);
+            v_f.MdiParent = this;
+            v_f.Text = "f125 - danh sách đơn hàng đã đánh giá";
+            v_f.Show();
+        }
+
+        private void m_cmd_tm_ds_tat_ca_don_hang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
+                v_f.MdiParent = this;
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        
+
+
+
+
     }
 }
 

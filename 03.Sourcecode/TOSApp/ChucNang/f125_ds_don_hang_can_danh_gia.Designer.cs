@@ -39,7 +39,7 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_dich_vu_yeu_cau = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pan_button = new System.Windows.Forms.Panel();
@@ -215,7 +215,7 @@
             this.gridColumn3,
             this.gridColumn4,
             this.THOI_DIEM_CAN_HOAN_THANH,
-            this.gridColumn6,
+            this.c_dich_vu_yeu_cau,
             this.gridColumn7,
             this.gridColumn8,
             this.m_danh_gia_cua_khach_hang});
@@ -227,7 +227,7 @@
             this.m_grv_ds_dh_hoan_thanh.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_dh_hoan_thanh.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_dh_hoan_thanh.PaintStyleName = "MixedXP";
-            this.m_grv_ds_dh_hoan_thanh.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.m_grv_ds_dh_hoan_thanh_RowStyle);
+            this.m_grv_ds_dh_hoan_thanh.DoubleClick += new System.EventHandler(this.m_grv_ds_dh_hoan_thanh_DoubleClick);
             // 
             // gridColumn1
             // 
@@ -269,13 +269,13 @@
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 6;
             // 
-            // gridColumn6
+            // c_dich_vu_yeu_cau
             // 
-            this.gridColumn6.Caption = "DỊCH VỤ YÊU CẦU";
-            this.gridColumn6.FieldName = "TEN_YEU_CAU";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
+            this.c_dich_vu_yeu_cau.Caption = "DỊCH VỤ YÊU CẦU";
+            this.c_dich_vu_yeu_cau.FieldName = "TEN_YEU_CAU";
+            this.c_dich_vu_yeu_cau.Name = "c_dich_vu_yeu_cau";
+            this.c_dich_vu_yeu_cau.Visible = true;
+            this.c_dich_vu_yeu_cau.VisibleIndex = 4;
             // 
             // gridColumn7
             // 
@@ -356,7 +356,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn c_dich_vu_yeu_cau;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private System.Windows.Forms.Panel m_pan_button;

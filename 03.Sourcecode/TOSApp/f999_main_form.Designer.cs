@@ -28,8 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -41,8 +42,11 @@
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_don_hang_can_danh_gia_TM = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
+            this.m_ribbon_ds_don_hang_danh_gia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_tm_ds_don_hang_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_can_danh_gia = new DevExpress.XtraBars.BarButtonItem();
+            this.m_cmd_pm_ds_don_hang_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_ds_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.m_rbc_TD = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -125,7 +129,9 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_timer_imcoming_call = new System.Windows.Forms.Timer();
+            this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
+            this.m_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -196,7 +202,9 @@
             // m_rbc_TM
             // 
             this.m_rbc_TM.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup14});
+            this.ribbonPageGroup14,
+            this.m_ribbon_ds_don_hang_danh_gia,
+            this.m_tm_ds_tat_ca_don_hang});
             this.m_rbc_TM.Image = ((System.Drawing.Image)(resources.GetObject("m_rbc_TM.Image")));
             this.m_rbc_TM.Name = "m_rbc_TM";
             this.m_rbc_TM.Text = "Nghiệp vụ TM";
@@ -226,10 +234,25 @@
             this.barButtonItem8.Name = "barButtonItem8";
             this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
+            // m_ribbon_ds_don_hang_danh_gia
+            // 
+            this.m_ribbon_ds_don_hang_danh_gia.ItemLinks.Add(this.m_cmd_tm_ds_don_hang_da_danh_gia);
+            this.m_ribbon_ds_don_hang_danh_gia.Name = "m_ribbon_ds_don_hang_danh_gia";
+            this.m_ribbon_ds_don_hang_danh_gia.Text = "Danh sách đơn hàng đã đánh giá";
+            // 
+            // m_cmd_tm_ds_don_hang_da_danh_gia
+            // 
+            this.m_cmd_tm_ds_don_hang_da_danh_gia.Caption = "Danh sách đơn hàng đã đánh giá";
+            this.m_cmd_tm_ds_don_hang_da_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_don_hang_da_danh_gia.Glyph")));
+            this.m_cmd_tm_ds_don_hang_da_danh_gia.Id = 60;
+            this.m_cmd_tm_ds_don_hang_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_don_hang_da_danh_gia.LargeGlyph")));
+            this.m_cmd_tm_ds_don_hang_da_danh_gia.Name = "m_cmd_tm_ds_don_hang_da_danh_gia";
+            this.m_cmd_tm_ds_don_hang_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_tm_ds_don_hang_da_danh_gia_ItemClick);
+            // 
             // ribbonPageGroup22
             // 
             this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_can_danh_gia);
-            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_ds_da_danh_gia);
+            this.ribbonPageGroup22.ItemLinks.Add(this.m_cmd_pm_ds_don_hang_da_danh_gia);
             this.ribbonPageGroup22.Name = "ribbonPageGroup22";
             this.ribbonPageGroup22.Text = "Đánh giá của khách hàng";
             // 
@@ -242,14 +265,19 @@
             this.m_cmd_ds_can_danh_gia.Name = "m_cmd_ds_can_danh_gia";
             this.m_cmd_ds_can_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_can_danh_gia_ItemClick);
             // 
+            // m_cmd_pm_ds_don_hang_da_danh_gia
+            // 
+            this.m_cmd_pm_ds_don_hang_da_danh_gia.Caption = "Danh sách đơn hàng đã đánh giá";
+            this.m_cmd_pm_ds_don_hang_da_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_pm_ds_don_hang_da_danh_gia.Glyph")));
+            this.m_cmd_pm_ds_don_hang_da_danh_gia.Id = 61;
+            this.m_cmd_pm_ds_don_hang_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_pm_ds_don_hang_da_danh_gia.LargeGlyph")));
+            this.m_cmd_pm_ds_don_hang_da_danh_gia.Name = "m_cmd_pm_ds_don_hang_da_danh_gia";
+            this.m_cmd_pm_ds_don_hang_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_pm_ds_don_hang_da_danh_gia_ItemClick);
+            // 
             // m_cmd_ds_da_danh_gia
             // 
-            this.m_cmd_ds_da_danh_gia.Caption = "Danh sách đơn hàng đã đánh giá";
-            this.m_cmd_ds_da_danh_gia.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.Glyph")));
-            this.m_cmd_ds_da_danh_gia.Id = 59;
-            this.m_cmd_ds_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_da_danh_gia.LargeGlyph")));
+            this.m_cmd_ds_da_danh_gia.Id = 62;
             this.m_cmd_ds_da_danh_gia.Name = "m_cmd_ds_da_danh_gia";
-            this.m_cmd_ds_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_ds_da_danh_gia_ItemClick);
             // 
             // m_rbc_TD
             // 
@@ -717,9 +745,12 @@
             this.m_cmd_dang_xuat,
             this.m_cmd_blacklist_pm,
             this.m_cmd_ds_can_danh_gia,
-            this.m_cmd_ds_da_danh_gia});
+            this.m_cmd_ds_da_danh_gia,
+            this.m_cmd_tm_ds_don_hang_da_danh_gia,
+            this.m_cmd_pm_ds_don_hang_da_danh_gia,
+            this.m_cmd_tm_ds_tat_ca_don_hang});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 60;
+            this.ribbonControl1.MaxItemId = 64;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -960,6 +991,22 @@
             this.m_timer_imcoming_call.Interval = 3000;
             this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // m_tm_ds_tat_ca_don_hang
+            // 
+            this.m_tm_ds_tat_ca_don_hang.AllowTextClipping = false;
+            this.m_tm_ds_tat_ca_don_hang.ItemLinks.Add(this.m_cmd_tm_ds_tat_ca_don_hang);
+            this.m_tm_ds_tat_ca_don_hang.Name = "m_tm_ds_tat_ca_don_hang";
+            this.m_tm_ds_tat_ca_don_hang.Text = "Tất cả đơn hàng";
+            // 
+            // m_cmd_tm_ds_tat_ca_don_hang
+            // 
+            this.m_cmd_tm_ds_tat_ca_don_hang.Caption = "Tất cả đơn hàng";
+            this.m_cmd_tm_ds_tat_ca_don_hang.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.Glyph")));
+            this.m_cmd_tm_ds_tat_ca_don_hang.Id = 63;
+            this.m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph")));
+            this.m_cmd_tm_ds_tat_ca_don_hang.Name = "m_cmd_tm_ds_tat_ca_don_hang";
+            this.m_cmd_tm_ds_tat_ca_don_hang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_tm_ds_tat_ca_don_hang_ItemClick);
+            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -1078,6 +1125,11 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_ds_da_danh_gia;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
         private System.Windows.Forms.Timer m_timer_imcoming_call;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_tm_ds_don_hang_da_danh_gia;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_ribbon_ds_don_hang_danh_gia;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_pm_ds_don_hang_da_danh_gia;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_tm_ds_tat_ca_don_hang;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_tm_ds_tat_ca_don_hang;
 
 	}
 }
