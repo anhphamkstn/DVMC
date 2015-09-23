@@ -218,6 +218,7 @@
             this.m_grv_ds_don_hang_nguoi_xu_ly.Name = "m_grv_ds_don_hang_nguoi_xu_ly";
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_nguoi_xu_ly.PaintStyleName = "Office2003";
             this.m_grv_ds_don_hang_nguoi_xu_ly.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.DIEN_THOAI, DevExpress.Data.ColumnSortOrder.Ascending),

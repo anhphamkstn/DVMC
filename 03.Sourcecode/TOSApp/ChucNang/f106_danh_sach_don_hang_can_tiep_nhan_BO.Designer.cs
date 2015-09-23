@@ -224,6 +224,7 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_don_hang_can_tiep_nhan.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.PaintStyleName = "Office2003";
             // 
             // ID_GD_DAT_HANG

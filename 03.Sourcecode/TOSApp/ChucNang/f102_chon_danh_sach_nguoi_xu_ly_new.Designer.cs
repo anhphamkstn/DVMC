@@ -96,7 +96,7 @@
             this.GroupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GroupControl1.Location = new System.Drawing.Point(0, 0);
             this.GroupControl1.Name = "GroupControl1";
-            this.GroupControl1.Size = new System.Drawing.Size(238, 414);
+            this.GroupControl1.Size = new System.Drawing.Size(238, 384);
             this.GroupControl1.TabIndex = 5;
             this.GroupControl1.Text = "Danh sách người xử lý";
             // 
@@ -106,7 +106,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(2, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 351);
+            this.panel1.Size = new System.Drawing.Size(234, 324);
             this.panel1.TabIndex = 10;
             // 
             // m_grc_ht_nguoi_su_dung
@@ -119,7 +119,7 @@
             this.m_grc_ht_nguoi_su_dung.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ht_nguoi_su_dung.MainView = this.m_grv_ht_nguoi_su_dung;
             this.m_grc_ht_nguoi_su_dung.Name = "m_grc_ht_nguoi_su_dung";
-            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(234, 351);
+            this.m_grc_ht_nguoi_su_dung.Size = new System.Drawing.Size(234, 324);
             this.m_grc_ht_nguoi_su_dung.TabIndex = 8;
             this.m_grc_ht_nguoi_su_dung.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ht_nguoi_su_dung});
@@ -134,6 +134,7 @@
             this.m_grv_ht_nguoi_su_dung.OptionsBehavior.ReadOnly = true;
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.m_grv_ht_nguoi_su_dung.OptionsView.ShowAutoFilterRow = true;
             // 
             // HO_VA_TEN
             // 
@@ -148,10 +149,10 @@
             this.m_pnl_out_place_dm.Controls.Add(this.simpleButton2);
             this.m_pnl_out_place_dm.Controls.Add(this.simpleButton1);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(2, 372);
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(2, 345);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(234, 40);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(234, 37);
             this.m_pnl_out_place_dm.TabIndex = 9;
             // 
             // simpleButton2
@@ -160,7 +161,7 @@
             this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(38, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(102, 32);
+            this.simpleButton2.Size = new System.Drawing.Size(102, 29);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "Điều phối";
             this.simpleButton2.Click += new System.EventHandler(this.m_cmd_oke_Click);
@@ -171,7 +172,7 @@
             this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(140, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(90, 32);
+            this.simpleButton1.Size = new System.Drawing.Size(90, 29);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Thoát";
             this.simpleButton1.Click += new System.EventHandler(this.m_cmd_exit_Click);
@@ -216,7 +217,7 @@
             this.dockPanel1.Location = new System.Drawing.Point(238, 0);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(649, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(649, 414);
+            this.dockPanel1.Size = new System.Drawing.Size(649, 384);
             this.dockPanel1.Text = "dockPanel1";
             // 
             // dockPanel1_Container
@@ -224,7 +225,7 @@
             this.dockPanel1_Container.Controls.Add(this.m_sch);
             this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(641, 387);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(641, 357);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // m_sch
@@ -232,7 +233,7 @@
             this.m_sch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_sch.Location = new System.Drawing.Point(0, 0);
             this.m_sch.Name = "m_sch";
-            this.m_sch.Size = new System.Drawing.Size(641, 387);
+            this.m_sch.Size = new System.Drawing.Size(641, 357);
             this.m_sch.Start = new System.DateTime(2015, 9, 10, 0, 0, 0, 0);
             this.m_sch.Storage = this.schedulerStorage1;
             this.m_sch.TabIndex = 0;
@@ -242,9 +243,9 @@
             // 
             // f102_chon_danh_sach_nguoi_xu_ly_new
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 414);
+            this.ClientSize = new System.Drawing.Size(887, 384);
             this.Controls.Add(this.GroupControl1);
             this.Controls.Add(this.dockPanel1);
             this.Name = "f102_chon_danh_sach_nguoi_xu_ly_new";

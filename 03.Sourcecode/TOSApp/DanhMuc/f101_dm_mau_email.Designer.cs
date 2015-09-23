@@ -101,6 +101,7 @@
             this.m_grv_dm_mau_email.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_mau_email.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_mau_email.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.m_grv_dm_mau_email.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_dm_mau_email.DoubleClick += new System.EventHandler(this.m_grv_dm_mau_email_DoubleClick);
             // 
             // c_tieu_de_mail

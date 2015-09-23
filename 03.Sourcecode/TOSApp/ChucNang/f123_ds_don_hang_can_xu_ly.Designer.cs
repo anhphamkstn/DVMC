@@ -187,6 +187,7 @@
             this.m_grv_ds_don_hang_can_xu_ly.OptionsBehavior.Editable = false;
             this.m_grv_ds_don_hang_can_xu_ly.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_don_hang_can_xu_ly.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_don_hang_can_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_can_xu_ly.PaintStyleName = "Office2003";
             // 
             // c_loai_dich_vu

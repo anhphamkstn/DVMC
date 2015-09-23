@@ -41,9 +41,9 @@
             this.NGUOI_NHAN_THAO_TAC = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.TEN_US_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TEN_US_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_log_dat_hang)).BeginInit();
@@ -212,6 +212,7 @@
             this.m_grv_ds_log_dat_hang.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_log_dat_hang.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_log_dat_hang.PaintStyleName = "Office2003";
             // 
             // TEN_NGUOI_TAO_THAO_TAC_LOG
@@ -278,6 +279,14 @@
             this.MA_DON_HANG.Visible = true;
             this.MA_DON_HANG.VisibleIndex = 0;
             // 
+            // TEN_US_HANG
+            // 
+            this.TEN_US_HANG.Caption = "TÊN KHÁCH HÀNG";
+            this.TEN_US_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.TEN_US_HANG.Name = "TEN_US_HANG";
+            this.TEN_US_HANG.Visible = true;
+            this.TEN_US_HANG.VisibleIndex = 1;
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -291,14 +300,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(993, 218);
             this.panel2.TabIndex = 1;
-            // 
-            // TEN_US_HANG
-            // 
-            this.TEN_US_HANG.Caption = "TÊN KHÁCH HÀNG";
-            this.TEN_US_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
-            this.TEN_US_HANG.Name = "TEN_US_HANG";
-            this.TEN_US_HANG.Visible = true;
-            this.TEN_US_HANG.VisibleIndex = 1;
             // 
             // f118_ds_log_dat_hang
             // 

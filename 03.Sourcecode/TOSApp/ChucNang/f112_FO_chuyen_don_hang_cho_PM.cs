@@ -24,9 +24,18 @@ namespace TOSApp.ChucNang
         private void update_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            v_US.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
-            v_US.Update();
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "SELECT *FROM GD_LOG_DAT_HANG WHERE ID_GD_DAT_HANG =" + v_US.dcID_GD_DAT_HANG.ToString() + "AND ID_LOAI_THAO_TAC in(310,313) AND THAO_TAC_HET_HAN_YN = 'N'");
+            for (int i = 0; i < v_ds.Tables[0].Rows.Count;i++ )
+            {
+                v_US = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i][0].ToString()));
+                v_US.strTHAO_TAC_HET_HAN_YN = "Y";
+                v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
+                v_US.Update();
+            }
+               
         }
 
         private void insert_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)

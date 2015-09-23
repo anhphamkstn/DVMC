@@ -199,6 +199,7 @@
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.OptionsBehavior.ReadOnly = true;
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_danh_sach_don_hang_tiep_nhan_BO.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_danh_sach_don_hang_tiep_nhan_BO.PaintStyleName = "Office2003";
             // 
             // ID_GD_DAT_HANG

@@ -223,6 +223,7 @@
             this.m_grv_ds_dh_hoan_thanh.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_dh_hoan_thanh.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_dh_hoan_thanh.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_dh_hoan_thanh.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_dh_hoan_thanh.PaintStyleName = "Office2003";
             this.m_grv_ds_dh_hoan_thanh.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.m_grv_ds_dh_hoan_thanh_RowStyle);
             // 

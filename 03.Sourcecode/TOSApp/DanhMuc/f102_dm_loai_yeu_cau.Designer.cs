@@ -74,6 +74,7 @@
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_dm_loai_yeu_cau.OptionsBehavior.ReadOnly = true;
             this.m_grv_dm_loai_yeu_cau.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top;
+            this.m_grv_dm_loai_yeu_cau.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_dm_loai_yeu_cau.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.m_grv_dm_loai_yeu_cau_RowStyle);
             this.m_grv_dm_loai_yeu_cau.DoubleClick += new System.EventHandler(this.m_grv_dm_loai_yeu_cau_DoubleClick);
             // 

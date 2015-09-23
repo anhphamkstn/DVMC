@@ -226,6 +226,7 @@
             this.m_grv_ds_dieu_phoi_lai.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_dieu_phoi_lai.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_dieu_phoi_lai.PaintStyleName = "Office2003";
             // 
             // ID_GD_DAT_HANG

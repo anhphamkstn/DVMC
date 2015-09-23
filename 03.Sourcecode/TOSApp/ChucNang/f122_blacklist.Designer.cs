@@ -243,6 +243,7 @@
             this.m_grv_ds_blacklist.Name = "m_grv_ds_blacklist";
             this.m_grv_ds_blacklist.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_blacklist.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_blacklist.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_blacklist.PaintStyleName = "Office2003";
             // 
             // SO_DIEN_THOAI

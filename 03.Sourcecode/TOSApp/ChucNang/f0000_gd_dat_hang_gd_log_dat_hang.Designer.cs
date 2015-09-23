@@ -316,7 +316,7 @@
             this.GHI_CHU,
             this.NGUOI_NHAN_THAO_TAC_LOG,
             this.NGUOI_TAO_THAO_TAC_LOG});
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.CustomizationFormBounds = new System.Drawing.Rectangle(1080, 445, 216, 178);
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.CustomizationFormBounds = new System.Drawing.Rectangle(745, 437, 216, 178);
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
@@ -339,6 +339,7 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ColumnAutoWidth = false;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.PaintStyleName = "Office2003";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.THOI_GIAN_TAO, DevExpress.Data.ColumnSortOrder.Descending)});
@@ -1188,7 +1189,6 @@
         private System.Windows.Forms.Panel panel10;
         public DevExpress.XtraEditors.SimpleButton m_cmd_PM_cap_nhat_xu_ly;
         public DevExpress.XtraGrid.Views.Grid.GridView m_grv_gd_dat_hang_gd_log_dat_hang;
-        public DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
         public DevExpress.XtraGrid.Columns.GridColumn HO_TEN_USER_DAT_HANG;
         public DevExpress.XtraGrid.Columns.GridColumn DON_VI;
         public DevExpress.XtraGrid.Columns.GridColumn DIEN_THOAI;
@@ -1204,5 +1204,6 @@
         public DevExpress.XtraGrid.Columns.GridColumn GHI_CHU;
         public DevExpress.XtraGrid.Columns.GridColumn NGUOI_NHAN_THAO_TAC_LOG;
         public DevExpress.XtraGrid.Columns.GridColumn NGUOI_TAO_THAO_TAC_LOG;
+        private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
     }
 }

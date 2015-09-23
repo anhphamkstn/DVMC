@@ -91,6 +91,7 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowAutoFilterRow = true;
             // 
             // f108_danh_sach_don_hang_hoa_thanh
             // 

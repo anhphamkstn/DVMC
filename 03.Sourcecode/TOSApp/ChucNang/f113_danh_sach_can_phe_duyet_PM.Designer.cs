@@ -223,6 +223,7 @@
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsBehavior.ReadOnly = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.PaintStyleName = "Office2003";
             // 
             // ID

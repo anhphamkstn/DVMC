@@ -246,6 +246,7 @@
             this.m_grv_ds_BO.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.m_grv_ds_BO.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_BO.OptionsView.EnableAppearanceOddRow = true;
+            this.m_grv_ds_BO.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_BO.PaintStyleName = "Office2003";
             // 
             // TEN_BO

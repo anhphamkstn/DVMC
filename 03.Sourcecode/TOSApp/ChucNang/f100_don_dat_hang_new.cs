@@ -167,7 +167,6 @@ namespace TOSApp.ChucNang
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();
-           // m_txt_ma_don_hang.Text = "DVMC2015" + "000016";// new Random().Next(100000, 999999).ToString();
             
         }
         #endregion
@@ -470,7 +469,6 @@ namespace TOSApp.ChucNang
 
             if (m_e_form_mode == DataEntryFormMode.InsertDataState)
             {
-                insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
                 m_us.Insert();
             }
             else m_us.Update();
@@ -910,6 +908,16 @@ namespace TOSApp.ChucNang
         }
 
         private void m_grb_loai_dich_vu_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void m_txt_yeu_cau_cu_the_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
