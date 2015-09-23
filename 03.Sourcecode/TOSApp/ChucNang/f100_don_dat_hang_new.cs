@@ -49,6 +49,7 @@ namespace TOSApp.ChucNang
             }
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             this.ShowDialog();
+            m_cbo_phuong_thuc_dat_hang.SelectedIndex = 183;
             // nếu đang có đơn hàng thì xử lí như thế nào
         }
 
@@ -72,11 +73,16 @@ namespace TOSApp.ChucNang
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
             load_data_2_selected_loai_dich_vu();
-           
+            load_data_2_m_cbo_phuong_thuc_dat_hang();
             load_data_2_selected_thoi_gian_hoan_thanh();
             load_data_2_search_look_edit_dich_vu();
             load_data_to_cbo_don_vi();
             load_data_2_search_look_edit_user();
+        }
+
+        private void load_data_2_m_cbo_phuong_thuc_dat_hang()
+        {
+            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN_NGAN", " where ID_LOAI_TU_DIEN = 18 ", WinFormControls.eTAT_CA.NO, m_cbo_phuong_thuc_dat_hang);
         }
 
         private void load_data_2_dc_dich_vu()
@@ -180,8 +186,7 @@ namespace TOSApp.ChucNang
         private void random_data_2_ma_don_hang()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();
-            
+            m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();       
         }
         #endregion
 
@@ -278,8 +283,6 @@ namespace TOSApp.ChucNang
             v_us.dcID_DAT_HANG = m_us.dcID;
             v_us.strCUOC_GOI_VAO_YN = "Y";
             v_us.Insert();
-
-
         }
 
         private void ghi_log_thay_doi_don_hang()
@@ -288,7 +291,6 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 321;//trang thai vua được cập nhật
             v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
@@ -533,7 +535,7 @@ namespace TOSApp.ChucNang
             m_us.SetTHOI_GIAN_HOAN_THANHNull();
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
 
-            m_us.dcID_PHUONG_THUC_DAT_HANG = 183;//---phuong thuc dat hang la goi dien
+            m_us.dcID_PHUONG_THUC_DAT_HANG = CIPConvert.ToDecimal(m_cbo_phuong_thuc_dat_hang.SelectedValue);//---phuong thuc dat hang la goi dien
             m_us.dcID_NGUOI_TAO = us_user.dcID ;///xem lai
             m_us.dcID_CHI_NHANH = TOSApp.us_user.dcCHI_NHANH; //--fix lai sau mac dinh la 1 -HA NOI
         }
@@ -598,14 +600,6 @@ namespace TOSApp.ChucNang
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             this.ShowDialog();
 
-        }
-
-
-         void insert_new_data_2_dm_ma_don_hang(string p)
-        {
-            US_DM_MA_DON_HANG v_us = new US_DM_MA_DON_HANG();
-            v_us.strMA_DON_HANG = p;
-            v_us.Insert();
         }
 
         internal void displayForUpdate(IPCOREUS.US_GD_DAT_HANG v_us)

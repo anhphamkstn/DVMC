@@ -17,7 +17,11 @@ namespace TOSApp.ChucNang
         public f102_chon_danh_sach_nguoi_xu_ly_new()
         {
             InitializeComponent();
-         
+            System.Globalization.CultureInfo culture =
+    new System.Globalization.CultureInfo(System.Globalization.CultureInfo.CurrentCulture.LCID);
+            culture.DateTimeFormat.LongTimePattern = "HH:mm:ss";
+            System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+          
         }
 
         private void m_cmd_exit_Click(object sender, EventArgs e)
@@ -118,7 +122,7 @@ namespace TOSApp.ChucNang
             schedulerStorage1.Resources.Mappings.Caption = "TEN_TRUY_CAP";
             schedulerStorage1.Resources.Mappings.Id = "ID_NGUOI_SU_DUNG";
             schedulerStorage1.Resources.Mappings.Image = "Image";
-          //  schedulerStorage1.Resources.Mappings.Color = "Color";
+         //  schedulerStorage1.Resources.Mappings.Color = "Color";
         }
 
        

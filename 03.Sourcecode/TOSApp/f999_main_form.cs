@@ -717,7 +717,6 @@ namespace TOSApp
             v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[16].VisibleIndex = -1;
             v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.Columns[17].VisibleIndex = -1;
             v_don_hang_dang_xu_ly_TD.m_grv_gd_dat_hang_gd_log_dat_hang.OptionsView.ColumnAutoWidth = true;
-
         }
 
         private void m_baritem_dang_xuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -850,12 +849,6 @@ namespace TOSApp
             }
 
         }
-
-        
-
-
-
-
     }
 }
 

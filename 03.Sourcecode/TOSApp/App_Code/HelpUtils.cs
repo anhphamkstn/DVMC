@@ -241,7 +241,7 @@ namespace TOSApp.App_Code
         public static CallInfor get_call_infor(string ip_call_id)
         {
             string v_str_result = "";
-          //  v_str_result = get_content_from_weburl(f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_CALL_INFOR(ip_call_id));
+            v_str_result = get_content_from_weburl("http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_CALL_INFOR(ip_call_id));
             CLichSuCuocGoi v_obj_infor = JsonConvert.DeserializeObject<CLichSuCuocGoi>(v_str_result);
 
             return v_obj_infor.data;
@@ -249,7 +249,7 @@ namespace TOSApp.App_Code
         public static CallInfor get_call_infor_overtime(string ip_call_id)
         {
             string v_str_result = "";
-          //  v_str_result = get_content_from_weburl(f002_main_form.m_str_web_service_url + WEB_URL_CALL_CENTER.GET_CALL_INFOR_OVERTIME(ip_call_id));
+            v_str_result = get_content_from_weburl("http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_CALL_INFOR_OVERTIME(ip_call_id));
             CLichSuCuocGoi v_obj_infor = JsonConvert.DeserializeObject<CLichSuCuocGoi>(v_str_result);
 
             return v_obj_infor.data;
