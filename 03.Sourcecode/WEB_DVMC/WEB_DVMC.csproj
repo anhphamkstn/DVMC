@@ -134,7 +134,6 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
-    <Content Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx" />
     <Content Include="Chức năng\f102_chon_danh_sach_nguoi_xu_ly_new.aspx" />
     <Content Include="Chức năng\f122_blacklist.aspx" />
     <Content Include="Chức năng\f122_blacklist_detail.aspx" />
@@ -367,13 +366,6 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx.cs">
-      <DependentUpon>F100_DANH_GIA_DON_HANG.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Chức năng\F100_DANH_GIA_DON_HANG.aspx.designer.cs">
-      <DependentUpon>F100_DANH_GIA_DON_HANG.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Chức năng\f102_chon_danh_sach_nguoi_xu_ly_new.aspx.cs">
       <DependentUpon>f102_chon_danh_sach_nguoi_xu_ly_new.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -466,9 +458,6 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IPBusinessService\IPBusinessService.vbproj">

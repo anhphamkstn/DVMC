@@ -359,7 +359,15 @@ namespace TOSApp
             v_cstore.ExecuteCommand(this);
             return v_result.Value.ToString();
         }
-
+        public DateTime get_thoi_diem_can_hoan_thanh(string time)
+        {
+            string v_output = "";
+            CStoredProc v_cstore = new CStoredProc("pr_get_thoi_diem_can_hoan_thanh");
+             v_cstore.addNVarcharInputParam("@string_time", time);
+             SqlParameter v_result = v_cstore.addDatetimeOutputParam("@thoi_diem_can_hoan_thanh", v_output);
+            v_cstore.ExecuteCommand(this);
+            return (DateTime)v_result.Value;
+        }
        
     }
 

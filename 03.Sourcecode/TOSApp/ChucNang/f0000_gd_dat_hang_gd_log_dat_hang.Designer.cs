@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -165,9 +166,9 @@
             // 
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode2.RelationName = "Level2";
+            gridLevelNode1.RelationName = "Level2";
             this.m_grc_gd_dat_hang_gd_log_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_gd_dat_hang_gd_log_dat_hang.MainView = this.m_grv_gd_dat_hang_gd_log_dat_hang;
             this.m_grc_gd_dat_hang_gd_log_dat_hang.Name = "m_grc_gd_dat_hang_gd_log_dat_hang";
@@ -189,12 +190,9 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Empty.BackColor = System.Drawing.Color.Bisque;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Empty.BackColor2 = System.Drawing.Color.Wheat;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Empty.Options.UseBackColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.BackColor = System.Drawing.SystemColors.Control;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.EvenRow.Options.UseForeColor = true;
@@ -204,8 +202,7 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterCloseButton.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterCloseButton.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterCloseButton.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterPanel.BackColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterPanel.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FilterPanel.Options.UseForeColor = true;
@@ -221,8 +218,8 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FocusedRow.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.BackColor = System.Drawing.Color.Maroon;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.BorderColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.FooterPanel.Options.UseBorderColor = true;
@@ -233,24 +230,22 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupButton.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupButton.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupButton.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.BackColor = System.Drawing.SystemColors.Control;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupFooter.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupPanel.BackColor = System.Drawing.Color.Bisque;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupPanel.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupPanel.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.BackColor = System.Drawing.SystemColors.Control;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.GroupRow.Options.UseForeColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(214)))), ((int)(((byte)(115)))));
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseBorderColor = true;
@@ -258,15 +253,17 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseForeColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseImage = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.Bisque;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HideSelectionRow.BackColor = System.Drawing.SystemColors.Control;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HorzLine.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HorzLine.BackColor = System.Drawing.SystemColors.Control;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HorzLine.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HorzLine.Options.UseBackColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.HorzLine.Options.UseForeColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.BackColor = System.Drawing.SystemColors.Control;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.OddRow.Options.UseForeColor = true;
@@ -278,20 +275,24 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Preview.Options.UseBorderColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Preview.Options.UseFont = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Preview.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.BackColor = System.Drawing.Color.Beige;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.BackColor = System.Drawing.SystemColors.Control;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.Row.Options.UseForeColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.RowSeparator.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.RowSeparator.BackColor = System.Drawing.SystemColors.Control;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.RowSeparator.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.RowSeparator.Options.UseBackColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.RowSeparator.Options.UseForeColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.SelectedRow.BackColor = System.Drawing.Color.Aquamarine;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.SelectedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.SelectedRow.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.SelectedRow.Options.UseForeColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.TopNewRow.Options.UseBackColor = true;
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.VertLine.BackColor = System.Drawing.Color.Beige;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.VertLine.BackColor = System.Drawing.SystemColors.Control;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.VertLine.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.VertLine.Options.UseBackColor = true;
+            this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.VertLine.Options.UseForeColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.ViewCaption.BackColor = System.Drawing.Color.Maroon;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Appearance.ViewCaption.Options.UseBackColor = true;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.Red;
@@ -322,20 +323,24 @@
             this.NGUOI_NHAN_THAO_TAC_LOG,
             this.NGUOI_TAO_THAO_TAC_LOG});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.CustomizationFormBounds = new System.Drawing.Rectangle(745, 437, 216, 178);
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Yellow;
+            styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition1.Expression = "[LOAI_THOI_GIAN_CAN_HOAN_THANH] == \'5 phút\'  Or [LOAI_THOI_GIAN_CAN_HOAN_THANH]=\'" +
+    "15 phút\'";
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Gold;
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Gold;
+            styleFormatCondition2.Appearance.Options.UseBackColor = true;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddDay(Today(),-1))";
             styleFormatCondition3.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition3.Appearance.BackColor2 = System.Drawing.Color.Red;
             styleFormatCondition3.Appearance.Options.UseBackColor = true;
             styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition3.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
-    "AddDays(Today(),-1 ) )";
-            styleFormatCondition4.Appearance.BackColor = System.Drawing.Color.Gold;
-            styleFormatCondition4.Appearance.BackColor2 = System.Drawing.Color.Gold;
-            styleFormatCondition4.Appearance.Options.UseBackColor = true;
-            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition4.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddDay(Today(),-1))";
+            styleFormatCondition3.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition3,
-            styleFormatCondition4});
+            styleFormatCondition1,
+            styleFormatCondition2,
+            styleFormatCondition3});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.GridControl = this.m_grc_gd_dat_hang_gd_log_dat_hang;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.m_grv_gd_dat_hang_gd_log_dat_hang.Name = "m_grv_gd_dat_hang_gd_log_dat_hang";

@@ -33,7 +33,7 @@ namespace TOSApp.ChucNang
         {
             InitializeComponent();
             load_data_2_selected();
-            
+
         }
 
         public void display_for_ipphone(CallInfor ip_call_infor)
@@ -95,7 +95,7 @@ namespace TOSApp.ChucNang
         }
         private void load_data_to_cbo_don_vi()
         {
-            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI","", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi
+            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", "", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi
 );
         }
         private void load_data_2_search_look_edit_dich_vu()
@@ -105,8 +105,9 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_DM_LOAI_YEU_CAU");
             m_searchLookUpEdit_dv.Properties.DataSource = v_ds.Tables[0];
-            m_searchLookUpEdit_user_nv_dat_hang.EditValue = v_ds.Tables[0].Rows[0][0].ToString();
+            
         }
+
         private void load_data_2_search_look_edit_user()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
@@ -114,8 +115,9 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "DM_KHACH_HANG");
             m_searchLookUpEdit_user_nv_dat_hang.Properties.DataSource = v_ds.Tables[0];
+            m_searchLookUpEdit_user_nv_dat_hang.EditValue = v_ds.Tables[0].Rows[0][0].ToString();
         }
-        
+
         private void load_data_to_selected_so_dien_thoai(US_DM_KHACH_HANG v_us)
         {
             m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
@@ -137,7 +139,7 @@ namespace TOSApp.ChucNang
 
         private void load_data_2_selected_thoi_gian_hoan_thanh()
         {
-            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN", " where ID_LOAI_TU_DIEN = 20", WinFormControls.eTAT_CA.NO, m_cbo_thoi_gian_hoan_thanh);
+            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN", " where ID_LOAI_TU_DIEN = 20 order by ghi_chu asc", WinFormControls.eTAT_CA.NO, m_cbo_thoi_gian_hoan_thanh);
         }
 
         private void load_data_2_selected_nguoi_tiep_nhan()
@@ -185,7 +187,8 @@ namespace TOSApp.ChucNang
         private void random_data_2_ma_don_hang()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
-            m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();       
+            m_txt_ma_don_hang.Text = v_us.get_ma_dat_hang_tiep_theo();
+
         }
         #endregion
 
@@ -207,12 +210,14 @@ namespace TOSApp.ChucNang
                         if (m_deadline_id == 0)
                         {
                             ghi_log_thay_doi_don_hang();
+                            gui_emai_xac_nhan_cap_nhat_don_hang(M_us);
                         }
                         else
                         {
                             ghi_log_thay_doi_deadline();
+                            gui_mail_cap_nhat_deadline(M_us);
                         }
-                        gui_emai_xac_nhan_cap_nhat_don_hang(M_us);
+                        
                         MessageBox.Show("đơn hàng đã được cập nhật thông tin");
                         this.Close();
                     }
@@ -220,7 +225,7 @@ namespace TOSApp.ChucNang
                     {
                         if (m_lst_id_nguoi_xu_ly.Count != 0 & CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 293)
                         {
-                           
+
                             luu_don_hang();
                             dieu_phoi_don_hang();
                             if (m_ip_call_infor != null)
@@ -253,6 +258,61 @@ namespace TOSApp.ChucNang
             }
         }
 
+        private void gui_mail_cap_nhat_deadline(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG M_us)
+        {
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us.FillDatasetWithQuery(v_ds, "select * from dm_mau_email where id =11");
+            string TIEU_DE = v_ds.Tables[0].Rows[0]["TIEU_DE_MAIL"].ToString();
+            string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString();
+            string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
+
+            TIEU_DE = TIEU_DE.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("MA_DON_HANG", m_us.strMA_DON_HANG);
+            NOI_DUNG = NOI_DUNG.Replace("USER_NHAN_VIEN", m_txt_ho_ten_nguoi_dat_hang.Text);
+            NOI_DUNG = NOI_DUNG.Replace("USER_DON_VI", m_cbo_dv_don_vi.Text);
+            NOI_DUNG = NOI_DUNG.Replace("USER_DIEN_THOAI", m_txt_dien_thoai.Text);
+            NOI_DUNG = NOI_DUNG.Replace("USER_THOI_GIAN_DAT_HANG", m_us.datTHOI_GIAN_TAO.ToString());
+            NOI_DUNG = NOI_DUNG.Replace("LOAI_DICH_VU_HO_TRO", m_cbo_dich_vu.Text);
+            NOI_DUNG = NOI_DUNG.Replace("YEU_CAU_CU_THE", m_txt_yeu_cau_cu_the.Text);
+            NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_HOAN_THANH_THUC_TE", "chưa có");
+            NOI_DUNG = NOI_DUNG.Replace("LICH_SU_TRAO_DOI", "Vừa tiếp nhận.");
+            NOI_DUNG = NOI_DUNG.Replace("THOI_GIAN_MONG_MUON_SUA_XONG", m_dat_thoi_diem_can_hoan_thanh.Text );
+            NOI_DUNG = NOI_DUNG.Replace("PHAN_HOI_CUA_DVMC", m_txt_phan_hoi_tu_dvmc.Text);
+            string nguoi_xu_ly = "";
+            US_DUNG_CHUNG v_us_3 = new US_DUNG_CHUNG();
+            DataSet v_ds_3 = new DataSet();
+            v_ds_3.Tables.Add(new DataTable());
+            v_us_3.FillDatasetWithQuery(v_ds_3, "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where ten_nguoi_tao_thao_tac_log is not null and THAO_TAC_HET_HAN_YN ='N' and ID_DON_HANG=" + M_us.dcID_DON_HANG);
+            for (int i = 0; i < v_ds_3.Tables[0].Rows.Count; i++)
+            {
+                nguoi_xu_ly += "," + v_ds_3.Tables[0].Rows[i]["TEN_NGUOI_TAO_THAO_TAC_LOG"].ToString();
+            }
+
+            NOI_DUNG = NOI_DUNG.Replace("NGUOI_XU_LY_DON_HANG", nguoi_xu_ly);
+            NOI_DUNG = NOI_DUNG.Replace("NGUOI_NHAN_DAT_HANG", m_cbo_nguoi_nhan_dat_hang.Text);
+            US_DUNG_CHUNG v_us_1 = new US_DUNG_CHUNG();
+            DataSet v_ds_1 = new DataSet();
+            v_ds_1.Tables.Add(new DataTable());
+            v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id=" + m_us.dcID_USER_NV_DAT_HANG);
+            string to_cc = "";
+            to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
+
+            string user_email = "daothihienhien@gmail.com";
+            string password = "daothihien";
+            try
+            {
+                Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
+
+            }
+
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+      
         private void insert_gd_cuoc_goi(CallInfor v_ip_call_infor)
         {
 
@@ -355,7 +415,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from dm_mau_email where id =11");
+            v_us.FillDatasetWithQuery(v_ds, "select * from dm_mau_email where id =10");
             string TIEU_DE = v_ds.Tables[0].Rows[0]["TIEU_DE_MAIL"].ToString();
             string NOI_DUNG = v_ds.Tables[0].Rows[0]["NOI_DUNG_EMAIL"].ToString();
             string GUI_CC = v_ds.Tables[0].Rows[0]["GUI_CC"].ToString();
@@ -534,7 +594,7 @@ namespace TOSApp.ChucNang
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
 
             m_us.dcID_PHUONG_THUC_DAT_HANG = CIPConvert.ToDecimal(m_cbo_phuong_thuc_dat_hang.SelectedValue);//---phuong thuc dat hang la goi dien
-            m_us.dcID_NGUOI_TAO = us_user.dcID ;///xem lai
+            m_us.dcID_NGUOI_TAO = us_user.dcID;///xem lai
             m_us.dcID_CHI_NHANH = TOSApp.us_user.dcCHI_NHANH; //--fix lai sau mac dinh la 1 -HA NOI
         }
 
@@ -600,12 +660,20 @@ namespace TOSApp.ChucNang
 
         }
 
+        void insert_new_data_2_dm_ma_don_hang(string p)
+        {
+            US_DM_MA_DON_HANG v_us = new US_DM_MA_DON_HANG();
+            v_us.strMA_DON_HANG = p;
+            v_us.Insert();
+        }
+
         internal void displayForUpdate(IPCOREUS.US_GD_DAT_HANG v_us)
         {
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             load_data_2_dv_2();
             load_data_2_dc_dich_vu();
             us_to_form(v_us);
+           
             this.ShowDialog();
         }
 
@@ -771,7 +839,6 @@ namespace TOSApp.ChucNang
             load_data_2_selected_dich_vu();
         }
 
-
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us, decimal deadline_id)
         {
             try
@@ -786,6 +853,7 @@ namespace TOSApp.ChucNang
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                     m_deadline_id = deadline_id;
                     load_data_2_lich_su_thuc_hien();
+                 
                     this.ShowDialog();
 
                 }
@@ -798,6 +866,7 @@ namespace TOSApp.ChucNang
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                     load_data_2_lich_su_thuc_hien();
+                  
                     this.ShowDialog();
                 }
 
@@ -897,17 +966,20 @@ namespace TOSApp.ChucNang
 
         private void load_data_to_dv(US_V_DM_LOAI_YEU_CAU v_us)
         {
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where id =" + v_us.dcID, WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
+          //  WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where id =" + v_us.dcID, WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
+            m_cbo_dich_vu.SelectedValue = v_us.dcID;
         }
 
         private void load_data_to_dv2(US_V_DM_LOAI_YEU_CAU v_us)
         {
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID=" + v_us.dcID_DM_YEU_CAU_2, WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_2);
+           // WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID=" + v_us.dcID_DM_YEU_CAU_2, WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_2);
+            m_cbo_loai_dich_vu_2.SelectedValue = v_us.dcID_DM_YEU_CAU_2;
         }
 
         private void load_data_to_dv1(US_V_DM_LOAI_YEU_CAU v_us)
         {
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID=" + v_us.dcID_DM_YEU_CAU_1, WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_1);
+           // WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID=" + v_us.dcID_DM_YEU_CAU_1, WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_1);
+            m_cbo_loai_dich_vu_1.SelectedValue = v_us.dcID_DM_YEU_CAU_1;
         }
 
         private void m_searchLookUpEdit_user_nv_dat_hang_EditValueChanged(object sender, EventArgs e)
@@ -919,6 +991,7 @@ namespace TOSApp.ChucNang
             load_data_to_selected_so_dien_thoai(v_us);
             load_data_2_grid_khach_hang_don_hang();
         }
+
         private void f100_don_dat_hang_new_Load(object sender, EventArgs e)
         {
 
@@ -939,14 +1012,9 @@ namespace TOSApp.ChucNang
 
         }
 
-
-
-
-
-
         private void format_control_view_thong_tin_don_hang()
         {
-            m_docmanager_don_hang.Visible =false;
+            m_docmanager_don_hang.Visible = false;
             m_checkbox_m2_m3.Enabled = false;
             m_txt_dien_thoai.Enabled = false;
             m_txt_dien_thoai.BackColor = SystemColors.Control;
@@ -980,7 +1048,6 @@ namespace TOSApp.ChucNang
             m_docmanager_don_hang.Visible = false;
         }
 
-
         internal void displayForUpdate2(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             format_control_view_thong_tin_don_hang();
@@ -990,7 +1057,26 @@ namespace TOSApp.ChucNang
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
             load_data_2_lich_su_thuc_hien();
+            
             this.ShowDialog();
+        }
+
+        private void load_data_2_thoi_gian_can_hoan_thanh(object sender, EventArgs e)
+        {
+            US_DM_LOAI_YEU_CAU v_us = new US_DM_LOAI_YEU_CAU(CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue));
+            if (CIPConvert.ToDecimal(v_us.dcID_THOI_GIAN_XU_LY) != 0)
+            {
+                m_cbo_thoi_gian_hoan_thanh.SelectedValue = v_us.dcID_THOI_GIAN_XU_LY;
+            }
+
+        }
+
+        private void load_data_2_thoi_diem_can_hoan_thanh(object sender, EventArgs e)
+        {
+                US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+                DateTime dat_thoi_diem_can_hoan_thanh = v_us.get_thoi_diem_can_hoan_thanh(m_cbo_thoi_gian_hoan_thanh.Text);
+                m_dat_thoi_diem_can_hoan_thanh.Value = dat_thoi_diem_can_hoan_thanh;
+        
         }
     }
 }
