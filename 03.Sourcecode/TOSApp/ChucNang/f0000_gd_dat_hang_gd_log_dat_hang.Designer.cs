@@ -342,7 +342,6 @@
             this.m_grv_gd_dat_hang_gd_log_dat_hang.PaintStyleName = "Office2003";
             this.m_grv_gd_dat_hang_gd_log_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.THOI_GIAN_TAO, DevExpress.Data.ColumnSortOrder.Descending)});
-            this.m_grv_gd_dat_hang_gd_log_dat_hang.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.gridView1_RowStyle);
             // 
             // MA_DON_HANG
             // 

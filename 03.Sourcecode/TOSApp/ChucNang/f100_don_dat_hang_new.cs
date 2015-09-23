@@ -275,7 +275,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 321;//trang thai vua được cập nhật
             v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
@@ -400,7 +400,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 329;//trang thai vua được cập nhật deadline
             v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
+            //v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "đơn hàng vừa đươc cập nhật DEADLINE !";
@@ -444,7 +444,7 @@ namespace TOSApp.ChucNang
 
         private void luu_don_hang()
         {
-            insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
+            //insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
             ghi_don_hang();
             ghi_log_tiep_nhan();
         }
@@ -470,6 +470,7 @@ namespace TOSApp.ChucNang
 
             if (m_e_form_mode == DataEntryFormMode.InsertDataState)
             {
+                insert_new_data_2_dm_ma_don_hang(m_txt_ma_don_hang.Text);
                 m_us.Insert();
             }
             else m_us.Update();
@@ -521,7 +522,7 @@ namespace TOSApp.ChucNang
             m_us.datTHOI_GIAN_TAO = System.DateTime.Now;
 
             m_us.dcID_PHUONG_THUC_DAT_HANG = 183;//---phuong thuc dat hang la goi dien
-            m_us.dcID_NGUOI_TAO = CIPConvert.ToDecimal(m_cbo_nguoi_nhan_dat_hang.SelectedValue.ToString());///xem lai
+            m_us.dcID_NGUOI_TAO = us_user.dcID ;///xem lai
             m_us.dcID_CHI_NHANH = TOSApp.us_user.dcCHI_NHANH; //--fix lai sau mac dinh la 1 -HA NOI
         }
 

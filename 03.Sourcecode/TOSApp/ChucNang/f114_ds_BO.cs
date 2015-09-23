@@ -73,9 +73,7 @@ namespace TOSApp.ChucNang
         {
             this.Close();
         }
-
-
-
+        
         internal void display_dieu_huong(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             load_data_2_ma_don_hang(v_us);

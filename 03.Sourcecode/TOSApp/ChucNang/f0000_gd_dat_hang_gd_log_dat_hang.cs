@@ -111,7 +111,7 @@ namespace TOSApp.ChucNang
 
             string m_query = "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where THAO_TAC_HET_HAN_YN = 'N'";
             if (us_user.dcIDNhom == 1) //fo
-                m_query += "And ID_NGUOI_TAO = " + us_user.dcID.ToString() + " AND ((ID_LOAI_THAO_TAC = 310 AND ID_NGUOI_NHAN_THAO_TAC = " + us_user.dcID.ToString() + ") OR ID_LOAI_THAO_TAC in(313))";
+                m_query += "And ID_NGUOI_TAO = " + us_user.dcID.ToString() + " AND  ID_LOAI_THAO_TAC in(310,313)";
 
             else if (us_user.dcIDNhom == 2) //bo
                 if (kieu_load_form==1)
@@ -229,14 +229,7 @@ namespace TOSApp.ChucNang
         }
 
 
-//hàm được fix cứng 1 vài giá trị cần phải thay đổi khi làm liên quan đến hệ thống
-      
- 
-
-     
-
-       
-
+        //hàm được fix cứng 1 vài giá trị cần phải thay đổi khi làm liên quan đến hệ thống
         private void fill_data_to_m_us()
         {
 
@@ -307,11 +300,10 @@ namespace TOSApp.ChucNang
                 }
                 else
                 {
-                    id_nguoi_tao = m_us.dcID_NGUOI_TAO_THAO_TAC;
+                    id_nguoi_tao = m_us.dcID_NGUOI_TAO;
                 }
                 f107_tu_choi_don_hang v_f107 = new f107_tu_choi_don_hang();
                 v_f107.displayForRefuse(m_us, id_nguoi_tao);
-                //update_log_trang_thai_don_hang();
                 load_data_2_grid();
              
             }
@@ -391,10 +383,7 @@ namespace TOSApp.ChucNang
 
         private void update_hoan_thanh_don_hang_BO()
         {
-          
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-           
-           // v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;      
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "BO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
             v_us.Update();
@@ -438,14 +427,7 @@ namespace TOSApp.ChucNang
 
         private void update_log_PM_tiep_nhan()
         {
-
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            //v_us.dcID = m_us.dcID_LOG_DAT_HANG;
-            //v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            //v_us.dcID_LOAI_THAO_TAC = m_us.dcID_LOAI_THAO_TAC;
-            //v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_NHAN_THAO_TAC;//fix cung 1 thanh niên sau này khi phân quyền hệ thống sẽ phải làm lại
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC=m_us.dcID_NGUOI_NHAN_THAO_TAC;
-            //v_us.datNGAY_LAP_THAO_TAC = m_us.datNGAY_LAP_THAO_TAC;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
             v_us.strGHI_CHU = "PM đã tiếp nhận xử lý";
             v_us.Update();
@@ -564,7 +546,7 @@ namespace TOSApp.ChucNang
             try
             {
                 fill_data_to_m_us();
-              //  update_thoi_gian_hoan_thanh_don_hang();
+                // update_thoi_gian_hoan_thanh_don_hang();
                 update_hoan_thanh_don_hang_PM();
                 ghi_log_admin_da_hoan_thanh_don_hang_PM();
                 MessageBox.Show("Hoàn thành!");
@@ -617,10 +599,8 @@ namespace TOSApp.ChucNang
 
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-               f116_ds_TD v_f = new f116_ds_TD();
+                f116_ds_TD v_f = new f116_ds_TD();
                 v_f.displayForUpdate(v_us);
-               
-
                 load_data_2_grid();
             }
             catch (Exception v_e)
@@ -647,17 +627,11 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            //PHAN_HOI_TU_DVMC.Visible = true;
-            //DANH_GIA_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
-           // //Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
             NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-           
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -679,11 +653,6 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            //PHAN_HOI_TU_DVMC.Visible = true;
-            //DANH_GIA_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
-            //Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
             NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
@@ -711,17 +680,11 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            //PHAN_HOI_TU_DVMC.Visible = true;
-            //DANH_GIA_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
-            //Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
             NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            //THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -743,22 +706,15 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            //PHAN_HOI_TU_DVMC.Visible = true;
-            //DANH_GIA_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
-            //Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
             NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-          //  THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
             GHI_CHU.Visible = false;
-
         }
 
         private void format_controll_TM()
@@ -776,17 +732,11 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            //PHAN_HOI_TU_DVMC.Visible = true;
-            //DANH_GIA_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
-            //Y_KIEN_KHAC_TU_USER_DAT_HANG.Visible = true;
-            //THOI_GIAN_HOAN_THANH.Visible = true;
             NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
             ID_LOG_DAT_HANG.Visible = false;
             LOAI_THAO_TAC_LOG.Visible = false;
-            //THAO_TAC_HET_HAN_YN_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = false;
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
             NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
@@ -807,7 +757,6 @@ namespace TOSApp.ChucNang
                 f114_ds_BO v_f114 = new f114_ds_BO();
                 v_f114.display_dieu_huong(v_us);
                 load_data_2_grid();
-                //  MessageBox.Show("Thành công");
 
             }
             catch (Exception v_e)
@@ -827,7 +776,6 @@ namespace TOSApp.ChucNang
                 f114_ds_BO v_f114 = new f114_ds_BO();
                 v_f114.display_dieu_huong(v_us);
                 load_data_2_grid();
-                //  MessageBox.Show("Thành công");
 
             }
             catch (Exception v_e)
@@ -840,7 +788,6 @@ namespace TOSApp.ChucNang
         private void timer1_Tick(object sender, EventArgs e)
        {
             load_data_2_grid();
-         //   MessageBox.Show(kieu_load_form.ToString());
           
         }
 
@@ -904,18 +851,5 @@ namespace TOSApp.ChucNang
             load_data_2_grid();
         }
 
-        private void gridView1_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
-        {
-            GridView View = sender as GridView;
-            if (e.RowHandle >= 0)
-            {
-                DateTime category = CIPConvert.ToDatetime( View.GetRowCellDisplayText(e.RowHandle, View.Columns["THOI_DIEM_CAN_HOAN_THANH"]));
-                if (category < System.DateTime.Today)
-                {
-                    e.Appearance.BackColor = Color.Salmon;
-                    e.Appearance.BackColor2 = Color.SeaShell;
-                }
-            }
-        }
     }
 }

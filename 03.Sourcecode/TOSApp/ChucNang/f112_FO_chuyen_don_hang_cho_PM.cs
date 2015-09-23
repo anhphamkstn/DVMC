@@ -59,18 +59,9 @@ namespace TOSApp.ChucNang
 
         private void load_data_to_form(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
-            US_DUNG_CHUNG l_us = new US_DUNG_CHUNG();
-            DataSet l_ds = new DataSet();
-            l_ds.Tables.Add(new DataTable());
-
-            l_us.FillDatasetWithQuery(l_ds, "select ID_PM, PM  from   V_DICH_VU_BO_PM_TD where ID_BO =" + v_us.dcID_NGUOI_TAO_THAO_TAC + " and ID_DICH_VU=" + v_us.dcID_NHOM_DV_YEU_CAU);
-
-            //m_txt_PM.Text = "id của PM là:" + l_ds.Tables[0].Rows[0][0].ToString();
-            WinFormControls.load_data_to_combobox("V_DICH_VU_BO_PM_TD", "ID_PM", "PM", " where ID_BO = " + v_us.dcID_NGUOI_TAO_THAO_TAC + " and ID_DICH_VU = " + v_us.dcID_NHOM_DV_YEU_CAU, WinFormControls.eTAT_CA.NO, m_cbo_PM);
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_PM, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT hnsd.ID,hnsd.TEN FROM HT_BO_DICH_VU hbdv,HT_NGUOI_SU_DUNG hnsd WHERE hnsd.ID=hbdv.ID_NGUOI_SU_DUNG AND hbdv.ID_DICH_VU =" + v_us.dcID_NHOM_DV_YEU_CAU.ToString() + "AND hbdv.CAP_SU_DUNG = 3 ");
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
-
-          //  WinFormControls.load_data_to_combobox("HT_NGUOI_SU_DUNG", "ID", "TEN", "", WinFormControls.eTAT_CA.NO, m_cbo_ds_PM);
             m_txt_gui_kem.Focus();
         }
 

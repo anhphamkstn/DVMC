@@ -39,7 +39,6 @@ namespace TOSApp.ChucNang
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//Quản lý có id 15
             v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal( m_cbo_ds_TD.SelectedValue.ToString());
-           // v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal(l_ds.Tables[0].Rows[0][0]) ;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
             v_US.strGHI_CHU = "đơn hàng đã được gửi cho TD \n" + m_txt_gui_kem.Text;
@@ -58,10 +57,8 @@ namespace TOSApp.ChucNang
         {
 
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
-
             m_txt_ma_don_hang.Text = v_us.strMA_DON_HANG;
-            WinFormControls.load_data_to_combobox_with_query(m_cbo_ds_TD, "ID_TD", "TD", WinFormControls.eTAT_CA.NO, "select distinct ID_TD, TD from V_DICH_VU_BO_PM_TD where ID_DICH_VU=" + v_us.dcID_NHOM_DV_YEU_CAU);
-           // WinFormControls.load_data_to_combobox("V_DICH_VU_BO_PM_TD", "ID_TD", "TD", " where ID_DICH_VU="+v_us.dcID_NHOM_DV_YEU_CAU, WinFormControls.eTAT_CA.NO, m_cbo_ds_TD);
+            WinFormControls.load_data_to_combobox_with_query(m_cbo_ds_TD, "ID", "TEN", WinFormControls.eTAT_CA.NO, "SELECT hnsd.ID,hnsd.TEN FROM HT_BO_DICH_VU hbdv,HT_NGUOI_SU_DUNG hnsd WHERE hnsd.ID=hbdv.ID_NGUOI_SU_DUNG AND hbdv.ID_DICH_VU =" + v_us.dcID_NHOM_DV_YEU_CAU.ToString() + "AND hbdv.CAP_SU_DUNG = 5");
             m_txt_gui_kem.Focus();
           
         }

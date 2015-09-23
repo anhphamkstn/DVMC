@@ -117,14 +117,6 @@ namespace TOSApp.ChucNang
                 nguoi_xu_ly+="," +v_ds_3.Tables[0].Rows[i]["TEN_NGUOI_TAO_THAO_TAC_LOG"].ToString();
             }
 
-            //for (int i = 0; i < m_lst_id_nguoi_xu_ly.Count; i++)
-            //{
-            //    US_DUNG_CHUNG v_us_2 = new US_DUNG_CHUNG();
-            //    DataSet v_ds_2 = new DataSet();
-            //    v_ds_2.Tables.Add(new DataTable());
-            //    v_us_2.FillDatasetWithQuery(v_ds_2, "select * from ht_nguoi_su_dung where id=" + m_lst_id_nguoi_xu_ly[i]);
-            //    nguoi_xu_ly += v_ds_2.Tables[0].Rows[0]["TEN_TRUY_CAP"].ToString() + " , ";
-            //}
             NOI_DUNG = NOI_DUNG.Replace("NGUOI_XU_LY_DON_HANG", nguoi_xu_ly);
             NOI_DUNG = NOI_DUNG.Replace("NGUOI_NHAN_DAT_HANG", M_us.strNGUOI_TAO_THAO_TAC);
             US_DUNG_CHUNG v_us_1 = new US_DUNG_CHUNG();
@@ -157,7 +149,7 @@ namespace TOSApp.ChucNang
             v_US.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
             v_US.dcID_LOAI_THAO_TAC = 313;//cần xử lý lại
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_US.dcID_NGUOI_NHAN_THAO_TAC = v_us.dcID_NGUOI_TAO_THAO_TAC;
+            v_US.dcID_NGUOI_NHAN_THAO_TAC = v_us.dcID_NGUOI_TAO;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
             v_US.strGHI_CHU = "đơn hàng cần được thực hiện lại! TM chưa chấp nhận nghiệm thu!";
