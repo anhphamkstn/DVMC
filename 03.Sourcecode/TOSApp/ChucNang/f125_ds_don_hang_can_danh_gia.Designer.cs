@@ -42,9 +42,10 @@
             this.c_dich_vu_yeu_cau = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_y_kien_khac = new DevExpress.XtraGrid.Columns.GridColumn();
             this.m_pan_button = new System.Windows.Forms.Panel();
-            this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dh_hoan_thanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_dh_hoan_thanh)).BeginInit();
@@ -218,7 +219,8 @@
             this.c_dich_vu_yeu_cau,
             this.gridColumn7,
             this.gridColumn8,
-            this.m_danh_gia_cua_khach_hang});
+            this.m_danh_gia_cua_khach_hang,
+            this.c_y_kien_khac});
             this.m_grv_ds_dh_hoan_thanh.GridControl = this.m_grc_ds_dh_hoan_thanh;
             this.m_grv_ds_dh_hoan_thanh.Name = "m_grv_ds_dh_hoan_thanh";
             this.m_grv_ds_dh_hoan_thanh.OptionsBehavior.Editable = false;
@@ -293,6 +295,14 @@
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 7;
             // 
+            // c_y_kien_khac
+            // 
+            this.c_y_kien_khac.Caption = "Ý KIẾN KHÁC";
+            this.c_y_kien_khac.FieldName = "Y_KIEN_KHAC_TU_USER_DAT_HANG";
+            this.c_y_kien_khac.Name = "c_y_kien_khac";
+            this.c_y_kien_khac.Visible = true;
+            this.c_y_kien_khac.VisibleIndex = 9;
+            // 
             // m_pan_button
             // 
             this.m_pan_button.Controls.Add(this.m_cmd_danh_gia);
@@ -302,19 +312,6 @@
             this.m_pan_button.Size = new System.Drawing.Size(835, 48);
             this.m_pan_button.TabIndex = 3;
             // 
-            // m_cmd_danh_gia
-            // 
-            this.m_cmd_danh_gia.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_cmd_danh_gia.Appearance.Options.UseFont = true;
-            this.m_cmd_danh_gia.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_danh_gia.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_danh_gia.Image")));
-            this.m_cmd_danh_gia.Location = new System.Drawing.Point(699, 0);
-            this.m_cmd_danh_gia.Name = "m_cmd_danh_gia";
-            this.m_cmd_danh_gia.Size = new System.Drawing.Size(136, 48);
-            this.m_cmd_danh_gia.TabIndex = 0;
-            this.m_cmd_danh_gia.Text = "Đánh giá";
-            this.m_cmd_danh_gia.Click += new System.EventHandler(this.m_cmd_danh_gia_Click);
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.m_grc_ds_dh_hoan_thanh);
@@ -323,6 +320,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(835, 245);
             this.panel3.TabIndex = 4;
+            // 
+            // m_cmd_danh_gia
+            // 
+            this.m_cmd_danh_gia.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_danh_gia.Appearance.Options.UseFont = true;
+            this.m_cmd_danh_gia.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_danh_gia.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_danh_gia.Image")));
+            this.m_cmd_danh_gia.Location = new System.Drawing.Point(715, 0);
+            this.m_cmd_danh_gia.Name = "m_cmd_danh_gia";
+            this.m_cmd_danh_gia.Size = new System.Drawing.Size(120, 48);
+            this.m_cmd_danh_gia.TabIndex = 0;
+            this.m_cmd_danh_gia.Text = "Đánh giá";
+            this.m_cmd_danh_gia.Click += new System.EventHandler(this.m_cmd_danh_gia_Click);
             // 
             // f125_ds_don_hang_can_danh_gia
             // 
@@ -362,6 +372,7 @@
         private System.Windows.Forms.Panel m_pan_button;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraGrid.Columns.GridColumn m_danh_gia_cua_khach_hang;
-        public DevExpress.XtraEditors.SimpleButton m_cmd_danh_gia;
+        private DevExpress.XtraGrid.Columns.GridColumn c_y_kien_khac;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_danh_gia;
     }
 }

@@ -105,7 +105,6 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithTableName(v_ds, "V_DM_LOAI_YEU_CAU");
             m_searchLookUpEdit_dv.Properties.DataSource = v_ds.Tables[0];
-            
         }
 
         private void load_data_2_search_look_edit_user()

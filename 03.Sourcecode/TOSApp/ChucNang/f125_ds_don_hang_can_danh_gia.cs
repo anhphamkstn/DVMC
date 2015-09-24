@@ -36,7 +36,7 @@ namespace TOSApp.ChucNang
             if (m_trang_thai == 0)
             {
                 v_str_query = "SELECT * FROM V_BO_PM_TD_DICH_VU_GD_DAT_HANG_GD_LOG_DAT_HANG bptdvgdhgldh WHERE     (bptdvgdhgldh.ID_NGUOI_SU_DUNG = " + us_user.dcID.ToString() + ")  AND (bptdvgdhgldh.CAP_SU_DUNG ="+us_user.dcIDNhom.ToString() + ")" + "AND thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NULL";
-                
+                m_pan_button.Visible = false;
             }
             else if (m_trang_thai == 1)
             {
