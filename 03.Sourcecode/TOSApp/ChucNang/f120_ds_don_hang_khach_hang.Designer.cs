@@ -217,7 +217,6 @@
             this.NGUOI_XU_LY,
             this.GHI_CHU});
             this.m_grv_ds_don_hang_nguoi_xu_ly.GridControl = this.m_grc_ds_don_hang_nguoi_xu_ly;
-            this.m_grv_ds_don_hang_nguoi_xu_ly.GroupCount = 2;
             this.m_grv_ds_don_hang_nguoi_xu_ly.Name = "m_grv_ds_don_hang_nguoi_xu_ly";
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsBehavior.Editable = false;
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsBehavior.ReadOnly = true;
@@ -225,9 +224,6 @@
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_hang_nguoi_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_nguoi_xu_ly.PaintStyleName = "MixedXP";
-            this.m_grv_ds_don_hang_nguoi_xu_ly.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.MA_DON_HANG, DevExpress.Data.ColumnSortOrder.Ascending),
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.HO_TEN_USER_DAT_HANG, DevExpress.Data.ColumnSortOrder.Ascending)});
             this.m_grv_ds_don_hang_nguoi_xu_ly.DoubleClick += new System.EventHandler(this.view_thong_tin_don_hang);
             // 
             // MA_DON_HANG
@@ -244,7 +240,7 @@
             this.HO_TEN_USER_DAT_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Name = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Visible = true;
-            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 0;
+            this.HO_TEN_USER_DAT_HANG.VisibleIndex = 1;
             // 
             // MA_DON_VI
             // 
@@ -252,7 +248,7 @@
             this.MA_DON_VI.FieldName = "MA_DON_VI";
             this.MA_DON_VI.Name = "MA_DON_VI";
             this.MA_DON_VI.Visible = true;
-            this.MA_DON_VI.VisibleIndex = 1;
+            this.MA_DON_VI.VisibleIndex = 3;
             // 
             // DIEN_THOAI
             // 
@@ -260,7 +256,7 @@
             this.DIEN_THOAI.FieldName = "DIEN_THOAI";
             this.DIEN_THOAI.Name = "DIEN_THOAI";
             this.DIEN_THOAI.Visible = true;
-            this.DIEN_THOAI.VisibleIndex = 0;
+            this.DIEN_THOAI.VisibleIndex = 2;
             // 
             // TEN_YEU_CAU
             // 
@@ -268,7 +264,7 @@
             this.TEN_YEU_CAU.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
             this.TEN_YEU_CAU.Name = "TEN_YEU_CAU";
             this.TEN_YEU_CAU.Visible = true;
-            this.TEN_YEU_CAU.VisibleIndex = 2;
+            this.TEN_YEU_CAU.VisibleIndex = 4;
             // 
             // NOI_DUNG_DAT_HANG
             // 
@@ -276,7 +272,7 @@
             this.NOI_DUNG_DAT_HANG.FieldName = "NOI_DUNG_DAT_HANG";
             this.NOI_DUNG_DAT_HANG.Name = "NOI_DUNG_DAT_HANG";
             this.NOI_DUNG_DAT_HANG.Visible = true;
-            this.NOI_DUNG_DAT_HANG.VisibleIndex = 3;
+            this.NOI_DUNG_DAT_HANG.VisibleIndex = 5;
             // 
             // TRANG_THAI_DON_HANG
             // 
@@ -284,7 +280,7 @@
             this.TRANG_THAI_DON_HANG.FieldName = "TEN_LOAI_THAO_TAC_LOG";
             this.TRANG_THAI_DON_HANG.Name = "TRANG_THAI_DON_HANG";
             this.TRANG_THAI_DON_HANG.Visible = true;
-            this.TRANG_THAI_DON_HANG.VisibleIndex = 5;
+            this.TRANG_THAI_DON_HANG.VisibleIndex = 7;
             // 
             // NGUOI_XU_LY
             // 
@@ -292,7 +288,7 @@
             this.NGUOI_XU_LY.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.NGUOI_XU_LY.Name = "NGUOI_XU_LY";
             this.NGUOI_XU_LY.Visible = true;
-            this.NGUOI_XU_LY.VisibleIndex = 4;
+            this.NGUOI_XU_LY.VisibleIndex = 6;
             // 
             // GHI_CHU
             // 
@@ -300,7 +296,7 @@
             this.GHI_CHU.FieldName = "GHI_CHU";
             this.GHI_CHU.Name = "GHI_CHU";
             this.GHI_CHU.Visible = true;
-            this.GHI_CHU.VisibleIndex = 6;
+            this.GHI_CHU.VisibleIndex = 8;
             // 
             // f120_ds_don_hang_khach_hang
             // 

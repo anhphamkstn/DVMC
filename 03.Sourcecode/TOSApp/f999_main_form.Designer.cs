@@ -44,6 +44,8 @@
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.m_ribbon_ds_don_hang_danh_gia = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_tm_ds_don_hang_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
+            this.m_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_can_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_pm_ds_don_hang_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
@@ -130,8 +132,6 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
-            this.m_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_cmd_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -248,6 +248,22 @@
             this.m_cmd_tm_ds_don_hang_da_danh_gia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_don_hang_da_danh_gia.LargeGlyph")));
             this.m_cmd_tm_ds_don_hang_da_danh_gia.Name = "m_cmd_tm_ds_don_hang_da_danh_gia";
             this.m_cmd_tm_ds_don_hang_da_danh_gia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_tm_ds_don_hang_da_danh_gia_ItemClick);
+            // 
+            // m_tm_ds_tat_ca_don_hang
+            // 
+            this.m_tm_ds_tat_ca_don_hang.AllowTextClipping = false;
+            this.m_tm_ds_tat_ca_don_hang.ItemLinks.Add(this.m_cmd_tm_ds_tat_ca_don_hang);
+            this.m_tm_ds_tat_ca_don_hang.Name = "m_tm_ds_tat_ca_don_hang";
+            this.m_tm_ds_tat_ca_don_hang.Text = "Tất cả đơn hàng";
+            // 
+            // m_cmd_tm_ds_tat_ca_don_hang
+            // 
+            this.m_cmd_tm_ds_tat_ca_don_hang.Caption = "Tất cả đơn hàng";
+            this.m_cmd_tm_ds_tat_ca_don_hang.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.Glyph")));
+            this.m_cmd_tm_ds_tat_ca_don_hang.Id = 63;
+            this.m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph")));
+            this.m_cmd_tm_ds_tat_ca_don_hang.Name = "m_cmd_tm_ds_tat_ca_don_hang";
+            this.m_cmd_tm_ds_tat_ca_don_hang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_tm_ds_tat_ca_don_hang_ItemClick);
             // 
             // ribbonPageGroup22
             // 
@@ -789,8 +805,11 @@
             // 
             // m_barsubitem_thiet_lap
             // 
+            this.m_barsubitem_thiet_lap.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
             this.m_barsubitem_thiet_lap.Caption = "Thiết lập";
+            this.m_barsubitem_thiet_lap.Glyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_thiet_lap.Glyph")));
             this.m_barsubitem_thiet_lap.Id = 25;
+            this.m_barsubitem_thiet_lap.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_thiet_lap.LargeGlyph")));
             this.m_barsubitem_thiet_lap.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_thiet_lap_tai_khoan),
             new DevExpress.XtraBars.LinkPersistInfo(this.m_cmd_dang_xuat)});
@@ -799,7 +818,9 @@
             // m_barsubitem_thiet_lap_tai_khoan
             // 
             this.m_barsubitem_thiet_lap_tai_khoan.Caption = "Thiết lập tài khoản";
+            this.m_barsubitem_thiet_lap_tai_khoan.Glyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_thiet_lap_tai_khoan.Glyph")));
             this.m_barsubitem_thiet_lap_tai_khoan.Id = 29;
+            this.m_barsubitem_thiet_lap_tai_khoan.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_thiet_lap_tai_khoan.LargeGlyph")));
             this.m_barsubitem_thiet_lap_tai_khoan.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_ten_dang_nhap),
             new DevExpress.XtraBars.LinkPersistInfo(this.m_barsubitem_doi_mat_khau),
@@ -809,28 +830,36 @@
             // m_barsubitem_doi_ten_dang_nhap
             // 
             this.m_barsubitem_doi_ten_dang_nhap.Caption = "Đổi tên đăng nhập";
+            this.m_barsubitem_doi_ten_dang_nhap.Glyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_doi_ten_dang_nhap.Glyph")));
             this.m_barsubitem_doi_ten_dang_nhap.Id = 30;
+            this.m_barsubitem_doi_ten_dang_nhap.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_doi_ten_dang_nhap.LargeGlyph")));
             this.m_barsubitem_doi_ten_dang_nhap.Name = "m_barsubitem_doi_ten_dang_nhap";
             this.m_barsubitem_doi_ten_dang_nhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_barsubitem_doi_ten_dang_nhap_ItemClick);
             // 
             // m_barsubitem_doi_mat_khau
             // 
             this.m_barsubitem_doi_mat_khau.Caption = "Đổi mật khẩu";
+            this.m_barsubitem_doi_mat_khau.Glyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_doi_mat_khau.Glyph")));
             this.m_barsubitem_doi_mat_khau.Id = 31;
+            this.m_barsubitem_doi_mat_khau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_doi_mat_khau.LargeGlyph")));
             this.m_barsubitem_doi_mat_khau.Name = "m_barsubitem_doi_mat_khau";
             this.m_barsubitem_doi_mat_khau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_barsubitem_doi_mat_khau_ItemClick);
             // 
             // m_barsubitem_tao_moi_user
             // 
             this.m_barsubitem_tao_moi_user.Caption = "Tạo mới user";
+            this.m_barsubitem_tao_moi_user.Glyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_tao_moi_user.Glyph")));
             this.m_barsubitem_tao_moi_user.Id = 44;
+            this.m_barsubitem_tao_moi_user.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_barsubitem_tao_moi_user.LargeGlyph")));
             this.m_barsubitem_tao_moi_user.Name = "m_barsubitem_tao_moi_user";
             this.m_barsubitem_tao_moi_user.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_barsubitem_tao_moi_user_ItemClick);
             // 
             // m_cmd_dang_xuat
             // 
             this.m_cmd_dang_xuat.Caption = "Đăng xuất";
+            this.m_cmd_dang_xuat.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dang_xuat.Glyph")));
             this.m_cmd_dang_xuat.Id = 54;
+            this.m_cmd_dang_xuat.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dang_xuat.LargeGlyph")));
             this.m_cmd_dang_xuat.Name = "m_cmd_dang_xuat";
             this.m_cmd_dang_xuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.dang_xuat);
             // 
@@ -990,22 +1019,6 @@
             this.m_timer_imcoming_call.Enabled = true;
             this.m_timer_imcoming_call.Interval = 3000;
             this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // m_tm_ds_tat_ca_don_hang
-            // 
-            this.m_tm_ds_tat_ca_don_hang.AllowTextClipping = false;
-            this.m_tm_ds_tat_ca_don_hang.ItemLinks.Add(this.m_cmd_tm_ds_tat_ca_don_hang);
-            this.m_tm_ds_tat_ca_don_hang.Name = "m_tm_ds_tat_ca_don_hang";
-            this.m_tm_ds_tat_ca_don_hang.Text = "Tất cả đơn hàng";
-            // 
-            // m_cmd_tm_ds_tat_ca_don_hang
-            // 
-            this.m_cmd_tm_ds_tat_ca_don_hang.Caption = "Tất cả đơn hàng";
-            this.m_cmd_tm_ds_tat_ca_don_hang.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.Glyph")));
-            this.m_cmd_tm_ds_tat_ca_don_hang.Id = 63;
-            this.m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph")));
-            this.m_cmd_tm_ds_tat_ca_don_hang.Name = "m_cmd_tm_ds_tat_ca_don_hang";
-            this.m_cmd_tm_ds_tat_ca_don_hang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_tm_ds_tat_ca_don_hang_ItemClick);
             // 
             // f999_main_form
             // 

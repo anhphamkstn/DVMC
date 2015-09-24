@@ -218,11 +218,13 @@ namespace TOSApp.ChucNang
                     }
                     else
                     {
-                        if (m_lst_id_nguoi_xu_ly.Count != 0 & CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 293)
+                       
+                        if (m_lst_id_nguoi_xu_ly.Count != 0 && CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 293)
                         {
 
                             luu_don_hang();
                             dieu_phoi_don_hang();
+                            
                             if (m_ip_call_infor != null)
                                 insert_gd_cuoc_goi(m_ip_call_infor);
                             if (m_chk_gui_mail_yn.Checked == true)
@@ -232,18 +234,27 @@ namespace TOSApp.ChucNang
 
                             this.Close();
                         }
-                        else if (m_lst_id_nguoi_xu_ly.Count != 0 & CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 297)
+                        else if ( CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 297)
                         {
-                            luu_don_hang();
-                            dieu_phoi_don_hang();
+
+                            insert_dm_khach_hang();
+                            ghi_don_hang();      
+                            ghi_log_tiep_nhan_dv_hoi_dap();                           
+                            ghi_log_tiep_nhan();
+                            cap_nhat_lai_trang_thai_tiep_nhan();
                             if (m_chk_gui_mail_yn.Checked == true)
                             {
                                 gui_emai_xac_nhan(m_us);
                             }
-
+                            MessageBox.Show("Hoàn thành!");
                             this.Close();
                         }
-                        else MessageBox.Show("Hãy chọn người xử lý!");
+                        else
+                        {
+                            luu_don_hang();
+                            MessageBox.Show("Hoàn thành!");
+                            this.Close();
+                        }
                     }
                 }
             }
@@ -251,6 +262,21 @@ namespace TOSApp.ChucNang
             {
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void ghi_log_tiep_nhan_dv_hoi_dap()
+        {
+            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
+
+            v_us.dcID_LOAI_THAO_TAC = 293 ;
+            v_us.dcID_GD_DAT_HANG = m_us.dcID;
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
+            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
+            v_us.strGHI_CHU = m_txt_phan_hoi_tu_dvmc.Text;
+            v_us.Insert();
+            id_log = v_us.dcID;
+            
         }
 
         private void insert_dm_khach_hang()
@@ -662,7 +688,7 @@ namespace TOSApp.ChucNang
 
                     }
 
-                }
+                }         
             if (m_txt_yeu_cau_cu_the.Text == "")
             {
                 MessageBox.Show("Hãy nhập yêu cầu cụ thể!");
@@ -851,8 +877,24 @@ namespace TOSApp.ChucNang
 
         private void m_cbo_loai_dich_vu_1_SelectedValueChanged(object sender, EventArgs e)
         {
-
+            load_data_to_dv_hoi_dap();
             load_data_2_loai_dich_vu_2();
+        }
+
+        private void load_data_to_dv_hoi_dap()
+        {
+            if (CIPConvert.ToDecimal(m_cbo_loai_dich_vu_1.SelectedValue.ToString()) == 10)
+            {
+                m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
+                m_cbo_trang_thai_don_hang.SelectedValue = 297;
+                m_cbo_trang_thai_don_hang.Enabled = true;
+            }
+            else
+            {
+                m_cmd_danh_sach_nguoi_xu_ly.Enabled = true;
+                m_cbo_trang_thai_don_hang.SelectedValue = 293;
+                m_cbo_trang_thai_don_hang.Enabled = false;
+            }
         }
 
         private void m_cbo_loai_dich_vu_SelectedIndexChanged(object sender, EventArgs e)

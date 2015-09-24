@@ -40,10 +40,10 @@
             this.c_nhan_vien_dat_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_thoi_gian_tao = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_loai_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_dang_xu_ly)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_hang_dang_xu_ly)).BeginInit();
             this.panel1.SuspendLayout();
@@ -57,7 +57,7 @@
             this.m_grc_ds_don_hang_dang_xu_ly.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_hang_dang_xu_ly.MainView = this.m_grv_ds_don_hang_dang_xu_ly;
             this.m_grc_ds_don_hang_dang_xu_ly.Name = "m_grc_ds_don_hang_dang_xu_ly";
-            this.m_grc_ds_don_hang_dang_xu_ly.Size = new System.Drawing.Size(774, 202);
+            this.m_grc_ds_don_hang_dang_xu_ly.Size = new System.Drawing.Size(774, 264);
             this.m_grc_ds_don_hang_dang_xu_ly.TabIndex = 0;
             this.m_grc_ds_don_hang_dang_xu_ly.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_don_hang_dang_xu_ly});
@@ -216,6 +216,7 @@
             this.c_loai_dich_vu.Name = "c_loai_dich_vu";
             this.c_loai_dich_vu.Visible = true;
             this.c_loai_dich_vu.VisibleIndex = 0;
+            this.c_loai_dich_vu.Width = 84;
             // 
             // c_nhom_dich_vu
             // 
@@ -224,6 +225,7 @@
             this.c_nhom_dich_vu.Name = "c_nhom_dich_vu";
             this.c_nhom_dich_vu.Visible = true;
             this.c_nhom_dich_vu.VisibleIndex = 1;
+            this.c_nhom_dich_vu.Width = 84;
             // 
             // c_dich_vu
             // 
@@ -232,6 +234,7 @@
             this.c_dich_vu.Name = "c_dich_vu";
             this.c_dich_vu.Visible = true;
             this.c_dich_vu.VisibleIndex = 2;
+            this.c_dich_vu.Width = 84;
             // 
             // c_ma_don_hang
             // 
@@ -240,6 +243,7 @@
             this.c_ma_don_hang.Name = "c_ma_don_hang";
             this.c_ma_don_hang.Visible = true;
             this.c_ma_don_hang.VisibleIndex = 3;
+            this.c_ma_don_hang.Width = 84;
             // 
             // c_nguoi_xu_ly
             // 
@@ -256,6 +260,7 @@
             this.c_nhan_vien_dat_hang.Name = "c_nhan_vien_dat_hang";
             this.c_nhan_vien_dat_hang.Visible = true;
             this.c_nhan_vien_dat_hang.VisibleIndex = 4;
+            this.c_nhan_vien_dat_hang.Width = 118;
             // 
             // c_thoi_gian_tao
             // 
@@ -272,6 +277,16 @@
             this.c_loai_thoi_gian_can_hoan_thanh.Name = "c_loai_thoi_gian_can_hoan_thanh";
             this.c_loai_thoi_gian_can_hoan_thanh.Visible = true;
             this.c_loai_thoi_gian_can_hoan_thanh.VisibleIndex = 7;
+            this.c_loai_thoi_gian_can_hoan_thanh.Width = 87;
+            // 
+            // THOI_DIEM_CAN_HOAN_THANH
+            // 
+            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "Thời điểm cần hoàn thành";
+            this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 8;
+            this.THOI_DIEM_CAN_HOAN_THANH.Width = 68;
             // 
             // panel1
             // 
@@ -298,22 +313,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 59);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(774, 202);
+            this.panel2.Size = new System.Drawing.Size(774, 264);
             this.panel2.TabIndex = 2;
-            // 
-            // THOI_DIEM_CAN_HOAN_THANH
-            // 
-            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "Thời điểm cần hoàn thành";
-            this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
-            this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
-            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 8;
             // 
             // f122_ds_don_hang_dang_xu_ly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 261);
+            this.ClientSize = new System.Drawing.Size(774, 323);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f122_ds_don_hang_dang_xu_ly";

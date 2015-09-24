@@ -224,6 +224,7 @@
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.Name = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.Visible = true;
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 2;
+            this.TEN_NGUOI_TAO_THAO_TAC_LOG.Width = 122;
             // 
             // THOI_GIAN_TAO
             // 
@@ -232,6 +233,7 @@
             this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Visible = true;
             this.THOI_GIAN_TAO.VisibleIndex = 4;
+            this.THOI_GIAN_TAO.Width = 157;
             // 
             // TEN_CHI_NHANH
             // 
@@ -240,6 +242,7 @@
             this.TEN_CHI_NHANH.Name = "TEN_CHI_NHANH";
             this.TEN_CHI_NHANH.Visible = true;
             this.TEN_CHI_NHANH.VisibleIndex = 5;
+            this.TEN_CHI_NHANH.Width = 101;
             // 
             // TEN_LOAI_THAO_TAC_LOG
             // 
@@ -248,6 +251,7 @@
             this.TEN_LOAI_THAO_TAC_LOG.Name = "TEN_LOAI_THAO_TAC_LOG";
             this.TEN_LOAI_THAO_TAC_LOG.Visible = true;
             this.TEN_LOAI_THAO_TAC_LOG.VisibleIndex = 6;
+            this.TEN_LOAI_THAO_TAC_LOG.Width = 123;
             // 
             // NGUOI_NHAN_THAO_TAC
             // 
@@ -256,6 +260,7 @@
             this.NGUOI_NHAN_THAO_TAC.Name = "NGUOI_NHAN_THAO_TAC";
             this.NGUOI_NHAN_THAO_TAC.Visible = true;
             this.NGUOI_NHAN_THAO_TAC.VisibleIndex = 3;
+            this.NGUOI_NHAN_THAO_TAC.Width = 147;
             // 
             // GHI_CHU
             // 
@@ -264,6 +269,7 @@
             this.GHI_CHU.Name = "GHI_CHU";
             this.GHI_CHU.Visible = true;
             this.GHI_CHU.VisibleIndex = 7;
+            this.GHI_CHU.Width = 84;
             // 
             // MA_DON_HANG
             // 
@@ -272,6 +278,7 @@
             this.MA_DON_HANG.Name = "MA_DON_HANG";
             this.MA_DON_HANG.Visible = true;
             this.MA_DON_HANG.VisibleIndex = 0;
+            this.MA_DON_HANG.Width = 122;
             // 
             // TEN_US_HANG
             // 
@@ -280,6 +287,7 @@
             this.TEN_US_HANG.Name = "TEN_US_HANG";
             this.TEN_US_HANG.Visible = true;
             this.TEN_US_HANG.VisibleIndex = 1;
+            this.TEN_US_HANG.Width = 122;
             // 
             // timer1
             // 

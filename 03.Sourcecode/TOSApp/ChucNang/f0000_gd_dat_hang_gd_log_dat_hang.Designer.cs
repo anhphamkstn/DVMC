@@ -398,7 +398,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
             this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 1;
-            this.THOI_DIEM_CAN_HOAN_THANH.Width = 118;
+            this.THOI_DIEM_CAN_HOAN_THANH.Width = 163;
             // 
             // THOI_GIAN_CAN_HOAN_THANH
             // 
@@ -407,7 +407,7 @@
             this.THOI_GIAN_CAN_HOAN_THANH.Name = "THOI_GIAN_CAN_HOAN_THANH";
             this.THOI_GIAN_CAN_HOAN_THANH.Visible = true;
             this.THOI_GIAN_CAN_HOAN_THANH.VisibleIndex = 12;
-            this.THOI_GIAN_CAN_HOAN_THANH.Width = 140;
+            this.THOI_GIAN_CAN_HOAN_THANH.Width = 178;
             // 
             // TEN_NHOM_DICH_VU
             // 
@@ -515,7 +515,7 @@
             this.NGUOI_TAO_THAO_TAC_LOG.Name = "NGUOI_TAO_THAO_TAC_LOG";
             this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
             this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 9;
-            this.NGUOI_TAO_THAO_TAC_LOG.Width = 136;
+            this.NGUOI_TAO_THAO_TAC_LOG.Width = 165;
             // 
             // panel2
             // 
