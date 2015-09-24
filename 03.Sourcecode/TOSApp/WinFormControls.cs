@@ -305,7 +305,12 @@ namespace TOSApp
             v_cstore.addDecimalInputParam("@id_chi_nhanh", id_chi_nhanh);
             v_cstore.fillDataSetByCommand(this, v_ds);
         }
-
+        public void CheckEmailDanhMucKhachHang(DataSet v_ds,string email)
+        {
+            CStoredProc v_cstore = new CStoredProc("check_email_dm_khach_hang");
+            v_cstore.addNVarcharInputParam("@email", email);
+            v_cstore.fillDataSetByCommand(this, v_ds);
+        }
         internal void FillDatasetSQLInjection(DataSet v_ds, string p)
         {
             CStoredProc v_cstore = new CStoredProc("sqlInjection");

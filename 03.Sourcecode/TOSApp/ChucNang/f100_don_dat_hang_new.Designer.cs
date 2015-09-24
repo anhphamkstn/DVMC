@@ -58,6 +58,7 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -74,9 +75,6 @@
             this.m_txt_dien_thoai = new System.Windows.Forms.TextBox();
             this.m_cbo_dv_don_vi = new System.Windows.Forms.ComboBox();
             this.m_txt_ho_ten_nguoi_dat_hang = new System.Windows.Forms.TextBox();
-            this.m_searchLookUpEdit_user_nv_dat_hang = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.m_searchLookUpEditView_dm_khach_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.m_col_user_nv_dat_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -154,8 +152,6 @@
             this.tableLayoutPanel8.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEdit_user_nv_dat_hang.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEditView_dm_khach_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -483,6 +479,18 @@
             this.label12.TabIndex = 34;
             this.label12.Text = "Search";
             // 
+            // m_cbo_user_nhan_vien_dat_hang
+            // 
+            this.m_cbo_user_nhan_vien_dat_hang.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.m_cbo_user_nhan_vien_dat_hang.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.m_cbo_user_nhan_vien_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cbo_user_nhan_vien_dat_hang.FormattingEnabled = true;
+            this.m_cbo_user_nhan_vien_dat_hang.Location = new System.Drawing.Point(3, 30);
+            this.m_cbo_user_nhan_vien_dat_hang.Name = "m_cbo_user_nhan_vien_dat_hang";
+            this.m_cbo_user_nhan_vien_dat_hang.Size = new System.Drawing.Size(220, 21);
+            this.m_cbo_user_nhan_vien_dat_hang.TabIndex = 1;
+            this.m_cbo_user_nhan_vien_dat_hang.SelectedValueChanged += new System.EventHandler(this.m_cbo_user_nhan_vien_dat_hang_SelectedValueChanged);
+            // 
             // m_pnl_out_place_dm
             // 
             this.m_pnl_out_place_dm.Controls.Add(this.tableLayoutPanel8);
@@ -688,40 +696,6 @@
             this.m_txt_ho_ten_nguoi_dat_hang.ShortcutsEnabled = false;
             this.m_txt_ho_ten_nguoi_dat_hang.Size = new System.Drawing.Size(220, 21);
             this.m_txt_ho_ten_nguoi_dat_hang.TabIndex = 2;
-            // 
-            // m_searchLookUpEdit_user_nv_dat_hang
-            // 
-            this.m_searchLookUpEdit_user_nv_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_searchLookUpEdit_user_nv_dat_hang.EditValue = "Search";
-            this.m_searchLookUpEdit_user_nv_dat_hang.Location = new System.Drawing.Point(3, 30);
-            this.m_searchLookUpEdit_user_nv_dat_hang.Name = "m_searchLookUpEdit_user_nv_dat_hang";
-            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.Appearance.Options.UseFont = true;
-            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.DisplayMember = "EMAIL";
-            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.ValueMember = "ID";
-            this.m_searchLookUpEdit_user_nv_dat_hang.Properties.View = this.m_searchLookUpEditView_dm_khach_hang;
-            this.m_searchLookUpEdit_user_nv_dat_hang.Size = new System.Drawing.Size(220, 22);
-            this.m_searchLookUpEdit_user_nv_dat_hang.TabIndex = 36;
-            this.m_searchLookUpEdit_user_nv_dat_hang.EditValueChanged += new System.EventHandler(this.m_searchLookUpEdit_user_nv_dat_hang_EditValueChanged);
-            // 
-            // m_searchLookUpEditView_dm_khach_hang
-            // 
-            this.m_searchLookUpEditView_dm_khach_hang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.m_col_user_nv_dat_hang});
-            this.m_searchLookUpEditView_dm_khach_hang.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.m_searchLookUpEditView_dm_khach_hang.Name = "m_searchLookUpEditView_dm_khach_hang";
-            this.m_searchLookUpEditView_dm_khach_hang.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.m_searchLookUpEditView_dm_khach_hang.OptionsView.ShowGroupPanel = false;
-            // 
-            // m_col_user_nv_dat_hang
-            // 
-            this.m_col_user_nv_dat_hang.Caption = "User nhân viên đặt hàng";
-            this.m_col_user_nv_dat_hang.FieldName = "EMAIL";
-            this.m_col_user_nv_dat_hang.Name = "m_col_user_nv_dat_hang";
-            this.m_col_user_nv_dat_hang.Visible = true;
-            this.m_col_user_nv_dat_hang.VisibleIndex = 0;
             // 
             // label5
             // 
@@ -1584,12 +1558,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.m_searchLookUpEdit_user_nv_dat_hang, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.m_txt_ho_ten_nguoi_dat_hang, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.m_cbo_dv_don_vi, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.m_txt_dien_thoai, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.label5, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.m_cbo_user_nhan_vien_dat_hang, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label4, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label11, 3, 0);
@@ -1670,8 +1644,6 @@
             this.panel17.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEdit_user_nv_dat_hang.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_searchLookUpEditView_dm_khach_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -1776,9 +1748,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn KHACH_HANG;
-        private DevExpress.XtraEditors.SearchLookUpEdit m_searchLookUpEdit_user_nv_dat_hang;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_searchLookUpEditView_dm_khach_hang;
-        private DevExpress.XtraGrid.Columns.GridColumn m_col_user_nv_dat_hang;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
@@ -1822,6 +1791,7 @@
         public DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.ComboBox m_cbo_phuong_thuc_dat_hang;
+        private System.Windows.Forms.ComboBox m_cbo_user_nhan_vien_dat_hang;
 
     }
 }

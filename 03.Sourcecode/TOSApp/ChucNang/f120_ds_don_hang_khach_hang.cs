@@ -28,9 +28,6 @@ namespace TOSApp.ChucNang
             v_ds.Tables.Add(new DataTable());
             v_us.FillDatasetWithQuery(v_ds, query);
             m_grc_ds_don_hang_nguoi_xu_ly.DataSource = v_ds.Tables[0];
-
-
-
         }
 
         private void view_thong_tin_don_hang(object sender, EventArgs e)
