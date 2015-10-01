@@ -548,7 +548,7 @@
             this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(901, 3);
             this.m_cmd_xac_nhan_don_hang.Name = "m_cmd_xac_nhan_don_hang";
             this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(106, 25);
-            this.m_cmd_xac_nhan_don_hang.TabIndex = 20;
+            this.m_cmd_xac_nhan_don_hang.TabIndex = 14;
             this.m_cmd_xac_nhan_don_hang.Text = "Xác nhận";
             this.m_cmd_xac_nhan_don_hang.Click += new System.EventHandler(this.m_cmd_xac_nhan_don_hang_Click);
             // 
@@ -578,7 +578,7 @@
             this.m_cbo_trang_thai_don_hang.Location = new System.Drawing.Point(127, 5);
             this.m_cbo_trang_thai_don_hang.Name = "m_cbo_trang_thai_don_hang";
             this.m_cbo_trang_thai_don_hang.Size = new System.Drawing.Size(215, 21);
-            this.m_cbo_trang_thai_don_hang.TabIndex = 17;
+            this.m_cbo_trang_thai_don_hang.TabIndex = 13;
             // 
             // m_cmd_tu_choi
             // 
@@ -586,7 +586,7 @@
             this.m_cmd_tu_choi.Location = new System.Drawing.Point(789, 3);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
             this.m_cmd_tu_choi.Size = new System.Drawing.Size(106, 25);
-            this.m_cmd_tu_choi.TabIndex = 21;
+            this.m_cmd_tu_choi.TabIndex = 15;
             this.m_cmd_tu_choi.Text = "&Từ chối ";
             this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);
             // 
@@ -596,7 +596,7 @@
             this.m_cmd_thoat.Location = new System.Drawing.Point(1013, 3);
             this.m_cmd_thoat.Name = "m_cmd_thoat";
             this.m_cmd_thoat.Size = new System.Drawing.Size(106, 25);
-            this.m_cmd_thoat.TabIndex = 22;
+            this.m_cmd_thoat.TabIndex = 16;
             this.m_cmd_thoat.Text = "Thoát(ESC)";
             this.m_cmd_thoat.Click += new System.EventHandler(this.m_cmd_thoat_Click);
             // 
@@ -641,6 +641,7 @@
             // 
             // m_dat_thoi_diem_can_hoan_thanh
             // 
+            this.m_dat_thoi_diem_can_hoan_thanh.Checked = false;
             this.m_dat_thoi_diem_can_hoan_thanh.CustomFormat = "dd/MM/yyyy HH:mm:ss:tt";
             this.m_dat_thoi_diem_can_hoan_thanh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_dat_thoi_diem_can_hoan_thanh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -651,6 +652,7 @@
             this.m_dat_thoi_diem_can_hoan_thanh.Size = new System.Drawing.Size(153, 20);
             this.m_dat_thoi_diem_can_hoan_thanh.TabIndex = 5;
             this.m_dat_thoi_diem_can_hoan_thanh.Value = new System.DateTime(2015, 8, 30, 0, 0, 0, 0);
+            this.m_dat_thoi_diem_can_hoan_thanh.ValueChanged += new System.EventHandler(this.format_controll_dattime);
             // 
             // m_txt_dien_thoai
             // 
@@ -857,7 +859,7 @@
             this.m_cbo_thoi_gian_hoan_thanh.Location = new System.Drawing.Point(87, 17);
             this.m_cbo_thoi_gian_hoan_thanh.Name = "m_cbo_thoi_gian_hoan_thanh";
             this.m_cbo_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(191, 23);
-            this.m_cbo_thoi_gian_hoan_thanh.TabIndex = 0;
+            this.m_cbo_thoi_gian_hoan_thanh.TabIndex = 10;
             this.m_cbo_thoi_gian_hoan_thanh.SelectedIndexChanged += new System.EventHandler(this.load_data_2_thoi_diem_can_hoan_thanh);
             // 
             // groupBox5
@@ -994,7 +996,7 @@
             this.m_cbo_phuong_thuc_dat_hang.Location = new System.Drawing.Point(12, 64);
             this.m_cbo_phuong_thuc_dat_hang.Name = "m_cbo_phuong_thuc_dat_hang";
             this.m_cbo_phuong_thuc_dat_hang.Size = new System.Drawing.Size(164, 23);
-            this.m_cbo_phuong_thuc_dat_hang.TabIndex = 18;
+            this.m_cbo_phuong_thuc_dat_hang.TabIndex = 12;
             // 
             // m_cbo_nguoi_nhan_dat_hang
             // 
@@ -1226,7 +1228,7 @@
             this.m_txt_phan_hoi_tu_dvmc.Multiline = true;
             this.m_txt_phan_hoi_tu_dvmc.Name = "m_txt_phan_hoi_tu_dvmc";
             this.m_txt_phan_hoi_tu_dvmc.Size = new System.Drawing.Size(554, 39);
-            this.m_txt_phan_hoi_tu_dvmc.TabIndex = 15;
+            this.m_txt_phan_hoi_tu_dvmc.TabIndex = 11;
             this.m_txt_phan_hoi_tu_dvmc.Text = "Tiếp nhận";
             // 
             // m_grc_user_don_hang
@@ -1236,7 +1238,7 @@
             this.m_grc_user_don_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_user_don_hang.MainView = this.m_grv_user_don_hang;
             this.m_grc_user_don_hang.Name = "m_grc_user_don_hang";
-            this.m_grc_user_don_hang.Size = new System.Drawing.Size(524, 624);
+            this.m_grc_user_don_hang.Size = new System.Drawing.Size(524, 577);
             this.m_grc_user_don_hang.TabIndex = 0;
             this.m_grc_user_don_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_user_don_hang});
@@ -1422,7 +1424,7 @@
             // KHACH_HANG
             // 
             this.KHACH_HANG.Caption = "khách hàng";
-            this.KHACH_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.KHACH_HANG.FieldName = "EMAIL";
             this.KHACH_HANG.FieldNameSortGroup = "HO_TEN_USER_DAT_HANG";
             this.KHACH_HANG.Name = "KHACH_HANG";
             this.KHACH_HANG.Visible = true;
@@ -1473,7 +1475,7 @@
             this.dockPanel2_Container.Controls.Add(this.m_grc_user_don_hang);
             this.dockPanel2_Container.Location = new System.Drawing.Point(4, 23);
             this.dockPanel2_Container.Name = "dockPanel2_Container";
-            this.dockPanel2_Container.Size = new System.Drawing.Size(524, 624);
+            this.dockPanel2_Container.Size = new System.Drawing.Size(524, 577);
             this.dockPanel2_Container.TabIndex = 0;
             // 
             // tableLayoutPanel1

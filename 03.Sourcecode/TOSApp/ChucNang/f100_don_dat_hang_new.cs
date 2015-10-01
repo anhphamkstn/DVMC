@@ -16,6 +16,8 @@ using DevExpress.XtraBars.Docking;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using IPCOREDS.CDBNames;
+using System.Globalization;
+using System.Threading;
 
 
 
@@ -86,7 +88,7 @@ namespace TOSApp.ChucNang
 
         private void load_data_2_m_cbo_phuong_thuc_dat_hang()
         {
-            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN_NGAN", " where ID_LOAI_TU_DIEN = 18 ", WinFormControls.eTAT_CA.NO, m_cbo_phuong_thuc_dat_hang);
+            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN_NGAN", " where ID_LOAI_TU_DIEN = 18  order by id desc", WinFormControls.eTAT_CA.NO, m_cbo_phuong_thuc_dat_hang);
         }
 
         private void load_data_2_dc_dich_vu()
@@ -1141,6 +1143,13 @@ namespace TOSApp.ChucNang
                 load_data_to_selected_so_dien_thoai(v_us);
                 load_data_2_grid_khach_hang_don_hang();
             }
+        }
+
+        private void format_controll_dattime(object sender, EventArgs e)
+        {
+            CultureInfo ci = new CultureInfo(Thread.CurrentThread.CurrentCulture.Name);
+            ci.DateTimeFormat.ShortDatePattern = "dd:MM:yyyy HH:mm:ss:tt";
+            Thread.CurrentThread.CurrentCulture = ci;
         }
 
     }

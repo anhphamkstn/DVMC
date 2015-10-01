@@ -973,5 +973,4 @@ namespace IPCOREDS.CDBNames
         public const string DIEN_THOAI = "DIEN_THOAI";
         public const string EMAIL = "EMAIL";
     }
-
 }

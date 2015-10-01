@@ -314,7 +314,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Họ tên User đặt hàng";
-            this.gridColumn2.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.gridColumn2.FieldName = "EMAIL";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -413,7 +413,7 @@
             this.ClientSize = new System.Drawing.Size(1213, 344);
             this.Controls.Add(this.panel4);
             this.Name = "f117_ds_tat_ca_don_dat_hang";
-            this.Text = "f117_Danh sách tất cả đơn hàng";
+            this.Text = "f117_Tất cả các đơn hàng đang xử lý";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

@@ -62,11 +62,11 @@ namespace TOSApp.ChucNang
             for (int i = 0; i < v_ds.Tables[0].Rows.Count; i++)
             {
                 US_GD_DAT_HANG v_us_gd_dat_hang = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i][0].ToString()));
-                DateTime v_thoi_gian_hoan_thanh =v_us_gd_dat_hang.datTHOI_GIAN_HOAN_THANH.AddDays(3);
+                DateTime v_thoi_gian_hoan_thanh = v_us_gd_dat_hang.datTHOI_GIAN_HOAN_THANH.AddDays(3);
                 if (System.DateTime.Compare(v_thoi_gian_hoan_thanh, System.DateTime.Now) == -1)
                 {
                     v_us_gd_dat_hang.dcID_DANH_GIA_TU_USER_DAT_HANG = 124;
-                    v_us.Update();
+                    v_us_gd_dat_hang.Update();
                 }
             }
         }

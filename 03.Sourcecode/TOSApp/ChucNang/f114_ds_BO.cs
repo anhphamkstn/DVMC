@@ -62,10 +62,16 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where ID_LOAI_THAO_TAC in (296,295) and ID_NGUOI_NHAN_THAO_TAC is not null and  THAO_TAC_HET_HAN_YN = 'N' and ID_DON_HANG=" + m_us.dcID_DON_HANG);
+            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where ID_LOAI_THAO_TAC in (296,295)  and  THAO_TAC_HET_HAN_YN = 'N' and ID_DON_HANG=" + m_us.dcID_DON_HANG);
             for (int i= 0; i < v_ds.Tables[0].Rows.Count; i++)
             {
-                m_lst_BO_da_duoc_dieu_phoi.Add(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i]["ID_NGUOI_NHAN_THAO_TAC"].ToString()));
+                if (CIPConvert.ToDecimal( v_ds.Tables[0].Rows[i]["ID_LOAI_THAO_TAC"].ToString()) == 295)
+                {
+                    m_lst_BO_da_duoc_dieu_phoi.Add(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i]["ID_NGUOI_NHAN_THAO_TAC"].ToString()));
+                } else
+                {
+                m_lst_BO_da_duoc_dieu_phoi.Add(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i]["ID_NGUOI_TAO_THAO_TAC"].ToString()));
+                }
             }
         }
 

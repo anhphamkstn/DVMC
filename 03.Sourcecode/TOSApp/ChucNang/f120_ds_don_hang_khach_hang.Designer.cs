@@ -237,7 +237,7 @@
             // HO_TEN_USER_DAT_HANG
             // 
             this.HO_TEN_USER_DAT_HANG.Caption = "NGƯỜI ĐẶT HÀNG";
-            this.HO_TEN_USER_DAT_HANG.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.HO_TEN_USER_DAT_HANG.FieldName = "EMAIL";
             this.HO_TEN_USER_DAT_HANG.Name = "HO_TEN_USER_DAT_HANG";
             this.HO_TEN_USER_DAT_HANG.Visible = true;
             this.HO_TEN_USER_DAT_HANG.VisibleIndex = 1;

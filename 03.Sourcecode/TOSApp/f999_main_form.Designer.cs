@@ -132,6 +132,7 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
+            this.m_cmd_khach_hang = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -705,6 +706,7 @@
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.ApplicationIcon = global::TOSApp.Properties.Resources.call;
             this.ribbonControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -764,9 +766,10 @@
             this.m_cmd_ds_da_danh_gia,
             this.m_cmd_tm_ds_don_hang_da_danh_gia,
             this.m_cmd_pm_ds_don_hang_da_danh_gia,
-            this.m_cmd_tm_ds_tat_ca_don_hang});
+            this.m_cmd_tm_ds_tat_ca_don_hang,
+            this.m_cmd_khach_hang});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 64;
+            this.ribbonControl1.MaxItemId = 65;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -1020,6 +1023,12 @@
             this.m_timer_imcoming_call.Interval = 3000;
             this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // m_cmd_khach_hang
+            // 
+            this.m_cmd_khach_hang.Caption = "Khách hàng";
+            this.m_cmd_khach_hang.Id = 64;
+            this.m_cmd_khach_hang.Name = "m_cmd_khach_hang";
+            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -1143,6 +1152,7 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_pm_ds_don_hang_da_danh_gia;
         private DevExpress.XtraBars.BarButtonItem m_cmd_tm_ds_tat_ca_don_hang;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_tm_ds_tat_ca_don_hang;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_khach_hang;
 
 	}
 }

@@ -607,10 +607,14 @@ namespace TOSApp
             decimal deadline_id = 1;
             try
             {
-                f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
-                v_f.MdiParent = this;
+               
+                     f117_ds_tat_ca_don_dat_hang v_TD_cap_nhat_deadline = new f117_ds_tat_ca_don_dat_hang();
+                      v_TD_cap_nhat_deadline.MdiParent = this;
+                    v_TD_cap_nhat_deadline.display_for_refurse_dealine(deadline_id);
+               
 
-                v_f.display_for_refurse_dealine(deadline_id);
+
+               
             }
             catch (Exception v_e)
             {
