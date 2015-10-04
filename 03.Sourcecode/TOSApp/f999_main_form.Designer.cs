@@ -986,7 +986,6 @@
             // m_rib_dm_email
             // 
             this.m_rib_dm_email.ItemLinks.Add(this.m_cmd_dm_email);
-            this.m_rib_dm_email.ItemLinks.Add(this.barButtonItem9);
             this.m_rib_dm_email.Name = "m_rib_dm_email";
             this.m_rib_dm_email.Text = "Show";
             // 
