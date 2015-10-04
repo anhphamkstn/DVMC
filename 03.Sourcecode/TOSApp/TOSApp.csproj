@@ -279,12 +279,6 @@
     <Compile Include="BaoCao\f520_BAO_CAO_XU_LI.Designer.cs">
       <DependentUpon>f520_BAO_CAO_XU_LI.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\f0000_gd_dat_hang_gd_log_dat_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f0000_gd_dat_hang_gd_log_dat_hang.designer.cs">
-      <DependentUpon>f0000_gd_dat_hang_gd_log_dat_hang.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChucNang\f100_don_dat_hang_new.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -465,12 +459,6 @@
     <Compile Include="ChucNang\F345_danh_sach_cuoc_goi.Designer.cs">
       <DependentUpon>F345_danh_sach_cuoc_goi.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="DanhMuc\f100_dm_cau_hoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -612,9 +600,6 @@
     <EmbeddedResource Include="BaoCao\f520_BAO_CAO_XU_LI.resx">
       <DependentUpon>f520_BAO_CAO_XU_LI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f0000_gd_dat_hang_gd_log_dat_hang.resx">
-      <DependentUpon>f0000_gd_dat_hang_gd_log_dat_hang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f100_don_dat_hang_new.resx">
       <DependentUpon>f100_don_dat_hang_new.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -705,9 +690,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\F345_danh_sach_cuoc_goi.resx">
       <DependentUpon>F345_danh_sach_cuoc_goi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f100_dm_cau_hoi.resx">
       <DependentUpon>f100_dm_cau_hoi.cs</DependentUpon>
