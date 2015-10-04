@@ -32,6 +32,7 @@ namespace TOSApp.ChucNang
             kieu_load_form = i;
             load_data_2_grid();
             format_controll_for_each_user(us_user.dcIDNhom);
+            
         }
 
         private void format_controll_for_each_user(decimal p)
@@ -95,7 +96,7 @@ namespace TOSApp.ChucNang
             LOAI_THAO_TAC_LOG.Visible = false;
             NGAY_LAP_THAO_TAC_LOG.Visible = true;
             GHI_CHU.Visible = false;
-  
+            
         }
 
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();

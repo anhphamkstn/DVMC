@@ -28,9 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -120,6 +119,7 @@
             this.m_cmd_bo_pm_td_dich_vu = new DevExpress.XtraBars.BarButtonItem();
             this.m_baritem_dang_xuat = new DevExpress.XtraBars.BarSubItem();
             this.m_cmd_ds_don_hang_da = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.m_rbc_ls_giao_dich = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -131,7 +131,7 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
+            this.m_timer_imcoming_call = new System.Windows.Forms.Timer();
             this.m_cmd_khach_hang = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
@@ -937,6 +937,14 @@
             this.m_cmd_ds_don_hang_da.Id = 47;
             this.m_cmd_ds_don_hang_da.Name = "m_cmd_ds_don_hang_da";
             // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Danh mục cuộc gọi";
+            this.barButtonItem9.Id = 64;
+            this.barButtonItem9.LargeGlyph = global::TOSApp.Properties.Resources.telephone;
+            this.barButtonItem9.Name = "barButtonItem9";
+            this.barButtonItem9.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem9_ItemClick);
+            // 
             // m_rbc_ls_giao_dich
             // 
             this.m_rbc_ls_giao_dich.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -980,6 +988,7 @@
             // m_rib_dm_email
             // 
             this.m_rib_dm_email.ItemLinks.Add(this.m_cmd_dm_email);
+            this.m_rib_dm_email.ItemLinks.Add(this.barButtonItem9);
             this.m_rib_dm_email.Name = "m_rib_dm_email";
             this.m_rib_dm_email.Text = "Show";
             // 

@@ -876,6 +876,20 @@ namespace TOSApp
             }
         }
 
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                F345_danh_sach_cuoc_goi v_f = new F345_danh_sach_cuoc_goi();
+                v_f.MdiParent = this;
+                v_f.Show();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
         
 
 
