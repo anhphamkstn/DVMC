@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f100_don_dat_hang_new));
             this.label1 = new System.Windows.Forms.Label();
             this.m_txt_ma_don_hang = new System.Windows.Forms.TextBox();
@@ -58,7 +57,7 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.m_cbo_user_nhan_vien_dat_hang = new System.Windows.Forms.ComboBox();
-            this.ImageList = new System.Windows.Forms.ImageList(this.components);
+            this.ImageList = new System.Windows.Forms.ImageList();
             this.m_checkbox_m2_m3 = new System.Windows.Forms.CheckBox();
             this.m_dat_thoi_diem_can_hoan_thanh = new System.Windows.Forms.DateTimePicker();
             this.m_txt_dien_thoai = new System.Windows.Forms.TextBox();
@@ -82,7 +81,7 @@
             this.NOI_DUNG_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TEN_LOAI_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.KHACH_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.dockManager = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.dockManager = new DevExpress.XtraBars.Docking.DockManager();
             this.m_docmanager_don_hang = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.m_dp_don_hang = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel2_Container = new DevExpress.XtraBars.Docking.ControlContainer();
@@ -223,7 +222,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.62543F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.46311F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.91146F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 252F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 254F));
             this.tableLayoutPanel6.Controls.Add(this.panel7, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel6, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel5, 0, 0);
@@ -243,7 +242,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(544, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(325, 29);
+            this.panel7.Size = new System.Drawing.Size(324, 29);
             this.panel7.TabIndex = 2;
             // 
             // panel14
@@ -252,7 +251,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(56, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(269, 29);
+            this.panel14.Size = new System.Drawing.Size(268, 29);
             this.panel14.TabIndex = 1;
             // 
             // m_cbo_dich_vu
@@ -262,7 +261,7 @@
             this.m_cbo_dich_vu.FormattingEnabled = true;
             this.m_cbo_dich_vu.Location = new System.Drawing.Point(0, 0);
             this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
-            this.m_cbo_dich_vu.Size = new System.Drawing.Size(269, 22);
+            this.m_cbo_dich_vu.Size = new System.Drawing.Size(268, 22);
             this.m_cbo_dich_vu.TabIndex = 8;
             this.m_cbo_dich_vu.SelectedIndexChanged += new System.EventHandler(this.load_data_2_thoi_gian_can_hoan_thanh);
             // 
@@ -388,9 +387,9 @@
             this.panel8.Controls.Add(this.panel15);
             this.panel8.Controls.Add(this.label12);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(875, 3);
+            this.panel8.Location = new System.Drawing.Point(874, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(248, 29);
+            this.panel8.Size = new System.Drawing.Size(249, 29);
             this.panel8.TabIndex = 3;
             // 
             // panel15
@@ -399,7 +398,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(46, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(202, 29);
+            this.panel15.Size = new System.Drawing.Size(203, 29);
             this.panel15.TabIndex = 0;
             // 
             // m_searchLookUpEdit_dv
@@ -413,7 +412,7 @@
             this.m_searchLookUpEdit_dv.Properties.DisplayMember = "TEN_YEU_CAU";
             this.m_searchLookUpEdit_dv.Properties.ValueMember = "ID";
             this.m_searchLookUpEdit_dv.Properties.View = this.m_searchLookUpEdit_dich_vu;
-            this.m_searchLookUpEdit_dv.Size = new System.Drawing.Size(202, 20);
+            this.m_searchLookUpEdit_dv.Size = new System.Drawing.Size(203, 20);
             this.m_searchLookUpEdit_dv.TabIndex = 35;
             this.m_searchLookUpEdit_dv.EditValueChanged += new System.EventHandler(this.fill_data_to_dich_vu);
             // 
@@ -1383,7 +1382,7 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.48227F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.51773F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 294F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 274F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
             this.tableLayoutPanel9.Controls.Add(this.m_grb_thoi_gian_hoan_thanh, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.groupBox1, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.groupBox3, 2, 0);
@@ -1401,7 +1400,7 @@
             this.groupBox1.Controls.Add(this.m_cbo_nguoi_nhan_dat_hang);
             this.groupBox1.Location = new System.Drawing.Point(298, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(262, 54);
+            this.groupBox1.Size = new System.Drawing.Size(261, 54);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Người nhận đặt hàng";
@@ -1420,7 +1419,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.m_cbo_phuong_thuc_dat_hang);
-            this.groupBox3.Location = new System.Drawing.Point(566, 3);
+            this.groupBox3.Location = new System.Drawing.Point(565, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(288, 54);
             this.groupBox3.TabIndex = 11;
@@ -1440,7 +1439,7 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.m_cmd_danh_sach_nguoi_xu_ly);
-            this.groupBox6.Location = new System.Drawing.Point(860, 3);
+            this.groupBox6.Location = new System.Drawing.Point(859, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(264, 54);
             this.groupBox6.TabIndex = 11;
