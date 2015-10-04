@@ -359,6 +359,8 @@
             // THOI_DIEM_CAN_HOAN_THANH
             // 
             this.THOI_DIEM_CAN_HOAN_THANH.Caption = "thời điểm cần hoàn thành";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
@@ -368,6 +370,8 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Thời gian tạo";
+            this.gridColumn9.DisplayFormat.FormatString = "g";
+            this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn9.FieldName = "THOI_GIAN_TAO";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;

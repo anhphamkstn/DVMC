@@ -229,6 +229,8 @@
             // THOI_GIAN_TAO
             // 
             this.THOI_GIAN_TAO.Caption = "THỜI GIAN LẬP THAO TÁC";
+            this.THOI_GIAN_TAO.DisplayFormat.FormatString = "g";
+            this.THOI_GIAN_TAO.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_GIAN_TAO.FieldName = "NGAY_LAP_THAO_TAC";
             this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Visible = true;

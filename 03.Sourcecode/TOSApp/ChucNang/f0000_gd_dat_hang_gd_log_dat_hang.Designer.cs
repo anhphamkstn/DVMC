@@ -396,6 +396,8 @@
             // THOI_DIEM_CAN_HOAN_THANH
             // 
             this.THOI_DIEM_CAN_HOAN_THANH.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
@@ -432,6 +434,8 @@
             // THOI_GIAN_TAO
             // 
             this.THOI_GIAN_TAO.Caption = "THỜI GIAN TẠO";
+            this.THOI_GIAN_TAO.DisplayFormat.FormatString = "g";
+            this.THOI_GIAN_TAO.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_GIAN_TAO.FieldName = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Visible = true;
@@ -486,6 +490,8 @@
             // NGAY_LAP_THAO_TAC_LOG
             // 
             this.NGAY_LAP_THAO_TAC_LOG.Caption = "NGÀY LẬP THAO TÁC";
+            this.NGAY_LAP_THAO_TAC_LOG.DisplayFormat.FormatString = "g";
+            this.NGAY_LAP_THAO_TAC_LOG.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.NGAY_LAP_THAO_TAC_LOG.FieldName = "NGAY_LAP_THAO_TAC";
             this.NGAY_LAP_THAO_TAC_LOG.Name = "NGAY_LAP_THAO_TAC_LOG";
             this.NGAY_LAP_THAO_TAC_LOG.Visible = true;
@@ -1127,7 +1133,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "f0000_gd_dat_hang_gd_log_dat_hang";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "f0000_Giao dịch";
+            this.Text = resources.GetString("$this.Text");
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).EndInit();
