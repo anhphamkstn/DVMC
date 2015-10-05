@@ -894,6 +894,20 @@ namespace TOSApp.ChucNang
             e.DisplayText = Convert.ToString(e.RowHandle + 1);
             }
         }
+
+        private void m_grv_gd_dat_hang_gd_log_dat_hang_PopupMenuShowing(object sender, PopupMenuShowingEventArgs e)
+        {
+            GridView view = sender as GridView;
+            // Check whether a row is right-clicked.
+            if (e.MenuType == DevExpress.XtraGrid.Views.Grid.GridMenuType.Row)
+            {
+                int rowHandle = e.HitInfo.RowHandle;
+                // Delete existing menu items, if any.
+                e.Menu.Items.Clear();
+                // Add a submenu with a single menu item.
+                e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
+            }
+        }
     
     }
 }

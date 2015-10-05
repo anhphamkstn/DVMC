@@ -45,7 +45,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 30);
+            this.label1.Location = new System.Drawing.Point(46, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // m_txt_ma_don_hang
             // 
             this.m_txt_ma_don_hang.AutoSize = true;
-            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(163, 30);
+            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(196, 20);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
             this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 14);
             this.m_txt_ma_don_hang.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.groupBox1.Controls.Add(this.m_rdb_hoan_thanh);
             this.groupBox1.Controls.Add(this.m_rdb_chua_hoan_thanh);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(-7, 71);
+            this.groupBox1.Location = new System.Drawing.Point(26, 61);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(353, 211);
             this.groupBox1.TabIndex = 2;
@@ -97,10 +97,10 @@
             // 
             // m_txt_nhan_xet
             // 
-            this.m_txt_nhan_xet.Location = new System.Drawing.Point(15, 96);
+            this.m_txt_nhan_xet.Location = new System.Drawing.Point(9, 96);
             this.m_txt_nhan_xet.Multiline = true;
             this.m_txt_nhan_xet.Name = "m_txt_nhan_xet";
-            this.m_txt_nhan_xet.Size = new System.Drawing.Size(305, 102);
+            this.m_txt_nhan_xet.Size = new System.Drawing.Size(338, 102);
             this.m_txt_nhan_xet.TabIndex = 2;
             // 
             // label2
@@ -115,9 +115,9 @@
             // m_cmd_OK
             // 
             this.m_cmd_OK.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_OK.Image")));
-            this.m_cmd_OK.Location = new System.Drawing.Point(156, 304);
+            this.m_cmd_OK.Location = new System.Drawing.Point(213, 286);
             this.m_cmd_OK.Name = "m_cmd_OK";
-            this.m_cmd_OK.Size = new System.Drawing.Size(75, 24);
+            this.m_cmd_OK.Size = new System.Drawing.Size(75, 32);
             this.m_cmd_OK.TabIndex = 3;
             this.m_cmd_OK.Text = "OK";
             this.m_cmd_OK.Click += new System.EventHandler(this.m_cmd_OK_Click);
@@ -125,9 +125,9 @@
             // m_cmd_Cancel
             // 
             this.m_cmd_Cancel.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_Cancel.Image")));
-            this.m_cmd_Cancel.Location = new System.Drawing.Point(238, 304);
+            this.m_cmd_Cancel.Location = new System.Drawing.Point(294, 286);
             this.m_cmd_Cancel.Name = "m_cmd_Cancel";
-            this.m_cmd_Cancel.Size = new System.Drawing.Size(85, 27);
+            this.m_cmd_Cancel.Size = new System.Drawing.Size(85, 32);
             this.m_cmd_Cancel.TabIndex = 3;
             this.m_cmd_Cancel.Text = "Cancel";
             this.m_cmd_Cancel.Click += new System.EventHandler(this.m_cmd_Cancel_Click);
@@ -138,7 +138,7 @@
             this.m_chk_gui_email_YN.Checked = true;
             this.m_chk_gui_email_YN.CheckState = System.Windows.Forms.CheckState.Checked;
             this.m_chk_gui_email_YN.Enabled = false;
-            this.m_chk_gui_email_YN.Location = new System.Drawing.Point(2, 310);
+            this.m_chk_gui_email_YN.Location = new System.Drawing.Point(41, 294);
             this.m_chk_gui_email_YN.Name = "m_chk_gui_email_YN";
             this.m_chk_gui_email_YN.Size = new System.Drawing.Size(148, 18);
             this.m_chk_gui_email_YN.TabIndex = 3;
@@ -149,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 344);
+            this.ClientSize = new System.Drawing.Size(424, 344);
             this.Controls.Add(this.m_chk_gui_email_YN);
             this.Controls.Add(this.m_cmd_Cancel);
             this.Controls.Add(this.m_cmd_OK);

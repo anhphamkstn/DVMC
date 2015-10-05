@@ -107,7 +107,8 @@ namespace TOSApp
         //    }
         //}
 
-        public static void load_data_to_auto_complete_source(string ip_str_table_name, string ip_str_column_name, TextBox ip_txt) {
+        public static void load_data_to_auto_complete_source(string ip_str_table_name, string ip_str_column_name, TextBox ip_txt)
+        {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             DataTable v_dt = new DataTable();
@@ -119,6 +120,8 @@ namespace TOSApp
                 ip_txt.AutoCompleteCustomSource.Add(v_dr[ip_str_column_name].ToString());
             }
         }
+
+        
 
         public static void load_data_to_combobox(string ip_str_table_name, string ip_str_value_field, string ip_str_display_field, string ip_str_condition, eTAT_CA ip_e_tat_ca,ComboBox ip_cbo)
         {
@@ -145,6 +148,21 @@ namespace TOSApp
                 ip_cbo.SelectedIndex = 0;
             }
         }
+
+        //public static DXMenuItem CreateRowSubMenu(GridView view, int rowHandle)
+        //{
+        //    m_grv = view;
+        //    DXSubMenuItem subMenu = new DXSubMenuItem("Báo cáo");
+        //    DXMenuItem menuItemReportXLS = new DXMenuItem("&Báo cáo XLS", new EventHandler(ExportXLSClick));
+        //    DXMenuItem menuItemReportPDF = new DXMenuItem("&Báo cáo PDF", new EventHandler(ExportPDFClick));
+        //    DXMenuItem menuItemReportHTML = new DXMenuItem("&Báo cáo HTML", new EventHandler(ExportHTMLClick));
+        //    DXMenuItem menuItemReportDOC = new DXMenuItem("&Báo cáo TXT", new EventHandler(ExportDOCClick));
+        //    subMenu.Items.Add(menuItemReportXLS);
+        //    subMenu.Items.Add(menuItemReportPDF);
+        //    subMenu.Items.Add(menuItemReportHTML);
+        //    subMenu.Items.Add(menuItemReportDOC);
+        //    return subMenu;
+        //}
 
         public static void load_data_to_combobox_with_query(ComboBox ip_cbo, string ip_str_value_field, string ip_str_display_field, eTAT_CA ip_e_tat_ca, string ip_query)
         {
@@ -262,6 +280,8 @@ namespace TOSApp
         #endregion
     }
 
+
+
     public class US_DUNG_CHUNG : US_Object {
         public void FillDatasetWithProc(DataSet op_ds, string ip_str_table_name, string ip_str_column_name)
         {
@@ -373,6 +393,10 @@ namespace TOSApp
             v_cstore.ExecuteCommand(this);
             return (DateTime)v_result.Value;
         }
+
+        
+
+
        
     }
 

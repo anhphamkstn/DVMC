@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using IPCOREUS;
 using IP.Core.IPCommon;
+using DevExpress.XtraGrid.Views.Grid;
 namespace TOSApp.ChucNang
 {
     public partial class f122_blacklist : Form
@@ -49,6 +50,26 @@ namespace TOSApp.ChucNang
            v_us.datNGAY_REMOVE = System.DateTime.Now;
            v_us.Update();
            load_data_2_grid();
+        }
+
+        private void m_grv_ds_blacklist_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
+
+        private void m_grv_ds_blacklist_PopupMenuShowing(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e)
+        {
+            GridView view = sender as GridView;
+            // Check whether a row is right-clicked.
+            if (e.MenuType == DevExpress.XtraGrid.Views.Grid.GridMenuType.Row)
+            {
+                int rowHandle = e.HitInfo.RowHandle;
+                // Delete existing menu items, if any.
+                e.Menu.Items.Clear();
+                // Add a submenu with a single menu item.
+                e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
+            }
         }
 
 

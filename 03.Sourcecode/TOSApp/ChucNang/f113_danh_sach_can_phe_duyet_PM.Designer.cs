@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f113_danh_sach_can_phe_duyet_PM));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_cmd_khong_duyet = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_duyet = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_khong_duyet = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.m_grc_danh_sach_can_phe_duyet_PM = new DevExpress.XtraGrid.GridControl();
             this.m_grv_danh_sach_can_phe_duyet_PM = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -59,16 +59,6 @@
             this.panel1.Size = new System.Drawing.Size(750, 38);
             this.panel1.TabIndex = 0;
             // 
-            // m_cmd_khong_duyet
-            // 
-            this.m_cmd_khong_duyet.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_khong_duyet.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_khong_duyet.Image")));
-            this.m_cmd_khong_duyet.Location = new System.Drawing.Point(616, 0);
-            this.m_cmd_khong_duyet.Name = "m_cmd_khong_duyet";
-            this.m_cmd_khong_duyet.Size = new System.Drawing.Size(134, 38);
-            this.m_cmd_khong_duyet.TabIndex = 0;
-            this.m_cmd_khong_duyet.Text = "Không phê duyệt";
-            // 
             // m_cmd_duyet
             // 
             this.m_cmd_duyet.Dock = System.Windows.Forms.DockStyle.Right;
@@ -79,6 +69,16 @@
             this.m_cmd_duyet.TabIndex = 0;
             this.m_cmd_duyet.Text = "Duyệt";
             this.m_cmd_duyet.Click += new System.EventHandler(this.m_cmd_duyet_Click);
+            // 
+            // m_cmd_khong_duyet
+            // 
+            this.m_cmd_khong_duyet.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_khong_duyet.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_khong_duyet.Image")));
+            this.m_cmd_khong_duyet.Location = new System.Drawing.Point(616, 0);
+            this.m_cmd_khong_duyet.Name = "m_cmd_khong_duyet";
+            this.m_cmd_khong_duyet.Size = new System.Drawing.Size(134, 38);
+            this.m_cmd_khong_duyet.TabIndex = 0;
+            this.m_cmd_khong_duyet.Text = "Không phê duyệt";
             // 
             // panel2
             // 
@@ -103,121 +103,116 @@
             // 
             // m_grv_danh_sach_can_phe_duyet_PM
             // 
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Beige;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButton.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Empty.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Empty.Options.UseBackColor = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.EvenRow.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterCloseButton.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterPanel.BackColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterPanel.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FilterPanel.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FixedLine.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(133)))), ((int)(((byte)(195)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FixedLine.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedCell.BackColor = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedCell.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.BackColor = System.Drawing.Color.Aquamarine;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(109)))), ((int)(((byte)(189)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(139)))), ((int)(((byte)(206)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FocusedRow.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.BorderColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.Options.UseBorderColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupButton.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupPanel.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupPanel.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.GroupRow.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.Maroon;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(201)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(201)))), ((int)(((byte)(254)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.Options.UseBorderColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.Options.UseImage = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(170)))), ((int)(((byte)(225)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(155)))), ((int)(((byte)(215)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HorzLine.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HorzLine.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HorzLine.Options.UseBackColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.HorzLine.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.Options.UseBorderColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.OddRow.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.Font = new System.Drawing.Font("Verdana", 7.5F);
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(90)))));
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.Options.UseBackColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.Options.UseBorderColor = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(155)))), ((int)(((byte)(215)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.Options.UseFont = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Preview.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Row.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Row.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Row.ForeColor = System.Drawing.Color.Black;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.Row.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.RowSeparator.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.RowSeparator.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.RowSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.RowSeparator.Options.UseBackColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.RowSeparator.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.SelectedRow.BackColor = System.Drawing.Color.Aquamarine;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.SelectedRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(155)))), ((int)(((byte)(215)))));
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.SelectedRow.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.SelectedRow.Options.UseForeColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.TopNewRow.Options.UseBackColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.VertLine.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.VertLine.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.VertLine.Options.UseBackColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.VertLine.Options.UseForeColor = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ViewCaption.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_danh_sach_can_phe_duyet_PM.Appearance.ViewCaption.Options.UseBackColor = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.ID,
             this.ID_GD_DAT_HANG,
@@ -234,8 +229,9 @@
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.ShowFooter = true;
-            this.m_grv_danh_sach_can_phe_duyet_PM.PaintStyleName = "MixedXP";
+            this.m_grv_danh_sach_can_phe_duyet_PM.PaintStyleName = "Flat";
             this.m_grv_danh_sach_can_phe_duyet_PM.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_danh_sach_can_phe_duyet_PM_CustomDrawRowIndicator);
+            this.m_grv_danh_sach_can_phe_duyet_PM.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.m_grv_danh_sach_can_phe_duyet_PM_PopupMenuShowing);
             // 
             // ID
             // 

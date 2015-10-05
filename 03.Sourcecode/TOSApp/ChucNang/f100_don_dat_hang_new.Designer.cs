@@ -88,11 +88,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.m_btn_timeline = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_giai_dap_thac_mac = new DevExpress.XtraEditors.SimpleButton();
             this.m_grb_phan_hoi_tu_dvm = new System.Windows.Forms.GroupBox();
             this.m_txt_phan_hoi_tu_dvmc = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.m_grc_lich_su_thuc_hien = new DevExpress.XtraGrid.GridControl();
@@ -118,14 +116,15 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.m_cmd_danh_sach_nguoi_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.m_chk_gui_mail_yn = new System.Windows.Forms.CheckBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.m_cbo_trang_thai_don_hang = new System.Windows.Forms.ComboBox();
             this.m_lbl_trang_thai_don_hang = new System.Windows.Forms.Label();
-            this.m_cmd_xac_nhan_don_hang = new DevExpress.XtraEditors.SimpleButton();
+            this.m_chk_gui_mail_yn = new System.Windows.Forms.CheckBox();
+            this.m_btn_timeline = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_giai_dap_thac_mac = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_thoat = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tu_choi = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_xac_nhan_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.m_grb_loai_dich_vu.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -152,7 +151,6 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel10.SuspendLayout();
             this.m_grb_phan_hoi_tu_dvm.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -172,7 +170,6 @@
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel22.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -222,7 +219,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.62543F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.46311F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.91146F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 264F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271F));
             this.tableLayoutPanel6.Controls.Add(this.panel7, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel6, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel5, 0, 0);
@@ -240,9 +237,9 @@
             this.panel7.Controls.Add(this.panel14);
             this.panel7.Controls.Add(this.panel13);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(537, 3);
+            this.panel7.Location = new System.Drawing.Point(533, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(320, 22);
+            this.panel7.Size = new System.Drawing.Size(318, 22);
             this.panel7.TabIndex = 2;
             // 
             // panel14
@@ -251,7 +248,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(56, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(264, 22);
+            this.panel14.Size = new System.Drawing.Size(262, 22);
             this.panel14.TabIndex = 1;
             // 
             // m_cbo_dich_vu
@@ -262,7 +259,7 @@
             this.m_cbo_dich_vu.FormattingEnabled = true;
             this.m_cbo_dich_vu.Location = new System.Drawing.Point(0, 0);
             this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
-            this.m_cbo_dich_vu.Size = new System.Drawing.Size(264, 22);
+            this.m_cbo_dich_vu.Size = new System.Drawing.Size(262, 22);
             this.m_cbo_dich_vu.TabIndex = 8;
             this.m_cbo_dich_vu.SelectedIndexChanged += new System.EventHandler(this.load_data_2_thoi_gian_can_hoan_thanh);
             // 
@@ -290,9 +287,9 @@
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(258, 3);
+            this.panel6.Location = new System.Drawing.Point(256, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(273, 22);
+            this.panel6.Size = new System.Drawing.Size(271, 22);
             this.panel6.TabIndex = 1;
             // 
             // panel9
@@ -301,7 +298,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(92, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(181, 22);
+            this.panel9.Size = new System.Drawing.Size(179, 22);
             this.panel9.TabIndex = 4;
             // 
             // m_cbo_loai_dich_vu_2
@@ -312,7 +309,7 @@
             this.m_cbo_loai_dich_vu_2.FormattingEnabled = true;
             this.m_cbo_loai_dich_vu_2.Location = new System.Drawing.Point(0, 0);
             this.m_cbo_loai_dich_vu_2.Name = "m_cbo_loai_dich_vu_2";
-            this.m_cbo_loai_dich_vu_2.Size = new System.Drawing.Size(181, 22);
+            this.m_cbo_loai_dich_vu_2.Size = new System.Drawing.Size(179, 22);
             this.m_cbo_loai_dich_vu_2.TabIndex = 7;
             this.m_cbo_loai_dich_vu_2.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_SelectedIndexChanged);
             // 
@@ -342,7 +339,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(249, 22);
+            this.panel5.Size = new System.Drawing.Size(247, 22);
             this.panel5.TabIndex = 0;
             // 
             // panel12
@@ -351,7 +348,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(82, 0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(167, 22);
+            this.panel12.Size = new System.Drawing.Size(165, 22);
             this.panel12.TabIndex = 33;
             // 
             // m_cbo_loai_dich_vu_1
@@ -362,7 +359,7 @@
             this.m_cbo_loai_dich_vu_1.FormattingEnabled = true;
             this.m_cbo_loai_dich_vu_1.Location = new System.Drawing.Point(0, 0);
             this.m_cbo_loai_dich_vu_1.Name = "m_cbo_loai_dich_vu_1";
-            this.m_cbo_loai_dich_vu_1.Size = new System.Drawing.Size(167, 22);
+            this.m_cbo_loai_dich_vu_1.Size = new System.Drawing.Size(165, 22);
             this.m_cbo_loai_dich_vu_1.TabIndex = 6;
             this.m_cbo_loai_dich_vu_1.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_1_SelectedValueChanged);
             // 
@@ -389,9 +386,9 @@
             // 
             this.panel8.Controls.Add(this.panel15);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(863, 3);
+            this.panel8.Location = new System.Drawing.Point(857, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(260, 22);
+            this.panel8.Size = new System.Drawing.Size(266, 22);
             this.panel8.TabIndex = 3;
             // 
             // panel15
@@ -400,7 +397,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(260, 22);
+            this.panel15.Size = new System.Drawing.Size(266, 22);
             this.panel15.TabIndex = 0;
             // 
             // m_searchLookUpEdit_dv
@@ -414,7 +411,7 @@
             this.m_searchLookUpEdit_dv.Properties.DisplayMember = "TEN_YEU_CAU";
             this.m_searchLookUpEdit_dv.Properties.ValueMember = "ID";
             this.m_searchLookUpEdit_dv.Properties.View = this.m_searchLookUpEdit_dich_vu;
-            this.m_searchLookUpEdit_dv.Size = new System.Drawing.Size(260, 20);
+            this.m_searchLookUpEdit_dv.Size = new System.Drawing.Size(266, 20);
             this.m_searchLookUpEdit_dv.TabIndex = 35;
             this.m_searchLookUpEdit_dv.EditValueChanged += new System.EventHandler(this.fill_data_to_dich_vu);
             // 
@@ -667,7 +664,7 @@
             this.m_grb_thoi_gian_hoan_thanh.Font = new System.Drawing.Font("Arial", 9F);
             this.m_grb_thoi_gian_hoan_thanh.Location = new System.Drawing.Point(3, 3);
             this.m_grb_thoi_gian_hoan_thanh.Name = "m_grb_thoi_gian_hoan_thanh";
-            this.m_grb_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(286, 52);
+            this.m_grb_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(287, 52);
             this.m_grb_thoi_gian_hoan_thanh.TabIndex = 10;
             this.m_grb_thoi_gian_hoan_thanh.TabStop = false;
             this.m_grb_thoi_gian_hoan_thanh.Text = "Thời gian cần hoàn thành";
@@ -977,6 +974,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 216F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1132, 216);
             this.tableLayoutPanel5.TabIndex = 13;
             // 
@@ -984,8 +982,8 @@
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.88809F));
-            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel10, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.m_grb_phan_hoi_tu_dvm, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel10, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(569, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -995,38 +993,6 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(560, 210);
             this.tableLayoutPanel7.TabIndex = 39;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.4592F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.5408F));
-            this.tableLayoutPanel10.Controls.Add(this.m_btn_timeline, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.m_cmd_giai_dap_thac_mac, 0, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 160);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(527, 44);
-            this.tableLayoutPanel10.TabIndex = 14;
-            // 
-            // m_btn_timeline
-            // 
-            this.m_btn_timeline.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_timeline.Image")));
-            this.m_btn_timeline.Location = new System.Drawing.Point(289, 3);
-            this.m_btn_timeline.Name = "m_btn_timeline";
-            this.m_btn_timeline.Size = new System.Drawing.Size(161, 32);
-            this.m_btn_timeline.TabIndex = 39;
-            this.m_btn_timeline.Text = "Time line người xử lý";
-            // 
-            // m_cmd_giai_dap_thac_mac
-            // 
-            this.m_cmd_giai_dap_thac_mac.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_giai_dap_thac_mac.Image")));
-            this.m_cmd_giai_dap_thac_mac.Location = new System.Drawing.Point(3, 3);
-            this.m_cmd_giai_dap_thac_mac.Name = "m_cmd_giai_dap_thac_mac";
-            this.m_cmd_giai_dap_thac_mac.Size = new System.Drawing.Size(157, 31);
-            this.m_cmd_giai_dap_thac_mac.TabIndex = 38;
-            this.m_cmd_giai_dap_thac_mac.Text = "Giải đáp thắc mắc";
             // 
             // m_grb_phan_hoi_tu_dvm
             // 
@@ -1052,6 +1018,18 @@
             this.m_txt_phan_hoi_tu_dvmc.Size = new System.Drawing.Size(548, 131);
             this.m_txt_phan_hoi_tu_dvmc.TabIndex = 15;
             this.m_txt_phan_hoi_tu_dvmc.Text = "Tiếp nhận";
+            // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.4592F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.5408F));
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 160);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 1;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(527, 44);
+            this.tableLayoutPanel10.TabIndex = 14;
             // 
             // groupBox4
             // 
@@ -1089,121 +1067,116 @@
             // 
             // m_grv_lich_su_thuc_hien
             // 
-            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Beige;
-            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.ForeColor = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButton.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
             this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.Empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.Empty.BackColor2 = System.Drawing.Color.White;
+            this.m_grv_lich_su_thuc_hien.Appearance.Empty.Options.UseBackColor = true;
+            this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.EvenRow.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.ForeColor = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FilterCloseButton.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.FilterPanel.BackColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.FilterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.FilterPanel.BackColor2 = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.FilterPanel.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FilterPanel.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.FixedLine.BackColor = System.Drawing.Color.Bisque;
+            this.m_grv_lich_su_thuc_hien.Appearance.FixedLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(133)))), ((int)(((byte)(195)))));
             this.m_grv_lich_su_thuc_hien.Appearance.FixedLine.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedCell.BackColor = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedCell.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.BackColor = System.Drawing.Color.Aquamarine;
-            this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(109)))), ((int)(((byte)(189)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(139)))), ((int)(((byte)(206)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FocusedRow.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.BorderColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.Options.UseBorderColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupButton.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupFooter.Options.UseForeColor = true;
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupPanel.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupPanel.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(216)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.GroupRow.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.Maroon;
-            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.White;
+            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(201)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(201)))), ((int)(((byte)(254)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.Options.UseBorderColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.Options.UseFont = true;
             this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.Options.UseImage = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(170)))), ((int)(((byte)(225)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(155)))), ((int)(((byte)(215)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.Options.UseBackColor = true;
+            this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.HideSelectionRow.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HorzLine.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.HorzLine.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.HorzLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_lich_su_thuc_hien.Appearance.HorzLine.Options.UseBackColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.HorzLine.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.OddRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.OddRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.OddRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.OddRow.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.OddRow.Options.UseBorderColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.OddRow.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.Preview.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
             this.m_grv_lich_su_thuc_hien.Appearance.Preview.Font = new System.Drawing.Font("Verdana", 7.5F);
-            this.m_grv_lich_su_thuc_hien.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(90)))));
-            this.m_grv_lich_su_thuc_hien.Appearance.Preview.Options.UseBackColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.Preview.Options.UseBorderColor = true;
+            this.m_grv_lich_su_thuc_hien.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(155)))), ((int)(((byte)(215)))));
             this.m_grv_lich_su_thuc_hien.Appearance.Preview.Options.UseFont = true;
             this.m_grv_lich_su_thuc_hien.Appearance.Preview.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.Row.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.Row.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.Row.ForeColor = System.Drawing.Color.Black;
             this.m_grv_lich_su_thuc_hien.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.Row.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.RowSeparator.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.RowSeparator.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.RowSeparator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.RowSeparator.BackColor2 = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.RowSeparator.Options.UseBackColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.RowSeparator.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.SelectedRow.BackColor = System.Drawing.Color.Aquamarine;
-            this.m_grv_lich_su_thuc_hien.Appearance.SelectedRow.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_lich_su_thuc_hien.Appearance.SelectedRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(155)))), ((int)(((byte)(215)))));
+            this.m_grv_lich_su_thuc_hien.Appearance.SelectedRow.ForeColor = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.SelectedRow.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.SelectedRow.Options.UseForeColor = true;
             this.m_grv_lich_su_thuc_hien.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
             this.m_grv_lich_su_thuc_hien.Appearance.TopNewRow.Options.UseBackColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.VertLine.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_lich_su_thuc_hien.Appearance.VertLine.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_lich_su_thuc_hien.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_lich_su_thuc_hien.Appearance.VertLine.Options.UseBackColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.VertLine.Options.UseForeColor = true;
-            this.m_grv_lich_su_thuc_hien.Appearance.ViewCaption.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_lich_su_thuc_hien.Appearance.ViewCaption.Options.UseBackColor = true;
             this.m_grv_lich_su_thuc_hien.ColumnPanelRowHeight = 25;
             this.m_grv_lich_su_thuc_hien.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
@@ -1218,7 +1191,8 @@
             this.m_grv_lich_su_thuc_hien.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_lich_su_thuc_hien.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_lich_su_thuc_hien.OptionsView.ShowAutoFilterRow = true;
-            this.m_grv_lich_su_thuc_hien.PaintStyleName = "MixedXP";
+            this.m_grv_lich_su_thuc_hien.OptionsView.ShowGroupPanel = false;
+            this.m_grv_lich_su_thuc_hien.PaintStyleName = "Flat";
             this.m_grv_lich_su_thuc_hien.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_lich_su_thuc_hien_CustomDrawRowIndicator);
             // 
             // gridColumn1
@@ -1375,8 +1349,8 @@
             this.tableLayoutPanel9.ColumnCount = 4;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.94346F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.05654F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 286F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282F));
             this.tableLayoutPanel9.Controls.Add(this.m_grb_thoi_gian_hoan_thanh, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.groupBox1, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.groupBox3, 2, 0);
@@ -1393,9 +1367,9 @@
             // 
             this.groupBox1.Controls.Add(this.m_cbo_nguoi_nhan_dat_hang);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(295, 3);
+            this.groupBox1.Location = new System.Drawing.Point(296, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(265, 52);
+            this.groupBox1.Size = new System.Drawing.Size(266, 52);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Người nhận đặt hàng";
@@ -1414,9 +1388,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.m_cbo_phuong_thuc_dat_hang);
-            this.groupBox3.Location = new System.Drawing.Point(566, 3);
+            this.groupBox3.Location = new System.Drawing.Point(568, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(280, 52);
+            this.groupBox3.Size = new System.Drawing.Size(274, 52);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Phương thức đặt hàng";
@@ -1434,7 +1408,7 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.m_cmd_danh_sach_nguoi_xu_ly);
-            this.groupBox6.Location = new System.Drawing.Point(852, 3);
+            this.groupBox6.Location = new System.Drawing.Point(848, 3);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(264, 52);
             this.groupBox6.TabIndex = 11;
@@ -1453,17 +1427,21 @@
             // 
             // tableLayoutPanel8
             // 
-            this.tableLayoutPanel8.ColumnCount = 5;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.92683F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.07317F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tableLayoutPanel8.ColumnCount = 7;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.58704F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.41296F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel8.Controls.Add(this.panel17, 0, 0);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
             this.tableLayoutPanel8.Controls.Add(this.panel22, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.m_cmd_xac_nhan_don_hang, 2, 0);
-            this.tableLayoutPanel8.Controls.Add(this.m_cmd_thoat, 4, 0);
-            this.tableLayoutPanel8.Controls.Add(this.m_cmd_tu_choi, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_chk_gui_mail_yn, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_btn_timeline, 3, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_cmd_giai_dap_thac_mac, 2, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_cmd_thoat, 6, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_cmd_tu_choi, 5, 0);
+            this.tableLayoutPanel8.Controls.Add(this.m_cmd_xac_nhan_don_hang, 4, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 670);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
@@ -1472,34 +1450,15 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1132, 36);
             this.tableLayoutPanel8.TabIndex = 120;
             // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.m_chk_gui_mail_yn);
-            this.panel17.Location = new System.Drawing.Point(437, 3);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(380, 26);
-            this.panel17.TabIndex = 47;
-            // 
-            // m_chk_gui_mail_yn
-            // 
-            this.m_chk_gui_mail_yn.AutoSize = true;
-            this.m_chk_gui_mail_yn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_chk_gui_mail_yn.Enabled = false;
-            this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(0, 0);
-            this.m_chk_gui_mail_yn.Name = "m_chk_gui_mail_yn";
-            this.m_chk_gui_mail_yn.Size = new System.Drawing.Size(161, 26);
-            this.m_chk_gui_mail_yn.TabIndex = 34;
-            this.m_chk_gui_mail_yn.Text = "Gửi mail cho người đặt hàng";
-            this.m_chk_gui_mail_yn.UseVisualStyleBackColor = true;
-            // 
             // panel22
             // 
             this.panel22.Controls.Add(this.m_cbo_trang_thai_don_hang);
             this.panel22.Controls.Add(this.m_lbl_trang_thai_don_hang);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(3, 3);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(428, 25);
-            this.panel22.TabIndex = 46;
+            this.panel22.Size = new System.Drawing.Size(317, 30);
+            this.panel22.TabIndex = 47;
             // 
             // m_cbo_trang_thai_don_hang
             // 
@@ -1508,7 +1467,7 @@
             this.m_cbo_trang_thai_don_hang.FormattingEnabled = true;
             this.m_cbo_trang_thai_don_hang.Location = new System.Drawing.Point(118, 0);
             this.m_cbo_trang_thai_don_hang.Name = "m_cbo_trang_thai_don_hang";
-            this.m_cbo_trang_thai_don_hang.Size = new System.Drawing.Size(310, 22);
+            this.m_cbo_trang_thai_don_hang.Size = new System.Drawing.Size(199, 22);
             this.m_cbo_trang_thai_don_hang.TabIndex = 17;
             // 
             // m_lbl_trang_thai_don_hang
@@ -1523,38 +1482,69 @@
             this.m_lbl_trang_thai_don_hang.TabIndex = 32;
             this.m_lbl_trang_thai_don_hang.Text = "Trạng thái đơn hàng";
             // 
-            // m_cmd_xac_nhan_don_hang
+            // m_chk_gui_mail_yn
             // 
-            this.m_cmd_xac_nhan_don_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_xac_nhan_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xac_nhan_don_hang.Image")));
-            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(823, 3);
-            this.m_cmd_xac_nhan_don_hang.Name = "m_cmd_xac_nhan_don_hang";
-            this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(96, 30);
-            this.m_cmd_xac_nhan_don_hang.TabIndex = 43;
-            this.m_cmd_xac_nhan_don_hang.Text = "Xác nhận";
-            this.m_cmd_xac_nhan_don_hang.Click += new System.EventHandler(this.m_cmd_xac_nhan_don_hang_Click);
+            this.m_chk_gui_mail_yn.AutoSize = true;
+            this.m_chk_gui_mail_yn.Enabled = false;
+            this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(326, 3);
+            this.m_chk_gui_mail_yn.Name = "m_chk_gui_mail_yn";
+            this.m_chk_gui_mail_yn.Size = new System.Drawing.Size(161, 18);
+            this.m_chk_gui_mail_yn.TabIndex = 34;
+            this.m_chk_gui_mail_yn.Text = "Gửi mail cho người đặt hàng";
+            this.m_chk_gui_mail_yn.UseVisualStyleBackColor = true;
+            // 
+            // m_btn_timeline
+            // 
+            this.m_btn_timeline.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_btn_timeline.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_timeline.Image")));
+            this.m_btn_timeline.Location = new System.Drawing.Point(647, 3);
+            this.m_btn_timeline.Name = "m_btn_timeline";
+            this.m_btn_timeline.Size = new System.Drawing.Size(163, 30);
+            this.m_btn_timeline.TabIndex = 39;
+            this.m_btn_timeline.Text = "Time line người xử lý";
+            this.m_btn_timeline.Click += new System.EventHandler(this.m_btn_timeline_Click);
+            // 
+            // m_cmd_giai_dap_thac_mac
+            // 
+            this.m_cmd_giai_dap_thac_mac.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_giai_dap_thac_mac.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_giai_dap_thac_mac.Image")));
+            this.m_cmd_giai_dap_thac_mac.Location = new System.Drawing.Point(495, 3);
+            this.m_cmd_giai_dap_thac_mac.Name = "m_cmd_giai_dap_thac_mac";
+            this.m_cmd_giai_dap_thac_mac.Size = new System.Drawing.Size(146, 30);
+            this.m_cmd_giai_dap_thac_mac.TabIndex = 38;
+            this.m_cmd_giai_dap_thac_mac.Text = "Giải đáp thắc mắc";
+            this.m_cmd_giai_dap_thac_mac.Click += new System.EventHandler(this.m_cmd_giai_dap_thac_mac_Click);
             // 
             // m_cmd_thoat
             // 
-            this.m_cmd_thoat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_thoat.Dock = System.Windows.Forms.DockStyle.Right;
             this.m_cmd_thoat.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_thoat.Image")));
-            this.m_cmd_thoat.Location = new System.Drawing.Point(1029, 3);
+            this.m_cmd_thoat.Location = new System.Drawing.Point(1030, 3);
             this.m_cmd_thoat.Name = "m_cmd_thoat";
-            this.m_cmd_thoat.Size = new System.Drawing.Size(100, 30);
+            this.m_cmd_thoat.Size = new System.Drawing.Size(99, 30);
             this.m_cmd_thoat.TabIndex = 44;
             this.m_cmd_thoat.Text = "Thoát(ESC)";
             this.m_cmd_thoat.Click += new System.EventHandler(this.m_cmd_thoat_Click);
             // 
             // m_cmd_tu_choi
             // 
-            this.m_cmd_tu_choi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_cmd_tu_choi.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_tu_choi.Image")));
-            this.m_cmd_tu_choi.Location = new System.Drawing.Point(925, 3);
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(924, 3);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
             this.m_cmd_tu_choi.Size = new System.Drawing.Size(98, 30);
             this.m_cmd_tu_choi.TabIndex = 45;
             this.m_cmd_tu_choi.Text = "&Từ chối ";
             this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);
+            // 
+            // m_cmd_xac_nhan_don_hang
+            // 
+            this.m_cmd_xac_nhan_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xac_nhan_don_hang.Image")));
+            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(816, 3);
+            this.m_cmd_xac_nhan_don_hang.Name = "m_cmd_xac_nhan_don_hang";
+            this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(102, 30);
+            this.m_cmd_xac_nhan_don_hang.TabIndex = 43;
+            this.m_cmd_xac_nhan_don_hang.Text = "Xác nhận";
+            this.m_cmd_xac_nhan_don_hang.Click += new System.EventHandler(this.m_cmd_xac_nhan_don_hang_Click);
             // 
             // f100_don_dat_hang_new
             // 
@@ -1601,7 +1591,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel10.ResumeLayout(false);
             this.m_grb_phan_hoi_tu_dvm.ResumeLayout(false);
             this.m_grb_phan_hoi_tu_dvm.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1625,8 +1614,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
+            this.tableLayoutPanel8.PerformLayout();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.ResumeLayout(false);
@@ -1717,12 +1705,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private DevExpress.XtraEditors.SimpleButton m_cmd_xac_nhan_don_hang;
-        public DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
         public DevExpress.XtraEditors.SimpleButton m_cmd_tu_choi;
-        private System.Windows.Forms.Panel panel22;
-        public System.Windows.Forms.ComboBox m_cbo_trang_thai_don_hang;
-        private System.Windows.Forms.Label m_lbl_trang_thai_don_hang;
-        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.CheckBox m_chk_gui_mail_yn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -1730,9 +1713,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.GroupBox m_grb_phan_hoi_tu_dvm;
         public System.Windows.Forms.TextBox m_txt_phan_hoi_tu_dvmc;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         public DevExpress.XtraEditors.SimpleButton m_cmd_giai_dap_thac_mac;
         public DevExpress.XtraEditors.SimpleButton m_btn_timeline;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.Panel panel22;
+        public System.Windows.Forms.ComboBox m_cbo_trang_thai_don_hang;
+        private System.Windows.Forms.Label m_lbl_trang_thai_don_hang;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_thoat;
 
     }
 }
