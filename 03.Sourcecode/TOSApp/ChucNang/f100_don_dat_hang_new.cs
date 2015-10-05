@@ -733,7 +733,7 @@ namespace TOSApp.ChucNang
             m_txt_ho_ten_nguoi_dat_hang.Text = v_us.strHO_TEN_USER_DAT_HANG;
             load_don_vi(v_us.dcID_DON_VI);
             m_txt_dien_thoai.Text = v_us.strDIEN_THOAI;
-            m_dat_thoi_diem_can_hoan_thanh.Text = v_us.datTHOI_DIEM_CAN_HOAN_THANH.ToString();
+            m_dat_thoi_diem_can_hoan_thanh.Value = v_us.datTHOI_DIEM_CAN_HOAN_THANH;
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
             m_cbo_thoi_gian_hoan_thanh.SelectedValue = v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH;
             m_cbo_dich_vu.SelectedValue = v_us.dcID_DV_YEU_CAU;
@@ -842,7 +842,7 @@ namespace TOSApp.ChucNang
             m_cmd_danh_sach_nguoi_xu_ly.Enabled = false;
             m_cmd_tu_choi.Enabled = false;
             m_cbo_nguoi_nhan_dat_hang.SelectedValue = v_us.dcID_NGUOI_TAO;
-            m_dat_thoi_diem_can_hoan_thanh.Text = v_us.datTHOI_DIEM_CAN_HOAN_THANH.ToString();
+            m_dat_thoi_diem_can_hoan_thanh.Value = v_us.datTHOI_DIEM_CAN_HOAN_THANH;
             m_cbo_thoi_gian_hoan_thanh.SelectedValue = v_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH;
             m_txt_yeu_cau_cu_the.Text = v_us.strNOI_DUNG_DAT_HANG;
             m_txt_phan_hoi_tu_dvmc.Text = v_us.strPHAN_HOI_TU_DVMC;
@@ -1152,5 +1152,10 @@ namespace TOSApp.ChucNang
             Thread.CurrentThread.CurrentCulture = ci;
         }
 
+        private void m_grv_lich_su_thuc_hien_CustomDrawRowIndicator(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
     }
 }

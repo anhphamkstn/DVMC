@@ -175,6 +175,16 @@ using IP.Core.IPCommon;namespace TOSApp.ChucNang
 
         }
 
+        private void m_grv_danh_sach_don_hang_tiep_nhan_BO_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
+        {
+            if (e.Column.ToString() == "STT" && e.RowHandle >= 0) //colSTT là tên cột tạo số thứ tự
+            {
+                e.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+
+       
+
 
 
 

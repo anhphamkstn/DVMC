@@ -880,9 +880,9 @@ namespace TOSApp
         {
             try
             {
-                F345_danh_sach_cuoc_goi v_f = new F345_danh_sach_cuoc_goi();
-                v_f.MdiParent = this;
-                v_f.Show();
+            //    F345_danh_sach_cuoc_goi v_f = new F345_danh_sach_cuoc_goi();
+                //v_f.MdiParent = this;
+                //v_f.Show();
             }
             catch (Exception v_e)
             {

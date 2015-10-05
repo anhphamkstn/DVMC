@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f106_danh_sach_don_hang_can_tiep_nhan_BO));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_cmd_tu_choi = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_tiep_nhan = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_tu_choi = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_grc_ds_don_hang_can_tiep_nhan = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_don_hang_can_tiep_nhan = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -41,7 +41,7 @@
             this.NOI_DUNG_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_XU_LY = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_can_tiep_nhan)).BeginInit();
@@ -50,31 +50,35 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.m_cmd_tu_choi);
             this.panel2.Controls.Add(this.m_cmd_tiep_nhan);
+            this.panel2.Controls.Add(this.m_cmd_tu_choi);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 289);
+            this.panel2.Location = new System.Drawing.Point(0, 330);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(654, 58);
+            this.panel2.Size = new System.Drawing.Size(802, 44);
             this.panel2.TabIndex = 0;
-            // 
-            // m_cmd_tu_choi
-            // 
-            this.m_cmd_tu_choi.Location = new System.Drawing.Point(542, 23);
-            this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
-            this.m_cmd_tu_choi.Size = new System.Drawing.Size(89, 23);
-            this.m_cmd_tu_choi.TabIndex = 0;
-            this.m_cmd_tu_choi.Text = "Từ chối";
-            this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);
             // 
             // m_cmd_tiep_nhan
             // 
-            this.m_cmd_tiep_nhan.Location = new System.Drawing.Point(413, 23);
+            this.m_cmd_tiep_nhan.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_tiep_nhan.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_tiep_nhan.Image")));
+            this.m_cmd_tiep_nhan.Location = new System.Drawing.Point(624, 0);
             this.m_cmd_tiep_nhan.Name = "m_cmd_tiep_nhan";
-            this.m_cmd_tiep_nhan.Size = new System.Drawing.Size(89, 23);
+            this.m_cmd_tiep_nhan.Size = new System.Drawing.Size(89, 44);
             this.m_cmd_tiep_nhan.TabIndex = 0;
             this.m_cmd_tiep_nhan.Text = "Tiếp nhận";
             this.m_cmd_tiep_nhan.Click += new System.EventHandler(this.m_cmd_tiep_nhan_Click);
+            // 
+            // m_cmd_tu_choi
+            // 
+            this.m_cmd_tu_choi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_tu_choi.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_tu_choi.Image")));
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(713, 0);
+            this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
+            this.m_cmd_tu_choi.Size = new System.Drawing.Size(89, 44);
+            this.m_cmd_tu_choi.TabIndex = 0;
+            this.m_cmd_tu_choi.Text = "Từ chối";
+            this.m_cmd_tu_choi.Click += new System.EventHandler(this.m_cmd_tu_choi_Click);
             // 
             // panel1
             // 
@@ -82,7 +86,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(654, 289);
+            this.panel1.Size = new System.Drawing.Size(802, 330);
             this.panel1.TabIndex = 1;
             // 
             // m_grc_ds_don_hang_can_tiep_nhan
@@ -92,7 +96,7 @@
             this.m_grc_ds_don_hang_can_tiep_nhan.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_hang_can_tiep_nhan.MainView = this.m_grv_ds_don_hang_can_tiep_nhan;
             this.m_grc_ds_don_hang_can_tiep_nhan.Name = "m_grc_ds_don_hang_can_tiep_nhan";
-            this.m_grc_ds_don_hang_can_tiep_nhan.Size = new System.Drawing.Size(654, 289);
+            this.m_grc_ds_don_hang_can_tiep_nhan.Size = new System.Drawing.Size(802, 330);
             this.m_grc_ds_don_hang_can_tiep_nhan.TabIndex = 0;
             this.m_grc_ds_don_hang_can_tiep_nhan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_don_hang_can_tiep_nhan});
@@ -109,9 +113,11 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.ColumnFilterButtonActive.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.ColumnFilterButtonActive.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.ColumnFilterButtonActive.Options.UseForeColor = true;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Empty.BackColor = System.Drawing.Color.Silver;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Empty.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.BackColor = System.Drawing.SystemColors.Control;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(173)))));
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.EvenRow.Options.UseForeColor = true;
@@ -122,7 +128,7 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterCloseButton.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterCloseButton.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterPanel.BackColor = System.Drawing.Color.Maroon;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterPanel.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FilterPanel.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FixedLine.BackColor = System.Drawing.Color.Bisque;
@@ -131,26 +137,26 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedCell.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedCell.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedCell.Options.UseForeColor = true;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.BackColor = System.Drawing.Color.Aquamarine;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(167)))), ((int)(((byte)(62)))));
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.BackColor = System.Drawing.Color.Cornsilk;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FocusedRow.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.BackColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.BorderColor = System.Drawing.Color.Maroon;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.ForeColor = System.Drawing.Color.Black;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.ForeColor = System.Drawing.Color.White;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.FooterPanel.Options.UseForeColor = true;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.BackColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(194)))), ((int)(((byte)(102)))));
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupButton.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupFooter.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupFooter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupFooter.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupFooter.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupFooter.Options.UseBorderColor = true;
@@ -158,7 +164,7 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupPanel.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupPanel.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupRow.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(229)))), ((int)(((byte)(128)))));
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupRow.BorderColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupRow.ForeColor = System.Drawing.Color.Maroon;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.GroupRow.Options.UseBorderColor = true;
@@ -177,39 +183,41 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HideSelectionRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HideSelectionRow.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HorzLine.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HorzLine.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HorzLine.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HorzLine.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.HorzLine.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.BackColor = System.Drawing.SystemColors.Control;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(163)))));
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.OddRow.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(255)))), ((int)(((byte)(220)))));
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.Font = new System.Drawing.Font("Verdana", 7.5F);
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(90)))));
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.ForeColor = System.Drawing.Color.Blue;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.Options.UseFont = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Preview.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Row.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Row.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Row.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Row.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.Row.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.RowSeparator.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.RowSeparator.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.RowSeparator.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.RowSeparator.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.RowSeparator.Options.UseForeColor = true;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.BackColor = System.Drawing.Color.Aquamarine;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.BackColor = System.Drawing.Color.MintCream;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.BorderColor = System.Drawing.Color.Cyan;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.SelectedRow.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.TopNewRow.BackColor = System.Drawing.Color.White;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.TopNewRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.VertLine.BackColor = System.Drawing.SystemColors.Control;
-            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.VertLine.ForeColor = System.Drawing.Color.Maroon;
+            this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.VertLine.ForeColor = System.Drawing.Color.Black;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.VertLine.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.VertLine.Options.UseForeColor = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.Appearance.ViewCaption.BackColor = System.Drawing.Color.Maroon;
@@ -222,6 +230,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH,
             this.NGUOI_XU_LY});
             this.m_grv_ds_don_hang_can_tiep_nhan.GridControl = this.m_grc_ds_don_hang_can_tiep_nhan;
+            this.m_grv_ds_don_hang_can_tiep_nhan.IndicatorWidth = 20;
             this.m_grv_ds_don_hang_can_tiep_nhan.Name = "m_grv_ds_don_hang_can_tiep_nhan";
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsBehavior.Editable = false;
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsBehavior.ReadOnly = true;
@@ -229,6 +238,7 @@
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_can_tiep_nhan.PaintStyleName = "MixedXP";
+            this.m_grv_ds_don_hang_can_tiep_nhan.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_ds_don_hang_can_tiep_nhan_CustomDrawRowIndicator);
             // 
             // ID_GD_DAT_HANG
             // 
@@ -285,9 +295,9 @@
             // 
             // f106_danh_sach_don_hang_can_tiep_nhan_BO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 347);
+            this.ClientSize = new System.Drawing.Size(802, 374);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "f106_danh_sach_don_hang_can_tiep_nhan_BO";

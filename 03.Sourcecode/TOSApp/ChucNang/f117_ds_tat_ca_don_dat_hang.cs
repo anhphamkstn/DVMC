@@ -103,6 +103,12 @@ namespace TOSApp.ChucNang
             }
         }
 
+        private void m_grv_ds_don_dat_hang_CustomDrawRowIndicator(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
+
 
     }
 }

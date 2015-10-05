@@ -887,5 +887,13 @@ namespace TOSApp.ChucNang
             }
         }
 
+        private void m_grv_gd_dat_hang_gd_log_dat_hang_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
+        {
+            if (e.Column.ToString() == "STT" && e.RowHandle >= 0) //colSTT là tên cột tạo số thứ tự
+            {
+            e.DisplayText = Convert.ToString(e.RowHandle + 1);
+            }
+        }
+    
     }
 }

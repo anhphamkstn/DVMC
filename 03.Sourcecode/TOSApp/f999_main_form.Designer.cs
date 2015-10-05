@@ -28,8 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -131,7 +132,9 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_timer_imcoming_call = new System.Windows.Forms.Timer();
+            this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
+            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -606,7 +609,6 @@
             this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup20.Name = "ribbonPageGroup20";
             this.ribbonPageGroup20.Text = "Thêm mới đơn hàng";
-            this.ribbonPageGroup20.Visible = false;
             // 
             // barButtonItem7
             // 
@@ -767,9 +769,10 @@
             this.m_cmd_tm_ds_don_hang_da_danh_gia,
             this.m_cmd_pm_ds_don_hang_da_danh_gia,
             this.m_cmd_tm_ds_tat_ca_don_hang,
-            this.m_cmd_khach_hang});
+            this.m_cmd_khach_hang,
+            this.barButtonItem9});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 65;
+            this.ribbonControl1.MaxItemId = 66;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -780,7 +783,8 @@
             this.m_rbc_TM,
             this.m_rbc_ls_giao_dich,
             this.m_rbc_danh_muc,
-            this.m_rbc_bao_cao});
+            this.m_rbc_bao_cao,
+            this.ribbonPage2});
             this.ribbonControl1.Size = new System.Drawing.Size(1186, 163);
             // 
             // m_cmd_show
@@ -1029,6 +1033,18 @@
             this.m_timer_imcoming_call.Interval = 3000;
             this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // barButtonItem9
+            // 
+            this.barButtonItem9.Caption = "Xuất excel";
+            this.barButtonItem9.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.Glyph")));
+            this.barButtonItem9.Id = 65;
+            this.barButtonItem9.Name = "barButtonItem9";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "ribbonPage2";
+            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -1153,6 +1169,8 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_tm_ds_tat_ca_don_hang;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup m_tm_ds_tat_ca_don_hang;
         private DevExpress.XtraBars.BarButtonItem m_cmd_khach_hang;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
 
 	}
 }

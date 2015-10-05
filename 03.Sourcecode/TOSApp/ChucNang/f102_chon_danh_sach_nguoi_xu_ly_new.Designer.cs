@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f102_chon_danh_sach_nguoi_xu_ly_new));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
             DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
-            this.ImageList = new System.Windows.Forms.ImageList(this.components);
+            this.ImageList = new System.Windows.Forms.ImageList();
             this.GroupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_grc_ht_nguoi_su_dung = new DevExpress.XtraGrid.GridControl();
@@ -44,11 +43,11 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID_NGUOI_SU_DUNG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager();
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.m_sch = new DevExpress.XtraScheduler.SchedulerControl();
-            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
+            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage();
             ((System.ComponentModel.ISupportInitialize)(this.GroupControl1)).BeginInit();
             this.GroupControl1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -135,6 +134,7 @@
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelect = true;
             this.m_grv_ht_nguoi_su_dung.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.m_grv_ht_nguoi_su_dung.OptionsView.ShowAutoFilterRow = true;
+            this.m_grv_ht_nguoi_su_dung.OptionsView.ShowGroupPanel = false;
             // 
             // HO_VA_TEN
             // 
@@ -218,7 +218,7 @@
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(649, 200);
             this.dockPanel1.Size = new System.Drawing.Size(649, 414);
-            this.dockPanel1.Text = "dockPanel1";
+            this.dockPanel1.Text = "Timeline người xử lý.";
             // 
             // dockPanel1_Container
             // 

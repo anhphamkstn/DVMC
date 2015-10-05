@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f110_danh_sach_dieu_phoi_lai));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_cmd_dieu_phoi_BO = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_dieu_phoi_PM = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_dieu_phoi_BO = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_dieu_phoi_cho_PM = new System.Windows.Forms.Panel();
             this.m_grc_ds_dieu_phoi_lai = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_dieu_phoi_lai = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -51,31 +52,35 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_cmd_dieu_phoi_BO);
             this.panel1.Controls.Add(this.m_cmd_dieu_phoi_PM);
+            this.panel1.Controls.Add(this.m_cmd_dieu_phoi_BO);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 340);
+            this.panel1.Location = new System.Drawing.Point(0, 398);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(905, 111);
+            this.panel1.Size = new System.Drawing.Size(905, 40);
             this.panel1.TabIndex = 0;
-            // 
-            // m_cmd_dieu_phoi_BO
-            // 
-            this.m_cmd_dieu_phoi_BO.Location = new System.Drawing.Point(732, 32);
-            this.m_cmd_dieu_phoi_BO.Name = "m_cmd_dieu_phoi_BO";
-            this.m_cmd_dieu_phoi_BO.Size = new System.Drawing.Size(95, 25);
-            this.m_cmd_dieu_phoi_BO.TabIndex = 0;
-            this.m_cmd_dieu_phoi_BO.Text = "Điều phối cho BO";
-            this.m_cmd_dieu_phoi_BO.Click += new System.EventHandler(this.m_cmd_dieu_phoi_BO_Click);
             // 
             // m_cmd_dieu_phoi_PM
             // 
-            this.m_cmd_dieu_phoi_PM.Location = new System.Drawing.Point(578, 32);
+            this.m_cmd_dieu_phoi_PM.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_dieu_phoi_PM.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_dieu_phoi_PM.Image")));
+            this.m_cmd_dieu_phoi_PM.Location = new System.Drawing.Point(638, 0);
             this.m_cmd_dieu_phoi_PM.Name = "m_cmd_dieu_phoi_PM";
-            this.m_cmd_dieu_phoi_PM.Size = new System.Drawing.Size(95, 25);
+            this.m_cmd_dieu_phoi_PM.Size = new System.Drawing.Size(133, 40);
             this.m_cmd_dieu_phoi_PM.TabIndex = 0;
             this.m_cmd_dieu_phoi_PM.Text = "Điều phối cho PM";
             this.m_cmd_dieu_phoi_PM.Click += new System.EventHandler(this.m_cmd_dieu_phoi_PM_Click);
+            // 
+            // m_cmd_dieu_phoi_BO
+            // 
+            this.m_cmd_dieu_phoi_BO.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_dieu_phoi_BO.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_dieu_phoi_BO.Image")));
+            this.m_cmd_dieu_phoi_BO.Location = new System.Drawing.Point(771, 0);
+            this.m_cmd_dieu_phoi_BO.Name = "m_cmd_dieu_phoi_BO";
+            this.m_cmd_dieu_phoi_BO.Size = new System.Drawing.Size(134, 40);
+            this.m_cmd_dieu_phoi_BO.TabIndex = 0;
+            this.m_cmd_dieu_phoi_BO.Text = "Điều phối cho BO";
+            this.m_cmd_dieu_phoi_BO.Click += new System.EventHandler(this.m_cmd_dieu_phoi_BO_Click);
             // 
             // m_cmd_dieu_phoi_cho_PM
             // 
@@ -83,7 +88,7 @@
             this.m_cmd_dieu_phoi_cho_PM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_cmd_dieu_phoi_cho_PM.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_dieu_phoi_cho_PM.Name = "m_cmd_dieu_phoi_cho_PM";
-            this.m_cmd_dieu_phoi_cho_PM.Size = new System.Drawing.Size(905, 340);
+            this.m_cmd_dieu_phoi_cho_PM.Size = new System.Drawing.Size(905, 398);
             this.m_cmd_dieu_phoi_cho_PM.TabIndex = 1;
             // 
             // m_grc_ds_dieu_phoi_lai
@@ -93,7 +98,7 @@
             this.m_grc_ds_dieu_phoi_lai.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_dieu_phoi_lai.MainView = this.m_grv_ds_dieu_phoi_lai;
             this.m_grc_ds_dieu_phoi_lai.Name = "m_grc_ds_dieu_phoi_lai";
-            this.m_grc_ds_dieu_phoi_lai.Size = new System.Drawing.Size(905, 340);
+            this.m_grc_ds_dieu_phoi_lai.Size = new System.Drawing.Size(905, 398);
             this.m_grc_ds_dieu_phoi_lai.TabIndex = 1;
             this.m_grc_ds_dieu_phoi_lai.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_dieu_phoi_lai});
@@ -224,19 +229,24 @@
             this.ID,
             this.DICH_VU_YEU_CAU});
             this.m_grv_ds_dieu_phoi_lai.GridControl = this.m_grc_ds_dieu_phoi_lai;
+            this.m_grv_ds_dieu_phoi_lai.IndicatorWidth = 20;
             this.m_grv_ds_dieu_phoi_lai.Name = "m_grv_ds_dieu_phoi_lai";
             this.m_grv_ds_dieu_phoi_lai.OptionsBehavior.Editable = false;
             this.m_grv_ds_dieu_phoi_lai.OptionsBehavior.ReadOnly = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_dieu_phoi_lai.OptionsView.ShowAutoFilterRow = true;
+            this.m_grv_ds_dieu_phoi_lai.OptionsView.ShowFooter = true;
             this.m_grv_ds_dieu_phoi_lai.PaintStyleName = "MixedXP";
+            this.m_grv_ds_dieu_phoi_lai.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_ds_dieu_phoi_lai_CustomDrawRowIndicator);
             // 
             // ID_GD_DAT_HANG
             // 
             this.ID_GD_DAT_HANG.Caption = "ID GD ĐẶT HÀNG";
             this.ID_GD_DAT_HANG.FieldName = "ID_GD_DAT_HANG";
             this.ID_GD_DAT_HANG.Name = "ID_GD_DAT_HANG";
+            this.ID_GD_DAT_HANG.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count)});
             this.ID_GD_DAT_HANG.Visible = true;
             this.ID_GD_DAT_HANG.VisibleIndex = 1;
             this.ID_GD_DAT_HANG.Width = 97;
@@ -300,9 +310,9 @@
             // 
             // f110_danh_sach_dieu_phoi_lai
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 451);
+            this.ClientSize = new System.Drawing.Size(905, 438);
             this.Controls.Add(this.m_cmd_dieu_phoi_cho_PM);
             this.Controls.Add(this.panel1);
             this.Name = "f110_danh_sach_dieu_phoi_lai";

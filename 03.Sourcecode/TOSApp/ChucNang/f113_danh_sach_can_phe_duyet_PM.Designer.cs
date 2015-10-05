@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f113_danh_sach_can_phe_duyet_PM));
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_khong_duyet = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_duyet = new DevExpress.XtraEditors.SimpleButton();
@@ -50,27 +51,31 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_cmd_khong_duyet);
             this.panel1.Controls.Add(this.m_cmd_duyet);
+            this.panel1.Controls.Add(this.m_cmd_khong_duyet);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 354);
+            this.panel1.Location = new System.Drawing.Point(0, 407);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 59);
+            this.panel1.Size = new System.Drawing.Size(750, 38);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_khong_duyet
             // 
-            this.m_cmd_khong_duyet.Location = new System.Drawing.Point(611, 15);
+            this.m_cmd_khong_duyet.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_khong_duyet.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_khong_duyet.Image")));
+            this.m_cmd_khong_duyet.Location = new System.Drawing.Point(616, 0);
             this.m_cmd_khong_duyet.Name = "m_cmd_khong_duyet";
-            this.m_cmd_khong_duyet.Size = new System.Drawing.Size(108, 23);
+            this.m_cmd_khong_duyet.Size = new System.Drawing.Size(134, 38);
             this.m_cmd_khong_duyet.TabIndex = 0;
             this.m_cmd_khong_duyet.Text = "Không phê duyệt";
             // 
             // m_cmd_duyet
             // 
-            this.m_cmd_duyet.Location = new System.Drawing.Point(476, 15);
+            this.m_cmd_duyet.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_duyet.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_duyet.Image")));
+            this.m_cmd_duyet.Location = new System.Drawing.Point(513, 0);
             this.m_cmd_duyet.Name = "m_cmd_duyet";
-            this.m_cmd_duyet.Size = new System.Drawing.Size(103, 23);
+            this.m_cmd_duyet.Size = new System.Drawing.Size(103, 38);
             this.m_cmd_duyet.TabIndex = 0;
             this.m_cmd_duyet.Text = "Duyệt";
             this.m_cmd_duyet.Click += new System.EventHandler(this.m_cmd_duyet_Click);
@@ -81,7 +86,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 354);
+            this.panel2.Size = new System.Drawing.Size(750, 407);
             this.panel2.TabIndex = 1;
             // 
             // m_grc_danh_sach_can_phe_duyet_PM
@@ -91,7 +96,7 @@
             this.m_grc_danh_sach_can_phe_duyet_PM.Location = new System.Drawing.Point(0, 0);
             this.m_grc_danh_sach_can_phe_duyet_PM.MainView = this.m_grv_danh_sach_can_phe_duyet_PM;
             this.m_grc_danh_sach_can_phe_duyet_PM.Name = "m_grc_danh_sach_can_phe_duyet_PM";
-            this.m_grc_danh_sach_can_phe_duyet_PM.Size = new System.Drawing.Size(750, 354);
+            this.m_grc_danh_sach_can_phe_duyet_PM.Size = new System.Drawing.Size(750, 407);
             this.m_grc_danh_sach_can_phe_duyet_PM.TabIndex = 0;
             this.m_grc_danh_sach_can_phe_duyet_PM.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_danh_sach_can_phe_duyet_PM});
@@ -221,19 +226,24 @@
             this.BO,
             this.TRANG_THAI});
             this.m_grv_danh_sach_can_phe_duyet_PM.GridControl = this.m_grc_danh_sach_can_phe_duyet_PM;
+            this.m_grv_danh_sach_can_phe_duyet_PM.IndicatorWidth = 20;
             this.m_grv_danh_sach_can_phe_duyet_PM.Name = "m_grv_danh_sach_can_phe_duyet_PM";
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsBehavior.Editable = false;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsBehavior.ReadOnly = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.ShowAutoFilterRow = true;
+            this.m_grv_danh_sach_can_phe_duyet_PM.OptionsView.ShowFooter = true;
             this.m_grv_danh_sach_can_phe_duyet_PM.PaintStyleName = "MixedXP";
+            this.m_grv_danh_sach_can_phe_duyet_PM.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_danh_sach_can_phe_duyet_PM_CustomDrawRowIndicator);
             // 
             // ID
             // 
             this.ID.Caption = "ID";
             this.ID.FieldName = "ID";
             this.ID.Name = "ID";
+            this.ID.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count)});
             this.ID.Visible = true;
             this.ID.VisibleIndex = 0;
             // 
@@ -283,9 +293,9 @@
             // 
             // f113_danh_sach_can_phe_duyet_PM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 413);
+            this.ClientSize = new System.Drawing.Size(750, 445);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f113_danh_sach_can_phe_duyet_PM";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f114_ds_BO));
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
@@ -38,37 +39,43 @@
             this.m_grc_ds_BO = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_BO = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.TEN_BO = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_BO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_BO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_cmd_Cancel);
             this.panel1.Controls.Add(this.m_cmd_OK);
+            this.panel1.Controls.Add(this.m_cmd_Cancel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 342);
+            this.panel1.Location = new System.Drawing.Point(0, 425);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(608, 83);
+            this.panel1.Size = new System.Drawing.Size(764, 33);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_Cancel
             // 
-            this.m_cmd_Cancel.Location = new System.Drawing.Point(467, 38);
+            this.m_cmd_Cancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_Cancel.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_Cancel.Image")));
+            this.m_cmd_Cancel.Location = new System.Drawing.Point(689, 0);
             this.m_cmd_Cancel.Name = "m_cmd_Cancel";
-            this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 33);
             this.m_cmd_Cancel.TabIndex = 0;
             this.m_cmd_Cancel.Text = "Cancel";
             this.m_cmd_Cancel.Click += new System.EventHandler(this.m_cmd_Cancel_Click);
             // 
             // m_cmd_OK
             // 
-            this.m_cmd_OK.Location = new System.Drawing.Point(341, 38);
+            this.m_cmd_OK.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_OK.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_OK.Image")));
+            this.m_cmd_OK.Location = new System.Drawing.Point(614, 0);
             this.m_cmd_OK.Name = "m_cmd_OK";
-            this.m_cmd_OK.Size = new System.Drawing.Size(75, 23);
+            this.m_cmd_OK.Size = new System.Drawing.Size(75, 33);
             this.m_cmd_OK.TabIndex = 0;
             this.m_cmd_OK.Text = "OK";
             this.m_cmd_OK.Click += new System.EventHandler(this.m_cmd_OK_Click);
@@ -80,24 +87,24 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(608, 59);
+            this.panel3.Size = new System.Drawing.Size(764, 38);
             this.panel3.TabIndex = 0;
             // 
             // m_txt_ma_don_hang
             // 
             this.m_txt_ma_don_hang.AutoSize = true;
-            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(256, 28);
+            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(258, 9);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
-            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 13);
+            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 14);
             this.m_txt_ma_don_hang.TabIndex = 0;
             this.m_txt_ma_don_hang.Text = "mã đơn hàng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 28);
+            this.label1.Location = new System.Drawing.Point(43, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã đơn hàng";
             // 
@@ -105,19 +112,21 @@
             // 
             this.panel2.Controls.Add(this.m_grc_ds_BO);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 59);
+            this.panel2.Location = new System.Drawing.Point(0, 38);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(608, 283);
+            this.panel2.Size = new System.Drawing.Size(764, 387);
             this.panel2.TabIndex = 1;
             // 
             // m_grc_ds_BO
             // 
             this.m_grc_ds_BO.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_ds_BO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_grc_ds_BO.Dock = System.Windows.Forms.DockStyle.Left;
             this.m_grc_ds_BO.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_BO.MainView = this.m_grv_ds_BO;
             this.m_grc_ds_BO.Name = "m_grc_ds_BO";
-            this.m_grc_ds_BO.Size = new System.Drawing.Size(608, 283);
+            this.m_grc_ds_BO.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemComboBox1});
+            this.m_grc_ds_BO.Size = new System.Drawing.Size(196, 387);
             this.m_grc_ds_BO.TabIndex = 0;
             this.m_grc_ds_BO.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_BO});
@@ -242,6 +251,7 @@
             this.m_grv_ds_BO.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.TEN_BO});
             this.m_grv_ds_BO.GridControl = this.m_grc_ds_BO;
+            this.m_grv_ds_BO.IndicatorWidth = 20;
             this.m_grv_ds_BO.Name = "m_grv_ds_BO";
             this.m_grv_ds_BO.OptionsBehavior.Editable = false;
             this.m_grv_ds_BO.OptionsBehavior.ReadOnly = true;
@@ -250,7 +260,10 @@
             this.m_grv_ds_BO.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_BO.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_BO.OptionsView.ShowAutoFilterRow = true;
+            this.m_grv_ds_BO.OptionsView.ShowFooter = true;
+            this.m_grv_ds_BO.OptionsView.ShowGroupPanel = false;
             this.m_grv_ds_BO.PaintStyleName = "MixedXP";
+            this.m_grv_ds_BO.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_ds_BO_CustomDrawRowIndicator);
             // 
             // TEN_BO
             // 
@@ -260,11 +273,18 @@
             this.TEN_BO.Visible = true;
             this.TEN_BO.VisibleIndex = 1;
             // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
+            // 
             // f114_ds_BO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 425);
+            this.ClientSize = new System.Drawing.Size(764, 458);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -276,6 +296,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_BO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_BO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,5 +313,6 @@
         private DevExpress.XtraGrid.GridControl m_grc_ds_BO;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_BO;
         private DevExpress.XtraGrid.Columns.GridColumn TEN_BO;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
     }
 }
