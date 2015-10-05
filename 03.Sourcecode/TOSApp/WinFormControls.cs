@@ -393,7 +393,15 @@ namespace TOSApp
             v_cstore.ExecuteCommand(this);
             return (DateTime)v_result.Value;
         }
-
+        public string get_ten_nguoi_su_dung(decimal v_id)
+        {
+            string v_ten = "";
+            CStoredProc v_cstore = new CStoredProc("get_ten_nguoi_su_dung");
+            v_cstore.addNVarcharInputParam("@id", v_id);
+            SqlParameter v_result = v_cstore.addNVarcharOutputParam("@ten", v_ten);
+            v_cstore.ExecuteCommand(this);
+            return (string)v_result.Value;
+        }
         
 
 

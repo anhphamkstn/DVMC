@@ -49,7 +49,7 @@ namespace TOSApp.ChucNang
                 v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
                 v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
                 v_us.dcID_LOAI_THAO_TAC = 344;
-                v_us.SetID_NGUOI_NHAN_THAO_TACNull();
+                v_us.dcID_NGUOI_NHAN_THAO_TAC= us_user.dcID;
                 v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
                 v_us.strTHAO_TAC_HET_HAN_YN = "Y";
                 v_us.strGHI_CHU = m_txt_cap_nhat_xu_ly.Text;

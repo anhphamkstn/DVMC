@@ -57,7 +57,7 @@
             this.m_grc_ds_don_hang_dang_xu_ly.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_hang_dang_xu_ly.MainView = this.m_grv_ds_don_hang_dang_xu_ly;
             this.m_grc_ds_don_hang_dang_xu_ly.Name = "m_grc_ds_don_hang_dang_xu_ly";
-            this.m_grc_ds_don_hang_dang_xu_ly.Size = new System.Drawing.Size(774, 284);
+            this.m_grc_ds_don_hang_dang_xu_ly.Size = new System.Drawing.Size(774, 264);
             this.m_grc_ds_don_hang_dang_xu_ly.TabIndex = 0;
             this.m_grc_ds_don_hang_dang_xu_ly.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_don_hang_dang_xu_ly});
@@ -184,24 +184,24 @@
             this.c_thoi_gian_tao,
             this.c_loai_thoi_gian_can_hoan_thanh,
             this.THOI_DIEM_CAN_HOAN_THANH});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Black;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Appearance.Options.UseBorderColor = true;
             styleFormatCondition1.Appearance.Options.UseForeColor = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[thời điểm cần hoàn thành] <= now()";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <=Now()";
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Black;
             styleFormatCondition2.Appearance.Options.UseBackColor = true;
             styleFormatCondition2.Appearance.Options.UseBorderColor = true;
             styleFormatCondition2.Appearance.Options.UseForeColor = true;
             styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition2.Expression = "[thời điểm cần hoàn thành] >=GetDate(AddDays(Today(),-1 ))";
+            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] >=GetDate(AddDays(Today(),-1 ))";
             this.m_grv_ds_don_hang_dang_xu_ly.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
             styleFormatCondition1,
             styleFormatCondition2});
@@ -309,14 +309,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(774, 64);
+            this.panel1.Size = new System.Drawing.Size(774, 59);
             this.panel1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 29);
+            this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(345, 19);
             this.label1.TabIndex = 1;
@@ -326,16 +326,16 @@
             // 
             this.panel2.Controls.Add(this.m_grc_ds_don_hang_dang_xu_ly);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 64);
+            this.panel2.Location = new System.Drawing.Point(0, 59);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(774, 284);
+            this.panel2.Size = new System.Drawing.Size(774, 264);
             this.panel2.TabIndex = 2;
             // 
             // f122_ds_don_hang_dang_xu_ly
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 348);
+            this.ClientSize = new System.Drawing.Size(774, 323);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f122_ds_don_hang_dang_xu_ly";

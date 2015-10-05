@@ -184,26 +184,24 @@
             this.c_thoi_gian_tao,
             this.c_loai_thoi_gian_can_hoan_thanh,
             this.THOI_DIEM_CAN_HOAN_THANH});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Black;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Appearance.Options.UseBorderColor = true;
             styleFormatCondition1.Appearance.Options.UseForeColor = true;
-            styleFormatCondition1.ApplyToRow = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
             styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Black;
             styleFormatCondition2.Appearance.Options.UseBackColor = true;
             styleFormatCondition2.Appearance.Options.UseBorderColor = true;
             styleFormatCondition2.Appearance.Options.UseForeColor = true;
-            styleFormatCondition2.ApplyToRow = true;
             styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition2.Expression = "[LOAI_THOI_GIAN_CAN_HOAN_THANH] >= GetDate(AddDays(Today(),-1 ))";
+            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] >= GetDate(AddDays(Today(),-1 ))";
             this.m_grv_ds_don_hang_can_xu_ly.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
             styleFormatCondition1,
             styleFormatCondition2});
@@ -295,6 +293,8 @@
             this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 8;
             // 
             // panel1
             // 

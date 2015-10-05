@@ -58,11 +58,23 @@ namespace TOSApp
         f0000_gd_dat_hang_gd_log_dat_hang v_don_hang_dieu_phoi_lai_FO;
         f117_ds_tat_ca_don_dat_hang v_tat_ca_don_hang;
         f117_ds_tat_ca_don_dat_hang v_tat_ca_don_hang_TD;
+        f117_ds_tat_ca_don_dat_hang v_cap_nhat_dead_line;
+        f117_ds_tat_ca_don_dat_hang v_TD_cap_nhat_deadline;
         f118_ds_log_dat_hang v_log_dat_hang;
         f119_ds_don_hang_hoan_thanh v_don_hang_hoan_thanh;
         f101_dm_mau_email v_dm_email;
         f102_dm_loai_yeu_cau v_dm_loai_yeu_cau;
-
+        f120_ds_don_hang_khach_hang v_f120_ds_don_hang_khach_hang;
+        f122_blacklist v_f122_blacklist, v_f122_blacklist_0;
+        f122_ds_don_hang_dang_xu_ly v_f122_ds_don_hang_dang_xu_ly;
+        f122_ds_don_hang_dang_xu_ly v_TD_f122_ds_don_hang_dang_xu_ly;
+        f123_ds_don_hang_can_xu_ly v_f123_ds_don_hang_can_xu_ly;
+        f123_ds_don_hang_can_xu_ly v_TD_f123_ds_don_hang_can_xu_ly;
+        f125_ds_don_hang_can_danh_gia v_f125_ds_don_hang_can_danh_gia0;
+        f125_ds_don_hang_can_danh_gia v_f125_ds_don_hang_can_danh_gia1;
+        f125_ds_don_hang_can_danh_gia v_f125_ds_don_hang_can_danh_gia2;
+        f100_dm_cau_hoi v_f100_dm_cau_hoi;
+        f999_ht_bo_pm_td_dich_vu v_f999_ht_bo_pm_td_dich_vu;
 
         private void GetAllControl(f999_main_form c, List<Control> list)
         {
@@ -484,9 +496,15 @@ namespace TOSApp
 
         private void m_cmd_dm_cau_hoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f100_dm_cau_hoi v_f = new f100_dm_cau_hoi();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_f100_dm_cau_hoi == null || !IsFormOpen(v_f100_dm_cau_hoi))
+            {
+                v_f100_dm_cau_hoi = new f100_dm_cau_hoi();
+                v_f100_dm_cau_hoi.MdiParent = this;
+                v_f100_dm_cau_hoi.Show();
+            }
+            else
+                v_f100_dm_cau_hoi.Focus();
+
         }
 
         private void m_barsubitem_doi_ten_dang_nhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -598,7 +616,7 @@ namespace TOSApp
             }
             else
             {
-                v_bao_cao_tiep_nhan.Focus();
+                v_bao_cao_danh_gia.Focus();
             }
         }
 
@@ -607,14 +625,14 @@ namespace TOSApp
             decimal deadline_id = 1;
             try
             {
-               
-                     f117_ds_tat_ca_don_dat_hang v_TD_cap_nhat_deadline = new f117_ds_tat_ca_don_dat_hang();
-                      v_TD_cap_nhat_deadline.MdiParent = this;
+                if (v_TD_cap_nhat_deadline == null || !IsFormOpen(v_TD_cap_nhat_deadline))
+                {
+                    v_TD_cap_nhat_deadline = new f117_ds_tat_ca_don_dat_hang();
+                    v_TD_cap_nhat_deadline.MdiParent = this;
                     v_TD_cap_nhat_deadline.display_for_refurse_dealine(deadline_id);
-               
-
-
-               
+                }
+                else
+                    v_TD_cap_nhat_deadline.Focus();
             }
             catch (Exception v_e)
             {
@@ -628,9 +646,14 @@ namespace TOSApp
             decimal deadline_id = 1;
             try
             {
-                f117_ds_tat_ca_don_dat_hang v_f = new f117_ds_tat_ca_don_dat_hang();
-                v_f.MdiParent = this;
-                v_f.display_for_refurse_dealine(deadline_id);
+                if (v_cap_nhat_dead_line == null || !IsFormOpen(v_cap_nhat_dead_line))
+                {
+                    v_cap_nhat_dead_line = new f117_ds_tat_ca_don_dat_hang();
+                    v_cap_nhat_dead_line.MdiParent = this;
+                    v_cap_nhat_dead_line.display_for_refurse_dealine(deadline_id);
+                }
+                else
+                    v_cap_nhat_dead_line.Focus();
             }
             catch (Exception v_e)
             {
@@ -643,9 +666,16 @@ namespace TOSApp
         {
             try
             {
-                f120_ds_don_hang_khach_hang v_f = new f120_ds_don_hang_khach_hang();
-                v_f.MdiParent = this;
-                v_f.Show();
+                if (v_f120_ds_don_hang_khach_hang == null || !IsFormOpen(v_f120_ds_don_hang_khach_hang))
+                {
+                    v_f120_ds_don_hang_khach_hang = new f120_ds_don_hang_khach_hang();
+                    v_f120_ds_don_hang_khach_hang.MdiParent = this;
+                    v_f120_ds_don_hang_khach_hang.Show();
+                }
+                else
+                {
+
+                }
             }
             catch (Exception v_e)
             {
@@ -655,9 +685,14 @@ namespace TOSApp
 
         private void m_cmd_bo_pm_td_dich_vu_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f999_ht_bo_pm_td_dich_vu v_f = new f999_ht_bo_pm_td_dich_vu();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_f999_ht_bo_pm_td_dich_vu == null || !IsFormOpen(v_f999_ht_bo_pm_td_dich_vu))
+            {
+                v_f999_ht_bo_pm_td_dich_vu = new f999_ht_bo_pm_td_dich_vu();
+                v_f999_ht_bo_pm_td_dich_vu.MdiParent = this;
+                v_f999_ht_bo_pm_td_dich_vu.Show();
+            }
+            else
+                v_f999_ht_bo_pm_td_dich_vu.Focus();
         }
 
         private void barButtonItem7_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -730,41 +765,69 @@ namespace TOSApp
 
         private void m_cmd_pm_don_hang_dang_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f122_ds_don_hang_dang_xu_ly v_f = new f122_ds_don_hang_dang_xu_ly();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_f122_ds_don_hang_dang_xu_ly == null || !IsFormOpen(v_f122_ds_don_hang_dang_xu_ly))
+            {
+                v_f122_ds_don_hang_dang_xu_ly = new f122_ds_don_hang_dang_xu_ly();
+                v_f122_ds_don_hang_dang_xu_ly.MdiParent = this;
+                v_f122_ds_don_hang_dang_xu_ly.Show();
+            }
+            else
+            {
+                v_f122_ds_don_hang_dang_xu_ly.Focus();
+            }
         }
 
         private void m_cmd_pm_don_hang_can_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f123_ds_don_hang_can_xu_ly v_f = new f123_ds_don_hang_can_xu_ly();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_f123_ds_don_hang_can_xu_ly == null || !IsFormOpen(v_f123_ds_don_hang_can_xu_ly))
+            {
+                v_f123_ds_don_hang_can_xu_ly = new f123_ds_don_hang_can_xu_ly();
+                v_f123_ds_don_hang_can_xu_ly.MdiParent = this;
+                v_f123_ds_don_hang_can_xu_ly.Show();
+            }
+            else
+                v_f123_ds_don_hang_can_xu_ly.Focus();
         }
 
         private void m_cmd_td_don_hang_dang_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f122_ds_don_hang_dang_xu_ly v_f = new f122_ds_don_hang_dang_xu_ly();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_TD_f122_ds_don_hang_dang_xu_ly == null || !IsFormOpen(v_TD_f122_ds_don_hang_dang_xu_ly))
+            {
+                v_TD_f122_ds_don_hang_dang_xu_ly = new f122_ds_don_hang_dang_xu_ly();
+                v_TD_f122_ds_don_hang_dang_xu_ly.MdiParent = this;
+                v_TD_f122_ds_don_hang_dang_xu_ly.Show();
+            }
+            else
+                v_TD_f122_ds_don_hang_dang_xu_ly.Focus();
         }
 
         private void m_cmd_td_don_hang_can_xu_ly_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f123_ds_don_hang_can_xu_ly v_f = new f123_ds_don_hang_can_xu_ly();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_TD_f123_ds_don_hang_can_xu_ly == null || !IsFormOpen(v_TD_f123_ds_don_hang_can_xu_ly))
+            {
+                v_TD_f123_ds_don_hang_can_xu_ly = new f123_ds_don_hang_can_xu_ly();
+                v_TD_f123_ds_don_hang_can_xu_ly.MdiParent = this;
+                v_TD_f123_ds_don_hang_can_xu_ly.Show();
+            }
+            else
+                v_TD_f123_ds_don_hang_can_xu_ly.Focus();
+
         }
 
         private void m_cmd_blacklist_FO_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f122_blacklist v_f = new f122_blacklist();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_f122_blacklist == null || !IsFormOpen(v_f122_blacklist))
+            {
+                v_f122_blacklist = new f122_blacklist();
+                v_f122_blacklist.MdiParent = this;
+                v_f122_blacklist.Show();
+            }
+            else
+            {
+                v_f122_blacklist.Focus();
+            }
 
         }
-
-
 
         private void m_cmd_blacklist_TD_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -782,17 +845,28 @@ namespace TOSApp
 
         private void m_cmd_blacklist_pm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f122_blacklist v_f = new f122_blacklist();
-            v_f.MdiParent = this;
-            v_f.Show();
+            if (v_f122_blacklist_0 == null || !IsFormOpen(v_f122_blacklist_0))
+            {
+                v_f122_blacklist_0 = new f122_blacklist();
+                v_f122_blacklist_0.MdiParent = this;
+                v_f122_blacklist_0.Show();
+            }
+            else
+                v_f122_blacklist_0.Focus();
+            
         }
 
         private void m_cmd_ds_can_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(0);
-            v_f.MdiParent = this;
-            v_f.Text = "f125 - danh sách đơn hàng cần đánh giá";
-            v_f.Show();
+            if (v_f125_ds_don_hang_can_danh_gia0 == null || !IsFormOpen(v_f125_ds_don_hang_can_danh_gia0))
+            {
+                v_f125_ds_don_hang_can_danh_gia0 = new f125_ds_don_hang_can_danh_gia(0);
+                v_f125_ds_don_hang_can_danh_gia0.MdiParent = this;
+                v_f125_ds_don_hang_can_danh_gia0.Text = "f125 - danh sách đơn hàng cần đánh giá";
+                v_f125_ds_don_hang_can_danh_gia0.Show();
+            }
+            else
+                v_f125_ds_don_hang_can_danh_gia0.Focus();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -848,18 +922,28 @@ namespace TOSApp
 
         private void m_cmd_tm_ds_don_hang_da_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(2);
-            v_f.MdiParent = this;
-            v_f.Text = "f125 - danh sách đơn hàng đã đánh giá";
-            v_f.Show();
+            if (v_f125_ds_don_hang_can_danh_gia2 == null || !IsFormOpen(v_f125_ds_don_hang_can_danh_gia2))
+            {
+                v_f125_ds_don_hang_can_danh_gia2 = new f125_ds_don_hang_can_danh_gia(2);
+                v_f125_ds_don_hang_can_danh_gia2.MdiParent = this;
+                v_f125_ds_don_hang_can_danh_gia2.Text = "f125 - danh sách đơn hàng đã đánh giá";
+                v_f125_ds_don_hang_can_danh_gia2.Show();
+            }
+            else
+                v_f125_ds_don_hang_can_danh_gia2.Focus();
         }
 
         private void m_cmd_pm_ds_don_hang_da_danh_gia_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            f125_ds_don_hang_can_danh_gia v_f = new f125_ds_don_hang_can_danh_gia(1);
-            v_f.MdiParent = this;
-            v_f.Text = "f125 - danh sách đơn hàng đã đánh giá";
-            v_f.Show();
+            if (v_f125_ds_don_hang_can_danh_gia1 == null || !IsFormOpen(v_f125_ds_don_hang_can_danh_gia1))
+            {
+                v_f125_ds_don_hang_can_danh_gia1 = new f125_ds_don_hang_can_danh_gia(1);
+                v_f125_ds_don_hang_can_danh_gia1.MdiParent = this;
+                v_f125_ds_don_hang_can_danh_gia1.Text = "f125 - danh sách đơn hàng đã đánh giá";
+                v_f125_ds_don_hang_can_danh_gia1.Show();
+            }
+            else
+                v_f125_ds_don_hang_can_danh_gia1.Focus();
         }
 
         private void m_cmd_tm_ds_tat_ca_don_hang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

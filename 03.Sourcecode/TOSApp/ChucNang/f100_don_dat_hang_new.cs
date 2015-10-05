@@ -269,13 +269,13 @@ namespace TOSApp.ChucNang
         private void ghi_log_tiep_nhan_dv_hoi_dap()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-
             v_us.dcID_LOAI_THAO_TAC = 293 ;
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = m_txt_phan_hoi_tu_dvmc.Text;
+            v_us.strGHI_CHU = us_user.strTEN_TRUY_CAP + " Đã xử lý";
             v_us.Insert();
             id_log = v_us.dcID;
             
@@ -400,9 +400,10 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 321;//trang thai vua được cập nhật
             v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi";
+            v_us.strGHI_CHU = "thông tin đơn hàng được thay đổi bởi " + us_user.strTEN_TRUY_CAP.ToString();
             v_us.Insert();
         }
 
@@ -523,10 +524,10 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 329;//trang thai vua được cập nhật deadline
             v_us.dcID_GD_DAT_HANG = M_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            //v_us.dcID_NGUOI_NHAN_THAO_TAC = M_us.dcID_NGUOI_NHAN_THAO_TAC;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "đơn hàng vừa đươc cập nhật DEADLINE !";
+            v_us.strGHI_CHU = "đơn hàng vừa đươc cập nhật DEADLINE bởi " + us_user.strTEN_TRUY_CAP;
             v_us.Insert();
         }
 
@@ -580,6 +581,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue.ToString());
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = m_us.datTHOI_GIAN_TAO;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
             v_us.strGHI_CHU = m_txt_phan_hoi_tu_dvmc.Text;
@@ -610,7 +612,7 @@ namespace TOSApp.ChucNang
         //ghi lai dieu phoi cho tung nguoi
         private void ghi_log_dieu_phoi_cho_nguoi_xu_ly(decimal nguoi_nhan_tao_tac_i, US_GD_DAT_HANG m_us)
         {
-
+            US_DUNG_CHUNG v_us_dc = new US_DUNG_CHUNG();
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 295;//fix cung cho tao tac dieu huong--> bi ngu
             v_us.dcID_GD_DAT_HANG = m_us.dcID;
@@ -618,7 +620,7 @@ namespace TOSApp.ChucNang
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//?? văn
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "đã điều phối cho BO ";
+            v_us.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã điều phối cho " + v_us_dc.get_ten_nguoi_su_dung(nguoi_nhan_tao_tac_i);
             v_us.Insert();
         }
         //ghi lai log tai bang gd_log_dat_hang sau khi thuc hien thao tac insert
@@ -630,13 +632,11 @@ namespace TOSApp.ChucNang
             m_us.dcID_DON_VI = CIPConvert.ToDecimal(m_cbo_dv_don_vi.SelectedValue.ToString());//xem lai
             m_us.strDIEN_THOAI = m_txt_dien_thoai.Text;
             m_us.strHO_TEN_USER_DAT_HANG = m_txt_ho_ten_nguoi_dat_hang.Text;
-
             if (m_checkbox_m2_m3.Checked == false)
             {
                 m_us.datTHOI_DIEM_CAN_HOAN_THANH = m_dat_thoi_diem_can_hoan_thanh.Value;
             }
             else m_us.SetTHOI_DIEM_CAN_HOAN_THANHNull();
-
             m_us.dcID_DV_YEU_CAU = CIPConvert.ToDecimal(m_cbo_dich_vu.SelectedValue);//xem ai chi lay id
             m_us.strNOI_DUNG_DAT_HANG = m_txt_yeu_cau_cu_the.Text;
             m_us.dcID_LOAI_THOI_GIAN_CAN_HOAN_THANH = CIPConvert.ToDecimal(m_cbo_thoi_gian_hoan_thanh.SelectedValue);

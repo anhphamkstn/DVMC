@@ -52,10 +52,10 @@ namespace TOSApp.ChucNang
             V_us.dcID_LOAI_THAO_TAC = 300;//đã hủy 
             V_us.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
             V_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            V_us.SetID_NGUOI_NHAN_THAO_TACNull();
+            V_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             V_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             V_us.strTHAO_TAC_HET_HAN_YN = "N";
-            V_us.strGHI_CHU = us_user.TD_tu_choi;
+            V_us.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã hủy đơn hàng với lý do " + m_txt_ly_do.Text;
             V_us.Insert();
         }
 
@@ -63,7 +63,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG V_us = new US_GD_LOG_DAT_HANG(v_us.dcID);
             V_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            V_us.strGHI_CHU = "TD đã hủy đơn hàng";
+            //V_us.strGHI_CHU = "TD đã hủy đơn hàng";
             V_us.Update();
         }
     }

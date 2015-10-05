@@ -34,14 +34,14 @@ namespace TOSApp.ChucNang
                 {
                     v_US = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i][0].ToString()));
                     v_US.strTHAO_TAC_HET_HAN_YN = "Y";
-                    v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
+                    //v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
                     v_US.Update();
                 }
             }
             else if (us_user.dcIDNhom == 2)
             {
                 v_US.strTHAO_TAC_HET_HAN_YN = "Y";
-                v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
+                //v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
                 v_US.Update();
             }
                
@@ -49,7 +49,7 @@ namespace TOSApp.ChucNang
 
         private void insert_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
-           
+            US_DUNG_CHUNG v_us_dc = new US_DUNG_CHUNG();
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 303;//đã chuyển cho PM
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
@@ -57,9 +57,8 @@ namespace TOSApp.ChucNang
             v_US.dcID_NGUOI_NHAN_THAO_TAC =CIPConvert.ToDecimal( m_cbo_PM.SelectedValue);
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM có tên là: \n"+m_txt_ma_don_hang.Text+" ,gửi kèm:  " +m_txt_gui_kem.Text;
+            v_US.strGHI_CHU = us_user.strTEN_TRUY_CAP + " gửi đơn hàng cho PM "+v_us_dc.get_ten_nguoi_su_dung(CIPConvert.ToDecimal( m_cbo_PM.SelectedValue))+", gửi kèm:  " +m_txt_gui_kem.Text;
             v_US.Insert();
-            
         }
 
         internal void displayForUpdate(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
@@ -104,7 +103,5 @@ namespace TOSApp.ChucNang
         {
             this.Close();
         }
-
-       
     }
 }

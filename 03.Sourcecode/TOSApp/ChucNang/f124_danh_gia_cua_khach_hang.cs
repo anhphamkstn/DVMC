@@ -63,6 +63,7 @@ namespace TOSApp.ChucNang
             m_us_log.dcID_GD_DAT_HANG = m_us.dcID;
             m_us_log.dcID_LOAI_THAO_TAC = 299;
             m_us_log.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            m_us_log.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             m_us_log.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             m_us_log.strTHAO_TAC_HET_HAN_YN = "N";
             m_us_log.strGHI_CHU = "Khách hàng đã đánh giá";

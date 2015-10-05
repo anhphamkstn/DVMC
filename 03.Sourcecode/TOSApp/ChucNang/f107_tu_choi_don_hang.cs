@@ -64,7 +64,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us_tu_choi = new US_GD_LOG_DAT_HANG(v_us.dcID);
             v_us_tu_choi.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us_tu_choi.strGHI_CHU = "BO đã từ chối";
+            //v_us_tu_choi.strGHI_CHU = "BO đã từ chối";
             v_us_tu_choi.Update();
 
         }
@@ -78,7 +78,7 @@ namespace TOSApp.ChucNang
             v_US.dcID_NGUOI_NHAN_THAO_TAC = CIPConvert.ToDecimal(v_us.dcID_NGUOI_TAO);
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = m_txt_ly_do_tu_choi.Text;
+            v_US.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã từ chối với lý do " +  m_txt_ly_do_tu_choi.Text;
             v_US.Insert();
         }
 
@@ -89,7 +89,6 @@ namespace TOSApp.ChucNang
 
         internal void displayForRefuse(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us, decimal id_nguoi_tao)
         {
-
             us_to_form(m_us, id_nguoi_tao);
             this.ShowDialog();
         }

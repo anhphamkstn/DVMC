@@ -184,7 +184,6 @@ namespace TOSApp.ChucNang
             {
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
-
                 f114_ds_BO v_f114 = new f114_ds_BO();
                 v_f114.display_dieu_huong(v_us);
                 load_data_2_grid();
@@ -208,30 +207,25 @@ namespace TOSApp.ChucNang
                 US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f112_FO_chuyen_don_hang_cho_PM v_f = new f112_FO_chuyen_don_hang_cho_PM();
                 v_f.displayForUpdate(v_us);
-              //  update_trang_thai_don_hang(v_us);
-          
+                //update_trang_thai_don_hang(v_us);
                 load_data_2_grid();
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
 
-        private void update_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
-        {
-            US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);
-            v_US.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
-            v_US.Update();
-        }
-
-
+        //private void update_log_gui_cho_pm(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
+        //{
+        //    US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);
+        //    v_US.strTHAO_TAC_HET_HAN_YN = "Y";
+        //    v_US.strGHI_CHU = "đơn hàng đã được gửi cho PM";
+        //    v_US.Update();
+        //}
         //hàm được fix cứng 1 vài giá trị cần phải thay đổi khi làm liên quan đến hệ thống
         private void fill_data_to_m_us()
         {
-
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
             m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
         }
@@ -258,9 +252,7 @@ namespace TOSApp.ChucNang
         private void update_log_tiep_nhan()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-        
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "BO đã tiếp nhận";
             v_us.Update();
         }
         //hàm này được fixx cung người tạo thao tác là dành cho FO 
@@ -271,11 +263,10 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 296;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "BO nhận xử lý";
+            v_us.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã nhận xử lý";
             v_us.Insert();
         }
 
@@ -314,16 +305,6 @@ namespace TOSApp.ChucNang
 
         }
 
-        private void update_log_trang_thai_don_hang()
-        {
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
-            v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "BO đã từ chối";
-            v_us.Update();
-
-
-          
-        }
         #endregion 
 
         #region TM đánh giá cho các đơn hàng được báo cáo
@@ -366,17 +347,14 @@ namespace TOSApp.ChucNang
 
         private void ghi_log_da_hoan_thanh_don_hang_BO()
         {
-            
-
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//BO đã xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID; 
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull(); 
-
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;  
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "BO đã xử lý xong! chờ TM nghiệm thu";
+            v_us.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã xử lý xong! chờ TM nghiệm thu";
             v_us.Insert();
         }
 
@@ -384,7 +362,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "BO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
+            //v_us.strGHI_CHU = "BO đã xử lý xong đơn hàng và chờ TM nghiệm thu!";
             v_us.Update();
         }
         #endregion
@@ -413,22 +391,17 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 304;
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//thang pm co id 15
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "PM nhận xử lý";
+            v_us.strGHI_CHU =us_user.strTEN_TRUY_CAP + " đã nhận xử lý";
             v_us.Insert();
         }
-
-     
-        
-
         private void update_log_PM_tiep_nhan()
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "PM đã tiếp nhận xử lý";
+            //v_us.strGHI_CHU = "PM đã tiếp nhận xử lý";
             v_us.Update();
         }
         #endregion
@@ -461,11 +434,10 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 306;//TD xử lý
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;//TD có id = 21
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "TD nhận xử lý";
+            v_us.strGHI_CHU =us_user.strTEN_TRUY_CAP + " đã nhận xử lý";
             v_us.Insert();
         }
 
@@ -473,7 +445,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);          
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "admin đã tiếp nhận xử lý";
+            //v_us.strGHI_CHU = "admin đã tiếp nhận xử lý";
             v_us.Update();
         }
         #endregion
@@ -522,12 +494,11 @@ namespace TOSApp.ChucNang
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
             v_us.dcID_LOAI_THAO_TAC = 297;//đã nghiệm thu
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = m_us.dcID_NGUOI_TAO_THAO_TAC;
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-
+            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "TD hoàn thành đơn hàng,chờ TM nghiệm thu";
+            v_us.strGHI_CHU = us_user.strTEN_TRUY_CAP +  " đã hoàn thành đơn hàng, chờ TM nghiệm thu";
             v_us.Insert();
         }
 
@@ -535,7 +506,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);           
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "TD đã xử lý xong";
+            //v_us.strGHI_CHU = "TD đã xử lý xong";
             v_us.Update();
         }
         #endregion
@@ -574,11 +545,10 @@ namespace TOSApp.ChucNang
             v_us.dcID_LOAI_THAO_TAC = 297;//
             v_us.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
             v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.SetID_NGUOI_NHAN_THAO_TACNull();
-
+            v_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "PM báo cáo hoàn thành, chờ TM nghiệm thu";
+            v_us.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã hoàn thành đơn hàng, chờ TM nghiệm thu";
             v_us.Insert(); 
         }
 
@@ -587,7 +557,7 @@ namespace TOSApp.ChucNang
 
             US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_us.dcID);
             v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_us.strGHI_CHU = "PM đã hoàn thành,chờ TM nghiệm thu";
+            //v_us.strGHI_CHU = "PM đã hoàn thành,chờ TM nghiệm thu";
             v_us.Update();
         }
         #endregion
@@ -923,6 +893,24 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_cmd_TM_cap_nhat_xu_ly_Click(object sender, EventArgs e)
+        {
+            f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            v_f.Display_for_update(v_us);
+            load_data_2_grid();
+        }
+
+        private void m_cmd_FO_cap_nhat_xu_ly_Click(object sender, EventArgs e)
+        {
+            f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
+            DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
+            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            v_f.Display_for_update(v_us);
+            load_data_2_grid();
         }
 
     }

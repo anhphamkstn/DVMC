@@ -168,14 +168,13 @@ namespace TOSApp.ChucNang
         private void ghi_log_nghiem_thu_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
-           
             v_US.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
             v_US.dcID_LOAI_THAO_TAC = 309;//TM đã nghiệm thu
             v_US.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             v_US.SetID_NGUOI_NHAN_THAO_TACNull();
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng được TM nghiệm thu hoàn thành";
+            v_US.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đã nghiệm thu đơn hàng";
             v_US.Insert();
         }
 
@@ -183,7 +182,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(v_us.dcID);        
             v_US.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_US.strGHI_CHU = "TM đã nghiệm thu hoàn thành";
+            //v_US.strGHI_CHU = "TM đã nghiệm thu hoàn thành";
             v_US.Update();
             //cập nhật thời gian hoàn thành cho đơn hàng
             US_GD_DAT_HANG v_us1 = new US_GD_DAT_HANG(v_us.dcID_DON_HANG);

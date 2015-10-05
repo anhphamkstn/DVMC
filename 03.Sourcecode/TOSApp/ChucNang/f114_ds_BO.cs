@@ -17,7 +17,6 @@ namespace TOSApp.ChucNang
         public f114_ds_BO()
         {
             InitializeComponent();
-            
         }
 
         US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG();
@@ -106,22 +105,13 @@ namespace TOSApp.ChucNang
                {
                    m_lst_ds_BO.Add(CIPConvert.ToDecimal(m_grv_ds_BO.GetDataRow(m_grv_ds_BO.GetSelectedRows()[i])["ID_BO"].ToString()));
                }
-
-	               update_don_hang(m_us);
-                   for (int i = 0; i < m_lst_ds_BO.Count; i++)
-                   {
-                       ghi_log_dieu_phoi_lai(m_lst_ds_BO[i],m_us);
-                   }
-                    
-      
-                //for (int i = 0; i < m_lst_ds_BO.Count; i++)
-                //{
-                //    update_don_hang(m_lst_ds_BO[i]);
-                //    ghi_log_dieu_phoi_lai();
-                //}
-                
-                MessageBox.Show("thành công !");
-                this.Close();
+               update_don_hang(m_us);
+               for (int i = 0; i < m_lst_ds_BO.Count; i++)
+               {
+                   ghi_log_dieu_phoi_lai(m_lst_ds_BO[i], m_us);
+               }
+               MessageBox.Show("thành công !");
+               this.Close();
             }
             catch (Exception v_e)
             {
@@ -133,6 +123,7 @@ namespace TOSApp.ChucNang
 
         private void ghi_log_dieu_phoi_lai(decimal p,US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
+            US_DUNG_CHUNG v_us_dc = new US_DUNG_CHUNG();
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG();
             v_US.dcID_LOAI_THAO_TAC = 311;//fo đã điều phối lại
             v_US.dcID_GD_DAT_HANG = m_us.dcID_DON_HANG;
@@ -140,48 +131,15 @@ namespace TOSApp.ChucNang
             v_US.dcID_NGUOI_NHAN_THAO_TAC = p;
             v_US.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
             v_US.strTHAO_TAC_HET_HAN_YN = "N";
-            v_US.strGHI_CHU = "đơn hàng đã được điều phối lại cho BO" +p ;
+            v_US.strGHI_CHU = us_user.strTEN_TRUY_CAP + " đơn hàng đã được điều phối lại cho " + v_us_dc.get_ten_nguoi_su_dung(p);
             v_US.Insert();
         }
-
-     
-
         private void update_don_hang(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
         {
             US_GD_LOG_DAT_HANG v_US = new US_GD_LOG_DAT_HANG(m_us.dcID);
             v_US.strTHAO_TAC_HET_HAN_YN = "Y";
-            v_US.strGHI_CHU = "đơn hàng đã được gửi cho BO";
             v_US.Update();
         }
-
-  
-        private void ghi_log_dieu_phoi_cho_nguoi_xu_ly(decimal p, US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
-        {
-
-            US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG();
-            v_us.dcID_LOAI_THAO_TAC = 311;//fix cung cho tao tac dieu huong--> bi ngu
-            v_us.dcID_GD_DAT_HANG = m_us.dcID;
-            v_us.dcID_NGUOI_NHAN_THAO_TAC = p;
-            v_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
-            v_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
-            v_us.strTHAO_TAC_HET_HAN_YN = "N";
-            v_us.strGHI_CHU = "FO đã điều phối lại cho BO";
-            v_us.Insert();
-        }
-
-        private void update_don_hang(decimal p)
-        {
-            for (int i = 0; i < m_lst_ds_BO.Count; i++)
-            {
-                US_GD_LOG_DAT_HANG v_us = new US_GD_LOG_DAT_HANG(m_lst_ds_BO[i]);
-   
-                v_us.strTHAO_TAC_HET_HAN_YN = "Y";
-                v_us.strGHI_CHU = "đã điều phối lại";
-                v_us.Update();
-            }
- 	      
-        }
-
         private void m_grv_ds_BO_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
         {
             if (e.Info.IsRowIndicator && e.RowHandle >= 0)
