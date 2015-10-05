@@ -57,7 +57,7 @@
             this.m_grc_ds_don_hang_can_xu_ly.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_hang_can_xu_ly.MainView = this.m_grv_ds_don_hang_can_xu_ly;
             this.m_grc_ds_don_hang_can_xu_ly.Name = "m_grc_ds_don_hang_can_xu_ly";
-            this.m_grc_ds_don_hang_can_xu_ly.Size = new System.Drawing.Size(794, 224);
+            this.m_grc_ds_don_hang_can_xu_ly.Size = new System.Drawing.Size(794, 208);
             this.m_grc_ds_don_hang_can_xu_ly.TabIndex = 1;
             this.m_grc_ds_don_hang_can_xu_ly.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_don_hang_can_xu_ly});
@@ -203,8 +203,7 @@
             styleFormatCondition2.Appearance.Options.UseForeColor = true;
             styleFormatCondition2.ApplyToRow = true;
             styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition2.Expression = "[LOAI_THOI_GIAN_CAN_HOAN_THANH] == \'5 phút\'   or [LOAI_THOI_GIAN_CAN_HOAN_THANH]=" +
-    "=\'15 phút\'";
+            styleFormatCondition2.Expression = "[LOAI_THOI_GIAN_CAN_HOAN_THANH] >= GetDate(AddDays(Today(),-1 ))";
             this.m_grv_ds_don_hang_can_xu_ly.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
             styleFormatCondition1,
             styleFormatCondition2});
@@ -303,14 +302,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(794, 57);
+            this.panel1.Size = new System.Drawing.Size(794, 53);
             this.panel1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 23);
+            this.label1.Location = new System.Drawing.Point(12, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(333, 19);
             this.label1.TabIndex = 0;
@@ -320,16 +319,16 @@
             // 
             this.panel2.Controls.Add(this.m_grc_ds_don_hang_can_xu_ly);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 57);
+            this.panel2.Location = new System.Drawing.Point(0, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 224);
+            this.panel2.Size = new System.Drawing.Size(794, 208);
             this.panel2.TabIndex = 3;
             // 
             // f123_ds_don_hang_can_xu_ly
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 281);
+            this.ClientSize = new System.Drawing.Size(794, 261);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f123_ds_don_hang_can_xu_ly";
