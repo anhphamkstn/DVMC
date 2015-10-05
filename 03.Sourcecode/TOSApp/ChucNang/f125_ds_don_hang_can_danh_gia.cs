@@ -35,17 +35,17 @@ namespace TOSApp.ChucNang
             string v_str_query = "";
             if (m_trang_thai == 0)
             {
-                v_str_query = "SELECT * FROM V_BO_PM_TD_DICH_VU_GD_DAT_HANG_GD_LOG_DAT_HANG bptdvgdhgldh WHERE     (bptdvgdhgldh.ID_NGUOI_SU_DUNG = " + us_user.dcID.ToString() + ")  AND (bptdvgdhgldh.CAP_SU_DUNG ="+us_user.dcIDNhom.ToString() + ")" + "AND thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NULL";
+                v_str_query = "SELECT DISTINCT * FROM V_BO_PM_TD_DICH_VU_GD_DAT_HANG_GD_LOG_DAT_HANG bptdvgdhgldh WHERE     (bptdvgdhgldh.ID_NGUOI_SU_DUNG = " + us_user.dcID.ToString() + ")  AND (bptdvgdhgldh.CAP_SU_DUNG ="+us_user.dcIDNhom.ToString() + ")" + "AND thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NULL";
                 m_pan_button.Visible = false;
             }
             else if (m_trang_thai == 1)
             {
-                v_str_query = "SELECT * FROM V_BO_PM_TD_DICH_VU_GD_DAT_HANG_GD_LOG_DAT_HANG bptdvgdhgldh WHERE     (bptdvgdhgldh.ID_NGUOI_SU_DUNG = " + us_user.dcID.ToString() + ")  AND (bptdvgdhgldh.CAP_SU_DUNG ="+us_user.dcIDNhom.ToString() + ")" + "AND thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NOT NULL";
+                v_str_query = "SELECT DISTINCT * FROM V_BO_PM_TD_DICH_VU_GD_DAT_HANG_GD_LOG_DAT_HANG bptdvgdhgldh WHERE     (bptdvgdhgldh.ID_NGUOI_SU_DUNG = " + us_user.dcID.ToString() + ")  AND (bptdvgdhgldh.CAP_SU_DUNG =" + us_user.dcIDNhom.ToString() + ")" + "AND thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NOT NULL";
                 m_pan_button.Visible = false;
             }
             else
             {
-                v_str_query = "SELECT * FROM V_GD_DAT_HANG_GD_LOG_DAT_HANG  WHERE    thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NOT NULL";
+                v_str_query = "SELECT DISTINCT * FROM V_GD_DAT_HANG_GD_LOG_DAT_HANG  WHERE    thoi_gian_hoan_thanh is not null AND THAO_TAC_HET_HAN_YN = 'N' AND ID_DANH_GIA_TU_USER_DAT_HANG IS NOT NULL";
                 c_dich_vu_yeu_cau.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
                 m_pan_button.Visible = false;
             }

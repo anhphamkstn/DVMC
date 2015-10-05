@@ -239,7 +239,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "USER ĐẶT HÀNG";
-            this.gridColumn2.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.gridColumn2.FieldName = "USER_NAME";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -263,6 +263,8 @@
             // THOI_DIEM_CAN_HOAN_THANH
             // 
             this.THOI_DIEM_CAN_HOAN_THANH.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
@@ -287,6 +289,8 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "THỜI GIAN HOÀN THÀNH";
+            this.gridColumn8.DisplayFormat.FormatString = "g";
+            this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn8.FieldName = "THOI_GIAN_HOAN_THANH";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;

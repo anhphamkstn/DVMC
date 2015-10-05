@@ -266,6 +266,8 @@
             // NGAY_ADD
             // 
             this.NGAY_ADD.Caption = "ngày add";
+            this.NGAY_ADD.DisplayFormat.FormatString = "g";
+            this.NGAY_ADD.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.NGAY_ADD.FieldName = "NGAY_ADD";
             this.NGAY_ADD.Name = "NGAY_ADD";
             this.NGAY_ADD.Visible = true;

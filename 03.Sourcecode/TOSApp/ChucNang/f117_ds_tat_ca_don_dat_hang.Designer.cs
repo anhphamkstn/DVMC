@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f117_ds_tat_ca_don_dat_hang));
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -41,7 +42,7 @@
             this.m_grc_ds_don_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_don_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_user_dat_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -67,7 +68,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1213, 57);
+            this.panel1.Size = new System.Drawing.Size(1213, 53);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -75,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(3, 26);
+            this.label1.Location = new System.Drawing.Point(3, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 19);
             this.label1.TabIndex = 1;
@@ -122,14 +123,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1213, 370);
+            this.panel4.Size = new System.Drawing.Size(1213, 344);
             this.panel4.TabIndex = 2;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.m_grc_ds_don_dat_hang);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 57);
+            this.panel5.Location = new System.Drawing.Point(0, 53);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1213, 274);
             this.panel5.TabIndex = 2;
@@ -265,7 +266,7 @@
             this.m_grv_ds_don_dat_hang.AppearancePrint.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_ds_don_dat_hang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.MA_DON_HANG,
-            this.gridColumn2,
+            this.c_user_dat_hang,
             this.gridColumn3,
             this.gridColumn5,
             this.gridColumn6,
@@ -277,12 +278,25 @@
             this.gridColumn11});
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
             styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.White;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Appearance.Options.UseBorderColor = true;
+            styleFormatCondition1.Appearance.Options.UseForeColor = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= GetDate(AddHours(Today(),12) )   And  [THOI_DIEM_CA" +
-    "N_HOAN_THANH] >=GetDate( AddDays(Today(),-1 ) )";
+            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= now()";
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition2.Appearance.Options.UseBackColor = true;
+            styleFormatCondition2.Appearance.Options.UseBorderColor = true;
+            styleFormatCondition2.Appearance.Options.UseForeColor = true;
+            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] >=GetDate(AddDays(Today(),-1 ))";
             this.m_grv_ds_don_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1});
+            styleFormatCondition1,
+            styleFormatCondition2});
             this.m_grv_ds_don_dat_hang.GridControl = this.m_grc_ds_don_dat_hang;
             this.m_grv_ds_don_dat_hang.IndicatorWidth = 50;
             this.m_grv_ds_don_dat_hang.Name = "m_grv_ds_don_dat_hang";
@@ -312,14 +326,14 @@
             this.MA_DON_HANG.VisibleIndex = 0;
             this.MA_DON_HANG.Width = 110;
             // 
-            // gridColumn2
+            // c_user_dat_hang
             // 
-            this.gridColumn2.Caption = "Họ tên User đặt hàng";
-            this.gridColumn2.FieldName = "EMAIL";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 139;
+            this.c_user_dat_hang.Caption = "User đặt hàng";
+            this.c_user_dat_hang.FieldName = "USER_NAME";
+            this.c_user_dat_hang.Name = "c_user_dat_hang";
+            this.c_user_dat_hang.Visible = true;
+            this.c_user_dat_hang.VisibleIndex = 1;
+            this.c_user_dat_hang.Width = 139;
             // 
             // gridColumn3
             // 
@@ -413,12 +427,12 @@
             // 
             // f117_ds_tat_ca_don_dat_hang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 370);
+            this.ClientSize = new System.Drawing.Size(1213, 344);
             this.Controls.Add(this.panel4);
             this.Name = "f117_ds_tat_ca_don_dat_hang";
-            this.Text = "f117_Tất cả các đơn hàng đang xử lý";
+            this.Text = "f177_Đơn hàng đang xử lý";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -444,7 +458,7 @@
         private DevExpress.XtraGrid.GridControl m_grc_ds_don_dat_hang;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_don_dat_hang;
         private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn c_user_dat_hang;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;

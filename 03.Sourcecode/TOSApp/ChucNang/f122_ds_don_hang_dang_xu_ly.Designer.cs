@@ -184,16 +184,24 @@
             this.c_thoi_gian_tao,
             this.c_loai_thoi_gian_can_hoan_thanh,
             this.THOI_DIEM_CAN_HOAN_THANH});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Yellow;
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.White;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
+            styleFormatCondition1.Appearance.Options.UseBorderColor = true;
+            styleFormatCondition1.Appearance.Options.UseForeColor = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[LOAI_THOI_GIAN_CAN_HOAN_THANH] == \'5 phút\'   or [LOAI_THOI_GIAN_CAN_HOAN_THANH]=" +
-    "=\'15 phút\'";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Salmon;
+            styleFormatCondition1.Expression = "[thời điểm cần hoàn thành] <= now()";
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.White;
             styleFormatCondition2.Appearance.Options.UseBackColor = true;
+            styleFormatCondition2.Appearance.Options.UseBorderColor = true;
+            styleFormatCondition2.Appearance.Options.UseForeColor = true;
             styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= Now()   And  [THOI_DIEM_CAN_HOAN_THANH] >=GetDate( " +
-    "AddDays(Today(),-1 ) )";
+            styleFormatCondition2.Expression = "[thời điểm cần hoàn thành] >=GetDate(AddDays(Today(),-1 ))";
             this.m_grv_ds_don_hang_dang_xu_ly.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
             styleFormatCondition1,
             styleFormatCondition2});
@@ -258,8 +266,8 @@
             // 
             // c_nhan_vien_dat_hang
             // 
-            this.c_nhan_vien_dat_hang.Caption = "Nhân viên đặt hàng";
-            this.c_nhan_vien_dat_hang.FieldName = "HO_TEN_USER_DAT_HANG";
+            this.c_nhan_vien_dat_hang.Caption = "user đặt hàng";
+            this.c_nhan_vien_dat_hang.FieldName = "USER_NAME";
             this.c_nhan_vien_dat_hang.Name = "c_nhan_vien_dat_hang";
             this.c_nhan_vien_dat_hang.Visible = true;
             this.c_nhan_vien_dat_hang.VisibleIndex = 4;
@@ -268,6 +276,8 @@
             // c_thoi_gian_tao
             // 
             this.c_thoi_gian_tao.Caption = "Thời gian tạo";
+            this.c_thoi_gian_tao.DisplayFormat.FormatString = "g";
+            this.c_thoi_gian_tao.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.c_thoi_gian_tao.FieldName = "THOI_GIAN_TAO";
             this.c_thoi_gian_tao.Name = "c_thoi_gian_tao";
             this.c_thoi_gian_tao.Visible = true;
@@ -285,6 +295,8 @@
             // THOI_DIEM_CAN_HOAN_THANH
             // 
             this.THOI_DIEM_CAN_HOAN_THANH.Caption = "Thời điểm cần hoàn thành";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;

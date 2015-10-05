@@ -34,7 +34,7 @@
             this.m_grc_ds_dh_hoan_thanh = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_dh_hoan_thanh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_user_name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -196,7 +196,7 @@
             this.m_grv_ds_dh_hoan_thanh.Appearance.VertLine.Options.UseBackColor = true;
             this.m_grv_ds_dh_hoan_thanh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
-            this.gridColumn2,
+            this.c_user_name,
             this.gridColumn3,
             this.gridColumn4,
             this.THOI_DIEM_CAN_HOAN_THANH,
@@ -226,14 +226,14 @@
             this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 92;
             // 
-            // gridColumn2
+            // c_user_name
             // 
-            this.gridColumn2.Caption = "USER ĐẶT HÀNG";
-            this.gridColumn2.FieldName = "HO_TEN_USER_DAT_HANG";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 92;
+            this.c_user_name.Caption = "USER ĐẶT HÀNG";
+            this.c_user_name.FieldName = "USER_NAME";
+            this.c_user_name.Name = "c_user_name";
+            this.c_user_name.Visible = true;
+            this.c_user_name.VisibleIndex = 1;
+            this.c_user_name.Width = 92;
             // 
             // gridColumn3
             // 
@@ -256,6 +256,8 @@
             // THOI_DIEM_CAN_HOAN_THANH
             // 
             this.THOI_DIEM_CAN_HOAN_THANH.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
@@ -283,6 +285,8 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "THỜI GIAN HOÀN THÀNH";
+            this.gridColumn8.DisplayFormat.FormatString = "g";
+            this.gridColumn8.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn8.FieldName = "THOI_GIAN_HOAN_THANH";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
@@ -337,7 +341,7 @@
         private DevExpress.XtraGrid.GridControl m_grc_ds_dh_hoan_thanh;
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_dh_hoan_thanh;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn c_user_name;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;

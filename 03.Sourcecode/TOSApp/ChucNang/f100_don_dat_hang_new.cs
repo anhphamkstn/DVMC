@@ -1099,6 +1099,8 @@ namespace TOSApp.ChucNang
             m_cmd_tu_choi.Visible = false;
             m_cmd_xac_nhan_don_hang.Visible = false;
             m_docmanager_don_hang.Visible = false;
+            m_cbo_phuong_thuc_dat_hang.Enabled = false;
+            
         }
 
         internal void displayForUpdate2(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
@@ -1110,7 +1112,6 @@ namespace TOSApp.ChucNang
             m_e_form_mode = DataEntryFormMode.UpdateDataState;
             M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
             load_data_2_lich_su_thuc_hien();
-            
             this.ShowDialog();
         }
 

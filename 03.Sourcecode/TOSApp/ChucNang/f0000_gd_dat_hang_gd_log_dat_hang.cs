@@ -135,7 +135,7 @@ namespace TOSApp.ChucNang
                     m_query = m_query + "And (ID_LOAI_THAO_TAC = 321 OR (ID_LOAI_THAO_TAC = 297 AND ID_LOAI_THAO_TAC = ALL (SELECT* FROM dbo.f_get_table_trang_thai_don_hang(ID_DON_HANG)))) ";
                 }
 
-            m_query += "order by THOI_GIAN_TAO DESC";
+            m_query += "order by NGAY_LAP_THAO_TAC DESC";
             v_us.FillDatasetWithQuery(v_ds,m_query);
             m_grc_gd_dat_hang_gd_log_dat_hang.DataSource = v_ds.Tables[0];
         }
@@ -485,7 +485,8 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
-                f103.Display(m_us);                       
+                f103.Display(m_us);
+                load_data_2_grid();     
             }
             catch (Exception v_e)
             {
@@ -909,5 +910,20 @@ namespace TOSApp.ChucNang
             }
         }
     
+        private void m_cmd_TM_huy_hon_hang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
+                f103.Display(m_us);
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
     }
 }
