@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.m_grc_ds_log_gd_dat_hang = new DevExpress.XtraGrid.GridControl();
@@ -41,7 +40,14 @@
             this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TEN_US_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.timer1 = new System.Windows.Forms.Timer();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).BeginInit();
@@ -55,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(993, 44);
+            this.panel1.Size = new System.Drawing.Size(1257, 44);
             this.panel1.TabIndex = 0;
             // 
             // m_lab_tieu_de
@@ -76,7 +82,7 @@
             this.m_grc_ds_log_gd_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_log_gd_dat_hang.MainView = this.m_grv_ds_log_dat_hang;
             this.m_grc_ds_log_gd_dat_hang.Name = "m_grc_ds_log_gd_dat_hang";
-            this.m_grc_ds_log_gd_dat_hang.Size = new System.Drawing.Size(993, 218);
+            this.m_grc_ds_log_gd_dat_hang.Size = new System.Drawing.Size(1257, 218);
             this.m_grc_ds_log_gd_dat_hang.TabIndex = 0;
             this.m_grc_ds_log_gd_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_log_dat_hang});
@@ -201,11 +207,20 @@
             this.NGUOI_NHAN_THAO_TAC,
             this.GHI_CHU,
             this.MA_DON_HANG,
-            this.TEN_US_HANG});
+            this.TEN_US_HANG,
+            this.gridColumn1,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.gridColumn5,
+            this.gridColumn2});
             this.m_grv_ds_log_dat_hang.GridControl = this.m_grc_ds_log_gd_dat_hang;
+            this.m_grv_ds_log_dat_hang.IndicatorWidth = 50;
             this.m_grv_ds_log_dat_hang.Name = "m_grv_ds_log_dat_hang";
             this.m_grv_ds_log_dat_hang.OptionsBehavior.Editable = false;
             this.m_grv_ds_log_dat_hang.OptionsBehavior.ReadOnly = true;
+            this.m_grv_ds_log_dat_hang.OptionsView.ColumnAutoWidth = false;
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_log_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_log_dat_hang.OptionsView.ShowAutoFilterRow = true;
@@ -221,7 +236,7 @@
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.Name = "TEN_NGUOI_TAO_THAO_TAC_LOG";
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.Visible = true;
             this.TEN_NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 2;
-            this.TEN_NGUOI_TAO_THAO_TAC_LOG.Width = 122;
+            this.TEN_NGUOI_TAO_THAO_TAC_LOG.Width = 96;
             // 
             // THOI_GIAN_TAO
             // 
@@ -231,8 +246,8 @@
             this.THOI_GIAN_TAO.FieldName = "NGAY_LAP_THAO_TAC";
             this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
             this.THOI_GIAN_TAO.Visible = true;
-            this.THOI_GIAN_TAO.VisibleIndex = 4;
-            this.THOI_GIAN_TAO.Width = 157;
+            this.THOI_GIAN_TAO.VisibleIndex = 8;
+            this.THOI_GIAN_TAO.Width = 131;
             // 
             // TEN_CHI_NHANH
             // 
@@ -241,7 +256,7 @@
             this.TEN_CHI_NHANH.Name = "TEN_CHI_NHANH";
             this.TEN_CHI_NHANH.Visible = true;
             this.TEN_CHI_NHANH.VisibleIndex = 5;
-            this.TEN_CHI_NHANH.Width = 101;
+            this.TEN_CHI_NHANH.Width = 99;
             // 
             // TEN_LOAI_THAO_TAC_LOG
             // 
@@ -249,8 +264,8 @@
             this.TEN_LOAI_THAO_TAC_LOG.FieldName = "TEN_LOAI_THAO_TAC_LOG";
             this.TEN_LOAI_THAO_TAC_LOG.Name = "TEN_LOAI_THAO_TAC_LOG";
             this.TEN_LOAI_THAO_TAC_LOG.Visible = true;
-            this.TEN_LOAI_THAO_TAC_LOG.VisibleIndex = 6;
-            this.TEN_LOAI_THAO_TAC_LOG.Width = 123;
+            this.TEN_LOAI_THAO_TAC_LOG.VisibleIndex = 11;
+            this.TEN_LOAI_THAO_TAC_LOG.Width = 108;
             // 
             // NGUOI_NHAN_THAO_TAC
             // 
@@ -258,8 +273,8 @@
             this.NGUOI_NHAN_THAO_TAC.FieldName = "TEN_NGUOI_NHAN_THAO_TAC";
             this.NGUOI_NHAN_THAO_TAC.Name = "NGUOI_NHAN_THAO_TAC";
             this.NGUOI_NHAN_THAO_TAC.Visible = true;
-            this.NGUOI_NHAN_THAO_TAC.VisibleIndex = 3;
-            this.NGUOI_NHAN_THAO_TAC.Width = 147;
+            this.NGUOI_NHAN_THAO_TAC.VisibleIndex = 10;
+            this.NGUOI_NHAN_THAO_TAC.Width = 86;
             // 
             // GHI_CHU
             // 
@@ -267,8 +282,8 @@
             this.GHI_CHU.FieldName = "GHI_CHU";
             this.GHI_CHU.Name = "GHI_CHU";
             this.GHI_CHU.Visible = true;
-            this.GHI_CHU.VisibleIndex = 7;
-            this.GHI_CHU.Width = 84;
+            this.GHI_CHU.VisibleIndex = 14;
+            this.GHI_CHU.Width = 109;
             // 
             // MA_DON_HANG
             // 
@@ -277,7 +292,7 @@
             this.MA_DON_HANG.Name = "MA_DON_HANG";
             this.MA_DON_HANG.Visible = true;
             this.MA_DON_HANG.VisibleIndex = 0;
-            this.MA_DON_HANG.Width = 122;
+            this.MA_DON_HANG.Width = 96;
             // 
             // TEN_US_HANG
             // 
@@ -286,7 +301,69 @@
             this.TEN_US_HANG.Name = "TEN_US_HANG";
             this.TEN_US_HANG.Visible = true;
             this.TEN_US_HANG.VisibleIndex = 1;
-            this.TEN_US_HANG.Width = 122;
+            this.TEN_US_HANG.Width = 96;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "ĐIỆN THOẠI";
+            this.gridColumn1.FieldName = "DIEN_THOAI";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 3;
+            this.gridColumn1.Width = 78;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "LOẠI DỊCH VỤ";
+            this.gridColumn3.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 6;
+            this.gridColumn3.Width = 78;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "YÊU CẦU CỤ THỂ";
+            this.gridColumn4.FieldName = "NOI_DUNG_DAT_HANG";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 7;
+            this.gridColumn4.Width = 86;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.gridColumn6.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 9;
+            this.gridColumn6.Width = 121;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "CHI NHÁNH";
+            this.gridColumn7.FieldName = "TEN_CHI_NHANH";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 12;
+            this.gridColumn7.Width = 90;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "MÃ ĐƠN VỊ";
+            this.gridColumn2.FieldName = "MA_DON_VI";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 4;
+            this.gridColumn2.Width = 90;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "KÊNH ĐẶT HÀNG";
+            this.gridColumn5.FieldName = "TEN_PHUONG_THUC_DAT_HANG";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 14;
             // 
             // timer1
             // 
@@ -299,14 +376,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 44);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(993, 218);
+            this.panel2.Size = new System.Drawing.Size(1257, 218);
             this.panel2.TabIndex = 1;
             // 
             // f118_ds_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 262);
+            this.ClientSize = new System.Drawing.Size(1257, 262);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f118_ds_log_dat_hang";
@@ -336,5 +413,12 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label m_lab_tieu_de;
         private DevExpress.XtraGrid.Columns.GridColumn TEN_US_HANG;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
     }
 }

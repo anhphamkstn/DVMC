@@ -26,7 +26,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG where thoi_gian_hoan_thanh is not null AND (THAO_TAC_HET_HAN_YN = 'N' OR (THAO_TAC_HET_HAN_YN = 'Y' AND ID_LOAI_THAO_TAC = 299))");
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG");
             m_grc_ds_dh_hoan_thanh.DataSource = v_ds.Tables[0];
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -79,6 +79,8 @@ namespace TOSApp.ChucNang
                 e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
             }
         }
+
+        
        
     }
 }
