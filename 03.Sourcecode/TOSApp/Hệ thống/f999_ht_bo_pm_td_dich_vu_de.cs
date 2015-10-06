@@ -241,17 +241,18 @@ namespace TOSApp.Hệ_thống
 
         private void f999_ht_bo_pm_td_dich_vu_de_Load(object sender, EventArgs e)
         {
-            grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-            //if(us_user.dcIDNhom != 5)
-            //{
-            //    grv_danh_sach_bo.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-            //    grv_danh_sach_pm.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-            //    grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-            //    m_pan_button.Visible = false;
-            //    txt_dich_vu.ReadOnly = true;
-            //    cbo_nhom_dich_vu.Enabled = false;
-            //    cbo_loai_dich_vu.Enabled = false;
-            //}
+            US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
+            if(us_user.dcIDNhom == 3  )
+            {
+                grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+                grv_danh_sach_pm.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+                m_pan_xoa.Visible = false;
+            }
+            if(us_user.dcIDNhom == 5 && v_us.get_id_td_dich_vu(10, us_user.dcID) == 0)
+            {
+                grv_danh_sach_td.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+            }
+            
         }
 
         private void cbo_loai_dich_vu_SelectedIndexChanged(object sender, EventArgs e)

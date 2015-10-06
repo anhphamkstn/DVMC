@@ -22,10 +22,6 @@ namespace TOSApp.Hệ_thống
 
         private void f999_ht_bo_dich_vu_Load(object sender, EventArgs e)
         {
-            //if(us_user.dcIDNhom !=5)
-            //{
-            //    m_grv_ht_bo_pm_td_dich_vu.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
-            //}
             load_data_to_grv();
         }
 
@@ -34,7 +30,24 @@ namespace TOSApp.Hệ_thống
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            string v_str_query = "SELECT * FROM V_DICH_VU_BO_PM_TD WHERE ID_TD = " + us_user.dcID.ToString();
+            string v_str_query;
+            if ((us_user.dcIDNhom == 3 && v_us.get_id_pm_dich_vu(10,us_user.dcID) != 0) ||(us_user.dcIDNhom == 5  && v_us.get_id_td_dich_vu(10, us_user.dcID) != 0))
+            {
+                if (us_user.dcIDNhom == 3)
+                    m_grv_ht_bo_pm_td_dich_vu.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+                v_str_query = "SELECT * FROM V_DICH_VU_BO_PM_TD";
+            }
+            else
+            {
+                m_grv_ht_bo_pm_td_dich_vu.OptionsView.NewItemRowPosition = NewItemRowPosition.None;
+                if (us_user.dcIDNhom == 3)
+                {
+                    v_str_query = "SELECT * FROM V_DICH_VU_BO_PM_TD WHERE ID_PM = " + us_user.dcID.ToString();
+                }
+                else
+                    v_str_query = "SELECT * FROM V_DICH_VU_BO_PM_TD WHERE ID_TD = " + us_user.dcID.ToString();
+            }
+            
             v_us.FillDatasetWithQuery(v_ds, v_str_query);
             m_grc_ht_bo_pm_td_dich_vu.DataSource = v_ds.Tables[0];
         }

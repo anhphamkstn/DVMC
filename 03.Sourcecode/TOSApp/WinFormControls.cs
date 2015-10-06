@@ -402,8 +402,26 @@ namespace TOSApp
             v_cstore.ExecuteCommand(this);
             return (string)v_result.Value;
         }
-        
-
+        public decimal get_id_pm_dich_vu (decimal v_id_loai_dich_vu,decimal v_id_pm)
+        {
+            decimal count = 0;
+            CStoredProc v_cstore = new CStoredProc("get_id_pm_dich_vu");
+            v_cstore.addDecimalInputParam("@id", v_id_loai_dich_vu);
+            v_cstore.addDecimalInputParam("@v_id_pm", v_id_pm);
+            SqlParameter v_result = v_cstore.addDecimalOutputParam("@count", count);
+            v_cstore.ExecuteCommand(this);
+            return (decimal)v_result.Value;
+        }
+        public decimal get_id_td_dich_vu(decimal v_id_loai_dich_vu, decimal v_id_td)
+        {
+            decimal count = 0;
+            CStoredProc v_cstore = new CStoredProc("get_id_td_dich_vu");
+            v_cstore.addDecimalInputParam("@id", v_id_loai_dich_vu);
+            v_cstore.addDecimalInputParam("@v_id_td", v_id_td);
+            SqlParameter v_result = v_cstore.addDecimalOutputParam("@count", count);
+            v_cstore.ExecuteCommand(this);
+            return (decimal)v_result.Value;
+        }
 
        
     }

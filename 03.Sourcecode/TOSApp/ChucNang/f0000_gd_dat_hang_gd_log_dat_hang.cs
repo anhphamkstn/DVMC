@@ -913,5 +913,20 @@ namespace TOSApp.ChucNang
             load_data_2_grid();
         }
 
+        private void m_cmd_FO_huy_hon_hang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fill_data_to_m_us();
+                f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
+                f103.Display(m_us);
+            }
+            catch (Exception v_e)
+            {
+
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
     }
 }

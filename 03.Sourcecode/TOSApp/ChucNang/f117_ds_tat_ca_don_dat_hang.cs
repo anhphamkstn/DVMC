@@ -23,13 +23,12 @@ namespace TOSApp.ChucNang
             load_data_2_grid();
         }
 
-
         private void load_data_2_grid()
         {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where Thao_tac_het_han_YN= 'N' and thoi_gian_hoan_thanh is null");
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG where dbo.f_get_trang_thai_xu_ly_don_hang_YN(ID) = 'Y'");
             m_grc_ds_don_dat_hang.DataSource = v_ds.Tables[0];
         }
 
@@ -45,24 +44,15 @@ namespace TOSApp.ChucNang
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
 
-
-        private void m_grv_ds_don_dat_hang_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
-        {
-
-        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             load_data_2_grid();
-
         }
-        //fotmat mau cho luoi theo dieu kien
      
-
         internal void display_for_refurse_dealine(decimal deadline_id)
         {
 
@@ -77,7 +67,6 @@ namespace TOSApp.ChucNang
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
@@ -111,14 +100,27 @@ namespace TOSApp.ChucNang
         private void m_grv_ds_don_dat_hang_PopupMenuShowing(object sender, PopupMenuShowingEventArgs e)
         {
             GridView view = sender as GridView;
-            // Check whether a row is right-clicked.
             if (e.MenuType == DevExpress.XtraGrid.Views.Grid.GridMenuType.Row)
             {
                 int rowHandle = e.HitInfo.RowHandle;
-                // Delete existing menu items, if any.
                 e.Menu.Items.Clear();
-                // Add a submenu with a single menu item.
                 e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
+            }
+        }
+
+        private void m_cmd_FO_huy_hon_hang_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
+                m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
+                f103.Display(m_us);
+                load_data_2_grid();
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
             }
         }
 

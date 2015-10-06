@@ -147,11 +147,6 @@ namespace TOSApp
                 m_rib_dm_email.Visible = false;
                 m_rib_blacklist.Visible = false;
             }
-            if (us_user.dcIDNhom != 5)
-            {
-                m_rib_bo_pm_td_dich_vu.Visible = false;
-            }
-         
         }
 
         private void format_button_controll()

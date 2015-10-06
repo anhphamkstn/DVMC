@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using IPCOREUS;
+using IP.Core.IPCommon;
 namespace TOSApp.ChucNang
 {
     public partial class f103_TD_ly_do_tu_choi : Form
@@ -61,10 +62,17 @@ namespace TOSApp.ChucNang
 
         private void update_log_admin_huy_don_hang()
         {
-            US_GD_LOG_DAT_HANG V_us = new US_GD_LOG_DAT_HANG(v_us.dcID);
-            V_us.strTHAO_TAC_HET_HAN_YN = "Y";
-            //V_us.strGHI_CHU = "TD đã hủy đơn hàng";
-            V_us.Update();
+            US_DUNG_CHUNG v_us_dc = new US_DUNG_CHUNG();
+            DataSet v_ds = new DataSet();
+            v_ds.Tables.Add(new DataTable());
+            v_us_dc.FillDatasetWithQuery(v_ds, "SELECT * FROM V_GD_DAT_HANG_GD_LOG_DAT_HANG WHERE [ID_DON_HANG] = " + v_us.dcID_DON_HANG.ToString());
+            for(int i= 0;i< v_ds.Tables[0].Rows.Count;i++)
+            {
+                US_GD_LOG_DAT_HANG V_us = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i]["ID"].ToString()));
+                V_us.strTHAO_TAC_HET_HAN_YN = "Y";
+                V_us.Update();
+            }
+           
         }
     }
 }

@@ -30,11 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f117_ds_tat_ca_don_dat_hang));
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.m_cmd_FO_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -50,11 +53,16 @@
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_nguoi_tao = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.c_nguoi_xu_ly = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_trang_thai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_cap_nhat_lan_cuoi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -84,12 +92,35 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 331);
+            this.panel2.Location = new System.Drawing.Point(0, 305);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1213, 39);
             this.panel2.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.m_cmd_FO_huy_hon_hang);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(941, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(136, 39);
+            this.panel6.TabIndex = 1;
+            // 
+            // m_cmd_FO_huy_hon_hang
+            // 
+            this.m_cmd_FO_huy_hon_hang.Appearance.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_cmd_FO_huy_hon_hang.Appearance.Options.UseFont = true;
+            this.m_cmd_FO_huy_hon_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_FO_huy_hon_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_FO_huy_hon_hang.Image")));
+            this.m_cmd_FO_huy_hon_hang.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_FO_huy_hon_hang.Name = "m_cmd_FO_huy_hon_hang";
+            this.m_cmd_FO_huy_hon_hang.Size = new System.Drawing.Size(136, 39);
+            this.m_cmd_FO_huy_hon_hang.TabIndex = 4;
+            this.m_cmd_FO_huy_hon_hang.Text = "Hủy đơn hàng";
+            this.m_cmd_FO_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_FO_huy_hon_hang_Click);
             // 
             // panel3
             // 
@@ -132,17 +163,20 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 53);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1213, 274);
+            this.panel5.Size = new System.Drawing.Size(1213, 252);
             this.panel5.TabIndex = 2;
             // 
             // m_grc_ds_don_dat_hang
             // 
             this.m_grc_ds_don_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_ds_don_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode1.RelationName = "Level1";
+            this.m_grc_ds_don_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.m_grc_ds_don_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_dat_hang.MainView = this.m_grv_ds_don_dat_hang;
             this.m_grc_ds_don_dat_hang.Name = "m_grc_ds_don_dat_hang";
-            this.m_grc_ds_don_dat_hang.Size = new System.Drawing.Size(1213, 274);
+            this.m_grc_ds_don_dat_hang.Size = new System.Drawing.Size(1213, 252);
             this.m_grc_ds_don_dat_hang.TabIndex = 0;
             this.m_grc_ds_don_dat_hang.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_don_dat_hang});
@@ -272,23 +306,27 @@
             this.gridColumn6,
             this.gridColumn7,
             this.THOI_DIEM_CAN_HOAN_THANH,
+            this.c_nguoi_xu_ly,
             this.gridColumn9,
+            this.m_trang_thai,
+            this.m_cap_nhat_lan_cuoi,
+            this.m_thoi_gian_can_hoan_thanh,
             this.gridColumn1,
-            this.gridColumn10,
+            this.c_nguoi_tao,
             this.gridColumn11});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Black;
             styleFormatCondition1.Appearance.Options.UseBackColor = true;
             styleFormatCondition1.Appearance.Options.UseBorderColor = true;
             styleFormatCondition1.Appearance.Options.UseForeColor = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
             styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= now()";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.Red;
-            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.Red;
+            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.White;
+            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Black;
             styleFormatCondition2.Appearance.Options.UseBackColor = true;
             styleFormatCondition2.Appearance.Options.UseBorderColor = true;
             styleFormatCondition2.Appearance.Options.UseForeColor = true;
@@ -303,14 +341,12 @@
             this.m_grv_ds_don_dat_hang.OptionsBehavior.Editable = false;
             this.m_grv_ds_don_dat_hang.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
             this.m_grv_ds_don_dat_hang.OptionsBehavior.ReadOnly = true;
+            this.m_grv_ds_don_dat_hang.OptionsView.ColumnAutoWidth = false;
             this.m_grv_ds_don_dat_hang.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_don_dat_hang.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_dat_hang.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_dat_hang.OptionsView.ShowFooter = true;
             this.m_grv_ds_don_dat_hang.PaintStyleName = "Flat";
-            this.m_grv_ds_don_dat_hang.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn9, DevExpress.Data.ColumnSortOrder.Descending)});
-            this.m_grv_ds_don_dat_hang.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.m_grv_ds_don_dat_hang_RowCellClick);
             this.m_grv_ds_don_dat_hang.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_ds_don_dat_hang_CustomDrawRowIndicator);
             this.m_grv_ds_don_dat_hang.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.m_grv_ds_don_dat_hang_PopupMenuShowing);
             this.m_grv_ds_don_dat_hang.DoubleClick += new System.EventHandler(this.m_grv_ds_don_dat_hang_DoubleClick);
@@ -347,11 +383,11 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Dịch vụ yêu cầu";
-            this.gridColumn5.FieldName = "TEN_NHOM_DICH_VU_YEU_CAU";
+            this.gridColumn5.FieldName = "TEN_YEU_CAU";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 108;
+            this.gridColumn5.Width = 121;
             // 
             // gridColumn6
             // 
@@ -360,7 +396,7 @@
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 108;
+            this.gridColumn6.Width = 161;
             // 
             // gridColumn7
             // 
@@ -369,7 +405,7 @@
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 3;
-            this.gridColumn7.Width = 61;
+            this.gridColumn7.Width = 84;
             // 
             // THOI_DIEM_CAN_HOAN_THANH
             // 
@@ -379,7 +415,7 @@
             this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
             this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 6;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 7;
             this.THOI_DIEM_CAN_HOAN_THANH.Width = 139;
             // 
             // gridColumn9
@@ -390,26 +426,26 @@
             this.gridColumn9.FieldName = "THOI_GIAN_TAO";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 7;
-            this.gridColumn9.Width = 103;
+            this.gridColumn9.VisibleIndex = 6;
+            this.gridColumn9.Width = 129;
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Phương thức đặt hàng";
-            this.gridColumn1.FieldName = "TEN_PHUONG_THUC_DAT_HANG";
+            this.gridColumn1.FieldName = "PHUONG_THUC_DAT_HANG";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 8;
+            this.gridColumn1.VisibleIndex = 13;
             this.gridColumn1.Width = 164;
             // 
-            // gridColumn10
+            // c_nguoi_tao
             // 
-            this.gridColumn10.Caption = "Người tạo";
-            this.gridColumn10.FieldName = "NGUOI_TAO_THAO_TAC";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 9;
-            this.gridColumn10.Width = 74;
+            this.c_nguoi_tao.Caption = "NV nhận đặt hàng";
+            this.c_nguoi_tao.FieldName = "NGUOI_TAO";
+            this.c_nguoi_tao.Name = "c_nguoi_tao";
+            this.c_nguoi_tao.Visible = true;
+            this.c_nguoi_tao.VisibleIndex = 12;
+            this.c_nguoi_tao.Width = 133;
             // 
             // gridColumn11
             // 
@@ -417,13 +453,49 @@
             this.gridColumn11.FieldName = "TEN_CHI_NHANH";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 10;
+            this.gridColumn11.VisibleIndex = 14;
             this.gridColumn11.Width = 86;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10000;
+            // 
+            // c_nguoi_xu_ly
+            // 
+            this.c_nguoi_xu_ly.Caption = "người xử lý";
+            this.c_nguoi_xu_ly.FieldName = "NGUOI_XU_LY";
+            this.c_nguoi_xu_ly.Name = "c_nguoi_xu_ly";
+            this.c_nguoi_xu_ly.Visible = true;
+            this.c_nguoi_xu_ly.VisibleIndex = 8;
+            this.c_nguoi_xu_ly.Width = 110;
+            // 
+            // m_trang_thai
+            // 
+            this.m_trang_thai.Caption = "Trạng thái đơn hàng";
+            this.m_trang_thai.FieldName = "TRANG_THAI_DON_HANG";
+            this.m_trang_thai.Name = "m_trang_thai";
+            this.m_trang_thai.Visible = true;
+            this.m_trang_thai.VisibleIndex = 9;
+            this.m_trang_thai.Width = 127;
+            // 
+            // m_cap_nhat_lan_cuoi
+            // 
+            this.m_cap_nhat_lan_cuoi.Caption = "Cập nhật lần cuối";
+            this.m_cap_nhat_lan_cuoi.FieldName = "CAP_NHAT_CUOI";
+            this.m_cap_nhat_lan_cuoi.Name = "m_cap_nhat_lan_cuoi";
+            this.m_cap_nhat_lan_cuoi.Visible = true;
+            this.m_cap_nhat_lan_cuoi.VisibleIndex = 10;
+            this.m_cap_nhat_lan_cuoi.Width = 129;
+            // 
+            // m_thoi_gian_can_hoan_thanh
+            // 
+            this.m_thoi_gian_can_hoan_thanh.Caption = "Thời gian cần hoàn thành";
+            this.m_thoi_gian_can_hoan_thanh.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
+            this.m_thoi_gian_can_hoan_thanh.Name = "m_thoi_gian_can_hoan_thanh";
+            this.m_thoi_gian_can_hoan_thanh.Visible = true;
+            this.m_thoi_gian_can_hoan_thanh.VisibleIndex = 11;
+            this.m_thoi_gian_can_hoan_thanh.Width = 165;
             // 
             // f117_ds_tat_ca_don_dat_hang
             // 
@@ -436,6 +508,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -466,7 +539,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.Columns.GridColumn c_nguoi_tao;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private System.Windows.Forms.Panel panel6;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_FO_huy_hon_hang;
+        private DevExpress.XtraGrid.Columns.GridColumn c_nguoi_xu_ly;
+        private DevExpress.XtraGrid.Columns.GridColumn m_trang_thai;
+        private DevExpress.XtraGrid.Columns.GridColumn m_cap_nhat_lan_cuoi;
+        private DevExpress.XtraGrid.Columns.GridColumn m_thoi_gian_can_hoan_thanh;
     }
 }

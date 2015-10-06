@@ -1055,8 +1055,6 @@ namespace TOSApp.ChucNang
            m_cbo_loai_dich_vu_1.SelectedValue = v_us.dcID_DM_YEU_CAU_1;
         }
 
-       
-
         private void format_control_view_thong_tin_don_hang()
         {
             m_docmanager_don_hang.Visible = false;
@@ -1092,8 +1090,8 @@ namespace TOSApp.ChucNang
             m_cmd_xac_nhan_don_hang.Visible = false;
             m_docmanager_don_hang.Visible = false;
             m_cbo_phuong_thuc_dat_hang.Enabled = false;
-            
-        }
+
+        } 
 
         internal void displayForUpdate2(US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us)
         {
