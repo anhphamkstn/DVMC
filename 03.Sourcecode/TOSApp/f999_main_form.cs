@@ -75,6 +75,7 @@ namespace TOSApp
         f125_ds_don_hang_can_danh_gia v_f125_ds_don_hang_can_danh_gia2;
         f100_dm_cau_hoi v_f100_dm_cau_hoi;
         f999_ht_bo_pm_td_dich_vu v_f999_ht_bo_pm_td_dich_vu;
+        f345_danh_muc_cuoc_goi v_f345_danh_muc_cuoc_goi;
 
         private void GetAllControl(f999_main_form c, List<Control> list)
         {
@@ -970,6 +971,28 @@ namespace TOSApp
             }
             catch (Exception v_e)
             {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_btn_cuoc_goi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                if (v_f345_danh_muc_cuoc_goi == null || !IsFormOpen(v_f345_danh_muc_cuoc_goi))
+                {
+                    v_f345_danh_muc_cuoc_goi = new f345_danh_muc_cuoc_goi();
+                    v_f345_danh_muc_cuoc_goi.MdiParent = this;
+                    v_f345_danh_muc_cuoc_goi.Show();
+                }
+                else
+                {
+                    v_f345_danh_muc_cuoc_goi.Focus();
+                }
+            }
+            catch (Exception v_e)
+            {
+
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }

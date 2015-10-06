@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f114_ds_BO));
+            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_Cancel = new DevExpress.XtraEditors.SimpleButton();
@@ -40,12 +43,16 @@
             this.m_grv_ds_BO = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.TEN_BO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.m_sch = new DevExpress.XtraScheduler.SchedulerControl();
+            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_BO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_BO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,6 +117,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.m_sch);
             this.panel2.Controls.Add(this.m_grc_ds_BO);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 38);
@@ -275,6 +283,22 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
+            // m_sch
+            // 
+            this.m_sch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_sch.Location = new System.Drawing.Point(196, 0);
+            this.m_sch.Name = "m_sch";
+            this.m_sch.Size = new System.Drawing.Size(568, 387);
+            this.m_sch.Start = new System.DateTime(2015, 9, 10, 0, 0, 0, 0);
+            this.m_sch.Storage = this.schedulerStorage1;
+            this.m_sch.TabIndex = 1;
+            this.m_sch.Text = "schedulerControl1";
+            timeRuler3.AlwaysShowTimeDesignator = true;
+            timeRuler3.TimeZone.Id = "SE Asia Standard Time";
+            timeRuler3.UseClientTimeZone = false;
+            this.m_sch.Views.DayView.TimeRulers.Add(timeRuler3);
+            this.m_sch.Views.WorkWeekView.TimeRulers.Add(timeRuler4);
+            // 
             // f114_ds_BO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -292,6 +316,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_BO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_BO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -309,5 +335,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_BO;
         private DevExpress.XtraGrid.Columns.GridColumn TEN_BO;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraScheduler.SchedulerControl m_sch;
+        private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
     }
 }

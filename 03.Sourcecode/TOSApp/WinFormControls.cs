@@ -139,7 +139,7 @@ namespace TOSApp
             {
                 DataRow v_dr = v_ds.Tables[0].NewRow();
                 v_dr[0] = -1;
-                v_dr[1] = "------ Tất cả ------";
+                v_dr[1] = "------------Hãy chọn-----------";
                 v_ds.Tables[0].Rows.InsertAt(v_dr, 0);
                 ip_cbo.SelectedIndex = 0;
             }
@@ -180,7 +180,7 @@ namespace TOSApp
             {
                 DataRow v_dr = v_ds.Tables[0].NewRow();
                 v_dr[0] = -1;
-                v_dr[1] = "------ Tất cả ------";
+                v_dr[1] = "---------- Hãy chọn ----------";
                 v_ds.Tables[0].Rows.InsertAt(v_dr, 0);
                 ip_cbo.SelectedIndex = 0;
             }

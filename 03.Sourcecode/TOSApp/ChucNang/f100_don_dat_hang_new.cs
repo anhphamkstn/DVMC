@@ -35,7 +35,6 @@ namespace TOSApp.ChucNang
         {
             InitializeComponent();
             load_data_2_selected();
-
         }
 
         public void display_for_ipphone(CallInfor ip_call_infor)
@@ -51,7 +50,7 @@ namespace TOSApp.ChucNang
             }
             m_e_form_mode = DataEntryFormMode.InsertDataState;
             this.ShowDialog();
-            m_cbo_phuong_thuc_dat_hang.SelectedIndex = 183;
+            m_cbo_phuong_thuc_dat_hang.SelectedValue = 183;
             // nếu đang có đơn hàng thì xử lí như thế nào
         }
 
@@ -68,8 +67,7 @@ namespace TOSApp.ChucNang
 
         //load data từ trong csdl lên vào các selected sẵn có 
         private void load_data_2_selected()
-        {
-            
+        {         
             load_data_2_selected_trang_thai_don_hang();
             random_data_2_ma_don_hang();
             load_data_2_selected_nguoi_tiep_nhan();
@@ -79,31 +77,31 @@ namespace TOSApp.ChucNang
             load_data_2_search_look_edit_dich_vu();
             load_data_to_cbo_don_vi();
             load_data_to_cbo_user_nv();
+            m_date_thoi_gian_tao.Value = System.DateTime.Now;
         }
 
         private void load_data_to_cbo_user_nv()
         {
-            WinFormControls.load_data_to_combobox("DM_KHACH_HANG", "ID", "EMAIL", "", WinFormControls.eTAT_CA.NO, m_cbo_user_nhan_vien_dat_hang);
+            WinFormControls.load_data_to_combobox("DM_KHACH_HANG", "ID", "EMAIL", "", WinFormControls.eTAT_CA.YES, m_cbo_user_nhan_vien_dat_hang);
         }
 
         private void load_data_2_m_cbo_phuong_thuc_dat_hang()
         {
-            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN_NGAN", " where ID_LOAI_TU_DIEN = 18  order by id desc", WinFormControls.eTAT_CA.NO, m_cbo_phuong_thuc_dat_hang);
+            WinFormControls.load_data_to_combobox("CM_DM_TU_DIEN", "ID", "TEN_NGAN", " where ID_LOAI_TU_DIEN = 18  order by id desc", WinFormControls.eTAT_CA.YES, m_cbo_phuong_thuc_dat_hang);
         }
 
         private void load_data_2_dc_dich_vu()
         {
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is not Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.NO, m_cbo_dich_vu);
+            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is not Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.YES, m_cbo_dich_vu);
         }
 
         private void load_data_2_dv_2()
         {
-            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is not Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.NO, m_cbo_loai_dich_vu_2);
+            WinFormControls.load_data_to_combobox("DM_LOAI_YEU_CAU", "ID", "TEN_YEU_CAU", " where ID_CHA is not Null AND TRANG_THAI_HSD = 'N'", WinFormControls.eTAT_CA.YES, m_cbo_loai_dich_vu_2);
         }
         private void load_data_to_cbo_don_vi()
         {
-            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", "", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi
-);
+            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", "", WinFormControls.eTAT_CA.YES, m_cbo_dv_don_vi);
         }
         private void load_data_2_search_look_edit_dich_vu()
         {
@@ -141,12 +139,13 @@ namespace TOSApp.ChucNang
         private void load_data_2_selected_nguoi_tiep_nhan()
         {
             WinFormControls.load_data_to_combobox("V_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH", "ID_NGUOI_SU_DUNG", "TEN", " Where ID_NHOM=1", WinFormControls.eTAT_CA.NO, m_cbo_nguoi_nhan_dat_hang);
+            m_cbo_nguoi_nhan_dat_hang.SelectedValue = us_user.dcID;
         }
 
         //don vị đặt hàng
         private void load_data_2_selected_don_vi()
         {
-            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", "", WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
+            WinFormControls.load_data_to_combobox("DM_DON_VI", "ID", "MA_DON_VI", "", WinFormControls.eTAT_CA.YES, m_cbo_dv_don_vi);
         }
         //load dữ liệu lên selected loại dịch vụ
         private void load_data_2_selected_loai_dich_vu()
@@ -223,18 +222,26 @@ namespace TOSApp.ChucNang
                        
                         if (m_lst_id_nguoi_xu_ly.Count != 0 && CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 293)
                         {
-
-                            luu_don_hang();
-                            dieu_phoi_don_hang();
-                            
-                            if (m_ip_call_infor != null)
-                                insert_gd_cuoc_goi(m_ip_call_infor);
-                            if (m_chk_gui_mail_yn.Checked == true)
+                            DialogResult dialogResult = MessageBox.Show("Bạn đã chắc chắn về thời gian cần hoàn thành ?", "Xác nhận tạo đơn hàng", MessageBoxButtons.YesNo);
+                            if (dialogResult == DialogResult.Yes)
                             {
-                                gui_emai_xac_nhan(m_us);
-                            }
+                                luu_don_hang();
+                                dieu_phoi_don_hang();
 
-                            this.Close();
+                                if (m_ip_call_infor != null)
+                                    insert_gd_cuoc_goi(m_ip_call_infor);
+                                if (m_chk_gui_mail_yn.Checked == true)
+                                {
+                                    gui_emai_xac_nhan(m_us);
+                                }
+
+                                this.Close();
+                            }
+                            else if (dialogResult == DialogResult.No)
+                            {
+                                return;
+                            }
+                           
                         }
                         else if ( CIPConvert.ToDecimal(m_cbo_trang_thai_don_hang.SelectedValue) == 297)
                         {
@@ -671,6 +678,7 @@ namespace TOSApp.ChucNang
             if (m_txt_ho_ten_nguoi_dat_hang.Text == "")
             {
                 MessageBox.Show("người đặt hàng vẫn còn trống!");
+                m_txt_ho_ten_nguoi_dat_hang.Focus();
                 return false;
             }
             else
@@ -681,7 +689,7 @@ namespace TOSApp.ChucNang
                     MessageBox.Show("phản hồi từ dvmc vẫn còn trống!");
                     return false;
                 }
-                else if (m_checkbox_m2_m3.Checked == true)
+                else if (m_checkbox_m2_m3.Checked == false)
                 {
                     if (v_time > System.DateTime.Now)
                     {
@@ -697,7 +705,12 @@ namespace TOSApp.ChucNang
                 m_txt_yeu_cau_cu_the.Focus();
                 return false;
             }
-
+            if ((int)m_cbo_phuong_thuc_dat_hang.SelectedValue <=0 )
+            {
+                MessageBox.Show("Nhập phương thức đặt hàng");
+                m_cbo_phuong_thuc_dat_hang.Focus();
+                return false;
+            }
 
             return true;
         }
@@ -756,7 +769,7 @@ namespace TOSApp.ChucNang
 
         private void load_don_vi(decimal p)
         {
-            WinFormControls.load_data_to_combobox("dm_don_vi", "ID", "ma_don_vi", " where dm_don_vi.id=gd_dat_hang." + p, WinFormControls.eTAT_CA.NO, m_cbo_dv_don_vi);
+            WinFormControls.load_data_to_combobox("dm_don_vi", "ID", "ma_don_vi", " where dm_don_vi.id=gd_dat_hang." + p, WinFormControls.eTAT_CA.YES, m_cbo_dv_don_vi);
 
         }
 
@@ -918,10 +931,8 @@ namespace TOSApp.ChucNang
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
                     m_deadline_id = deadline_id;
-                    load_data_2_lich_su_thuc_hien();
-                 
+                    load_data_2_lich_su_thuc_hien();                
                     this.ShowDialog();
-
                 }
                 else
                 {
@@ -931,8 +942,7 @@ namespace TOSApp.ChucNang
                     us_2_form(v_us);
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     M_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(v_us.dcID);
-                    load_data_2_lich_su_thuc_hien();
-                  
+                    load_data_2_lich_su_thuc_hien();                 
                     this.ShowDialog();
                 }
 
@@ -1045,25 +1055,7 @@ namespace TOSApp.ChucNang
            m_cbo_loai_dich_vu_1.SelectedValue = v_us.dcID_DM_YEU_CAU_1;
         }
 
-        private void f100_don_dat_hang_new_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void m_grb_loai_dich_vu_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void m_txt_yeu_cau_cu_the_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void format_control_view_thong_tin_don_hang()
         {
@@ -1135,10 +1127,18 @@ namespace TOSApp.ChucNang
 
         private void m_cbo_user_nhan_vien_dat_hang_SelectedValueChanged(object sender, EventArgs e)
         {
-            if (m_cbo_user_nhan_vien_dat_hang.SelectedValue != null)
+            if (m_cbo_user_nhan_vien_dat_hang.SelectedValue != null )
             {
                 decimal ID_khach_hang = CIPConvert.ToDecimal(m_cbo_user_nhan_vien_dat_hang.SelectedValue.ToString());
-                US_DM_KHACH_HANG v_us = new US_DM_KHACH_HANG(ID_khach_hang);
+                if (ID_khach_hang <= 0)
+                {
+                    m_txt_dien_thoai.Text = "";
+                    m_txt_ho_ten_nguoi_dat_hang.Text = "";
+                    m_cbo_dv_don_vi.SelectedIndex = 0;
+                    return;
+                }
+
+                US_DM_KHACH_HANG v_us = new US_DM_KHACH_HANG(ID_khach_hang);      
                 m_cbo_dv_don_vi.SelectedValue = CIPConvert.ToDecimal(v_us.dcDON_VI.ToString());
                 load_data_to_selected_ho_ten_nguoi_dat_hang(v_us);
                 load_data_to_selected_so_dien_thoai(v_us);

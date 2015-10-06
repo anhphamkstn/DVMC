@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using IPCOREUS;
 using IP.Core.IPCommon;
+using DevExpress.XtraScheduler;
 
 
 namespace TOSApp.ChucNang
@@ -53,7 +54,37 @@ namespace TOSApp.ChucNang
             
           
             m_grc_ds_BO.DataSource = v_ds.Tables[0];
+            DataSet v_ds_appointment = new DataSet();
+            v_ds_appointment.Tables.Add(new DataTable());
 
+            DataSet v_ds_resource = new DataSet();
+            v_ds_resource.Tables.Add(new DataTable());
+            v_us.FillAppointmentByDichVu(v_ds_appointment, m_us.dcID_NHOM_DV_YEU_CAU);
+            v_us.FillResourcesByDichVu(v_ds_resource, m_us.dcID_NHOM_DV_YEU_CAU);
+            SetUpMapping();
+            schedulerStorage1.Appointments.DataSource = v_ds_appointment.Tables[0];
+            schedulerStorage1.Resources.DataSource = v_ds_resource.Tables[0];
+            m_sch.ActiveViewType = SchedulerViewType.Day;
+            m_sch.GroupType = SchedulerGroupType.Resource;
+
+        }
+
+        private void SetUpMapping()
+        {
+            schedulerStorage1.Appointments.Mappings.Description = "NOI_DUNG_DAT_HANG";
+            schedulerStorage1.Appointments.Mappings.End = "EndDate";
+            schedulerStorage1.Appointments.Mappings.Label = "Label";
+            schedulerStorage1.Appointments.Mappings.Location = "TEN_CHI_NHANH";
+            schedulerStorage1.Appointments.Mappings.RecurrenceInfo = "RecurrenceInfo";
+            schedulerStorage1.Appointments.Mappings.ReminderInfo = "ReminderInfo";
+            schedulerStorage1.Appointments.Mappings.ResourceId = "ID_NGUOI_TAO_THAO_TAC";
+            schedulerStorage1.Appointments.Mappings.Start = "StartDate";
+            schedulerStorage1.Appointments.Mappings.Status = "Status";
+            schedulerStorage1.Appointments.Mappings.Subject = "Subject";
+            schedulerStorage1.Appointments.Mappings.Type = "Type";
+            schedulerStorage1.Resources.Mappings.Caption = "TEN_TRUY_CAP";
+            schedulerStorage1.Resources.Mappings.Id = "ID_NGUOI_SU_DUNG";
+            schedulerStorage1.Resources.Mappings.Image = "Image";
         }
 
         private void lay_ds_BO_da_dc_dieu_phoi(List<decimal> m_lst_BO_da_duoc_dieu_phoi)
