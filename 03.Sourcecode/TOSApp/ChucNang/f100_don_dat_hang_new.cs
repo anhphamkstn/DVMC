@@ -27,6 +27,8 @@ namespace TOSApp.ChucNang
     public partial class f100_don_dat_hang_new : Form
     {
 
+        static string user_email = "dvmc2@topica.edu.vn";
+        static string password = "topica1234";
 
         public f100_don_dat_hang_new()
         {
@@ -342,9 +344,7 @@ namespace TOSApp.ChucNang
             v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id=" + m_us.dcID_USER_NV_DAT_HANG);
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
-
-            string user_email = "daothihienhien@gmail.com";
-            string password = "daothihien";
+          
             try
             {
                 Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
@@ -441,8 +441,6 @@ namespace TOSApp.ChucNang
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
 
-            string user_email = "daothihienhien@gmail.com";
-            string password = "daothihien";
             try
             {
                 Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
@@ -495,9 +493,6 @@ namespace TOSApp.ChucNang
             v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id=" + m_us.dcID_USER_NV_DAT_HANG);
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
-
-            string user_email = "daothihienhien@gmail.com";
-            string password = "daothihien";
             try
             {
                 Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
@@ -1086,6 +1081,27 @@ namespace TOSApp.ChucNang
         {
             if (e.Info.IsRowIndicator && e.RowHandle >= 0)
                 e.Info.DisplayText = (e.RowHandle + 1).ToString();
+        }
+
+        private void m_grv_user_don_hang_CustomDrawRowIndicator(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
+
+        }
+
+        private void m_grv_user_don_hang_PopupMenuShowing(object sender, DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventArgs e)
+        {
+            GridView view = sender as GridView;
+            // Check whether a row is right-clicked.
+            if (e.MenuType == DevExpress.XtraGrid.Views.Grid.GridMenuType.Row)
+            {
+                int rowHandle = e.HitInfo.RowHandle;
+                // Delete existing menu items, if any.
+                e.Menu.Items.Clear();
+                // Add a submenu with a single menu item.
+                e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
+            }
         }
 
     }

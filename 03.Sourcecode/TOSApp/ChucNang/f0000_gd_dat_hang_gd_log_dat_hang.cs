@@ -858,13 +858,6 @@ namespace TOSApp.ChucNang
             }
         }
 
-        private void m_grv_gd_dat_hang_gd_log_dat_hang_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
-        {
-            if (e.Column.ToString() == "STT" && e.RowHandle >= 0) //colSTT là tên cột tạo số thứ tự
-            {
-            e.DisplayText = Convert.ToString(e.RowHandle + 1);
-            }
-        }
 
         private void m_grv_gd_dat_hang_gd_log_dat_hang_PopupMenuShowing(object sender, PopupMenuShowingEventArgs e)
         {
@@ -930,6 +923,12 @@ namespace TOSApp.ChucNang
 
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void m_grv_gd_dat_hang_gd_log_dat_hang_CustomDrawRowIndicator(object sender, RowIndicatorCustomDrawEventArgs e)
+        {
+            if (e.Info.IsRowIndicator && e.RowHandle >= 0)
+                e.Info.DisplayText = (e.RowHandle + 1).ToString();
         }
 
     }

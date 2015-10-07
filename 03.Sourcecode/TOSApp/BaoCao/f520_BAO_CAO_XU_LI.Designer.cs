@@ -79,7 +79,7 @@
             this.chartControl1.DataSource = this.pivotGridControl1;
             simpleDiagram1.EqualPieSize = false;
             this.chartControl1.Diagram = simpleDiagram1;
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Right;
             this.chartControl1.Legend.MaxHorizontalPercentage = 30D;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";

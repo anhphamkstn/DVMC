@@ -287,8 +287,6 @@ namespace TOSApp
                 {
                     v_don_hang_can_xu_ly_PM.Focus();
                 }
-
-
             }
             catch (Exception v_e)
             {
@@ -830,6 +828,8 @@ namespace TOSApp
         private void dang_xuat(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             us_user.trang_thai_dang_nhap = false;
+            if (us_user.ipphone != null && us_user.ipphone != "" && us_user.strTEN_TRUY_CAP != "")
+                CallCenterUtils.add_or_remove_agent_ipphone_2_queue(us_user.ipphone.ToString(), us_user.strTEN_TRUY_CAP, KHO_QUEUE.MIEN_BAC, 20);
             this.Close();
 
         }
@@ -989,7 +989,41 @@ namespace TOSApp
         }
         private void m_btn_ipphone_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            try
+            {
+                m_timer_imcoming_call.Enabled = false;
+                if (us_user.dcIDNhom == 1)
+                {
+                    m_timer_imcoming_call.Enabled = true;
+                    f258_nhap_ma_ipphone v_nhap_ma_ipphone = new f258_nhap_ma_ipphone();
+                    v_nhap_ma_ipphone.ShowDialog();
+                }
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }    
+        }
 
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                if (v_f345_danh_muc_cuoc_goi == null || !IsFormOpen(v_f345_danh_muc_cuoc_goi))
+                {
+                    v_f345_danh_muc_cuoc_goi = new f345_danh_muc_cuoc_goi();
+                    v_f345_danh_muc_cuoc_goi.MdiParent = this;
+                    v_f345_danh_muc_cuoc_goi.Show();
+                }
+                else
+                {
+                    v_f345_danh_muc_cuoc_goi.Focus();
+                }
+            }
+            catch (Exception v_e)
+            {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
 
        

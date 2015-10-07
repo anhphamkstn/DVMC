@@ -46,6 +46,7 @@
             this.m_pan_button = new System.Windows.Forms.Panel();
             this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.m_btn_remind = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dh_hoan_thanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_dh_hoan_thanh)).BeginInit();
@@ -306,6 +307,7 @@
             // 
             // m_pan_button
             // 
+            this.m_pan_button.Controls.Add(this.m_btn_remind);
             this.m_pan_button.Controls.Add(this.m_cmd_danh_gia);
             this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_pan_button.Location = new System.Drawing.Point(0, 326);
@@ -334,6 +336,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(835, 270);
             this.panel3.TabIndex = 4;
+            // 
+            // m_btn_remind
+            // 
+            this.m_btn_remind.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_btn_remind.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_remind.Image")));
+            this.m_btn_remind.Location = new System.Drawing.Point(593, 0);
+            this.m_btn_remind.Name = "m_btn_remind";
+            this.m_btn_remind.Size = new System.Drawing.Size(122, 46);
+            this.m_btn_remind.TabIndex = 1;
+            this.m_btn_remind.Text = "Nhắc đánh giá";
+            this.m_btn_remind.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // f125_ds_don_hang_can_danh_gia
             // 
@@ -375,5 +388,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn m_danh_gia_cua_khach_hang;
         private DevExpress.XtraGrid.Columns.GridColumn c_y_kien_khac;
         private DevExpress.XtraEditors.SimpleButton m_cmd_danh_gia;
+        private DevExpress.XtraEditors.SimpleButton m_btn_remind;
     }
 }

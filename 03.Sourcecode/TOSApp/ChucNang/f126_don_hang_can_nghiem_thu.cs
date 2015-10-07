@@ -24,7 +24,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            string v_query = "SELECT gdh.* FROM V_GD_DAT_HANG AS gdh, V_GD_DAT_HANG_GD_LOG_DAT_HANG gdhgldh WHERE gdhgldh.ID_DON_HANG =gdh.ID AND gdhgldh.THAO_TAC_HET_HAN_YN = 'N' AND  ID_LOAI_THAO_TAC = 297 AND ID_LOAI_THAO_TAC = ALL (SELECT* FROM dbo.f_get_table_trang_thai_don_hang(gdh.ID))";
+            string v_query = "SELECT * FROM V_GD_DAT_HANG  WHERE dbo.[f_get_trang_thai_da_xu_ly_don_hang_YN](ID) ='Y'";
             v_us.FillDatasetWithQuery(v_ds, v_query);
             m_grc_ds_don_dat_hang_can_nghiem_thu.DataSource = v_ds.Tables[0];
         }

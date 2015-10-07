@@ -28,9 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f999_main_form));
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this.m_rbc_bao_cao = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_bao_cao_tiep_nhan = new DevExpress.XtraBars.BarButtonItem();
@@ -136,7 +135,8 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
+            this.m_timer_imcoming_call = new System.Windows.Forms.Timer();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -223,7 +223,7 @@
             // 
             // m_cmd_ds_don_hang_can_danh_gia_TM
             // 
-            this.m_cmd_ds_don_hang_can_danh_gia_TM.Caption = "Đơn hàng cần đánh giá";
+            this.m_cmd_ds_don_hang_can_danh_gia_TM.Caption = "Đơn hàng cần nghiệm thu";
             this.m_cmd_ds_don_hang_can_danh_gia_TM.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_don_hang_can_danh_gia_TM.Glyph")));
             this.m_cmd_ds_don_hang_can_danh_gia_TM.Id = 20;
             this.m_cmd_ds_don_hang_can_danh_gia_TM.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_ds_don_hang_can_danh_gia_TM.LargeGlyph")));
@@ -634,6 +634,7 @@
             // ribbonPageGroup21
             // 
             this.ribbonPageGroup21.ItemLinks.Add(this.m_btn_ipphone);
+            this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup21.Name = "ribbonPageGroup21";
             this.ribbonPageGroup21.Text = "ipphone";
             // 
@@ -784,9 +785,10 @@
             this.barButtonItem9,
             this.m_btn_cuoc_goi,
             this.m_cmd_dm_cuoc_goi,
-            this.m_btn_ipphone});
+            this.m_btn_ipphone,
+            this.barButtonItem11});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 69;
+            this.ribbonControl1.MaxItemId = 70;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageHeaderItemLinks.Add(this.m_barsubitem_thiet_lap);
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -1073,6 +1075,14 @@
             this.m_timer_imcoming_call.Interval = 3000;
             this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // barButtonItem11
+            // 
+            this.barButtonItem11.Caption = "Danh mục cuộc gọi";
+            this.barButtonItem11.Id = 69;
+            this.barButtonItem11.LargeGlyph = global::TOSApp.Properties.Resources.call;
+            this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
+            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -1201,6 +1211,7 @@
         private DevExpress.XtraBars.BarButtonItem m_cmd_dm_cuoc_goi;
         private DevExpress.XtraBars.BarButtonItem m_btn_ipphone;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
 
 	}
 }
