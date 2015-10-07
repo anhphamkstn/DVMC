@@ -223,6 +223,7 @@ namespace TOSApp
                     v_don_hang_can_tiep_nhan_BO.m_lab_tieu_de.Text = "Danh sách đơn hàng cần tiếp nhận";
                     v_don_hang_can_tiep_nhan_BO.m_panel_BO_hoan_thanh.Visible = false;
                     v_don_hang_can_tiep_nhan_BO.m_panel_bo_cap_nhat_xu_ly.Visible = false;
+                    
                     v_don_hang_can_tiep_nhan_BO.Show();
                 }
                 else

@@ -33,25 +33,25 @@
             this.m_lab_tieu_de = new System.Windows.Forms.Label();
             this.m_grc_ds_log_gd_dat_hang = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_log_dat_hang = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.THOI_GIAN_TAO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TEN_US_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.THOI_GIAN_TAO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.TEN_LOAI_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_NHAN_THAO_TAC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_log_gd_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_log_dat_hang)).BeginInit();
@@ -232,25 +232,16 @@
             this.m_grv_ds_log_dat_hang.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.m_grv_ds_log_dat_hang_PopupMenuShowing);
             this.m_grv_ds_log_dat_hang.DoubleClick += new System.EventHandler(this.m_grv_ds_log_dat_hang_DoubleClick);
             // 
-            // THOI_GIAN_TAO
+            // gridColumn12
             // 
-            this.THOI_GIAN_TAO.Caption = "THỜI ĐIỂM ĐẶT HÀNG";
-            this.THOI_GIAN_TAO.DisplayFormat.FormatString = "g";
-            this.THOI_GIAN_TAO.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.THOI_GIAN_TAO.FieldName = "THOI_GIAN_TAO";
-            this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
-            this.THOI_GIAN_TAO.Visible = true;
-            this.THOI_GIAN_TAO.VisibleIndex = 9;
-            this.THOI_GIAN_TAO.Width = 131;
-            // 
-            // GHI_CHU
-            // 
-            this.GHI_CHU.Caption = "GHI CHÚ";
-            this.GHI_CHU.FieldName = "GHI_CHU";
-            this.GHI_CHU.Name = "GHI_CHU";
-            this.GHI_CHU.Visible = true;
-            this.GHI_CHU.VisibleIndex = 4;
-            this.GHI_CHU.Width = 98;
+            this.gridColumn12.Caption = "THỜI GIAN";
+            this.gridColumn12.DisplayFormat.FormatString = "g";
+            this.gridColumn12.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.gridColumn12.FieldName = "NGAY_LAP_THAO_TAC";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 0;
+            this.gridColumn12.Width = 150;
             // 
             // MA_DON_HANG
             // 
@@ -260,6 +251,33 @@
             this.MA_DON_HANG.Visible = true;
             this.MA_DON_HANG.VisibleIndex = 1;
             this.MA_DON_HANG.Width = 137;
+            // 
+            // gridColumn10
+            // 
+            this.gridColumn10.Caption = "NGƯỜI THỰC HIỆN";
+            this.gridColumn10.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
+            this.gridColumn10.Name = "gridColumn10";
+            this.gridColumn10.Visible = true;
+            this.gridColumn10.VisibleIndex = 2;
+            this.gridColumn10.Width = 143;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "THAO TÁC";
+            this.gridColumn11.FieldName = "TEN_LOAI_THAO_TAC_LOG";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 3;
+            this.gridColumn11.Width = 149;
+            // 
+            // GHI_CHU
+            // 
+            this.GHI_CHU.Caption = "GHI CHÚ";
+            this.GHI_CHU.FieldName = "GHI_CHU";
+            this.GHI_CHU.Name = "GHI_CHU";
+            this.GHI_CHU.Visible = true;
+            this.GHI_CHU.VisibleIndex = 4;
+            this.GHI_CHU.Width = 98;
             // 
             // TEN_US_HANG
             // 
@@ -279,6 +297,15 @@
             this.gridColumn1.VisibleIndex = 6;
             this.gridColumn1.Width = 126;
             // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "MÃ ĐƠN VỊ";
+            this.gridColumn2.FieldName = "MA_DON_VI";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 14;
+            this.gridColumn2.Width = 90;
+            // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "LOẠI DỊCH VỤ";
@@ -297,6 +324,17 @@
             this.gridColumn4.VisibleIndex = 8;
             this.gridColumn4.Width = 122;
             // 
+            // THOI_GIAN_TAO
+            // 
+            this.THOI_GIAN_TAO.Caption = "THỜI ĐIỂM ĐẶT HÀNG";
+            this.THOI_GIAN_TAO.DisplayFormat.FormatString = "g";
+            this.THOI_GIAN_TAO.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.THOI_GIAN_TAO.FieldName = "THOI_GIAN_TAO";
+            this.THOI_GIAN_TAO.Name = "THOI_GIAN_TAO";
+            this.THOI_GIAN_TAO.Visible = true;
+            this.THOI_GIAN_TAO.VisibleIndex = 9;
+            this.THOI_GIAN_TAO.Width = 131;
+            // 
             // gridColumn9
             // 
             this.gridColumn9.Caption = "THỜI GIAN CẦN HOÀN THÀNH";
@@ -309,20 +347,13 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "THỜI ĐIỂM CẦN HOÀN THÀNH";
+            this.gridColumn6.DisplayFormat.FormatString = "g";
+            this.gridColumn6.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn6.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 11;
             this.gridColumn6.Width = 155;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "CHI NHÁNH";
-            this.gridColumn7.FieldName = "TEN_CHI_NHANH";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 13;
-            this.gridColumn7.Width = 90;
             // 
             // gridColumn5
             // 
@@ -333,14 +364,14 @@
             this.gridColumn5.VisibleIndex = 12;
             this.gridColumn5.Width = 103;
             // 
-            // gridColumn2
+            // gridColumn7
             // 
-            this.gridColumn2.Caption = "MÃ ĐƠN VỊ";
-            this.gridColumn2.FieldName = "MA_DON_VI";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 14;
-            this.gridColumn2.Width = 90;
+            this.gridColumn7.Caption = "CHI NHÁNH";
+            this.gridColumn7.FieldName = "TEN_CHI_NHANH";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 13;
+            this.gridColumn7.Width = 90;
             // 
             // timer1
             // 
@@ -374,33 +405,6 @@
             this.NGUOI_NHAN_THAO_TAC.Visible = true;
             this.NGUOI_NHAN_THAO_TAC.VisibleIndex = 10;
             this.NGUOI_NHAN_THAO_TAC.Width = 86;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.Caption = "NGƯỜI THỰC HIỆN";
-            this.gridColumn10.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 2;
-            this.gridColumn10.Width = 143;
-            // 
-            // gridColumn11
-            // 
-            this.gridColumn11.Caption = "THAO TÁC";
-            this.gridColumn11.FieldName = "TEN_LOAI_THAO_TAC_LOG";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 3;
-            this.gridColumn11.Width = 149;
-            // 
-            // gridColumn12
-            // 
-            this.gridColumn12.Caption = "THỜI GIAN";
-            this.gridColumn12.FieldName = "NGAY_LAP_THAO_TAC";
-            this.gridColumn12.Name = "gridColumn12";
-            this.gridColumn12.Visible = true;
-            this.gridColumn12.VisibleIndex = 0;
-            this.gridColumn12.Width = 150;
             // 
             // f118_ds_log_dat_hang
             // 

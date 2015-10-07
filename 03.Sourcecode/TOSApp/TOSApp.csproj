@@ -423,6 +423,12 @@
     <Compile Include="ChucNang\f126_don_hang_can_nghiem_thu.Designer.cs">
       <DependentUpon>f126_don_hang_can_nghiem_thu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChucNang\f127_ds_don_hang_hoan_thanh_chua_danh_gia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChucNang\f127_ds_don_hang_hoan_thanh_chua_danh_gia.Designer.cs">
+      <DependentUpon>f127_ds_don_hang_hoan_thanh_chua_danh_gia.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChucNang\f150_Bo_time_line.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -648,6 +654,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f126_don_hang_can_nghiem_thu.resx">
       <DependentUpon>f126_don_hang_can_nghiem_thu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChucNang\f127_ds_don_hang_hoan_thanh_chua_danh_gia.resx">
+      <DependentUpon>f127_ds_don_hang_hoan_thanh_chua_danh_gia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f150_Bo_time_line.resx">
       <DependentUpon>f150_Bo_time_line.cs</DependentUpon>

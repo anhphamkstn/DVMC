@@ -222,7 +222,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.35443F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.41077F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.26062F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 422F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 423F));
             this.tableLayoutPanel6.Controls.Add(this.panel7, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel6, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.panel5, 0, 0);
@@ -240,9 +240,9 @@
             this.panel7.Controls.Add(this.panel14);
             this.panel7.Controls.Add(this.panel13);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(451, 3);
+            this.panel7.Location = new System.Drawing.Point(450, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(249, 18);
+            this.panel7.Size = new System.Drawing.Size(248, 18);
             this.panel7.TabIndex = 2;
             // 
             // panel14
@@ -251,7 +251,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(96, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(153, 18);
+            this.panel14.Size = new System.Drawing.Size(152, 18);
             this.panel14.TabIndex = 1;
             // 
             // m_cbo_nhom_dich_vu
@@ -262,7 +262,7 @@
             this.m_cbo_nhom_dich_vu.FormattingEnabled = true;
             this.m_cbo_nhom_dich_vu.Location = new System.Drawing.Point(0, 0);
             this.m_cbo_nhom_dich_vu.Name = "m_cbo_nhom_dich_vu";
-            this.m_cbo_nhom_dich_vu.Size = new System.Drawing.Size(153, 22);
+            this.m_cbo_nhom_dich_vu.Size = new System.Drawing.Size(152, 22);
             this.m_cbo_nhom_dich_vu.TabIndex = 8;
             this.m_cbo_nhom_dich_vu.SelectedIndexChanged += new System.EventHandler(this.m_cbo_nhom_dich_vu_SelectedIndexChanged);
             // 
@@ -292,7 +292,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(202, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(243, 18);
+            this.panel6.Size = new System.Drawing.Size(242, 18);
             this.panel6.TabIndex = 1;
             // 
             // panel9
@@ -301,7 +301,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(80, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(163, 18);
+            this.panel9.Size = new System.Drawing.Size(162, 18);
             this.panel9.TabIndex = 4;
             // 
             // m_cbo_loai_dich_vu
@@ -312,7 +312,7 @@
             this.m_cbo_loai_dich_vu.FormattingEnabled = true;
             this.m_cbo_loai_dich_vu.Location = new System.Drawing.Point(0, 0);
             this.m_cbo_loai_dich_vu.Name = "m_cbo_loai_dich_vu";
-            this.m_cbo_loai_dich_vu.Size = new System.Drawing.Size(163, 22);
+            this.m_cbo_loai_dich_vu.Size = new System.Drawing.Size(162, 22);
             this.m_cbo_loai_dich_vu.TabIndex = 6;
             this.m_cbo_loai_dich_vu.SelectedIndexChanged += new System.EventHandler(this.m_cbo_loai_dich_vu_SelectedIndexChanged);
             // 
@@ -428,9 +428,9 @@
             // 
             this.panel8.Controls.Add(this.panel15);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(706, 3);
+            this.panel8.Location = new System.Drawing.Point(704, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(417, 18);
+            this.panel8.Size = new System.Drawing.Size(419, 18);
             this.panel8.TabIndex = 3;
             // 
             // panel15
@@ -440,7 +440,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(417, 18);
+            this.panel15.Size = new System.Drawing.Size(419, 18);
             this.panel15.TabIndex = 0;
             // 
             // m_cbo_dich_vu
@@ -451,7 +451,7 @@
             this.m_cbo_dich_vu.FormattingEnabled = true;
             this.m_cbo_dich_vu.Location = new System.Drawing.Point(64, 0);
             this.m_cbo_dich_vu.Name = "m_cbo_dich_vu";
-            this.m_cbo_dich_vu.Size = new System.Drawing.Size(353, 22);
+            this.m_cbo_dich_vu.Size = new System.Drawing.Size(355, 22);
             this.m_cbo_dich_vu.TabIndex = 8;
             this.m_cbo_dich_vu.SelectedIndexChanged += new System.EventHandler(this.load_data_2_thoi_gian_can_hoan_thanh);
             // 
@@ -685,7 +685,7 @@
             this.m_grb_thoi_gian_hoan_thanh.Font = new System.Drawing.Font("Arial", 9F);
             this.m_grb_thoi_gian_hoan_thanh.Location = new System.Drawing.Point(3, 3);
             this.m_grb_thoi_gian_hoan_thanh.Name = "m_grb_thoi_gian_hoan_thanh";
-            this.m_grb_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(272, 47);
+            this.m_grb_thoi_gian_hoan_thanh.Size = new System.Drawing.Size(271, 47);
             this.m_grb_thoi_gian_hoan_thanh.TabIndex = 10;
             this.m_grb_thoi_gian_hoan_thanh.TabStop = false;
             this.m_grb_thoi_gian_hoan_thanh.Text = "Thời gian cần hoàn thành";
@@ -979,8 +979,8 @@
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.5583F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.4417F));
-            this.tableLayoutPanel5.Controls.Add(this.m_grb_phan_hoi_tu_dvm, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.m_grb_phan_hoi_tu_dvm, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 370);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -1385,7 +1385,7 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.94346F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.05654F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 280F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 316F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 317F));
             this.tableLayoutPanel9.Controls.Add(this.m_grb_thoi_gian_hoan_thanh, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.groupBox1, 1, 0);
             this.tableLayoutPanel9.Controls.Add(this.groupBox3, 2, 0);
@@ -1402,7 +1402,7 @@
             // 
             this.groupBox1.Controls.Add(this.m_cbo_nguoi_nhan_dat_hang);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(281, 3);
+            this.groupBox1.Location = new System.Drawing.Point(280, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(251, 47);
             this.groupBox1.TabIndex = 11;
@@ -1424,7 +1424,7 @@
             // 
             this.groupBox3.Controls.Add(this.m_cbo_phuong_thuc_dat_hang);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(538, 3);
+            this.groupBox3.Location = new System.Drawing.Point(537, 3);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(274, 47);
             this.groupBox3.TabIndex = 11;
@@ -1445,9 +1445,9 @@
             // 
             this.groupBox6.Controls.Add(this.m_cmd_danh_sach_nguoi_xu_ly);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox6.Location = new System.Drawing.Point(818, 3);
+            this.groupBox6.Location = new System.Drawing.Point(817, 3);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(311, 47);
+            this.groupBox6.Size = new System.Drawing.Size(312, 47);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Danh sách người xử lý";
@@ -1471,7 +1471,7 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 124F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel8.Controls.Add(this.panel22, 0, 0);
@@ -1496,7 +1496,7 @@
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel22.Location = new System.Drawing.Point(3, 3);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(290, 25);
+            this.panel22.Size = new System.Drawing.Size(289, 25);
             this.panel22.TabIndex = 47;
             // 
             // m_cbo_trang_thai_don_hang
@@ -1506,7 +1506,7 @@
             this.m_cbo_trang_thai_don_hang.FormattingEnabled = true;
             this.m_cbo_trang_thai_don_hang.Location = new System.Drawing.Point(118, 0);
             this.m_cbo_trang_thai_don_hang.Name = "m_cbo_trang_thai_don_hang";
-            this.m_cbo_trang_thai_don_hang.Size = new System.Drawing.Size(172, 21);
+            this.m_cbo_trang_thai_don_hang.Size = new System.Drawing.Size(171, 21);
             this.m_cbo_trang_thai_don_hang.TabIndex = 17;
             // 
             // m_lbl_trang_thai_don_hang
@@ -1525,7 +1525,7 @@
             // 
             this.m_chk_gui_mail_yn.AutoSize = true;
             this.m_chk_gui_mail_yn.Enabled = false;
-            this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(299, 3);
+            this.m_chk_gui_mail_yn.Location = new System.Drawing.Point(298, 3);
             this.m_chk_gui_mail_yn.Name = "m_chk_gui_mail_yn";
             this.m_chk_gui_mail_yn.Size = new System.Drawing.Size(149, 17);
             this.m_chk_gui_mail_yn.TabIndex = 34;
@@ -1536,7 +1536,7 @@
             // 
             this.m_btn_timeline.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_btn_timeline.Image = ((System.Drawing.Image)(resources.GetObject("m_btn_timeline.Image")));
-            this.m_btn_timeline.Location = new System.Drawing.Point(614, 3);
+            this.m_btn_timeline.Location = new System.Drawing.Point(613, 3);
             this.m_btn_timeline.Name = "m_btn_timeline";
             this.m_btn_timeline.Size = new System.Drawing.Size(175, 25);
             this.m_btn_timeline.TabIndex = 39;
@@ -1547,7 +1547,7 @@
             // 
             this.m_cmd_giai_dap_thac_mac.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_cmd_giai_dap_thac_mac.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_giai_dap_thac_mac.Image")));
-            this.m_cmd_giai_dap_thac_mac.Location = new System.Drawing.Point(454, 3);
+            this.m_cmd_giai_dap_thac_mac.Location = new System.Drawing.Point(453, 3);
             this.m_cmd_giai_dap_thac_mac.Name = "m_cmd_giai_dap_thac_mac";
             this.m_cmd_giai_dap_thac_mac.Size = new System.Drawing.Size(154, 25);
             this.m_cmd_giai_dap_thac_mac.TabIndex = 38;
@@ -1568,7 +1568,7 @@
             // m_cmd_tu_choi
             // 
             this.m_cmd_tu_choi.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_tu_choi.Image")));
-            this.m_cmd_tu_choi.Location = new System.Drawing.Point(907, 3);
+            this.m_cmd_tu_choi.Location = new System.Drawing.Point(906, 3);
             this.m_cmd_tu_choi.Name = "m_cmd_tu_choi";
             this.m_cmd_tu_choi.Size = new System.Drawing.Size(97, 25);
             this.m_cmd_tu_choi.TabIndex = 45;
@@ -1578,7 +1578,7 @@
             // m_cmd_xac_nhan_don_hang
             // 
             this.m_cmd_xac_nhan_don_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xac_nhan_don_hang.Image")));
-            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(795, 3);
+            this.m_cmd_xac_nhan_don_hang.Location = new System.Drawing.Point(794, 3);
             this.m_cmd_xac_nhan_don_hang.Name = "m_cmd_xac_nhan_don_hang";
             this.m_cmd_xac_nhan_don_hang.Size = new System.Drawing.Size(102, 25);
             this.m_cmd_xac_nhan_don_hang.TabIndex = 43;

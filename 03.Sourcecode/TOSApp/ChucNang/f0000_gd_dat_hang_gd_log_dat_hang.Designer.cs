@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f0000_gd_dat_hang_gd_log_dat_hang));
@@ -44,10 +45,12 @@
             this.THOI_GIAN_TAO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_GIAN_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.NGUOI_TAO_THAO_TAC_LOG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GHI_CHU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.PHUONG_THUC_DAT_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.CHI_NHANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GHI_CHU_DH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -104,8 +107,7 @@
             this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.m_cmd_dieu_phoi_lai = new DevExpress.XtraEditors.SimpleButton();
-            this.timer1 = new System.Windows.Forms.Timer();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_gd_dat_hang_gd_log_dat_hang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_gd_dat_hang_gd_log_dat_hang)).BeginInit();
@@ -309,7 +311,8 @@
             this.GHI_CHU,
             this.gridColumn2,
             this.PHUONG_THUC_DAT_HANG,
-            this.CHI_NHANH});
+            this.CHI_NHANH,
+            this.GHI_CHU_DH});
             this.m_grv_gd_dat_hang_gd_log_dat_hang.CustomizationFormBounds = new System.Drawing.Rectangle(745, 437, 216, 178);
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
@@ -435,6 +438,15 @@
             this.THOI_GIAN_CAN_HOAN_THANH.VisibleIndex = 8;
             this.THOI_GIAN_CAN_HOAN_THANH.Width = 178;
             // 
+            // NGUOI_TAO_THAO_TAC_LOG
+            // 
+            this.NGUOI_TAO_THAO_TAC_LOG.Caption = "NHÂN VIÊN TỪ CHỐI";
+            this.NGUOI_TAO_THAO_TAC_LOG.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
+            this.NGUOI_TAO_THAO_TAC_LOG.Name = "NGUOI_TAO_THAO_TAC_LOG";
+            this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
+            this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 9;
+            this.NGUOI_TAO_THAO_TAC_LOG.Width = 165;
+            // 
             // GHI_CHU
             // 
             this.GHI_CHU.Caption = "LÝ DO TỪ CHỐI";
@@ -444,14 +456,13 @@
             this.GHI_CHU.VisibleIndex = 10;
             this.GHI_CHU.Width = 93;
             // 
-            // NGUOI_TAO_THAO_TAC_LOG
+            // gridColumn2
             // 
-            this.NGUOI_TAO_THAO_TAC_LOG.Caption = "NHÂN VIÊN TỪ CHỐI";
-            this.NGUOI_TAO_THAO_TAC_LOG.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
-            this.NGUOI_TAO_THAO_TAC_LOG.Name = "NGUOI_TAO_THAO_TAC_LOG";
-            this.NGUOI_TAO_THAO_TAC_LOG.Visible = true;
-            this.NGUOI_TAO_THAO_TAC_LOG.VisibleIndex = 9;
-            this.NGUOI_TAO_THAO_TAC_LOG.Width = 165;
+            this.gridColumn2.Caption = "THỜI ĐIỂM TỪ CHỐI";
+            this.gridColumn2.FieldName = "NGAY_LAP_THAO_TAC";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 11;
             // 
             // PHUONG_THUC_DAT_HANG
             // 
@@ -470,6 +481,16 @@
             this.CHI_NHANH.Visible = true;
             this.CHI_NHANH.VisibleIndex = 12;
             this.CHI_NHANH.Width = 86;
+            // 
+            // GHI_CHU_DH
+            // 
+            this.GHI_CHU_DH.Caption = "GHI CHÚ";
+            this.GHI_CHU_DH.CustomizationCaption = " ";
+            this.GHI_CHU_DH.FieldName = "GHI_CHU";
+            this.GHI_CHU_DH.Name = "GHI_CHU_DH";
+            this.GHI_CHU_DH.Visible = true;
+            this.GHI_CHU_DH.VisibleIndex = 14;
+            this.GHI_CHU_DH.Width = 170;
             // 
             // panel2
             // 
@@ -1113,14 +1134,6 @@
             this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "THỜI ĐIỂM TỪ CHỐI";
-            this.gridColumn2.FieldName = "NGAY_LAP_THAO_TAC";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 11;
-            // 
             // f0000_gd_dat_hang_gd_log_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1250,5 +1263,6 @@
         private System.Windows.Forms.Panel panel14;
         public DevExpress.XtraEditors.SimpleButton m_cmd_FO_huy_hon_hang;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn GHI_CHU_DH;
     }
 }

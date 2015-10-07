@@ -91,7 +91,15 @@ namespace TOSApp.ChucNang
           
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-           
+            if (us_user.dcIDNhom==1)
+            {
+                GHI_CHU_DH.Visible = true;
+            }
+            else GHI_CHU_DH.Visible = false;
+      
+                NGUOI_TAO_THAO_TAC_LOG.Visible = false;
+            
+          
             GHI_CHU.Visible = false;
   
         }
