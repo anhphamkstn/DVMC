@@ -16,11 +16,11 @@ namespace TOSApp.ChucNang
         {
             InitializeComponent();
         }
-        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us;
-        
-        internal void Display(IPCOREUS.US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us)
+        US_GD_DAT_HANG v_us;
+
+        internal void Display(IPCOREUS.US_GD_DAT_HANG m_us)
         {
-            v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(m_us.dcID);
+            v_us = new US_GD_DAT_HANG(m_us.dcID);
             this.Show();
         }
 
@@ -51,7 +51,7 @@ namespace TOSApp.ChucNang
         {
             US_GD_LOG_DAT_HANG V_us = new US_GD_LOG_DAT_HANG();
             V_us.dcID_LOAI_THAO_TAC = 300;//đã hủy 
-            V_us.dcID_GD_DAT_HANG = v_us.dcID_DON_HANG;
+            V_us.dcID_GD_DAT_HANG = v_us.dcID;
             V_us.dcID_NGUOI_TAO_THAO_TAC = us_user.dcID;
             V_us.dcID_NGUOI_NHAN_THAO_TAC = us_user.dcID;
             V_us.datNGAY_LAP_THAO_TAC = System.DateTime.Now;
@@ -65,7 +65,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us_dc = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us_dc.FillDatasetWithQuery(v_ds, "SELECT * FROM V_GD_DAT_HANG_GD_LOG_DAT_HANG WHERE [ID_DON_HANG] = " + v_us.dcID_DON_HANG.ToString());
+            v_us_dc.FillDatasetWithQuery(v_ds, "SELECT * FROM V_GD_DAT_HANG_GD_LOG_DAT_HANG WHERE [ID_DON_HANG] = " + v_us.dcID.ToString());
             for(int i= 0;i< v_ds.Tables[0].Rows.Count;i++)
             {
                 US_GD_LOG_DAT_HANG V_us = new US_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_ds.Tables[0].Rows[i]["ID"].ToString()));

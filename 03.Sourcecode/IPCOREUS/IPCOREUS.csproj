@@ -150,6 +150,7 @@
     <Compile Include="US_V_DM_LOAI_YEU_CAU.cs" />
     <Compile Include="US_V_DON_HANG_TRANG_THAI.cs" />
     <Compile Include="US_V_DS_DON_DAT_HANG_CHI_TIET.cs" />
+    <Compile Include="US_V_GD_DAT_HANG.cs" />
     <Compile Include="US_V_GD_DAT_HANG_GD_LOG_DAT_HANG.cs" />
   </ItemGroup>
   <ItemGroup>

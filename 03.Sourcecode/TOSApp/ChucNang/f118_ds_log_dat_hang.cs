@@ -27,7 +27,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG WHERE ID IS NOT NULL");
+            v_us.FillDatasetWithQuery(v_ds, " select * from V_GD_DAT_HANG_GD_LOG_DAT_HANG WHERE ID IS NOT NULL order by NGAY_LAP_THAO_TAC desc");
             m_grc_ds_log_gd_dat_hang.DataSource = v_ds.Tables[0];
 
         }
@@ -51,7 +51,7 @@ namespace TOSApp.ChucNang
             if (info.InRow || info.InRowCell)
             {
                 DataRow v_dr = m_grv_ds_log_dat_hang.GetDataRow(m_grv_ds_log_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate2(v_us);
                 this.Show();

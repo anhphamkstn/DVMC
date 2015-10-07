@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace TOSApp.ChucNang
 {
-    public partial class f122_ds_don_hang_dang_xu_ly: Form
+    public partial class f122_ds_don_hang_dang_xu_ly : Form
     {
         public f122_ds_don_hang_dang_xu_ly()
         {
@@ -25,8 +25,8 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            string v_str_query = "";
-            v_str_query = "SELECT * FROM V_BO_PM_TD_DICH_VU_GD_DAT_HANG_GD_LOG_DAT_HANG bptdvgdhgldh WHERE   (bptdvgdhgldh.ID_NGUOI_SU_DUNG = " + us_user.dcID.ToString() + ") AND (bptdvgdhgldh.ID_LOAI_THAO_TAC = 296) AND (bptdvgdhgldh.THAO_TAC_HET_HAN_YN = 'N') AND (bptdvgdhgldh.CAP_SU_DUNG ="+us_user.dcIDNhom.ToString() + ")";
+            string v_str_query = "SELECT gdh.*FROM V_GD_DAT_HANG as gdh, HT_BO_DICH_VU bdv WHERE dbo.f_get_trang_thai_xu_ly_don_hang_YN(gdh.ID) = 'Y' AND gdh.ID_DV_YEU_CAU = bdv.ID_DICH_VU AND bdv.ID_NGUOI_SU_DUNG =" + us_user.dcID.ToString() + "and  bdv.CAP_SU_DUNG =" + us_user.dcIDNhom.ToString() + "ORDER BY gdh.[THOI_GIAN_TAO] DESC";
+            
             v_us.FillDatasetWithQuery(v_ds, v_str_query);
             m_grc_ds_don_hang_dang_xu_ly.DataSource = v_ds.Tables[0];
         }
@@ -44,7 +44,7 @@ namespace TOSApp.ChucNang
             if (info.InRow || info.InRowCell)
             {
                 DataRow v_dr = m_grv_ds_don_hang_dang_xu_ly.GetDataRow(m_grv_ds_don_hang_dang_xu_ly.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate2(v_us);
                 this.Show();
@@ -58,7 +58,7 @@ namespace TOSApp.ChucNang
 
         }
 
-      
+
         private void m_grv_ds_don_hang_dang_xu_ly_PopupMenuShowing(object sender, PopupMenuShowingEventArgs e)
         {
             GridView view = sender as GridView;

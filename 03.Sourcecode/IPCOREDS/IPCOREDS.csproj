@@ -234,6 +234,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_UT_SEQUENCES.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_V_GD_DAT_HANG.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_V_GD_DAT_HANG.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -504,6 +509,17 @@
     </None>
     <None Include="DS_UT_SEQUENCES.xss">
       <DependentUpon>DS_UT_SEQUENCES.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG.xsc">
+      <DependentUpon>DS_V_GD_DAT_HANG.xsd</DependentUpon>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_V_GD_DAT_HANG.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_V_GD_DAT_HANG.xss">
+      <DependentUpon>DS_V_GD_DAT_HANG.xsd</DependentUpon>
     </None>
     <None Include="DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsc">
       <DependentUpon>DS_V_GD_DAT_HANG_GD_LOG_DAT_HANG.xsd</DependentUpon>

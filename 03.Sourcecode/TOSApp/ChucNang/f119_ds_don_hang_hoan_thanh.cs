@@ -26,7 +26,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG");
+            v_us.FillDatasetWithQuery(v_ds, "select * from V_GD_DAT_HANG WHERE THOI_GIAN_HOAN_THANH IS NOT NULL ORDER BY [THOI_GIAN_TAO] DESC");
             m_grc_ds_dh_hoan_thanh.DataSource = v_ds.Tables[0];
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace TOSApp.ChucNang
             if (info.InRow || info.InRowCell)
             {
                 DataRow v_dr = m_grv_ds_dh_hoan_thanh.GetDataRow(m_grv_ds_dh_hoan_thanh.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate2(v_us);
                 this.Show();

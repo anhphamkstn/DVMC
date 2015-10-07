@@ -28,39 +28,175 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
-            this.m_grc_ds_don_hang_dang_xu_ly = new DevExpress.XtraGrid.GridControl();
-            this.m_grv_ds_don_hang_dang_xu_ly = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.c_loai_dich_vu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_nhom_dich_vu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_dich_vu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_ma_don_hang = new DevExpress.XtraGrid.Columns.GridColumn();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.c_nguoi_tao = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_cap_nhat_lan_cuoi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_trang_thai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_nguoi_xu_ly = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_nhan_vien_dat_hang = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_thoi_gian_tao = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.c_loai_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.MA_DON_HANG = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_grv_ds_don_hang_dang_xu_ly = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.c_user_dat_hang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_grc_ds_don_hang_dang_xu_ly = new DevExpress.XtraGrid.GridControl();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_dang_xu_ly)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_hang_dang_xu_ly)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_dang_xu_ly)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // m_grc_ds_don_hang_dang_xu_ly
+            // timer1
             // 
-            this.m_grc_ds_don_hang_dang_xu_ly.Cursor = System.Windows.Forms.Cursors.Default;
-            this.m_grc_ds_don_hang_dang_xu_ly.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_ds_don_hang_dang_xu_ly.Location = new System.Drawing.Point(0, 0);
-            this.m_grc_ds_don_hang_dang_xu_ly.MainView = this.m_grv_ds_don_hang_dang_xu_ly;
-            this.m_grc_ds_don_hang_dang_xu_ly.Name = "m_grc_ds_don_hang_dang_xu_ly";
-            this.m_grc_ds_don_hang_dang_xu_ly.Size = new System.Drawing.Size(774, 264);
-            this.m_grc_ds_don_hang_dang_xu_ly.TabIndex = 0;
-            this.m_grc_ds_don_hang_dang_xu_ly.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.m_grv_ds_don_hang_dang_xu_ly});
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 10000;
+            // 
+            // c_nguoi_tao
+            // 
+            this.c_nguoi_tao.Caption = "NV nhận đặt hàng";
+            this.c_nguoi_tao.FieldName = "NGUOI_TAO";
+            this.c_nguoi_tao.Name = "c_nguoi_tao";
+            this.c_nguoi_tao.Visible = true;
+            this.c_nguoi_tao.VisibleIndex = 12;
+            this.c_nguoi_tao.Width = 133;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Phương thức đặt hàng";
+            this.gridColumn1.FieldName = "PHUONG_THUC_DAT_HANG";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 13;
+            this.gridColumn1.Width = 164;
+            // 
+            // m_thoi_gian_can_hoan_thanh
+            // 
+            this.m_thoi_gian_can_hoan_thanh.Caption = "Thời gian cần hoàn thành";
+            this.m_thoi_gian_can_hoan_thanh.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
+            this.m_thoi_gian_can_hoan_thanh.Name = "m_thoi_gian_can_hoan_thanh";
+            this.m_thoi_gian_can_hoan_thanh.Visible = true;
+            this.m_thoi_gian_can_hoan_thanh.VisibleIndex = 11;
+            this.m_thoi_gian_can_hoan_thanh.Width = 165;
+            // 
+            // m_cap_nhat_lan_cuoi
+            // 
+            this.m_cap_nhat_lan_cuoi.Caption = "Cập nhật lần cuối";
+            this.m_cap_nhat_lan_cuoi.FieldName = "CAP_NHAT_CUOI";
+            this.m_cap_nhat_lan_cuoi.Name = "m_cap_nhat_lan_cuoi";
+            this.m_cap_nhat_lan_cuoi.Visible = true;
+            this.m_cap_nhat_lan_cuoi.VisibleIndex = 10;
+            this.m_cap_nhat_lan_cuoi.Width = 129;
+            // 
+            // m_trang_thai
+            // 
+            this.m_trang_thai.Caption = "Trạng thái đơn hàng";
+            this.m_trang_thai.FieldName = "TRANG_THAI_DON_HANG";
+            this.m_trang_thai.Name = "m_trang_thai";
+            this.m_trang_thai.Visible = true;
+            this.m_trang_thai.VisibleIndex = 9;
+            this.m_trang_thai.Width = 127;
+            // 
+            // gridColumn9
+            // 
+            this.gridColumn9.Caption = "Thời gian tạo";
+            this.gridColumn9.DisplayFormat.FormatString = "g";
+            this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.gridColumn9.FieldName = "THOI_GIAN_TAO";
+            this.gridColumn9.Name = "gridColumn9";
+            this.gridColumn9.Visible = true;
+            this.gridColumn9.VisibleIndex = 6;
+            this.gridColumn9.Width = 129;
+            // 
+            // c_nguoi_xu_ly
+            // 
+            this.c_nguoi_xu_ly.Caption = "người xử lý";
+            this.c_nguoi_xu_ly.FieldName = "NGUOI_XU_LY";
+            this.c_nguoi_xu_ly.Name = "c_nguoi_xu_ly";
+            this.c_nguoi_xu_ly.Visible = true;
+            this.c_nguoi_xu_ly.VisibleIndex = 8;
+            this.c_nguoi_xu_ly.Width = 110;
+            // 
+            // THOI_DIEM_CAN_HOAN_THANH
+            // 
+            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "thời điểm cần hoàn thành";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
+            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
+            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
+            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 7;
+            this.THOI_DIEM_CAN_HOAN_THANH.Width = 139;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Đơn vị";
+            this.gridColumn7.FieldName = "MA_DON_VI";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 3;
+            this.gridColumn7.Width = 84;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Nội dung đặt hàng";
+            this.gridColumn6.FieldName = "NOI_DUNG_DAT_HANG";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.Width = 161;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Dịch vụ yêu cầu";
+            this.gridColumn5.FieldName = "TEN_YEU_CAU";
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.Width = 121;
+            // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "Chi nhánh";
+            this.gridColumn11.FieldName = "TEN_CHI_NHANH";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 14;
+            this.gridColumn11.Width = 86;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Điện thoại";
+            this.gridColumn3.FieldName = "DIEN_THOAI";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 106;
+            // 
+            // MA_DON_HANG
+            // 
+            this.MA_DON_HANG.Caption = "Mã đơn hàng";
+            this.MA_DON_HANG.FieldName = "MA_DON_HANG";
+            this.MA_DON_HANG.Name = "MA_DON_HANG";
+            this.MA_DON_HANG.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count)});
+            this.MA_DON_HANG.Visible = true;
+            this.MA_DON_HANG.VisibleIndex = 0;
+            this.MA_DON_HANG.Width = 110;
             // 
             // m_grv_ds_don_hang_dang_xu_ly
             // 
@@ -174,16 +310,27 @@
             this.m_grv_ds_don_hang_dang_xu_ly.Appearance.TopNewRow.Options.UseBackColor = true;
             this.m_grv_ds_don_hang_dang_xu_ly.Appearance.VertLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(184)))), ((int)(((byte)(251)))));
             this.m_grv_ds_don_hang_dang_xu_ly.Appearance.VertLine.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_dang_xu_ly.AppearancePrint.HeaderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_hang_dang_xu_ly.AppearancePrint.HeaderPanel.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_hang_dang_xu_ly.AppearancePrint.HeaderPanel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.m_grv_ds_don_hang_dang_xu_ly.AppearancePrint.HeaderPanel.Options.UseBackColor = true;
+            this.m_grv_ds_don_hang_dang_xu_ly.AppearancePrint.HeaderPanel.Options.UseBorderColor = true;
             this.m_grv_ds_don_hang_dang_xu_ly.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.c_loai_dich_vu,
-            this.c_nhom_dich_vu,
-            this.c_dich_vu,
-            this.c_ma_don_hang,
+            this.MA_DON_HANG,
+            this.c_user_dat_hang,
+            this.gridColumn3,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7,
+            this.THOI_DIEM_CAN_HOAN_THANH,
             this.c_nguoi_xu_ly,
-            this.c_nhan_vien_dat_hang,
-            this.c_thoi_gian_tao,
-            this.c_loai_thoi_gian_can_hoan_thanh,
-            this.THOI_DIEM_CAN_HOAN_THANH});
+            this.gridColumn9,
+            this.m_trang_thai,
+            this.m_cap_nhat_lan_cuoi,
+            this.m_thoi_gian_can_hoan_thanh,
+            this.gridColumn1,
+            this.c_nguoi_tao,
+            this.gridColumn11});
             styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
@@ -192,7 +339,7 @@
             styleFormatCondition1.Appearance.Options.UseBorderColor = true;
             styleFormatCondition1.Appearance.Options.UseForeColor = true;
             styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <=Now()";
+            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= now()";
             styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
             styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
@@ -209,99 +356,58 @@
             this.m_grv_ds_don_hang_dang_xu_ly.IndicatorWidth = 50;
             this.m_grv_ds_don_hang_dang_xu_ly.Name = "m_grv_ds_don_hang_dang_xu_ly";
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsBehavior.Editable = false;
+            this.m_grv_ds_don_hang_dang_xu_ly.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseUp;
+            this.m_grv_ds_don_hang_dang_xu_ly.OptionsBehavior.ReadOnly = true;
+            this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.ColumnAutoWidth = false;
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.EnableAppearanceEvenRow = true;
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.EnableAppearanceOddRow = true;
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.ShowAutoFilterRow = true;
             this.m_grv_ds_don_hang_dang_xu_ly.OptionsView.ShowFooter = true;
             this.m_grv_ds_don_hang_dang_xu_ly.PaintStyleName = "Flat";
-            this.m_grv_ds_don_hang_dang_xu_ly.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.m_grv_ds_don_hang_dang_xu_ly_CustomDrawRowIndicator);
-            this.m_grv_ds_don_hang_dang_xu_ly.PopupMenuShowing += new DevExpress.XtraGrid.Views.Grid.PopupMenuShowingEventHandler(this.m_grv_ds_don_hang_dang_xu_ly_PopupMenuShowing);
             this.m_grv_ds_don_hang_dang_xu_ly.DoubleClick += new System.EventHandler(this.m_grv_ds_don_hang_dang_xu_ly_DoubleClick);
             // 
-            // c_loai_dich_vu
+            // c_user_dat_hang
             // 
-            this.c_loai_dich_vu.Caption = "Loại dịch vụ";
-            this.c_loai_dich_vu.FieldName = "TEN_YEU_CAU_CHA_CHA";
-            this.c_loai_dich_vu.Name = "c_loai_dich_vu";
-            this.c_loai_dich_vu.Visible = true;
-            this.c_loai_dich_vu.VisibleIndex = 0;
-            this.c_loai_dich_vu.Width = 84;
+            this.c_user_dat_hang.Caption = "User đặt hàng";
+            this.c_user_dat_hang.FieldName = "USER_NAME";
+            this.c_user_dat_hang.Name = "c_user_dat_hang";
+            this.c_user_dat_hang.Visible = true;
+            this.c_user_dat_hang.VisibleIndex = 1;
+            this.c_user_dat_hang.Width = 139;
             // 
-            // c_nhom_dich_vu
+            // m_grc_ds_don_hang_dang_xu_ly
             // 
-            this.c_nhom_dich_vu.Caption = "Nhóm dịch vụ";
-            this.c_nhom_dich_vu.FieldName = "TEN_YEU_CAU_CHA";
-            this.c_nhom_dich_vu.Name = "c_nhom_dich_vu";
-            this.c_nhom_dich_vu.Visible = true;
-            this.c_nhom_dich_vu.VisibleIndex = 1;
-            this.c_nhom_dich_vu.Width = 84;
+            this.m_grc_ds_don_hang_dang_xu_ly.Cursor = System.Windows.Forms.Cursors.Default;
+            this.m_grc_ds_don_hang_dang_xu_ly.Dock = System.Windows.Forms.DockStyle.Fill;
+            gridLevelNode1.RelationName = "Level1";
+            this.m_grc_ds_don_hang_dang_xu_ly.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
+            this.m_grc_ds_don_hang_dang_xu_ly.Location = new System.Drawing.Point(0, 0);
+            this.m_grc_ds_don_hang_dang_xu_ly.MainView = this.m_grv_ds_don_hang_dang_xu_ly;
+            this.m_grc_ds_don_hang_dang_xu_ly.Name = "m_grc_ds_don_hang_dang_xu_ly";
+            this.m_grc_ds_don_hang_dang_xu_ly.Size = new System.Drawing.Size(774, 270);
+            this.m_grc_ds_don_hang_dang_xu_ly.TabIndex = 0;
+            this.m_grc_ds_don_hang_dang_xu_ly.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.m_grv_ds_don_hang_dang_xu_ly});
             // 
-            // c_dich_vu
+            // panel5
             // 
-            this.c_dich_vu.Caption = "Dịch vụ";
-            this.c_dich_vu.FieldName = "TEN_YEU_CAU";
-            this.c_dich_vu.Name = "c_dich_vu";
-            this.c_dich_vu.Visible = true;
-            this.c_dich_vu.VisibleIndex = 2;
-            this.c_dich_vu.Width = 84;
+            this.panel5.Controls.Add(this.m_grc_ds_don_hang_dang_xu_ly);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 53);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(774, 270);
+            this.panel5.TabIndex = 2;
             // 
-            // c_ma_don_hang
+            // panel4
             // 
-            this.c_ma_don_hang.Caption = "Mã đơn hàng";
-            this.c_ma_don_hang.FieldName = "MA_DON_HANG";
-            this.c_ma_don_hang.Name = "c_ma_don_hang";
-            this.c_ma_don_hang.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count)});
-            this.c_ma_don_hang.Visible = true;
-            this.c_ma_don_hang.VisibleIndex = 3;
-            this.c_ma_don_hang.Width = 84;
-            // 
-            // c_nguoi_xu_ly
-            // 
-            this.c_nguoi_xu_ly.Caption = "Người xử lý";
-            this.c_nguoi_xu_ly.FieldName = "TEN_NGUOI_TAO_THAO_TAC_LOG";
-            this.c_nguoi_xu_ly.Name = "c_nguoi_xu_ly";
-            this.c_nguoi_xu_ly.Visible = true;
-            this.c_nguoi_xu_ly.VisibleIndex = 5;
-            // 
-            // c_nhan_vien_dat_hang
-            // 
-            this.c_nhan_vien_dat_hang.Caption = "user đặt hàng";
-            this.c_nhan_vien_dat_hang.FieldName = "USER_NAME";
-            this.c_nhan_vien_dat_hang.Name = "c_nhan_vien_dat_hang";
-            this.c_nhan_vien_dat_hang.Visible = true;
-            this.c_nhan_vien_dat_hang.VisibleIndex = 4;
-            this.c_nhan_vien_dat_hang.Width = 118;
-            // 
-            // c_thoi_gian_tao
-            // 
-            this.c_thoi_gian_tao.Caption = "Thời gian tạo";
-            this.c_thoi_gian_tao.DisplayFormat.FormatString = "g";
-            this.c_thoi_gian_tao.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.c_thoi_gian_tao.FieldName = "THOI_GIAN_TAO";
-            this.c_thoi_gian_tao.Name = "c_thoi_gian_tao";
-            this.c_thoi_gian_tao.Visible = true;
-            this.c_thoi_gian_tao.VisibleIndex = 6;
-            // 
-            // c_loai_thoi_gian_can_hoan_thanh
-            // 
-            this.c_loai_thoi_gian_can_hoan_thanh.Caption = "Thời gian hoàn thành";
-            this.c_loai_thoi_gian_can_hoan_thanh.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
-            this.c_loai_thoi_gian_can_hoan_thanh.Name = "c_loai_thoi_gian_can_hoan_thanh";
-            this.c_loai_thoi_gian_can_hoan_thanh.Visible = true;
-            this.c_loai_thoi_gian_can_hoan_thanh.VisibleIndex = 7;
-            this.c_loai_thoi_gian_can_hoan_thanh.Width = 87;
-            // 
-            // THOI_DIEM_CAN_HOAN_THANH
-            // 
-            this.THOI_DIEM_CAN_HOAN_THANH.Caption = "Thời điểm cần hoàn thành";
-            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatString = "g";
-            this.THOI_DIEM_CAN_HOAN_THANH.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.THOI_DIEM_CAN_HOAN_THANH.FieldName = "THOI_DIEM_CAN_HOAN_THANH";
-            this.THOI_DIEM_CAN_HOAN_THANH.Name = "THOI_DIEM_CAN_HOAN_THANH";
-            this.THOI_DIEM_CAN_HOAN_THANH.Visible = true;
-            this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 8;
-            this.THOI_DIEM_CAN_HOAN_THANH.Width = 68;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(774, 323);
+            this.panel4.TabIndex = 3;
             // 
             // panel1
             // 
@@ -309,62 +415,63 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(774, 59);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(774, 53);
+            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(3, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(345, 19);
+            this.label1.Size = new System.Drawing.Size(330, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Danh sách tất cả đơn hàng đang được xử lý";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.m_grc_ds_don_hang_dang_xu_ly);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 59);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(774, 264);
-            this.panel2.TabIndex = 2;
+            this.label1.Text = "Danh sách tất cả các đơn hàng đang xử lý";
             // 
             // f122_ds_don_hang_dang_xu_ly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 323);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
             this.Name = "f122_ds_don_hang_dang_xu_ly";
             this.Text = "f122_Tất cả đơn hàng đang xử lý";
             this.Load += new System.EventHandler(this.f122_ds_don_hang_dang_xu_ly_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_dang_xu_ly)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_hang_dang_xu_ly)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_hang_dang_xu_ly)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl m_grc_ds_don_hang_dang_xu_ly;
-        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_don_hang_dang_xu_ly;
-        private DevExpress.XtraGrid.Columns.GridColumn c_loai_dich_vu;
-        private DevExpress.XtraGrid.Columns.GridColumn c_nhom_dich_vu;
-        private DevExpress.XtraGrid.Columns.GridColumn c_dich_vu;
-        private DevExpress.XtraGrid.Columns.GridColumn c_ma_don_hang;
+        private System.Windows.Forms.Timer timer1;
+        private DevExpress.XtraGrid.Columns.GridColumn c_nguoi_tao;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn m_thoi_gian_can_hoan_thanh;
+        private DevExpress.XtraGrid.Columns.GridColumn m_cap_nhat_lan_cuoi;
+        private DevExpress.XtraGrid.Columns.GridColumn m_trang_thai;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn c_nguoi_xu_ly;
-        private DevExpress.XtraGrid.Columns.GridColumn c_nhan_vien_dat_hang;
-        private DevExpress.XtraGrid.Columns.GridColumn c_thoi_gian_tao;
-        private DevExpress.XtraGrid.Columns.GridColumn c_loai_thoi_gian_can_hoan_thanh;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private DevExpress.XtraGrid.Columns.GridColumn THOI_DIEM_CAN_HOAN_THANH;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn MA_DON_HANG;
+        private DevExpress.XtraGrid.Views.Grid.GridView m_grv_ds_don_hang_dang_xu_ly;
+        private DevExpress.XtraGrid.Columns.GridColumn c_user_dat_hang;
+        private DevExpress.XtraGrid.GridControl m_grc_ds_don_hang_dang_xu_ly;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+
     }
 }

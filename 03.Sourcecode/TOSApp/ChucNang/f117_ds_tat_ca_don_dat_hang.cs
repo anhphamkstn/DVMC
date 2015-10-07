@@ -16,7 +16,7 @@ namespace TOSApp.ChucNang
     public partial class f117_ds_tat_ca_don_dat_hang : Form
     {
         decimal v_deadline = 0;
-        US_V_GD_DAT_HANG_GD_LOG_DAT_HANG m_us;
+        US_GD_DAT_HANG m_us;
         public f117_ds_tat_ca_don_dat_hang()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace TOSApp.ChucNang
             try
             {
                 DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate(v_us, v_deadline);
                 load_data_2_grid();
@@ -59,7 +59,7 @@ namespace TOSApp.ChucNang
             try
             {
                 DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
-                m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                m_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 this.Show();
                 v_deadline = deadline_id;
                 load_data_2_grid();
@@ -84,7 +84,7 @@ namespace TOSApp.ChucNang
             if (info.InRow || info.InRowCell)
             {
                 DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate2(v_us);
                 this.Show();
@@ -113,7 +113,7 @@ namespace TOSApp.ChucNang
             try
             {
                 DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
-                m_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                m_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
                 f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
                 f103.Display(m_us);
                 load_data_2_grid();

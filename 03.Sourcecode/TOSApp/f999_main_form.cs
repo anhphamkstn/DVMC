@@ -77,6 +77,7 @@ namespace TOSApp
         f999_ht_bo_pm_td_dich_vu v_f999_ht_bo_pm_td_dich_vu;
         f345_danh_muc_cuoc_goi v_f345_danh_muc_cuoc_goi;
         f258_nhap_ma_ipphone v_nhap_ma_ipphone;
+        f126_don_hang_can_nghiem_thu v_f126_don_hang_can_nghiem_thu;
 
         private void GetAllControl(f999_main_form c, List<Control> list)
         {
@@ -385,17 +386,15 @@ namespace TOSApp
         {
             try
             {
-                if (v_don_hang_can_danh_gia_TM == null || !IsFormOpen(v_don_hang_can_danh_gia_TM))
+                if (v_f126_don_hang_can_nghiem_thu == null || !IsFormOpen(v_f126_don_hang_can_nghiem_thu))
                 {
-                    v_don_hang_can_danh_gia_TM = new f0000_gd_dat_hang_gd_log_dat_hang(2);
-                    v_don_hang_can_danh_gia_TM.MdiParent = this;
-                    v_don_hang_can_danh_gia_TM.Text = "Đơn hàng cần đánh giá";
-                    v_don_hang_can_danh_gia_TM.m_lab_tieu_de.Text = "Danh sách đơn hàng cần đánh giá";
-                    v_don_hang_can_danh_gia_TM.Show();
+                    v_f126_don_hang_can_nghiem_thu = new f126_don_hang_can_nghiem_thu();
+                    v_f126_don_hang_can_nghiem_thu.MdiParent = this;
+                    v_f126_don_hang_can_nghiem_thu.Show();
                 }
                 else
                 {
-                    v_don_hang_can_danh_gia_TM.Focus();
+                    v_f126_don_hang_can_nghiem_thu.Focus();
                 }
             }
             catch (Exception v_e)
@@ -716,21 +715,16 @@ namespace TOSApp
         {
             try
             {
-                if (v_don_hang_dang_xu_ly_TD == null || !IsFormOpen(v_don_hang_dang_xu_ly_TD))
+                if (v_tat_ca_don_hang == null || !IsFormOpen(v_tat_ca_don_hang))
                 {
-                    v_don_hang_dang_xu_ly_TD = new f0000_gd_dat_hang_gd_log_dat_hang(1);
-                    v_don_hang_dang_xu_ly_TD.MdiParent = this;
-                    v_don_hang_dang_xu_ly_TD.Text = "Đơn hàng đang xử lý";
-                    v_don_hang_dang_xu_ly_TD.m_lab_tieu_de.Text = "Danh sách đơn hàng đang xử lý";
-                    v_don_hang_dang_xu_ly_TD.m_panel_TD_tu_choi.Visible = false;
-                    v_don_hang_dang_xu_ly_TD.m_panel_TD_tiep_nhan.Visible = false;
-                    v_don_hang_dang_xu_ly_TD.m_panel_TM.Visible = false;
-                    format_griview_don_hang_dang_xu_ly_TM(v_don_hang_dang_xu_ly_TD);
-                    v_don_hang_dang_xu_ly_TD.Show();
+                    v_tat_ca_don_hang = new f117_ds_tat_ca_don_dat_hang();
+                    v_tat_ca_don_hang.MdiParent = this;
+                    v_tat_ca_don_hang.m_pan_button.Visible = false;
+                    v_tat_ca_don_hang.Show();
                 }
                 else
                 {
-                    v_don_hang_dang_xu_ly_TD.Focus();
+                    v_tat_ca_don_hang.Focus();
                 }
             }
             catch (Exception v_e)
@@ -993,7 +987,6 @@ namespace TOSApp
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
-
         private void m_btn_ipphone_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 

@@ -35,7 +35,7 @@
             DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_pan_button = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.m_cmd_FO_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -51,17 +51,17 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.THOI_DIEM_CAN_HOAN_THANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.c_nguoi_xu_ly = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_trang_thai = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_cap_nhat_lan_cuoi = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.m_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.c_nguoi_tao = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.c_nguoi_xu_ly = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_trang_thai = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_cap_nhat_lan_cuoi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.m_thoi_gian_can_hoan_thanh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.m_pan_button.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -90,15 +90,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh sách tất cả các đơn hàng đang xử lý";
             // 
-            // panel2
+            // m_pan_button
             // 
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 305);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1213, 39);
-            this.panel2.TabIndex = 1;
+            this.m_pan_button.Controls.Add(this.panel6);
+            this.m_pan_button.Controls.Add(this.panel3);
+            this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.m_pan_button.Location = new System.Drawing.Point(0, 305);
+            this.m_pan_button.Name = "m_pan_button";
+            this.m_pan_button.Size = new System.Drawing.Size(1213, 39);
+            this.m_pan_button.TabIndex = 1;
             // 
             // panel6
             // 
@@ -150,7 +150,7 @@
             // 
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.panel1);
-            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.m_pan_button);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -418,6 +418,15 @@
             this.THOI_DIEM_CAN_HOAN_THANH.VisibleIndex = 7;
             this.THOI_DIEM_CAN_HOAN_THANH.Width = 139;
             // 
+            // c_nguoi_xu_ly
+            // 
+            this.c_nguoi_xu_ly.Caption = "người xử lý";
+            this.c_nguoi_xu_ly.FieldName = "NGUOI_XU_LY";
+            this.c_nguoi_xu_ly.Name = "c_nguoi_xu_ly";
+            this.c_nguoi_xu_ly.Visible = true;
+            this.c_nguoi_xu_ly.VisibleIndex = 8;
+            this.c_nguoi_xu_ly.Width = 110;
+            // 
             // gridColumn9
             // 
             this.gridColumn9.Caption = "Thời gian tạo";
@@ -428,6 +437,33 @@
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 6;
             this.gridColumn9.Width = 129;
+            // 
+            // m_trang_thai
+            // 
+            this.m_trang_thai.Caption = "Trạng thái đơn hàng";
+            this.m_trang_thai.FieldName = "TRANG_THAI_DON_HANG";
+            this.m_trang_thai.Name = "m_trang_thai";
+            this.m_trang_thai.Visible = true;
+            this.m_trang_thai.VisibleIndex = 9;
+            this.m_trang_thai.Width = 127;
+            // 
+            // m_cap_nhat_lan_cuoi
+            // 
+            this.m_cap_nhat_lan_cuoi.Caption = "Cập nhật lần cuối";
+            this.m_cap_nhat_lan_cuoi.FieldName = "CAP_NHAT_CUOI";
+            this.m_cap_nhat_lan_cuoi.Name = "m_cap_nhat_lan_cuoi";
+            this.m_cap_nhat_lan_cuoi.Visible = true;
+            this.m_cap_nhat_lan_cuoi.VisibleIndex = 10;
+            this.m_cap_nhat_lan_cuoi.Width = 129;
+            // 
+            // m_thoi_gian_can_hoan_thanh
+            // 
+            this.m_thoi_gian_can_hoan_thanh.Caption = "Thời gian cần hoàn thành";
+            this.m_thoi_gian_can_hoan_thanh.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
+            this.m_thoi_gian_can_hoan_thanh.Name = "m_thoi_gian_can_hoan_thanh";
+            this.m_thoi_gian_can_hoan_thanh.Visible = true;
+            this.m_thoi_gian_can_hoan_thanh.VisibleIndex = 11;
+            this.m_thoi_gian_can_hoan_thanh.Width = 165;
             // 
             // gridColumn1
             // 
@@ -461,42 +497,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 10000;
             // 
-            // c_nguoi_xu_ly
-            // 
-            this.c_nguoi_xu_ly.Caption = "người xử lý";
-            this.c_nguoi_xu_ly.FieldName = "NGUOI_XU_LY";
-            this.c_nguoi_xu_ly.Name = "c_nguoi_xu_ly";
-            this.c_nguoi_xu_ly.Visible = true;
-            this.c_nguoi_xu_ly.VisibleIndex = 8;
-            this.c_nguoi_xu_ly.Width = 110;
-            // 
-            // m_trang_thai
-            // 
-            this.m_trang_thai.Caption = "Trạng thái đơn hàng";
-            this.m_trang_thai.FieldName = "TRANG_THAI_DON_HANG";
-            this.m_trang_thai.Name = "m_trang_thai";
-            this.m_trang_thai.Visible = true;
-            this.m_trang_thai.VisibleIndex = 9;
-            this.m_trang_thai.Width = 127;
-            // 
-            // m_cap_nhat_lan_cuoi
-            // 
-            this.m_cap_nhat_lan_cuoi.Caption = "Cập nhật lần cuối";
-            this.m_cap_nhat_lan_cuoi.FieldName = "CAP_NHAT_CUOI";
-            this.m_cap_nhat_lan_cuoi.Name = "m_cap_nhat_lan_cuoi";
-            this.m_cap_nhat_lan_cuoi.Visible = true;
-            this.m_cap_nhat_lan_cuoi.VisibleIndex = 10;
-            this.m_cap_nhat_lan_cuoi.Width = 129;
-            // 
-            // m_thoi_gian_can_hoan_thanh
-            // 
-            this.m_thoi_gian_can_hoan_thanh.Caption = "Thời gian cần hoàn thành";
-            this.m_thoi_gian_can_hoan_thanh.FieldName = "LOAI_THOI_GIAN_CAN_HOAN_THANH";
-            this.m_thoi_gian_can_hoan_thanh.Name = "m_thoi_gian_can_hoan_thanh";
-            this.m_thoi_gian_can_hoan_thanh.Visible = true;
-            this.m_thoi_gian_can_hoan_thanh.VisibleIndex = 11;
-            this.m_thoi_gian_can_hoan_thanh.Width = 165;
-            // 
             // f117_ds_tat_ca_don_dat_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -507,7 +507,7 @@
             this.Text = "f177_Đơn hàng đang xử lý";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.m_pan_button.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -521,7 +521,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private DevExpress.XtraEditors.SimpleButton m_cmd_chinh_sua_don_hang;
         private System.Windows.Forms.Panel panel4;
@@ -547,5 +546,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn m_trang_thai;
         private DevExpress.XtraGrid.Columns.GridColumn m_cap_nhat_lan_cuoi;
         private DevExpress.XtraGrid.Columns.GridColumn m_thoi_gian_can_hoan_thanh;
+        public System.Windows.Forms.Panel m_pan_button;
     }
 }

@@ -314,7 +314,8 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 f115_TM_danh_gia v_f115 = new f115_TM_danh_gia();
-                v_f115.displayForTM(m_us);
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(m_us.dcID_DON_HANG);
+                v_f115.displayForTM(v_us);
                 load_data_2_grid();
               
             }
@@ -413,7 +414,7 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate(v_us, 1);
                 update_log_admin_tiep_nhan();
@@ -457,7 +458,8 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
-                f103.Display(m_us);
+                US_GD_DAT_HANG v_us_gd_dat_hang = new US_GD_DAT_HANG(m_us.dcID_DON_HANG);
+                f103.Display(v_us_gd_dat_hang);
                 load_data_2_grid();     
             }
             catch (Exception v_e)
@@ -765,9 +767,8 @@ namespace TOSApp.ChucNang
         {
             decimal v_deadline = 0;
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-
             v_f100.displayForUpdate(v_us, v_deadline);
             load_data_2_grid();
         }
@@ -776,7 +777,7 @@ namespace TOSApp.ChucNang
         {
             decimal v_deadline = 0;
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
 
             v_f100.displayForUpdate(v_us, v_deadline);
@@ -787,9 +788,8 @@ namespace TOSApp.ChucNang
         {
             decimal v_deadline = 0;
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
-
             v_f100.displayForUpdate(v_us, v_deadline);
             load_data_2_grid();
         }
@@ -798,7 +798,7 @@ namespace TOSApp.ChucNang
         {
             f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal( v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             v_f.Display_for_update(v_us);
             load_data_2_grid();
         }
@@ -807,7 +807,7 @@ namespace TOSApp.ChucNang
         {
             f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             v_f.Display_for_update(v_us);
             load_data_2_grid();
         }
@@ -816,7 +816,7 @@ namespace TOSApp.ChucNang
         {
             f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             v_f.Display_for_update(v_us);
             load_data_2_grid();
         }
@@ -851,7 +851,7 @@ namespace TOSApp.ChucNang
             if (info.InRow || info.InRowCell)
             {
                 DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-                US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+                US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
                 f100_don_dat_hang_new v_f100 = new f100_don_dat_hang_new();
                 v_f100.displayForUpdate2(v_us);
                 this.Show();
@@ -886,7 +886,9 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
-                f103.Display(m_us);
+                US_GD_DAT_HANG v_us_gd_dat_hang = new US_GD_DAT_HANG(m_us.dcID_DON_HANG);
+                f103.Display(v_us_gd_dat_hang);
+                load_data_2_grid();     
             }
             catch (Exception v_e)
             {
@@ -899,7 +901,7 @@ namespace TOSApp.ChucNang
         {
             f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             v_f.Display_for_update(v_us);
             load_data_2_grid();
         }
@@ -908,7 +910,7 @@ namespace TOSApp.ChucNang
         {
             f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
             DataRow v_dr = m_grv_gd_dat_hang_gd_log_dat_hang.GetDataRow(m_grv_gd_dat_hang_gd_log_dat_hang.FocusedRowHandle);
-            US_V_GD_DAT_HANG_GD_LOG_DAT_HANG v_us = new US_V_GD_DAT_HANG_GD_LOG_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID_DON_HANG"].ToString()));
             v_f.Display_for_update(v_us);
             load_data_2_grid();
         }
@@ -919,7 +921,9 @@ namespace TOSApp.ChucNang
             {
                 fill_data_to_m_us();
                 f103_TD_ly_do_tu_choi f103 = new f103_TD_ly_do_tu_choi();
-                f103.Display(m_us);
+                US_GD_DAT_HANG v_us_gd_dat_hang = new US_GD_DAT_HANG(m_us.dcID_DON_HANG);
+                f103.Display(v_us_gd_dat_hang);
+                load_data_2_grid();
             }
             catch (Exception v_e)
             {
