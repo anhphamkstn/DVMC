@@ -139,27 +139,25 @@ namespace TOSApp.App_Code
         /// <param name="ip_loai_hanh_dong">enum: các kiểu hành động của người dùng</param>
         /// <param name="ip_obj_doi_tuong_thao_tac">Thao tác, tác động vào đối tượng nào</param>
         /// <param name="ip_str_mo_ta">Mô tả chi tiết hơn về hành động</param>
-        public static void ghi_log_he_thong(decimal ip_dc_loai_hanh_dong
-                                            , string ip_obj_doi_tuong_thao_tac
-                                            , string ip_str_mo_ta
+        /// 
+        public static void ghi_log_he_thong( string ip_str_mo_ta
                                             , string ip_str_ghi_chu)
         {
             /* Thông tin chung*/
-           // US_V_HT_LOG_TRUY_CAP m_us_v_ht_log_truy_cap = new US_V_HT_LOG_TRUY_CAP();
-            
-           // m_us_v_ht_log_truy_cap.dcID_DANG_NHAP = f002_main_form.m_dc_id_user;
-           // m_us_v_ht_log_truy_cap.datTHOI_GIAN = DateTime.Now;
-           // m_us_v_ht_log_truy_cap.strDOI_TUONG_THAO_TAC = ip_obj_doi_tuong_thao_tac;
+          
+             US_HT_LOG_API_CALL_CENTER m_us_v_ht_log_truy_cap = new US_HT_LOG_API_CALL_CENTER();
+
+            m_us_v_ht_log_truy_cap.dcID_DANG_NHAP = us_user.dcID;
+            m_us_v_ht_log_truy_cap.datTHOI_GIAN = DateTime.Now;
 
             /* Thông tin riêng*/
-          //  m_us_v_ht_log_truy_cap.dcID_LOAI_HANH_DONG = ip_dc_loai_hanh_dong;
-           // m_us_v_ht_log_truy_cap.strMO_TA = ip_str_mo_ta;
-          //  m_us_v_ht_log_truy_cap.strGHI_CHU = ip_str_ghi_chu;
+            m_us_v_ht_log_truy_cap.strMO_TA = ip_str_mo_ta;
+            m_us_v_ht_log_truy_cap.strGHI_CHU = ip_str_ghi_chu;
 
             // ghi log hệ thống
             try
             {
-             //   m_us_v_ht_log_truy_cap.Insert();
+                  m_us_v_ht_log_truy_cap.Insert();
             }
             catch
             {

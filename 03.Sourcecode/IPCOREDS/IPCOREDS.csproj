@@ -184,6 +184,11 @@
       <DependentUpon>DS_GD_CUOC_GOI_YEU_CAU.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DS_HT_LOG_API_CALL_CENTER.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HT_LOG_API_CALL_CENTER.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_V_DM_LOAI_YEU_CAU.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -389,6 +394,17 @@
     </None>
     <None Include="DS_DOC_TABLE_COMMENT.xss">
       <DependentUpon>DS_DOC_TABLE_COMMENT.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_LOG_API_CALL_CENTER.xsc">
+      <DependentUpon>DS_HT_LOG_API_CALL_CENTER.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HT_LOG_API_CALL_CENTER.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HT_LOG_API_CALL_CENTER.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_HT_LOG_API_CALL_CENTER.xss">
+      <DependentUpon>DS_HT_LOG_API_CALL_CENTER.xsd</DependentUpon>
     </None>
     <None Include="DS_V_DM_LOAI_YEU_CAU.xsc">
       <DependentUpon>DS_V_DM_LOAI_YEU_CAU.xsd</DependentUpon>

@@ -76,6 +76,7 @@ namespace TOSApp
         f100_dm_cau_hoi v_f100_dm_cau_hoi;
         f999_ht_bo_pm_td_dich_vu v_f999_ht_bo_pm_td_dich_vu;
         f345_danh_muc_cuoc_goi v_f345_danh_muc_cuoc_goi;
+        f258_nhap_ma_ipphone v_nhap_ma_ipphone;
 
         private void GetAllControl(f999_main_form c, List<Control> list)
         {
@@ -890,6 +891,7 @@ namespace TOSApp
                 v_str_link_services = "http://203.162.121.70:8080/TPCServer/tpc/DoAction.jsp?event=" + WEB_URL_CALL_CENTER.GET_INCOMING_CALL(m_str_stationId);
 
                 string v_str_output = CallCenterUtils.get_incoming_call(v_str_link_services).Data;
+
                 US_GD_CUOC_GOI_YEU_CAU m_us_gd_cuoc_goi_yc = new US_GD_CUOC_GOI_YEU_CAU();
                 if (v_str_output == "") return;
                 CallInfor v_obj_callinfo = HelpUtils.get_start_callinfo_from_client_string_call(v_str_output);
@@ -899,7 +901,7 @@ namespace TOSApp
                 if (v_obj_callinfo.call_id == ""
                     || v_obj_callinfo.call_id == null) return;
 
-                ////HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.CALL_API, "SV_GOI_DEN", v_str_link_services, v_str_result_api);
+                HelpUtils.ghi_log_he_thong(v_str_output,"");
                 //// ghi log gọi điện
 
                 m_timer_imcoming_call.Enabled = false;
@@ -991,6 +993,13 @@ namespace TOSApp
                 CSystemLog_301.ExceptionHandle(v_e);
             }
         }
+
+        private void m_btn_ipphone_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+       
 
     }
 }

@@ -143,6 +143,7 @@
     <Compile Include="US_GD_DAT_HANG.cs" />
     <Compile Include="US_GD_LOG_DAT_HANG.cs" />
     <Compile Include="US_HT_BO_DICH_VU.cs" />
+    <Compile Include="US_HT_LOG_API_CALL_CENTER.cs" />
     <Compile Include="US_HT_NGUOI_SU_DUNG.cs" />
     <Compile Include="US_HT_NGUOI_SU_DUNG_NHOM_CHI_NHANH.cs" />
     <Compile Include="US_UT_SEQUENCES.cs" />

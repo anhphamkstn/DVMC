@@ -1,7 +1,9 @@
-﻿using System;
+﻿using IP.Core.IPCommon;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,14 +34,26 @@ namespace TOSApp.ChucNang
                 e.Info.DisplayText = (e.RowHandle + 1).ToString();
         }
 
-       
-
+      
         private void repositoryItemButtonEdit1_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
 
         {
-            if (m_grv_cuoc_goi.GetFocusedRowCellValue("link_ghi_am") != null)
+            DataRow row =   m_grv_cuoc_goi.GetDataRow(m_grv_cuoc_goi.FocusedRowHandle);
+            if (row["VOICE_CALL_LINK"] != null)
             {
-                System.Diagnostics.Process.Start(m_grv_cuoc_goi.GetFocusedRowCellValue("link_ghi_am").ToString());
+                Process myProcess = new Process();
+
+                try
+                {
+                    // true is the default, but it is important not to set it to false
+                    myProcess.StartInfo.UseShellExecute = true;
+                    myProcess.StartInfo.FileName = row["VOICE_CALL_LINK"].ToString();
+                    myProcess.Start();
+                }
+                catch (Exception v_e)
+                {
+                    CSystemLog_301.ExceptionHandle(v_e);
+                }
             }
         }
 

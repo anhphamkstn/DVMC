@@ -36,11 +36,11 @@ namespace TOSApp
                         break;
                 }
                 System.Windows.Forms.MessageBox.Show(v_str_message_error);
-                HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.LOI_HE_THONG, "Exception", v_str_message_error_save, "");
+                HelpUtils.ghi_log_he_thong( "Exception", v_str_message_error_save);
             }
             catch (Exception)
             {
-                HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.LOI_HE_THONG, "Exception", ip_e.Message, ip_e.StackTrace);
+                HelpUtils.ghi_log_he_thong("Exception" + ip_e.Message, ip_e.StackTrace);
                 System.Windows.Forms.MessageBox.Show("Environment- Không có file Ini");
             }
         }
@@ -65,11 +65,11 @@ namespace TOSApp
                         break;
                 }
                 System.Windows.Forms.MessageBox.Show(v_str_message_error);
-                HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.LOI_HE_THONG, "Exception", v_str_message_error_save, "");
+                HelpUtils.ghi_log_he_thong( "Exception", v_str_message_error_save);
             }
             catch (Exception)
             {
-                HelpUtils.ghi_log_he_thong(LOG_TRUY_CAP.LOI_HE_THONG, "Exception", ip_e.Message, ip_e.StackTrace);
+                HelpUtils.ghi_log_he_thong( "Exception"+ ip_e.Message, ip_e.StackTrace);
                 System.Windows.Forms.MessageBox.Show("Environment- Không có file Ini");
             }
         }
