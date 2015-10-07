@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="f0000_gd_dat_hang_gd_log_dat_hang.aspx.cs" Inherits="WEB_DVMC.Chuc_Nang.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="f0000_gd_dat_hang_gd_log_dat_hang.aspx.cs" Inherits="WEB_DVMC.Chuc_Nang.f0000_gd_dat_hang_gd_log_dat_hang" %>
 
 <%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxGridView" TagPrefix="dx" %>
 <%@ Register assembly="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dx" %>
@@ -12,11 +12,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-   <%--<link href="../Styles/m_cmd.css" rel="stylesheet" />--%>
+  
    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
     <div>
         <div id="m_div_grv_f000">
-                <dx:ASPxGridView ID="m_grv_gd_dat_hang_gd_log_dat_hang" runat="server" Width="284px">
+                <dx:ASPxGridView ID="m_grv_gd_dat_hang_gd_log_dat_hang" runat="server"  ClientIDMode="Static">
                          <Columns>                    
                              <dx:GridViewDataTextColumn FieldName="MA_DON_HANG" VisibleIndex="0" Caption="Mã đơn hàng" Width="70px"></dx:GridViewDataTextColumn>
                              <dx:GridViewDataTextColumn FieldName="HO_TEN_USER_DAT_HANG" VisibleIndex="1" Caption="Họ tên User đặt hàng" Width="70px"></dx:GridViewDataTextColumn>
@@ -36,16 +36,20 @@
                                <dx:GridViewDataTextColumn FieldName="TEN_NGUOI_NHAN_THAO_TAC" VisibleIndex="15" Caption="người nhận thao tác log" Width="70px"></dx:GridViewDataTextColumn>                 
                                <dx:GridViewDataTextColumn FieldName="GHI_CHU" VisibleIndex="16" Caption="Ghi chú" Width="70px"></dx:GridViewDataTextColumn>
                         </Columns>
+                         <Border BorderStyle="Ridge" />
                 </dx:ASPxGridView>
         </div>
        
         <div id="m_div_control_f000">
             
              <div id="BO" style="text-align:right; height: 51px" >
-                  <asp:Button  ID="m_cmd_BO_tiep_nhan" runat="server" CssClass="btn" Text="Tiếp nhận"/>
-                 <asp:Button ID="m_cmd_BO_tu_choi" runat="server" CssClass="btn" Text="Từ chối"/>
-                 <asp:Button ID="m_cmd_BO_cap_nhat_BO" runat="server" CssClass="btn" OnClick="m_cmd_BO_cap_nhat_BO_Click"  Text="Cập nhật"/>
+                  <asp:Button  ID="m_cmd_BO_tiep_nhan" runat="server" CssClass="btn-danger-outline" Text="Tiếp nhận xử lý"/>
+                 <asp:Button ID="m_cmd_BO_tu_choi" runat="server" CssClass="btn" Text="Từ chối xử lý"/>
+                 <asp:Button ID="m_cmd_cap_nhat_BO" runat="server" CssClass="btn" OnClick="m_cmd_BO_cap_nhat_BO_Click"  Text="Cập nhật đơn hàng" Width="202px"/>
                   <asp:Button ID="m_cmd_BO_hoan_thanh" runat="server" CssClass="btn" Text="Báo hoàn thành"/>
+                    <asp:Button ID="m_cmd_bo_chuyen_pm" runat="server" CssClass="btn" Text="Chuyển lên PM"/>
+                 <asp:Button ID="m_cmd_BO_cap_nhat_xu_ly" runat="server" CssClass="btn" Text="Cập nhật xử lý"/>
+                 
              </div>
 
              <div id="PM" style="text-align:right; height: 50px">
@@ -61,7 +65,11 @@
                  <asp:Button ID="m_cmd_TD_huy_don_hang" runat="server" CssClass="btn" Text="Hủy đơn hàng"/>
                  <asp:Button ID="m_cmd_TD_cap_nhan" runat="server" CssClass="btn" Text="Cập nhật"/>
                  <asp:Button ID="m_cmd_TD_hoan_thanh" runat="server" CssClass="btn" Text="Báo hoàn thành"/>
+                
              </div>
+            <div>
+
+            </div>
              
          </div>
     </div>

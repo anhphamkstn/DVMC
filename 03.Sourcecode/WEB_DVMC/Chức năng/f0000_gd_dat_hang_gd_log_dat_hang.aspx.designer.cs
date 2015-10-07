@@ -10,7 +10,7 @@
 namespace WEB_DVMC.Chuc_Nang {
     
     
-    public partial class WebForm1 {
+    public partial class f0000_gd_dat_hang_gd_log_dat_hang {
         
         /// <summary>
         /// m_grv_gd_dat_hang_gd_log_dat_hang control.
@@ -40,13 +40,13 @@ namespace WEB_DVMC.Chuc_Nang {
         protected global::System.Web.UI.WebControls.Button m_cmd_BO_tu_choi;
         
         /// <summary>
-        /// m_cmd_BO_cap_nhat_BO control.
+        /// m_cmd_cap_nhat_BO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button m_cmd_BO_cap_nhat_BO;
+        protected global::System.Web.UI.WebControls.Button m_cmd_cap_nhat_BO;
         
         /// <summary>
         /// m_cmd_BO_hoan_thanh control.
@@ -56,6 +56,24 @@ namespace WEB_DVMC.Chuc_Nang {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button m_cmd_BO_hoan_thanh;
+        
+        /// <summary>
+        /// m_cmd_bo_chuyen_pm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button m_cmd_bo_chuyen_pm;
+        
+        /// <summary>
+        /// m_cmd_BO_cap_nhat_xu_ly control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button m_cmd_BO_cap_nhat_xu_ly;
         
         /// <summary>
         /// m_cmd_PM_tiep_nhan control.

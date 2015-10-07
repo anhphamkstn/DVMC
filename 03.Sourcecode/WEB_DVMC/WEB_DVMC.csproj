@@ -140,6 +140,7 @@
     <Content Include="Chức năng\f122_tat_ca_don_hang_dang_xu_ly.aspx" />
     <Content Include="Chức năng\f123_ds_don_hang_can_xu_ly.aspx" />
     <Content Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx" />
+    <Content Include="Chức năng\form_bo.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -408,6 +409,13 @@
     <Compile Include="Chức năng\f0000_gd_dat_hang_gd_log_dat_hang.aspx.designer.cs">
       <DependentUpon>f0000_gd_dat_hang_gd_log_dat_hang.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Chức năng\form_bo.aspx.cs">
+      <DependentUpon>form_bo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chức năng\form_bo.aspx.designer.cs">
+      <DependentUpon>form_bo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -451,6 +459,7 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
