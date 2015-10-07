@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f345_danh_muc_cuoc_goi));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             this.m_grc_cuoc_goi = new DevExpress.XtraGrid.GridControl();
@@ -43,6 +44,7 @@
             this.repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_cuoc_goi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_cuoc_goi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
@@ -53,12 +55,12 @@
             // 
             this.m_grc_cuoc_goi.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_cuoc_goi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_grc_cuoc_goi.Location = new System.Drawing.Point(0, 60);
+            this.m_grc_cuoc_goi.Location = new System.Drawing.Point(0, 56);
             this.m_grc_cuoc_goi.MainView = this.m_grv_cuoc_goi;
             this.m_grc_cuoc_goi.Name = "m_grc_cuoc_goi";
             this.m_grc_cuoc_goi.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1});
-            this.m_grc_cuoc_goi.Size = new System.Drawing.Size(839, 342);
+            this.m_grc_cuoc_goi.Size = new System.Drawing.Size(839, 317);
             this.m_grc_cuoc_goi.TabIndex = 0;
             this.m_grc_cuoc_goi.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_cuoc_goi});
@@ -282,24 +284,29 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(839, 60);
+            this.panel1.Size = new System.Drawing.Size(839, 56);
             this.panel1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 21);
+            this.label1.Location = new System.Drawing.Point(25, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh mục cuộc gọi";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // f345_danh_muc_cuoc_goi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 402);
+            this.ClientSize = new System.Drawing.Size(839, 373);
             this.Controls.Add(this.m_grc_cuoc_goi);
             this.Controls.Add(this.panel1);
             this.Name = "f345_danh_muc_cuoc_goi";
@@ -328,5 +335,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraGrid.Columns.GridColumn link_ghi_am;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

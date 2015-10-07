@@ -22,6 +22,10 @@ namespace TOSApp.ChucNang
 
         private void f122_ds_don_hang_dang_xu_ly_Load(object sender, EventArgs e)
         {
+            load_data_to_grid();
+        }
+        private void load_data_to_grid()
+        {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
@@ -30,7 +34,6 @@ namespace TOSApp.ChucNang
             v_us.FillDatasetWithQuery(v_ds, v_str_query);
             m_grc_ds_don_hang_dang_xu_ly.DataSource = v_ds.Tables[0];
         }
-
         private void m_grv_ds_don_hang_dang_xu_ly_DoubleClick(object sender, EventArgs e)
         {
             GridView view = (GridView)sender;
@@ -71,6 +74,11 @@ namespace TOSApp.ChucNang
                 // Add a submenu with a single menu item.
                 e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_to_grid();
         }
     }
 }

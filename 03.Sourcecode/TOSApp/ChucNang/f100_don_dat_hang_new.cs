@@ -525,7 +525,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            v_us.FillDatasetWithQuery(v_ds, "select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where ID_DON_HANG=" + m_us.dcID + "order by THOI_GIAN_TAO");
+            v_us.FillDatasetWithQuery(v_ds, "select * from v_GD_DAT_HANG_GD_LOG_DAT_HANG where ID_DON_HANG=" + m_us.dcID.ToString() + "order by NGAY_LAP_THAO_TAC DESC");
             m_grc_lich_su_thuc_hien.DataSource = v_ds.Tables[0];
         }
 
@@ -544,7 +544,6 @@ namespace TOSApp.ChucNang
         {
             cap_nhat_lai_trang_thai_tiep_nhan();
             xac_nhan_dieu_phoi(m_lst_id_nguoi_xu_ly, m_us);
-            MessageBox.Show("FO đã điều phối");
         }
 
         private void cap_nhat_lai_trang_thai_tiep_nhan()
@@ -862,6 +861,7 @@ namespace TOSApp.ChucNang
                     us_2_form(v_us);
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
                     m_deadline_id = deadline_id;
+                    load_data_to_lich_su_thuc_hien();
                     this.ShowDialog();
                 }
                 else
@@ -869,10 +869,11 @@ namespace TOSApp.ChucNang
                     format_controlls();
                     us_2_form(v_us);
                     m_e_form_mode = DataEntryFormMode.UpdateDataState;
+                    load_data_to_lich_su_thuc_hien();
                     this.ShowDialog();
                 }
 
-                load_data_to_lich_su_thuc_hien();
+                
             }
             catch (Exception v_e)
             {
@@ -933,7 +934,7 @@ namespace TOSApp.ChucNang
                 v_f100.m_docmanager_don_hang.Visible = false;
                 m_dp_don_hang.Hide();
                 this.Hide();
-                v_f100.displayForUpdate(v_us, v_deadline);
+                v_f100.displayForUpdate(v_us,v_deadline);
                 this.Show();
             }
         }

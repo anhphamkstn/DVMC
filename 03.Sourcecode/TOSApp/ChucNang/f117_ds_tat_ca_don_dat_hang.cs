@@ -124,6 +124,15 @@ namespace TOSApp.ChucNang
             }
         }
 
+        private void m_cmd_FO_cap_nhat_xu_ly_Click(object sender, EventArgs e)
+        {
+            f101_cap_nhat_xu_don_hang v_f = new f101_cap_nhat_xu_don_hang();
+            DataRow v_dr = m_grv_ds_don_dat_hang.GetDataRow(m_grv_ds_don_dat_hang.FocusedRowHandle);
+            US_GD_DAT_HANG v_us = new US_GD_DAT_HANG(CIPConvert.ToDecimal(v_dr["ID"].ToString()));
+            v_f.Display_for_update(v_us);
+            load_data_2_grid();
+        }
+
 
     }
 }

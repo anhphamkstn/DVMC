@@ -58,7 +58,6 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.m_cmd_TM_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.m_cmd_TM_cap_nhat_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang_can_nghiem_thu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang_can_nghiem_thu)).BeginInit();
@@ -68,13 +67,13 @@
             this.panel2.SuspendLayout();
             this.m_panel_TM.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // c_nguoi_tao
             // 
@@ -463,23 +462,11 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.m_cmd_TM_cap_nhat_xu_ly);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(449, 0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(164, 39);
             this.panel7.TabIndex = 2;
-            // 
-            // m_cmd_TM_cap_nhat_xu_ly
-            // 
-            this.m_cmd_TM_cap_nhat_xu_ly.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_TM_cap_nhat_xu_ly.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_TM_cap_nhat_xu_ly.Image")));
-            this.m_cmd_TM_cap_nhat_xu_ly.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_TM_cap_nhat_xu_ly.Name = "m_cmd_TM_cap_nhat_xu_ly";
-            this.m_cmd_TM_cap_nhat_xu_ly.Size = new System.Drawing.Size(164, 39);
-            this.m_cmd_TM_cap_nhat_xu_ly.TabIndex = 2;
-            this.m_cmd_TM_cap_nhat_xu_ly.Text = "Cập nhật xử lý ";
-            this.m_cmd_TM_cap_nhat_xu_ly.Click += new System.EventHandler(this.m_cmd_TM_cap_nhat_xu_ly_Click);
             // 
             // m_cmd_TM_danh_gia
             // 
@@ -512,7 +499,6 @@
             this.panel2.ResumeLayout(false);
             this.m_panel_TM.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -546,7 +532,6 @@
         private System.Windows.Forms.Panel panel13;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TM_huy_hon_hang;
         private System.Windows.Forms.Panel panel7;
-        public DevExpress.XtraEditors.SimpleButton m_cmd_TM_cap_nhat_xu_ly;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
     }
 }

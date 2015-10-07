@@ -1026,6 +1026,19 @@ namespace TOSApp
             }
         }
 
+        private void m_cmd_TD_dm_cau_hoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (v_f100_dm_cau_hoi == null || !IsFormOpen(v_f100_dm_cau_hoi))
+            {
+                v_f100_dm_cau_hoi = new f100_dm_cau_hoi();
+                v_f100_dm_cau_hoi.MdiParent = this;
+                v_f100_dm_cau_hoi.Show();
+            }
+            else
+                v_f100_dm_cau_hoi.Focus();
+
+        }
+
        
 
     }

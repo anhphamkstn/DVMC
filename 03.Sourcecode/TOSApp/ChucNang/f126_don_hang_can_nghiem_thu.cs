@@ -24,6 +24,7 @@ namespace TOSApp.ChucNang
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
+
             string v_query = "SELECT * FROM V_GD_DAT_HANG  WHERE dbo.[f_get_trang_thai_da_xu_ly_don_hang_YN](ID) ='Y'";
             v_us.FillDatasetWithQuery(v_ds, v_query);
             m_grc_ds_don_dat_hang_can_nghiem_thu.DataSource = v_ds.Tables[0];
@@ -74,9 +75,13 @@ namespace TOSApp.ChucNang
             }
             catch (Exception v_e)
             {
-
                 CSystemLog_301.ExceptionHandle(v_e);
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_data_to_grid();
         }
     }
 }

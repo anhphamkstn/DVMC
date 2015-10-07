@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f125_ds_don_hang_can_danh_gia));
             this.m_danh_gia_cua_khach_hang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -47,6 +48,8 @@
             this.m_cmd_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_btn_remind = new DevExpress.XtraEditors.SimpleButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_dh_hoan_thanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_dh_hoan_thanh)).BeginInit();
@@ -348,11 +351,24 @@
             this.m_btn_remind.Text = "Nhắc đánh giá";
             this.m_btn_remind.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 5;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // f125_ds_don_hang_can_danh_gia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 345);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.m_pan_button);
             this.Controls.Add(this.panel1);
@@ -389,5 +405,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn c_y_kien_khac;
         private DevExpress.XtraEditors.SimpleButton m_cmd_danh_gia;
         private DevExpress.XtraEditors.SimpleButton m_btn_remind;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

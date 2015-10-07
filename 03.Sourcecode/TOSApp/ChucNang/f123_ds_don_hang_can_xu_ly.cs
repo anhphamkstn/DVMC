@@ -22,14 +22,17 @@ namespace TOSApp.ChucNang
 
         private void f123_ds_don_hang_can_xu_ly_Load(object sender, EventArgs e)
         {
+            load_to_grid();
+        }
+        private void load_to_grid()
+        {
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
-            string v_str_query = "SELECT gdh.*FROM V_GD_DAT_HANG as gdh, HT_BO_DICH_VU bdv WHERE dbo.f_get_trang_thai_cho_xu_ly_don_hang_YN(gdh.ID) = 'Y' AND gdh.ID_DV_YEU_CAU = bdv.ID_DICH_VU AND bdv.ID_NGUOI_SU_DUNG =" + us_user.dcID.ToString() + "and  bdv.CAP_SU_DUNG =" + us_user.dcIDNhom.ToString()  +"ORDER BY gdh.[THOI_GIAN_TAO] DESC";
+            string v_str_query = "SELECT gdh.*FROM V_GD_DAT_HANG as gdh, HT_BO_DICH_VU bdv WHERE dbo.f_get_trang_thai_cho_xu_ly_don_hang_YN(gdh.ID) = 'Y' AND gdh.ID_DV_YEU_CAU = bdv.ID_DICH_VU AND bdv.ID_NGUOI_SU_DUNG =" + us_user.dcID.ToString() + "and  bdv.CAP_SU_DUNG =" + us_user.dcIDNhom.ToString() + "ORDER BY gdh.[THOI_GIAN_TAO] DESC";
             v_us.FillDatasetWithQuery(v_ds, v_str_query);
             m_grc_ds_don_hang_can_xu_ly.DataSource = v_ds.Tables[0];
         }
-
         private void m_grv_ds_don_hang_can_xu_ly_DoubleClick(object sender, EventArgs e)
         {
             GridView view = (GridView)sender;
@@ -69,6 +72,11 @@ namespace TOSApp.ChucNang
                 // Add a submenu with a single menu item.
                 e.Menu.Items.Add(WinFormControls.CreateRowSubMenu(view, rowHandle));
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            load_to_grid();
         }
 
 

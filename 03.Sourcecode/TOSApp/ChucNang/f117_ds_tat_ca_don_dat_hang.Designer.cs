@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f117_ds_tat_ca_don_dat_hang));
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition1 = new DevExpress.XtraGrid.StyleFormatCondition();
-            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition2 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition3 = new DevExpress.XtraGrid.StyleFormatCondition();
+            DevExpress.XtraGrid.StyleFormatCondition styleFormatCondition4 = new DevExpress.XtraGrid.StyleFormatCondition();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.m_pan_button = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.m_cmd_FO_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.m_cmd_TM_cap_nhat_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.m_cmd_chinh_sua_don_hang = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -61,6 +63,7 @@
             this.timer1 = new System.Windows.Forms.Timer();
             this.panel1.SuspendLayout();
             this.m_pan_button.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -91,6 +94,7 @@
             // 
             // m_pan_button
             // 
+            this.m_pan_button.Controls.Add(this.panel2);
             this.m_pan_button.Controls.Add(this.panel6);
             this.m_pan_button.Controls.Add(this.panel3);
             this.m_pan_button.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -99,14 +103,14 @@
             this.m_pan_button.Size = new System.Drawing.Size(1213, 39);
             this.m_pan_button.TabIndex = 1;
             // 
-            // panel6
+            // panel2
             // 
-            this.panel6.Controls.Add(this.m_cmd_FO_huy_hon_hang);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(941, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(136, 39);
-            this.panel6.TabIndex = 1;
+            this.panel2.Controls.Add(this.m_cmd_FO_huy_hon_hang);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(808, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(133, 39);
+            this.panel2.TabIndex = 2;
             // 
             // m_cmd_FO_huy_hon_hang
             // 
@@ -116,10 +120,30 @@
             this.m_cmd_FO_huy_hon_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_FO_huy_hon_hang.Image")));
             this.m_cmd_FO_huy_hon_hang.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_FO_huy_hon_hang.Name = "m_cmd_FO_huy_hon_hang";
-            this.m_cmd_FO_huy_hon_hang.Size = new System.Drawing.Size(136, 39);
-            this.m_cmd_FO_huy_hon_hang.TabIndex = 4;
+            this.m_cmd_FO_huy_hon_hang.Size = new System.Drawing.Size(133, 39);
+            this.m_cmd_FO_huy_hon_hang.TabIndex = 5;
             this.m_cmd_FO_huy_hon_hang.Text = "Hủy đơn hàng";
             this.m_cmd_FO_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_FO_huy_hon_hang_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.m_cmd_TM_cap_nhat_xu_ly);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(941, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(136, 39);
+            this.panel6.TabIndex = 1;
+            // 
+            // m_cmd_TM_cap_nhat_xu_ly
+            // 
+            this.m_cmd_TM_cap_nhat_xu_ly.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_cmd_TM_cap_nhat_xu_ly.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_TM_cap_nhat_xu_ly.Image")));
+            this.m_cmd_TM_cap_nhat_xu_ly.Location = new System.Drawing.Point(0, 0);
+            this.m_cmd_TM_cap_nhat_xu_ly.Name = "m_cmd_TM_cap_nhat_xu_ly";
+            this.m_cmd_TM_cap_nhat_xu_ly.Size = new System.Drawing.Size(136, 39);
+            this.m_cmd_TM_cap_nhat_xu_ly.TabIndex = 4;
+            this.m_cmd_TM_cap_nhat_xu_ly.Text = "Cập nhật xử lý ";
+            this.m_cmd_TM_cap_nhat_xu_ly.Click += new System.EventHandler(this.m_cmd_FO_cap_nhat_xu_ly_Click);
             // 
             // panel3
             // 
@@ -169,9 +193,9 @@
             // 
             this.m_grc_ds_don_dat_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.m_grc_ds_don_dat_hang.Dock = System.Windows.Forms.DockStyle.Fill;
-            gridLevelNode1.RelationName = "Level1";
+            gridLevelNode2.RelationName = "Level1";
             this.m_grc_ds_don_dat_hang.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode1});
+            gridLevelNode2});
             this.m_grc_ds_don_dat_hang.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_don_dat_hang.MainView = this.m_grv_ds_don_dat_hang;
             this.m_grc_ds_don_dat_hang.Name = "m_grc_ds_don_dat_hang";
@@ -313,27 +337,27 @@
             this.gridColumn1,
             this.c_nguoi_tao,
             this.gridColumn11});
-            styleFormatCondition1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
-            styleFormatCondition1.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
-            styleFormatCondition1.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition1.Appearance.ForeColor = System.Drawing.Color.Black;
-            styleFormatCondition1.Appearance.Options.UseBackColor = true;
-            styleFormatCondition1.Appearance.Options.UseBorderColor = true;
-            styleFormatCondition1.Appearance.Options.UseForeColor = true;
-            styleFormatCondition1.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition1.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= now()";
-            styleFormatCondition2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
-            styleFormatCondition2.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
-            styleFormatCondition2.Appearance.BorderColor = System.Drawing.Color.Gray;
-            styleFormatCondition2.Appearance.ForeColor = System.Drawing.Color.Black;
-            styleFormatCondition2.Appearance.Options.UseBackColor = true;
-            styleFormatCondition2.Appearance.Options.UseBorderColor = true;
-            styleFormatCondition2.Appearance.Options.UseForeColor = true;
-            styleFormatCondition2.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
-            styleFormatCondition2.Expression = "[THOI_DIEM_CAN_HOAN_THANH] >=GetDate(AddDays(Today(),-1 ))";
+            styleFormatCondition3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition3.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition3.Appearance.BorderColor = System.Drawing.Color.Gray;
+            styleFormatCondition3.Appearance.ForeColor = System.Drawing.Color.Black;
+            styleFormatCondition3.Appearance.Options.UseBackColor = true;
+            styleFormatCondition3.Appearance.Options.UseBorderColor = true;
+            styleFormatCondition3.Appearance.Options.UseForeColor = true;
+            styleFormatCondition3.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition3.Expression = "[THOI_DIEM_CAN_HOAN_THANH] <= now()";
+            styleFormatCondition4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition4.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(173)))), ((int)(((byte)(78)))));
+            styleFormatCondition4.Appearance.BorderColor = System.Drawing.Color.Gray;
+            styleFormatCondition4.Appearance.ForeColor = System.Drawing.Color.Black;
+            styleFormatCondition4.Appearance.Options.UseBackColor = true;
+            styleFormatCondition4.Appearance.Options.UseBorderColor = true;
+            styleFormatCondition4.Appearance.Options.UseForeColor = true;
+            styleFormatCondition4.Condition = DevExpress.XtraGrid.FormatConditionEnum.Expression;
+            styleFormatCondition4.Expression = "[THOI_DIEM_CAN_HOAN_THANH] >=GetDate(AddDays(Today(),-1 ))";
             this.m_grv_ds_don_dat_hang.FormatConditions.AddRange(new DevExpress.XtraGrid.StyleFormatCondition[] {
-            styleFormatCondition1,
-            styleFormatCondition2});
+            styleFormatCondition3,
+            styleFormatCondition4});
             this.m_grv_ds_don_dat_hang.GridControl = this.m_grc_ds_don_dat_hang;
             this.m_grv_ds_don_dat_hang.IndicatorWidth = 50;
             this.m_grv_ds_don_dat_hang.Name = "m_grv_ds_don_dat_hang";
@@ -495,6 +519,7 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // f117_ds_tat_ca_don_dat_hang
             // 
@@ -507,6 +532,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.m_pan_button.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -540,11 +566,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn c_nguoi_tao;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private System.Windows.Forms.Panel panel6;
-        public DevExpress.XtraEditors.SimpleButton m_cmd_FO_huy_hon_hang;
         private DevExpress.XtraGrid.Columns.GridColumn c_nguoi_xu_ly;
         private DevExpress.XtraGrid.Columns.GridColumn m_trang_thai;
         private DevExpress.XtraGrid.Columns.GridColumn m_cap_nhat_lan_cuoi;
         private DevExpress.XtraGrid.Columns.GridColumn m_thoi_gian_can_hoan_thanh;
         public System.Windows.Forms.Panel m_pan_button;
+        private System.Windows.Forms.Panel panel2;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_FO_huy_hon_hang;
+        public DevExpress.XtraEditors.SimpleButton m_cmd_TM_cap_nhat_xu_ly;
     }
 }

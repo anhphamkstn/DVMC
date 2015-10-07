@@ -100,8 +100,6 @@
             this.m_panel_FO = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.m_cmd_FO_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.m_cmd_FO_cap_nhat_xu_ly = new DevExpress.XtraEditors.SimpleButton();
             this.panel6 = new System.Windows.Forms.Panel();
             this.m_cmd_dieu_phoi_cho_PM = new DevExpress.XtraEditors.SimpleButton();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -141,7 +139,6 @@
             this.m_panel_BO_tiep_nhan.SuspendLayout();
             this.m_panel_FO.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -1031,7 +1028,6 @@
             // m_panel_FO
             // 
             this.m_panel_FO.Controls.Add(this.panel14);
-            this.m_panel_FO.Controls.Add(this.panel4);
             this.m_panel_FO.Controls.Add(this.panel6);
             this.m_panel_FO.Controls.Add(this.panel5);
             this.m_panel_FO.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -1045,9 +1041,9 @@
             // 
             this.panel14.Controls.Add(this.m_cmd_FO_huy_hon_hang);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(569, 0);
+            this.panel14.Location = new System.Drawing.Point(741, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(172, 39);
+            this.panel14.Size = new System.Drawing.Size(164, 39);
             this.panel14.TabIndex = 3;
             // 
             // m_cmd_FO_huy_hon_hang
@@ -1058,30 +1054,10 @@
             this.m_cmd_FO_huy_hon_hang.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_FO_huy_hon_hang.Image")));
             this.m_cmd_FO_huy_hon_hang.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_FO_huy_hon_hang.Name = "m_cmd_FO_huy_hon_hang";
-            this.m_cmd_FO_huy_hon_hang.Size = new System.Drawing.Size(172, 39);
+            this.m_cmd_FO_huy_hon_hang.Size = new System.Drawing.Size(164, 39);
             this.m_cmd_FO_huy_hon_hang.TabIndex = 4;
             this.m_cmd_FO_huy_hon_hang.Text = "Hủy đơn hàng";
             this.m_cmd_FO_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_FO_huy_hon_hang_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.m_cmd_FO_cap_nhat_xu_ly);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(741, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(164, 39);
-            this.panel4.TabIndex = 2;
-            // 
-            // m_cmd_FO_cap_nhat_xu_ly
-            // 
-            this.m_cmd_FO_cap_nhat_xu_ly.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_cmd_FO_cap_nhat_xu_ly.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_FO_cap_nhat_xu_ly.Image")));
-            this.m_cmd_FO_cap_nhat_xu_ly.Location = new System.Drawing.Point(0, 0);
-            this.m_cmd_FO_cap_nhat_xu_ly.Name = "m_cmd_FO_cap_nhat_xu_ly";
-            this.m_cmd_FO_cap_nhat_xu_ly.Size = new System.Drawing.Size(164, 39);
-            this.m_cmd_FO_cap_nhat_xu_ly.TabIndex = 2;
-            this.m_cmd_FO_cap_nhat_xu_ly.Text = "Cập nhật xử lý ";
-            this.m_cmd_FO_cap_nhat_xu_ly.Click += new System.EventHandler(this.m_cmd_FO_cap_nhat_xu_ly_Click);
             // 
             // panel6
             // 
@@ -1189,7 +1165,6 @@
             this.m_panel_BO_tiep_nhan.ResumeLayout(false);
             this.m_panel_FO.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1272,8 +1247,6 @@
         private System.Windows.Forms.Panel panel13;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TM_huy_hon_hang;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TM_cap_nhat_xu_ly;
-        private System.Windows.Forms.Panel panel4;
-        public DevExpress.XtraEditors.SimpleButton m_cmd_FO_cap_nhat_xu_ly;
         private System.Windows.Forms.Panel panel14;
         public DevExpress.XtraEditors.SimpleButton m_cmd_FO_huy_hon_hang;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
