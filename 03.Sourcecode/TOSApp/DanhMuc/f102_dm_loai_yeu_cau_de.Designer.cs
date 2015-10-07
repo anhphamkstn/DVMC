@@ -41,9 +41,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbo_loai_dich_vu = new System.Windows.Forms.ComboBox();
+            this.txt_dich_vu = new DevExpress.XtraEditors.MemoEdit();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txt_diem_khoi_luong = new System.Windows.Forms.TextBox();
@@ -52,11 +52,11 @@
             this.cbo_nhom_dich_vu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbo_loai_dich_vu = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.m_cbox_thoi_gian_xu_ly = new System.Windows.Forms.CheckBox();
             this.cbo_thoi_gian_xu_ly = new System.Windows.Forms.ComboBox();
-            this.txt_dich_vu = new DevExpress.XtraEditors.MemoEdit();
             this.m_pan_button.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -68,12 +68,12 @@
             this.panel3.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // m_pan_button
@@ -221,15 +221,15 @@
             this.panel10.Size = new System.Drawing.Size(298, 32);
             this.panel10.TabIndex = 3;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Loại dịch vụ :";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Dịch vụ :";
             // 
             // panel1
             // 
@@ -240,16 +240,15 @@
             this.panel1.Size = new System.Drawing.Size(298, 99);
             this.panel1.TabIndex = 2;
             // 
-            // cbo_loai_dich_vu
+            // txt_dich_vu
             // 
-            this.cbo_loai_dich_vu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbo_loai_dich_vu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbo_loai_dich_vu.FormattingEnabled = true;
-            this.cbo_loai_dich_vu.Location = new System.Drawing.Point(3, 66);
-            this.cbo_loai_dich_vu.Name = "cbo_loai_dich_vu";
-            this.cbo_loai_dich_vu.Size = new System.Drawing.Size(215, 28);
-            this.cbo_loai_dich_vu.TabIndex = 1;
-            this.cbo_loai_dich_vu.SelectedIndexChanged += new System.EventHandler(this.cbo_loai_dich_vu_SelectedIndexChanged);
+            this.txt_dich_vu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_dich_vu.Location = new System.Drawing.Point(0, 0);
+            this.txt_dich_vu.Name = "txt_dich_vu";
+            this.txt_dich_vu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dich_vu.Properties.Appearance.Options.UseFont = true;
+            this.txt_dich_vu.Size = new System.Drawing.Size(298, 99);
+            this.txt_dich_vu.TabIndex = 1;
             // 
             // tableLayoutPanel3
             // 
@@ -339,15 +338,26 @@
             this.panel5.Size = new System.Drawing.Size(221, 131);
             this.panel5.TabIndex = 3;
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Dịch vụ :";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Loại dịch vụ :";
+            // 
+            // cbo_loai_dich_vu
+            // 
+            this.cbo_loai_dich_vu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbo_loai_dich_vu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbo_loai_dich_vu.FormattingEnabled = true;
+            this.cbo_loai_dich_vu.Location = new System.Drawing.Point(3, 66);
+            this.cbo_loai_dich_vu.Name = "cbo_loai_dich_vu";
+            this.cbo_loai_dich_vu.Size = new System.Drawing.Size(215, 28);
+            this.cbo_loai_dich_vu.TabIndex = 1;
+            this.cbo_loai_dich_vu.SelectedIndexChanged += new System.EventHandler(this.cbo_loai_dich_vu_SelectedIndexChanged);
             // 
             // panel7
             // 
@@ -381,16 +391,6 @@
             this.cbo_thoi_gian_xu_ly.Size = new System.Drawing.Size(217, 28);
             this.cbo_thoi_gian_xu_ly.TabIndex = 4;
             // 
-            // txt_dich_vu
-            // 
-            this.txt_dich_vu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_dich_vu.Location = new System.Drawing.Point(0, 0);
-            this.txt_dich_vu.Name = "txt_dich_vu";
-            this.txt_dich_vu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dich_vu.Properties.Appearance.Options.UseFont = true;
-            this.txt_dich_vu.Size = new System.Drawing.Size(298, 99);
-            this.txt_dich_vu.TabIndex = 1;
-            // 
             // f102_dm_loai_yeu_cau_de
             // 
             this.AcceptButton = this.m_cmd_luu;
@@ -415,6 +415,7 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -424,7 +425,6 @@
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_dich_vu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

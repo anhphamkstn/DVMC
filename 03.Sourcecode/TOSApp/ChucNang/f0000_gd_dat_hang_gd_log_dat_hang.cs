@@ -88,12 +88,10 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            NGUOI_TAO_DON_HANG.Visible = true;
+          
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-            ID_LOG_DAT_HANG.Visible = false;
-            LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = true;
+           
             GHI_CHU.Visible = false;
   
         }
@@ -599,14 +597,10 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            NGUOI_TAO_DON_HANG.Visible = true;
+         //   NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-            ID_LOG_DAT_HANG.Visible = false;
-            LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = false;
-            NGUOI_TAO_THAO_TAC_LOG.Visible = false;
-            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+          
             GHI_CHU.Visible = false;
 
         }
@@ -625,14 +619,12 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            NGUOI_TAO_DON_HANG.Visible = true;
+            //NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-            ID_LOG_DAT_HANG.Visible = false;
-            LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+           
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
-            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+           
             GHI_CHU.Visible = false;
 
 
@@ -652,14 +644,12 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            NGUOI_TAO_DON_HANG.Visible = true;
+            //NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-            ID_LOG_DAT_HANG.Visible = false;
-            LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+          
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
-            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+          
             GHI_CHU.Visible = false;
 
         }
@@ -678,14 +668,12 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            NGUOI_TAO_DON_HANG.Visible = true;
+            //NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-            ID_LOG_DAT_HANG.Visible = false;
-            LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+          
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
-            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+          
             GHI_CHU.Visible = false;
         }
 
@@ -704,14 +692,12 @@ namespace TOSApp.ChucNang
             TEN_NHOM_DICH_VU.Visible = true;
             NOI_DUNG_DAT_HANG.Visible = true;
             THOI_GIAN_CAN_HOAN_THANH.Visible = true;
-            NGUOI_TAO_DON_HANG.Visible = true;
+            //NGUOI_TAO_DON_HANG.Visible = true;
             CHI_NHANH.Visible = true;
             PHUONG_THUC_DAT_HANG.Visible = true;
-            ID_LOG_DAT_HANG.Visible = false;
-            LOAI_THAO_TAC_LOG.Visible = false;
-            NGAY_LAP_THAO_TAC_LOG.Visible = false;
+           
             NGUOI_TAO_THAO_TAC_LOG.Visible = false;
-            NGUOI_NHAN_THAO_TAC_LOG.Visible = true;
+           
             GHI_CHU.Visible = false;
 
         }

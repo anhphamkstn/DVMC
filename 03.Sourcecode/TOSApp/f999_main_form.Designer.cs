@@ -1033,6 +1033,10 @@
             // 
             // m_rib_quan_ly
             // 
+            //this.m_rib_dm_dich_vu.ItemLinks.Add(this.m_cmd_dm_dich_vu);
+            //this.m_rib_dm_dich_vu.ItemLinks.Add(this.m_btn_cuoc_goi);
+            //this.m_rib_dm_dich_vu.Name = "m_rib_dm_dich_vu";
+            //this.m_rib_dm_dich_vu.Text = "Show";
             this.m_rib_quan_ly.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.m_rib_ds_don_hang_dang_can_xu_ly,
             this.m_rib_bo_pm_td_dich_vu});

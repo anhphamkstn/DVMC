@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f114_ds_BO));
-            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_OK = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_Cancel = new DevExpress.XtraEditors.SimpleButton();
@@ -39,20 +38,20 @@
             this.m_txt_ma_don_hang = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.m_sch = new DevExpress.XtraScheduler.SchedulerControl();
+            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage();
             this.m_grc_ds_BO = new DevExpress.XtraGrid.GridControl();
             this.m_grv_ds_BO = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.TEN_BO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.m_sch = new DevExpress.XtraScheduler.SchedulerControl();
-            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m_sch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_BO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_BO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_sch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,9 +59,9 @@
             this.panel1.Controls.Add(this.m_cmd_OK);
             this.panel1.Controls.Add(this.m_cmd_Cancel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 425);
+            this.panel1.Location = new System.Drawing.Point(0, 394);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(764, 33);
+            this.panel1.Size = new System.Drawing.Size(764, 31);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_OK
@@ -71,7 +70,7 @@
             this.m_cmd_OK.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_OK.Image")));
             this.m_cmd_OK.Location = new System.Drawing.Point(614, 0);
             this.m_cmd_OK.Name = "m_cmd_OK";
-            this.m_cmd_OK.Size = new System.Drawing.Size(75, 33);
+            this.m_cmd_OK.Size = new System.Drawing.Size(75, 31);
             this.m_cmd_OK.TabIndex = 0;
             this.m_cmd_OK.Text = "OK";
             this.m_cmd_OK.Click += new System.EventHandler(this.m_cmd_OK_Click);
@@ -82,7 +81,7 @@
             this.m_cmd_Cancel.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_Cancel.Image")));
             this.m_cmd_Cancel.Location = new System.Drawing.Point(689, 0);
             this.m_cmd_Cancel.Name = "m_cmd_Cancel";
-            this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 33);
+            this.m_cmd_Cancel.Size = new System.Drawing.Size(75, 31);
             this.m_cmd_Cancel.TabIndex = 0;
             this.m_cmd_Cancel.Text = "Cancel";
             this.m_cmd_Cancel.Click += new System.EventHandler(this.m_cmd_Cancel_Click);
@@ -94,24 +93,24 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(764, 38);
+            this.panel3.Size = new System.Drawing.Size(764, 35);
             this.panel3.TabIndex = 0;
             // 
             // m_txt_ma_don_hang
             // 
             this.m_txt_ma_don_hang.AutoSize = true;
-            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(258, 9);
+            this.m_txt_ma_don_hang.Location = new System.Drawing.Point(258, 8);
             this.m_txt_ma_don_hang.Name = "m_txt_ma_don_hang";
-            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 14);
+            this.m_txt_ma_don_hang.Size = new System.Drawing.Size(70, 13);
             this.m_txt_ma_don_hang.TabIndex = 0;
             this.m_txt_ma_don_hang.Text = "mã đơn hàng";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 9);
+            this.label1.Location = new System.Drawing.Point(43, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 14);
+            this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã đơn hàng";
             // 
@@ -120,10 +119,26 @@
             this.panel2.Controls.Add(this.m_sch);
             this.panel2.Controls.Add(this.m_grc_ds_BO);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 38);
+            this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(764, 387);
+            this.panel2.Size = new System.Drawing.Size(764, 359);
             this.panel2.TabIndex = 1;
+            // 
+            // m_sch
+            // 
+            this.m_sch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.m_sch.Location = new System.Drawing.Point(196, 0);
+            this.m_sch.Name = "m_sch";
+            this.m_sch.Size = new System.Drawing.Size(568, 359);
+            this.m_sch.Start = new System.DateTime(2015, 9, 10, 0, 0, 0, 0);
+            this.m_sch.Storage = this.schedulerStorage1;
+            this.m_sch.TabIndex = 1;
+            this.m_sch.Text = "schedulerControl1";
+            timeRuler1.AlwaysShowTimeDesignator = true;
+            timeRuler1.TimeZone.Id = "SE Asia Standard Time";
+            timeRuler1.UseClientTimeZone = false;
+            this.m_sch.Views.DayView.TimeRulers.Add(timeRuler1);
+            this.m_sch.Views.WorkWeekView.TimeRulers.Add(timeRuler2);
             // 
             // m_grc_ds_BO
             // 
@@ -134,7 +149,7 @@
             this.m_grc_ds_BO.Name = "m_grc_ds_BO";
             this.m_grc_ds_BO.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox1});
-            this.m_grc_ds_BO.Size = new System.Drawing.Size(196, 387);
+            this.m_grc_ds_BO.Size = new System.Drawing.Size(196, 359);
             this.m_grc_ds_BO.TabIndex = 0;
             this.m_grc_ds_BO.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_BO});
@@ -283,27 +298,11 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
-            // m_sch
-            // 
-            this.m_sch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_sch.Location = new System.Drawing.Point(196, 0);
-            this.m_sch.Name = "m_sch";
-            this.m_sch.Size = new System.Drawing.Size(568, 387);
-            this.m_sch.Start = new System.DateTime(2015, 9, 10, 0, 0, 0, 0);
-            this.m_sch.Storage = this.schedulerStorage1;
-            this.m_sch.TabIndex = 1;
-            this.m_sch.Text = "schedulerControl1";
-            timeRuler3.AlwaysShowTimeDesignator = true;
-            timeRuler3.TimeZone.Id = "SE Asia Standard Time";
-            timeRuler3.UseClientTimeZone = false;
-            this.m_sch.Views.DayView.TimeRulers.Add(timeRuler3);
-            this.m_sch.Views.WorkWeekView.TimeRulers.Add(timeRuler4);
-            // 
             // f114_ds_BO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(764, 458);
+            this.ClientSize = new System.Drawing.Size(764, 425);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -313,11 +312,11 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.m_sch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_BO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_BO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.m_sch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
             this.ResumeLayout(false);
 
         }

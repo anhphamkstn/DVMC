@@ -54,9 +54,9 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 378);
+            this.panel1.Location = new System.Drawing.Point(0, 351);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(946, 43);
+            this.panel1.Size = new System.Drawing.Size(946, 40);
             this.panel1.TabIndex = 0;
             // 
             // panel4
@@ -65,7 +65,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(655, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(155, 43);
+            this.panel4.Size = new System.Drawing.Size(155, 40);
             this.panel4.TabIndex = 1;
             // 
             // m_cmd_them
@@ -74,7 +74,7 @@
             this.m_cmd_them.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_them.Image")));
             this.m_cmd_them.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_them.Name = "m_cmd_them";
-            this.m_cmd_them.Size = new System.Drawing.Size(155, 43);
+            this.m_cmd_them.Size = new System.Drawing.Size(155, 40);
             this.m_cmd_them.TabIndex = 0;
             this.m_cmd_them.Text = "Thêm";
             this.m_cmd_them.Click += new System.EventHandler(this.m_cmd_them_Click);
@@ -85,7 +85,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(810, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(136, 43);
+            this.panel3.Size = new System.Drawing.Size(136, 40);
             this.panel3.TabIndex = 1;
             // 
             // m_cmd_xoa
@@ -94,7 +94,7 @@
             this.m_cmd_xoa.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_xoa.Image")));
             this.m_cmd_xoa.Location = new System.Drawing.Point(0, 0);
             this.m_cmd_xoa.Name = "m_cmd_xoa";
-            this.m_cmd_xoa.Size = new System.Drawing.Size(136, 43);
+            this.m_cmd_xoa.Size = new System.Drawing.Size(136, 40);
             this.m_cmd_xoa.TabIndex = 0;
             this.m_cmd_xoa.Text = "Xóa";
             this.m_cmd_xoa.Click += new System.EventHandler(this.m_cmd_xoa_Click);
@@ -105,7 +105,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(946, 378);
+            this.panel2.Size = new System.Drawing.Size(946, 351);
             this.panel2.TabIndex = 0;
             // 
             // m_grc_ds_backlist
@@ -115,7 +115,7 @@
             this.m_grc_ds_backlist.Location = new System.Drawing.Point(0, 0);
             this.m_grc_ds_backlist.MainView = this.m_grv_ds_blacklist;
             this.m_grc_ds_backlist.Name = "m_grc_ds_backlist";
-            this.m_grc_ds_backlist.Size = new System.Drawing.Size(946, 378);
+            this.m_grc_ds_backlist.Size = new System.Drawing.Size(946, 351);
             this.m_grc_ds_backlist.TabIndex = 0;
             this.m_grc_ds_backlist.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_ds_blacklist});
@@ -283,9 +283,9 @@
             // 
             // f122_blacklist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 421);
+            this.ClientSize = new System.Drawing.Size(946, 391);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f122_blacklist";

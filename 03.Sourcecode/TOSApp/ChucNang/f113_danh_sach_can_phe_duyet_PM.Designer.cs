@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f113_danh_sach_can_phe_duyet_PM));
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_cmd_duyet = new DevExpress.XtraEditors.SimpleButton();
@@ -42,7 +41,7 @@
             this.TEN_YEU_CAU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.BO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TRANG_THAI = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_danh_sach_can_phe_duyet_PM)).BeginInit();
@@ -54,9 +53,9 @@
             this.panel1.Controls.Add(this.m_cmd_duyet);
             this.panel1.Controls.Add(this.m_cmd_khong_duyet);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 407);
+            this.panel1.Location = new System.Drawing.Point(0, 378);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(750, 38);
+            this.panel1.Size = new System.Drawing.Size(750, 35);
             this.panel1.TabIndex = 0;
             // 
             // m_cmd_duyet
@@ -65,7 +64,7 @@
             this.m_cmd_duyet.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_duyet.Image")));
             this.m_cmd_duyet.Location = new System.Drawing.Point(513, 0);
             this.m_cmd_duyet.Name = "m_cmd_duyet";
-            this.m_cmd_duyet.Size = new System.Drawing.Size(103, 38);
+            this.m_cmd_duyet.Size = new System.Drawing.Size(103, 35);
             this.m_cmd_duyet.TabIndex = 0;
             this.m_cmd_duyet.Text = "Duyệt";
             this.m_cmd_duyet.Click += new System.EventHandler(this.m_cmd_duyet_Click);
@@ -76,7 +75,7 @@
             this.m_cmd_khong_duyet.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_khong_duyet.Image")));
             this.m_cmd_khong_duyet.Location = new System.Drawing.Point(616, 0);
             this.m_cmd_khong_duyet.Name = "m_cmd_khong_duyet";
-            this.m_cmd_khong_duyet.Size = new System.Drawing.Size(134, 38);
+            this.m_cmd_khong_duyet.Size = new System.Drawing.Size(134, 35);
             this.m_cmd_khong_duyet.TabIndex = 0;
             this.m_cmd_khong_duyet.Text = "Không phê duyệt";
             // 
@@ -86,7 +85,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(750, 407);
+            this.panel2.Size = new System.Drawing.Size(750, 378);
             this.panel2.TabIndex = 1;
             // 
             // m_grc_danh_sach_can_phe_duyet_PM
@@ -96,7 +95,7 @@
             this.m_grc_danh_sach_can_phe_duyet_PM.Location = new System.Drawing.Point(0, 0);
             this.m_grc_danh_sach_can_phe_duyet_PM.MainView = this.m_grv_danh_sach_can_phe_duyet_PM;
             this.m_grc_danh_sach_can_phe_duyet_PM.Name = "m_grc_danh_sach_can_phe_duyet_PM";
-            this.m_grc_danh_sach_can_phe_duyet_PM.Size = new System.Drawing.Size(750, 407);
+            this.m_grc_danh_sach_can_phe_duyet_PM.Size = new System.Drawing.Size(750, 378);
             this.m_grc_danh_sach_can_phe_duyet_PM.TabIndex = 0;
             this.m_grc_danh_sach_can_phe_duyet_PM.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.m_grv_danh_sach_can_phe_duyet_PM});
@@ -289,9 +288,9 @@
             // 
             // f113_danh_sach_can_phe_duyet_PM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 445);
+            this.ClientSize = new System.Drawing.Size(750, 413);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "f113_danh_sach_can_phe_duyet_PM";
