@@ -271,6 +271,17 @@
     <Content Include="Images\user_chat_01.png" />
     <Content Include="Images\user_customer.png" />
     <Content Include="Images\Xong_viec.JPG" />
+    <Content Include="img\1.gif" />
+    <Content Include="img\Cg43IrsPc7P.png" />
+    <Content Include="img\dark-nature-colorful-beach-sunsets-wallpaper.jpg" />
+    <Content Include="img\fb-loading.GIF" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\samples\landscape.jpg" />
+    <Content Include="img\samples\portrait.jpg" />
+    <Content Include="img\screenshots\material01.png" />
+    <Content Include="img\screenshots\material02.png" />
+    <Content Include="img\screenshots\material03.png" />
+    <Content Include="img\users\avatar-001.jpg" />
     <Content Include="packages.config" />
     <Content Include="Home2.master" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -278,6 +289,33 @@
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\js\base.js" />
+    <Content Include="Scripts\js\base.min.js" />
+    <Content Include="Scripts\js\html5shiv.js" />
+    <Content Include="Scripts\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Scripts\js\jquery.js" />
+    <Content Include="Scripts\js\main.js" />
+    <Content Include="Scripts\js\masonry.pkgd.min.js" />
+    <Content Include="Scripts\js\project.js" />
+    <Content Include="Scripts\js\project.min.js" />
+    <Content Include="Scripts\js\respond.js" />
+    <Content Include="Scripts\js\src\btn.js" />
+    <Content Include="Scripts\js\src\content.js" />
+    <Content Include="Scripts\js\src\datepicker.js" />
+    <Content Include="Scripts\js\src\dropdown.js" />
+    <Content Include="Scripts\js\src\esc.js" />
+    <Content Include="Scripts\js\src\footer.js" />
+    <Content Include="Scripts\js\src\form-adv.js" />
+    <Content Include="Scripts\js\src\get-target.js" />
+    <Content Include="Scripts\js\src\header.js" />
+    <Content Include="Scripts\js\src\menu.js" />
+    <Content Include="Scripts\js\src\modal.js" />
+    <Content Include="Scripts\js\src\sortable.js" />
+    <Content Include="Scripts\js\src\tab.js" />
+    <Content Include="Scripts\js\src\tile.js" />
+    <Content Include="Scripts\js\src\toast.js" />
+    <Content Include="Scripts\js\src\winresize.js" />
+    <Content Include="Scripts\js\src\_.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
@@ -300,7 +338,17 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Styles\base.min.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\css\base.css" />
+    <Content Include="Styles\css\base.min.css" />
+    <Content Include="Styles\css\custom.css" />
+    <Content Include="Styles\css\fbicons.png" />
+    <Content Include="Styles\css\fbicons2.png" />
+    <Content Include="Styles\css\fonts\fontawesome-webfont.svg" />
+    <Content Include="Styles\css\fonts\MaterialDesignIcon.svg" />
+    <Content Include="Styles\css\project.css" />
+    <Content Include="Styles\css\project.min.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -310,6 +358,14 @@
   <ItemGroup>
     <None Include="Scripts\_references.js" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="Styles\css\fonts\fontawesome-webfont.eot" />
+    <Content Include="Styles\css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Styles\css\fonts\fontawesome-webfont.woff" />
+    <Content Include="Styles\css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Styles\css\fonts\FontAwesome.otf" />
+    <Content Include="Styles\css\fonts\MaterialDesignIcon.eot" />
+    <Content Include="Styles\css\fonts\MaterialDesignIcon.ttf" />
+    <Content Include="Styles\css\fonts\MaterialDesignIcon.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
