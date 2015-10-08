@@ -33,8 +33,9 @@ namespace TOSApp.ChucNang
 
         private void m_btn_remind_Click(object sender, EventArgs e)
         {
-            string user_email = "dvmc2@topica.edu.vn";
-            string password = "topica1234";
+            string user_email = "vanndkstnk57@gmail.com";
+            string password = "van20121138";
+
             US_DUNG_CHUNG v_us = new US_DUNG_CHUNG();
             DataSet v_ds = new DataSet();
             v_ds.Tables.Add(new DataTable());
@@ -68,6 +69,7 @@ namespace TOSApp.ChucNang
             v_us_1.FillDatasetWithQuery(v_ds_1, "select * from dm_khach_hang where id=" + m_us.dcID_USER_NV_DAT_HANG);
             string to_cc = "";
             to_cc = v_ds_1.Tables[0].Rows[0]["EMAIL"].ToString();
+          //  to_cc = "tuandm.kstnttk57@gmail.com";
             try
             {
                 Mail.sendEmail(user_email, password, to_cc, TIEU_DE, NOI_DUNG);
