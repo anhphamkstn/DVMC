@@ -199,6 +199,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="ht\f000_login.aspx" />
     <Content Include="ht\f100_nghiepvu_bo.aspx" />
+    <Content Include="ht\F120_don_hang_de.aspx" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\background.png" />
     <Content Include="Images\BGButton.jpg" />
@@ -515,6 +516,14 @@
     <Compile Include="ht\f100_nghiepvu_bo.aspx.designer.cs">
       <DependentUpon>f100_nghiepvu_bo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ht\F120_don_hang_de.aspx.cs">
+      <DependentUpon>F120_don_hang_de.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ht\F120_don_hang_de.aspx.designer.cs">
+      <DependentUpon>F120_don_hang_de.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ht\username.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
