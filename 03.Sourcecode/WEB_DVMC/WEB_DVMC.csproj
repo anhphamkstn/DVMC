@@ -347,6 +347,12 @@
     <Content Include="Styles\css\fbicons2.png" />
     <Content Include="Styles\css\fonts\fontawesome-webfont.svg" />
     <Content Include="Styles\css\fonts\MaterialDesignIcon.svg" />
+    <Content Include="Styles\css\images\bg\amber.jpg" />
+    <Content Include="Styles\css\images\bg\brand.jpg" />
+    <Content Include="Styles\css\images\bg\green.jpg" />
+    <Content Include="Styles\css\images\bg\purple.jpg" />
+    <Content Include="Styles\css\images\bg\red.jpg" />
+    <Content Include="Styles\css\images\bg\teal.jpg" />
     <Content Include="Styles\css\project.css" />
     <Content Include="Styles\css\project.min.css" />
     <Content Include="ViewSwitcher.ascx" />
@@ -366,6 +372,12 @@
     <Content Include="Styles\css\fonts\MaterialDesignIcon.eot" />
     <Content Include="Styles\css\fonts\MaterialDesignIcon.ttf" />
     <Content Include="Styles\css\fonts\MaterialDesignIcon.woff" />
+    <Content Include="Styles\css\fonts\codepoints" />
+    <Content Include="Styles\css\fonts\MaterialIcons-Regular.eot" />
+    <Content Include="Styles\css\fonts\MaterialIcons-Regular.ttf" />
+    <Content Include="Styles\css\fonts\MaterialIcons-Regular.woff" />
+    <Content Include="Styles\css\fonts\MaterialIcons-Regular.woff2" />
+    <Content Include="Styles\css\fonts\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
