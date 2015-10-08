@@ -338,7 +338,6 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Styles\base.min.css" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\css\base.css" />
     <Content Include="Styles\css\base.min.css" />
@@ -491,6 +490,7 @@
     </Compile>
     <Compile Include="ht\f000_login.aspx.cs">
       <DependentUpon>f000_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ht\f000_login.aspx.designer.cs">
       <DependentUpon>f000_login.aspx</DependentUpon>

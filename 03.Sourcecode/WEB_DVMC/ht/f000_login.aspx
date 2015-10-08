@@ -6,8 +6,7 @@
 </title>
 
 	<!-- css -->
-    <link href="../css/base.min.css" rel="stylesheet" />
-
+    <link href="../Styles/css/base.min.css" rel="stylesheet" />
 	<!-- favicon -->
 	<!-- ... -->
 
@@ -42,7 +41,7 @@
 									<div class="card-inner">
 										<p class="text-center">
 											<span class="avatar avatar-inline avatar-lg">
-												<img src="../img/users/avatar-001.jpg" />
+                                                <img src="../img/users/avatar-001.jpg" />
 											</span>
 										</p>
 										<form class="form" action="index.html" >
@@ -111,7 +110,7 @@
 			<p>DVMC3.0</p>
 		</div>
 	</footer>
-        <script src="../js/base.min.js"></script>
+        <script src="../Scripts/js/base.min.js"></script>
     </div>  
 </body>
 </html>
