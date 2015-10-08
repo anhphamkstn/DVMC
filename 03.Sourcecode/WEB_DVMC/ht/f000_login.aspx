@@ -1,7 +1,11 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="f000_login.aspx.cs" Inherits="WEB_DVMC.hethong.f000_login" %>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><meta charset="utf-8" /><meta content="IE=edge" http-equiv="X-UA-Compatible" /><meta content="initial-scale=1.0, width=device-width" name="viewport" /><title>
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+    <title>
 	Login - Material
 </title>
 

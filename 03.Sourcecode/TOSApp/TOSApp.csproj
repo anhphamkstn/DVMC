@@ -369,12 +369,6 @@
     <Compile Include="ChucNang\f119_ds_don_hang_hoan_thanh.Designer.cs">
       <DependentUpon>f119_ds_don_hang_hoan_thanh.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChucNang\f120_ds_don_hang_khach_hang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucNang\f120_ds_don_hang_khach_hang.Designer.cs">
-      <DependentUpon>f120_ds_don_hang_khach_hang.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChucNang\f121_tao_user_moi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -627,9 +621,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f119_ds_don_hang_hoan_thanh.resx">
       <DependentUpon>f119_ds_don_hang_hoan_thanh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChucNang\f120_ds_don_hang_khach_hang.resx">
-      <DependentUpon>f120_ds_don_hang_khach_hang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChucNang\f121_tao_user_moi.resx">
       <DependentUpon>f121_tao_user_moi.cs</DependentUpon>
