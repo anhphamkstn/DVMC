@@ -57,7 +57,6 @@
             this.m_panel_TM = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.m_cmd_TM_huy_hon_hang = new DevExpress.XtraEditors.SimpleButton();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.m_cmd_TM_danh_gia = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.m_grv_ds_don_dat_hang_can_nghiem_thu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_grc_ds_don_dat_hang_can_nghiem_thu)).BeginInit();
@@ -429,7 +428,6 @@
             // m_panel_TM
             // 
             this.m_panel_TM.Controls.Add(this.panel13);
-            this.m_panel_TM.Controls.Add(this.panel7);
             this.m_panel_TM.Controls.Add(this.m_cmd_TM_danh_gia);
             this.m_panel_TM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_panel_TM.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -442,7 +440,7 @@
             // 
             this.panel13.Controls.Add(this.m_cmd_TM_huy_hon_hang);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel13.Location = new System.Drawing.Point(284, 0);
+            this.panel13.Location = new System.Drawing.Point(448, 0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(165, 39);
             this.panel13.TabIndex = 3;
@@ -459,14 +457,6 @@
             this.m_cmd_TM_huy_hon_hang.TabIndex = 3;
             this.m_cmd_TM_huy_hon_hang.Text = "Hủy đơn hàng";
             this.m_cmd_TM_huy_hon_hang.Click += new System.EventHandler(this.m_cmd_TM_huy_hon_hang_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(449, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(164, 39);
-            this.panel7.TabIndex = 2;
             // 
             // m_cmd_TM_danh_gia
             // 
@@ -531,7 +521,6 @@
         public System.Windows.Forms.Panel m_panel_TM;
         private System.Windows.Forms.Panel panel13;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TM_huy_hon_hang;
-        private System.Windows.Forms.Panel panel7;
         public DevExpress.XtraEditors.SimpleButton m_cmd_TM_danh_gia;
     }
 }

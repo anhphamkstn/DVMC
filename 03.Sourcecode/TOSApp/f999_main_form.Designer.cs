@@ -46,6 +46,8 @@
             this.m_cmd_tm_ds_don_hang_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.m_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_tm_ds_tat_ca_don_hang = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.m_cmd_don_hang_chua_dg = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_cmd_ds_can_danh_gia = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_pm_ds_don_hang_da_danh_gia = new DevExpress.XtraBars.BarButtonItem();
@@ -140,8 +142,6 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.m_timer_imcoming_call = new System.Windows.Forms.Timer(this.components);
-            this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
@@ -276,6 +276,21 @@
             this.m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_tm_ds_tat_ca_don_hang.LargeGlyph")));
             this.m_cmd_tm_ds_tat_ca_don_hang.Name = "m_cmd_tm_ds_tat_ca_don_hang";
             this.m_cmd_tm_ds_tat_ca_don_hang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_tm_ds_tat_ca_don_hang_ItemClick);
+            // 
+            // ribbonPageGroup25
+            // 
+            this.ribbonPageGroup25.ItemLinks.Add(this.m_cmd_don_hang_chua_dg);
+            this.ribbonPageGroup25.Name = "ribbonPageGroup25";
+            this.ribbonPageGroup25.Text = "Danh sách đơn hàng chưa đánh giá";
+            // 
+            // m_cmd_don_hang_chua_dg
+            // 
+            this.m_cmd_don_hang_chua_dg.Caption = "Đơn hàng chưa đánh giá";
+            this.m_cmd_don_hang_chua_dg.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_don_hang_chua_dg.Glyph")));
+            this.m_cmd_don_hang_chua_dg.Id = 70;
+            this.m_cmd_don_hang_chua_dg.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_don_hang_chua_dg.LargeGlyph")));
+            this.m_cmd_don_hang_chua_dg.Name = "m_cmd_don_hang_chua_dg";
+            this.m_cmd_don_hang_chua_dg.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.m_cmd_don_hang_chua_dg_ItemClick);
             // 
             // ribbonPageGroup22
             // 
@@ -836,7 +851,7 @@
             this.m_btn_ipphone,
             this.barButtonItem11,
             this.m_cmd_TD_dm_cau_hoi,
-            this.barButtonItem12});
+            this.m_cmd_don_hang_chua_dg});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 71;
             this.ribbonControl1.Name = "ribbonControl1";
@@ -1108,21 +1123,6 @@
             this.m_timer_imcoming_call.Interval = 3000;
             this.m_timer_imcoming_call.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // ribbonPageGroup25
-            // 
-            this.ribbonPageGroup25.AllowTextClipping = false;
-            this.ribbonPageGroup25.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup25.Name = "ribbonPageGroup25";
-            this.ribbonPageGroup25.Text = "Danh sách đơn hàng chưa đánh giá";
-            // 
-            // barButtonItem12
-            // 
-            this.barButtonItem12.Caption = "Đơn hàng chưa đánh giá";
-            this.barButtonItem12.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.Glyph")));
-            this.barButtonItem12.Id = 70;
-            this.barButtonItem12.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem12.LargeGlyph")));
-            this.barButtonItem12.Name = "barButtonItem12";
-            // 
             // f999_main_form
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
@@ -1254,7 +1254,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem m_cmd_TD_dm_cau_hoi;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.BarButtonItem m_cmd_don_hang_chua_dg;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup25;
 
 	}
